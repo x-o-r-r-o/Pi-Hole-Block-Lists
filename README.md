@@ -11,8 +11,15 @@ from well-maintained upstream sources, merged and de-duplicated.
 | `ads-and-tracking-extended` | Aggressive ads, trackers, telemetry, pop-ups. May need some allowlisting. | ~600k |
 | `mobile-ads` | Ad networks inside Android/iOS apps | ~7k |
 | `mobile-spyware` | Phone-maker and app telemetry (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok), Android trackers | ~3k |
+| `youtube-ads` | Google/YouTube ad servers. Partial, see note below. | ~20 |
 | `smart-tv` | Smart TV / streaming stick tracking (Samsung, LG, Roku, Amazon Fire) | ~1k |
 | `security` | Malware, phishing, scams, fake shops | ~640k |
+
+> **About YouTube ads:** YouTube serves most video ads from the same servers as the videos (`googlevideo.com`),
+> so no DNS blocker (Pi-hole or AdGuard Home) can remove them all. Lists that block `googlevideo.com` servers end up
+> breaking or freezing playback, so `youtube-ads` leaves those out and blocks only the separate ad servers. That stops some
+> ads, mostly in apps, on smart TVs and on other websites. To remove every YouTube ad, use a browser ad blocker
+> such as uBlock Origin, or YouTube Premium.
 
 Each list comes in three formats. Pick the one that fits your setup:
 
@@ -89,6 +96,7 @@ The previous upstream, Developer Dan's (lightswitch05) lists, was archived in 20
 | [Peter Lowe's list](https://pgl.yoyo.org/adservers/) | ads-and-tracking, extended | see site |
 | [AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters): Mobile Ads, Tracking Protection (mobile) | mobile-ads, mobile-spyware | GPL-3.0 |
 | [Perflyst PiHoleBlocklist](https://github.com/Perflyst/PiHoleBlocklist): Android Tracking, Smart TV | mobile-spyware, smart-tv | MIT |
+| [kboghdady YouTube ads](https://github.com/kboghdady/youTube_ads_4_pi-hole) (ad servers only, video servers removed) | youtube-ads | see repo |
 | [abuse.ch URLhaus](https://urlhaus.abuse.ch) | security | CC0 |
 | [Phishing Army Extended](https://phishing.army) | security | CC BY-NC 4.0 |
 
