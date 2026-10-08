@@ -13,8 +13,12 @@ from well-maintained upstream sources, merged and de-duplicated.
 | `mobile-spyware` | Phone-maker and app telemetry (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok), Android trackers | ~3k |
 | `youtube-ads` | Google/YouTube ad servers. Partial, see note below. | ~20 |
 | `gambling` | Online casinos, sports betting, poker, lotteries | ~580k |
+| `adult` | Porn and other adult (NSFW) sites. See tip below. | ~550k |
 | `smart-tv` | Smart TV / streaming stick tracking (Samsung, LG, Roku, Amazon Fire) | ~1k |
 | `security` | Malware, phishing, scams, fake shops | ~640k |
+
+> **Tip for `adult`:** a block list can't stop explicit images from appearing in Google/Bing image search.
+> In AdGuard Home, also turn on **Settings → General settings → Enforce Safe Search** (and Safe Browsing).
 
 > **About YouTube ads:** YouTube serves most video ads from the same servers as the videos (`googlevideo.com`),
 > so no DNS blocker (Pi-hole or AdGuard Home) can remove them all. Lists that block `googlevideo.com` servers end up
@@ -87,9 +91,9 @@ The previous upstream, Developer Dan's (lightswitch05) lists, was archived in 20
 
 | Source | Used in | License |
 |---|---|---|
-| [HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists): Light, Pro++, Pop-Up Ads, TIF Medium, Fake, Gambling, Native Trackers | most lists | GPL-3.0 |
-| [OISD Big](https://oisd.nl) | extended | GPL-3.0 |
-| [StevenBlack Unified Hosts](https://github.com/StevenBlack/hosts) + Gambling extension | ads-and-tracking, extended, gambling | MIT |
+| [HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists): Light, Pro++, Pop-Up Ads, TIF Medium, Fake, Gambling, NSFW, Native Trackers | most lists | GPL-3.0 |
+| [OISD Big / NSFW](https://oisd.nl) | extended, adult | GPL-3.0 |
+| [StevenBlack Unified Hosts](https://github.com/StevenBlack/hosts) + Gambling and Porn extensions | ads-and-tracking, extended, gambling, adult | MIT |
 | [1Hosts Lite](https://github.com/badmojr/1Hosts) | extended | MPL-2.0 |
 | [EasyList / EasyPrivacy](https://easylist.to) (via [Firebog](https://firebog.net)) | extended | GPL-3.0 / CC BY-SA 3.0 |
 | [Frogeye First-Party Trackers](https://hostfiles.frogeye.fr) | extended | MIT |

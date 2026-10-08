@@ -173,6 +173,24 @@
     "home": "https://github.com/StevenBlack/hosts",
     "license": "MIT"
   },
+  "hagezi-nsfw": {
+    "name": "HaGeZi NSFW",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nsfw-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0"
+  },
+  "oisd-nsfw": {
+    "name": "OISD NSFW",
+    "url": "https://nsfw.oisd.nl/domainswild2",
+    "home": "https://oisd.nl",
+    "license": "GPL-3.0"
+  },
+  "stevenblack-porn": {
+    "name": "StevenBlack Porn extension",
+    "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn-only/hosts",
+    "home": "https://github.com/StevenBlack/hosts",
+    "license": "MIT"
+  },
   "kboghdady-youtube": {
     "name": "kboghdady YouTube ads for Pi-hole (ad servers only)",
     "url": "https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt",
