@@ -1,0 +1,72 @@
+{
+  "ads-and-tracking": {
+    "title": "Ads & Tracking",
+    "description": "Balanced ad and tracker blocking with few false positives. Good default for most homes.",
+    "sources": [
+      "hagezi-light",
+      "stevenblack",
+      "adaway",
+      "peterlowe"
+    ]
+  },
+  "ads-and-tracking-extended": {
+    "title": "Ads & Tracking (Extended)",
+    "description": "Aggressive ad, tracker, telemetry and pop-up blocking. Blocks more, may need occasional allowlisting.",
+    "sources": [
+      "hagezi-pro-plus",
+      "hagezi-popupads",
+      "oisd-big",
+      "stevenblack",
+      "1hosts-lite",
+      "easylist",
+      "easyprivacy",
+      "frogeye-firstparty",
+      "adaway",
+      "peterlowe"
+    ]
+  },
+  "mobile-ads": {
+    "title": "Mobile Ads",
+    "description": "Ad networks used inside Android and iOS apps.",
+    "sources": [
+      "adaway",
+      "adguard-mobile-ads"
+    ]
+  },
+  "mobile-spyware": {
+    "title": "Mobile Spyware & Telemetry",
+    "description": "Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.",
+    "sources": [
+      "perflyst-android",
+      "adguard-mobile-spyware",
+      "hagezi-native-apple",
+      "hagezi-native-samsung",
+      "hagezi-native-xiaomi",
+      "hagezi-native-huawei",
+      "hagezi-native-oppo-realme",
+      "hagezi-native-vivo",
+      "hagezi-native-tiktok"
+    ]
+  },
+  "smart-tv": {
+    "title": "Smart TV & Streaming Devices",
+    "description": "Tracking and ads on smart TVs and streaming sticks (Samsung, LG webOS, Roku, Amazon Fire).",
+    "sources": [
+      "perflyst-smarttv",
+      "hagezi-native-lgwebos",
+      "hagezi-native-roku",
+      "hagezi-native-amazon",
+      "hagezi-native-samsung"
+    ]
+  },
+  "security": {
+    "title": "Security (Malware, Phishing, Scams)",
+    "description": "Malware, phishing, scam and fake-shop domains from threat-intelligence feeds.",
+    "sources": [
+      "hagezi-tif-medium",
+      "hagezi-fake",
+      "urlhaus",
+      "phishing-army-extended"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+# Domains that must NEVER be blocked by any list in this repo (one per line).
+# Add a domain here if a list breaks a site or app you rely on, then re-run the build.
+# A line like "example.com" removes exactly that domain from the plain lists and adds
+# an "@@||example.com^" exception to the adblock-format lists.
