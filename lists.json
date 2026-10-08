@@ -1,7 +1,7 @@
 {
   "ads-and-tracking": {
     "title": "Ads & Tracking",
-    "description": "Balanced ad and tracker blocking with few false positives. Good default for most homes.",
+    "description": "Ads and trackers with few false positives. Start here.",
     "sources": [
       "hagezi-light",
       "stevenblack",
@@ -50,7 +50,7 @@
   },
   "youtube-ads": {
     "title": "YouTube Ads",
-    "description": "Google/YouTube ad-serving domains. Blocks some YouTube ads (mostly on websites, apps and smart TVs); DNS cannot block all YouTube video ads.",
+    "description": "Google/YouTube ad servers. Partial: DNS cannot block all YouTube video ads (see note below).",
     "sources": [
       "kboghdady-youtube"
     ]
@@ -65,7 +65,7 @@
   },
   "adult": {
     "title": "Adult Content",
-    "description": "Pornography and other adult (NSFW) websites.",
+    "description": "Porn and other adult (NSFW) sites (see Safe Search tip below).",
     "sources": [
       "hagezi-nsfw",
       "oisd-nsfw",
@@ -93,12 +93,22 @@
   },
   "security": {
     "title": "Security (Malware, Phishing, Scams)",
-    "description": "Malware, phishing, scam and fake-shop domains from threat-intelligence feeds.",
+    "description": "Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone.",
     "sources": [
       "hagezi-tif-medium",
       "hagezi-fake",
       "urlhaus",
-      "phishing-army-extended"
+      "phishing-army-extended",
+      "threatfox",
+      "dandelion-antimalware"
+    ]
+  },
+  "crypto-mining": {
+    "title": "Crypto Mining (Cryptojacking)",
+    "description": "Hidden crypto-mining scripts and mining pools (cryptojacking). Exchanges like Coinbase/Binance are not blocked.",
+    "sources": [
+      "nocoin",
+      "prigent-cryptojacking"
     ]
   }
 }

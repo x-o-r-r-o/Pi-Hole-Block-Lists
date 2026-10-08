@@ -224,6 +224,30 @@
       "(^|\\.)googlevideo\\.com$"
     ]
   },
+  "threatfox": {
+    "name": "abuse.ch ThreatFox (malware hosts)",
+    "url": "https://threatfox.abuse.ch/downloads/hostfile/",
+    "home": "https://threatfox.abuse.ch",
+    "license": "CC0"
+  },
+  "dandelion-antimalware": {
+    "name": "Dandelion Sprout's Anti-Malware List",
+    "url": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt",
+    "home": "https://github.com/DandelionSprout/adfilt",
+    "license": "Dandelicence (see repo)"
+  },
+  "nocoin": {
+    "name": "NoCoin (hoshsadiq)",
+    "url": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt",
+    "home": "https://github.com/hoshsadiq/adblock-nocoin-list",
+    "license": "MIT"
+  },
+  "prigent-cryptojacking": {
+    "name": "Universit\u00e9 Toulouse Capitole cryptojacking (via Firebog)",
+    "url": "https://v.firebog.net/hosts/Prigent-Crypto.txt",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
   "urlhaus": {
     "name": "abuse.ch URLhaus (malware hosts)",
     "url": "https://urlhaus.abuse.ch/downloads/hostfile/",

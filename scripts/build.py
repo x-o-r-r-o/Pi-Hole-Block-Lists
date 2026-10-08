@@ -139,6 +139,45 @@ def header(comment, meta, count, fmt):
     return "".join("%s %s\n" % (comment, l) if l else "%s\n" % comment for l in lines) + "\n"
 
 
+def approx(n):
+    if n >= 1000:
+        return "~%sk" % format(round(n / 1000, 1 if n < 10000 else None), "g")
+    return str(n)
+
+
+def replace_block(text, name, body):
+    start, end = "<!-- %s:START -->" % name, "<!-- %s:END -->" % name
+    pattern = re.compile(re.escape(start) + ".*?" + re.escape(end), re.S)
+    return pattern.sub(lambda _: "%s\n%s\n%s" % (start, body, end), text)
+
+
+def update_readme(lists, sources):
+    """Regenerate the Lists and Sources tables in README.md from the config."""
+    path = ROOT / "README.md"
+    if not path.exists():
+        return
+    raw = REPO_URL.replace("github.com", "raw.githubusercontent.com") + "/master/"
+    rows = ["| List | What it blocks | Domains | Download |", "|---|---|---|---|"]
+    for name, meta in lists.items():
+        rows.append("| `%s` | %s | %s | [Adblock](%sadblock/%s.txt) · [Plain](%s%s.txt) · [Hosts](%shosts/%s.txt) |" % (
+            name, meta["description"], approx(existing_count(ROOT / ("%s.txt" % name))),
+            raw, name, raw, name, raw, name))
+
+    used = {}
+    for name, meta in lists.items():
+        for sid in meta["sources"]:
+            used.setdefault(sid, []).append("`%s`" % name)
+    srows = ["| Source | Used in | License |", "|---|---|---|"]
+    for sid, src in sources.items():
+        if sid in used:
+            srows.append("| [%s](%s) | %s | %s |" % (src["name"], src["home"], ", ".join(used[sid]), src["license"]))
+
+    text = path.read_text(encoding="utf-8")
+    text = replace_block(text, "LISTS", "\n".join(rows))
+    text = replace_block(text, "SOURCES", "\n".join(srows))
+    write_if_changed(path, text)
+
+
 def main():
     lists = json.loads((ROOT / "lists.json").read_text())
     sources = json.loads((ROOT / "sources.json").read_text())
@@ -205,6 +244,7 @@ def main():
                          + "".join("||%s^\n" % d for d in wild))
         print("  wrote %-26s %8d plain / %8d adblock" % (name, len(plain), len(wild)))
 
+    update_readme(lists, sources)
     for p in problems:
         print("WARNING: " + p)
     if problems:

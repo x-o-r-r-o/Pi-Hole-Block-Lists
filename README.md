@@ -1,22 +1,29 @@
 # Pi-Hole-Block-Lists
 
+[![Update block lists](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/actions/workflows/update.yml/badge.svg)](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/actions/workflows/update.yml)
+
 Ready-to-use DNS block lists for **Pi-hole** and **AdGuard Home**, rebuilt **every day**
 from well-maintained upstream sources, merged and de-duplicated.
 
 ## Lists
 
-| List | What it blocks | Size |
-|---|---|---|
-| `ads-and-tracking` | Ads and trackers, few false positives. **Start here.** | ~120k |
-| `ads-and-tracking-extended` | Aggressive ads, trackers, telemetry, pop-ups. May need some allowlisting. | ~600k |
-| `mobile-ads` | Ad networks inside Android/iOS apps | ~7k |
-| `mobile-spyware` | Phone-maker and app telemetry (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok), Android trackers | ~3k |
-| `youtube-ads` | Google/YouTube ad servers. Partial, see note below. | ~20 |
-| `gambling` | Online casinos, sports betting, poker, lotteries | ~580k |
-| `adult` | Porn and other adult (NSFW) sites. See tip below. | ~550k |
-| `social-media` | Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Threads, Bluesky, Discord and more. WhatsApp stays allowed. | ~4k |
-| `smart-tv` | Smart TV / streaming stick tracking (Samsung, LG, Roku, Amazon Fire) | ~1k |
-| `security` | Malware, phishing, scams, fake shops | ~640k |
+The table below and the Sources table are updated automatically on every build.
+
+<!-- LISTS:START -->
+| List | What it blocks | Domains | Download |
+|---|---|---|---|
+| `ads-and-tracking` | Ads and trackers with few false positives. Start here. | ~122k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-and-tracking.txt) |
+| `ads-and-tracking-extended` | Aggressive ad, tracker, telemetry and pop-up blocking. Blocks more, may need occasional allowlisting. | ~595k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking-extended.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking-extended.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-and-tracking-extended.txt) |
+| `mobile-ads` | Ad networks used inside Android and iOS apps. | ~7.6k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/mobile-ads.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/mobile-ads.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/mobile-ads.txt) |
+| `mobile-spyware` | Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers. | ~3.2k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/mobile-spyware.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/mobile-spyware.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/mobile-spyware.txt) |
+| `youtube-ads` | Google/YouTube ad servers. Partial: DNS cannot block all YouTube video ads (see note below). | 16 | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/youtube-ads.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/youtube-ads.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/youtube-ads.txt) |
+| `gambling` | Online casinos, sports betting, poker, lotteries and other gambling sites. | ~585k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/gambling.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/gambling.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/gambling.txt) |
+| `adult` | Porn and other adult (NSFW) sites (see Safe Search tip below). | ~544k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/adult.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adult.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/adult.txt) |
+| `social-media` | Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked. | ~4.4k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/social-media.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/social-media.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/social-media.txt) |
+| `smart-tv` | Tracking and ads on smart TVs and streaming sticks (Samsung, LG webOS, Roku, Amazon Fire). | ~1.3k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/smart-tv.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/smart-tv.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/smart-tv.txt) |
+| `security` | Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone. | ~682k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/security.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/security.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/security.txt) |
+| `crypto-mining` | Hidden crypto-mining scripts and mining pools (cryptojacking). Exchanges like Coinbase/Binance are not blocked. | ~12k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/crypto-mining.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/crypto-mining.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/crypto-mining.txt) |
+<!-- LISTS:END -->
 
 > **Tip for `adult`:** a block list can't stop explicit images from appearing in Google/Bing image search.
 > In AdGuard Home, also turn on **Settings → General settings → Enforce Safe Search** (and Safe Browsing).
@@ -75,7 +82,7 @@ the config changes, and runs [`scripts/build.py`](scripts/build.py) (Python stan
 1. Downloads every source in [`sources.json`](sources.json). Hosts, plain-domain and adblock formats are all understood.
 2. Merges the sources for each list as defined in [`lists.json`](lists.json), honouring upstream `@@` exceptions.
 3. Adds `custom/` domains and removes `allowlist.txt` domains.
-4. Writes the three formats and commits only if something changed.
+4. Writes the three formats, refreshes the tables in this README, and commits only if something changed.
 
 Safety checks: if a source fails to download, or a list would shrink by more than half, that list keeps its previous
 version and the run is marked as failed so you notice.
@@ -90,21 +97,56 @@ python3 scripts/build.py
 
 The previous upstream, Developer Dan's (lightswitch05) lists, was archived in 2024 and is no longer used.
 
+<!-- SOURCES:START -->
 | Source | Used in | License |
 |---|---|---|
-| [HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists): Light, Pro++, Pop-Up Ads, TIF Medium, Fake, Gambling, NSFW, Social, Native Trackers | most lists | GPL-3.0 |
-| [OISD Big / NSFW](https://oisd.nl) | extended, adult | GPL-3.0 |
-| [StevenBlack Unified Hosts](https://github.com/StevenBlack/hosts) + Gambling, Porn and Social extensions | ads-and-tracking, extended, gambling, adult, social-media | MIT |
-| [1Hosts Lite](https://github.com/badmojr/1Hosts) | extended | MPL-2.0 |
-| [EasyList / EasyPrivacy](https://easylist.to) (via [Firebog](https://firebog.net)) | extended | GPL-3.0 / CC BY-SA 3.0 |
-| [Frogeye First-Party Trackers](https://hostfiles.frogeye.fr) | extended | MIT |
-| [AdAway](https://adaway.org) | ads-and-tracking, extended, mobile-ads | CC BY 3.0 |
-| [Peter Lowe's list](https://pgl.yoyo.org/adservers/) | ads-and-tracking, extended | see site |
-| [AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters): Mobile Ads, Tracking Protection (mobile) | mobile-ads, mobile-spyware | GPL-3.0 |
-| [Perflyst PiHoleBlocklist](https://github.com/Perflyst/PiHoleBlocklist): Android Tracking, Smart TV | mobile-spyware, smart-tv | MIT |
-| [kboghdady YouTube ads](https://github.com/kboghdady/youTube_ads_4_pi-hole) (ad servers only, video servers removed) | youtube-ads | see repo |
-| [abuse.ch URLhaus](https://urlhaus.abuse.ch) | security | CC0 |
-| [Phishing Army Extended](https://phishing.army) | security | CC BY-NC 4.0 |
+| [HaGeZi Multi Light](https://github.com/hagezi/dns-blocklists) | `ads-and-tracking` | GPL-3.0 |
+| [HaGeZi Multi Pro++](https://github.com/hagezi/dns-blocklists) | `ads-and-tracking-extended` | GPL-3.0 |
+| [HaGeZi Pop-Up Ads](https://github.com/hagezi/dns-blocklists) | `ads-and-tracking-extended` | GPL-3.0 |
+| [HaGeZi Threat Intelligence Feeds (Medium)](https://github.com/hagezi/dns-blocklists) | `security` | GPL-3.0 |
+| [HaGeZi Fake (scams, fake shops)](https://github.com/hagezi/dns-blocklists) | `security` | GPL-3.0 |
+| [HaGeZi Native Tracker: Apple](https://github.com/hagezi/dns-blocklists) | `mobile-spyware` | GPL-3.0 |
+| [HaGeZi Native Tracker: Samsung](https://github.com/hagezi/dns-blocklists) | `mobile-spyware`, `smart-tv` | GPL-3.0 |
+| [HaGeZi Native Tracker: Xiaomi](https://github.com/hagezi/dns-blocklists) | `mobile-spyware` | GPL-3.0 |
+| [HaGeZi Native Tracker: Huawei](https://github.com/hagezi/dns-blocklists) | `mobile-spyware` | GPL-3.0 |
+| [HaGeZi Native Tracker: Oppo/Realme](https://github.com/hagezi/dns-blocklists) | `mobile-spyware` | GPL-3.0 |
+| [HaGeZi Native Tracker: Vivo](https://github.com/hagezi/dns-blocklists) | `mobile-spyware` | GPL-3.0 |
+| [HaGeZi Native Tracker: TikTok](https://github.com/hagezi/dns-blocklists) | `mobile-spyware` | GPL-3.0 |
+| [HaGeZi Native Tracker: LG webOS](https://github.com/hagezi/dns-blocklists) | `smart-tv` | GPL-3.0 |
+| [HaGeZi Native Tracker: Roku](https://github.com/hagezi/dns-blocklists) | `smart-tv` | GPL-3.0 |
+| [HaGeZi Native Tracker: Amazon](https://github.com/hagezi/dns-blocklists) | `smart-tv` | GPL-3.0 |
+| [OISD Big](https://oisd.nl) | `ads-and-tracking-extended` | GPL-3.0 |
+| [StevenBlack Unified Hosts](https://github.com/StevenBlack/hosts) | `ads-and-tracking`, `ads-and-tracking-extended` | MIT |
+| [1Hosts Lite](https://github.com/badmojr/1Hosts) | `ads-and-tracking-extended` | MPL-2.0 |
+| [EasyList (Firebog domain conversion)](https://easylist.to) | `ads-and-tracking-extended` | GPL-3.0 / CC BY-SA 3.0 |
+| [EasyPrivacy (Firebog domain conversion)](https://easylist.to) | `ads-and-tracking-extended` | GPL-3.0 / CC BY-SA 3.0 |
+| [Frogeye First-Party Trackers](https://hostfiles.frogeye.fr) | `ads-and-tracking-extended` | MIT |
+| [AdAway Default](https://adaway.org) | `ads-and-tracking`, `ads-and-tracking-extended`, `mobile-ads` | CC BY 3.0 |
+| [Peter Lowe's Ad and Tracking Server List](https://pgl.yoyo.org/adservers/) | `ads-and-tracking`, `ads-and-tracking-extended` | Free for non-commercial use (see home page) |
+| [AdGuard Mobile Ads filter (domain rules only)](https://github.com/AdguardTeam/AdguardFilters) | `mobile-ads` | GPL-3.0 |
+| [AdGuard Tracking Protection: mobile section (domain rules only)](https://github.com/AdguardTeam/AdguardFilters) | `mobile-spyware` | GPL-3.0 |
+| [Perflyst Android Tracking](https://github.com/Perflyst/PiHoleBlocklist) | `mobile-spyware` | MIT |
+| [Perflyst Smart TV](https://github.com/Perflyst/PiHoleBlocklist) | `smart-tv` | MIT |
+| [HaGeZi Gambling](https://github.com/hagezi/dns-blocklists) | `gambling` | GPL-3.0 |
+| [StevenBlack Gambling extension](https://github.com/StevenBlack/hosts) | `gambling` | MIT |
+| [HaGeZi NSFW](https://github.com/hagezi/dns-blocklists) | `adult` | GPL-3.0 |
+| [OISD NSFW](https://oisd.nl) | `adult` | GPL-3.0 |
+| [StevenBlack Porn extension](https://github.com/StevenBlack/hosts) | `adult` | MIT |
+| [HaGeZi Social Networks (WhatsApp kept working)](https://github.com/hagezi/dns-blocklists) | `social-media` | GPL-3.0 |
+| [StevenBlack Social extension (WhatsApp kept working)](https://github.com/StevenBlack/hosts) | `social-media` | MIT |
+| [kboghdady YouTube ads for Pi-hole (ad servers only)](https://github.com/kboghdady/youTube_ads_4_pi-hole) | `youtube-ads` | see repository |
+| [abuse.ch ThreatFox (malware hosts)](https://threatfox.abuse.ch) | `security` | CC0 |
+| [Dandelion Sprout's Anti-Malware List](https://github.com/DandelionSprout/adfilt) | `security` | Dandelicence (see repo) |
+| [NoCoin (hoshsadiq)](https://github.com/hoshsadiq/adblock-nocoin-list) | `crypto-mining` | MIT |
+| [Université Toulouse Capitole cryptojacking (via Firebog)](https://dsi.ut-capitole.fr/blacklists/) | `crypto-mining` | CC BY-SA 4.0 |
+| [abuse.ch URLhaus (malware hosts)](https://urlhaus.abuse.ch) | `security` | CC0 |
+| [Phishing Army Extended](https://phishing.army) | `security` | CC BY-NC 4.0 |
+<!-- SOURCES:END -->
 
 All credit goes to these maintainers. Each generated file lists its sources in its header.
-To add or remove a source, edit `sources.json` and `lists.json`.
+
+## Adding a new list or source
+
+1. Add the source to [`sources.json`](sources.json) (`name`, `url`, `home`, `license`, and optionally `exclude` regexes).
+2. Add or edit the list in [`lists.json`](lists.json) (`title`, `description`, `sources`).
+3. Push. The Action builds the new list in all three formats and adds it to the tables above automatically.

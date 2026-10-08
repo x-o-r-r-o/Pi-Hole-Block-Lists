@@ -12,6 +12,7 @@ on:
       - allowlist.txt
       - custom/**
       - scripts/**
+      - .github/workflows/update.yml
 
 permissions:
   contents: write
@@ -40,7 +41,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A ./*.txt adblock hosts
+          git add -A ./*.txt adblock hosts README.md
           # build.py leaves files untouched when only the timestamp would change.
           if git diff --cached --quiet; then
             echo "No list changes."
