@@ -243,7 +243,7 @@
     "license": "MIT"
   },
   "prigent-cryptojacking": {
-    "name": "Universit\u00e9 Toulouse Capitole cryptojacking (via Firebog)",
+    "name": "Université Toulouse Capitole cryptojacking (via Firebog)",
     "url": "https://v.firebog.net/hosts/Prigent-Crypto.txt",
     "home": "https://dsi.ut-capitole.fr/blacklists/",
     "license": "CC BY-SA 4.0"
@@ -259,5 +259,26 @@
     "url": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
     "home": "https://phishing.army",
     "license": "CC BY-NC 4.0"
+  },
+  "phishing-database": {
+    "name": "Phishing.Database (active domains; big-company domains removed)",
+    "url": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt",
+    "home": "https://github.com/mitchellkrogza/Phishing.Database",
+    "license": "MIT",
+    "exclude": [
+      "(^|\\.)(google|googleapis|googleusercontent|gstatic|youtube|microsoft|microsoftonline|apple|icloud|amazon|amazonaws|paypal|facebook|instagram|live|office|office365|outlook|windows|sharepoint|github|cloudflare|dropbox|adobe|yahoo|linkedin|zoom)\\.(com|net)$"
+    ]
+  },
+  "malware-filter-phishing": {
+    "name": "malware-filter Phishing URL Blocklist (PhishTank, OpenPhish, PhishStats)",
+    "url": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-hosts.txt",
+    "home": "https://gitlab.com/malware-filter/phishing-filter",
+    "license": "MIT / CC0"
+  },
+  "durablenapkin-scam": {
+    "name": "Scam Blocklist (durablenapkin)",
+    "url": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt",
+    "home": "https://github.com/durablenapkin/scamblocklist",
+    "license": "MIT"
   }
 }

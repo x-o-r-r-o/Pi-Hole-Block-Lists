@@ -110,5 +110,16 @@
       "nocoin",
       "prigent-cryptojacking"
     ]
+  },
+  "phishing-and-scams": {
+    "title": "Phishing & Scams",
+    "description": "Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in `security`; use this if you only want phishing/scam protection.",
+    "sources": [
+      "phishing-army-extended",
+      "hagezi-fake",
+      "phishing-database",
+      "malware-filter-phishing",
+      "durablenapkin-scam"
+    ]
   }
 }

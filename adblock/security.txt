@@ -3,8 +3,8 @@
 ! Description: Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-08 21:01 UTC
-! Entries: 654635
+! Last modified: 2026-10-08 21:06 UTC
+! Entries: 654636
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Threat Intelligence Feeds (Medium): https://github.com/hagezi/dns-blocklists
@@ -48675,6 +48675,7 @@
 ||alprobol.com^
 ||alprojectinvest.de^
 ||alprosolarisdental.com^
+||alprosperu.com^
 ||alpscon.ai^
 ||alpscypher.xyz^
 ||alpsgenerative.xyz^
@@ -233329,7 +233330,6 @@
 ||entitledstable.xyz^
 ||entitlequantum.xyz^
 ||entity-node.ontocorex.in.net^
-||entity-node.ontoversegrid.in.net^
 ||entitychamber.xyz^
 ||entitycluster.xyz^
 ||entitycockpit.xyz^
@@ -517154,6 +517154,7 @@
 ||script-horizon.digital^
 ||script-matrix.digital^
 ||script-nexus.digital^
+||script-six-tawny.vercel.app^
 ||script-vault.digital^
 ||script.schule^
 ||script1-gate.lipshellcore.lat^
