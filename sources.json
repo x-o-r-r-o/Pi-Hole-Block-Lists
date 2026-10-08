@@ -191,12 +191,38 @@
     "home": "https://github.com/StevenBlack/hosts",
     "license": "MIT"
   },
+  "hagezi-social": {
+    "name": "HaGeZi Social Networks (WhatsApp kept working)",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/social-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0",
+    "exclude": [
+      "(^|\\.)whatsapp\\.(com|net)$",
+      "(^|\\.)wa\\.me$",
+      "^fbcdn\\.net$",
+      "^whatsapp-cdn"
+    ]
+  },
+  "stevenblack-social": {
+    "name": "StevenBlack Social extension (WhatsApp kept working)",
+    "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts",
+    "home": "https://github.com/StevenBlack/hosts",
+    "license": "MIT",
+    "exclude": [
+      "(^|\\.)whatsapp\\.(com|net)$",
+      "(^|\\.)wa\\.me$",
+      "^fbcdn\\.net$",
+      "^whatsapp-cdn"
+    ]
+  },
   "kboghdady-youtube": {
     "name": "kboghdady YouTube ads for Pi-hole (ad servers only)",
     "url": "https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt",
     "home": "https://github.com/kboghdady/youTube_ads_4_pi-hole",
     "license": "see repository",
-    "exclude": ["(^|\\.)googlevideo\\.com$"]
+    "exclude": [
+      "(^|\\.)googlevideo\\.com$"
+    ]
   },
   "urlhaus": {
     "name": "abuse.ch URLhaus (malware hosts)",

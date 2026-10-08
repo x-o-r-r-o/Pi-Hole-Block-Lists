@@ -14,6 +14,7 @@ from well-maintained upstream sources, merged and de-duplicated.
 | `youtube-ads` | Google/YouTube ad servers. Partial, see note below. | ~20 |
 | `gambling` | Online casinos, sports betting, poker, lotteries | ~580k |
 | `adult` | Porn and other adult (NSFW) sites. See tip below. | ~550k |
+| `social-media` | Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Threads, Bluesky, Discord and more. WhatsApp stays allowed. | ~4k |
 | `smart-tv` | Smart TV / streaming stick tracking (Samsung, LG, Roku, Amazon Fire) | ~1k |
 | `security` | Malware, phishing, scams, fake shops | ~640k |
 
@@ -91,9 +92,9 @@ The previous upstream, Developer Dan's (lightswitch05) lists, was archived in 20
 
 | Source | Used in | License |
 |---|---|---|
-| [HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists): Light, Pro++, Pop-Up Ads, TIF Medium, Fake, Gambling, NSFW, Native Trackers | most lists | GPL-3.0 |
+| [HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists): Light, Pro++, Pop-Up Ads, TIF Medium, Fake, Gambling, NSFW, Social, Native Trackers | most lists | GPL-3.0 |
 | [OISD Big / NSFW](https://oisd.nl) | extended, adult | GPL-3.0 |
-| [StevenBlack Unified Hosts](https://github.com/StevenBlack/hosts) + Gambling and Porn extensions | ads-and-tracking, extended, gambling, adult | MIT |
+| [StevenBlack Unified Hosts](https://github.com/StevenBlack/hosts) + Gambling, Porn and Social extensions | ads-and-tracking, extended, gambling, adult, social-media | MIT |
 | [1Hosts Lite](https://github.com/badmojr/1Hosts) | extended | MPL-2.0 |
 | [EasyList / EasyPrivacy](https://easylist.to) (via [Firebog](https://firebog.net)) | extended | GPL-3.0 / CC BY-SA 3.0 |
 | [Frogeye First-Party Trackers](https://hostfiles.frogeye.fr) | extended | MIT |
