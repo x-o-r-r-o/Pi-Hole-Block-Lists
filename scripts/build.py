@@ -12,6 +12,7 @@ Only the Python standard library is used. Usage: python3 scripts/build.py
 """
 import concurrent.futures
 import datetime
+import ipaddress
 import json
 import re
 import sys
@@ -88,8 +89,11 @@ def parse(text):
     return blocked, exceptions
 
 
-def fetch(url):
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+def fetch(source):
+    """Return a source's text: a repo file ("path") or a download ("url")."""
+    if "path" in source:
+        return (ROOT / source["path"]).read_text(encoding="utf-8")
+    req = urllib.request.Request(source["url"], headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=120) as resp:
         return resp.read().decode("utf-8", errors="replace")
 
@@ -178,6 +182,69 @@ def update_readme(lists, sources):
     write_if_changed(path, text)
 
 
+def adguard_ip_rules(prefixes):
+    """Turn CIDR prefixes into AdGuard Home rules.
+
+    AdGuard Home checks every A/AAAA address in a DNS answer against its rules as a
+    string, so "|169.136.79." blocks any answer inside 169.136.79.0/24. Prefixes are
+    expanded to whole octets (IPv4) or whole 16-bit groups (IPv6) to match exactly.
+    """
+    rules = set()
+    for p in prefixes:
+        net = ipaddress.ip_network(p, strict=False)
+        if net.version == 4:
+            size = 8 * max(1, -(-net.prefixlen // 8))  # round up to a whole octet
+            for sub in (net.subnets(new_prefix=size) if size > net.prefixlen else [net]):
+                octets = str(sub.network_address).split(".")[: size // 8]
+                rules.add("|%s." % ".".join(octets) if size < 32 else "|%s^" % ".".join(octets))
+        else:
+            if net.prefixlen > 48 or net.prefixlen % 16:
+                continue  # only whole leading groups can be matched safely as text
+            groups = net.network_address.exploded.split(":")[: net.prefixlen // 16]
+            if any(int(g, 16) == 0 for g in groups):
+                continue  # zero groups may be shortened to "::" in answers
+            rules.add("|%s:" % ":".join(format(int(g, 16), "x") for g in groups))
+    # Drop rules already covered by a shorter one.
+    return sorted(r for r in rules if not any(o != r and r.startswith(o) for o in rules))
+
+
+def build_ip_lists(built):
+    """Write ips/<name>.txt (+ -ipv4/-ipv6) from the prefixes a company's own network announces."""
+    path = ROOT / "ips.json"
+    if not path.exists():
+        return []
+    problems = []
+    for name, meta in json.loads(path.read_text()).items():
+        prefixes = set()
+        try:
+            for asn in meta["asns"]:
+                data = json.loads(fetch({"url": "https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS%d" % asn}))
+                prefixes |= {p["prefix"] for p in data["data"]["prefixes"]}
+        except Exception as e:  # noqa: BLE001
+            problems.append("ips/%s: skipped, prefix lookup failed: %s" % (name, e))
+            continue
+        out = ROOT / "ips" / ("%s.txt" % name)
+        previous = existing_count(out)
+        if not prefixes or (previous and len(prefixes) < previous * (1 - MAX_SHRINK)):
+            problems.append("ips/%s: skipped, shrank from %d to %d prefixes" % (name, previous, len(prefixes)))
+            continue
+        v4 = sorted((p for p in prefixes if ":" not in p), key=lambda p: [int(x) for x in re.split(r"[./]", p)])
+        v6 = sorted(p for p in prefixes if ":" in p)
+        head = lambda fmt, n: "".join("# %s\n" % l for l in [
+            "Title: %s" % meta["title"], "Description: %s" % meta["description"], "Format: %s" % fmt,
+            "Homepage: %s" % REPO_URL, "Last modified: %s" % built, "Entries: %d" % n,
+            "Source: prefixes announced by AS%s (RIPEstat)" % ", AS".join(map(str, meta["asns"]))]) + "\n"
+        write_if_changed(out, head("CIDR, IPv4 + IPv6 (router/firewall)", len(v4) + len(v6)) + "\n".join(v4 + v6) + "\n")
+        write_if_changed(ROOT / "ips" / ("%s-ipv4.txt" % name), head("CIDR, IPv4 only", len(v4)) + "\n".join(v4) + "\n")
+        write_if_changed(ROOT / "ips" / ("%s-ipv6.txt" % name), head("CIDR, IPv6 only", len(v6)) + "\n".join(v6) + "\n")
+        rules = adguard_ip_rules(prefixes)
+        write_if_changed(ROOT / "ips" / ("%s-adguard.txt" % name),
+                         "[Adblock Plus]\n" + head("AdGuard Home rules: block DNS answers pointing into these IP ranges", len(rules)).replace("# ", "! ")
+                         + "".join(r + "\n" for r in rules))
+        print("  wrote ips/%-21s %8d IPv4 / %8d IPv6" % (name, len(v4), len(v6)))
+    return problems
+
+
 def main():
     lists = json.loads((ROOT / "lists.json").read_text())
     sources = json.loads((ROOT / "sources.json").read_text())
@@ -191,7 +258,7 @@ def main():
 
     results, failed = {}, {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
-        futures = {pool.submit(fetch, sources[s]["url"]): s for s in needed}
+        futures = {pool.submit(fetch, sources[s]): s for s in needed}
         for fut in concurrent.futures.as_completed(futures):
             sid = futures[fut]
             try:
@@ -244,6 +311,7 @@ def main():
                          + "".join("||%s^\n" % d for d in wild))
         print("  wrote %-26s %8d plain / %8d adblock" % (name, len(plain), len(wild)))
 
+    problems += build_ip_lists(built)
     update_readme(lists, sources)
     for p in problems:
         print("WARNING: " + p)
@@ -254,4 +322,5 @@ def main():
 if __name__ == "__main__":
     (ROOT / "adblock").mkdir(exist_ok=True)
     (ROOT / "hosts").mkdir(exist_ok=True)
+    (ROOT / "ips").mkdir(exist_ok=True)
     main()

@@ -24,7 +24,25 @@ The table below and the Sources table are updated automatically on every build.
 | `security` | Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone. | ~682k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/security.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/security.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/security.txt) |
 | `crypto-mining` | Hidden crypto-mining scripts and mining pools (cryptojacking). Exchanges like Coinbase/Binance are not blocked. | ~12k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/crypto-mining.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/crypto-mining.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/crypto-mining.txt) |
 | `phishing-and-scams` | Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in `security`; use this if you only want phishing/scam protection. | ~562k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/phishing-and-scams.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/phishing-and-scams.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/phishing-and-scams.txt) |
+| `live-streaming` | Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see note below). | ~2.3k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/live-streaming.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/live-streaming.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/live-streaming.txt) |
 <!-- LISTS:END -->
+
+> **About `live-streaming`:** covers Bigo Live, Likee, MICO, SUGO, Poppo, Chamet and ~45 similar paid live-stream,
+> video-chat and voice-party apps. App domains were researched from each app's Google Play listing, and their server names
+> are re-discovered every week from public certificate logs ([`apps/live-streaming.json`](apps/live-streaming.json)).
+> Some apps can also connect by IP address, which a DNS blocker can't see. For the strongest block:
+>
+> | Setup | Add these |
+> |---|---|
+> | **AdGuard Home** | `adblock/live-streaming.txt` **and** `ips/live-streaming-adguard.txt` (blocks any server name that points into Bigo's own network, even new ones) |
+> | **Pi-hole v6** | `adblock/live-streaming.txt` |
+> | **Pi-hole v5** | `live-streaming.txt` (plain) |
+> | **Router / firewall** (optional, extra) | `ips/live-streaming.txt` or `-ipv4.txt` / `-ipv6.txt` as an IP block list (pfSense, OPNsense, OpenWrt, MikroTik) |
+>
+> Only Bigo runs its own network. The other apps use shared clouds (Alibaba, Amazon, Cloudflare...), so their IPs are not
+> listed: blocking them would break normal websites. Pi-hole can't block by IP, which is why the router option exists.
+> Also block the app installs with your phone's parental controls (Google Family Link / Apple Screen Time).
+> To add an app, put its domains in `apps/live-streaming.json` and push.
 
 > **Tip for `adult`:** a block list can't stop explicit images from appearing in Google/Bing image search.
 > In AdGuard Home, also turn on **Settings → General settings → Enforce Safe Search** (and Safe Browsing).
@@ -42,6 +60,7 @@ Each list comes in three formats. Pick the one that fits your setup:
 | Adblock (`\|\|domain^`) | `adblock/` | **AdGuard Home** and **Pi-hole v6** (recommended, also blocks subdomains) |
 | Plain domains | repo root | Pi-hole v5, AdGuard Home, most other tools |
 | Hosts (`0.0.0.0 domain`) | `hosts/` | hosts files, older tools |
+| IP ranges | `ips/` | Only for `live-streaming`: `-adguard.txt` for AdGuard Home, CIDR files for routers/firewalls |
 
 URL pattern (replace `<list>` with a name from the table):
 
@@ -145,12 +164,13 @@ The previous upstream, Developer Dan's (lightswitch05) lists, was archived in 20
 | [Phishing.Database (active domains; big-company domains removed)](https://github.com/mitchellkrogza/Phishing.Database) | `phishing-and-scams` | MIT |
 | [malware-filter Phishing URL Blocklist (PhishTank, OpenPhish, PhishStats)](https://gitlab.com/malware-filter/phishing-filter) | `phishing-and-scams` | MIT / CC0 |
 | [Scam Blocklist (durablenapkin)](https://github.com/durablenapkin/scamblocklist) | `phishing-and-scams` | MIT |
+| [Live-streaming & video-chat app servers (researched app domains + Certificate Transparency discovery)](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/live-streaming.json) | `live-streaming` | this repository |
 <!-- SOURCES:END -->
 
 All credit goes to these maintainers. Each generated file lists its sources in its header.
 
 ## Adding a new list or source
 
-1. Add the source to [`sources.json`](sources.json) (`name`, `url`, `home`, `license`, and optionally `exclude` regexes).
+1. Add the source to [`sources.json`](sources.json) (`name`, `url` or a repo `path`, `home`, `license`, and optionally `exclude` regexes).
 2. Add or edit the list in [`lists.json`](lists.json) (`title`, `description`, `sources`).
 3. Push. The Action builds the new list in all three formats and adds it to the tables above automatically.

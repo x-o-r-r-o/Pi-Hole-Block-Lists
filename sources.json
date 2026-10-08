@@ -280,5 +280,11 @@
     "url": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/hosts.txt",
     "home": "https://github.com/durablenapkin/scamblocklist",
     "license": "MIT"
+  },
+  "live-streaming-apps": {
+    "name": "Live-streaming & video-chat app servers (researched app domains + Certificate Transparency discovery)",
+    "path": "data/live-streaming.txt",
+    "home": "https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/live-streaming.json",
+    "license": "this repository"
   }
 }

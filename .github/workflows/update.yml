@@ -2,7 +2,8 @@ name: Update block lists
 
 on:
   schedule:
-    - cron: "17 3 * * *" # daily, 03:17 UTC
+    - cron: "17 3 * * 0,2-6" # daily, 03:17 UTC
+    - cron: "17 3 * * 1" # Mondays: also re-discover live-streaming servers
   workflow_dispatch:
   push:
     branches: [master]
@@ -11,6 +12,8 @@ on:
       - sources.json
       - allowlist.txt
       - custom/**
+      - apps/**
+      - ips.json
       - scripts/**
       - .github/workflows/update.yml
 
@@ -24,13 +27,20 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      # Re-discover live-streaming app servers weekly (Mondays), on manual runs and when the app list changes.
+      - name: Discover live-streaming app servers
+        if: github.event_name != 'schedule' || github.event.schedule == '17 3 * * 1'
+        continue-on-error: true
+        timeout-minutes: 45
+        run: python3 scripts/discover_streaming.py
 
       - name: Build lists
         id: build
@@ -41,7 +51,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A ./*.txt adblock hosts README.md
+          git add -A ./*.txt adblock hosts ips data README.md
           # build.py leaves files untouched when only the timestamp would change.
           if git diff --cached --quiet; then
             echo "No list changes."

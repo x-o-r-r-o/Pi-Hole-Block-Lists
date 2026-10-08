@@ -1,0 +1,14 @@
+# Title: Live-streaming apps: Bigo network IP ranges
+# Description: All IP ranges announced by Bigo Technology's own network (AS10122: Bigo Live, HelloYo and other Bigo services). For router/firewall blocking, which also stops apps that bypass DNS.
+# Format: CIDR, IPv6 only
+# Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
+# Last modified: 2026-10-08 21:53 UTC
+# Entries: 6
+# Source: prefixes announced by AS10122 (RIPEstat)
+
+2404:efc0:141::/48
+2404:efc0:142::/48
+2404:efc0:143::/48
+2404:efc0:155::/48
+2404:efc0:235::/48
+2404:efc0::/32
