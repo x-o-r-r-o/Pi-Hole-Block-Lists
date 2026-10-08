@@ -3,8 +3,8 @@
 ! Description: Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-08 20:58 UTC
-! Entries: 654636
+! Last modified: 2026-10-08 21:01 UTC
+! Entries: 654635
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Threat Intelligence Feeds (Medium): https://github.com/hagezi/dns-blocklists
@@ -378190,7 +378190,6 @@
 ||map-dynasty.xyz^
 ||map-entry.herbertrutt.work^
 ||map-location.info^
-||map-log.ontoversegrid.in.net^
 ||map-naver.com^
 ||map-node.desertpract.in.net^
 ||map-support-online.com^
