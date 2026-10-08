@@ -3,8 +3,8 @@
 ! Description: Malware, phishing, scam and fake-shop domains from threat-intelligence feeds.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-08 18:50 UTC
-! Entries: 619615
+! Last modified: 2026-10-08 20:36 UTC
+! Entries: 619616
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Threat Intelligence Feeds (Medium): https://github.com/hagezi/dns-blocklists
@@ -518915,6 +518915,7 @@
 ||stamsh.xyz^
 ||stamunlocked.org^
 ||stan-capi.icu^
+||stanarcservice.com^
 ||stanby.club^
 ||stancdeaer.online^
 ||stanceapproach.xyz^

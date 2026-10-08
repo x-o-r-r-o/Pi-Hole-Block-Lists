@@ -161,6 +161,18 @@
     "home": "https://github.com/Perflyst/PiHoleBlocklist",
     "license": "MIT"
   },
+  "hagezi-gambling": {
+    "name": "HaGeZi Gambling",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/gambling-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0"
+  },
+  "stevenblack-gambling": {
+    "name": "StevenBlack Gambling extension",
+    "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-only/hosts",
+    "home": "https://github.com/StevenBlack/hosts",
+    "license": "MIT"
+  },
   "kboghdady-youtube": {
     "name": "kboghdady YouTube ads for Pi-hole (ad servers only)",
     "url": "https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt",
