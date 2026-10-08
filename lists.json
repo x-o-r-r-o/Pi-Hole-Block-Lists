@@ -48,6 +48,13 @@
       "hagezi-native-tiktok"
     ]
   },
+  "youtube-ads": {
+    "title": "YouTube Ads",
+    "description": "Google/YouTube ad-serving domains. Blocks some YouTube ads (mostly on websites, apps and smart TVs); DNS cannot block all YouTube video ads.",
+    "sources": [
+      "kboghdady-youtube"
+    ]
+  },
   "smart-tv": {
     "title": "Smart TV & Streaming Devices",
     "description": "Tracking and ads on smart TVs and streaming sticks (Samsung, LG webOS, Roku, Amazon Fire).",

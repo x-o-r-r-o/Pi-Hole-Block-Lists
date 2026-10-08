@@ -156,7 +156,12 @@ def main():
         for fut in concurrent.futures.as_completed(futures):
             sid = futures[fut]
             try:
-                results[sid] = parse(fut.result())
+                blocked, exceptions = parse(fut.result())
+                # Optional per-source "exclude" regexes drop entries that would break things.
+                excludes = [re.compile(p) for p in sources[sid].get("exclude", [])]
+                if excludes:
+                    blocked = {d for d in blocked if not any(p.search(d) for p in excludes)}
+                results[sid] = (blocked, exceptions)
                 print("  ok   %-28s %8d domains" % (sid, len(results[sid][0])))
             except Exception as e:  # noqa: BLE001 - report and keep going
                 failed[sid] = str(e)

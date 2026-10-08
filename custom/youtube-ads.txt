@@ -1,0 +1,13 @@
+# Extra domains always included in youtube-ads.txt (one per line).
+# Do NOT add *.googlevideo.com, youtubei.googleapis.com or s.youtube.com:
+# they serve videos / app data and blocking them breaks YouTube.
+ads.youtube.com
+ad.youtube.com
+partnerad.l.doubleclick.net
+pubads.g.doubleclick.net
+securepubads.g.doubleclick.net
+googleads.g.doubleclick.net
+pagead2.googlesyndication.com
+tpc.googlesyndication.com
+www.googleadservices.com
+s0.2mdn.net

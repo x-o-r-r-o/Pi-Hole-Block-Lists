@@ -1,0 +1,27 @@
+[Adblock Plus]
+! Title: YouTube Ads
+! Description: Google/YouTube ad-serving domains. Blocks some YouTube ads (mostly on websites, apps and smart TVs); DNS cannot block all YouTube video ads.
+! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
+! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
+! Last modified: 2026-10-08 19:02 UTC
+! Entries: 16
+!
+! Built from these sources (see their licenses):
+!   - kboghdady YouTube ads for Pi-hole (ad servers only): https://github.com/kboghdady/youTube_ads_4_pi-hole
+
+||11165441.fls.doubleclick.net^
+||ad.doubleclick.net^
+||ad.youtube.com^
+||ade.googlesyndication.com^
+||ads.youtube.com^
+||googleads.g.doubleclick.net^
+||googleads4.g.doubleclick.net^
+||pagead2.googlesyndication.com^
+||partnerad.l.doubleclick.net^
+||pubads.g.doubleclick.net^
+||s0.2mdn.net^
+||securepubads.g.doubleclick.net^
+||static.doubleclick.net^
+||stats.g.doubleclick.net^
+||tpc.googlesyndication.com^
+||www.googleadservices.com^

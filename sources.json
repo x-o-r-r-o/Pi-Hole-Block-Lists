@@ -161,6 +161,13 @@
     "home": "https://github.com/Perflyst/PiHoleBlocklist",
     "license": "MIT"
   },
+  "kboghdady-youtube": {
+    "name": "kboghdady YouTube ads for Pi-hole (ad servers only)",
+    "url": "https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt",
+    "home": "https://github.com/kboghdady/youTube_ads_4_pi-hole",
+    "license": "see repository",
+    "exclude": ["(^|\\.)googlevideo\\.com$"]
+  },
   "urlhaus": {
     "name": "abuse.ch URLhaus (malware hosts)",
     "url": "https://urlhaus.abuse.ch/downloads/hostfile/",
