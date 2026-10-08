@@ -25,9 +25,9 @@ Each list comes in three formats. Pick the one that fits your setup:
 URL pattern (replace `<list>` with a name from the table):
 
 ```
-Adblock: https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/main/adblock/<list>.txt
-Plain:   https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/main/<list>.txt
-Hosts:   https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/main/hosts/<list>.txt
+Adblock: https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/<list>.txt
+Plain:   https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/<list>.txt
+Hosts:   https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/<list>.txt
 ```
 
 The original root URLs (`ads-and-tracking.txt`, `ads-and-tracking-extended.txt`, `mobile-ads.txt`,
