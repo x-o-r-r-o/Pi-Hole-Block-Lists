@@ -103,6 +103,13 @@
       "dandelion-antimalware"
     ]
   },
+  "stalkerware": {
+    "title": "Stalkerware & Phone Monitoring",
+    "description": "Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one.",
+    "sources": [
+      "ut1-stalkerware"
+    ]
+  },
   "crypto-mining": {
     "title": "Crypto Mining (Cryptojacking)",
     "description": "Hidden crypto-mining scripts and mining pools (cryptojacking). Exchanges like Coinbase/Binance are not blocked.",
@@ -127,6 +134,66 @@
     "description": "Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see note below).",
     "sources": [
       "live-streaming-apps"
+    ]
+  },
+  "dating": {
+    "title": "Dating",
+    "description": "Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.",
+    "sources": [
+      "ut1-dating",
+      "dating-apps"
+    ]
+  },
+  "vpn-proxy-bypass": {
+    "title": "VPN, Proxy & DNS Bypass",
+    "description": "VPNs, web proxies and encrypted-DNS services that people use to get around blocking. Use with the other lists to stop bypassing (may block a work VPN).",
+    "sources": [
+      "hagezi-doh-vpn-proxy-bypass",
+      "ut1-vpn",
+      "ut1-doh"
+    ]
+  },
+  "piracy": {
+    "title": "Piracy",
+    "description": "Illegal movie, TV, music and software download and streaming sites (torrents, warez).",
+    "sources": [
+      "hagezi-anti-piracy",
+      "ut1-warez"
+    ]
+  },
+  "drugs": {
+    "title": "Drugs",
+    "description": "Sites selling or promoting illegal drugs.",
+    "sources": [
+      "ut1-drogue"
+    ]
+  },
+  "online-games": {
+    "title": "Online Games",
+    "description": "Online and browser gaming sites.",
+    "sources": [
+      "ut1-games"
+    ]
+  },
+  "violence-hate": {
+    "title": "Violence & Hate",
+    "description": "Violent, aggressive and hate-speech sites.",
+    "sources": [
+      "ut1-agressif"
+    ]
+  },
+  "ai-chatbots": {
+    "title": "AI Chatbots",
+    "description": "AI chatbots and writing tools (ChatGPT, Claude, Gemini, Copilot, DeepSeek, Character.AI...). Useful for schools and homework time.",
+    "sources": [
+      "ut1-ai"
+    ]
+  },
+  "safesearch-bypass": {
+    "title": "SafeSearch Bypass",
+    "description": "Search engines that can't enforce SafeSearch. Use with `adult` so explicit results can't be reached through other search engines.",
+    "sources": [
+      "hagezi-nosafesearch"
     ]
   }
 }

@@ -286,5 +286,86 @@
     "path": "data/live-streaming.txt",
     "home": "https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/live-streaming.json",
     "license": "this repository"
+  },
+  "ut1-dating": {
+    "name": "Université Toulouse Capitole: dating",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/dating/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-drogue": {
+    "name": "Université Toulouse Capitole: drugs",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/drogue/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-games": {
+    "name": "Université Toulouse Capitole: games (big-company domains removed)",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/games/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0",
+    "exclude": [
+      "(^|\\.)(apple|yahoo|live|microsoft|google|amazon|facebook)\\.(com|net)$"
+    ]
+  },
+  "ut1-agressif": {
+    "name": "Université Toulouse Capitole: violence & hate",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/agressif/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-warez": {
+    "name": "Université Toulouse Capitole: piracy (warez)",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/warez/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-vpn": {
+    "name": "Université Toulouse Capitole: VPN",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/vpn/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-doh": {
+    "name": "Université Toulouse Capitole: DNS-over-HTTPS",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/doh/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-ai": {
+    "name": "Université Toulouse Capitole: AI tools",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/ai/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-stalkerware": {
+    "name": "Université Toulouse Capitole: stalkerware & monitoring apps",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/stalkerware/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "hagezi-doh-vpn-proxy-bypass": {
+    "name": "HaGeZi DoH/VPN/Proxy Bypass",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/doh-vpn-proxy-bypass-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0"
+  },
+  "hagezi-anti-piracy": {
+    "name": "HaGeZi Anti-Piracy",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/anti.piracy-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0"
+  },
+  "hagezi-nosafesearch": {
+    "name": "HaGeZi No SafeSearch",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/nosafesearch-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0"
+  },
+  "dating-apps": {
+    "name": "Dating app servers (researched app domains + Certificate Transparency discovery)",
+    "path": "data/dating.txt",
+    "home": "https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/dating.json",
+    "license": "this repository"
   }
 }

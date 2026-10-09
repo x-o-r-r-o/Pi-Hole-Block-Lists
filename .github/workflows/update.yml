@@ -3,7 +3,7 @@ name: Update block lists
 on:
   schedule:
     - cron: "17 3 * * 0,2-6" # daily, 03:17 UTC
-    - cron: "17 3 * * 1" # Mondays: also re-discover live-streaming servers
+    - cron: "17 3 * * 1" # Mondays: also re-discover app servers
   workflow_dispatch:
   push:
     branches: [master]
@@ -35,12 +35,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Re-discover live-streaming app servers weekly (Mondays), on manual runs and when the app list changes.
-      - name: Discover live-streaming app servers
+      # Re-discover app servers weekly (Mondays), on manual runs and when the app list changes.
+      - name: Discover app servers (apps/*.json)
         if: github.event_name != 'schedule' || github.event.schedule == '17 3 * * 1'
         continue-on-error: true
-        timeout-minutes: 45
-        run: python3 scripts/discover_streaming.py
+        timeout-minutes: 60
+        run: python3 scripts/discover_apps.py
 
       - name: Build lists
         id: build
@@ -57,7 +57,16 @@ jobs:
             echo "No list changes."
           else
             git commit -m "Update block lists $(date -u '+%Y-%m-%d')"
-            git push
+            # Someone may have pushed while we were building: replay our generated files on top.
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin master && git push && break
+              git rebase --abort 2>/dev/null || true
+              sleep 10
+            done
+            if [ -n "$(git log origin/master..HEAD --oneline)" ]; then
+              echo "::error::Could not push the updated lists."
+              exit 1
+            fi
           fi
 
       - name: Report failed sources
