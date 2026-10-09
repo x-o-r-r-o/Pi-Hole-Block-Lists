@@ -3,14 +3,14 @@
 ! Description: Ads and trackers with few false positives. Start here.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-09 10:33 UTC
-! Entries: 87150
+! Last modified: 2026-10-09 21:56 UTC
+! Entries: 87149
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Multi Light: https://github.com/hagezi/dns-blocklists
 !   - StevenBlack Unified Hosts: https://github.com/StevenBlack/hosts
 !   - AdAway Default: https://adaway.org
-!   - Peter Lowe's Ad and Tracking Server List: https://pgl.yoyo.org/adservers/
+!   - Peter Lowe's Ad and Tracking Server List (t.co removed: it breaks every link on X/Twitter): https://pgl.yoyo.org/adservers/
 
 ||0-02.net^
 ||0.nextyourcontent.com^
@@ -71839,7 +71839,6 @@
 ||t.cfjump.com^
 ||t.channeladvisor.com^
 ||t.clic2buy.com^
-||t.co^
 ||t.coffeecircle.com^
 ||t.collectiveaudience.co^
 ||t.comspot.de^

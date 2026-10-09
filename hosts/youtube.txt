@@ -1,0 +1,21 @@
+# Title: YouTube
+# Description: All of YouTube, including YouTube Kids and embedded YouTube videos on other sites. For homework or bedtime.
+# Format: hosts file (0.0.0.0 domain)
+# Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
+# Last modified: 2026-10-09 21:54 UTC
+# Entries: 12
+#
+# Built from these sources (see their licenses):
+
+0.0.0.0 googlevideo.com
+0.0.0.0 youtu.be
+0.0.0.0 youtube-nocookie.com
+0.0.0.0 youtube-ui.l.google.com
+0.0.0.0 youtube.com
+0.0.0.0 youtube.googleapis.com
+0.0.0.0 youtubeeducation.com
+0.0.0.0 youtubei.googleapis.com
+0.0.0.0 youtubekids.com
+0.0.0.0 yt3.ggpht.com
+0.0.0.0 yt3.googleusercontent.com
+0.0.0.0 ytimg.com

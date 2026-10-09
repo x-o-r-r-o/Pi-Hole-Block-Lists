@@ -1,0 +1,37 @@
+# Title: Messaging Apps
+# Description: Telegram, Discord, WhatsApp, Messenger, Signal, Viber, LINE, Kik, imo, WeChat, Threema, Botim. Blocks calls and chats in these apps.
+# Format: hosts file (0.0.0.0 domain)
+# Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
+# Last modified: 2026-10-09 21:54 UTC
+# Entries: 27
+#
+# Built from these sources (see their licenses):
+#   - Messaging app servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/messaging.json
+
+0.0.0.0 botim.me
+0.0.0.0 discord.com
+0.0.0.0 discord.gg
+0.0.0.0 discord.media
+0.0.0.0 discordapp.com
+0.0.0.0 discordapp.net
+0.0.0.0 imo.im
+0.0.0.0 kik.com
+0.0.0.0 line-apps.com
+0.0.0.0 line-scdn.net
+0.0.0.0 line.me
+0.0.0.0 messenger.com
+0.0.0.0 signal.group
+0.0.0.0 signal.org
+0.0.0.0 t.me
+0.0.0.0 tdesktop.com
+0.0.0.0 telegra.ph
+0.0.0.0 telegram.me
+0.0.0.0 telegram.org
+0.0.0.0 telesco.pe
+0.0.0.0 threema.ch
+0.0.0.0 viber.com
+0.0.0.0 wa.me
+0.0.0.0 wechat.com
+0.0.0.0 whatsapp.com
+0.0.0.0 whatsapp.net
+0.0.0.0 whispersystems.org

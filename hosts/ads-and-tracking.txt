@@ -2,14 +2,14 @@
 # Description: Ads and trackers with few false positives. Start here.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 10:33 UTC
-# Entries: 122830
+# Last modified: 2026-10-09 21:56 UTC
+# Entries: 122829
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Multi Light: https://github.com/hagezi/dns-blocklists
 #   - StevenBlack Unified Hosts: https://github.com/StevenBlack/hosts
 #   - AdAway Default: https://adaway.org
-#   - Peter Lowe's Ad and Tracking Server List: https://pgl.yoyo.org/adservers/
+#   - Peter Lowe's Ad and Tracking Server List (t.co removed: it breaks every link on X/Twitter): https://pgl.yoyo.org/adservers/
 
 0.0.0.0 0-02.net
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
@@ -85734,7 +85734,6 @@
 0.0.0.0 t.channeladvisor.com
 0.0.0.0 t.chartboost.com
 0.0.0.0 t.clic2buy.com
-0.0.0.0 t.co
 0.0.0.0 t.coffeecircle.com
 0.0.0.0 t.collectiveaudience.co
 0.0.0.0 t.comspot.de

@@ -78,6 +78,18 @@
     "sources": [
       "hagezi-social",
       "stevenblack-social"
+    ],
+    "may_block": [
+      "facebook.com",
+      "fbcdn.net",
+      "instagram.com",
+      "tiktok.com",
+      "x.com",
+      "twitter.com",
+      "linkedin.com",
+      "reddit.com",
+      "discord.com",
+      "t.co"
     ]
   },
   "smart-tv": {
@@ -151,6 +163,11 @@
       "hagezi-doh-vpn-proxy-bypass",
       "ut1-vpn",
       "ut1-doh"
+    ],
+    "may_block": [
+      "dns.google",
+      "cloudflare-dns.com",
+      "nordvpn.com"
     ]
   },
   "piracy": {
@@ -170,9 +187,14 @@
   },
   "online-games": {
     "title": "Online Games",
-    "description": "Online and browser gaming sites.",
+    "description": "Online and browser gaming sites, including Steam, Roblox and Epic Games.",
     "sources": [
       "ut1-games"
+    ],
+    "may_block": [
+      "steampowered.com",
+      "roblox.com",
+      "epicgames.com"
     ]
   },
   "violence-hate": {
@@ -187,6 +209,11 @@
     "description": "AI chatbots and writing tools (ChatGPT, Claude, Gemini, Copilot, DeepSeek, Character.AI...). Useful for schools and homework time.",
     "sources": [
       "ut1-ai"
+    ],
+    "may_block": [
+      "chatgpt.com",
+      "openai.com",
+      "claude.ai"
     ]
   },
   "safesearch-bypass": {
@@ -194,6 +221,157 @@
     "description": "Search engines that can't enforce SafeSearch. Use with `adult` so explicit results can't be reached through other search engines.",
     "sources": [
       "hagezi-nosafesearch"
+    ]
+  },
+  "gaming-platforms": {
+    "title": "Gaming Platforms",
+    "description": "Roblox, Fortnite/Epic, Free Fire, PUBG/BGMI, Minecraft, Steam, Xbox, PlayStation, Nintendo, EA, Riot (League, Valorant), Battle.net, Ubisoft, Call of Duty, Clash of Clans, Mobile Legends, Genshin Impact, Candy Crush, Among Us.",
+    "sources": [
+      "gaming-platforms-apps"
+    ],
+    "may_block": [
+      "steampowered.com",
+      "roblox.com",
+      "epicgames.com"
+    ]
+  },
+  "youtube": {
+    "title": "YouTube",
+    "description": "All of YouTube, including YouTube Kids and embedded YouTube videos on other sites. For homework or bedtime.",
+    "sources": [],
+    "may_block": [
+      "youtube.com",
+      "youtu.be",
+      "googlevideo.com",
+      "ytimg.com"
+    ]
+  },
+  "video-streaming": {
+    "title": "Video Streaming",
+    "description": "Netflix, Disney+, Prime Video, Hulu, Max, Paramount+, Peacock, Shahid, OSN+, STARZPLAY, Viu, iQIYI, WeTV, Crunchyroll, Tubi, Pluto TV, JioHotstar, ZEE5, Sony LIV, Twitch, Kick, Apple TV+.",
+    "sources": [
+      "video-streaming-apps"
+    ],
+    "may_block": [
+      "netflix.com"
+    ]
+  },
+  "messaging": {
+    "title": "Messaging Apps",
+    "description": "Telegram, Discord, WhatsApp, Messenger, Signal, Viber, LINE, Kik, imo, WeChat, Threema, Botim. Blocks calls and chats in these apps.",
+    "sources": [
+      "messaging-apps"
+    ],
+    "may_block": [
+      "whatsapp.com",
+      "whatsapp.net",
+      "web.whatsapp.com",
+      "telegram.org",
+      "discord.com",
+      "signal.org",
+      "imo.im"
+    ]
+  },
+  "chat-strangers": {
+    "title": "Chat with Strangers",
+    "description": "Omegle-style random video and text chat sites (OmeTV, Chatroulette, Emerald Chat, Monkey, Uhmegle and more).",
+    "sources": []
+  },
+  "cheating": {
+    "title": "Homework Cheating",
+    "description": "Homework-answer and essay-writing sites (Chegg, Course Hero, Brainly, Gauth, Studocu, essay mills).",
+    "sources": [
+      "ut1-tricheur"
+    ],
+    "may_block": [
+      "chegg.com"
+    ]
+  },
+  "remote-control": {
+    "title": "Remote Control Tools",
+    "description": "AnyDesk, TeamViewer, RustDesk, UltraViewer, ScreenConnect and other remote-access tools that 'tech support' scammers use. Also blocks legitimate remote IT support.",
+    "sources": [
+      "ut1-remote-control"
+    ],
+    "may_block": [
+      "anydesk.com",
+      "teamviewer.com"
+    ]
+  },
+  "crypto-trading": {
+    "title": "Crypto Trading",
+    "description": "Crypto exchanges, trading platforms and wallets (Binance, Coinbase, Bybit, OKX, KuCoin, Crypto.com, MetaMask...), a common route for investment scams.",
+    "sources": [
+      "ut1-bitcoin"
+    ],
+    "may_block": [
+      "coinbase.com",
+      "binance.com"
+    ]
+  },
+  "security-strict": {
+    "title": "Security (Strict)",
+    "description": "Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.",
+    "sources": [
+      "hagezi-spam-tlds",
+      "hagezi-spam-tlds-allow",
+      "hagezi-dyndns",
+      "hagezi-hoster",
+      "ut1-residential-proxies"
+    ]
+  },
+  "file-sharing": {
+    "title": "File Sharing",
+    "description": "File-hosting and file-sharing sites (including Dropbox and many free hosts), common sources of malware and pirated files.",
+    "sources": [
+      "ut1-filehosting"
+    ],
+    "may_block": [
+      "dropbox.com"
+    ]
+  },
+  "windows-telemetry": {
+    "title": "Windows & Office Telemetry",
+    "description": "Microsoft data collection from Windows and Office. Windows Update and Office keep working.",
+    "sources": [
+      "hagezi-native-winoffice"
+    ]
+  },
+  "shopping": {
+    "title": "Shopping",
+    "description": "Online shopping sites, for limiting impulse buying.",
+    "sources": [
+      "ut1-shopping"
+    ],
+    "may_block": [
+      "amazon.com"
+    ]
+  },
+  "fake-news": {
+    "title": "Fake News",
+    "description": "Fake-news and clickbait-scam sites.",
+    "sources": [
+      "ut1-fakenews"
+    ]
+  },
+  "cults": {
+    "title": "Cults & Psychics",
+    "description": "Sites of cults, sects and psychic/fortune-telling services.",
+    "sources": [
+      "ut1-sect"
+    ]
+  },
+  "url-shorteners": {
+    "title": "URL Shorteners",
+    "description": "Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.",
+    "sources": [
+      "hagezi-urlshortener"
+    ],
+    "may_block": [
+      "bit.ly",
+      "t.co",
+      "tinyurl.com",
+      "youtu.be"
     ]
   }
 }

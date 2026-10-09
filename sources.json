@@ -132,10 +132,13 @@
     "license": "CC BY 3.0"
   },
   "peterlowe": {
-    "name": "Peter Lowe's Ad and Tracking Server List",
+    "name": "Peter Lowe's Ad and Tracking Server List (t.co removed: it breaks every link on X/Twitter)",
     "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
     "home": "https://pgl.yoyo.org/adservers/",
-    "license": "Free for non-commercial use (see home page)"
+    "license": "Free for non-commercial use (see home page)",
+    "exclude": [
+      "^t\\.co$"
+    ]
   },
   "adguard-mobile-ads": {
     "name": "AdGuard Mobile Ads filter (domain rules only)",
@@ -261,12 +264,13 @@
     "license": "CC BY-NC 4.0"
   },
   "phishing-database": {
-    "name": "Phishing.Database (active domains; big-company domains removed)",
+    "name": "Phishing.Database (active domains; big-company domains and major link shorteners removed)",
     "url": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-domains-ACTIVE.txt",
     "home": "https://github.com/mitchellkrogza/Phishing.Database",
     "license": "MIT",
     "exclude": [
-      "(^|\\.)(google|googleapis|googleusercontent|gstatic|youtube|microsoft|microsoftonline|apple|icloud|amazon|amazonaws|paypal|facebook|instagram|live|office|office365|outlook|windows|sharepoint|github|cloudflare|dropbox|adobe|yahoo|linkedin|zoom)\\.(com|net)$"
+      "(^|\\.)(google|googleapis|googleusercontent|gstatic|youtube|microsoft|microsoftonline|apple|icloud|amazon|amazonaws|paypal|facebook|instagram|live|office|office365|outlook|windows|sharepoint|github|cloudflare|dropbox|adobe|yahoo|linkedin|zoom)\\.(com|net)$",
+      "(^|\\.)(bit\\.ly|t\\.co|tinyurl\\.com|ow\\.ly|is\\.gd|cutt\\.ly|rebrand\\.ly|buff\\.ly|lnkd\\.in|youtu\\.be|amzn\\.to|t\\.ly|rb\\.gy|goo\\.gl)$"
     ]
   },
   "malware-filter-phishing": {
@@ -366,6 +370,110 @@
     "name": "Dating app servers (researched app domains + Certificate Transparency discovery)",
     "path": "data/dating.txt",
     "home": "https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/dating.json",
+    "license": "this repository"
+  },
+  "ut1-tricheur": {
+    "name": "Université Toulouse Capitole: cheating",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/tricheur/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-remote-control": {
+    "name": "Université Toulouse Capitole: remote control",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/remote-control/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-bitcoin": {
+    "name": "Université Toulouse Capitole: cryptocurrency",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/bitcoin/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-residential-proxies": {
+    "name": "Université Toulouse Capitole: residential proxies",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/residential-proxies/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-filehosting": {
+    "name": "Université Toulouse Capitole: file hosting",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/filehosting/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-shopping": {
+    "name": "Université Toulouse Capitole: shopping",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/shopping/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-fakenews": {
+    "name": "Université Toulouse Capitole: fake news",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/fakenews/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "ut1-sect": {
+    "name": "Université Toulouse Capitole: cults & sects",
+    "url": "https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/sect/domains",
+    "home": "https://dsi.ut-capitole.fr/blacklists/",
+    "license": "CC BY-SA 4.0"
+  },
+  "hagezi-spam-tlds": {
+    "name": "HaGeZi Spam TLDs",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/spam-tlds-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0",
+    "tlds": true
+  },
+  "hagezi-spam-tlds-allow": {
+    "name": "HaGeZi Spam TLDs allowlist (legitimate sites on those TLDs)",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/spam-tlds-allow-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0",
+    "exceptions": true
+  },
+  "hagezi-dyndns": {
+    "name": "HaGeZi Dynamic DNS",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/dyndns-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0"
+  },
+  "hagezi-hoster": {
+    "name": "HaGeZi Badware Hoster",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/hoster-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0"
+  },
+  "hagezi-native-winoffice": {
+    "name": "HaGeZi Native Tracker: Windows/Office",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/native.winoffice-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0"
+  },
+  "hagezi-urlshortener": {
+    "name": "HaGeZi URL Shortener",
+    "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/urlshortener-onlydomains.txt",
+    "home": "https://github.com/hagezi/dns-blocklists",
+    "license": "GPL-3.0"
+  },
+  "gaming-platforms-apps": {
+    "name": "Gaming platform servers (researched app domains + Certificate Transparency discovery)",
+    "path": "data/gaming-platforms.txt",
+    "home": "https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/gaming-platforms.json",
+    "license": "this repository"
+  },
+  "video-streaming-apps": {
+    "name": "Video streaming servers (researched app domains + Certificate Transparency discovery)",
+    "path": "data/video-streaming.txt",
+    "home": "https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/video-streaming.json",
+    "license": "this repository"
+  },
+  "messaging-apps": {
+    "name": "Messaging app servers (researched app domains + Certificate Transparency discovery)",
+    "path": "data/messaging.txt",
+    "home": "https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/messaging.json",
     "license": "this repository"
   }
 }

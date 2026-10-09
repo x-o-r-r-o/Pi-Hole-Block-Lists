@@ -1,0 +1,66 @@
+[Adblock Plus]
+! Title: Gaming Platforms
+! Description: Roblox, Fortnite/Epic, Free Fire, PUBG/BGMI, Minecraft, Steam, Xbox, PlayStation, Nintendo, EA, Riot (League, Valorant), Battle.net, Ubisoft, Call of Duty, Clash of Clans, Mobile Legends, Genshin Impact, Candy Crush, Among Us.
+! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
+! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
+! Last modified: 2026-10-09 21:54 UTC
+! Entries: 55
+!
+! Built from these sources (see their licenses):
+!   - Gaming platform servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/gaming-platforms.json
+
+||activision.com^
+||battle.net^
+||battlegroundsmobileindia.com^
+||blizzard.com^
+||brawlstars.com^
+||callofduty.com^
+||clashofclans.com^
+||demonware.net^
+||ea.com^
+||epicgames.com^
+||epicgames.dev^
+||fortnite.com^
+||freefiremobile.com^
+||garena.com^
+||hoyolab.com^
+||hoyoverse.com^
+||igamecj.com^
+||innersloth.com^
+||king.com^
+||krafton.com^
+||leagueoflegends.com^
+||mihoyo.com^
+||minecraft.net^
+||minecraftservices.com^
+||mobilelegends.com^
+||mojang.com^
+||moonton.com^
+||nintendo.com^
+||nintendo.net^
+||origin.com^
+||playstation.com^
+||playstation.net^
+||playvalorant.com^
+||pubg.com^
+||pubgmobile.com^
+||pvp.net^
+||rbxcdn.com^
+||riotcdn.net^
+||riotgames.com^
+||roblox.com^
+||sonyentertainmentnetwork.com^
+||steamcommunity.com^
+||steamcontent.com^
+||steampowered.com^
+||steamserver.net^
+||steamstatic.com^
+||steamusercontent.com^
+||supercell.com^
+||ubi.com^
+||ubisoft.com^
+||ubisoftconnect.com^
+||valvesoftware.com^
+||xbox.com^
+||xboxlive.com^
+||xboxservices.com^

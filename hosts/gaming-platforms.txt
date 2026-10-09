@@ -1,0 +1,65 @@
+# Title: Gaming Platforms
+# Description: Roblox, Fortnite/Epic, Free Fire, PUBG/BGMI, Minecraft, Steam, Xbox, PlayStation, Nintendo, EA, Riot (League, Valorant), Battle.net, Ubisoft, Call of Duty, Clash of Clans, Mobile Legends, Genshin Impact, Candy Crush, Among Us.
+# Format: hosts file (0.0.0.0 domain)
+# Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
+# Last modified: 2026-10-09 21:54 UTC
+# Entries: 55
+#
+# Built from these sources (see their licenses):
+#   - Gaming platform servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/gaming-platforms.json
+
+0.0.0.0 activision.com
+0.0.0.0 battle.net
+0.0.0.0 battlegroundsmobileindia.com
+0.0.0.0 blizzard.com
+0.0.0.0 brawlstars.com
+0.0.0.0 callofduty.com
+0.0.0.0 clashofclans.com
+0.0.0.0 demonware.net
+0.0.0.0 ea.com
+0.0.0.0 epicgames.com
+0.0.0.0 epicgames.dev
+0.0.0.0 fortnite.com
+0.0.0.0 freefiremobile.com
+0.0.0.0 garena.com
+0.0.0.0 hoyolab.com
+0.0.0.0 hoyoverse.com
+0.0.0.0 igamecj.com
+0.0.0.0 innersloth.com
+0.0.0.0 king.com
+0.0.0.0 krafton.com
+0.0.0.0 leagueoflegends.com
+0.0.0.0 mihoyo.com
+0.0.0.0 minecraft.net
+0.0.0.0 minecraftservices.com
+0.0.0.0 mobilelegends.com
+0.0.0.0 mojang.com
+0.0.0.0 moonton.com
+0.0.0.0 nintendo.com
+0.0.0.0 nintendo.net
+0.0.0.0 origin.com
+0.0.0.0 playstation.com
+0.0.0.0 playstation.net
+0.0.0.0 playvalorant.com
+0.0.0.0 pubg.com
+0.0.0.0 pubgmobile.com
+0.0.0.0 pvp.net
+0.0.0.0 rbxcdn.com
+0.0.0.0 riotcdn.net
+0.0.0.0 riotgames.com
+0.0.0.0 roblox.com
+0.0.0.0 sonyentertainmentnetwork.com
+0.0.0.0 steamcommunity.com
+0.0.0.0 steamcontent.com
+0.0.0.0 steampowered.com
+0.0.0.0 steamserver.net
+0.0.0.0 steamstatic.com
+0.0.0.0 steamusercontent.com
+0.0.0.0 supercell.com
+0.0.0.0 ubi.com
+0.0.0.0 ubisoft.com
+0.0.0.0 ubisoftconnect.com
+0.0.0.0 valvesoftware.com
+0.0.0.0 xbox.com
+0.0.0.0 xboxlive.com
+0.0.0.0 xboxservices.com

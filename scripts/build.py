@@ -249,6 +249,7 @@ def main():
     lists = json.loads((ROOT / "lists.json").read_text())
     sources = json.loads((ROOT / "sources.json").read_text())
     allow = read_local(ROOT / "allowlist.txt")
+    protected = read_local(ROOT / "protected.txt")
     built = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     needed = sorted({s for l in lists.values() for s in l["sources"]})
@@ -262,13 +263,24 @@ def main():
         for fut in concurrent.futures.as_completed(futures):
             sid = futures[fut]
             try:
-                blocked, exceptions = parse(fut.result())
+                text = fut.result()
+                blocked, exceptions = parse(text)
+                src = sources[sid]
                 # Optional per-source "exclude" regexes drop entries that would break things.
-                excludes = [re.compile(p) for p in sources[sid].get("exclude", [])]
+                excludes = [re.compile(p) for p in src.get("exclude", [])]
                 if excludes:
                     blocked = {d for d in blocked if not any(p.search(d) for p in excludes)}
-                results[sid] = (blocked, exceptions)
-                print("  ok   %-28s %8d domains" % (sid, len(results[sid][0])))
+                # "exceptions": the whole source is an allowlist for the lists that use it.
+                if src.get("exceptions"):
+                    exceptions, blocked = exceptions | blocked, set()
+                # "tlds": bare top-level domains (e.g. "zip"), only expressible as adblock rules.
+                tlds = set()
+                if src.get("tlds"):
+                    tlds = {l.strip().lower() for l in text.splitlines()
+                            if re.fullmatch(r"[a-z][a-z0-9-]{1,62}", l.strip().lower())}
+                results[sid] = (blocked, exceptions, tlds)
+                print("  ok   %-28s %8d domains %s" % (sid, len(blocked) or len(exceptions),
+                                                     "(%d TLDs)" % len(tlds) if tlds else ""))
             except Exception as e:  # noqa: BLE001 - report and keep going
                 failed[sid] = str(e)
                 print("  FAIL %-28s %s" % (sid, e))
@@ -279,12 +291,21 @@ def main():
         if missing:
             problems.append("%s: skipped, source(s) failed: %s" % (name, ", ".join(missing)))
             continue
-        domains = set()
+        domains, tlds, list_allow = set(), set(), set()
         for sid in meta["sources"]:
-            blocked, exceptions = results[sid]
+            blocked, exceptions, src_tlds = results[sid]
             domains |= blocked - exceptions
+            tlds |= src_tlds
+            if sources[sid].get("exceptions"):
+                list_allow |= exceptions
         domains |= read_local(ROOT / "custom" / ("%s.txt" % name))
-        domains -= allow
+        # Essential sites are never blocked unless this list is meant to block them.
+        guard = protected - set(meta.get("may_block", []))
+        removed = sorted(domains & guard)
+        if removed:
+            print("  note %-27s removed protected: %s" % (name, ", ".join(removed)))
+        domains -= allow | list_allow | guard
+        list_allow |= allow | guard
 
         out = ROOT / ("%s.txt" % name)
         previous = existing_count(out)
@@ -294,10 +315,13 @@ def main():
 
         meta = dict(meta, built=built, source_info=[sources[s] for s in meta["sources"]])
         plain = sorted(domains)
-        wild = sorted(collapse(domains))
-        # Allowlisted subdomains of a blocked parent need an explicit exception.
-        wild_allow = sorted(a for a in allow if any(
-            ".".join(a.split(".")[i:]) in domains for i in range(1, a.count(".") + 1)))
+        # Domains under a blocked TLD are already covered by its "||tld^" rule.
+        wild = sorted(collapse({d for d in domains if d.rsplit(".", 1)[-1] not in tlds})) + \
+            sorted(tlds)
+        # Allowlisted subdomains of a blocked parent (or TLD) need an explicit exception.
+        blocked_all = domains | tlds if tlds else domains
+        wild_allow = sorted(a for a in list_allow if any(
+            ".".join(a.split(".")[i:]) in blocked_all for i in range(1, a.count(".") + 1)))
 
         write_if_changed(out, header("#", meta, len(plain), "plain domains (Pi-hole, AdGuard Home)")
                          + "\n".join(plain) + "\n")

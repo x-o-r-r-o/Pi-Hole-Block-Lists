@@ -2,13 +2,13 @@
 # Description: Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in `security`; use this if you only want phishing/scam protection.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 16:58 UTC
-# Entries: 561606
+# Last modified: 2026-10-09 21:56 UTC
+# Entries: 561477
 #
 # Built from these sources (see their licenses):
 #   - Phishing Army Extended: https://phishing.army
 #   - HaGeZi Fake (scams, fake shops): https://github.com/hagezi/dns-blocklists
-#   - Phishing.Database (active domains; big-company domains removed): https://github.com/mitchellkrogza/Phishing.Database
+#   - Phishing.Database (active domains; big-company domains and major link shorteners removed): https://github.com/mitchellkrogza/Phishing.Database
 #   - malware-filter Phishing URL Blocklist (PhishTank, OpenPhish, PhishStats): https://gitlab.com/malware-filter/phishing-filter
 #   - Scam Blocklist (durablenapkin): https://github.com/durablenapkin/scamblocklist
 
@@ -143499,7 +143499,6 @@
 0.0.0.0 bit-wint-okoins.cc
 0.0.0.0 bit.bitenve.cc
 0.0.0.0 bit.do
-0.0.0.0 bit.ly
 0.0.0.0 bit.um.ac.id
 0.0.0.0 bit10bumex-engine.com
 0.0.0.0 bit2-urex.com
