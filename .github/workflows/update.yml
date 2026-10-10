@@ -47,11 +47,16 @@ jobs:
         continue-on-error: true
         run: python3 scripts/build.py
 
+      - name: Build YouTube browser filter lists
+        id: browser
+        continue-on-error: true
+        run: python3 scripts/build_browser.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A ./*.txt adblock hosts ips data README.md
+          git add -A ./*.txt adblock hosts ips unifi data browser install/catalog.tsv README.md
           # build.py leaves files untouched when only the timestamp would change.
           if git diff --cached --quiet; then
             echo "No list changes."
@@ -70,7 +75,7 @@ jobs:
           fi
 
       - name: Report failed sources
-        if: steps.build.outcome == 'failure'
+        if: steps.build.outcome == 'failure' || steps.browser.outcome == 'failure'
         run: |
           echo "::error::Some lists were not updated because a source failed or shrank too much. See the 'Build lists' step."
           exit 1

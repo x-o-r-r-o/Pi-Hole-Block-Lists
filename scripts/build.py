@@ -160,6 +160,16 @@ def replace_block(text, name, body):
     return pattern.sub(lambda _: "%s\n%s\n%s" % (start, body, end), text)
 
 
+def write_catalog(lists):
+    """install/catalog.tsv: the menu the device installers show (name, title, entries, description)."""
+    rows = ["name\ttitle\tentries\tdescription"]
+    for name, meta in lists.items():
+        desc = re.sub(r"[`\t\n]", "", meta["description"])
+        rows.append("%s\t%s\t%d\t%s" % (name, meta["title"], existing_count(ROOT / ("%s.txt" % name)), desc))
+    (ROOT / "install").mkdir(exist_ok=True)
+    write_if_changed(ROOT / "install" / "catalog.tsv", "\n".join(rows) + "\n")
+
+
 def update_readme(lists, sources):
     """Regenerate the Lists and Sources tables in README.md from the config."""
     path = ROOT / "README.md"
@@ -233,8 +243,10 @@ def build_ip_lists(built):
         if not prefixes or (previous and len(prefixes) < previous * (1 - MAX_SHRINK)):
             problems.append("ips/%s: skipped, shrank from %d to %d prefixes" % (name, previous, len(prefixes)))
             continue
-        v4 = sorted((p for p in prefixes if ":" not in p), key=lambda p: [int(x) for x in re.split(r"[./]", p)])
-        v6 = sorted(p for p in prefixes if ":" in p)
+        # Merge neighbouring ranges (same addresses, fewer entries for routers to load).
+        nets = [ipaddress.ip_network(p, strict=False) for p in prefixes]
+        v4 = [str(n) for n in ipaddress.collapse_addresses(n for n in nets if n.version == 4)]
+        v6 = [str(n) for n in ipaddress.collapse_addresses(n for n in nets if n.version == 6)]
         head = lambda fmt, n: "".join("# %s\n" % l for l in [
             "Title: %s" % meta["title"], "Description: %s" % meta["description"], "Format: %s" % fmt,
             "Homepage: %s" % REPO_URL, "Last modified: %s" % built, "Entries: %d" % n,
@@ -351,10 +363,13 @@ def main():
                          + header("!", meta, len(wild), "adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)")
                          + "".join("@@||%s^\n" % a for a in wild_allow)
                          + "".join("||%s^\n" % d for d in wild))
+        # UniFi's content filter: one domain per line, no comments; each entry covers its subdomains.
+        write_if_changed(ROOT / "unifi" / out.name, "".join("%s\n" % d for d in wild if "." in d))
         print("  wrote %-26s %8d plain / %8d adblock" % (name, len(plain), len(wild)))
 
     problems += build_ip_lists(built)
     update_readme(lists, sources)
+    write_catalog(lists)
     for p in problems:
         print("WARNING: " + p)
     if problems:
@@ -365,4 +380,5 @@ if __name__ == "__main__":
     (ROOT / "adblock").mkdir(exist_ok=True)
     (ROOT / "hosts").mkdir(exist_ok=True)
     (ROOT / "ips").mkdir(exist_ok=True)
+    (ROOT / "unifi").mkdir(exist_ok=True)
     main()

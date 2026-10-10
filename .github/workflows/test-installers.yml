@@ -1,0 +1,106 @@
+name: Test device installers
+
+# Runs the install/ scripts on throwaway GitHub machines: first against a test hosts file,
+# then a real install (daily update on), a lookup check, and a full removal.
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - install/**
+      - .github/workflows/test-installers.yml
+
+permissions:
+  contents: read
+
+env:
+  BLOCK_LISTS_REPO: file://${{ github.workspace }}
+  LISTS: youtube-ads,smart-tv
+  BLOCKED: ads.youtube.com
+
+jobs:
+  unix:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: ubuntu-latest, script: linux.sh }
+          - { os: ubuntu-latest, script: android.sh }
+          - { os: macos-latest, script: macos.sh }
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test file - install, update, remove
+        run: |
+          set -e
+          T="$(mktemp -d)"; printf '127.0.0.1 localhost\n10.0.0.5 myserver.lan\n' > "$T/hosts"; cp "$T/hosts" "$T/orig"
+          bash install/${{ matrix.script }} --hosts-file "$T/hosts" --lists "$LISTS,not-a-list" --yes
+          grep -qx "0.0.0.0 $BLOCKED" "$T/hosts"
+          grep -qx "LISTS=$LISTS" "$T/block-lists.conf"
+          bash install/${{ matrix.script }} --hosts-file "$T/hosts" --update --yes
+          bash install/${{ matrix.script }} --hosts-file "$T/hosts" --remove
+          diff "$T/hosts" "$T/orig"
+          echo "test-file run OK"
+
+      - name: Real install with daily update, lookup check, removal
+        if: matrix.script != 'android.sh'
+        run: |
+          set -e
+          cp /etc/hosts /tmp/hosts.orig
+          sudo -E bash install/${{ matrix.script }} --lists "$LISTS" --yes --auto-update on
+          if [ "$RUNNER_OS" = macOS ]; then
+            dscacheutil -q host -a name "$BLOCKED" | tee /tmp/lookup
+            grep -q 'ip_address: 0.0.0.0' /tmp/lookup
+            sudo launchctl print system/com.x-o-r-r-o.block-lists >/dev/null
+          else
+            getent ahostsv4 "$BLOCKED" | tee /tmp/lookup
+            grep -q '^0.0.0.0' /tmp/lookup
+            test -f /etc/cron.daily/block-lists -o -f /etc/systemd/system/block-lists.timer
+          fi
+          sudo -E bash install/${{ matrix.script }} --update --yes
+          sudo -E bash install/${{ matrix.script }} --remove
+          diff /etc/hosts /tmp/hosts.orig
+          if [ "$RUNNER_OS" = macOS ]; then ! sudo launchctl print system/com.x-o-r-r-o.block-lists >/dev/null 2>&1
+          else test ! -e /etc/cron.daily/block-lists -a ! -e /etc/systemd/system/block-lists.timer; fi
+          echo "real install OK"
+
+  windows:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shell: [powershell, pwsh]
+    defaults:
+      run:
+        shell: ${{ matrix.shell }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test file - install, update, remove
+        run: |
+          $T = Join-Path $env:RUNNER_TEMP "t"; New-Item -ItemType Directory $T | Out-Null
+          $hosts = Join-Path $T "hosts"; Set-Content $hosts "127.0.0.1 localhost`r`n10.0.0.5 myserver.lan" -Encoding ASCII
+          Copy-Item $hosts "$T\orig"
+          & .\install\windows.ps1 -HostsFile $hosts -Lists "$env:LISTS,not-a-list" -Yes
+          if (-not (Select-String -Path $hosts -Pattern "\b$([regex]::Escape($env:BLOCKED))\b" -Quiet)) { throw "domain not in hosts file" }
+          if ((Get-Content "$T\block-lists.conf") -ne "LISTS=$env:LISTS") { throw "wrong saved lists" }
+          & .\install\windows.ps1 -HostsFile $hosts -Update -Yes
+          & .\install\windows.ps1 -HostsFile $hosts -Remove
+          if (Compare-Object (Get-Content $hosts) (Get-Content "$T\orig")) { throw "hosts not restored" }
+          Write-Host "test-file run OK"
+
+      - name: Real install with daily update, lookup check, removal
+        run: |
+          $hosts = "$env:SystemRoot\System32\drivers\etc\hosts"
+          $orig = Get-Content $hosts
+          & .\install\windows.ps1 -Lists $env:LISTS -Yes -AutoUpdate on
+          $ip = [Net.Dns]::GetHostAddresses($env:BLOCKED) | ForEach-Object { $_.IPAddressToString }
+          Write-Host "$env:BLOCKED -> $ip"
+          if ($ip -notcontains "0.0.0.0") { throw "domain is not blocked" }
+          if (-not (Get-ScheduledTask -TaskName "Pi-Hole-Block-Lists daily update" -ErrorAction SilentlyContinue)) { throw "task missing" }
+          & .\install\windows.ps1 -Update -Yes
+          & .\install\windows.ps1 -Remove
+          if (Compare-Object (Get-Content $hosts) $orig) { throw "hosts not restored" }
+          if (Get-ScheduledTask -TaskName "Pi-Hole-Block-Lists daily update" -ErrorAction SilentlyContinue) { throw "task not removed" }
+          Write-Host "real install OK"

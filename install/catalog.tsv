@@ -1,0 +1,39 @@
+name	title	entries	description
+ads-and-tracking	Ads & Tracking	278902	Ads and trackers with few false positives. Start here.
+ads-and-tracking-extended	Ads & Tracking (Extended)	733331	Aggressive ad, tracker, telemetry and pop-up blocking. Blocks more, may need occasional allowlisting.
+ads-regional	Regional Ads	232946	Ad servers for non-English websites and apps: Arabic, Chinese, Russian/Ukrainian/Bulgarian, Turkish, Persian, Hebrew, Japanese, Korean, Vietnamese, Indonesian, European languages and more. Add next to ads-and-tracking or the extended list.
+mobile-ads	Mobile Ads	8332	Ad networks used inside Android and iOS apps.
+mobile-spyware	Mobile Spyware & Telemetry	3163	Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
+youtube-ads	YouTube Ads	22	Google/YouTube ad servers. Partial: DNS cannot block all YouTube video ads (see note below).
+gambling	Gambling	585559	Online casinos, sports betting, poker, lotteries and other gambling sites.
+adult	Adult Content	526075	Porn and other adult (NSFW) sites (see Safe Search tip below).
+social-media	Social Media	4450	Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked.
+smart-tv	Smart TV & Streaming Devices	1370	Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
+security	Security (Malware, Phishing, Scams)	771966	Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone.
+stalkerware	Stalkerware & Phone Monitoring	949	Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one.
+crypto-mining	Crypto Mining (Cryptojacking)	11585	Hidden crypto-mining scripts and mining pools (cryptojacking). Exchanges like Coinbase/Binance are not blocked.
+phishing-and-scams	Phishing & Scams	563819	Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in security; use this if you only want phishing/scam protection.
+live-streaming	Live-Streaming & Video-Chat Apps	2319	Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see note below).
+dating	Dating	13184	Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
+vpn-proxy-bypass	VPN, Proxy & DNS Bypass	22954	VPNs, web proxies and encrypted-DNS services that people use to get around blocking. Use with the other lists to stop bypassing (may block a work VPN).
+piracy	Piracy	55373	Illegal movie, TV, music and software download and streaming sites (torrents, warez).
+drugs	Drugs	436	Sites selling or promoting illegal drugs.
+online-games	Online Games	33697	Online and browser gaming sites, including Steam, Roblox and Epic Games.
+violence-hate	Violence & Hate	267	Violent, aggressive and hate-speech sites.
+ai-chatbots	AI Chatbots	93	AI chatbots and writing tools (ChatGPT, Claude, Gemini, Copilot, DeepSeek, Character.AI...). Useful for schools and homework time.
+safesearch-bypass	SafeSearch Bypass	203	Search engines that can't enforce SafeSearch. Use with adult so explicit results can't be reached through other search engines.
+gaming-platforms	Gaming Platforms	248	Roblox, Fortnite/Epic, Free Fire, PUBG/BGMI, Minecraft, Steam, Xbox, PlayStation, Nintendo, EA, Riot (League, Valorant), Battle.net, Ubisoft, Call of Duty, Clash of Clans, Mobile Legends, Genshin Impact, Candy Crush, Among Us.
+youtube	YouTube	177	All of YouTube, including YouTube Kids and embedded YouTube videos on other sites. For homework or bedtime.
+video-streaming	Video Streaming	235	Netflix, Disney+, Prime Video, Hulu, Max, Paramount+, Peacock, Shahid, OSN+, STARZPLAY, Viu, iQIYI, WeTV, Crunchyroll, Tubi, Pluto TV, JioHotstar, ZEE5, Sony LIV, Twitch, Kick, Apple TV+.
+messaging	Messaging Apps	93	Telegram, Discord, WhatsApp, Messenger, Signal, Viber, LINE, Kik, imo, WeChat, Threema, Botim. Blocks calls and chats in these apps.
+chat-strangers	Chat with Strangers	15	Omegle-style random video and text chat sites (OmeTV, Chatroulette, Emerald Chat, Monkey, Uhmegle and more).
+cheating	Homework Cheating	78	Homework-answer and essay-writing sites (Chegg, Course Hero, Brainly, Gauth, Studocu, essay mills).
+remote-control	Remote Control Tools	174	AnyDesk, TeamViewer, RustDesk, UltraViewer, ScreenConnect and other remote-access tools that 'tech support' scammers use. Also blocks legitimate remote IT support.
+crypto-trading	Crypto Trading	1406	Crypto exchanges, trading platforms and wallets (Binance, Coinbase, Bybit, OKX, KuCoin, Crypto.com, MetaMask...), a common route for investment scams.
+security-strict	Security (Strict)	2900	Extra protection on top of security: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
+file-sharing	File Sharing	961	File-hosting and file-sharing sites (including Dropbox and many free hosts), common sources of malware and pirated files.
+windows-telemetry	Windows & Office Telemetry	383	Microsoft data collection from Windows and Office. Windows Update and Office keep working.
+shopping	Shopping	37291	Online shopping sites, for limiting impulse buying.
+fake-news	Fake News	1118	Fake-news and clickbait-scam sites.
+cults	Cults & Psychics	143	Sites of cults, sects and psychic/fortune-telling services.
+url-shorteners	URL Shorteners	9865	Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.

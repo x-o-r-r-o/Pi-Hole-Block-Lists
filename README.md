@@ -75,7 +75,7 @@ only to specific devices, such as the kids' phones, and AdGuard Home can switch 
 > | **AdGuard Home** | `adblock/live-streaming.txt` **and** `ips/live-streaming-adguard.txt` (blocks any server name that points into Bigo's own network, even new ones) |
 > | **Pi-hole v6** | `adblock/live-streaming.txt` |
 > | **Pi-hole v5** | `live-streaming.txt` (plain) |
-> | **Router / firewall** (optional, extra) | `ips/live-streaming.txt` or `-ipv4.txt` / `-ipv6.txt` as an IP block list (pfSense, OPNsense, OpenWrt, MikroTik) |
+> | **Router / firewall** (optional, extra) | the IP lists, see [Blocking by IP address](#blocking-by-ip-address-ips) |
 >
 > Only Bigo runs its own network. The other apps use shared clouds (Alibaba, Amazon, Cloudflare...), so their IPs are not
 > listed: blocking them would break normal websites. Pi-hole can't block by IP, which is why the router option exists.
@@ -104,7 +104,8 @@ Each list comes in three formats. Pick the one that fits your setup:
 | Adblock (`\|\|domain^`) | `adblock/` | **AdGuard Home** and **Pi-hole v6** (recommended, also blocks subdomains) |
 | Plain domains | repo root | Pi-hole v5, AdGuard Home, most other tools |
 | Hosts (`0.0.0.0 domain`) | `hosts/` | hosts files, older tools |
-| IP ranges | `ips/` | Only for `live-streaming`: `-adguard.txt` for AdGuard Home, CIDR files for routers/firewalls |
+| IP ranges | `ips/` | Only for `live-streaming`: `-adguard.txt` for AdGuard Home, CIDR files for routers/firewalls ([how](#blocking-by-ip-address-ips)) |
+| UniFi | `unifi/` | UniFi Cloud Gateway content filter ([how](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr)) |
 
 URL pattern (replace `<list>` with a name from the table):
 
@@ -127,6 +128,207 @@ Then run `pihole -g` (or Tools → Update Gravity).
 **Pi-hole v5:** Group Management → Adlists → paste a plain (root) URL → Add. Then run `pihole -g`.
 
 Don't combine `ads-and-tracking` and `ads-and-tracking-extended`. The extended list already contains everything in the smaller one.
+
+## Use on one device, without Pi-hole or AdGuard Home
+
+Don't have a Pi-hole or AdGuard Home? These scripts block the lists you choose on a single computer or phone by adding
+them to the device's **hosts file** (a built-in system file that maps names to addresses). Each script shows a menu of
+every list above, lets you pick one or several, backs up your original hosts file, and can update itself every day.
+
+| System | Script | How it blocks |
+|---|---|---|
+| macOS | [`install/macos.sh`](install/macos.sh) | hosts file, daily update via launchd |
+| Windows 10/11 | [`install/windows.ps1`](install/windows.ps1) | hosts file, daily update via Task Scheduler |
+| Linux | [`install/linux.sh`](install/linux.sh) | hosts file, daily update via cron or systemd |
+| Android | [`install/android.sh`](install/android.sh) (in Termux) | rooted: hosts file. Not rooted: sets you up with the free AdAway app |
+
+**Good to know before you start**
+- Pick only what you need. The hosts file has no wildcards, so every server name is listed one by one. Big lists such as
+  `ads-and-tracking-extended`, `security` or `adult` (500k+ names each) are fine on macOS and Linux, but **Windows gets
+  slow above ~150,000 names**; the Windows script warns you. `ads-and-tracking` + `security` is a good start.
+- It blocks in every app and browser on that device, including with the browser's "Secure DNS" setting on.
+- It only protects the device you run it on. To protect every device at home at once, use Pi-hole or AdGuard Home.
+- Your original hosts file is saved once as `hosts.block-lists-backup` next to it, and `--remove` / `-Remove` takes out
+  only what the script added.
+
+### macOS
+
+1. Open **Terminal** (press ⌘ Space, type *Terminal*, press Enter).
+2. Download the script:
+   ```bash
+   curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/install/macos.sh
+   ```
+3. Run it, type your Mac password when asked:
+   ```bash
+   sudo bash macos.sh
+   ```
+4. Type the numbers of the lists you want (for example `1 12 14`) and press Enter. Press Enter alone for the
+   recommended set (Ads & Tracking + Security).
+5. Answer **y** to "Update these lists automatically every day?" if you want that.
+6. Restart your browser.
+
+Later: `sudo bash macos.sh --update` (refresh now), `sudo bash macos.sh` (choose different lists),
+`sudo bash macos.sh --remove` (undo everything), `sudo bash macos.sh --auto-update off`.
+You can also skip the menu: `sudo bash macos.sh --lists ads-and-tracking,security,adult`.
+
+### Windows 10 / 11
+
+1. Click **Start**, type *PowerShell* and open **Windows PowerShell**.
+2. Download the script to your Downloads folder:
+   ```powershell
+   cd $HOME\Downloads; Invoke-WebRequest https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/install/windows.ps1 -OutFile windows.ps1
+   ```
+3. Run it and click **Yes** when Windows asks for administrator permission:
+   ```powershell
+   powershell -ExecutionPolicy Bypass -File .\windows.ps1
+   ```
+4. A window lists every block list. Click the ones you want (hold **Ctrl** to pick several), then click **OK**.
+5. Answer **y** to the daily-update question if you want that, then restart your browser.
+
+Later (in PowerShell, in your Downloads folder): `... -File .\windows.ps1 -Update`, `-Remove`, `-AutoUpdate off`, or
+`-Lists ads-and-tracking,security` to skip the window. `-NoGui` shows a text menu instead of the window.
+
+If you choose `windows-telemetry`, Microsoft Defender may warn about a "HostsFileHijack". That's expected (the list blocks
+Microsoft's own data collection): choose *Allow on device*.
+
+### Linux
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/install/linux.sh     # or: wget https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/install/linux.sh
+sudo bash linux.sh
+```
+Then follow the same menu as on macOS. The same `--update`, `--remove`, `--lists`, `--auto-update` options work.
+
+### Android
+
+**Most phones (not rooted):** Android doesn't let apps change the hosts file, so use the free **AdAway** app, which reads
+these lists directly and blocks them through a local VPN (nothing leaves your phone):
+
+1. Install AdAway from [adaway.org](https://adaway.org) or F-Droid and open it. Choose **VPN-based ad blocking**.
+2. Go to **Hosts sources → +** and add the link of each list you want, in the `hosts/` format:
+   `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/<list>.txt` (for example `.../hosts/ads-and-tracking.txt`).
+3. Tap the update button. AdAway keeps the lists up to date.
+
+Want help picking? Install [Termux](https://termux.dev) (from F-Droid), then run the script; it shows the menu and copies
+the links for AdAway to your clipboard (with the Termux:API add-on):
+```bash
+pkg install curl; curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/install/android.sh; bash android.sh
+```
+
+**Rooted phones (Magisk):** turn on **Magisk → Settings → Systemless hosts** and reboot, then run the same Termux commands.
+The script asks for root access and writes the lists into the hosts file. Re-run `bash android.sh --update` to refresh,
+or `bash android.sh --remove` to undo.
+
+## YouTube ads in the browser
+
+DNS and hosts-file blocking can't remove YouTube video ads (see the note above). Browser ad blockers can, and these lists
+collect the YouTube rules from **uBlock Origin** and **AdGuard**, rebuilt every day:
+
+| Ad blocker | Add this list |
+|---|---|
+| uBlock Origin, Brave | `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/browser/youtube-ads-ublock.txt` |
+| AdGuard (browser extension, AdGuard for Windows / Mac / Android) | `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/browser/youtube-ads-adguard.txt` |
+
+**How to add it**
+- **uBlock Origin** (Firefox, Edge, Chrome): click the uBlock icon → ⚙ Dashboard → **Filter lists** → scroll down →
+  **Import…** → paste the link → **Apply changes**.
+- **AdGuard extension / apps**: Settings → **Filters** → **Custom** → **Add custom filter** → paste the link → tick
+  **Trusted** (needed for the rules that edit YouTube's player data) → **Subscribe**.
+- **Brave**: open `brave://settings/shields/filters` → **Add custom filter list** → paste the link.
+- **Android phones**: use Firefox for Android with uBlock Origin, or the AdGuard app (with HTTPS filtering on), and add
+  the link the same way.
+
+Honest note: uBlock Origin and AdGuard **already include these rules** in their default lists, and uBlock Origin
+ignores the most powerful kind ("trusted" rules) when they come from an added list. So with a default uBlock Origin
+setup this list adds little; it's most useful in AdGuard, Brave, or blockers where the default lists are turned off.
+For the in-video sponsor messages creators read themselves, add the free **SponsorBlock** extension.
+
+## Blocking by IP address (`ips/`)
+
+Some apps connect straight to an IP address and never ask DNS, so a DNS or hosts-file blocker can't see them. For those,
+`ips/` lists the IP ranges of **Bigo Technology's own network** (Bigo Live, HelloYo and other Bigo services), refreshed
+daily from internet routing records. Only Bigo runs its own network: the other apps use shared clouds (Alibaba, Amazon,
+Cloudflare...), so blocking their IPs would break normal websites, and they're not listed.
+
+| File | Use with |
+|---|---|
+| [`ips/live-streaming-adguard.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-adguard.txt) | AdGuard Home |
+| [`ips/live-streaming-ipv4.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv4.txt) / [`-ipv6.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv6.txt) | Routers and firewalls (pfSense, OPNsense, OpenWrt, UniFi, Windows Firewall) |
+| [`ips/live-streaming.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming.txt) | Same, IPv4 and IPv6 together |
+
+**AdGuard Home:** Filters → DNS blocklists → Add blocklist → Add a custom list → paste the `-adguard.txt` link → Save.
+AdGuard Home then refuses any DNS answer that points into Bigo's network, which also catches new Bigo server names.
+Use it together with `adblock/live-streaming.txt`. (Pi-hole can't block by IP; use your router for that.)
+
+**pfSense (pfBlockerNG):** Firewall → pfBlockerNG → **IP → IPv4** → Add → paste the `-ipv4.txt` link as the source,
+Action *Deny Both*, Update frequency *Once a day* → Save, then run **Update → Force Update**. Repeat under **IPv6** with
+`-ipv6.txt`.
+
+**OPNsense:** Firewall → **Aliases** → + → Type *URL Table (IPs)*, Content: the `live-streaming.txt` link, Refresh
+frequency 1 day → Save → Apply. Then Firewall → **Rules → LAN** → + → Action *Block*, Destination: the alias → Save →
+Apply.
+
+**OpenWrt:** with the **banIP** package, add the `-ipv4.txt` / `-ipv6.txt` links as custom feeds (see the banIP docs for
+your OpenWrt version).
+
+**Windows Firewall (one PC):** in PowerShell as administrator:
+```powershell
+$ips = (Invoke-RestMethod https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming.txt) -split "`n" | Where-Object { $_ -and $_ -notmatch '^#' }
+New-NetFirewallRule -DisplayName "Block Bigo network" -Direction Outbound -Action Block -RemoteAddress $ips
+```
+Undo with `Remove-NetFirewallRule -DisplayName "Block Bigo network"`. Re-run both lines now and then to refresh.
+
+**Linux with ufw (one PC):**
+```bash
+curl -fsSL https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv4.txt | grep -v '^#' | grep . | xargs -n1 sudo ufw deny out to
+```
+
+## UniFi Cloud Gateway (UCG Ultra / Max / Fiber, UDM, UDR)
+
+UniFi's built-in **Ad Blocking** uses Ubiquiti's own list only, and its **Content Filter** block list can't subscribe to a
+list by link (you paste or upload entries, and they don't update themselves). So there are two ways to use these lists:
+
+### Option 1 (recommended): UniFi + AdGuard Home or Pi-hole, updates automatically
+
+Run AdGuard Home or Pi-hole on any always-on device (a Raspberry Pi, a NAS, a mini PC or Docker), add the lists you want
+(see [How to add a list](#how-to-add-a-list)), then make UniFi hand it out as the DNS server:
+
+1. In the **UniFi Network** app: **Settings → Networks** → choose your network → **DHCP** (under *DHCP Service
+   Management*) → **DNS Server**: turn off *Auto* and enter the IP address of your AdGuard Home / Pi-hole → **Apply**.
+   Repeat for each network (for example a separate Kids or IoT network).
+2. Turn **off** UniFi's own **Ad Blocking** (Settings → CyberSecure → Ad Blocking, or Settings → Security on older
+   versions). While it's on, the gateway sends all DNS to itself, which skips AdGuard Home / Pi-hole.
+3. Stop devices from going around it: **Settings → Policy Engine → Firewall** (Zone-Based Firewall) → **Create Policy** →
+   Action *Block*, Source zone *Internal* (exclude the AdGuard Home / Pi-hole IP), Destination zone *External*, port
+   **53** and **853**, protocol TCP and UDP → Save. Also add the `vpn-proxy-bypass` list in AdGuard Home / Pi-hole to
+   stop encrypted DNS (DNS-over-HTTPS) and VPN apps.
+4. Turn Wi-Fi off and on (or reconnect) on each device so it picks up the new DNS server.
+
+To block Bigo by IP as well, add `ips/live-streaming-adguard.txt` in AdGuard Home (above) or use Option 2, step 4.
+
+### Option 2: UniFi only, no extra device (manual updates)
+
+The [`unifi/`](unifi/) folder has every list in the format UniFi's content filter expects: one domain per line, no
+comments, and each entry also blocks its subdomains.
+
+1. Download the file you want, e.g. [`unifi/live-streaming.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/unifi/live-streaming.txt) (right-click → Save link as).
+2. In the **UniFi Network** app: **Settings → CyberSecure → Content Filter** → select (or create) the filter for your
+   network → **Block List** → **Add Multiple** and upload the `.txt` file (or paste its contents) → **Apply**.
+3. Repeat every few weeks with a fresh download: UniFi can't update the list by itself.
+4. To block Bigo by IP: **Settings → Profiles → IP Groups** (*Port & IP Groups* / *Network Lists* on some versions) →
+   create a group named *Bigo network* and add the ranges from
+   [`ips/live-streaming-ipv4.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv4.txt) (66 entries). Then **Policy Engine → Firewall →
+   Create Policy** → Action *Block*, Source zone *Internal*, Destination zone *External* → destination: the IP group →
+   Save.
+
+Keep Option 2 to the smaller lists (for example `live-streaming`, `social-media`, `dating`, `youtube`,
+`gaming-platforms`, `messaging`, `video-streaming`, `ai-chatbots`). Lists with hundreds of thousands of entries
+(`security`, `adult`, `gambling`, the ads lists) can be rejected or slow the gateway down; use Option 1 for those.
+Devices that use their own encrypted DNS (browser "Secure DNS", Android "Private DNS") skip the gateway's filter;
+block them with Option 1, step 3. Menu names move around between UniFi Network versions; Ubiquiti's
+[Content and Domain Filtering](https://help.ui.com/hc/en-us/articles/12568927589143-Content-and-Domain-Filtering-in-UniFi)
+and [Zone-Based Firewall](https://help.ui.com/hc/en-us/articles/115003173168-Zone-Based-Firewalls-in-UniFi) help pages
+show the current ones.
 
 ## Something broke?
 
