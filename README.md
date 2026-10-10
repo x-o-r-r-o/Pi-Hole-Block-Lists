@@ -58,6 +58,7 @@ The table below and the Sources table are updated automatically on every build.
 |---|---|
 | **Everyone** | `ads-and-tracking`, `security` (+ `ads-regional` if you use non-English sites or apps) |
 | **Stronger privacy & security** | swap in `ads-and-tracking-extended`, add `security-strict`, `mobile-spyware`, `smart-tv`, `windows-telemetry`, `crypto-mining` |
+| **Smart TVs & streaming sticks** | `smart-tv`, `ads-and-tracking` ([full guide](#smart-tvs-and-streaming-sticks)) |
 | **Older or less tech-savvy relatives** | `ads-and-tracking`, `security`, `security-strict`, `phishing-and-scams`, `remote-control`, `crypto-trading` |
 | **Kids / family** | `adult`, `safesearch-bypass`, `gambling`, `dating`, `live-streaming`, `chat-strangers`, `drugs`, `violence-hate`, `vpn-proxy-bypass` (stops getting around the blocks) |
 | **Focus / school / bedtime** | `social-media`, `youtube`, `video-streaming`, `gaming-platforms`, `online-games`, `messaging`, `ai-chatbots`, `cheating` |
@@ -371,6 +372,67 @@ block them with Option 1, step 3. Menu names move around between UniFi Network v
 [Content and Domain Filtering](https://help.ui.com/hc/en-us/articles/12568927589143-Content-and-Domain-Filtering-in-UniFi)
 and [Zone-Based Firewall](https://help.ui.com/hc/en-us/articles/115003173168-Zone-Based-Firewalls-in-UniFi) help pages
 show the current ones.
+
+## Smart TVs and streaming sticks
+
+Smart TVs (Samsung, LG, Sony, TCL, Hisense, Vizio, Philips) and streaming sticks (Roku, Fire TV, Chromecast / Google TV,
+Apple TV) show ads on their home screens and report what you watch. TVs can't run our scripts, so block at the network
+and turn off tracking in the TV's own settings. Do both: the settings stop the TV collecting data, the block list stops
+what it still tries to send.
+
+### Step 1: block the TV's ad and tracking servers
+
+Add these lists to the DNS blocker your TV uses:
+- [`smart-tv`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/smart-tv.txt): tracking and ads of Samsung, LG webOS, Roku, Amazon Fire TV, Android/Google TV
+  and game consoles.
+- [`ads-and-tracking`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking.txt): ads inside free TV apps and ad-supported channels.
+- Optional: [`youtube-ads`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/youtube-ads.txt) (blocks some ad tracking; see the YouTube note above).
+
+Where to add them, from best to simplest:
+1. **AdGuard Home or Pi-hole on your network** (see [How to add a list](#how-to-add-a-list)). Every TV, stick and console
+   in the house is covered. On UniFi, follow [Option 1](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically).
+2. **Only the TV:** in the TV's network settings, change DNS from automatic to manual and enter your AdGuard Home /
+   Pi-hole IP address. The path is usually **Settings → Network (or General → Network) → Network status / Advanced /
+   IP settings → DNS → Manual**.
+3. **No blocker at home:** enter AdGuard's free public ad-blocking DNS on the TV (`94.140.14.14` and `94.140.15.15`). It
+   doesn't use these lists, but blocks common ads and trackers with no setup.
+4. **UniFi without AdGuard Home:** upload [`unifi/smart-tv.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/unifi/smart-tv.txt) as in
+   [Option 2](#option-2-unifi-only-no-extra-device-manual-updates).
+
+### Step 2: turn off viewing data and ad tracking on the TV
+
+Menu names differ between models and years; if a path doesn't match, search the TV's settings for *viewing information*,
+*privacy*, *ads* or *advertising*.
+
+| Brand | What to turn off |
+|---|---|
+| **Samsung** (Tizen) | Settings → General & Privacy (or Support) → Terms & Privacy → Privacy Choices: turn off **Viewing Information Services**, **Interest-Based Advertisement** and **Voice Recognition Services** |
+| **LG** (webOS) | Settings → All Settings → General (or Support) → System → Additional Settings: turn off **Live Plus**; under User Agreements, untick **Viewing Information** and **Interest-Based Recommendations** |
+| **Roku** (and Roku TVs from TCL, Hisense...) | Settings → Privacy → Smart TV Experience: untick **Use info from TV inputs**; Settings → Privacy → Advertising: tick **Limit ad tracking** |
+| **Google TV / Android TV** (Sony, TCL, Hisense, Philips, Chromecast) | Settings → Privacy → Ads: **Delete advertising ID** / opt out of personalised ads; Settings → Privacy → Usage & Diagnostics: **Off**. On Sony, also turn off **Samba Interactive TV** if it's listed |
+| **Amazon Fire TV** | Settings → Preferences → Privacy Settings: turn off **Device Usage Data**, **Collect App Usage Data** and **Interest-based Ads**; Settings → Preferences → **Data Monitoring**: Off |
+| **Vizio** | Settings → Admin & Privacy (or System → Reset & Admin) → **Viewing Data**: Off |
+| **Apple TV** | Settings → General → Privacy & Security: turn off **Analytics** sharing and **Personalized Ads** under Apple Advertising |
+
+### Step 3: stop devices that ignore your DNS
+
+Some devices use Google's DNS (`8.8.8.8`) directly instead of the one your router gives them; Chromecast and many
+Google TV / Android TV models do this. Block outgoing DNS (port 53 and 853) on your router for everything except your
+AdGuard Home / Pi-hole: the device then falls back to your blocker. On UniFi this is
+[Option 1, step 3](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically); on other routers look
+for firewall rules or "DNS redirect". Add the `vpn-proxy-bypass` list too, so encrypted-DNS servers are blocked as well.
+
+### What to expect
+
+- **Gone or reduced:** viewing-data reporting, home-screen ad banners and sponsored rows on many models, tracking in
+  free apps and ad-supported channels.
+- **Not blockable by DNS:** ads inside YouTube, Netflix, Prime Video, Disney+ and similar apps (they come from the same
+  servers as the shows), and ads the TV maker serves from the same servers as essential features.
+- **If something breaks** (the home screen won't load, an app or a free channel stops working, updates fail): open your
+  AdGuard Home / Pi-hole **query log**, filter by the TV's IP address, find the blocked name that appeared when it
+  broke, and allow it (in AdGuard Home / Pi-hole right away, or permanently in [`allowlist.txt`](allowlist.txt)).
+  Samsung TV Plus, LG Channels and The Roku Channel are free channels paid for by ads; they may stop playing when their
+  ad servers are blocked.
 
 ## Something broke?
 
