@@ -119,7 +119,8 @@ try {
 
     if ($Update) {
         if (-not (Test-Path $Conf)) { throw "Nothing to update: no lists installed yet. Run without -Update first." }
-        $Lists = ((Get-Content $Conf) -match "^LISTS=") -replace "^LISTS=", ""
+        # @() keeps this an array even when the file has one line (-match on a single string returns True/False).
+        $Lists = (@(Get-Content $Conf) | Where-Object { $_ -match "^LISTS=" } | Select-Object -First 1) -replace "^LISTS=", ""
     } elseif (-not $Lists) {
         $useGui = -not $NoGui -and -not $Yes -and (Get-Command Out-GridView -ErrorAction SilentlyContinue)
         if ($useGui) {
