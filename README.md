@@ -28,6 +28,10 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [OpenWrt](#openwrt)
   - [MikroTik](#mikrotik)
   - [Ubiquiti EdgeRouter](#ubiquiti-edgerouter)
+- [Synology NAS](#synology-nas)
+  - [Step 1: prepare the NAS](#step-1-prepare-the-nas)
+  - [Step 2: run AdGuard Home](#step-2-run-adguard-home)
+  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -653,6 +657,77 @@ set firewall name LAN_IN rule 20 destination group network-group live-streaming
 commit; save; exit
 ```
 Paste the file again now and then to pick up changes.
+
+## Synology NAS
+
+A Synology NAS is on all the time, which makes it a good home for **AdGuard Home** (or Pi-hole): it filters DNS for every
+device in the house, and you then add these lists to it. This uses Synology's **Container Manager** (DSM 7.2 or newer, on
+models that support it; older DSM calls it *Docker*).
+
+### Step 1: prepare the NAS
+
+1. Give the NAS a fixed IP address, so devices can always find it: **Control Panel → Network → Network Interface** →
+   select your LAN → **Edit** → **IPv4** → *Use manual configuration* (or reserve its address in your router).
+2. **Package Center** → install **Container Manager**.
+3. **File Station** → open the `docker` shared folder (Container Manager creates it; otherwise **Control Panel → Shared
+   Folder → Create** → `docker`) → create a folder `adguardhome`, and inside it `work` and `conf`.
+4. Make sure nothing else uses port 53: if the **DNS Server** package is installed, stop or uninstall it.
+
+### Step 2: run AdGuard Home
+
+1. **Container Manager → Project → Create**. Project name `adguardhome`, Path `/docker/adguardhome`, Source *Create
+   docker-compose.yml*, and paste:
+   ```yaml
+   services:
+     adguardhome:
+       image: adguard/adguardhome:latest
+       container_name: adguardhome
+       network_mode: host
+       restart: unless-stopped
+       volumes:
+         - /volume1/docker/adguardhome/work:/opt/adguardhome/work
+         - /volume1/docker/adguardhome/conf:/opt/adguardhome/conf
+   ```
+   (Change `/volume1` if your `docker` folder is on another volume.) → **Next** → **Done**. The container starts.
+2. Open `http://<NAS IP>:3000` and follow the setup wizard. Keep the **DNS server** on port **53**; for the **admin web
+   interface** keep port **3000** (DSM already uses 80, 443, 5000 and 5001). Create your username and password.
+3. Add the lists you want ([How to add a list](#how-to-add-a-list)), using the adblock links.
+
+**Pi-hole instead?** Use this compose file (Pi-hole v6; its web page is then at `http://<NAS IP>:8081/admin`):
+```yaml
+services:
+  pihole:
+    image: pihole/pihole:latest
+    container_name: pihole
+    restart: unless-stopped
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "8081:80/tcp"
+    environment:
+      TZ: "Europe/London"
+      FTLCONF_webserver_api_password: "choose-a-password"
+      FTLCONF_dns_listeningMode: "all"
+    volumes:
+      - /volume1/docker/pihole/etc-pihole:/etc/pihole
+```
+(Create the `pihole/etc-pihole` folders first, and set your own time zone and password.)
+
+### Step 3: use it for the whole home
+
+1. If the NAS firewall is on (**Control Panel → Security → Firewall**), allow **port 53 (TCP and UDP)** and the admin port
+   (3000, or 8081 for Pi-hole) from your local network.
+2. In your router's DHCP settings, set the **DNS server** to the NAS's IP address (UniFi:
+   [Option 1](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically); other routers: look for
+   *DHCP* or *LAN* settings). Then reconnect your devices.
+3. Stop devices from going around it with your router's firewall (see your router's section above) and the
+   `vpn-proxy-bypass` list.
+4. Updates: AdGuard Home / Pi-hole refresh the lists by themselves. To update AdGuard Home or Pi-hole itself, go to
+   **Container Manager → Project** → select it → **Action → Build** (it pulls the latest image).
+
+**Good to know:** while the NAS is off or restarting, DNS stops working at home unless your router has a second DNS
+server; adding a public one as backup means some lookups will skip the block lists, so a second AdGuard Home / Pi-hole
+(for example on a Raspberry Pi) is the better backup.
 
 ## Smart TVs and streaming sticks
 
