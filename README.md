@@ -32,6 +32,10 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 1: prepare the NAS](#step-1-prepare-the-nas)
   - [Step 2: run AdGuard Home](#step-2-run-adguard-home)
   - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home)
+- [Raspberry Pi](#raspberry-pi)
+  - [Step 1: set up the Pi](#step-1-set-up-the-pi)
+  - [Step 2: install AdGuard Home or Pi-hole](#step-2-install-adguard-home-or-pi-hole)
+  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-1)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -728,6 +732,69 @@ services:
 **Good to know:** while the NAS is off or restarting, DNS stops working at home unless your router has a second DNS
 server; adding a public one as backup means some lookups will skip the block lists, so a second AdGuard Home / Pi-hole
 (for example on a Raspberry Pi) is the better backup.
+
+## Raspberry Pi
+
+A Raspberry Pi is the classic way to run **Pi-hole** or **AdGuard Home** for the whole home: small, quiet and cheap to
+leave on. Any Pi 3, 4, 5 or Zero 2 W works. Use a wired network cable if you can.
+
+**How many lists fit:** a Pi with 512 MB (Zero 2 W, Pi 3) is fine with a few lists (roughly 500,000 names in total, e.g.
+`ads-and-tracking` + `mobile-ads` + `smart-tv`); a Pi 4 or 5 with 2 GB or more handles the big combinations such as
+`ads-and-tracking-extended` + `security` + `adult`.
+
+### Step 1: set up the Pi
+
+1. On your computer, install **Raspberry Pi Imager** from [raspberrypi.com/software](https://www.raspberrypi.com/software/).
+2. Choose your Pi model, **Raspberry Pi OS Lite (64-bit)** and your microSD card. When asked about OS customisation,
+   choose **Edit settings**: set a hostname (e.g. `blocker`), a username and password, your Wi-Fi if you won't use a cable,
+   and on the **Services** tab tick **Enable SSH**. Write the card, put it in the Pi and power it on.
+3. Give the Pi a fixed address: in your router, find the Pi in the list of connected devices and **reserve** its IP
+   address (often called *DHCP reservation* or *fixed IP*). Note the address, e.g. `192.168.1.2`.
+4. Log in from your computer's terminal (PowerShell on Windows): `ssh <username>@blocker.local` (or
+   `ssh <username>@192.168.1.2`), then update it:
+   ```bash
+   sudo apt update && sudo apt full-upgrade -y
+   ```
+
+### Step 2: install AdGuard Home or Pi-hole
+
+Pick one.
+
+**AdGuard Home** (official installer):
+```bash
+curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
+```
+Then open `http://192.168.1.2:3000` (your Pi's address) and follow the setup wizard: keep the DNS server on port 53,
+choose the admin web port (80 is fine on a Pi) and create your username and password. Add lists under **Filters → DNS
+blocklists** with the adblock links ([How to add a list](#how-to-add-a-list)).
+
+**Pi-hole** (official installer):
+```bash
+curl -sSL https://install.pi-hole.net | bash
+```
+Answer the questions (the defaults are fine; choose any upstream DNS provider). Set the web password with
+`sudo pihole setpassword`, then open `http://192.168.1.2/admin`. Add lists under **Lists** with the adblock links
+(Pi-hole v6) and run **Tools → Update Gravity**.
+
+### Step 3: use it for the whole home
+
+1. In your router's DHCP / LAN settings, set the **DNS server** to the Pi's address, save, and reconnect your devices
+   (turn Wi-Fi off and on). UniFi users: [Option 1](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically).
+2. **Router won't let you change DNS** (common on internet-provider routers)? Let the Pi hand out addresses instead:
+   turn **off** DHCP on the router, then turn it **on** in AdGuard Home (**Settings → DHCP settings**) or Pi-hole
+   (**Settings → DHCP**). Every device then gets the Pi as its DNS server automatically.
+3. Stop devices from going around it with your router's firewall if it can (see the [router guides](#routers-pfsense-opnsense-openwrt-mikrotik-and-edgerouter))
+   and the `vpn-proxy-bypass` list.
+4. Check it works: the dashboard should show queries and blocked requests within a few minutes.
+
+**Keeping it updated:** the lists update by themselves. Update the Pi now and then with
+`sudo apt update && sudo apt full-upgrade -y`; update AdGuard Home from its web page when it offers a new version, or
+Pi-hole with `pihole -up`.
+
+**Good to know:** if the Pi is off, DNS stops working at home unless there's a second DNS server. A public DNS server as
+backup would let some lookups skip the lists, so a second Pi (or the [Synology NAS](#synology-nas) setup) is the better
+backup. To use the same blocking away from home on phones, see [iPhone and iPad](#iphone-and-ipad) and
+[Android](#android).
 
 ## Smart TVs and streaming sticks
 
