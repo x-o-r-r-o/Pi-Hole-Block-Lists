@@ -2,8 +2,8 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 05:47 UTC
-# Entries: 13288
+# Last modified: 2026-10-10 06:28 UTC
+# Entries: 13035
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
@@ -512,7 +512,6 @@
 0.0.0.0 acul-dev.cloud.bumble.com
 0.0.0.0 acul-stage.cloud.bumble.com
 0.0.0.0 acutedating.com
-0.0.0.0 ad.badoo.com
 0.0.0.0 adam-and-eva.com
 0.0.0.0 adameve.com.au
 0.0.0.0 adammeeteve.com
@@ -775,7 +774,6 @@
 0.0.0.0 affinitilove.com
 0.0.0.0 affinity-apps.com
 0.0.0.0 affinitysingles.com
-0.0.0.0 affinitystatic.zcdn1.zoosk.com
 0.0.0.0 affiny.co.uk
 0.0.0.0 affiny.com
 0.0.0.0 affiny.fr
@@ -910,7 +908,6 @@
 0.0.0.0 air.pof.com
 0.0.0.0 airlinedatingservice.com
 0.0.0.0 airlinedatingsite.com
-0.0.0.0 airupdate.zcdn1.zoosk.com
 0.0.0.0 aisexdates.com
 0.0.0.0 aisexflirt.com
 0.0.0.0 aisle.co
@@ -1052,9 +1049,7 @@
 0.0.0.0 amaxhosa.co.za
 0.0.0.0 amazingasianz.com
 0.0.0.0 amazingdating.org
-0.0.0.0 amb.badoo.com
 0.0.0.0 amb.bumble.com
-0.0.0.0 ambassador.badoo.com
 0.0.0.0 ambassador.bumble.com
 0.0.0.0 ambiancematchmaking.com
 0.0.0.0 ame-soeur.com
@@ -1166,7 +1161,6 @@
 0.0.0.0 androgynousdating.com
 0.0.0.0 androgynousdating.com.au
 0.0.0.0 android.webview.tantanapp.com
-0.0.0.0 android.zoosk.com
 0.0.0.0 anecdating.com
 0.0.0.0 angel.com.ua
 0.0.0.0 angelflirt.de
@@ -1206,7 +1200,6 @@
 0.0.0.0 annoncesderencontres.be
 0.0.0.0 annonymousdating.com
 0.0.0.0 annorlundating.com
-0.0.0.0 announcementstatic.zoosk.com
 0.0.0.0 annuaire-rencontre.eu
 0.0.0.0 annuaire-rencontres.info
 0.0.0.0 annunci.studenti.it
@@ -1248,7 +1241,6 @@
 0.0.0.0 aphroditeumm.com
 0.0.0.0 api-3cdad91c-1e0d-4a0d-bbee-9671988bf9e9.sendbird.com
 0.0.0.0 api-9fa47461-fd49-4da3-bfcf-8f921b5c5777.sendbird.com
-0.0.0.0 api-android.zoosk.com
 0.0.0.0 api-bi.happn.com
 0.0.0.0 api-cf.as1.gotinder.com
 0.0.0.0 api-dev.cloud.bumble.com
@@ -1256,8 +1248,6 @@
 0.0.0.0 api-gateway.tagged.com
 0.0.0.0 api-gw.happn.fr
 0.0.0.0 api-internal.meetme.com
-0.0.0.0 api-ipad.zoosk.com
-0.0.0.0 api-iphone.zoosk.com
 0.0.0.0 api-legacy.meetme.com
 0.0.0.0 api-preprod-gw.happn.com
 0.0.0.0 api-preprod.happn.com
@@ -1285,7 +1275,6 @@
 0.0.0.0 api.usw2.pd.aws.pof.com
 0.0.0.0 api.usw2.qa.aws.pof.com
 0.0.0.0 api.van1.pd.pof.com
-0.0.0.0 api.zoosk.com
 0.0.0.0 apibaking.coffeemeetsbagel.com
 0.0.0.0 apistg.pof.com
 0.0.0.0 apiteamn.com
@@ -1296,7 +1285,6 @@
 0.0.0.0 aplusingles.com
 0.0.0.0 apluslesbiandating.com
 0.0.0.0 apnacollege.in
-0.0.0.0 apocalypse.zoosk.com
 0.0.0.0 apostasingles.com
 0.0.0.0 app-active-flirting.com
 0.0.0.0 app.40s.co.za
@@ -1573,7 +1561,6 @@
 0.0.0.0 badoo.app
 0.0.0.0 badoo.com
 0.0.0.0 badoocdn.com
-0.0.0.0 badootech.badoo.com
 0.0.0.0 baerendienst.de
 0.0.0.0 bahamasdatingonline.com
 0.0.0.0 baihe.com
@@ -2649,7 +2636,6 @@
 0.0.0.0 blog.ads.pof.com
 0.0.0.0 blog.aisle.co
 0.0.0.0 blog.bumble.com
-0.0.0.0 blog.coffeemeetsbagel.com
 0.0.0.0 blog.dilmil.co
 0.0.0.0 blog.gotinder.com
 0.0.0.0 blog.grindr.com
@@ -2724,7 +2710,6 @@
 0.0.0.0 brand.bumble.com
 0.0.0.0 brand.feeld.co
 0.0.0.0 brand.hinge.co
-0.0.0.0 brand.tinder.com
 0.0.0.0 brands.lovoo.com
 0.0.0.0 bravodate.com
 0.0.0.0 braze-pn.pof.com
@@ -2766,7 +2751,6 @@
 0.0.0.0 bumblexternalstatic.com
 0.0.0.0 bunny-net.com
 0.0.0.0 burning-passions.com
-0.0.0.0 burrit-oh.zoosk.com
 0.0.0.0 buscar-pareja.net
 0.0.0.0 buscarpareja.biz
 0.0.0.0 busco-hombre.uol.vivavisos.com
@@ -2833,10 +2817,6 @@
 0.0.0.0 canadianpassions.com
 0.0.0.0 canadiansingles.com.au
 0.0.0.0 canadrance.free.fr
-0.0.0.0 canary-android.zoosk.com
-0.0.0.0 canary-ipad.zoosk.com
-0.0.0.0 canary-iphone.zoosk.com
-0.0.0.0 canary.api.jaumo.com
 0.0.0.0 candyflirt.com
 0.0.0.0 candypassions.com
 0.0.0.0 canlialem.com
@@ -2907,7 +2887,6 @@
 0.0.0.0 cb.tagged.com
 0.0.0.0 cb2.tagged.com
 0.0.0.0 ccelibat.com
-0.0.0.0 ccm1.corp.badoo.com
 0.0.0.0 ccpa.grindr.com
 0.0.0.0 cd-tt-nps01.immomo.com
 0.0.0.0 cd-tt-nps02.immomo.com
@@ -2981,7 +2960,6 @@
 0.0.0.0 chat-r9.eharmony.com
 0.0.0.0 chat-solution.com
 0.0.0.0 chat.coffeemeetsbagel.com
-0.0.0.0 chat.corp.badoo.com
 0.0.0.0 chat.eharmony.com
 0.0.0.0 chat.hu
 0.0.0.0 chat.ru
@@ -3312,7 +3290,6 @@
 0.0.0.0 coredating.app
 0.0.0.0 corp.badoo.com
 0.0.0.0 corp.eharmony.com
-0.0.0.0 corp.zoosk.com
 0.0.0.0 corpuschristidating.com
 0.0.0.0 corpuschristimatchmaker.com
 0.0.0.0 correspondance-intime.com
@@ -3395,7 +3372,6 @@
 0.0.0.0 cumplegenial.com
 0.0.0.0 cumulus.pof.com
 0.0.0.0 cuoregemello.it
-0.0.0.0 cup1.corp.badoo.com
 0.0.0.0 cupiboom.com
 0.0.0.0 cupid-match.com
 0.0.0.0 cupid-today.com
@@ -3739,7 +3715,6 @@
 0.0.0.0 dating.webdex.nl
 0.0.0.0 dating.webfinder.ru
 0.0.0.0 dating.yeahh.com
-0.0.0.0 dating.zoosk.com
 0.0.0.0 dating24.ie
 0.0.0.0 dating4bisexuals.com
 0.0.0.0 dating4disabledgays.com
@@ -4364,12 +4339,7 @@
 0.0.0.0 dev.v2.badoocdn.com
 0.0.0.0 dev.zoosk.com
 0.0.0.0 dev1.muzz.com
-0.0.0.0 dev1.sfo2.zoosk.com
 0.0.0.0 dev1.trulymadly.com
-0.0.0.0 dev2.sfo2.zoosk.com
-0.0.0.0 dev3.sfo2.zoosk.com
-0.0.0.0 dev4.sfo2.zoosk.com
-0.0.0.0 dev5.sfo2.zoosk.com
 0.0.0.0 devcdn.muzz.com
 0.0.0.0 develop.raya.app
 0.0.0.0 development-homepage.elitesingles.com
@@ -4923,7 +4893,6 @@
 0.0.0.0 ethiosingles.app
 0.0.0.0 etre-deux.com
 0.0.0.0 etre-ensemble.com
-0.0.0.0 eu-turn.badoo.com
 0.0.0.0 eu.auth-dev.bumble.com
 0.0.0.0 eu.auth-dev.cloud.bumble.com
 0.0.0.0 eu.auth-stage.bumble.com
@@ -5160,19 +5129,10 @@
 0.0.0.0 extremesite.com
 0.0.0.0 ezstatic.com
 0.0.0.0 f-pals.com
-0.0.0.0 f.corp.zoosk.com
 0.0.0.0 f.match.com
 0.0.0.0 fabflirts.app
 0.0.0.0 fablondon.co.uk
 0.0.0.0 face-fest.com
-0.0.0.0 facebook.zoosk.com
-0.0.0.0 facebook2.zoosk.com
-0.0.0.0 facebook3.zoosk.com
-0.0.0.0 facebook4.zoosk.com
-0.0.0.0 facebook5.zoosk.com
-0.0.0.0 facebook6.zoosk.com
-0.0.0.0 facebook7.zoosk.com
-0.0.0.0 facebook8.zoosk.com
 0.0.0.0 faceflow.com
 0.0.0.0 facelink.ru
 0.0.0.0 faceofsiberia.com
@@ -5485,14 +5445,6 @@
 0.0.0.0 flyrts.com
 0.0.0.0 fn.eu.www2.zoosk.com
 0.0.0.0 fn.us.www2.zoosk.com
-0.0.0.0 fnetwork1.zoosk.com
-0.0.0.0 fnetwork2.zoosk.com
-0.0.0.0 fnetwork3.zoosk.com
-0.0.0.0 fnetwork4.zoosk.com
-0.0.0.0 fnetwork5.zoosk.com
-0.0.0.0 fnetwork6.zoosk.com
-0.0.0.0 fnetwork7.zoosk.com
-0.0.0.0 fnetwork8.zoosk.com
 0.0.0.0 fobdating.net
 0.0.0.0 folio.match.com
 0.0.0.0 folkd.com
@@ -5666,13 +5618,11 @@
 0.0.0.0 furfling.com
 0.0.0.0 fusion101.co.uk
 0.0.0.0 fussdating.at
-0.0.0.0 future.coffeemeetsbagel.com
 0.0.0.0 fuzgaming.com
 0.0.0.0 fw.gotinder.com
 0.0.0.0 fw1.gotinder.com
 0.0.0.0 fw2.gotinder.com
 0.0.0.0 fyradating.com
-0.0.0.0 g.zoosk.com
 0.0.0.0 g3.match.com
 0.0.0.0 g4me.com.ar
 0.0.0.0 gadating.com
@@ -6439,7 +6389,6 @@
 0.0.0.0 hotdatinglist.com
 0.0.0.0 hotdatingsearch.com
 0.0.0.0 hotie.pics
-0.0.0.0 hotline.badoo.com
 0.0.0.0 hotlinksdating.app
 0.0.0.0 hotmessenger.fr
 0.0.0.0 hotornot.de
@@ -6483,8 +6432,6 @@
 0.0.0.0 iadating.com
 0.0.0.0 iamanywhere.match.com
 0.0.0.0 ibjapan.com
-0.0.0.0 icdnaws.zoosk.com
-0.0.0.0 icdnawssjc.zoosk.com
 0.0.0.0 ice-love-crystale.yourme.net
 0.0.0.0 icebergdating.app
 0.0.0.0 icebreaker-dating.app
@@ -6545,7 +6492,6 @@
 0.0.0.0 iluzi0n.free.fr
 0.0.0.0 im.qq.com
 0.0.0.0 ima-dating.com
-0.0.0.0 image-service-gcp.coffeemeetsbagel.com
 0.0.0.0 images-ssl.gotinder.com
 0.0.0.0 images.gotinder.com
 0.0.0.0 images.hinge.co
@@ -6649,7 +6595,6 @@
 0.0.0.0 interfriendship.de
 0.0.0.0 interislandcasino.com
 0.0.0.0 interkontakt.net
-0.0.0.0 internal.cup1.corp.badoo.com
 0.0.0.0 internal.zoosk.com
 0.0.0.0 international-dating.info
 0.0.0.0 international.blued.com
@@ -6701,7 +6646,6 @@
 0.0.0.0 investors.grindr.com
 0.0.0.0 invite.desktopdating.net
 0.0.0.0 invite.tantanapp.com
-0.0.0.0 invite.tinder.com
 0.0.0.0 invoice.trulymadly.com
 0.0.0.0 ios.webview.tantanapp.com
 0.0.0.0 ioscopo.com
@@ -6715,8 +6659,6 @@
 0.0.0.0 ipa1.office.okcupid.com
 0.0.0.0 ipa2.office.okcupid.com
 0.0.0.0 ipa3.office.okcupid.com
-0.0.0.0 ipad.zoosk.com
-0.0.0.0 iphone.zoosk.com
 0.0.0.0 ir.bumble.com
 0.0.0.0 ir.immomo.com
 0.0.0.0 iraniandating.com.au
@@ -7108,7 +7050,6 @@
 0.0.0.0 la-rencontre.info
 0.0.0.0 labelle-quarantaine.fr
 0.0.0.0 labporno.top
-0.0.0.0 labs.baking.coffeemeetsbagel.com
 0.0.0.0 lacasata.ro
 0.0.0.0 ladadate.com
 0.0.0.0 ladating.com
@@ -7195,10 +7136,7 @@
 0.0.0.0 laviea2.fr
 0.0.0.0 lchaimsingles.org
 0.0.0.0 ldap-master.internal.zoosk.com
-0.0.0.0 ldap-master2.internal.zoosk.com
-0.0.0.0 ldap.internal.zoosk.com
 0.0.0.0 ldap.office.okcupid.com
-0.0.0.0 ldap2.internal.zoosk.com
 0.0.0.0 ldappy.okcupid.com
 0.0.0.0 ldaptest.sec.ue1.aws.okcupid.com
 0.0.0.0 ldate.com
@@ -7304,11 +7242,9 @@
 0.0.0.0 links.bumble.com
 0.0.0.0 links.feeld.co
 0.0.0.0 links.gayborhood.grindr.com
-0.0.0.0 links.messaging.zoosk.com
 0.0.0.0 links.muzz.com
 0.0.0.0 links.official.blued.com
 0.0.0.0 links.weareher.com
-0.0.0.0 links.zoosk.com
 0.0.0.0 linkstore.co.jp
 0.0.0.0 linkylove.net
 0.0.0.0 lipsticklesbians.net
@@ -7317,7 +7253,6 @@
 0.0.0.0 list-manage.com
 0.0.0.0 list-vk-24.com
 0.0.0.0 listcrawler.us.org
-0.0.0.0 lite.tinder.com
 0.0.0.0 littlerockmatchmaking.com
 0.0.0.0 live-439.com
 0.0.0.0 live-api.immomo.com
@@ -7384,7 +7319,6 @@
 0.0.0.0 login.stg.elitesingles.com
 0.0.0.0 login.test.christianmingle.com
 0.0.0.0 login.test.elitesingles.com
-0.0.0.0 login.zoosk.com
 0.0.0.0 logon2dating.com
 0.0.0.0 loisir-chat.exolia.net
 0.0.0.0 loisirados.com
@@ -7431,7 +7365,6 @@
 0.0.0.0 love-dating.me
 0.0.0.0 love-dev.christianmingle.com
 0.0.0.0 love-dev.elitesingles.com
-0.0.0.0 love-dev.zoosk.com
 0.0.0.0 love-discount.net
 0.0.0.0 love-exchange.co.uk
 0.0.0.0 love-for-ever.com
@@ -7506,7 +7439,6 @@
 0.0.0.0 love.xatvs.com
 0.0.0.0 love.xoxma.com.ua
 0.0.0.0 love.zhzh.info
-0.0.0.0 love.zoosk.com
 0.0.0.0 love2.jdate.com
 0.0.0.0 love2128.com
 0.0.0.0 love24.hu
@@ -7723,7 +7655,6 @@
 0.0.0.0 mail.lovoo.com
 0.0.0.0 mail.mamba.ru
 0.0.0.0 mail.parship.com
-0.0.0.0 mail.tinder.com
 0.0.0.0 mail.zoosk.com
 0.0.0.0 mailer-test.lovoo.com
 0.0.0.0 mailer.callback.meetme.com
@@ -7773,7 +7704,6 @@
 0.0.0.0 marihuanadating.com
 0.0.0.0 marketing-images.gotinder.com
 0.0.0.0 marketing.quickfire.gotinder.com
-0.0.0.0 marketingstatic.zcdn1.zoosk.com
 0.0.0.0 marmarafit.com
 0.0.0.0 marocichat.com
 0.0.0.0 marriage-4u.com
@@ -8446,7 +8376,6 @@
 0.0.0.0 media.elitesingles.com
 0.0.0.0 media.match.com
 0.0.0.0 media.pof.com
-0.0.0.0 media1.zoosk.com
 0.0.0.0 mediakit.lnu.edu.ua
 0.0.0.0 medicalpassions.com
 0.0.0.0 meebo.com
@@ -8826,7 +8755,6 @@
 0.0.0.0 mlkp.taimi.com
 0.0.0.0 mlove.ru
 0.0.0.0 mm.christianmingle.com
-0.0.0.0 mm.corp.badoo.com
 0.0.0.0 mm.elitesingles.com
 0.0.0.0 mm.jdate.com
 0.0.0.0 mm.zoosk.com
@@ -8868,7 +8796,6 @@
 0.0.0.0 mobile-platform-dev.cloud.bumble.com
 0.0.0.0 mobile-platform-predev.cloud.bumble.com
 0.0.0.0 mobile.match.com
-0.0.0.0 mobile.zoosk.com
 0.0.0.0 mobiledating.co.cc
 0.0.0.0 mobileflirting.com
 0.0.0.0 mobilematchmakers.com
@@ -8928,8 +8855,6 @@
 0.0.0.0 msdumps.pof.com
 0.0.0.0 mshot.badoo.com
 0.0.0.0 mshot.bumble.com
-0.0.0.0 mshoteu.badoo.com
-0.0.0.0 mshotus.badoo.com
 0.0.0.0 msn.match.com
 0.0.0.0 msnjp.marriage.match.com
 0.0.0.0 mstatic.eharmony.com
@@ -9130,7 +9055,6 @@
 0.0.0.0 nextdate.meetme.com
 0.0.0.0 nextdoor.eu
 0.0.0.0 nextsocialsoft.com
-0.0.0.0 nexus.sfo2.zoosk.com
 0.0.0.0 neznakomka.h18.ru
 0.0.0.0 nhdating.com
 0.0.0.0 niamodels.la-grosse-url.com
@@ -9190,7 +9114,6 @@
 0.0.0.0 notifications.elitesingles.com
 0.0.0.0 notifications.jdate.com
 0.0.0.0 notifications.zoosk.com
-0.0.0.0 notify.zoosk.com
 0.0.0.0 nottinghillintroductions.com
 0.0.0.0 nourdating.app
 0.0.0.0 nouslib.com
@@ -9422,7 +9345,6 @@
 0.0.0.0 ovtest.jaumo.com
 0.0.0.0 owndating.ru
 0.0.0.0 owned.meetme.com
-0.0.0.0 ox-d.zoosk.com
 0.0.0.0 ox-reseaux.fr
 0.0.0.0 ox-tchat.net
 0.0.0.0 ozcountrysingles.com.au
@@ -9515,7 +9437,6 @@
 0.0.0.0 pay.se.ourtime.com
 0.0.0.0 pay.tinder.com
 0.0.0.0 pay.uk.match.com
-0.0.0.0 pay.zoosk.com
 0.0.0.0 payfront.europe.match.com
 0.0.0.0 paymainstage.tinder.com
 0.0.0.0 payment-flow-europe-west4.payment-processing.cloud.bumble.com
@@ -9602,18 +9523,11 @@
 0.0.0.0 photo-analysis-preprod.happn.com
 0.0.0.0 photo-analysis.happn.com
 0.0.0.0 photo-faces.com
-0.0.0.0 photo.zcdn1.zoosk.com
-0.0.0.0 photo.zcdn2.zoosk.com
-0.0.0.0 photo.zcdn3.zoosk.com
-0.0.0.0 photo22.zcdn1.zoosk.com
-0.0.0.0 photo23.zcdn1.zoosk.com
 0.0.0.0 photodating.ai
 0.0.0.0 photofeeler.com
 0.0.0.0 photographypassions.com
 0.0.0.0 photos.ulteem.com
 0.0.0.0 photosfortinder.com
-0.0.0.0 photov3.zoosk.com
-0.0.0.0 photov31.zoosk.com
 0.0.0.0 php.crack.cd
 0.0.0.0 phponlinedatingsoftware.com
 0.0.0.0 pic.elitesingles.com
@@ -9719,7 +9633,6 @@
 0.0.0.0 polishdating.org
 0.0.0.0 polishhearts.com
 0.0.0.0 polishsingles.com.au
-0.0.0.0 polls.tinder.com
 0.0.0.0 polovinka.org
 0.0.0.0 polska-erotyka.org
 0.0.0.0 polyamorosos.com
@@ -9819,7 +9732,6 @@
 0.0.0.0 prophet4you.com
 0.0.0.0 protect.christianmingle.com
 0.0.0.0 protect.elitesingles.com
-0.0.0.0 protect.zoosk.com
 0.0.0.0 protohive-dev.cloud.bumble.com
 0.0.0.0 protohive.cloud.bumble.com
 0.0.0.0 providencematchmaking.com
@@ -9840,7 +9752,6 @@
 0.0.0.0 pure-app.com
 0.0.0.0 pure.app
 0.0.0.0 purematrimony.com
-0.0.0.0 push.badoo.com
 0.0.0.0 pussydating.ru
 0.0.0.0 pwa.trulymadly.com
 0.0.0.0 pyometrack.com
@@ -10468,10 +10379,6 @@
 0.0.0.0 report-import.cloud.bumble.com
 0.0.0.0 report-staging.cloud.bumble.com
 0.0.0.0 report.cloud.bumble.com
-0.0.0.0 reporting-android.zoosk.com
-0.0.0.0 reporting-ipad.zoosk.com
-0.0.0.0 reporting-iphone.zoosk.com
-0.0.0.0 reporting.zoosk.com
 0.0.0.0 reports.aisle.co
 0.0.0.0 reports.gotinder.com
 0.0.0.0 republicanmeet.com
@@ -11114,7 +11021,6 @@
 0.0.0.0 site-rencontre-france.com
 0.0.0.0 site-rencontres.info
 0.0.0.0 site-rencontres.org
-0.0.0.0 site.coffeemeetsbagel.com
 0.0.0.0 sitedating2010.info
 0.0.0.0 sitedating2012.info
 0.0.0.0 sitedating2013.ru
@@ -11125,7 +11031,6 @@
 0.0.0.0 sixminutedates.com
 0.0.0.0 sixtyplussingles.com
 0.0.0.0 sizedating.app
-0.0.0.0 sjc.zoosk.com
 0.0.0.0 skandinaviadating.com
 0.0.0.0 skiingpassions.com
 0.0.0.0 skindeepdating.app
@@ -11366,12 +11271,8 @@
 0.0.0.0 static-easyflirt.com
 0.0.0.0 static.eharmony.com
 0.0.0.0 static.elitesingles.com
-0.0.0.0 static.zcdn1.zoosk.com
-0.0.0.0 static.zcdn2.zoosk.com
-0.0.0.0 static.zcdn3.zoosk.com
 0.0.0.0 static1.eharmony.com
 0.0.0.0 static2.eharmony.com
-0.0.0.0 static3.zoosk.com
 0.0.0.0 stats.aisle.co
 0.0.0.0 stats01.pof.com
 0.0.0.0 status-test.feeld.co
@@ -11397,7 +11298,6 @@
 0.0.0.0 stlouissingles.com
 0.0.0.0 stocktonmatchmaker.com
 0.0.0.0 store.pof.com
-0.0.0.0 store.zoosk.com
 0.0.0.0 storefront.ad.badoo.com
 0.0.0.0 stories2.lovoo.com
 0.0.0.0 storybook.okcupid.com
@@ -11495,7 +11395,6 @@
 0.0.0.0 swingersparadise.se
 0.0.0.0 swingfreunde.de
 0.0.0.0 swipedright.gotinder.com
-0.0.0.0 swipelife.tinder.com
 0.0.0.0 swipelover.com
 0.0.0.0 swipenight.tinder.com
 0.0.0.0 swissflirt.ch
@@ -11525,7 +11424,6 @@
 0.0.0.0 t.cloud.bumble.com
 0.0.0.0 t.eharmony.com
 0.0.0.0 t.yesware.com
-0.0.0.0 t.zoosk.com
 0.0.0.0 t2.trulymadly.com
 0.0.0.0 tableau.gotinder.com
 0.0.0.0 tabor.ru
@@ -11618,7 +11516,6 @@
 0.0.0.0 temp.trulymadly.com
 0.0.0.0 tempematchmaker.com
 0.0.0.0 tempesingles.com
-0.0.0.0 templefix.corp.badoo.com
 0.0.0.0 tempodates.at
 0.0.0.0 temptasian.com
 0.0.0.0 temptationsdating.com
@@ -11730,9 +11627,6 @@
 0.0.0.0 theluckydate.com
 0.0.0.0 thematchmakerofmaine.com
 0.0.0.0 thematureconnection.com
-0.0.0.0 themis.zcdn1.zoosk.com
-0.0.0.0 themis.zcdn2.zoosk.com
-0.0.0.0 themis.zoosk.com
 0.0.0.0 themodernman.com
 0.0.0.0 themoscowcity.ru
 0.0.0.0 thenewrelationships.com
@@ -11968,7 +11862,6 @@
 0.0.0.0 ub-lp.bumble.com
 0.0.0.0 ubsexxy.com
 0.0.0.0 uchat.de
-0.0.0.0 ucs1.corp.badoo.com
 0.0.0.0 udate.com
 0.0.0.0 udatex.co.uk
 0.0.0.0 udeworld.com
@@ -12044,7 +11937,6 @@
 0.0.0.0 upforit.com
 0.0.0.0 upgrade-test.gotinder.com
 0.0.0.0 upload-img.quackquack.in
-0.0.0.0 upload.zoosk.com
 0.0.0.0 uploadphoto.match.com
 0.0.0.0 upoznavanje.net
 0.0.0.0 uppdating.com
@@ -12334,7 +12226,6 @@
 0.0.0.0 us-central1.xpi-dev.cloud.bumble.com
 0.0.0.0 us-central1.xpi-staging.cloud.bumble.com
 0.0.0.0 us-central1.xpi.cloud.bumble.com
-0.0.0.0 us-turn.badoo.com
 0.0.0.0 us.50date.com
 0.0.0.0 us.auth-dev.bumble.com
 0.0.0.0 us.auth-dev.cloud.bumble.com
@@ -12578,7 +12469,6 @@
 0.0.0.0 web.meetme.com
 0.0.0.0 web.tagged.com
 0.0.0.0 web.test.trulymadly.com
-0.0.0.0 web.tinder.com
 0.0.0.0 web.trulymadly.com
 0.0.0.0 webaccess.eharmony.com
 0.0.0.0 webadultdating.com
@@ -12592,10 +12482,6 @@
 0.0.0.0 webconnexions.com
 0.0.0.0 webdate.com
 0.0.0.0 webdev.zoosk.com
-0.0.0.0 webex.corp.badoo.com
-0.0.0.0 webex1.corp.badoo.com
-0.0.0.0 webexadm1.corp.badoo.com
-0.0.0.0 webexsrv1.corp.badoo.com
 0.0.0.0 webhook-processor-europe-west4.payment-processing.cloud.bumble.com
 0.0.0.0 webhook-processor-us-central1.payment-processing-dev.cloud.bumble.com
 0.0.0.0 webhook-processor-us-central1.payment-processing-staging.cloud.bumble.com
@@ -12745,7 +12631,6 @@
 0.0.0.0 www-assets-dev.grindr.com
 0.0.0.0 www-assets-prod.grindr.com
 0.0.0.0 www-stage.grindr.com
-0.0.0.0 www.about.zoosk.com
 0.0.0.0 www.aisle.co
 0.0.0.0 www.api.gotinder.com
 0.0.0.0 www.app.lovoo.com
@@ -12755,9 +12640,6 @@
 0.0.0.0 www.at.ourtime.com
 0.0.0.0 www.au.match.com
 0.0.0.0 www.b9.gotinder.com
-0.0.0.0 www.badoo.com
-0.0.0.0 www.badootech.badoo.com
-0.0.0.0 www.baking-chat.coffeemeetsbagel.com
 0.0.0.0 www.be.match.com
 0.0.0.0 www.be.ourtime.com
 0.0.0.0 www.bj-dzc-nps01.immomo.com
@@ -12779,7 +12661,6 @@
 0.0.0.0 www.cdnmojo.dilmil.co
 0.0.0.0 www.ch.match.com
 0.0.0.0 www.ch.ourtime.com
-0.0.0.0 www.chat.coffeemeetsbagel.com
 0.0.0.0 www.checkout.pof.com
 0.0.0.0 www.chispaapp.com
 0.0.0.0 www.christianmingle.com
@@ -12790,7 +12671,6 @@
 0.0.0.0 www.content.gotinder.com
 0.0.0.0 www.core.tantanapp.com
 0.0.0.0 www.cr.match.com
-0.0.0.0 www.dating.zoosk.com
 0.0.0.0 www.de.match.com
 0.0.0.0 www.de.ourtime.com
 0.0.0.0 www.dev.studio.bumble.com
@@ -12805,7 +12685,6 @@
 0.0.0.0 www.es.match.com
 0.0.0.0 www.es.ourtime.com
 0.0.0.0 www.europe.ourtime.com
-0.0.0.0 www.f.corp.zoosk.com
 0.0.0.0 www.factable.internal.zoosk.com
 0.0.0.0 www.feeld.co
 0.0.0.0 www.fi.ourtime.com
@@ -12822,8 +12701,6 @@
 0.0.0.0 www.hk.match.com
 0.0.0.0 www.hn-cm-nps01.immomo.com
 0.0.0.0 www.hn-cm-nps02.immomo.com
-0.0.0.0 www.icdnaws.zoosk.com
-0.0.0.0 www.icdnawssjc.zoosk.com
 0.0.0.0 www.ie.ourtime.com
 0.0.0.0 www.immomo.com
 0.0.0.0 www.infoblox.office.okcupid.com
@@ -12857,7 +12734,6 @@
 0.0.0.0 www.nl.ourtime.com
 0.0.0.0 www.no.match.com
 0.0.0.0 www.no.ourtime.com
-0.0.0.0 www.notify.zoosk.com
 0.0.0.0 www.okcupid.com
 0.0.0.0 www.ourtime.com
 0.0.0.0 www.pagp.gotinder.com
@@ -12883,10 +12759,8 @@
 0.0.0.0 www.sg-office-nps02.immomo.com
 0.0.0.0 www.shop.scruff.com
 0.0.0.0 www.singleparents.match.com
-0.0.0.0 www.site.coffeemeetsbagel.com
 0.0.0.0 www.splunk-2-us.grindr.com
 0.0.0.0 www.status.feeld.co
-0.0.0.0 www.store.zoosk.com
 0.0.0.0 www.studio.bumble.com
 0.0.0.0 www.support.scruff.com
 0.0.0.0 www.swipenight.tinder.com
@@ -12894,7 +12768,6 @@
 0.0.0.0 www.taimi.com
 0.0.0.0 www.tantan.com
 0.0.0.0 www.tantanapp.com
-0.0.0.0 www.tech.coffeemeetsbagel.com
 0.0.0.0 www.test.dev.okcupid.com
 0.0.0.0 www.thebeehive.bumble.com
 0.0.0.0 www.theblog.okcupid.com
@@ -12916,7 +12789,6 @@
 0.0.0.0 www.webstg.zoosk.com
 0.0.0.0 www.whatsapp.tantan.com
 0.0.0.0 www.www2.christianmingle.com
-0.0.0.0 www.zoosk.com
 0.0.0.0 www1.tubededentifrice.com
 0.0.0.0 www2.christianmingle.com
 0.0.0.0 www2.lovyoo.com
@@ -12928,7 +12800,6 @@
 0.0.0.0 www7.club-pa.com
 0.0.0.0 www7.extrarenc.com
 0.0.0.0 wwwc.tantanapp.com
-0.0.0.0 wwwtest.prd.zoosk.com
 0.0.0.0 wycieczki.onet.pl
 0.0.0.0 wydating.com
 0.0.0.0 wyldfireapp.com
@@ -13202,31 +13073,6 @@
 0.0.0.0 zappallas.com
 0.0.0.0 zarf.com
 0.0.0.0 zawajdating.com
-0.0.0.0 zcdn1.zoosk.com
-0.0.0.0 zcdn10.zoosk.com
-0.0.0.0 zcdn11.zoosk.com
-0.0.0.0 zcdn12.zoosk.com
-0.0.0.0 zcdn13.zoosk.com
-0.0.0.0 zcdn14.zoosk.com
-0.0.0.0 zcdn15.zoosk.com
-0.0.0.0 zcdn16.zoosk.com
-0.0.0.0 zcdn17.zoosk.com
-0.0.0.0 zcdn18.zoosk.com
-0.0.0.0 zcdn19.zoosk.com
-0.0.0.0 zcdn2.zoosk.com
-0.0.0.0 zcdn20.zoosk.com
-0.0.0.0 zcdn21.zoosk.com
-0.0.0.0 zcdn22.zoosk.com
-0.0.0.0 zcdn23.zoosk.com
-0.0.0.0 zcdn24.zoosk.com
-0.0.0.0 zcdn25.zoosk.com
-0.0.0.0 zcdn3.zoosk.com
-0.0.0.0 zcdn4.zoosk.com
-0.0.0.0 zcdn5.zoosk.com
-0.0.0.0 zcdn6.zoosk.com
-0.0.0.0 zcdn7.zoosk.com
-0.0.0.0 zcdn8.zoosk.com
-0.0.0.0 zcdn9.zoosk.com
 0.0.0.0 zdating.com
 0.0.0.0 zdrowie.onet.pl
 0.0.0.0 zedates.com
@@ -13242,9 +13088,6 @@
 0.0.0.0 zendesk4.pof.com
 0.0.0.0 zendradating.com
 0.0.0.0 zentaidating.com
-0.0.0.0 zephyr.zcdn1.zoosk.com
-0.0.0.0 zephyr.zcdn2.zoosk.com
-0.0.0.0 zephyr.zoosk.com
 0.0.0.0 zeradating.com
 0.0.0.0 zerodatingviolence.org
 0.0.0.0 zeroduedates.com
