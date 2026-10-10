@@ -14,7 +14,7 @@
   },
   "ads-and-tracking-extended": {
     "title": "Ads & Tracking (Extended)",
-    "description": "Aggressive ad, tracker, telemetry and pop-up blocking. Blocks more, may need occasional allowlisting.",
+    "description": "Aggressive ad, tracker, telemetry and pop-up blocking. Contains everything in `ads-and-tracking` plus much more; may need occasional allowlisting.",
     "sources": [
       "hagezi-pro-plus",
       "hagezi-popupads",
@@ -41,6 +41,9 @@
       "agf-german-adservers",
       "agf-dutch-adservers",
       "agf-french-adservers"
+    ],
+    "includes": [
+      "ads-and-tracking"
     ]
   },
   "ads-regional": {
@@ -169,6 +172,9 @@
       "hagezi-native-samsung",
       "smarttv-perflyst-dandelion",
       "dandelion-game-console"
+    ],
+    "includes": [
+      "game-consoles"
     ]
   },
   "game-consoles": {
@@ -180,7 +186,7 @@
   },
   "security": {
     "title": "Security (Malware, Phishing, Scams)",
-    "description": "Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone.",
+    "description": "Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone (add `phishing-and-scams` for extra phishing feeds).",
     "sources": [
       "hagezi-tif-medium",
       "hagezi-fake",
@@ -214,7 +220,7 @@
   },
   "phishing-and-scams": {
     "title": "Phishing & Scams",
-    "description": "Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in `security`; use this if you only want phishing/scam protection.",
+    "description": "Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops, from extra phishing feeds. Only partly covered by `security`: add both for the strongest phishing protection.",
     "sources": [
       "phishing-army-extended",
       "hagezi-fake",

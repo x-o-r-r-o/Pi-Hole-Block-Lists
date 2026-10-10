@@ -1,10 +1,10 @@
 [Adblock Plus]
 ! Title: Security (Malware, Phishing, Scams)
-! Description: Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone.
+! Description: Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone (add `phishing-and-scams` for extra phishing feeds).
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-10 10:15 UTC
-! Entries: 762719
+! Last modified: 2026-10-10 10:21 UTC
+! Entries: 762727
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Threat Intelligence Feeds (Medium): https://github.com/hagezi/dns-blocklists
@@ -87128,7 +87128,6 @@
 ||azdwxoztaualz.site^
 ||aze-restoran.ru^
 ||azeats.com^
-||azebojjm.cognistream.in.net^
 ||azeebands.com^
 ||azegraigroako.net^
 ||azeiteeoliva.info^
@@ -229438,6 +229437,7 @@
 ||degowo.de^
 ||degrabombi.cyou^
 ||degracarli.com^
+||degradalltionsplinked.info^
 ||degradeaccusationshrink.com^
 ||degradecontact.com^
 ||degrafic.com^
@@ -292984,6 +292984,7 @@
 ||finzy0-voluptas24.sbs^
 ||finzy1-ducimus69.sbs^
 ||finzy1-est99.sbs^
+||finzy1-et61.sbs^
 ||finzy1-et95.sbs^
 ||finzy1-nulla8.sbs^
 ||finzy1-odit86.sbs^
@@ -293080,6 +293081,7 @@
 ||finzy9-cumque19.sbs^
 ||finzy9-delectus28.sbs^
 ||finzy9-delectus72.sbs^
+||finzy9-et11.sbs^
 ||finzy9-eum12.sbs^
 ||finzy9-illum17.sbs^
 ||finzy9-impedit23.sbs^
@@ -413655,6 +413657,7 @@
 ||lfpgm.top^
 ||lfph.org^
 ||lfporn.com^
+||lfqeqaum.shop^
 ||lfqvgmphn.com^
 ||lfree.ru^
 ||lfrpmzng.com^
@@ -432036,6 +432039,7 @@
 ||malizsx.us.cc^
 ||malka-reklama.com^
 ||malkiteshift.click^
+||malkkadministering.info^
 ||malkkversations.info^
 ||malkm.com^
 ||malkren.shop^
@@ -505803,6 +505807,7 @@
 ||outcomesworld.xyz^
 ||outcomeworknetwork.com^
 ||outconfiadd.webcindario.com^
+||outcradope.store^
 ||outcroaawgarble.info^
 ||outcrol.biz^
 ||outcrquitt.cyou^
@@ -522430,6 +522435,7 @@
 ||pi-oferta720461829104718.pl^
 ||pi-oferta745112.sbs^
 ||pi-oferta752353.lol^
+||pi-oferta83458939.lol^
 ||pi-oferta98349823.lol^
 ||pi-oferta984564.lol^
 ||pi-oferta98654.lol^
@@ -525538,6 +525544,7 @@
 ||pl-029530.icu^
 ||pl-0295370.icu^
 ||pl-02960633.icu^
+||pl-029607002.icu^
 ||pl-03049-oferta.shop^
 ||pl-0305-oferta.click^
 ||pl-03585-oferta.shop^
@@ -532709,6 +532716,7 @@
 ||pop.dojo.cc^
 ||pop.ifnimidi.com^
 ||pop.mailban.pics^
+||pop.nexusrivet.com^
 ||pop.schubel.info^
 ||pop.topsm188.top^
 ||pop1-edge.zor5liven.in.net^
@@ -639992,6 +640000,7 @@
 ||standwin.xyz^
 ||standycrome.com^
 ||standzoo.xyz^
+||stanedifra.store^
 ||stanewstore.fr^
 ||stanford.edu.ec^
 ||stanfordbitcoin.xyz^
@@ -735230,7 +735239,6 @@
 ||wordpress-1653560-6577834.cloudwaysapps.com^
 ||wordpress-1655621-6589876.cloudwaysapps.com^
 ||wordpress-1667770-6653352.cloudwaysapps.com^
-||wordpress-210357-0.cloudclusters.net^
 ||wordpress-210357-oklisd.cloudclusters.net^
 ||wordpress-210436-0.cloudclusters.net^
 ||wordpress-210436-milio.cloudclusters.net^

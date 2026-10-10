@@ -1,9 +1,9 @@
 # Title: Phishing & Scams
-# Description: Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in `security`; use this if you only want phishing/scam protection.
+# Description: Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops, from extra phishing feeds. Only partly covered by `security`: add both for the strongest phishing protection.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 09:41 UTC
-# Entries: 563871
+# Last modified: 2026-10-10 10:21 UTC
+# Entries: 563880
 #
 # Built from these sources (see their licenses):
 #   - Phishing Army Extended: https://phishing.army
@@ -200934,6 +200934,7 @@
 0.0.0.0 degoka.pro
 0.0.0.0 degrabombi.cyou
 0.0.0.0 degradable.com.ar
+0.0.0.0 degradalltionsplinked.info
 0.0.0.0 degreeill.new-electricity.com
 0.0.0.0 degreemaster.codeforfamilias.com
 0.0.0.0 degreesalabama.com
@@ -250717,6 +250718,7 @@
 0.0.0.0 finzy0-voluptas24.sbs
 0.0.0.0 finzy1-ducimus69.sbs
 0.0.0.0 finzy1-est99.sbs
+0.0.0.0 finzy1-et61.sbs
 0.0.0.0 finzy1-et95.sbs
 0.0.0.0 finzy1-nulla8.sbs
 0.0.0.0 finzy1-odit86.sbs
@@ -250813,6 +250815,7 @@
 0.0.0.0 finzy9-cumque19.sbs
 0.0.0.0 finzy9-delectus28.sbs
 0.0.0.0 finzy9-delectus72.sbs
+0.0.0.0 finzy9-et11.sbs
 0.0.0.0 finzy9-eum12.sbs
 0.0.0.0 finzy9-illum17.sbs
 0.0.0.0 finzy9-impedit23.sbs
@@ -349022,6 +349025,7 @@
 0.0.0.0 lforgotclloud-help.us
 0.0.0.0 lformenregistrerl.com
 0.0.0.0 lfoti.notashco.ir
+0.0.0.0 lfqeqaum.shop
 0.0.0.0 lfqfffkofxpntvvu-dot-millinium.ey.r.appspot.com
 0.0.0.0 lfqrhj.net
 0.0.0.0 lfranklin.ultramedicinadiagnostica.com.br
@@ -370788,6 +370792,7 @@
 0.0.0.0 maljoy.com
 0.0.0.0 malkamusic.com
 0.0.0.0 malkinawlaoka54.de
+0.0.0.0 malkkadministering.info
 0.0.0.0 malkkversations.info
 0.0.0.0 malkotarnovo.org
 0.0.0.0 malkren.shop
@@ -432315,6 +432320,7 @@
 0.0.0.0 outceptsmaoormily.info
 0.0.0.0 outcomsomor.com
 0.0.0.0 outconfiadd.webcindario.com
+0.0.0.0 outcradope.store
 0.0.0.0 outcroaawgarble.info
 0.0.0.0 outcrquitt.cyou
 0.0.0.0 outddbuilding.info
@@ -445275,6 +445281,7 @@
 0.0.0.0 pi-oferta720461829104718.pl
 0.0.0.0 pi-oferta745112.sbs
 0.0.0.0 pi-oferta752353.lol
+0.0.0.0 pi-oferta83458939.lol
 0.0.0.0 pi-oferta98349823.lol
 0.0.0.0 pi-oferta984564.lol
 0.0.0.0 pi-oferta98654.lol
@@ -446830,6 +446837,7 @@
 0.0.0.0 pl-029530.icu
 0.0.0.0 pl-0295370.icu
 0.0.0.0 pl-02960633.icu
+0.0.0.0 pl-029607002.icu
 0.0.0.0 pl-03049-oferta.shop
 0.0.0.0 pl-0305-oferta.click
 0.0.0.0 pl-03585-oferta.shop
@@ -451941,6 +451949,7 @@
 0.0.0.0 pop.glamourspot.com.au
 0.0.0.0 pop.jimpike.com.au
 0.0.0.0 pop.krysallis.com.au
+0.0.0.0 pop.nexusrivet.com
 0.0.0.0 pop.obacs.com.au
 0.0.0.0 pop.omegapark.com.au
 0.0.0.0 pop.owl.temporary.site
@@ -513565,6 +513574,7 @@
 0.0.0.0 standroo.ngscms.com
 0.0.0.0 standstileels.info
 0.0.0.0 standycrome.com
+0.0.0.0 stanedifra.store
 0.0.0.0 stanford.edu.ec
 0.0.0.0 stanfpv.com
 0.0.0.0 stanislav-kondrashov.ghost.io
@@ -551277,7 +551287,6 @@
 0.0.0.0 wordpress-1653560-6577834.cloudwaysapps.com
 0.0.0.0 wordpress-1655621-6589876.cloudwaysapps.com
 0.0.0.0 wordpress-1667770-6653352.cloudwaysapps.com
-0.0.0.0 wordpress-210357-0.cloudclusters.net
 0.0.0.0 wordpress-210357-oklisd.cloudclusters.net
 0.0.0.0 wordpress-210436-0.cloudclusters.net
 0.0.0.0 wordpress-210436-milio.cloudclusters.net

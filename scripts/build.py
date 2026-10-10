@@ -308,6 +308,27 @@ def build_ip_lists(built):
     return problems
 
 
+def expand_includes(lists):
+    """A list with "includes": [...] also gets every source and custom domain of those lists,
+    so e.g. ads-and-tracking-extended is guaranteed to contain all of ads-and-tracking."""
+    original = {name: list(meta["sources"]) for name, meta in lists.items()}
+
+    def walk(name, seen):
+        found = []
+        for inc in lists[name].get("includes", []):
+            if inc not in seen and inc in lists:
+                found += [inc] + walk(inc, seen | {inc})
+        return found
+
+    for name, meta in lists.items():
+        included = walk(name, {name})
+        merged = list(original[name])
+        for inc in included:
+            merged += [s for s in original[inc] if s not in merged]
+        meta["sources"] = merged
+        meta["custom_from"] = [name] + included
+
+
 def main():
     lists = json.loads((ROOT / "lists.json").read_text())
     sources = json.loads((ROOT / "sources.json").read_text())
@@ -315,6 +336,7 @@ def main():
     protected = read_local(ROOT / "protected.txt")
     built = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
+    expand_includes(lists)
     needed = sorted({s for l in lists.values() for s in l["sources"]})
     unknown = [s for s in needed if s not in sources]
     if unknown:
@@ -372,7 +394,8 @@ def main():
                 list_allow |= exceptions
             else:
                 upstream_allow |= exceptions
-        domains |= read_local(ROOT / "custom" / ("%s.txt" % name))
+        for part in meta.get("custom_from", [name]):
+            domains |= read_local(ROOT / "custom" / ("%s.txt" % part))
         # Essential sites are never blocked unless this list is meant to block them.
         guard = protected - set(meta.get("may_block", []))
         removed = sorted(domains & guard)

@@ -1,10 +1,10 @@
 [Adblock Plus]
 ! Title: Ads & Tracking (Extended)
-! Description: Aggressive ad, tracker, telemetry and pop-up blocking. Blocks more, may need occasional allowlisting.
+! Description: Aggressive ad, tracker, telemetry and pop-up blocking. Contains everything in `ads-and-tracking` plus much more; may need occasional allowlisting.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-10 09:41 UTC
-! Entries: 564602
+! Last modified: 2026-10-10 10:21 UTC
+! Entries: 564627
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Multi Pro++: https://github.com/hagezi/dns-blocklists
@@ -32,6 +32,7 @@
 !   - AdGuard German filter: ad servers: https://github.com/AdguardTeam/AdguardFilters
 !   - AdGuard Dutch filter: ad servers: https://github.com/AdguardTeam/AdguardFilters
 !   - AdGuard French filter: ad servers: https://github.com/AdguardTeam/AdguardFilters
+!   - HaGeZi Multi Light: https://github.com/hagezi/dns-blocklists
 
 @@||5471782.fls.doubleclick.net^
 @@||a.adwolf.ru^
@@ -62,7 +63,6 @@
 @@||help-advertisers.adsterra.com^
 @@||ia.hit.interia.pl^
 @@||id.i2i.jp^
-@@||img.ads.tvb.com^
 @@||infra-api.newrelic.com^
 @@||intersport.peerius.com^
 @@||itoya.ec-optimizer.com^
@@ -5970,6 +5970,7 @@
 ||1ufztt6mkpt1p1krt3.cfd^
 ||1uh2y3.qpon^
 ||1ujz59h62z.com^
+||1umg3i5h83hiqqxem8v15536il8ory4.rest^
 ||1unblock.com^
 ||1urjtp1t6.com^
 ||1url.at^
@@ -36481,6 +36482,7 @@
 ||ajf8dr38iy7ank3tumny.s3.eu-west-1.amazonaws.com^
 ||ajfe8c.com^
 ||ajffvl.genny.com^
+||ajfhjjrjssdwr.site^
 ||ajfmm.dibsbeauty.com^
 ||ajfnee.com^
 ||ajfqftuacgmkq.site^
@@ -73730,6 +73732,7 @@
 ||b17936d699.8af0229830.com^
 ||b17contacts.com^
 ||b17n46rlzqrb7fe58xuzh5ihcx.cfd^
+||b182z39mu43o4wujttoxlq2hmct9ub.cfd^
 ||b1830569f1.nxcli.io^
 ||b18eed6eae.com^
 ||b196kaufen.de^
@@ -85158,6 +85161,7 @@
 ||blaskfinthra-app.com^
 ||blaskfinthra.pl^
 ||blaskor.shop^
+||blasoneuodic.qpon^
 ||blast-bzu.pages.dev^
 ||blast-dex.pages.dev^
 ||blast-io-l2.pages.dev^
@@ -118893,6 +118897,7 @@
 ||conuant.firebaseapp.com^
 ||conuant.web.app^
 ||conuber.getyoursafelink.com^
+||conuseeplannersludder.cfd^
 ||conusesstare.cfd^
 ||conv-pdf.com^
 ||conv.agroreceita.com.br^
@@ -126098,6 +126103,7 @@
 ||cuocthigionghatvietnhi2021.weebly.com^
 ||cuocthiianhdepthieunhii2025.weebly.com^
 ||cuocthitainangnhithang12.weebly.com^
+||cuohzhwjjwupd.online^
 ||cuoieadrraxle.space^
 ||cuongtws.xyz^
 ||cuoqlvruhlqyv.space^
@@ -139488,6 +139494,7 @@
 ||ddvfoj5yrl2oi.cloudfront.net^
 ||ddvgnr.cheekslovethatchat.com^
 ||ddvids.xyz^
+||ddwqruebgyjuy.site^
 ||ddwwsf.xlmoto.ch^
 ||ddxhj.pacsun.com^
 ||ddxiejwiegzxa.website^
@@ -141561,6 +141568,7 @@
 ||dentifacili.it^
 ||dentileazurite.com^
 ||dentilnitter.com^
+||dentilsdumbcow.qpon^
 ||dentistedesormeaux.com^
 ||dentistfinder.com^
 ||dentistkart.com^
@@ -151597,6 +151605,7 @@
 ||dsgsvc.wattano.de^
 ||dsgvgw.com^
 ||dsgvo-corona.com^
+||dsgwdhffrq.com^
 ||dsgwoa.com^
 ||dsgwqe.com^
 ||dsh-otel-collector.deepseeksvc.com^
@@ -164943,6 +164952,7 @@
 ||eskainsaat.com^
 ||eskei83.com^
 ||eskfalkgrunthoold.top^
+||eskhnlhqqspju.website^
 ||eskibu.com^
 ||eskiciogludental.com^
 ||eskimi.com^
@@ -185848,6 +185858,7 @@
 ||fussboden-elsenhans.de^
 ||fusscupcakes.com^
 ||fusseneggershop.com^
+||fussesperdix.cyou^
 ||fussheld.com^
 ||fussionmd.com^
 ||fusspflegegeseke.de^
@@ -192368,6 +192379,7 @@
 ||ghecriedhereisnot.org^
 ||gheesahull.qpon^
 ||gheleemtrophic.cyou^
+||ghentcoom.cyou^
 ||ghermexodo.store^
 ||gheteclarksromania.com^
 ||ghetolorx.digital^
@@ -210567,6 +210579,7 @@
 ||h4crrebc1mn9tlccmi96zjm.cfd^
 ||h4dmqp.fit^
 ||h4dnwp.shop^
+||h4g3z1-light.web.app^
 ||h4g3z1-popupads.web.app^
 ||h4g3z1-pro-plus.web.app^
 ||h4hlve65vqyjlk.cfd^
@@ -326644,6 +326657,7 @@
 ||nryfifdmpeotb.site^
 ||nryqr.cn^
 ||nrzfje.ririnco.com^
+||nrzufrlalmvak.site^
 ||ns-715.awsdns-25.net^
 ||ns-903.awsdns-48.net^
 ||ns-kg003.ocn.ad.jp^
@@ -378776,6 +378790,7 @@
 ||rabatytop.shop^
 ||rabbe-extension.wixstudio.com^
 ||rabbeatsvapes.com^
+||rabbetget.cfd^
 ||rabbicareers.com^
 ||rabbids.cc^
 ||rabbieslurkers.shop^
@@ -387482,6 +387497,7 @@
 ||rimvoyeur.ru^
 ||rimwtv.theclassictshirt.com^
 ||rimxqx.slickdeals.net^
+||rimyscalervenom.cfd^
 ||rina.yes.flysmarketing.com^
 ||rinad.jp^
 ||rinagym.pl^
@@ -403265,6 +403281,7 @@
 ||seinavoratrade.com^
 ||seinednattock.qpon^
 ||seinercasual.click^
+||seineslimpsey.cfd^
 ||seintecperu.com^
 ||seiqz.markandday.com^
 ||seiranshuuekifuwa-app.com^
@@ -420049,6 +420066,7 @@
 ||sholraidsoalro.net^
 ||shomershabes.co.il^
 ||shon.xyz^
+||shondesubas.cyou^
 ||shonehelotsconeen.cyou^
 ||shonepure.com^
 ||shoneten.com^
@@ -473682,6 +473700,7 @@
 ||sturtinengirt.shop^
 ||sturton-lation.com^
 ||sturvo.shop^
+||sturypjhxnna.com^
 ||stussy-berlin.de^
 ||stussy-fr.fr^
 ||stussy-italia.com^
@@ -480883,6 +480902,7 @@
 ||t8s.net^
 ||t8sx5sgl4uc1pn.pages.dev^
 ||t8wkxs.fit^
+||t8yctltd8s.com^
 ||t93179898pq8u2ynyvwluc.cfd^
 ||t95.nudevista.com^
 ||t969.sentinelandenterprise.com^
@@ -516490,6 +516510,7 @@
 ||unfrillotters.shop^
 ||unfrizzpacinko.com^
 ||unfrozecotointamanac.qpon^
+||unfugaltripara.cyou^
 ||unfumedvamoses.com^
 ||unfurlable.com^
 ||unfussyvivax.com^
@@ -534241,6 +534262,7 @@
 ||washingtonposttoday.com^
 ||washingtontimesnewstoday.com^
 ||washokufinder.lol^
+||washrepone.com^
 ||washtrust-btbanking.biz^
 ||washwayrefool.com^
 ||washwidespreadblot.com^
@@ -534950,6 +534972,7 @@
 ||wcpkckormoghp.website^
 ||wcpmoh.com^
 ||wcqgeapsygmtvi.com^
+||wcqhsdaymcusc.space^
 ||wcqoyugiqivdp.online^
 ||wcrulddsnexjz.site^
 ||wcryl.com^
@@ -558434,6 +558457,7 @@
 ||yzhcp6cw1.com^
 ||yzhkhzvaxytgk.online^
 ||yzhtcimcfoiza.site^
+||yzippousyxgvh.site^
 ||yzisasai.com^
 ||yziwujuzq.live^
 ||yzjcyznhjsizp.website^
@@ -562291,6 +562315,7 @@
 ||zlxwsxcnkyeij.site^
 ||zlxygrhsimexp.online^
 ||zlywd.kasaustralia.com.au^
+||zlyxrqpoymlnl.space^
 ||zlyyboiullypt.online^
 ||zlzczl.fajob.jp^
 ||zlzhwpoqancln.online^

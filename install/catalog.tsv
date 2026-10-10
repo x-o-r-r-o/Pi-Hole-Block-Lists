@@ -1,6 +1,6 @@
 name	title	entries	description
-ads-and-tracking	Ads & Tracking	279368	Ads and trackers with few false positives. Start here.
-ads-and-tracking-extended	Ads & Tracking (Extended)	732692	Aggressive ad, tracker, telemetry and pop-up blocking. Blocks more, may need occasional allowlisting.
+ads-and-tracking	Ads & Tracking	279391	Ads and trackers with few false positives. Start here.
+ads-and-tracking-extended	Ads & Tracking (Extended)	736494	Aggressive ad, tracker, telemetry and pop-up blocking. Contains everything in ads-and-tracking plus much more; may need occasional allowlisting.
 ads-regional	Regional Ads	232956	Ad servers for non-English websites and apps: Arabic, Chinese, Russian/Ukrainian/Bulgarian, Turkish, Persian, Hebrew, Japanese, Korean, Vietnamese, Indonesian, European languages and more. Add next to ads-and-tracking or the extended list.
 mobile-ads	Mobile Ads	8334	Ad networks used inside Android and iOS apps.
 mobile-spyware	Mobile Spyware & Telemetry	3166	Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
@@ -10,10 +10,10 @@ adult	Adult Content	526811	Porn and other adult (NSFW) sites (see Safe Search ti
 social-media	Social Media	4450	Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked.
 smart-tv	Smart TV & Streaming Devices	1376	Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 game-consoles	Game Consoles	13	Ads in the system menus and telemetry of PlayStation, Xbox and Nintendo Switch consoles. Small and safe for online play (on Xbox it also hides Game Pass Perks).
-security	Security (Malware, Phishing, Scams)	792079	Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone.
+security	Security (Malware, Phishing, Scams)	792087	Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone (add phishing-and-scams for extra phishing feeds).
 stalkerware	Stalkerware & Phone Monitoring	949	Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one.
 crypto-mining	Crypto Mining (Cryptojacking)	11585	Hidden crypto-mining scripts and mining pools (cryptojacking). Exchanges like Coinbase/Binance are not blocked.
-phishing-and-scams	Phishing & Scams	563871	Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in security; use this if you only want phishing/scam protection.
+phishing-and-scams	Phishing & Scams	563880	Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops, from extra phishing feeds. Only partly covered by security: add both for the strongest phishing protection.
 live-streaming	Live-Streaming & Video-Chat Apps	2319	Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see note below).
 dating	Dating	12959	Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 vpn-proxy-bypass	VPN, Proxy & DNS Bypass	23059	VPNs, web proxies and encrypted-DNS services that people use to get around blocking. Use with the other lists to stop bypassing (may block a work VPN).

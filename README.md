@@ -11,6 +11,7 @@ from well-maintained upstream sources, merged and de-duplicated.
 - [Choose your setup](#choose-your-setup)
 - [Lists](#lists)
   - [Suggested setups](#suggested-setups)
+- [What each list blocks (and what it doesn't)](#what-each-list-blocks-and-what-it-doesnt)
 - [How to add a list](#how-to-add-a-list)
 - [Use on one device, without Pi-hole or AdGuard Home](#use-on-one-device-without-pi-hole-or-adguard-home)
   - [macOS](#macos)
@@ -82,6 +83,7 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 2: turn off tracking and ads in the console's settings](#step-2-turn-off-tracking-and-ads-in-the-consoles-settings)
   - [What to expect](#what-to-expect-1)
 - [Is it working?](#is-it-working)
+- [Troubleshooting FAQ](#troubleshooting-faq)
 - [Something broke?](#something-broke)
 - [Sources](#sources)
 - [For maintainers](#for-maintainers)
@@ -99,7 +101,8 @@ from well-maintained upstream sources, merged and de-duplicated.
 | A NAS or home server | [Synology](#synology-nas), [QNAP](#qnap-nas), [TrueNAS](#truenas), [Unraid](#unraid), [OpenMediaVault](#openmediavault), [Proxmox VE](#proxmox-ve), [Home Assistant](#home-assistant), any [Docker](#docker) host |
 | A router that can block by itself | [pfSense](#pfsense), [OPNsense](#opnsense), [OpenWrt](#openwrt), [MikroTik](#mikrotik), [EdgeRouter](#ubiquiti-edgerouter), [GL.iNet](#glinet), [UniFi](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr) |
 | Another router (Asus, TP-Link, Netgear, Fritz!Box, internet provider) | [Asus](#asus), [Any other router](#any-other-router-tp-link-netgear-fritzbox-internet-provider-routers), [Mesh Wi-Fi](#mesh-wi-fi-eero-google-nest-wifi-deco-orbi-velop), [Starlink / 4G / 5G](#starlink-4g-and-5g-home-routers), [Omada](#tp-link-omada-and-other-business-gateways), plus a blocker from the rows above |
-| Blocking doesn't seem to work | [Is it working?](#is-it-working) |
+| Blocking doesn't seem to work | [Is it working?](#is-it-working) and [Troubleshooting FAQ](#troubleshooting-faq) |
+| Not sure which lists to pick | [What each list blocks](#what-each-list-blocks-and-what-it-doesnt) and [Suggested setups](#suggested-setups) |
 | Just one computer or phone | [macOS, Windows, Linux, Android, iPhone, Chromebook](#use-on-one-device-without-pi-hole-or-adguard-home) |
 | Phones and laptops away from home | [Away from home](#away-from-home) |
 | Only a Windows or Mac computer to run a blocker on | [AdGuard Home on a Windows or Mac computer](#adguard-home-on-a-windows-or-mac-computer), or [Technitium DNS Server](#technitium-dns-server) |
@@ -115,7 +118,7 @@ The table below and the Sources table are updated automatically on every build.
 | List | What it blocks | Domains | Download |
 |---|---|---|---|
 | `ads-and-tracking` | Ads and trackers with few false positives. Start here. | ~279k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-and-tracking.txt) |
-| `ads-and-tracking-extended` | Aggressive ad, tracker, telemetry and pop-up blocking. Blocks more, may need occasional allowlisting. | ~733k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking-extended.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking-extended.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-and-tracking-extended.txt) |
+| `ads-and-tracking-extended` | Aggressive ad, tracker, telemetry and pop-up blocking. Contains everything in `ads-and-tracking` plus much more; may need occasional allowlisting. | ~736k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking-extended.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking-extended.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-and-tracking-extended.txt) |
 | `ads-regional` | Ad servers for non-English websites and apps: Arabic, Chinese, Russian/Ukrainian/Bulgarian, Turkish, Persian, Hebrew, Japanese, Korean, Vietnamese, Indonesian, European languages and more. Add next to `ads-and-tracking` or the extended list. | ~233k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-regional.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-regional.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-regional.txt) |
 | `mobile-ads` | Ad networks used inside Android and iOS apps. | ~8.3k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/mobile-ads.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/mobile-ads.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/mobile-ads.txt) |
 | `mobile-spyware` | Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers. | ~3.2k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/mobile-spyware.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/mobile-spyware.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/mobile-spyware.txt) |
@@ -125,10 +128,10 @@ The table below and the Sources table are updated automatically on every build.
 | `social-media` | Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked. | ~4.5k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/social-media.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/social-media.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/social-media.txt) |
 | `smart-tv` | Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo). | ~1.4k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/smart-tv.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/smart-tv.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/smart-tv.txt) |
 | `game-consoles` | Ads in the system menus and telemetry of PlayStation, Xbox and Nintendo Switch consoles. Small and safe for online play (on Xbox it also hides Game Pass Perks). | 13 | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/game-consoles.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/game-consoles.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/game-consoles.txt) |
-| `security` | Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone. | ~792k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/security.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/security.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/security.txt) |
+| `security` | Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone (add `phishing-and-scams` for extra phishing feeds). | ~792k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/security.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/security.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/security.txt) |
 | `stalkerware` | Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one. | 949 | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/stalkerware.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/stalkerware.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/stalkerware.txt) |
 | `crypto-mining` | Hidden crypto-mining scripts and mining pools (cryptojacking). Exchanges like Coinbase/Binance are not blocked. | ~12k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/crypto-mining.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/crypto-mining.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/crypto-mining.txt) |
-| `phishing-and-scams` | Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in `security`; use this if you only want phishing/scam protection. | ~564k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/phishing-and-scams.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/phishing-and-scams.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/phishing-and-scams.txt) |
+| `phishing-and-scams` | Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops, from extra phishing feeds. Only partly covered by `security`: add both for the strongest phishing protection. | ~564k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/phishing-and-scams.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/phishing-and-scams.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/phishing-and-scams.txt) |
 | `live-streaming` | Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see note below). | ~2.3k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/live-streaming.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/live-streaming.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/live-streaming.txt) |
 | `dating` | Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites. | ~13k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/dating.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/dating.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/dating.txt) |
 | `vpn-proxy-bypass` | VPNs, web proxies and encrypted-DNS services that people use to get around blocking. Use with the other lists to stop bypassing (may block a work VPN). | ~23k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/vpn-proxy-bypass.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/vpn-proxy-bypass.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/vpn-proxy-bypass.txt) |
@@ -163,7 +166,7 @@ The table below and the Sources table are updated automatically on every build.
 | **Stronger privacy & security** | swap in `ads-and-tracking-extended`, add `security-strict`, `mobile-spyware`, `smart-tv`, `windows-telemetry`, `crypto-mining` |
 | **Smart TVs & streaming sticks** | `smart-tv`, `ads-and-tracking` ([full guide](#smart-tvs-and-streaming-sticks)) |
 | **Game consoles** | `game-consoles`, `ads-and-tracking` ([full guide](#game-consoles)) |
-| **Older or less tech-savvy relatives** | `ads-and-tracking`, `security`, `security-strict`, `remote-control`, `crypto-trading` |
+| **Older or less tech-savvy relatives** | `ads-and-tracking`, `security`, `phishing-and-scams`, `security-strict`, `remote-control`, `crypto-trading` |
 | **Kids / family** | `adult`, `safesearch-bypass`, `gambling`, `dating`, `live-streaming`, `chat-strangers`, `drugs`, `violence-hate`, `vpn-proxy-bypass` (stops getting around the blocks) |
 | **Focus / school / bedtime** | `social-media`, `youtube`, `video-streaming`, `gaming-platforms`, `online-games`, `messaging`, `ai-chatbots`, `cheating` |
 
@@ -223,6 +226,65 @@ Hosts:   https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/
 The original root URLs (`ads-and-tracking.txt`, `ads-and-tracking-extended.txt`, `mobile-ads.txt`,
 `mobile-spyware.txt`) still work, so existing setups keep updating with no changes.
 
+## What each list blocks (and what it doesn't)
+
+**No single list blocks everything, on purpose.** Each list has one job, so you choose exactly what to block. Turning on
+all of them would also block YouTube, WhatsApp, Netflix, shopping, Dropbox and more. The lists come in three kinds:
+
+| Kind | Lists | Who should use them |
+|---|---|---|
+| **Protection**: ads, trackers, threats | `ads-and-tracking`, `ads-and-tracking-extended`, `ads-regional`, `mobile-ads`, `mobile-spyware`, `youtube-ads`, `smart-tv`, `game-consoles`, `windows-telemetry`, `security`, `phishing-and-scams`, `security-strict`, `crypto-mining`, `stalkerware` | Everyone; normal sites and apps keep working |
+| **Content filters**: unwanted content | `adult`, `safesearch-bypass`, `gambling`, `dating`, `live-streaming`, `chat-strangers`, `drugs`, `violence-hate`, `piracy`, `fake-news`, `cults`, `vpn-proxy-bypass` | Families, children's devices, workplaces |
+| **Service blockers**: switch whole services off | `social-media`, `messaging`, `youtube`, `video-streaming`, `gaming-platforms`, `online-games`, `ai-chatbots`, `cheating`, `shopping`, `file-sharing`, `crypto-trading`, `remote-control`, `url-shorteners` | Only where you want those services gone (e.g. bedtime, homework, a relative's PC) |
+
+**Which lists contain others** (measured on the current lists):
+- `ads-and-tracking-extended` contains **all** of `ads-and-tracking` (guaranteed), and 94–98% of `mobile-ads`,
+  `mobile-spyware`, `ads-regional`, `smart-tv` and `windows-telemetry`. With the extended list, those add little.
+- `smart-tv` contains all of `game-consoles`.
+- `online-games` contains ~93% of `gaming-platforms`, plus thousands of browser-game sites.
+- `security` and `phishing-and-scams` overlap only partly (about a third of `phishing-and-scams` is in `security`): add
+  both for the strongest phishing protection.
+- `security-strict`, `crypto-mining`, `stalkerware` and `url-shorteners` are almost entirely separate from `security`:
+  each adds something new.
+- `youtube-ads` and `youtube` are different: `youtube-ads` blocks Google's ad servers and keeps YouTube working;
+  `youtube` blocks YouTube itself.
+
+**Per list: what's blocked, and what's deliberately left working**
+
+| List | Blocks | Leaves working / doesn't block |
+|---|---|---|
+| `ads-and-tracking` | Ad and tracking servers on websites and apps | The sites and apps themselves; Google's sponsored search links; [essential sites](#something-broke) |
+| `ads-and-tracking-extended` | Everything above, plus telemetry, pop-ups and push-notification spam | Same; may block some tracked email or shopping links (fix: [referral allowlist](#is-it-working)) |
+| `ads-regional` | Ad servers of non-English sites and apps | Non-English sites themselves (Baidu, Yandex, Naver, Trendyol, Shahid... stay reachable) |
+| `mobile-ads` | In-app ad networks | The apps themselves |
+| `mobile-spyware` | Phone-maker and app telemetry | Phone updates, app stores, sign-in |
+| `youtube-ads` | Google/YouTube ad servers | YouTube itself; most video ads still play ([why](#lists)) |
+| `smart-tv` | TV and streaming-stick tracking and ads (includes `game-consoles`) | Streaming apps, TV updates; ad-supported free channels may stop |
+| `game-consoles` | Console menu ads and telemetry | Sign-in, store, updates, online play; Xbox Game Pass Perks are hidden |
+| `windows-telemetry` | Windows and Office data collection | Windows Update, Office, Microsoft sign-in |
+| `security` | Malware, phishing, scams, fake shops | Normal sites; whole link-shortener and file-hosting services (see `url-shorteners`, `file-sharing`) |
+| `phishing-and-scams` | Extra phishing and scam feeds | Google, Microsoft, Apple, PayPal and other big-company sites |
+| `security-strict` | Spam-heavy domain endings (`.zip`, `.mov`...), dynamic DNS, abused free hosting, bandwidth-reselling apps | Known legitimate sites on those endings; may still block a few small legitimate sites |
+| `crypto-mining` | Hidden crypto-mining scripts and pools | Exchanges and wallets (see `crypto-trading`) |
+| `stalkerware` | Spy and monitoring apps | Nothing exempt: also blocks parental-control apps such as Bark |
+| `adult` | Porn and adult sites | Explicit images in search results: add `safesearch-bypass` and turn on Safe Search |
+| `safesearch-bypass` | Search engines that can't enforce SafeSearch | Google, Bing, DuckDuckGo (they support SafeSearch) |
+| `gambling`, `dating`, `drugs`, `violence-hate`, `piracy`, `fake-news`, `cults` | Sites of that kind | Everything else; WhatsApp and messaging stay working |
+| `live-streaming` | Bigo, Likee, MICO, Chamet and ~45 paid live/video-chat apps | YouTube, TikTok, Twitch (see `youtube`, `social-media`, `video-streaming`) |
+| `chat-strangers` | Omegle-style random chat sites | Normal messaging apps |
+| `vpn-proxy-bypass` | VPNs, web proxies, encrypted DNS used to get around blocking | Nothing exempt: may block a work VPN or iCloud Private Relay |
+| `social-media` | Facebook, Instagram, TikTok, X, Snapchat, Reddit, Discord... | **WhatsApp** (see `messaging`) |
+| `messaging` | WhatsApp, Telegram, Discord, Signal, Viber, LINE, WeChat... (chats and calls) | Email, SMS and normal phone calls |
+| `youtube` | All of YouTube, YouTube Kids and embedded videos | Other video sites (see `video-streaming`) |
+| `video-streaming` | Netflix, Disney+, Prime Video, Shahid, Twitch... | YouTube (see `youtube`) |
+| `gaming-platforms` | Roblox, Fortnite, Steam, Xbox, PlayStation, Nintendo, PUBG, Free Fire... | Browser game sites (see `online-games`) |
+| `online-games` | Online and browser game sites, including Steam, Roblox and Epic | App Store website and other big-company sites |
+| `ai-chatbots`, `cheating` | AI chatbots; homework-answer and essay sites | Normal search and learning sites (Wikipedia, Khan Academy...) |
+| `shopping`, `crypto-trading` | Online shops; crypto exchanges and wallets | Banking and payment sites such as PayPal |
+| `file-sharing` | File hosts, **including Dropbox** | Google Drive and OneDrive |
+| `remote-control` | AnyDesk, TeamViewer and similar | Nothing exempt: also blocks legitimate remote IT support |
+| `url-shorteners` | bit.ly, tinyurl and ~10,000 more | Nothing exempt: normal shortened links break too |
+
 ## How to add a list
 
 Copy a list's **Adblock** link from the [Lists](#lists) table (right-click → Copy link), then:
@@ -237,8 +299,8 @@ settings → Filters update interval**).
 **Pi-hole v5:** **Group Management → Adlists** → paste the **Plain** link instead → **Add**, then run `pihole -g`.
 
 Good to know:
-- Don't combine `ads-and-tracking` with `ads-and-tracking-extended`, or `security` with `phishing-and-scams`: the bigger
-  list already contains the smaller one.
+- Don't combine `ads-and-tracking` with `ads-and-tracking-extended`: the extended list already contains it. See
+  [What each list blocks](#what-each-list-blocks-and-what-it-doesnt) for which lists overlap and which add something new.
 - Every list uses memory on the device running your blocker; the [Lists](#lists) table shows how many names each has.
 - Then check it with [Is it working?](#is-it-working).
 
@@ -1487,6 +1549,75 @@ broke, and allow the blocked name it shows. Common ones:
 
 Then [report it](#something-broke) so it's fixed for everyone using these lists.
 
+## Troubleshooting FAQ
+
+**Blocking works on some devices but not others, or only some of the time.**
+Usually a second DNS server is letting devices go around the blocker:
+- A public DNS server (8.8.8.8, 1.1.1.1...) in the router's second DNS field: remove it or repeat the blocker's address.
+- **IPv6:** many routers (especially on fibre) also hand out their own or the provider's DNS over IPv6, which devices
+  prefer. Fix it in the router's IPv6 / LAN settings: set the IPv6 DNS server to your blocker's IPv6 address (shown in
+  AdGuard Home's dashboard / Pi-hole's *Settings*), or turn off *advertise DNS* / IPv6 DNS for the LAN.
+- Devices haven't picked up the change yet: reconnect Wi-Fi or restart them.
+- A device or browser uses its own secure DNS, Private DNS or VPN: see [Is it working?](#is-it-working), step 3.
+
+**The whole internet stopped working.**
+Your blocker is probably off or restarting. Restart it (the Pi, NAS app or container). To get online immediately, set
+your router's DNS back to *automatic*, then fix the blocker. To avoid this, run a second blocker and give the router
+both addresses.
+
+**Websites load slowly.**
+Check the blocker's upstream DNS (AdGuard Home: **Settings → DNS settings → Upstream DNS servers**; Pi-hole: **Settings
+→ DNS**) and pick a fast, nearby provider. Too many big lists on a small device (Pi Zero, small router) also slows it
+down: check its memory and drop lists you don't need. A wired connection helps a Raspberry Pi.
+
+**AdGuard Home / Pi-hole shows 0 rules, or a list fails to download.**
+Use the **raw** links from the [Lists](#lists) table (they start with `https://raw.githubusercontent.com/`), not the
+GitHub page address. Pi-hole v5 needs the **Plain** link; Pi-hole v6 and AdGuard Home take the **Adblock** link. Check
+the blocker itself has internet access, then update the lists again.
+
+**Why does the Adblock version have fewer entries than the Plain one?**
+That's normal: one adblock rule such as `||example.com^` also covers all its subdomains, so they don't need their own
+lines.
+
+**I still see ads on YouTube, Facebook, Instagram, Twitch or Spotify.**
+Those services deliver ads from the same servers as their content, so DNS blocking can't separate them. Use a browser ad
+blocker for the websites (see [YouTube ads in the browser](#youtube-ads-in-the-browser)) or the paid ad-free plans for
+the apps.
+
+**A site, app, email link or shopping link stopped working.**
+See [Is it working?](#is-it-working) step 4 and [Something broke?](#something-broke).
+
+**Children still get around the blocks.**
+DNS blocking only works on your network: on **mobile data** or a friend's hotspot it doesn't apply, so also use the
+phone's parental controls (Google Family Link, Apple Screen Time). Add `vpn-proxy-bypass` against VPN apps and encrypted
+DNS, block outside DNS on the router ([Smart TVs, step 3](#step-3-stop-devices-that-ignore-your-dns)), and apply the
+stricter lists only to the children's devices (AdGuard Home **Settings → Client settings**, Pi-hole **Group
+Management**). Private / incognito browser windows don't get around DNS blocking.
+
+**"Port 53 is already in use" when installing.**
+Something else answers DNS on that device. See [Docker, step 2](#step-2-free-port-53-ubuntu-and-debian-servers) (Linux),
+[TrueNAS](#truenas), [Synology, step 1](#step-1-prepare-the-nas), [QNAP](#qnap-nas), or
+[AdGuard Home on Windows](#adguard-home-on-a-windows-or-mac-computer).
+
+**Microsoft Defender reports "HostsFileHijack".**
+Expected when the Windows script adds `windows-telemetry`, because it blocks Microsoft's data collection. Choose *Allow on
+device*, or don't use that list with the script.
+
+**The device script ran, but nothing seems blocked.**
+Restart the browser (it keeps its own cache), and check its secure-DNS setting ([Is it working?](#is-it-working), step
+3). Make sure you ran the script with administrator rights (`sudo`, or **Yes** on Windows' prompt).
+
+**How often do the lists update? Can I update them now?**
+This repository rebuilds them every day. AdGuard Home fetches updates daily (or **Filters → DNS blocklists → Check for
+updates**); Pi-hole weekly (or **Tools → Update Gravity**); the device scripts daily if you turned that on (or run them
+with `--update` / `-Update`). A list's *Last modified* date only changes when its contents change.
+
+**Is my browsing sent to anyone?**
+No. Your blocker or device only downloads the lists from GitHub; your DNS lookups stay on your own AdGuard Home, Pi-hole,
+router or device.
+
+**My problem isn't here.** [Open an issue](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/issues) describing your setup (blocker, router, device) and what happens.
+
 ## Something broke?
 
 A site, app or device stopped working after adding a list? Fix it on your own blocker right away, then tell us so it's
@@ -1520,7 +1651,7 @@ its filter lists, the rules behind its **Blocked services** switches, and the DN
 <!-- SOURCES:START -->
 | Source | Used in | License |
 |---|---|---|
-| [HaGeZi Multi Light](https://github.com/hagezi/dns-blocklists) | `ads-and-tracking` | GPL-3.0 |
+| [HaGeZi Multi Light](https://github.com/hagezi/dns-blocklists) | `ads-and-tracking`, `ads-and-tracking-extended` | GPL-3.0 |
 | [HaGeZi Multi Pro++](https://github.com/hagezi/dns-blocklists) | `ads-and-tracking-extended` | GPL-3.0 |
 | [HaGeZi Pop-Up Ads](https://github.com/hagezi/dns-blocklists) | `ads-and-tracking-extended` | GPL-3.0 |
 | [HaGeZi Threat Intelligence Feeds (Medium)](https://github.com/hagezi/dns-blocklists) | `security` | GPL-3.0 |
