@@ -22,11 +22,12 @@ from well-maintained upstream sources, merged and de-duplicated.
 - [UniFi Cloud Gateway (UCG Ultra / Max / Fiber, UDM, UDR)](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr)
   - [Option 1 (recommended): UniFi + AdGuard Home or Pi-hole, updates automatically](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically)
   - [Option 2: UniFi only, no extra device (manual updates)](#option-2-unifi-only-no-extra-device-manual-updates)
-- [Routers: pfSense, OPNsense, OpenWrt and MikroTik](#routers-pfsense-opnsense-openwrt-and-mikrotik)
+- [Routers: pfSense, OPNsense, OpenWrt, MikroTik and EdgeRouter](#routers-pfsense-opnsense-openwrt-mikrotik-and-edgerouter)
   - [pfSense](#pfsense)
   - [OPNsense](#opnsense)
   - [OpenWrt](#openwrt)
   - [MikroTik](#mikrotik)
+  - [Ubiquiti EdgeRouter](#ubiquiti-edgerouter)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -182,6 +183,7 @@ every list above, lets you pick one or several, backs up your original hosts fil
 | Windows 10/11 | [`install/windows.ps1`](install/windows.ps1) | hosts file, daily update via Task Scheduler |
 | Linux | [`install/linux.sh`](install/linux.sh) | hosts file, daily update via cron or systemd |
 | Android | [`install/android.sh`](install/android.sh) (in Termux) | rooted: hosts file. Not rooted: sets you up with the free AdAway app |
+| Ubiquiti EdgeRouter | [`install/edgerouter.sh`](install/edgerouter.sh) | the router's DNS (dnsmasq) for every device, daily update via the task scheduler; see [EdgeRouter](#ubiquiti-edgerouter) |
 | iPhone / iPad | no script possible (see [iPhone and iPad](#iphone-and-ipad)) | your AdGuard Home / Pi-hole, the AdGuard app, AdGuard DNS, or Screen Time |
 
 **Good to know before you start**
@@ -338,6 +340,7 @@ Cloudflare...), so blocking their IPs would break normal websites, and they're n
 | [`ips/live-streaming-adguard.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-adguard.txt) | AdGuard Home |
 | [`ips/live-streaming-ipv4.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv4.txt) / [`-ipv6.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv6.txt) | Routers and firewalls (pfSense, OPNsense, OpenWrt, UniFi, Windows Firewall) |
 | [`ips/live-streaming-mikrotik.rsc`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-mikrotik.rsc) | MikroTik RouterOS (`/import`) |
+| [`ips/live-streaming-edgeos.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-edgeos.txt) | Ubiquiti EdgeRouter (paste in `configure` mode) |
 | [`ips/live-streaming.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming.txt) | Same, IPv4 and IPv6 together |
 
 **AdGuard Home:** Filters → DNS blocklists → Add blocklist → Add a custom list → paste the `-adguard.txt` link → Save.
@@ -356,6 +359,8 @@ Apply.
 your OpenWrt version).
 
 **MikroTik** ([full router guide](#mikrotik)): import [`ips/live-streaming-mikrotik.rsc`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-mikrotik.rsc), which fills an address list named `live-streaming`, then block that list in the forward chain.
+
+**Ubiquiti EdgeRouter** ([full router guide](#ubiquiti-edgerouter)): paste [`ips/live-streaming-edgeos.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-edgeos.txt) in configure mode to create the network group `live-streaming`, then drop it in your `LAN_IN` firewall.
 
 **Windows Firewall (one PC):** in PowerShell as administrator:
 ```powershell
@@ -416,14 +421,15 @@ block them with Option 1, step 3. Menu names move around between UniFi Network v
 and [Zone-Based Firewall](https://help.ui.com/hc/en-us/articles/115003173168-Zone-Based-Firewalls-in-UniFi) help pages
 show the current ones.
 
-## Routers: pfSense, OPNsense, OpenWrt and MikroTik
+## Routers: pfSense, OPNsense, OpenWrt, MikroTik and EdgeRouter
 
-If your router runs pfSense, OPNsense, OpenWrt or MikroTik RouterOS, it can do the blocking itself for every device at home, and update the lists
+If your router runs pfSense, OPNsense, OpenWrt, MikroTik RouterOS or a Ubiquiti EdgeRouter, it can do the blocking itself for every device at home, and update the lists
 every day. Each router has two ways: its own blocking package, or AdGuard Home running next to it.
 
 Which list link to use:
 - **pfSense (pfBlockerNG)**, **OPNsense (Unbound blocklists)** and **OpenWrt (adblock-fast)**: the **plain** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/<list>.txt`
   (for example `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking.txt`).
+- **EdgeRouter**: no links needed, the [script](#ubiquiti-edgerouter) shows a menu.
 - **MikroTik (DNS adlist)**: the **hosts** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/<list>.txt`.
 - **AdGuard Home** (on any of them): the **adblock** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/<list>.txt`.
 
@@ -570,6 +576,83 @@ list.
 /ipv6 firewall filter add chain=forward dst-address-list=live-streaming action=drop comment="Block Bigo network"
 /system scheduler add name=update-live-streaming-ips interval=1d start-time=04:30:00 on-event="/tool fetch url=\"https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-mikrotik.rsc\" dst-path=live-streaming.rsc; :delay 5s; /import file-name=live-streaming.rsc"
 ```
+
+### Ubiquiti EdgeRouter
+
+For EdgeRouters running **EdgeOS 2.x** (ER-X, ER-X-SFP, ER-4, ER-6P, ER-8, ER-12...). For UniFi gateways, see
+[UniFi Cloud Gateway](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr) instead. EdgeOS has no block-list feature of its
+own, so [`install/edgerouter.sh`](install/edgerouter.sh) adds one: it downloads the lists you pick into `/config` (kept
+across reboots and firmware upgrades), points the router's DNS service at them, and updates them every day through the
+EdgeOS task scheduler.
+
+**Before you start:** the router must be the DNS server for your devices. The *Basic Setup* wizard does this. To check,
+log in over SSH and run `show configuration commands | match "dns forwarding"`: if nothing is printed, set it up
+(`switch0` is the LAN on an ER-X; use `eth1` or your LAN interface on other models, and your own LAN addresses):
+```
+configure
+set service dns forwarding listen-on switch0
+set service dns forwarding cache-size 10000
+set service dhcp-server shared-network-name LAN subnet 192.168.1.0/24 dns-server 192.168.1.1
+commit; save; exit
+```
+
+**Install:**
+1. Log in over SSH from a terminal (macOS/Linux Terminal, or PowerShell on Windows): `ssh ubnt@192.168.1.1` (use your
+   router's address and user).
+2. Download and run the script, then pick lists from the menu:
+   ```bash
+   curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/install/edgerouter.sh
+   sudo bash edgerouter.sh
+   ```
+3. That's it: the lists update daily. Later: `sudo bash /config/scripts/block-lists.sh --update` (refresh now),
+   `sudo bash /config/scripts/block-lists.sh` (choose different lists) or `... --remove` (undo everything).
+
+**Memory:** the router's DNS service needs roughly 100 MB per 500,000 names and the script warns when there isn't enough
+free. On an ER-X (256 MB) start with `ads-and-tracking`, or with smaller lists; models with 1 GB+ (ER-4, ER-6P, ER-12)
+handle much more.
+
+**Option B: AdGuard Home on another device.** Instead of the script, add the adblock links in AdGuard Home and hand it out
+as the DNS server (delete the old `dns-server` entry first):
+```
+configure
+set service dhcp-server shared-network-name LAN subnet 192.168.1.0/24 dns-server <AdGuard Home IP>
+commit; save; exit
+```
+
+**Stop devices from going around it:** send all DNS to the router, and block encrypted DNS (DNS-over-TLS). Replace
+`switch0` and `192.168.1.1` with your LAN interface and router address (Option B: use the AdGuard Home IP as
+`inside-address` and add it as an exception in `destination address`). If you already have a firewall named `LAN_IN`,
+only add the rule.
+```
+configure
+set service nat rule 1 type destination
+set service nat rule 1 description "Force DNS"
+set service nat rule 1 inbound-interface switch0
+set service nat rule 1 protocol tcp_udp
+set service nat rule 1 destination port 53
+set service nat rule 1 destination address '!192.168.1.1'
+set service nat rule 1 inside-address address 192.168.1.1
+set service nat rule 1 inside-address port 53
+set firewall name LAN_IN default-action accept
+set firewall name LAN_IN rule 10 description "Block DNS-over-TLS"
+set firewall name LAN_IN rule 10 action reject
+set firewall name LAN_IN rule 10 protocol tcp
+set firewall name LAN_IN rule 10 destination port 853
+set interfaces switch0 firewall in name LAN_IN
+commit; save; exit
+```
+Also add the `vpn-proxy-bypass` list.
+
+**Block by IP (optional):** in `configure` mode paste the commands from
+[`ips/live-streaming-edgeos.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-edgeos.txt) (they create the network group `live-streaming`),
+then block it and save:
+```
+set firewall name LAN_IN rule 20 description "Block Bigo network"
+set firewall name LAN_IN rule 20 action drop
+set firewall name LAN_IN rule 20 destination group network-group live-streaming
+commit; save; exit
+```
+Paste the file again now and then to pick up changes.
 
 ## Smart TVs and streaming sticks
 

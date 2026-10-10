@@ -292,6 +292,14 @@ def build_ip_lists(built):
         rsc += ['/ipv6 firewall address-list remove [find where list="%s"]' % name]
         rsc += ['/ipv6 firewall address-list add list=%s address=%s comment="Pi-Hole-Block-Lists"' % (name, n) for n in v6]
         write_if_changed(ROOT / "ips" / ("%s-mikrotik.rsc" % name), "\n".join(rsc) + "\n")
+        # Ubiquiti EdgeRouter (EdgeOS) commands to paste in configure mode.
+        edge = ["# %s" % l for l in head("EdgeOS commands: paste in configure mode, then commit; save", len(v4) + len(v6)).replace("# ", "").splitlines() if l]
+        edge += ["delete firewall group network-group %s" % name, "set firewall group network-group %s description \"Pi-Hole-Block-Lists %s\"" % (name, name)]
+        edge += ["set firewall group network-group %s network %s" % (name, n) for n in v4]
+        if v6:
+            edge += ["delete firewall group ipv6-network-group %s-v6" % name]
+            edge += ["set firewall group ipv6-network-group %s-v6 ipv6-network %s" % (name, n) for n in v6]
+        write_if_changed(ROOT / "ips" / ("%s-edgeos.txt" % name), "\n".join(edge) + "\n")
         rules = adguard_ip_rules(prefixes)
         write_if_changed(ROOT / "ips" / ("%s-adguard.txt" % name),
                          "[Adblock Plus]\n" + head("AdGuard Home rules: block DNS answers pointing into these IP ranges", len(rules)).replace("# ", "! ")

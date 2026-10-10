@@ -65,6 +65,22 @@ jobs:
           else test ! -e /etc/cron.daily/block-lists -a ! -e /etc/systemd/system/block-lists.timer; fi
           echo "real install OK"
 
+  edgerouter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test mode - install, update, remove
+        run: |
+          set -e
+          T="$(mktemp -d)/block-lists"
+          bash install/edgerouter.sh --dir "$T" --lists "$LISTS,not-a-list" --yes
+          grep -qx "0.0.0.0 $BLOCKED" "$T/blocklist.hosts"
+          grep -qx "LISTS=$LISTS" "$T/block-lists.conf"
+          bash install/edgerouter.sh --dir "$T" --update --yes
+          bash install/edgerouter.sh --dir "$T" --remove
+          test ! -e "$T"
+          echo "edgerouter test mode OK"
+
   windows:
     runs-on: windows-latest
     strategy:
