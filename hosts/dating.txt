@@ -2,8 +2,8 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 07:14 UTC
-# Entries: 13144
+# Last modified: 2026-10-10 07:52 UTC
+# Entries: 13073
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
@@ -1227,7 +1227,6 @@
 0.0.0.0 anythingdating.com
 0.0.0.0 anythinggoesdating.org
 0.0.0.0 aodating.com
-0.0.0.0 aol.eharmony.com
 0.0.0.0 aoljp.marriage.match.com
 0.0.0.0 aoljp.match.com
 0.0.0.0 aolsvc.match.com
@@ -1253,7 +1252,6 @@
 0.0.0.0 api-stage.cloud.bumble.com
 0.0.0.0 api.as1.gotinder.com
 0.0.0.0 api.cloud.bumble.com
-0.0.0.0 api.eharmony.com
 0.0.0.0 api.feeld.co
 0.0.0.0 api.gateway.pof.com
 0.0.0.0 api.gotinder.com
@@ -1428,7 +1426,6 @@
 0.0.0.0 asie-lover.com
 0.0.0.0 asiecontact.fr
 0.0.0.0 ask.mamba.ru
-0.0.0.0 assets.eharmony.com
 0.0.0.0 assets.grindr.com
 0.0.0.0 assets.hinge.co
 0.0.0.0 assets.meetme.com
@@ -1528,7 +1525,6 @@
 0.0.0.0 autisticdating.com.au
 0.0.0.0 autoconfig.shop.bumble.com
 0.0.0.0 autodiscover.aisle.co
-0.0.0.0 autodiscover.immomo.com
 0.0.0.0 autodiscover.match.com
 0.0.0.0 autodiscover.tantan.com
 0.0.0.0 autumn-kiss.com
@@ -2029,16 +2025,6 @@
 0.0.0.0 bj-dzc-nps04.immomo.com
 0.0.0.0 bj-gh-nps-01.tantanapp.com
 0.0.0.0 bj-gh-nps-02.tantanapp.com
-0.0.0.0 bj-pic-nps01.immomo.com
-0.0.0.0 bj-pic-nps02.immomo.com
-0.0.0.0 bj-wj-nps-03.immomo.com
-0.0.0.0 bj-wj-nps-04.immomo.com
-0.0.0.0 bj-wj-nps01.immomo.com
-0.0.0.0 bj-wj-nps02.immomo.com
-0.0.0.0 bj-wj-nps03.immomo.com
-0.0.0.0 bj-wj-nps04.immomo.com
-0.0.0.0 bj-wj-radius-01.immomo.com
-0.0.0.0 bj-wj-radius-02.immomo.com
 0.0.0.0 bkkescortservice.com
 0.0.0.0 bl.grannyspace.com
 0.0.0.0 black-christian-dating-service.chatkamer.be
@@ -2681,7 +2667,6 @@
 0.0.0.0 boo.dating
 0.0.0.0 boo.world
 0.0.0.0 bookofmatches.com
-0.0.0.0 bookstore.eharmony.com
 0.0.0.0 boomerdating.com
 0.0.0.0 boomersdating.com
 0.0.0.0 boomplay.com
@@ -2888,8 +2873,6 @@
 0.0.0.0 cb2.tagged.com
 0.0.0.0 ccelibat.com
 0.0.0.0 ccpa.grindr.com
-0.0.0.0 cd-tt-nps01.immomo.com
-0.0.0.0 cd-tt-nps02.immomo.com
 0.0.0.0 cdating.app
 0.0.0.0 cdating.at
 0.0.0.0 cdn-dating.tevo.app
@@ -2953,17 +2936,10 @@
 0.0.0.0 chat-direct.org
 0.0.0.0 chat-paradise.com
 0.0.0.0 chat-place.org
-0.0.0.0 chat-r3.eharmony.com
-0.0.0.0 chat-r4.eharmony.com
-0.0.0.0 chat-r5.eharmony.com
-0.0.0.0 chat-r6.eharmony.com
-0.0.0.0 chat-r9.eharmony.com
 0.0.0.0 chat-solution.com
 0.0.0.0 chat.coffeemeetsbagel.com
-0.0.0.0 chat.eharmony.com
 0.0.0.0 chat.hu
 0.0.0.0 chat.ru
-0.0.0.0 chat.staging.eharmony.com
 0.0.0.0 chat.trulymadly.com
 0.0.0.0 chatarg.com
 0.0.0.0 chatclub.ru
@@ -3260,7 +3236,6 @@
 0.0.0.0 contactsarabes.com
 0.0.0.0 contactsingles.co.uk
 0.0.0.0 contadorgaleon.hispavista.com
-0.0.0.0 content.eharmony.com
 0.0.0.0 content.gotinder.com
 0.0.0.0 contents.nifty.com
 0.0.0.0 contest-up.pof.com
@@ -3289,7 +3264,6 @@
 0.0.0.0 corecollege.com
 0.0.0.0 coredating.app
 0.0.0.0 corp.badoo.com
-0.0.0.0 corp.eharmony.com
 0.0.0.0 corpuschristidating.com
 0.0.0.0 corpuschristimatchmaker.com
 0.0.0.0 correspondance-intime.com
@@ -4249,7 +4223,6 @@
 0.0.0.0 daytonmatchmaker.com
 0.0.0.0 dazy.co.in
 0.0.0.0 db8.quackquack.in
-0.0.0.0 dc1.eharmony.com
 0.0.0.0 dcdating.com
 0.0.0.0 dcgaymatchmaker.com
 0.0.0.0 dcmatchmaker.com
@@ -4504,7 +4477,6 @@
 0.0.0.0 discutchat.net
 0.0.0.0 disonsdemain.fr
 0.0.0.0 display.ourtime.com
-0.0.0.0 distributecenter.immomo.com
 0.0.0.0 ditchordate.com
 0.0.0.0 ditui.tantanapp.com
 0.0.0.0 divinapalavra.com
@@ -4523,7 +4495,6 @@
 0.0.0.0 dk.match.com
 0.0.0.0 dk.ourtime.com
 0.0.0.0 dl.dilmil.co
-0.0.0.0 dl.immomo.com
 0.0.0.0 dmflirt.app
 0.0.0.0 dmpet.imgix.net
 0.0.0.0 dmvmatchmakers.com
@@ -4632,11 +4603,9 @@
 0.0.0.0 e-order-propecia.com
 0.0.0.0 e-rencontre.net
 0.0.0.0 e-southbeachdiet.com
-0.0.0.0 e.eharmony.com
 0.0.0.0 e2p-okc-qa1.api.okcupid.com
 0.0.0.0 e2p-okc-qa2.api.okcupid.com
 0.0.0.0 e2p.okcupid.com
-0.0.0.0 eap.immomo.com
 0.0.0.0 eastern-europe-woman.com
 0.0.0.0 eastern-european-bride.com
 0.0.0.0 easterndream.com
@@ -4814,7 +4783,6 @@
 0.0.0.0 emosingles.com.au
 0.0.0.0 employee.pof.com
 0.0.0.0 emqtt.kubernetes.dus6.jaumo.com
-0.0.0.0 emsites.eharmony.com
 0.0.0.0 emu.joyie.com
 0.0.0.0 emule-anonyme.com
 0.0.0.0 en-seniormatch.com
@@ -5168,7 +5136,6 @@
 0.0.0.0 fatyne.com
 0.0.0.0 faucetsfly.com
 0.0.0.0 fayettevillematchmaker.com
-0.0.0.0 fb.eharmony.com
 0.0.0.0 fdating.app
 0.0.0.0 fdating.com
 0.0.0.0 feabie.com
@@ -5450,7 +5417,6 @@
 0.0.0.0 folio.match.com
 0.0.0.0 folkd.com
 0.0.0.0 fondosdechicas.com
-0.0.0.0 fonts.eharmony.com
 0.0.0.0 fonts.hinge.co
 0.0.0.0 foobar.okcupid.com
 0.0.0.0 foodexpirationdates.app
@@ -5634,7 +5600,6 @@
 0.0.0.0 gamelobby-signalr.in.azr.pof.com
 0.0.0.0 gamelobby-signalr.pd.azr.pof.com
 0.0.0.0 gamelobby-signalr.qa.azr.pof.com
-0.0.0.0 gameplatform-api-me-online.immomo.com
 0.0.0.0 gamerdating.com.au
 0.0.0.0 games.meetme.com
 0.0.0.0 gamesadmin.sdk.match.com
@@ -5642,7 +5607,6 @@
 0.0.0.0 gangbang-bernadette.fr.st
 0.0.0.0 gangbang-tina.auspurergeilheit.com
 0.0.0.0 gangbangspictures.com
-0.0.0.0 gannett.eharmony.com
 0.0.0.0 garageabite.com
 0.0.0.0 gardeningpassions.com
 0.0.0.0 gatekeepercasino.com
@@ -6011,8 +5975,6 @@
 0.0.0.0 getonce.com
 0.0.0.0 getyourcoat.co.uk
 0.0.0.0 gew3.bapi.bumble.com
-0.0.0.0 ghl-tt-nps01.immomo.com
-0.0.0.0 ghl-tt-nps02.immomo.com
 0.0.0.0 ghpage.com
 0.0.0.0 gidora.org
 0.0.0.0 gingerdating.app
@@ -6290,8 +6252,6 @@
 0.0.0.0 heliumdating.com
 0.0.0.0 hellasescorts.com
 0.0.0.0 hellobar.co.uk
-0.0.0.0 help-marriage.eharmony.com
-0.0.0.0 help-singles.eharmony.com
 0.0.0.0 help.grindr.com
 0.0.0.0 help.hinge.co
 0.0.0.0 help.match.com
@@ -6509,8 +6469,6 @@
 0.0.0.0 immomo.com
 0.0.0.0 imperialdating.com.au
 0.0.0.0 impersonals.net
-0.0.0.0 implatform-lab.immomo.com
-0.0.0.0 implatform.immomo.com
 0.0.0.0 import.meetme.com
 0.0.0.0 imujeresrusas.com
 0.0.0.0 imvu.com
@@ -6731,7 +6689,6 @@
 0.0.0.0 jayshetty.services.match.com
 0.0.0.0 jazbaat.in
 0.0.0.0 jazz-dates.co.uk
-0.0.0.0 jazzed-static.eharmony.com
 0.0.0.0 jazzfmdating.com
 0.0.0.0 jazzpassions.com
 0.0.0.0 jdate.com
@@ -6964,7 +6921,6 @@
 0.0.0.0 keumzone.com
 0.0.0.0 keydates.app
 0.0.0.0 keywestdating.com
-0.0.0.0 kfim.immomo.com
 0.0.0.0 khersongirls.com
 0.0.0.0 ki-dating.app
 0.0.0.0 kibana-test.kubernetes.dus6.jaumo.com
@@ -7256,10 +7212,6 @@
 0.0.0.0 listcrawler.us.org
 0.0.0.0 littlerockmatchmaking.com
 0.0.0.0 live-439.com
-0.0.0.0 live-api.immomo.com
-0.0.0.0 live-ext.immomo.com
-0.0.0.0 live-log.immomo.com
-0.0.0.0 live-m.immomo.com
 0.0.0.0 live.jaumo.com
 0.0.0.0 live.match.com
 0.0.0.0 live.meetme.com
@@ -7613,7 +7565,6 @@
 0.0.0.0 lyon-rencontre.org
 0.0.0.0 m.aoljp.match.com
 0.0.0.0 m.date-me.com
-0.0.0.0 m.eharmony.com
 0.0.0.0 m.elitesingles.com
 0.0.0.0 m.hinge.co
 0.0.0.0 m.jaumo.com
@@ -7651,7 +7602,6 @@
 0.0.0.0 mail.christianmingle.com
 0.0.0.0 mail.eharmony.com
 0.0.0.0 mail.elitesingles.com
-0.0.0.0 mail.immomo.com
 0.0.0.0 mail.jdate.com
 0.0.0.0 mail.lovoo.com
 0.0.0.0 mail.mamba.ru
@@ -7711,7 +7661,6 @@
 0.0.0.0 marriage.albion.su
 0.0.0.0 marriage.bs.match.com
 0.0.0.0 marriage.com
-0.0.0.0 marriage.eharmony.com
 0.0.0.0 marriage.match.com
 0.0.0.0 marriage.ocn.match.com
 0.0.0.0 marriageagency-ludmila.com
@@ -8552,7 +8501,6 @@
 0.0.0.0 mfcsinglesontario.com
 0.0.0.0 mgdating.com
 0.0.0.0 mgjagiggzapdates.eroglobusirk.com
-0.0.0.0 mi.eharmony.com
 0.0.0.0 mi2.intl.match.com
 0.0.0.0 mi5.dating
 0.0.0.0 mi6.dating
@@ -8858,7 +8806,6 @@
 0.0.0.0 mshot.bumble.com
 0.0.0.0 msn.match.com
 0.0.0.0 msnjp.marriage.match.com
-0.0.0.0 mstatic.eharmony.com
 0.0.0.0 mtch.com
 0.0.0.0 mtdating.com
 0.0.0.0 mulheressolteiras.com.br
@@ -9477,7 +9424,6 @@
 0.0.0.0 pensacolamatchmaker.com
 0.0.0.0 pentecostalpeoplemeet.com
 0.0.0.0 penzitamu.com
-0.0.0.0 people.eharmony.com
 0.0.0.0 peoplemedia.com
 0.0.0.0 peoplemedia.net
 0.0.0.0 peoplemeet.com
@@ -9493,7 +9439,6 @@
 0.0.0.0 personalitygrowth.com
 0.0.0.0 personalityhunt.com
 0.0.0.0 personalitytests.com
-0.0.0.0 personals.aol.eharmony.com
 0.0.0.0 personals.yahoo.com
 0.0.0.0 personals24.net
 0.0.0.0 perthdating.com.au
@@ -9786,7 +9731,6 @@
 0.0.0.0 quiz.okcupid.com
 0.0.0.0 r-std.com
 0.0.0.0 r.tantanapp.com
-0.0.0.0 r3.eharmony.com
 0.0.0.0 r5y2gy824h6rdjjax3en.blog.bumble.com
 0.0.0.0 rabbit.sandbox.dilmil.co
 0.0.0.0 rabbit.staging1.dilmil.co
@@ -10636,7 +10580,6 @@
 0.0.0.0 securethumbnails.intl.match.com
 0.0.0.0 securethumbnails.match.com
 0.0.0.0 security-sign-on.firebaseapp.com
-0.0.0.0 security.immomo.com
 0.0.0.0 secwebviews.pof.com
 0.0.0.0 seducciononline.org.forcegay.si
 0.0.0.0 seduction.fr
@@ -11270,10 +11213,7 @@
 0.0.0.0 statamic.feeld.co
 0.0.0.0 static-assets.gotinder.com
 0.0.0.0 static-easyflirt.com
-0.0.0.0 static.eharmony.com
 0.0.0.0 static.elitesingles.com
-0.0.0.0 static1.eharmony.com
-0.0.0.0 static2.eharmony.com
 0.0.0.0 stats.aisle.co
 0.0.0.0 stats01.pof.com
 0.0.0.0 status-test.feeld.co
@@ -11423,7 +11363,6 @@
 0.0.0.0 t-stage.cloud.bumble.com
 0.0.0.0 t.ads.pof.com
 0.0.0.0 t.cloud.bumble.com
-0.0.0.0 t.eharmony.com
 0.0.0.0 t.yesware.com
 0.0.0.0 t2.trulymadly.com
 0.0.0.0 tableau.gotinder.com
@@ -11678,7 +11617,6 @@
 0.0.0.0 tm-love.com
 0.0.0.0 tmg-gateway-usw2.meetme.com
 0.0.0.0 tmg-stream.gateway.pof.com
-0.0.0.0 tms.eharmony.com
 0.0.0.0 tms.parship.com
 0.0.0.0 tndating.com
 0.0.0.0 tnsingles.com
@@ -11808,7 +11746,6 @@
 0.0.0.0 trulyrussian.com
 0.0.0.0 trulythai.com
 0.0.0.0 trust.grindr.com
-0.0.0.0 try.eharmony.com
 0.0.0.0 ts.dating
 0.0.0.0 tsdate.com
 0.0.0.0 tsdates.com
@@ -12383,7 +12320,6 @@
 0.0.0.0 vmalert-helper.mamba.ru
 0.0.0.0 vn.match.com
 0.0.0.0 vocaldating.app
-0.0.0.0 voga-api-online.immomo.com
 0.0.0.0 voksenkontakt.com
 0.0.0.0 volosdate.com
 0.0.0.0 vooboo.ru
@@ -12471,7 +12407,6 @@
 0.0.0.0 web.tagged.com
 0.0.0.0 web.test.trulymadly.com
 0.0.0.0 web.trulymadly.com
-0.0.0.0 webaccess.eharmony.com
 0.0.0.0 webadultdating.com
 0.0.0.0 webaffair.com
 0.0.0.0 webcam-messenger.com
@@ -12575,8 +12510,6 @@
 0.0.0.0 wishesmsg.com
 0.0.0.0 with.is
 0.0.0.0 withlovefromvoronezh.com
-0.0.0.0 wj-nps02.immomo.com
-0.0.0.0 wj-office-nps02.immomo.com
 0.0.0.0 women2love.com
 0.0.0.0 womendating.com.au
 0.0.0.0 wonderdates.ai
@@ -12680,9 +12613,7 @@
 0.0.0.0 www.dk.match.com
 0.0.0.0 www.dk.ourtime.com
 0.0.0.0 www.ec.match.com
-0.0.0.0 www.eharmony.com
 0.0.0.0 www.elitesingles.com
-0.0.0.0 www.emsites.eharmony.com
 0.0.0.0 www.es.match.com
 0.0.0.0 www.es.ourtime.com
 0.0.0.0 www.europe.ourtime.com
@@ -12703,7 +12634,6 @@
 0.0.0.0 www.hn-cm-nps01.immomo.com
 0.0.0.0 www.hn-cm-nps02.immomo.com
 0.0.0.0 www.ie.ourtime.com
-0.0.0.0 www.immomo.com
 0.0.0.0 www.infoblox.office.okcupid.com
 0.0.0.0 www.int.tantanapp.com
 0.0.0.0 www.investors.grindr.com
@@ -12783,7 +12713,6 @@
 0.0.0.0 www.vpn.gotinder.com
 0.0.0.0 www.vpn.meetme.com
 0.0.0.0 www.waplog.com
-0.0.0.0 www.webaccess.eharmony.com
 0.0.0.0 www.webdev.zoosk.com
 0.0.0.0 www.webprd.zoosk.com
 0.0.0.0 www.webstg.zoosk.com
