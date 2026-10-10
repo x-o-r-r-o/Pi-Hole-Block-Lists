@@ -5,6 +5,42 @@
 Ready-to-use DNS block lists for **Pi-hole** and **AdGuard Home**, rebuilt **every day**
 from well-maintained upstream sources, merged and de-duplicated.
 
+## Contents
+
+<!-- TOC:START -->
+- [Lists](#lists)
+  - [Suggested setups](#suggested-setups)
+- [How to add a list](#how-to-add-a-list)
+- [Use on one device, without Pi-hole or AdGuard Home](#use-on-one-device-without-pi-hole-or-adguard-home)
+  - [macOS](#macos)
+  - [Windows 10 / 11](#windows-10--11)
+  - [Linux](#linux)
+  - [Android](#android)
+  - [iPhone and iPad](#iphone-and-ipad)
+- [YouTube ads in the browser](#youtube-ads-in-the-browser)
+- [Blocking by IP address (ips/)](#blocking-by-ip-address-ips)
+- [UniFi Cloud Gateway (UCG Ultra / Max / Fiber, UDM, UDR)](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr)
+  - [Option 1 (recommended): UniFi + AdGuard Home or Pi-hole, updates automatically](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically)
+  - [Option 2: UniFi only, no extra device (manual updates)](#option-2-unifi-only-no-extra-device-manual-updates)
+- [Routers: pfSense and OpenWrt](#routers-pfsense-and-openwrt)
+  - [pfSense](#pfsense)
+  - [OpenWrt](#openwrt)
+- [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
+  - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
+  - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
+  - [Step 3: stop devices that ignore your DNS](#step-3-stop-devices-that-ignore-your-dns)
+  - [What to expect](#what-to-expect)
+- [Game consoles](#game-consoles)
+  - [Step 1: block console ads and telemetry](#step-1-block-console-ads-and-telemetry)
+  - [Step 2: turn off tracking and ads in the console's settings](#step-2-turn-off-tracking-and-ads-in-the-consoles-settings)
+  - [What to expect](#what-to-expect-1)
+- [Something broke?](#something-broke)
+- [Adding your own domains](#adding-your-own-domains)
+- [How it updates](#how-it-updates)
+- [Sources](#sources)
+- [Adding a new list or source](#adding-a-new-list-or-source)
+<!-- TOC:END -->
+
 ## Lists
 
 The table below and the Sources table are updated automatically on every build.
@@ -305,7 +341,7 @@ Cloudflare...), so blocking their IPs would break normal websites, and they're n
 AdGuard Home then refuses any DNS answer that points into Bigo's network, which also catches new Bigo server names.
 Use it together with `adblock/live-streaming.txt`. (Pi-hole can't block by IP; use your router for that.)
 
-**pfSense (pfBlockerNG):** Firewall → pfBlockerNG → **IP → IPv4** → Add → paste the `-ipv4.txt` link as the source,
+**pfSense (pfBlockerNG)** ([full router guide](#pfsense)): Firewall → pfBlockerNG → **IP → IPv4** → Add → paste the `-ipv4.txt` link as the source,
 Action *Deny Both*, Update frequency *Once a day* → Save, then run **Update → Force Update**. Repeat under **IPv6** with
 `-ipv6.txt`.
 
@@ -313,7 +349,7 @@ Action *Deny Both*, Update frequency *Once a day* → Save, then run **Update �
 frequency 1 day → Save → Apply. Then Firewall → **Rules → LAN** → + → Action *Block*, Destination: the alias → Save →
 Apply.
 
-**OpenWrt:** with the **banIP** package, add the `-ipv4.txt` / `-ipv6.txt` links as custom feeds (see the banIP docs for
+**OpenWrt** ([full router guide](#openwrt)): with the **banIP** package, add the `-ipv4.txt` / `-ipv6.txt` links as custom feeds (see the banIP docs for
 your OpenWrt version).
 
 **Windows Firewall (one PC):** in PowerShell as administrator:
@@ -374,6 +410,81 @@ block them with Option 1, step 3. Menu names move around between UniFi Network v
 [Content and Domain Filtering](https://help.ui.com/hc/en-us/articles/12568927589143-Content-and-Domain-Filtering-in-UniFi)
 and [Zone-Based Firewall](https://help.ui.com/hc/en-us/articles/115003173168-Zone-Based-Firewalls-in-UniFi) help pages
 show the current ones.
+
+## Routers: pfSense and OpenWrt
+
+If your router runs pfSense or OpenWrt, it can do the blocking itself for every device at home, and update the lists
+every day. Each router has two ways: its own blocking package, or AdGuard Home running next to it.
+
+Which list link to use:
+- **pfSense (pfBlockerNG)** and **OpenWrt (adblock-fast)**: the **plain** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/<list>.txt`
+  (for example `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking.txt`).
+- **AdGuard Home** (on either router): the **adblock** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/<list>.txt`.
+
+Router memory is the limit: roughly 100 MB of free RAM per 500,000 domains. Check **Status → Dashboard** (pfSense) or
+**Status → Overview** (OpenWrt) and start small (`ads-and-tracking` + `security`), adding more lists while there's room.
+
+### pfSense
+
+**Option A: pfBlockerNG (built into pfSense, recommended).**
+1. **System → Package Manager → Available Packages** → search *pfBlockerNG* → **Install**.
+2. **Firewall → pfBlockerNG** → follow the setup wizard (or tick **Enable pfBlockerNG** on the *General* tab) → Save.
+3. **Firewall → pfBlockerNG → DNSBL**: tick **Enable DNSBL**, set **DNSBL Mode** to **Unbound python mode** → Save.
+4. **Firewall → pfBlockerNG → DNSBL → DNSBL Groups → + Add**: give it a name (e.g. *BlockLists*). Under **DNSBL
+   Source Definitions** add one row per list: State *ON*, Source = the plain link, Header = a short name (e.g.
+   *ads_and_tracking*). Set **Action** to **Unbound** (a new group starts as *Disabled*) and **Update frequency** to
+   **Once a day** → Save.
+5. **Firewall → pfBlockerNG → Update** → select **Force**, **Reload**, **All** → **Run**. Read the log for download
+   errors.
+6. Devices must use pfSense as their DNS server, which is the default (DNS Resolver enabled, DHCP handing out pfSense).
+   Check **Services → DNS Resolver** is enabled.
+7. Optional, block by IP: add the [IP lists](#blocking-by-ip-address-ips) under **pfBlockerNG → IP → IPv4 / IPv6**.
+
+If DNS stops working after step 3, switch DNSBL Mode back to *Unbound mode* and Force Reload: Python mode has had
+problems on some versions.
+
+**Option B: AdGuard Home on another device.** Run AdGuard Home on a Raspberry Pi, NAS or server and add the adblock
+links there. Then in pfSense go to **Services → DHCP Server → LAN → DNS servers**, enter the AdGuard Home IP address →
+Save, and reconnect your devices.
+
+**Stop devices from going around it (both options):** **Firewall → NAT → Port Forward → Add**: Interface *LAN*, Protocol
+*TCP/UDP*, Destination tick **Invert match** and choose *LAN address*, Destination port *DNS (53)*, Redirect target IP
+*127.0.0.1* (Option B: the AdGuard Home IP), Redirect port *53* → Save → Apply. Then **Firewall → Rules → LAN → Add**:
+Action *Block*, Protocol *TCP/UDP*, Destination port *853* → Save → Apply. Also add the `vpn-proxy-bypass` list.
+
+### OpenWrt
+
+Menu names below are for the LuCI web interface (**http://192.168.1.1** by default). OpenWrt 25.12 and newer install
+packages with `apk`; older versions use `opkg`.
+
+**Option A: adblock-fast (light, recommended for most routers).**
+1. Install it: **System → Software** → *Update lists* → search **luci-app-adblock-fast** → Install. Or over SSH:
+   ```bash
+   apk update && apk add luci-app-adblock-fast          # OpenWrt 25.12 and newer
+   opkg update && opkg install luci-app-adblock-fast    # OpenWrt 24.10 and older
+   ```
+2. Reload the web page and open **Services → AdBlock-Fast**.
+3. In the block-list URLs section (*Block-List URLs* / *File URLs*, depending on version), remove the default lists you
+   don't want and **Add** one row per list with its plain link.
+4. Turn on **Force Router DNS** (makes every device use the router for DNS) and the automatic list update, if your
+   version offers it.
+5. **Save & Apply**, then **Start** / **Restart** the service and check its status shows the domains loaded.
+
+**Option B: AdGuard Home on the router (routers with 256 MB+ RAM and spare storage).**
+```bash
+apk update && apk add adguardhome          # OpenWrt 25.12 and newer
+opkg update && opkg install adguardhome    # OpenWrt 24.10 and older
+service adguardhome enable && service adguardhome start
+```
+Open **http://192.168.1.1:3000**, finish the setup wizard, and add the adblock links (see
+[How to add a list](#how-to-add-a-list)). Follow the OpenWrt wiki's *AdGuard Home* page to make the router's DNS (dnsmasq)
+forward to it, so every device is covered.
+
+**Stop devices from going around it:** with adblock-fast, *Force Router DNS* (step 4) redirects normal DNS. For both
+options, also add the `vpn-proxy-bypass` list: encrypted DNS (DoH/DoT) can't be redirected, only blocked.
+
+**Block by IP (optional):** install **luci-app-banip** and add the [IP list](#blocking-by-ip-address-ips) links as
+custom feeds.
 
 ## Smart TVs and streaming sticks
 

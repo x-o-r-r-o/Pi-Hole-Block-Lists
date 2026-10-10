@@ -174,6 +174,32 @@ def write_catalog(lists):
     write_if_changed(ROOT / "install" / "catalog.tsv", "\n".join(rows) + "\n")
 
 
+def slug(heading, seen):
+    """GitHub's anchor for a heading: lowercase, drop punctuation, spaces to hyphens, number repeats."""
+    base = re.sub(r"[^\w\- ]", "", heading.strip().lower()).replace(" ", "-")
+    n = seen.get(base, 0)
+    seen[base] = n + 1
+    return base if n == 0 else "%s-%d" % (base, n)
+
+
+def table_of_contents(text):
+    """Bullet list of the README's ## and ### headings (skipping code blocks and the contents itself)."""
+    lines, seen, fenced = [], {}, False
+    for line in text.splitlines():
+        if line.startswith("```"):
+            fenced = not fenced
+        m = None if fenced else re.match(r"^(##|###) (.+)$", line)
+        if not m:
+            continue
+        title = m.group(2).strip()
+        anchor = slug(title, seen)
+        if title == "Contents":
+            continue
+        indent = "  " if m.group(1) == "###" else ""
+        lines.append("%s- [%s](#%s)" % (indent, title.replace("`", ""), anchor))
+    return "\n".join(lines)
+
+
 def update_readme(lists, sources):
     """Regenerate the Lists and Sources tables in README.md from the config."""
     path = ROOT / "README.md"
@@ -198,6 +224,7 @@ def update_readme(lists, sources):
     text = path.read_text(encoding="utf-8")
     text = replace_block(text, "LISTS", "\n".join(rows))
     text = replace_block(text, "SOURCES", "\n".join(srows))
+    text = replace_block(text, "TOC", table_of_contents(text))
     write_if_changed(path, text)
 
 
