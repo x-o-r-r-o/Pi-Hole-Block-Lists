@@ -872,5 +872,173 @@
     "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/FrenchFilter/sections/adservers.txt",
     "home": "https://github.com/AdguardTeam/AdguardFilters",
     "license": "GPL-3.0"
+  },
+  "agf-chinese-adservers-firstparty": {
+    "name": "AdGuard Chinese filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-russian-adservers-firstparty": {
+    "name": "AdGuard Russian filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/RussianFilter/sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-ukrainian-adservers-firstparty": {
+    "name": "AdGuard Ukrainian filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/UkrainianFilter/sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-cyrillic-adservers-firstparty": {
+    "name": "AdGuard Cyrillic filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/common-sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-dutch-adservers-firstparty": {
+    "name": "AdGuard Dutch filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/DutchFilter/sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-french-adservers-firstparty": {
+    "name": "AdGuard French filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/FrenchFilter/sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-italian-adservers-firstparty": {
+    "name": "AdGuard Italian filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ItalianFilter/sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-japanese-adservers-firstparty": {
+    "name": "AdGuard Japanese filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-spanish-adservers-firstparty": {
+    "name": "AdGuard Spanish filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpanishFilter/sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-turkish-adservers-firstparty": {
+    "name": "AdGuard Turkish filter: first-party ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/adservers_firstparty.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "reg-nordic": {
+    "name": "Dandelion Sprout's Nordic filters (NOR)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_13.txt",
+    "home": "https://github.com/DandelionSprout/adfilt",
+    "license": "Dandelicence (see repo)"
+  },
+  "reg-polish": {
+    "name": "Polish filters for Pi-hole (POL)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
+    "home": "https://github.com/MajkiIT/polish-ads-filter",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  "reg-yous-korean": {
+    "name": "YousList (KOR)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_15.txt",
+    "home": "https://github.com/yous/YousList",
+    "license": "GPL-3.0"
+  },
+  "reg-abpvn": {
+    "name": "ABPVN List (VNM)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_16.txt",
+    "home": "https://abpvn.com",
+    "license": "GPL-3.0"
+  },
+  "reg-frellwit-swedish": {
+    "name": "Frellwit's Swedish Hosts File (SWE)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_17.txt",
+    "home": "https://github.com/lassekongo83/Frellwits-filter-lists",
+    "license": "GPL-3.0"
+  },
+  "reg-persianblocker": {
+    "name": "PersianBlocker (IRN)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_19.txt",
+    "home": "https://github.com/MasterKia/PersianBlocker",
+    "license": "AGPL-3.0"
+  },
+  "reg-macedonian": {
+    "name": "Macedonian Pi-hole Blocklist (MKD)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_20.txt",
+    "home": "https://github.com/cchevy/macedonian-pi-hole-blocklist",
+    "license": "see repo"
+  },
+  "reg-anti-ad": {
+    "name": "anti-AD (CHN)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt",
+    "home": "https://github.com/privacy-protection-tools/anti-AD",
+    "license": "MIT"
+  },
+  "reg-abpindo": {
+    "name": "ABPindo (IDN)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_22.txt",
+    "home": "https://github.com/ABPindo/indonesianadblockrules",
+    "license": "GPL-3.0"
+  },
+  "reg-filterslists-ko": {
+    "name": "filterslists-KO (KOR)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_25.txt",
+    "home": "https://github.com/List-KR/List-KR",
+    "license": "MPL-2.0"
+  },
+  "reg-turk-adlist": {
+    "name": "turk-adlist (TUR)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_26.txt",
+    "home": "https://github.com/bkrucarci/turk-adlist",
+    "license": "see repo"
+  },
+  "reg-adrules": {
+    "name": "AdRules DNS List (CHN)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt",
+    "home": "https://github.com/Cats-Team/AdRules",
+    "license": "GPL-3.0"
+  },
+  "reg-hufilter": {
+    "name": "Hufilter (HUN)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_35.txt",
+    "home": "https://github.com/hufilter/hufilter",
+    "license": "see repo"
+  },
+  "reg-easylist-lithuania": {
+    "name": "EasyList Lithuania (LIT)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_36.txt",
+    "home": "https://github.com/EasyList-Lithuania/easylist_lithuania",
+    "license": "GPL-3.0"
+  },
+  "reg-turkish-ad-hosts": {
+    "name": "Turkish Ad Hosts (TUR)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_40.txt",
+    "home": "https://github.com/symbuzzer/Turkish-Ad-Hosts",
+    "license": "see repo"
+  },
+  "reg-easylist-hebrew": {
+    "name": "EasyList Hebrew (ISR)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_43.txt",
+    "home": "https://github.com/easylist/EasyListHebrew",
+    "license": "GPL-3.0"
+  },
+  "liste-ar": {
+    "name": "Liste AR (Arabic)",
+    "url": "https://easylist-downloads.adblockplus.org/Liste_AR.txt",
+    "home": "https://code.google.com/p/liste-ar-adblock/",
+    "license": "GPL-3.0"
+  },
+  "easylist-china": {
+    "name": "EasyList China",
+    "url": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
+    "home": "https://github.com/easylist/easylistchina",
+    "license": "GPL-3.0 / CC BY-SA 3.0"
   }
 }
