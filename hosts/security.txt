@@ -2,8 +2,8 @@
 # Description: Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone (add `phishing-and-scams` for extra phishing feeds).
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 10:30 UTC
-# Entries: 792086
+# Last modified: 2026-10-10 10:37 UTC
+# Entries: 792085
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Threat Intelligence Feeds (Medium): https://github.com/hagezi/dns-blocklists
@@ -454578,7 +454578,6 @@
 0.0.0.0 mark-hatch.co.uk
 0.0.0.0 mark-pristo.cc
 0.0.0.0 mark-pristo.org
-0.0.0.0 mark-roo.xynotrax.in.net
 0.0.0.0 mark-whatsapp.com
 0.0.0.0 mark1siteview.tensorlogicbox.bet
 0.0.0.0 mark1siteview.tula8data.surf

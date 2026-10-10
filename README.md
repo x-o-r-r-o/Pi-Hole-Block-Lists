@@ -120,6 +120,7 @@ apps...) are in [Lists](#lists) and [Suggested setups](#suggested-setups).
 - [Is it working?](#is-it-working)
 - [Troubleshooting FAQ](#troubleshooting-faq)
 - [Something broke?](#something-broke)
+- [Changelog](#changelog)
 - [Sources](#sources)
 - [For maintainers](#for-maintainers)
   - [Adding your own domains](#adding-your-own-domains)
@@ -1674,6 +1675,21 @@ Essential sites (Google, Microsoft, Apple, WhatsApp, PayPal, big CDNs, common li
 [`protected.txt`](protected.txt). Every build removes them from all lists automatically, unless a list is meant to block
 them (set with `may_block` in `lists.json`, e.g. `social-media` may block Facebook). This stops a mistake in an upstream
 source from breaking those sites.
+
+## Changelog
+
+Latest changes (the full history is in [CHANGELOG.md](CHANGELOG.md); the lists' contents also refresh every day):
+
+- **2026-10-10:**
+  - **Added:** a Quick start; guides for routers, NAS systems, TVs, consoles, phones and away from home; device installers
+    for macOS, Windows, Linux, Android and EdgeRouter; YouTube browser lists; and 18 more lists, including
+    `ads-regional`, `game-consoles`, `youtube`, `messaging` and `security-strict`.
+  - **Fixed:** `t.co` and `bit.ly` links being blocked; `chat-strangers` blocking WhatsApp and Discord; and the wrong
+    claim that `security` contains `phishing-and-scams`.
+- **2026-10-09:** added the parental-control and content lists (`adult`, `gambling`, `dating`, `social-media`,
+  `live-streaming`, `vpn-proxy-bypass` and more).
+- **2026-10-08:** lists rebuilt from maintained sources with daily updates, in three formats. The old addresses still
+  work.
 
 ## Sources
 
