@@ -2,8 +2,8 @@
 # Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 04:25 UTC
-# Entries: 1370
+# Last modified: 2026-10-10 07:14 UTC
+# Entries: 1376
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -519,6 +519,7 @@
 0.0.0.0 fj-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 fj.nextlgsdp.com
 0.0.0.0 fk.nextlgsdp.com
+0.0.0.0 fkp.samsungcloudsolution
 0.0.0.0 fkp.samsungcloudsolution.com
 0.0.0.0 fkp.samsungcloudsolution.net
 0.0.0.0 flingo.tv
@@ -857,6 +858,7 @@
 0.0.0.0 nw-umwatson.events.data.microsoft.com
 0.0.0.0 nz-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 nz.nextlgsdp.com
+0.0.0.0 oempprd.samsungcloudsolution
 0.0.0.0 oempprd.samsungcloudsolution.com
 0.0.0.0 oempprd.samsungcloudsolution.net
 0.0.0.0 om-ad-lgsmartad-com.aws-prd.net
@@ -937,6 +939,9 @@
 0.0.0.0 rdx2.nextlgsdp.com
 0.0.0.0 re-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 re.nextlgsdp.com
+0.0.0.0 realtime-receive-lp1.dg.srv.nintendo.net
+0.0.0.0 receive-lp1.dg.srv.nintendo.net
+0.0.0.0 receive-lp1.er.srv.nintendo.net
 0.0.0.0 recommend.lgtvcommon.com
 0.0.0.0 redbutton-adproxy-lb-prod.redbutton.de
 0.0.0.0 redbutton-lb-prod.redbutton.de
@@ -1145,6 +1150,7 @@
 0.0.0.0 sponsored-ads.amazon.it
 0.0.0.0 sponsored-ads.amazon.sa
 0.0.0.0 sponsored-ads.amazon.sg
+0.0.0.0 sprofile-lp1.cdn.nintendo.net
 0.0.0.0 sq-tungsten-ts-eu.amazon-adsystem.com
 0.0.0.0 sq-tungsten-ts-fe.amazon-adsystem.com
 0.0.0.0 sq-tungsten-ts.amazon-adsystem.com

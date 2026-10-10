@@ -2,8 +2,8 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 04:28 UTC
-# Entries: 3163
+# Last modified: 2026-10-10 07:14 UTC
+# Entries: 3166
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -1548,6 +1548,7 @@
 0.0.0.0 locationv16-normal-useastred.tiktokv.eu
 0.0.0.0 lockcard-service-in.allawnos.com
 0.0.0.0 log-boot.capcutapi.com
+0.0.0.0 log-collector.shopee
 0.0.0.0 log-dr.tiktokv.com
 0.0.0.0 log-dr16-normal-no1a.tiktokv.eu
 0.0.0.0 log-dr16-normal-useast1a.tiktokv.com
@@ -1758,6 +1759,7 @@
 0.0.0.0 logservice-dra.platform.hicloud.com
 0.0.0.0 logservice-dre.platform.dbankcloud.cn
 0.0.0.0 logservice-dre.platform.hicloud.com
+0.0.0.0 logservice.dbankcloud.cn
 0.0.0.0 logservice.hicloud.com
 0.0.0.0 logservice.vmall.com
 0.0.0.0 logservice1.dbankcloud.cn
@@ -2629,6 +2631,7 @@
 0.0.0.0 securemvt.apple.com
 0.0.0.0 securemvt.v.aaplimg.com
 0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 seller-log-collector.shopee
 0.0.0.0 sensor.aqhg.online
 0.0.0.0 sensor.emolm.com
 0.0.0.0 sensor.photogrid.app

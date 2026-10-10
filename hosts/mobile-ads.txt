@@ -2,8 +2,8 @@
 # Description: Ad networks used inside Android and iOS apps.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 04:28 UTC
-# Entries: 8332
+# Last modified: 2026-10-10 07:14 UTC
+# Entries: 8334
 #
 # Built from these sources (see their licenses):
 #   - AdAway Default: https://adaway.org
@@ -3857,6 +3857,7 @@
 0.0.0.0 glance.inmobi.com
 0.0.0.0 glispa.com
 0.0.0.0 glitter.services.disqus.com
+0.0.0.0 global-staticplat.cdn.bcebos.com
 0.0.0.0 global-wildcard.insightexpressai.com.edgekey.net
 0.0.0.0 global.adserver.yahoo.com
 0.0.0.0 global.appnext.com
@@ -5576,6 +5577,7 @@
 0.0.0.0 pasta.esfile.duapps.com
 0.0.0.0 pasta.estrongspro.duapps.com
 0.0.0.0 pasta.sd.duapps.com
+0.0.0.0 pavoshare.com
 0.0.0.0 pay.sboot.cn
 0.0.0.0 payload.adadapted.com
 0.0.0.0 payment.yodo1api.com

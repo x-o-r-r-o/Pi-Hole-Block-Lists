@@ -65,7 +65,11 @@ def parse(text):
             body = line[2:] if exception else line
             body = body[2:] if body.startswith("||") else body[1:]
             if "^" not in body:
-                continue
+                # "||example.com" with nothing after it: treat as that exact domain.
+                if re.fullmatch(r"[a-z0-9._-]+", body.lower()):
+                    body += "^"
+                else:
+                    continue
             domain, _, rest = body.partition("^")
             rest = rest.lstrip("|")
             if rest and not rest.startswith("$"):

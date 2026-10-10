@@ -3,8 +3,8 @@
 ! Description: Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in `security`; use this if you only want phishing/scam protection.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-10 06:28 UTC
-! Entries: 526383
+! Last modified: 2026-10-10 07:14 UTC
+! Entries: 526403
 !
 ! Built from these sources (see their licenses):
 !   - Phishing Army Extended: https://phishing.army
@@ -16926,6 +16926,7 @@
 ||4frontcreditunion.weebly.com^
 ||4fruu5dvpzxnof.sbs^
 ||4frwfret.lol^
+||4fshop.shop^
 ||4fskleppl.shop^
 ||4fsportspl.shop^
 ||4fstore.cfd^
@@ -84537,6 +84538,7 @@
 ||aquatic-towering-havarti.glitch.me^
 ||aquatictestinglabs.com^
 ||aquatippnters.info^
+||aquatwwinting.info^
 ||aquaveil.net^
 ||aquawaterpurifiers.com^
 ||aquazoneamqui.com^
@@ -115897,6 +115899,7 @@
 ||barissagliklisesi.com^
 ||barissokmen.com^
 ||baristadiscount.com^
+||baristahire.kaapisolutions.com^
 ||barito-pacific.com^
 ||baritscimm.cyou^
 ||barizzaimoveis.com.br^
@@ -137211,6 +137214,7 @@
 ||brightfutureedu.in^
 ||brightgather.eu^
 ||brightgoale.vercel.app^
+||brightgridq.top^
 ||brightgrocer.eu^
 ||brightharbor.eu^
 ||brighthave.com^
@@ -230162,6 +230166,7 @@
 ||finzy1-est99.sbs^
 ||finzy1-et95.sbs^
 ||finzy1-nulla8.sbs^
+||finzy1-odit86.sbs^
 ||finzy1-placeat43.sbs^
 ||finzy1-qui30.sbs^
 ||finzy1-repellat25.sbs^
@@ -230192,6 +230197,7 @@
 ||finzy4-accusamus99.sbs^
 ||finzy4-aut3.sbs^
 ||finzy4-est44.sbs^
+||finzy4-est65.sbs^
 ||finzy4-iste65.sbs^
 ||finzy4-laborum2.sbs^
 ||finzy4-nemo4.sbs^
@@ -230227,6 +230233,7 @@
 ||finzy7-dolorum84.sbs^
 ||finzy7-et31.sbs^
 ||finzy7-inventore92.sbs^
+||finzy7-ipsa7.sbs^
 ||finzy7-molestiae93.sbs^
 ||finzy7-nesciunt80.sbs^
 ||finzy7-odit87.sbs^
@@ -230251,6 +230258,7 @@
 ||finzy9-eum12.sbs^
 ||finzy9-illum17.sbs^
 ||finzy9-impedit23.sbs^
+||finzy9-in87.sbs^
 ||finzy9-maiores33.sbs^
 ||finzy9-nesciunt51.sbs^
 ||finzy9-praesentium99.sbs^
@@ -347738,6 +347746,7 @@
 ||manualsmate.com^
 ||manualvalidator.exchange^
 ||manudoolog.cyou^
+||manudscamp.store^
 ||manuel.camacho.productcenteracademy.com^
 ||manuelabiesk.badfuchs.com^
 ||manuelafernandez.com^
@@ -418309,8 +418318,10 @@
 ||pitadacriativa.com^
 ||pitbikeusa.com^
 ||pitbull-oferta.shop^
+||pitbull-online.shop^
 ||pitbull-outlet.shop^
 ||pitbull-pl.club^
+||pitbull-pl.online^
 ||pitbull-pl.top^
 ||pitbull-poland.shop^
 ||pitbull-sklep.shop^
@@ -419312,6 +419323,7 @@
 ||pl-oferta01906331.icu^
 ||pl-oferta01976.icu^
 ||pl-oferta03116876.shop^
+||pl-oferta04496205.icu^
 ||pl-oferta0482758.sbs^
 ||pl-oferta04842855.shop^
 ||pl-oferta04859305.cfd^
@@ -420840,6 +420852,7 @@
 ||plgerthiopseritoteser.com^
 ||plgertisninu.com^
 ||plgertisninuhi.com^
+||plgganetology.info^
 ||plgifrojo.com^
 ||plgifrojobo.com^
 ||plgirto.com^
@@ -444941,6 +444954,7 @@
 ||quantivorki-de.live^
 ||quantivorki.click^
 ||quantivorkitrade.de^
+||quantixfinance-pro.pages.dev^
 ||quantixfinance.net^
 ||quantixfinance.pro^
 ||quantixlab2472026.com^
@@ -445253,6 +445267,7 @@
 ||quarekdenogi.gitbook.io^
 ||quarekensogi.gitbook.io^
 ||quarekenuogi.gitbook.io^
+||quarenivor.com^
 ||quarentivagpt.shop^
 ||quarevex-pt.live^
 ||quarfinatrade.online^
@@ -462610,6 +462625,7 @@
 ||ross.ziziwork3.com^
 ||rossanarossi.pe^
 ||rosschemicalsystems.com^
+||rosseespan.store^
 ||rosseflunk.autos^
 ||rossellarossi.mom^
 ||rossettievergani.com^
@@ -493127,6 +493143,7 @@
 ||temarvx.com^
 ||temasekbitfundexprime.digital^
 ||temaseknexon.net^
+||temaseknexonsg-pro.pages.dev^
 ||temaseknexonsg.pro^
 ||temaseknexusaitrade.com^
 ||temasekpolytechnicplans.fovaje1405.workers.dev^
@@ -499056,6 +499073,7 @@
 ||trabzonyolyardim.com^
 ||traccattri.cyou^
 ||traccesonore.mom^
+||traccrisch.store^
 ||tracefondiv.click^
 ||tracefondiv.net^
 ||traceforgeai.com^
@@ -513033,6 +513051,7 @@
 ||vt6rz7.webwave.dev^
 ||vtaactfr.com^
 ||vtaerialvisions.com^
+||vtctcqog.shop^
 ||vtdbilisim.com^
 ||vtdtbiea.shop^
 ||vtegrity.com^
@@ -522974,6 +522993,7 @@
 ||yuliblandon.com^
 ||yullyadarme.shop^
 ||yulqor.shop^
+||yulveranok.com^
 ||yulveratik.info^
 ||yumaregional.directsmailsolution.com^
 ||yumekatsu.com^

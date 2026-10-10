@@ -2,8 +2,8 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 06:28 UTC
-# Entries: 13035
+# Last modified: 2026-10-10 07:14 UTC
+# Entries: 13144
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
@@ -538,7 +538,6 @@
 0.0.0.0 admin.connect-dev.cloud.bumble.com
 0.0.0.0 admin.connect.cloud.bumble.com
 0.0.0.0 admin.dilmil.co
-0.0.0.0 admin.grindr.com
 0.0.0.0 admin.jaumo.com
 0.0.0.0 admin.node.dilmil.co
 0.0.0.0 admin.sandbox.dilmil.co
@@ -2817,6 +2816,7 @@
 0.0.0.0 canadianpassions.com
 0.0.0.0 canadiansingles.com.au
 0.0.0.0 canadrance.free.fr
+0.0.0.0 canary.api.jaumo.com
 0.0.0.0 candyflirt.com
 0.0.0.0 candypassions.com
 0.0.0.0 canlialem.com
@@ -4541,6 +4541,7 @@
 0.0.0.0 do-it-candidates.at
 0.0.0.0 do312.com
 0.0.0.0 dobretesty.cz
+0.0.0.0 docs.hinge.co
 0.0.0.0 docs.jaumo.com
 0.0.0.0 doctorpink.com
 0.0.0.0 doctorsmatrimony.com
@@ -7614,8 +7615,8 @@
 0.0.0.0 m.date-me.com
 0.0.0.0 m.eharmony.com
 0.0.0.0 m.elitesingles.com
+0.0.0.0 m.hinge.co
 0.0.0.0 m.jaumo.com
-0.0.0.0 m.jdate.com
 0.0.0.0 m.jp.match.com
 0.0.0.0 m.meetme.com
 0.0.0.0 m.msnjp.match.com
@@ -12710,7 +12711,6 @@
 0.0.0.0 www.it.match.com
 0.0.0.0 www.it.ourtime.com
 0.0.0.0 www.jaumo.com
-0.0.0.0 www.jdate.com
 0.0.0.0 www.jp.match.com
 0.0.0.0 www.kindr.grindr.com
 0.0.0.0 www.kr.match.com
