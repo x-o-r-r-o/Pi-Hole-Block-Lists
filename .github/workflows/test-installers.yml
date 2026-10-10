@@ -8,6 +8,7 @@ on:
     branches: [master]
     paths:
       - install/**
+      - docker/**
       - .github/workflows/test-installers.yml
 
 permissions:
@@ -80,6 +81,39 @@ jobs:
           bash install/edgerouter.sh --dir "$T" --remove
           test ! -e "$T"
           echo "edgerouter test mode OK"
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pull images (before port 53 is freed, while host DNS still works)
+        run: |
+          docker compose -f docker/adguardhome/compose.yaml pull
+          docker compose -f docker/pihole/compose.yaml pull
+      - name: Free port 53 (the README's systemd-resolved fix, with a public upstream for the runner)
+        run: |
+          sudo mkdir -p /etc/systemd/resolved.conf.d
+          printf '[Resolve]\nDNS=1.1.1.1\nDNSStubListener=no\n' | sudo tee /etc/systemd/resolved.conf.d/adguardhome.conf
+          sudo mv /etc/resolv.conf /etc/resolv.conf.backup
+          sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+          sudo systemctl reload-or-restart systemd-resolved
+      - name: AdGuard Home starts and serves its setup page
+        working-directory: docker/adguardhome
+        run: |
+          docker compose up -d
+          for i in $(seq 1 30); do curl -fsS -o /dev/null http://127.0.0.1:3000/ && break; sleep 2; done
+          curl -fsS -o /dev/null http://127.0.0.1:3000/ && echo "AdGuard Home setup page OK"
+          docker compose down
+      - name: Pi-hole starts and answers DNS
+        working-directory: docker/pihole
+        env:
+          PIHOLE_PASSWORD: test-password
+        run: |
+          docker compose up -d
+          for i in $(seq 1 60); do dig +short +time=2 @127.0.0.1 example.com A | grep -q . && break; sleep 2; done
+          dig +short @127.0.0.1 example.com A | tee /tmp/answer; test -s /tmp/answer
+          curl -fsS -o /dev/null http://127.0.0.1:8081/admin/ && echo "Pi-hole admin page OK"
+          docker compose down
 
   windows:
     runs-on: windows-latest

@@ -1,0 +1,17 @@
+# Pi-hole v6 for Pi-Hole-Block-Lists. Start with: docker compose up -d
+# Then open http://<this computer's IP>:8081/admin and sign in with the password below.
+services:
+  pihole:
+    image: pihole/pihole:latest
+    container_name: pihole
+    restart: unless-stopped
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "8081:80/tcp"     # admin web page
+    environment:
+      TZ: "${TZ:-UTC}"
+      FTLCONF_webserver_api_password: "${PIHOLE_PASSWORD:-change-me}"
+      FTLCONF_dns_listeningMode: "all"
+    volumes:
+      - ./etc-pihole:/etc/pihole

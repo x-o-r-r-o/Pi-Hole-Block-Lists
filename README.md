@@ -36,6 +36,10 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 1: set up the Pi](#step-1-set-up-the-pi)
   - [Step 2: install AdGuard Home or Pi-hole](#step-2-install-adguard-home-or-pi-hole)
   - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-1)
+- [Docker](#docker)
+  - [Step 1: free port 53 (Ubuntu and Debian servers)](#step-1-free-port-53-ubuntu-and-debian-servers)
+  - [Step 2: start AdGuard Home or Pi-hole](#step-2-start-adguard-home-or-pi-hole)
+  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-2)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -795,6 +799,71 @@ Pi-hole with `pihole -up`.
 backup would let some lookups skip the lists, so a second Pi (or the [Synology NAS](#synology-nas) setup) is the better
 backup. To use the same blocking away from home on phones, see [iPhone and iPad](#iphone-and-ipad) and
 [Android](#android).
+
+## Docker
+
+Run AdGuard Home or Pi-hole in Docker on any always-on computer: a Linux server or mini PC, or a NAS / home server with
+Docker (Unraid, TrueNAS, Proxmox, OpenMediaVault...). Ready-made files are in [`docker/`](docker/); they're tested
+automatically on every change. (Synology users: see [Synology NAS](#synology-nas).)
+
+### Step 1: free port 53 (Ubuntu and Debian servers)
+
+DNS uses port 53. On Ubuntu (and some Debian setups) the built-in `systemd-resolved` already listens there, so the
+container can't start ("address already in use"). Turn that listener off and let the server use AdGuard Home / Pi-hole
+itself (AdGuard's documented fix):
+```bash
+sudo mkdir -p /etc/systemd/resolved.conf.d
+printf '[Resolve]\nDNS=127.0.0.1\nDNSStubListener=no\n' | sudo tee /etc/systemd/resolved.conf.d/adguardhome.conf
+sudo mv /etc/resolv.conf /etc/resolv.conf.backup
+sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
+sudo systemctl reload-or-restart systemd-resolved
+```
+Do this **after** step 2's `docker compose pull` (the server needs working DNS to download the image). Check nothing
+else uses the port with `sudo ss -lunp | grep ':53 '`.
+
+### Step 2: start AdGuard Home or Pi-hole
+
+Install Docker first if needed ([docs.docker.com/engine/install](https://docs.docker.com/engine/install/), or
+`curl -fsSL https://get.docker.com | sh` on most Linux systems). Then pick one:
+
+**AdGuard Home**
+```bash
+mkdir -p ~/adguardhome && cd ~/adguardhome
+curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/adguardhome/compose.yaml
+docker compose pull
+docker compose up -d
+```
+Open `http://<server IP>:3000`, follow the setup wizard (keep the admin web interface on port **3000** and the DNS server
+on port **53**), and add the lists under **Filters → DNS blocklists** with the adblock links
+([How to add a list](#how-to-add-a-list)).
+
+**Pi-hole**
+```bash
+mkdir -p ~/pihole && cd ~/pihole
+curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/pihole/compose.yaml
+docker compose pull
+PIHOLE_PASSWORD='choose-a-password' TZ='Europe/London' docker compose up -d
+```
+Open `http://<server IP>:8081/admin`, sign in, add the adblock links under **Lists**, then **Tools → Update Gravity**.
+
+### Step 3: use it for the whole home
+
+Follow [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1): set the server's IP as the DNS server in your router
+(or let AdGuard Home / Pi-hole run DHCP), stop devices going around it, and check the dashboard. If the server has a
+firewall, allow port 53 (TCP and UDP) and the admin port: `sudo ufw allow 53 && sudo ufw allow 3000/tcp` (Pi-hole:
+`8081/tcp`).
+
+**Updating:** the lists update themselves. To update AdGuard Home / Pi-hole, in its folder run
+`docker compose pull && docker compose up -d`. Your settings are kept in the `work`/`conf` (or `etc-pihole`) folders
+next to `compose.yaml`; back those up.
+
+**Good to know**
+- On Linux you can change AdGuard Home's file to `network_mode: host` (see the comment in it): it then sees each
+  device's own address in the logs and can run DHCP. With the normal port mapping it still works for DNS.
+- **Docker Desktop on Windows or macOS** is fine for trying it out, but the computer must stay on and its firewall must
+  allow port 53 from your network; a small always-on device (Raspberry Pi, NAS) is better for the whole home.
+- If the container stops, DNS at home stops too unless there's a second DNS server; `restart: unless-stopped` brings it
+  back after a reboot.
 
 ## Smart TVs and streaming sticks
 

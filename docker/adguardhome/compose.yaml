@@ -1,0 +1,17 @@
+# AdGuard Home for Pi-Hole-Block-Lists. Start with: docker compose up -d
+# Then open http://<this computer's IP>:3000 and follow the setup wizard
+# (keep the admin web interface on port 3000 and the DNS server on port 53).
+services:
+  adguardhome:
+    image: adguard/adguardhome:latest
+    container_name: adguardhome
+    restart: unless-stopped
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "3000:3000/tcp"   # setup wizard and admin web page
+    # On a Linux server you can replace the "ports" above with "network_mode: host": AdGuard Home then
+    # also sees every device's own address and can act as your DHCP server.
+    volumes:
+      - ./work:/opt/adguardhome/work
+      - ./conf:/opt/adguardhome/conf
