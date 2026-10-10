@@ -8,6 +8,7 @@ from well-maintained upstream sources, merged and de-duplicated.
 ## Contents
 
 <!-- TOC:START -->
+- [Choose your setup](#choose-your-setup)
 - [Lists](#lists)
   - [Suggested setups](#suggested-setups)
 - [How to add a list](#how-to-add-a-list)
@@ -22,12 +23,15 @@ from well-maintained upstream sources, merged and de-duplicated.
 - [UniFi Cloud Gateway (UCG Ultra / Max / Fiber, UDM, UDR)](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr)
   - [Option 1 (recommended): UniFi + AdGuard Home or Pi-hole, updates automatically](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically)
   - [Option 2: UniFi only, no extra device (manual updates)](#option-2-unifi-only-no-extra-device-manual-updates)
-- [Routers: pfSense, OPNsense, OpenWrt, MikroTik and EdgeRouter](#routers-pfsense-opnsense-openwrt-mikrotik-and-edgerouter)
+- [Routers](#routers)
   - [pfSense](#pfsense)
   - [OPNsense](#opnsense)
   - [OpenWrt](#openwrt)
   - [MikroTik](#mikrotik)
   - [Ubiquiti EdgeRouter](#ubiquiti-edgerouter)
+  - [GL.iNet](#glinet)
+  - [Asus](#asus)
+  - [Any other router (TP-Link, Netgear, Fritz!Box, internet-provider routers)](#any-other-router-tp-link-netgear-fritzbox-internet-provider-routers)
 - [Synology NAS](#synology-nas)
   - [Step 1: prepare the NAS](#step-1-prepare-the-nas)
   - [Step 2: run AdGuard Home](#step-2-run-adguard-home)
@@ -52,6 +56,12 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 1: install the container](#step-1-install-the-container)
   - [Step 2: set it up](#step-2-set-it-up)
   - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-4)
+- [OpenMediaVault](#openmediavault)
+  - [Step 1: install omv-extras and the Compose plugin](#step-1-install-omv-extras-and-the-compose-plugin)
+  - [Step 2: add AdGuard Home or Pi-hole](#step-2-add-adguard-home-or-pi-hole)
+  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-5)
+- [QNAP NAS](#qnap-nas)
+- [Home Assistant](#home-assistant)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -67,6 +77,20 @@ from well-maintained upstream sources, merged and de-duplicated.
 - [Sources](#sources)
 - [Adding a new list or source](#adding-a-new-list-or-source)
 <!-- TOC:END -->
+
+## Choose your setup
+
+| You have... | Go to |
+|---|---|
+| AdGuard Home or Pi-hole already | [Lists](#lists) and [How to add a list](#how-to-add-a-list) |
+| Nothing yet, and want the whole home protected | a [Raspberry Pi](#raspberry-pi), or your [NAS / server](#docker), then your [router](#routers) |
+| A NAS or home server | [Synology](#synology-nas), [QNAP](#qnap-nas), [TrueNAS](#truenas), [Unraid](#unraid), [OpenMediaVault](#openmediavault), [Proxmox VE](#proxmox-ve), [Home Assistant](#home-assistant), any [Docker](#docker) host |
+| A router that can block by itself | [pfSense](#pfsense), [OPNsense](#opnsense), [OpenWrt](#openwrt), [MikroTik](#mikrotik), [EdgeRouter](#ubiquiti-edgerouter), [GL.iNet](#glinet), [UniFi](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr) |
+| Another router (Asus, TP-Link, Netgear, Fritz!Box, internet provider) | [Asus](#asus) or [Any other router](#any-other-router-tp-link-netgear-fritzbox-internet-provider-routers), plus a blocker from the row above |
+| Just one computer or phone | [macOS, Windows, Linux, Android, iPhone](#use-on-one-device-without-pi-hole-or-adguard-home) |
+| YouTube ads | [YouTube ads in the browser](#youtube-ads-in-the-browser) |
+| Smart TVs, streaming sticks, consoles | [Smart TVs](#smart-tvs-and-streaming-sticks), [Game consoles](#game-consoles) |
+| Kids' devices, parental controls | [Suggested setups](#suggested-setups) (Kids / family) |
 
 ## Lists
 
@@ -445,10 +469,12 @@ block them with Option 1, step 3. Menu names move around between UniFi Network v
 and [Zone-Based Firewall](https://help.ui.com/hc/en-us/articles/115003173168-Zone-Based-Firewalls-in-UniFi) help pages
 show the current ones.
 
-## Routers: pfSense, OPNsense, OpenWrt, MikroTik and EdgeRouter
+## Routers
 
-If your router runs pfSense, OPNsense, OpenWrt, MikroTik RouterOS or a Ubiquiti EdgeRouter, it can do the blocking itself for every device at home, and update the lists
-every day. Each router has two ways: its own blocking package, or AdGuard Home running next to it.
+If your router runs pfSense, OPNsense, OpenWrt, MikroTik RouterOS, a Ubiquiti EdgeRouter, or is a GL.iNet router, it can do the blocking itself for every device at home, and update the lists
+every day. Each router has two ways: its own blocking package, or AdGuard Home running next to it. Other routers
+(Asus, TP-Link, Netgear, Fritz!Box, internet-provider routers) can't load lists, but can send every device to a
+blocker: see [Asus](#asus) and [Any other router](#any-other-router-tp-link-netgear-fritzbox-internet-provider-routers).
 
 Which list link to use:
 - **pfSense (pfBlockerNG)**, **OPNsense (Unbound blocklists)** and **OpenWrt (adblock-fast)**: the **plain** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/<list>.txt`
@@ -678,6 +704,48 @@ commit; save; exit
 ```
 Paste the file again now and then to pick up changes.
 
+### GL.iNet
+
+Most GL.iNet routers (Flint, Slate, Beryl, Brume...) have **AdGuard Home built in**, which makes them the easiest
+all-in-one option, including as a travel router.
+1. Open the router's admin page (`http://192.168.8.1` by default) → **APPLICATIONS → AdGuard Home** → turn it **on** →
+   **Apply**.
+2. Click **Settings Page** to open AdGuard Home (or go to `http://192.168.8.1:3000`) → **Filters → DNS blocklists → Add
+   blocklist → Add a custom list** → paste the adblock links of the lists you want.
+3. Keep it modest: router memory is limited, and big combinations (several 500,000-name lists) can make the built-in
+   AdGuard Home slow. `ads-and-tracking` + `security` is a good start.
+4. If you use VPN domain-based routing, leave GL.iNet's *AdGuard Home Handle Client Requests* option off: it can conflict
+   with those VPN policies.
+
+### Asus
+
+- **Asus "AI" routers** (e.g. GT-BE19000AI) have AdGuard Home built in: install it from the AI Board section of the web
+  interface, open `http://<AI Board hostname>:3000`, add the adblock links under **Filters → DNS blocklists**, then set
+  **LAN → DHCP Server → DNS and WINS Server Setting** to its address (see Asus's
+  [AdGuard Home guide](https://www.asus.com/support/faq/1055942)).
+- **Other Asus routers (stock firmware):** they can't load lists. Run AdGuard Home or Pi-hole on another device
+  ([Raspberry Pi](#raspberry-pi), [Docker](#docker), a NAS...) and set **LAN → DHCP Server → DNS and WINS Server Setting
+  → DNS Server** to its IP address → **Apply**. Asus's built-in *AiProtection* uses Asus's own filters, not these lists.
+- **Asuswrt-Merlin** (community firmware): the **Diversion** add-on (installed through `amtm` over SSH) brings dnsmasq-based
+  ad blocking to the router itself; see [diversion.ch](https://diversion.ch).
+
+After changing DNS, reach the router by its IP address (e.g. `http://192.168.50.1`) if `www.asusrouter.com` stops loading.
+
+### Any other router (TP-Link, Netgear, Fritz!Box, internet-provider routers)
+
+These can't load block lists, but you can make every device use your blocker (AdGuard Home or Pi-hole on a
+[Raspberry Pi](#raspberry-pi), [Docker](#docker), a NAS or [Home Assistant](#home-assistant)). Look in the router's
+**LAN / DHCP** settings for a **DNS server** field and enter the blocker's IP address. Typical places:
+
+| Router | Where |
+|---|---|
+| **TP-Link** (Archer, Deco) | Archer: **Advanced → Network → DHCP Server → Primary DNS**. Deco app: **More → Advanced → DHCP Server → DNS** (newer models) |
+| **Netgear** (Nighthawk, Orbi) | Usually no LAN DNS field: use **Advanced → Setup → Internet Setup → Domain Name Server (DNS) Address → Use These DNS Servers** and enter the blocker's IP (all queries then appear to come from the router) |
+| **Fritz!Box** | **Home Network → Network → Network Settings → IP Addresses → IPv4 Settings → Local DNS server** |
+| **Internet-provider routers** | Often locked. If there's no DNS field, turn **off** the router's DHCP and turn it **on** in AdGuard Home (**Settings → DHCP settings**) or Pi-hole (**Settings → DHCP**) |
+
+Save, then reconnect your devices (turn Wi-Fi off and on). Menu names vary by model and firmware.
+
 ## Synology NAS
 
 A Synology NAS is on all the time, which makes it a good home for **AdGuard Home** (or Pi-hole): it filters DNS for every
@@ -799,7 +867,7 @@ Answer the questions (the defaults are fine; choose any upstream DNS provider). 
 2. **Router won't let you change DNS** (common on internet-provider routers)? Let the Pi hand out addresses instead:
    turn **off** DHCP on the router, then turn it **on** in AdGuard Home (**Settings → DHCP settings**) or Pi-hole
    (**Settings → DHCP**). Every device then gets the Pi as its DNS server automatically.
-3. Stop devices from going around it with your router's firewall if it can (see the [router guides](#routers-pfsense-opnsense-openwrt-mikrotik-and-edgerouter))
+3. Stop devices from going around it with your router's firewall if it can (see the [router guides](#routers))
    and the `vpn-proxy-bypass` list.
 4. Check it works: the dashboard should show queries and blocked requests within a few minutes.
 
@@ -815,7 +883,7 @@ backup. To use the same blocking away from home on phones, see [iPhone and iPad]
 ## Docker
 
 Run AdGuard Home or Pi-hole in Docker on any always-on computer: a Linux server or mini PC, or a NAS / home server with
-Docker (OpenMediaVault and others). Unraid users: see [Unraid](#unraid); Proxmox users: see [Proxmox VE](#proxmox-ve); TrueNAS users: see [TrueNAS](#truenas). Ready-made files are in [`docker/`](docker/); they're tested
+Docker. OpenMediaVault, QNAP and Unraid users: see [OpenMediaVault](#openmediavault), [QNAP NAS](#qnap-nas) and [Unraid](#unraid); Proxmox users: see [Proxmox VE](#proxmox-ve); TrueNAS users: see [TrueNAS](#truenas). Ready-made files are in [`docker/`](docker/); they're tested
 automatically on every change. (Synology users: see [Synology NAS](#synology-nas).)
 
 ### Step 1: free port 53 (Ubuntu and Debian servers)
@@ -1023,6 +1091,74 @@ your router or a public DNS server, so Unraid can still download updates while t
 3. **Backups:** the *Appdata Backup* plugin (from Apps) backs up the container's settings on a schedule.
 4. If the array is stopped or Unraid restarts, the container stops too: give your router a second DNS server running
    the same lists (a Raspberry Pi or another NAS) to keep home DNS working.
+
+## OpenMediaVault
+
+On an OpenMediaVault NAS (OMV 7), run AdGuard Home or Pi-hole with the **Compose** plugin from omv-extras, using our
+ready-made files.
+
+### Step 1: install omv-extras and the Compose plugin
+
+1. Log in to the NAS over SSH as `root` (or with `sudo`) and install omv-extras with its official command:
+   ```bash
+   wget -O - https://github.com/OpenMediaVault-Plugin-Developers/packages/raw/master/install | bash
+   ```
+2. In the OMV web interface: **System → Plugins** → search **openmediavault-compose** → **Install**.
+3. **Storage → Shared Folders → Create**: a folder for app data, e.g. `appdata`. Then **Services → Compose → Settings**:
+   choose it as the **Compose Files** location (and set the Docker storage path if asked) → **Save** → apply. If Docker
+   isn't installed yet, use the **Reinstall Docker** button on that page.
+
+### Step 2: add AdGuard Home or Pi-hole
+
+1. Check port 53 is free (OMV's own web interface uses port 80 and doesn't need it): over SSH run
+   `sudo ss -lunp | grep ':53 '`; if `systemd-resolved` shows up, apply [Docker, step 1](#step-1-free-port-53-ubuntu-and-debian-servers).
+2. **Services → Compose → Files → Create (+)**: name it `adguardhome` (or `pihole`) and paste
+   [`docker/adguardhome/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/adguardhome/compose.yaml)
+   (or [`docker/pihole/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/pihole/compose.yaml), setting your own password) → **Save**.
+3. Select the file → **Up** (▲). Then open `http://<NAS IP>:3000` (AdGuard Home setup wizard: keep the admin port
+   3000 and DNS on 53) or `http://<NAS IP>:8081/admin` (Pi-hole), and add the lists ([How to add a list](#how-to-add-a-list)).
+
+### Step 3: use it for the whole home
+
+Follow [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1). To update AdGuard Home / Pi-hole later: select the
+file in **Services → Compose → Files** → **Pull** → **Up**.
+
+## QNAP NAS
+
+On a QNAP NAS, use **Container Station** (version 3) with our ready-made Compose files.
+
+1. **App Center** → install **Container Station** and open it.
+2. **Applications → Create**: application name `adguardhome` (or `pihole`), paste
+   [`docker/adguardhome/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/adguardhome/compose.yaml)
+   (or [`docker/pihole/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/pihole/compose.yaml), setting your own password) → **Validate YAML**
+   → **Create**. Container Station keeps the files under `/share/Container/container-station-data/application/<name>`.
+3. Open `http://<NAS IP>:3000` (AdGuard Home setup wizard: keep the admin port 3000 and DNS on 53) or
+   `http://<NAS IP>:8081/admin` (Pi-hole), and add the lists ([How to add a list](#how-to-add-a-list)).
+4. If the container won't start because **port 53** is in use (another app or QNAP service on the NAS uses it), give the
+   container its own IP address on your network instead of publishing ports: in Container Station's network settings use
+   a **bridge / qnet** network with a fixed IP, and remove the `ports:` lines.
+5. Give the NAS (or the container) a fixed IP, then follow [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1).
+   Update later from **Applications** → the app → **Update** (or recreate it, which pulls the latest image).
+
+## Home Assistant
+
+Running Home Assistant OS? Its **AdGuard Home** app (add-on) turns the same box into the blocker for your whole home.
+
+1. **Give Home Assistant a static IP and fixed DNS servers first** (the add-on's own instructions insist on this): **Settings
+   → System → Network → Configure network interfaces** → your interface → **IPv4** → **Static**: set the address (e.g.
+   `192.168.1.6`), gateway (your router) and DNS servers (e.g. `1.1.1.1`) → **Save**. A reservation in your router is not
+   enough.
+2. **Settings → Add-ons** (called **Apps** in newer versions) → **Add-on Store** → search **AdGuard Home** → **Install** →
+   **Start**, and turn on **Start on boot** and **Show in sidebar**. Check its **Log** tab for errors.
+3. Click **Open Web UI** (you're signed in with your Home Assistant account) → **Filters → DNS blocklists → Add blocklist →
+   Add a custom list** → paste the adblock links ([How to add a list](#how-to-add-a-list)).
+4. Point your network at Home Assistant's IP: [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1). Keep Home
+   Assistant's own DNS (step 1) on a public server, so it still works when the add-on restarts.
+5. Updates: the lists update themselves; Home Assistant offers add-on updates under **Settings → Updates**. Include the
+   add-on in your Home Assistant backups.
+
+If Home Assistant runs as a VM or container on another system (Proxmox, a NAS), you can instead follow that system's
+section ([Proxmox VE](#proxmox-ve), [Docker](#docker)...).
 
 ## Smart TVs and streaming sticks
 
