@@ -48,6 +48,10 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 1: prepare TrueNAS](#step-1-prepare-truenas)
   - [Step 2: install AdGuard Home or Pi-hole from the Apps catalogue](#step-2-install-adguard-home-or-pi-hole-from-the-apps-catalogue)
   - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-3)
+- [Unraid](#unraid)
+  - [Step 1: install the container](#step-1-install-the-container)
+  - [Step 2: set it up](#step-2-set-it-up)
+  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-4)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -811,7 +815,7 @@ backup. To use the same blocking away from home on phones, see [iPhone and iPad]
 ## Docker
 
 Run AdGuard Home or Pi-hole in Docker on any always-on computer: a Linux server or mini PC, or a NAS / home server with
-Docker (Unraid, OpenMediaVault...). Proxmox users: see [Proxmox VE](#proxmox-ve); TrueNAS users: see [TrueNAS](#truenas). Ready-made files are in [`docker/`](docker/); they're tested
+Docker (OpenMediaVault and others). Unraid users: see [Unraid](#unraid); Proxmox users: see [Proxmox VE](#proxmox-ve); TrueNAS users: see [TrueNAS](#truenas). Ready-made files are in [`docker/`](docker/); they're tested
 automatically on every change. (Synology users: see [Synology NAS](#synology-nas).)
 
 ### Step 1: free port 53 (Ubuntu and Debian servers)
@@ -978,6 +982,47 @@ paths such as `/mnt/<pool>/apps/adguardhome/work`. The port 53 notes above apply
    **Update**.
 3. **Backups:** take snapshots of the app's dataset (**Data Protection → Periodic Snapshot Tasks**), and keep a second
    DNS server (a Raspberry Pi or another NAS) so home DNS keeps working when TrueNAS restarts for updates.
+
+## Unraid
+
+On Unraid, install AdGuard Home or Pi-hole as a Docker container from **Community Applications** and give it its own IP
+address on your network, so it doesn't clash with Unraid's web interface. (Unraid 6.12 or newer; menu names may differ
+slightly between versions.)
+
+### Step 1: install the container
+
+1. Open the **Apps** tab. If Community Applications isn't installed yet, Unraid offers to install it; accept.
+2. Search **AdGuard Home** (or **Pi-hole**) and pick the template whose **Repository** is the official image
+   (`adguard/adguardhome`, or `pihole/pihole`) → **Install**.
+3. In the template:
+   - **Network Type:** **Custom: br0** (or *eth0* / *bond0*, whichever is your LAN), and **Fixed IP address**: a free
+     address on your network outside the router's DHCP range, e.g. `192.168.1.5`.
+   - **Pi-hole only:** fill in the admin **password** field and your **time zone** (`TZ`).
+   - Keep the suggested **appdata** paths (`/mnt/user/appdata/...`) so settings survive updates.
+   - **Apply** and wait for the container to start.
+4. **Docker** tab → make sure **Autostart** is on for the container.
+
+### Step 2: set it up
+
+- **AdGuard Home:** open `http://192.168.1.5:3000` (its own address) and follow the setup wizard: DNS server on port
+  **53**, admin web interface on port **80** (fine, because the container has its own IP), then create your username
+  and password.
+- **Pi-hole:** open `http://192.168.1.5/admin` and sign in.
+- Add the lists with the adblock links ([How to add a list](#how-to-add-a-list)).
+
+Unraid itself can't reach containers on `br0` unless you allow it: **Settings → Docker** → stop Docker → **Host access
+to custom networks: Enabled** → Apply → start Docker. Keep Unraid's own DNS (**Settings → Network Settings**) pointing at
+your router or a public DNS server, so Unraid can still download updates while the container is stopped.
+
+### Step 3: use it for the whole home
+
+1. Point your network at it: [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1) (router DNS or AdGuard Home /
+   Pi-hole as DHCP server, stopping devices going around it).
+2. **Updates:** the lists update themselves. Update the container from the **Docker** tab (**Check for Updates** →
+   **apply update**), or automatically with the *CA Auto Update Applications* plugin.
+3. **Backups:** the *Appdata Backup* plugin (from Apps) backs up the container's settings on a schedule.
+4. If the array is stopped or Unraid restarts, the container stops too: give your router a second DNS server running
+   the same lists (a Raspberry Pi or another NAS) to keep home DNS working.
 
 ## Smart TVs and streaming sticks
 
