@@ -40,6 +40,10 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 1: free port 53 (Ubuntu and Debian servers)](#step-1-free-port-53-ubuntu-and-debian-servers)
   - [Step 2: start AdGuard Home or Pi-hole](#step-2-start-adguard-home-or-pi-hole)
   - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-2)
+- [Proxmox VE](#proxmox-ve)
+  - [Step 1: create the container](#step-1-create-the-container)
+  - [Step 2: install AdGuard Home or Pi-hole](#step-2-install-adguard-home-or-pi-hole-1)
+  - [Step 3: use it for the whole home, and keep it safe](#step-3-use-it-for-the-whole-home-and-keep-it-safe)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -64,24 +68,24 @@ The table below and the Sources table are updated automatically on every build.
 | List | What it blocks | Domains | Download |
 |---|---|---|---|
 | `ads-and-tracking` | Ads and trackers with few false positives. Start here. | ~279k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-and-tracking.txt) |
-| `ads-and-tracking-extended` | Aggressive ad, tracker, telemetry and pop-up blocking. Blocks more, may need occasional allowlisting. | ~732k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking-extended.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking-extended.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-and-tracking-extended.txt) |
+| `ads-and-tracking-extended` | Aggressive ad, tracker, telemetry and pop-up blocking. Blocks more, may need occasional allowlisting. | ~733k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking-extended.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking-extended.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-and-tracking-extended.txt) |
 | `ads-regional` | Ad servers for non-English websites and apps: Arabic, Chinese, Russian/Ukrainian/Bulgarian, Turkish, Persian, Hebrew, Japanese, Korean, Vietnamese, Indonesian, European languages and more. Add next to `ads-and-tracking` or the extended list. | ~233k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-regional.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-regional.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-regional.txt) |
 | `mobile-ads` | Ad networks used inside Android and iOS apps. | ~8.3k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/mobile-ads.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/mobile-ads.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/mobile-ads.txt) |
 | `mobile-spyware` | Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers. | ~3.2k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/mobile-spyware.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/mobile-spyware.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/mobile-spyware.txt) |
 | `youtube-ads` | Google/YouTube ad servers. Partial: DNS cannot block all YouTube video ads (see note below). | 22 | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/youtube-ads.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/youtube-ads.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/youtube-ads.txt) |
-| `gambling` | Online casinos, sports betting, poker, lotteries and other gambling sites. | ~586k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/gambling.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/gambling.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/gambling.txt) |
+| `gambling` | Online casinos, sports betting, poker, lotteries and other gambling sites. | ~584k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/gambling.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/gambling.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/gambling.txt) |
 | `adult` | Porn and other adult (NSFW) sites (see Safe Search tip below). | ~527k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/adult.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adult.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/adult.txt) |
 | `social-media` | Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked. | ~4.5k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/social-media.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/social-media.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/social-media.txt) |
 | `smart-tv` | Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo). | ~1.4k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/smart-tv.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/smart-tv.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/smart-tv.txt) |
 | `game-consoles` | Ads in the system menus and telemetry of PlayStation, Xbox and Nintendo Switch consoles. Small and safe for online play (on Xbox it also hides Game Pass Perks). | 13 | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/game-consoles.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/game-consoles.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/game-consoles.txt) |
-| `security` | Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone. | ~772k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/security.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/security.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/security.txt) |
+| `security` | Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone. | ~792k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/security.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/security.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/security.txt) |
 | `stalkerware` | Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one. | 949 | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/stalkerware.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/stalkerware.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/stalkerware.txt) |
 | `crypto-mining` | Hidden crypto-mining scripts and mining pools (cryptojacking). Exchanges like Coinbase/Binance are not blocked. | ~12k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/crypto-mining.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/crypto-mining.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/crypto-mining.txt) |
 | `phishing-and-scams` | Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops. Already included in `security`; use this if you only want phishing/scam protection. | ~564k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/phishing-and-scams.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/phishing-and-scams.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/phishing-and-scams.txt) |
 | `live-streaming` | Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see note below). | ~2.3k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/live-streaming.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/live-streaming.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/live-streaming.txt) |
 | `dating` | Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites. | ~13k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/dating.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/dating.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/dating.txt) |
 | `vpn-proxy-bypass` | VPNs, web proxies and encrypted-DNS services that people use to get around blocking. Use with the other lists to stop bypassing (may block a work VPN). | ~23k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/vpn-proxy-bypass.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/vpn-proxy-bypass.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/vpn-proxy-bypass.txt) |
-| `piracy` | Illegal movie, TV, music and software download and streaming sites (torrents, warez). | ~55k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/piracy.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/piracy.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/piracy.txt) |
+| `piracy` | Illegal movie, TV, music and software download and streaming sites (torrents, warez). | ~56k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/piracy.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/piracy.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/piracy.txt) |
 | `drugs` | Sites selling or promoting illegal drugs. | 436 | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/drugs.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/drugs.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/drugs.txt) |
 | `online-games` | Online and browser gaming sites, including Steam, Roblox and Epic Games. | ~34k | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/online-games.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/online-games.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/online-games.txt) |
 | `violence-hate` | Violent, aggressive and hate-speech sites. | 267 | [Adblock](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/violence-hate.txt) · [Plain](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/violence-hate.txt) · [Hosts](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/violence-hate.txt) |
@@ -803,7 +807,7 @@ backup. To use the same blocking away from home on phones, see [iPhone and iPad]
 ## Docker
 
 Run AdGuard Home or Pi-hole in Docker on any always-on computer: a Linux server or mini PC, or a NAS / home server with
-Docker (Unraid, TrueNAS, Proxmox, OpenMediaVault...). Ready-made files are in [`docker/`](docker/); they're tested
+Docker (Unraid, TrueNAS, OpenMediaVault...). Proxmox users: see [Proxmox VE](#proxmox-ve). Ready-made files are in [`docker/`](docker/); they're tested
 automatically on every change. (Synology users: see [Synology NAS](#synology-nas).)
 
 ### Step 1: free port 53 (Ubuntu and Debian servers)
@@ -864,6 +868,60 @@ next to `compose.yaml`; back those up.
   allow port 53 from your network; a small always-on device (Raspberry Pi, NAS) is better for the whole home.
 - If the container stops, DNS at home stops too unless there's a second DNS server; `restart: unless-stopped` brings it
   back after a reboot.
+
+## Proxmox VE
+
+On a Proxmox server, run AdGuard Home or Pi-hole in a small **LXC container**: it uses about 512 MB of RAM and a few GB of
+disk, starts in seconds and is easy to back up. Don't install them on the Proxmox host itself.
+
+### Step 1: create the container
+
+1. Download a template: in the left tree select your **storage (e.g. `local`)** → **CT Templates** → **Templates** →
+   pick **debian-12-standard** (or debian-13-standard on Proxmox VE 9) → **Download**.
+2. Click **Create CT** (top right) and fill in the tabs:
+   - **General:** hostname (e.g. `adguard`), a root password, keep **Unprivileged container** ticked.
+   - **Template:** the Debian template you downloaded.
+   - **Disks:** 4–8 GB. **CPU:** 1 core. **Memory:** 512 MB (1024 MB or more for big lists such as `security` or
+     `adult`), Swap 512 MB.
+   - **Network:** bridge `vmbr0`, IPv4 **Static**, e.g. `192.168.1.3/24` with your router as **Gateway**
+     (e.g. `192.168.1.1`). A fixed address matters: your devices will point at it.
+   - **DNS:** leave as *use host settings*. **Confirm:** tick **Start after created** → **Finish**.
+3. Select the new container → **Options** → **Start at boot**: *Yes* (and set **Start/Shutdown order** to `1`, so DNS is
+   up before other guests).
+
+### Step 2: install AdGuard Home or Pi-hole
+
+Select the container → **Console**, log in as `root`, then update it and install `curl`:
+```bash
+apt update && apt full-upgrade -y && apt install -y curl
+```
+Then run the official installer of the one you want, exactly as on a Raspberry Pi
+([Raspberry Pi, step 2](#step-2-install-adguard-home-or-pi-hole)):
+```bash
+curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v   # AdGuard Home
+curl -sSL https://install.pi-hole.net | bash                                                                    # or Pi-hole
+```
+AdGuard Home: open `http://192.168.1.3:3000` (your container's address) and follow the wizard. Pi-hole: set the password
+with `pihole setpassword`, then open `http://192.168.1.3/admin`. Add the lists with the adblock links
+([How to add a list](#how-to-add-a-list)).
+
+**Prefer Docker?** Create a Debian VM (or a container with **Options → Features → nesting** turned on), install Docker and
+follow the [Docker](#docker) guide. **Prefer a one-click script?** The community
+[Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/) can create an AdGuard Home or Pi-hole container
+for you; they're not official, so read a script before running it on your host.
+
+### Step 3: use it for the whole home, and keep it safe
+
+1. Point your network at it: [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1) (router DNS or AdGuard Home /
+   Pi-hole as DHCP server, stopping devices going around it, checking the dashboard).
+2. **Backups:** **Datacenter → Backup → Add**: select the container, schedule daily or weekly. Before updating, take a
+   **Snapshot** (container → *Snapshots*) so you can roll back in one click.
+3. **Updates:** the lists update themselves. Update the container now and then with
+   `apt update && apt full-upgrade -y`; update AdGuard Home from its web page, or Pi-hole with `pihole -up`.
+4. **No single point of failure:** if the Proxmox server is off, home DNS stops. Create a second container (ideally on
+   another Proxmox node, a Raspberry Pi or a NAS) with the same lists and give its address to your router as the second
+   DNS server. AdGuard Home can copy settings between the two with community sync tools; with Pi-hole, use
+   *Settings → Teleporter* to export and import.
 
 ## Smart TVs and streaming sticks
 
