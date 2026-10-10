@@ -34,6 +34,8 @@ automatic updates aren't listed here. Dates are UTC.
 
 - **Contributing:** `CONTRIBUTING.md`, five issue forms (blocked by mistake, should be blocked, list or source
   request, guide problem, script bug) and a pull request checklist.
+- **Security policy and Code of Conduct:** `SECURITY.md` (how to report problems privately, scope, built-in
+  safeguards) and the Contributor Covenant 2.1, with reports handled through GitHub.
 - **License:** GPL-3.0 for the repository. The generated lists also stay under their sources' licenses, a few of which
   are non-commercial.
 

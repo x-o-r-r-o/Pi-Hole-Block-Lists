@@ -3,6 +3,9 @@
 Thanks for helping! Most contributions don't need any coding: reporting a wrong block, a missed domain or an outdated
 menu in a guide is just as valuable.
 
+Please follow the [Code of Conduct](CODE_OF_CONDUCT.md). Security problems go through [SECURITY.md](SECURITY.md), not
+public issues.
+
 ## Report a problem or suggest something
 
 [Open an issue](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/issues/new/choose) and pick the form that fits:
