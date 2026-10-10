@@ -1,0 +1,97 @@
+name: Something is blocked that shouldn't be
+description: A website, app, link or device stopped working because of one of the lists.
+title: "[False positive] "
+labels: ["false positive"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! To get working again right away, unblock the name on your own blocker first
+        (see [Something broke?](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/docs/troubleshooting.md#something-broke)).
+        Once confirmed, the domain is added to `allowlist.txt` and disappears from every list on the next daily build.
+  - type: input
+    id: domains
+    attributes:
+      label: Blocked domain(s)
+      description: The exact name(s) from your blocker's query log, not the website address you typed.
+      placeholder: e.g. cdn.example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: lists
+    attributes:
+      label: Which list(s) block it?
+      description: Pick all you use, or "Not sure". (AdGuard Home and Pi-hole show the list name next to a blocked entry.)
+      multiple: true
+      options:
+        - Not sure
+        - ads-and-tracking
+        - ads-and-tracking-extended
+        - ads-regional
+        - mobile-ads
+        - mobile-spyware
+        - youtube-ads
+        - smart-tv
+        - game-consoles
+        - windows-telemetry
+        - security
+        - phishing-and-scams
+        - security-strict
+        - crypto-mining
+        - stalkerware
+        - adult
+        - safesearch-bypass
+        - gambling
+        - dating
+        - live-streaming
+        - chat-strangers
+        - drugs
+        - violence-hate
+        - piracy
+        - fake-news
+        - cults
+        - vpn-proxy-bypass
+        - social-media
+        - messaging
+        - youtube
+        - video-streaming
+        - gaming-platforms
+        - online-games
+        - ai-chatbots
+        - cheating
+        - shopping
+        - file-sharing
+        - crypto-trading
+        - remote-control
+        - url-shorteners
+    validations:
+      required: true
+  - type: textarea
+    id: broke
+    attributes:
+      label: What stopped working?
+      description: The site, app or device, and what happens (error, blank page, won't sign in...).
+    validations:
+      required: true
+  - type: dropdown
+    id: blocker
+    attributes:
+      label: What do you use the lists with?
+      options:
+        - AdGuard Home
+        - Pi-hole v6
+        - Pi-hole v5
+        - Device script (macOS / Windows / Linux / Android)
+        - Router (pfSense, OPNsense, OpenWrt, MikroTik, EdgeRouter, UniFi...)
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: Unblocking this domain on my blocker fixed the problem.
+          required: false
+        - label: I searched the existing issues for this domain.
+          required: true

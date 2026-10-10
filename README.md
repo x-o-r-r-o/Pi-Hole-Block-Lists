@@ -48,6 +48,7 @@ apps...) are in [Lists](#lists) and [Suggested setups](#suggested-setups).
 - [Lists](#lists)
   - [Suggested setups](#suggested-setups)
 - [How to add a list](#how-to-add-a-list)
+- [Contributing and license](#contributing-and-license)
 - [Changelog](#changelog)
 <!-- TOC:END -->
 
@@ -191,6 +192,26 @@ Good to know:
   [What each list blocks](docs/lists.md#what-each-list-blocks-and-what-it-doesnt) for which lists overlap and which add something new.
 - Every list uses memory on the device running your blocker; the [Lists](#lists) table shows how many names each has.
 - Then check it with [Is it working?](docs/troubleshooting.md#is-it-working).
+
+<div align="right"><a href="#contents">↑ Back to top</a></div>
+
+## Contributing and license
+
+**Found a wrong block, a missed domain or an outdated guide?** [Open an issue](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/issues/new/choose)
+using one of the forms, or see [CONTRIBUTING.md](CONTRIBUTING.md) to make the change yourself.
+
+**License:**
+- **Scripts, guides and build tools:** [GPL-3.0](LICENSE).
+- **The generated lists:** they combine third-party sources and stay under those sources' licenses (see
+  [Sources](docs/maintainers.md#sources)). Most are GPL-3.0, MIT or Creative Commons, and every list is free for
+  personal and home use.
+- **Non-commercial sources:** a few allow non-commercial use only:
+  - Peter Lowe's list: `ads-and-tracking`, `ads-and-tracking-extended`
+  - Dan Pollock's list: `ads-and-tracking-extended`
+  - Polish filters: `ads-regional`
+  - Phishing Army: `security`, `phishing-and-scams`
+
+  For commercial use of those lists, check those sources' terms.
 
 <div align="right"><a href="#contents">↑ Back to top</a></div>
 

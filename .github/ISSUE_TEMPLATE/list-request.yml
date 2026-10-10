@@ -1,0 +1,31 @@
+name: Suggest a list, source or app
+description: A new block list category, an upstream source to add, or an app's domains for an app-based list.
+title: "[Request] "
+labels: ["list request"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you suggesting?
+      options:
+        - A new upstream source for an existing list
+        - A new list category
+        - An app to add to an app-based list (live-streaming, dating, gaming-platforms, video-streaming, messaging)
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: |
+        Source: its download link, homepage, license and how often it's updated.
+        New list: what it should block and who it's for.
+        App: its name, Google Play / App Store link and official website domains.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it useful?
+    validations:
+      required: false

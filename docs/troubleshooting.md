@@ -112,7 +112,7 @@ with `--update` / `-Update`). A list's *Last modified* date only changes when it
 No. Your blocker or device only downloads the lists from GitHub; your DNS lookups stay on your own AdGuard Home, Pi-hole,
 router or device.
 
-**My problem isn't here.** [Open an issue](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/issues) describing your setup (blocker, router, device) and what happens.
+**My problem isn't here.** [Open an issue](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/issues/new/choose) describing your setup (blocker, router, device) and what happens.
 
 <div align="right"><a href="#contents">↑ Back to top</a></div>
 
@@ -130,7 +130,7 @@ fixed for everyone.
    - **Device scripts** (hosts file): remove the list that contains it and run the script again, or use
      `--remove` / `-Remove`.
    - **Routers:** use your router's allow / whitelist option (e.g. OPNsense *Allowlist Domains*, MikroTik `type=FWD`).
-3. **Report it:** [open an issue](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/issues) with the domain name and what broke, so it can be added to the shared
+3. **Report it:** [open a "blocked that shouldn't be" issue](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/issues/new?template=false-positive.yml) with the domain name and what broke, so it can be added to the shared
    [`allowlist.txt`](../allowlist.txt) and removed from the lists for everyone on the next daily build.
 
 Essential sites (Google, Microsoft, Apple, WhatsApp, PayPal, big CDNs, common link shorteners...) are listed in

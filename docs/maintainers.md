@@ -175,7 +175,7 @@ All credit goes to these maintainers. Each generated file lists its sources in i
 
 ## For maintainers
 
-This part is for people running their own copy (fork) of this repository; you don't need it to use the lists.
+This part is for people running their own copy (fork) of this repository; you don't need it to use the lists. To contribute changes back, see [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 <div align="right"><a href="#contents">↑ Back to top</a></div>
 

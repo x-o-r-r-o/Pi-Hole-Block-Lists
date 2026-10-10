@@ -1,0 +1,44 @@
+name: A setup guide doesn't match my device
+description: A menu name, step or command in a guide is wrong, outdated or unclear.
+title: "[Guide] "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Many menus change between versions, so reports like this help everyone. Screenshots of the menu you see are very welcome.
+  - type: dropdown
+    id: guide
+    attributes:
+      label: Which guide?
+      options:
+        - README / Quick start
+        - Lists explained (docs/lists.md)
+        - Devices, phones, browsers (docs/devices.md)
+        - Routers (docs/routers.md)
+        - Raspberry Pi, Docker, NAS, servers (docs/servers.md)
+        - Smart TVs and game consoles (docs/tv-and-consoles.md)
+        - Troubleshooting (docs/troubleshooting.md)
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section and step
+      placeholder: e.g. "Routers > OPNsense > Option A, step 4"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Your device / software and version
+      placeholder: e.g. "OPNsense 26.1", "Synology DSM 7.2.2", "Samsung TV 2024 (Tizen 8)"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What the guide says vs. what you see
+      description: Include the correct menu path or command if you found it.
+    validations:
+      required: true

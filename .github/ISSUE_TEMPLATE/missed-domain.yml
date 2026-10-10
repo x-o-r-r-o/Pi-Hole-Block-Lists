@@ -1,0 +1,46 @@
+name: Something should be blocked
+description: An ad, tracker, scam, malware site or app that gets through.
+title: "[Missed] "
+labels: ["missed domain"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please report the **server name** that serves the ad or content (from your blocker's query log), not just the
+        page you were on. Note that YouTube, Facebook and Instagram ads can't be blocked by DNS
+        ([why](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/docs/lists.md#youtube-ads)).
+  - type: textarea
+    id: domains
+    attributes:
+      label: Domain(s) to block
+      description: One per line.
+      placeholder: |
+        ads.example.com
+        tracker.example.net
+    validations:
+      required: true
+  - type: dropdown
+    id: list
+    attributes:
+      label: Which list should include it?
+      options:
+        - Not sure
+        - ads-and-tracking (ads / trackers)
+        - security (malware, phishing, scams)
+        - mobile-ads
+        - smart-tv / game-consoles
+        - adult
+        - gambling
+        - dating
+        - live-streaming (live-stream / video-chat apps)
+        - social-media
+        - Another list (say which below)
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What is it and how did you find it?
+      description: e.g. "shows pop-up ads in app X", "phishing page pretending to be bank Y" (please don't paste live phishing links as clickable links; write them as example[.]com).
+    validations:
+      required: true

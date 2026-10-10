@@ -1,0 +1,42 @@
+name: Script or build problem
+description: An installer script (macOS, Windows, Linux, Android, EdgeRouter), Docker file, or the daily build fails.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: part
+    attributes:
+      label: What fails?
+      options:
+        - install/macos.sh
+        - install/windows.ps1
+        - install/linux.sh
+        - install/android.sh
+        - install/edgerouter.sh
+        - docker/adguardhome or docker/pihole
+        - A list file (empty, broken, wrong format)
+        - The daily build / GitHub Action
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System and version
+      placeholder: e.g. "Windows 11 24H2, PowerShell 5.1", "Ubuntu 24.04", "EdgeOS 2.0.9"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command you ran and what happened
+      description: Paste the full output (it's formatted automatically).
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: false

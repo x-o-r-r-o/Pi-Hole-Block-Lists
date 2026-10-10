@@ -32,6 +32,11 @@ automatic updates aren't listed here. Dates are UTC.
 - **Safety guard:** `protected.txt` lists essential sites (Google, Microsoft, Apple, WhatsApp, PayPal, big CDNs...). Every
   build removes them from any list not meant to block them.
 
+- **Contributing:** `CONTRIBUTING.md`, five issue forms (blocked by mistake, should be blocked, list or source
+  request, guide problem, script bug) and a pull request checklist.
+- **License:** GPL-3.0 for the repository. The generated lists also stay under their sources' licenses, a few of which
+  are non-commercial.
+
 ### Changed
 - **Guides moved out of the README** into separate pages in `docs/` (lists, devices, routers, servers & NAS, TVs &
   consoles, troubleshooting, maintainers). The README is now a short front page with a Guides index. Every page has its
