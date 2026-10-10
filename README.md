@@ -141,6 +141,7 @@ every list above, lets you pick one or several, backs up your original hosts fil
 | Windows 10/11 | [`install/windows.ps1`](install/windows.ps1) | hosts file, daily update via Task Scheduler |
 | Linux | [`install/linux.sh`](install/linux.sh) | hosts file, daily update via cron or systemd |
 | Android | [`install/android.sh`](install/android.sh) (in Termux) | rooted: hosts file. Not rooted: sets you up with the free AdAway app |
+| iPhone / iPad | no script possible (see [iPhone and iPad](#iphone-and-ipad)) | your AdGuard Home / Pi-hole, the AdGuard app, AdGuard DNS, or Screen Time |
 
 **Good to know before you start**
 - Pick only what you need. The hosts file has no wildcards, so every server name is listed one by one. Big lists such as
@@ -219,6 +220,46 @@ pkg install curl; curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hol
 The script asks for root access and writes the lists into the hosts file. Re-run `bash android.sh --update` to refresh,
 or `bash android.sh --remove` to undo.
 
+### iPhone and iPad
+
+Apple doesn't let apps or scripts change the hosts file on iOS / iPadOS, so there's no installer. Pick one of these
+instead:
+
+**Option 1: your AdGuard Home or Pi-hole (free, blocks in every app; recommended).**
+- *At home on Wi-Fi:* if your router (or UniFi, see below) already hands out AdGuard Home / Pi-hole as the DNS server,
+  there's nothing to do. Otherwise: **Settings → Wi-Fi** → tap **ⓘ** next to your network → **Configure DNS** →
+  **Manual** → remove the existing servers → **Add Server** → type the IP address of your AdGuard Home / Pi-hole →
+  **Save**.
+- *Everywhere, also on mobile data:* this needs AdGuard Home with encryption turned on and reachable from the internet
+  (Settings → Encryption settings in AdGuard Home). Then in AdGuard Home open **Setup Guide → DNS Privacy → iOS** and
+  download the **.mobileconfig** profile. Open it on the iPhone, install it under **Settings → General → VPN & Device
+  Management**, and make sure it's selected under **DNS** on that same screen. (Pi-hole has no encrypted DNS of its own,
+  so away from home it only works through a VPN back to your house, such as WireGuard or Tailscale.)
+
+**Option 2: the AdGuard app (no server needed; needs AdGuard Premium).** Custom DNS filters, custom Safari filters and
+Advanced protection are Premium features.
+1. Install **AdGuard** from the App Store and upgrade to Premium.
+2. Tap the ⚙ gear → **General** → turn on **Advanced mode**.
+3. Tap the 🛡 shield (**Protection**) → **DNS protection** → turn it on → **DNS filtering** → **DNS filters** →
+   **Add a filter** → paste a list link in the adblock format, e.g. `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking.txt` → **Next** →
+   **Add**. Repeat for each list. Keep it to a few lists: AdGuard filters inside the phone (as a local VPN), and very
+   large lists use more memory and battery.
+4. YouTube ads in Safari: **Protection → Safari protection → Filters → Custom → Add custom filter** →
+   `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/browser/youtube-ads-adguard.txt` (tick **Trusted** if offered), turn on **Advanced protection**, and enable the
+   AdGuard extensions under iPhone **Settings → Apps → Safari → Extensions**. The YouTube *app* itself can't be filtered.
+
+Only one VPN-type app can run at a time on iOS, so AdGuard (Option 2) can't run alongside another VPN.
+
+**Option 3: AdGuard DNS cloud service (small lists only).** At [adguard-dns.io](https://adguard-dns.io), open **Servers →
+My server → Blocklists → Custom → Add custom blocklist** and paste a list link, then install the server's iOS profile from
+its **Devices** page. The Personal plan allows only 1,000 rules, so this fits only tiny lists such as
+`https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/youtube-ads.txt` or `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/live-streaming.txt`.
+
+**Built-in Screen Time (free, for children's devices).** It can't load these lists, but it covers some of the same ground:
+**Settings → Screen Time → Content & Privacy Restrictions → App Store, Media, Web & Games**: under **Web Content** choose
+**Limit Adult Websites** and add any sites you want to block under *Never Allow* (for example `bigo.tv`, `tiktok.com`);
+under **App Store** limit apps by age or block app installs. App Limits and Downtime set time limits per app.
+
 ## YouTube ads in the browser
 
 DNS and hosts-file blocking can't remove YouTube video ads (see the note above). Browser ad blockers can, and these lists
@@ -237,6 +278,7 @@ collect the YouTube rules from **uBlock Origin** and **AdGuard**, rebuilt every 
 - **Brave**: open `brave://settings/shields/filters` → **Add custom filter list** → paste the link.
 - **Android phones**: use Firefox for Android with uBlock Origin, or the AdGuard app (with HTTPS filtering on), and add
   the link the same way.
+- **iPhone / iPad**: AdGuard for iOS (Premium) in Safari, see [iPhone and iPad](#iphone-and-ipad) step 4.
 
 Honest note: uBlock Origin and AdGuard **already include these rules** in their default lists, and uBlock Origin
 ignores the most powerful kind ("trusted" rules) when they come from an added list. So with a default uBlock Origin
