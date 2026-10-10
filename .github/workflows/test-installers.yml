@@ -94,10 +94,13 @@ jobs:
         run: |
           $hosts = "$env:SystemRoot\System32\drivers\etc\hosts"
           $orig = Get-Content $hosts
+          # Windows answers a 0.0.0.0 hosts entry with "no data" (or 0.0.0.0): either way no real address.
+          function Get-Ips($name) { try { [Net.Dns]::GetHostAddresses($name) | Where-Object { $_.AddressFamily -eq 'InterNetwork' } | ForEach-Object { $_.IPAddressToString } } catch { @() } }
+          $before = @(Get-Ips $env:BLOCKED); Write-Host "before: $env:BLOCKED -> $before"
+          if (-not ($before | Where-Object { $_ -ne "0.0.0.0" })) { throw "test domain doesn't resolve normally, pick another" }
           & .\install\windows.ps1 -Lists $env:LISTS -Yes -AutoUpdate on
-          $ip = [Net.Dns]::GetHostAddresses($env:BLOCKED) | ForEach-Object { $_.IPAddressToString }
-          Write-Host "$env:BLOCKED -> $ip"
-          if ($ip -notcontains "0.0.0.0") { throw "domain is not blocked" }
+          $after = @(Get-Ips $env:BLOCKED); Write-Host "after: $env:BLOCKED -> $after"
+          if ($after | Where-Object { $_ -ne "0.0.0.0" }) { throw "domain is not blocked" }
           if (-not (Get-ScheduledTask -TaskName "Pi-Hole-Block-Lists daily update" -ErrorAction SilentlyContinue)) { throw "task missing" }
           & .\install\windows.ps1 -Update -Yes
           & .\install\windows.ps1 -Remove
