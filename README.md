@@ -44,6 +44,10 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 1: create the container](#step-1-create-the-container)
   - [Step 2: install AdGuard Home or Pi-hole](#step-2-install-adguard-home-or-pi-hole-1)
   - [Step 3: use it for the whole home, and keep it safe](#step-3-use-it-for-the-whole-home-and-keep-it-safe)
+- [TrueNAS](#truenas)
+  - [Step 1: prepare TrueNAS](#step-1-prepare-truenas)
+  - [Step 2: install AdGuard Home or Pi-hole from the Apps catalogue](#step-2-install-adguard-home-or-pi-hole-from-the-apps-catalogue)
+  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-3)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -807,7 +811,7 @@ backup. To use the same blocking away from home on phones, see [iPhone and iPad]
 ## Docker
 
 Run AdGuard Home or Pi-hole in Docker on any always-on computer: a Linux server or mini PC, or a NAS / home server with
-Docker (Unraid, TrueNAS, OpenMediaVault...). Proxmox users: see [Proxmox VE](#proxmox-ve). Ready-made files are in [`docker/`](docker/); they're tested
+Docker (Unraid, OpenMediaVault...). Proxmox users: see [Proxmox VE](#proxmox-ve); TrueNAS users: see [TrueNAS](#truenas). Ready-made files are in [`docker/`](docker/); they're tested
 automatically on every change. (Synology users: see [Synology NAS](#synology-nas).)
 
 ### Step 1: free port 53 (Ubuntu and Debian servers)
@@ -922,6 +926,58 @@ for you; they're not official, so read a script before running it on your host.
    another Proxmox node, a Raspberry Pi or a NAS) with the same lists and give its address to your router as the second
    DNS server. AdGuard Home can copy settings between the two with community sync tools; with Pi-hole, use
    *Settings → Teleporter* to export and import.
+
+## TrueNAS
+
+For **TrueNAS Community Edition / SCALE 24.10 or newer** (the Linux-based TrueNAS, whose Apps run on Docker). TrueNAS CORE
+(FreeBSD) isn't covered: use another device or a VM. Menu names below are from 25.04 / 25.10 and may move between
+releases.
+
+### Step 1: prepare TrueNAS
+
+1. Make sure TrueNAS has a fixed IP address (it usually does; check **Network → Interfaces**, or reserve its address in
+   your router). Below it's `192.168.1.4`.
+2. Apps need a pool: open **Apps**; if asked, **Configure → Choose Pool**.
+3. Optional, to keep the settings in your own dataset: **Datasets → Add Dataset** → e.g. `apps/adguardhome` (or
+   `apps/pihole`).
+
+### Step 2: install AdGuard Home or Pi-hole from the Apps catalogue
+
+1. **Apps → Discover Apps** → search **AdGuard Home** (or **Pi-hole**) → **Install**.
+2. In the install form:
+   - **Network Configuration:** turn on **Host Network** and, under **Host IPs**, choose your TrueNAS LAN address
+     (`192.168.1.4`) rather than *0.0.0.0*. This avoids the port 53 clash described below. Keep the suggested **Web
+     Port** (TrueNAS itself uses 80 and 443).
+   - **Pi-hole only:** set the admin **password** and your **time zone**.
+   - **Storage:** keep the default *ixVolume*, or choose **Host Path** and the dataset from step 1.
+   - Click **Install** and wait until the app shows **Running**.
+3. Click **Web UI** on the app's page.
+   - AdGuard Home: if the setup wizard appears, keep the DNS server on port **53** and the admin port the same as the
+     app's Web Port, then create your username and password.
+   - Pi-hole: sign in with the password from the form.
+4. Add the lists with the adblock links ([How to add a list](#how-to-add-a-list)).
+
+**"Port 53 is already in use" / "used by Virt Service"?** On TrueNAS 25.04 and newer, the built-in containers & VMs
+service (**Instances**, based on Incus) keeps its own DNS on port 53. Fixes, in order:
+1. Bind the app to your TrueNAS LAN address with Host Network (step 2 above), then **Edit** and save the app again.
+2. If you don't use Instances / VMs, unset their pool (**Instances → Configuration**) so the service stops.
+3. Last resort (community workaround, not tested by TrueNAS): move the Incus DNS to another port from **System → Shell**:
+   `sudo incus network set incusbr0 raw.dnsmasq="port=5354"`.
+Check what holds the port with `sudo ss -lunp | grep ':53 '`.
+
+**Prefer our compose file?** **Apps → Discover Apps → ⋮ → Install via YAML**, give it a name and paste
+[`docker/adguardhome/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/adguardhome/compose.yaml), replacing `./work` and `./conf` with full
+paths such as `/mnt/<pool>/apps/adguardhome/work`. The port 53 notes above apply here too.
+
+### Step 3: use it for the whole home
+
+1. Point your network at it: [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1) (router DNS or AdGuard Home /
+   Pi-hole as DHCP server, stopping devices going around it). Then from a computer run
+   `nslookup example.com 192.168.1.4` to confirm it answers.
+2. **Updates:** the lists update themselves; when **Apps → Installed** shows *Update available* for the app, click
+   **Update**.
+3. **Backups:** take snapshots of the app's dataset (**Data Protection → Periodic Snapshot Tasks**), and keep a second
+   DNS server (a Raspberry Pi or another NAS) so home DNS keeps working when TrueNAS restarts for updates.
 
 ## Smart TVs and streaming sticks
 
