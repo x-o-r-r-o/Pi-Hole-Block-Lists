@@ -2,11 +2,12 @@
 # Description: AI chatbots and writing tools (ChatGPT, Claude, Gemini, Copilot, DeepSeek, Character.AI...). Useful for schools and homework time.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 16:21 UTC
-# Entries: 77
+# Last modified: 2026-10-10 04:24 UTC
+# Entries: 93
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: AI tools: https://dsi.ut-capitole.fr/blacklists/
+#   - AdGuard Home Blocked Services: chatgpt, claude, copilot, gemini, deepseek, grok, perplexity, meta_ai, qwen, manus, questionai, dola: https://github.com/AdguardTeam/HostlistsRegistry
 
 0.0.0.0 ai-hay.vn
 0.0.0.0 andisearch.com
@@ -18,16 +19,23 @@
 0.0.0.0 botsonic.com
 0.0.0.0 character.ai
 0.0.0.0 chatgpt.com
+0.0.0.0 cici.com
+0.0.0.0 ciciai.com
 0.0.0.0 claude.ai
 0.0.0.0 colomboai.com
 0.0.0.0 compute.hyper.space
 0.0.0.0 consensus.app
+0.0.0.0 copilot.ai
+0.0.0.0 copilot.cloud.microsoft
+0.0.0.0 copilot.com
 0.0.0.0 copilot.microsoft.com
+0.0.0.0 copilotstudio.microsoft.com
 0.0.0.0 copy.ai
 0.0.0.0 correkt.ai
 0.0.0.0 deepfind.co
 0.0.0.0 deepseek.com
 0.0.0.0 devv.ai
+0.0.0.0 dola.com
 0.0.0.0 doubao.com
 0.0.0.0 duck.ai
 0.0.0.0 failingfast.io
@@ -52,12 +60,17 @@
 0.0.0.0 lmarena.ai
 0.0.0.0 lumigo.ai
 0.0.0.0 lumo.proton.me
+0.0.0.0 manus.im
+0.0.0.0 manuscdn.com
+0.0.0.0 meta.ai
 0.0.0.0 metaso.cn
 0.0.0.0 miromind.ai
 0.0.0.0 mistral.ai
 0.0.0.0 mixmyai.com
 0.0.0.0 monica.so
 0.0.0.0 msty.app
+0.0.0.0 oaistatic.com
+0.0.0.0 oaiusercontent.com
 0.0.0.0 omnexio.ai
 0.0.0.0 openai.com
 0.0.0.0 ordalie.com
@@ -65,7 +78,10 @@
 0.0.0.0 phind.com
 0.0.0.0 pi.ai
 0.0.0.0 poe.com
+0.0.0.0 questionai.ai
+0.0.0.0 questionai.com
 0.0.0.0 qwen.ai
+0.0.0.0 qwenlm.ai
 0.0.0.0 so.360.com
 0.0.0.0 stellar.chatastra.ai
 0.0.0.0 suno.ai
@@ -81,6 +97,7 @@
 0.0.0.0 use.ai
 0.0.0.0 venice.ai
 0.0.0.0 writesonic.com
+0.0.0.0 x.ai
 0.0.0.0 xdash.ai
 0.0.0.0 you.com
 0.0.0.0 yuewen.cn

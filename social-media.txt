@@ -2,12 +2,13 @@
 # Description: Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-08 20:50 UTC
-# Entries: 4422
+# Last modified: 2026-10-10 04:25 UTC
+# Entries: 4450
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Social Networks (WhatsApp kept working): https://github.com/hagezi/dns-blocklists
 #   - StevenBlack Social extension (WhatsApp kept working): https://github.com/StevenBlack/hosts
+#   - AdGuard Home Blocked Services: social networks (WhatsApp media hosts kept working): https://github.com/AdguardTeam/HostlistsRegistry
 
 0-act.channel.facebook.com
 0-edge-chat.facebook.com
@@ -594,6 +595,7 @@ businesshelp.snapchat.com
 buyingfacebooklikes.com
 bytecdn.cn
 bytedance.com
+bytedance.map.fastly.net
 bytedapm.com
 byteglb.com
 bytegoofy.com
@@ -1314,6 +1316,7 @@ facebook-texas-holdem.net
 facebook-web-clients.appspot.com
 facebook.at
 facebook.be
+facebook.br
 facebook.ca
 facebook.cc
 facebook.co
@@ -1532,6 +1535,7 @@ fbacebook.com
 fbbmarket.com
 fbboostyourbusiness.com
 fbcallback.wechat.com
+fbcdn-a.akamaihd.net
 fbcdn-creative-a.akamaihd.net
 fbcdn-photos-a.akamaihd.net
 fbcdn-photos-e-a.akamaihd.net
@@ -1837,6 +1841,7 @@ images.instagram.com
 images.tweet.twitter.com
 imagine.linkedin.com
 imgsmail.ru
+imgur.com
 imp2.ads.linkedin.com
 impala-media-production.s3.amazonaws.com
 imstagram.com
@@ -2076,6 +2081,7 @@ linkedin.com
 linkedin.com.br
 linkedin.com.cdn.cloudflare.net
 linkedin.nl
+linkedin.qtlcdn.com
 linkedinforgood.linkedin.com
 linux.myspace.com
 lists.facebook.com
@@ -2753,7 +2759,9 @@ rio.myspace.com
 ro-ro.facebook.com
 ro.linkedin.com
 ro.pinterest.com
+rocksdb.com
 rocksdb.net
+rocksdb.org
 rollenspiel.social
 rossgram.ru
 rs.linkedin.com
@@ -3439,6 +3447,7 @@ snssdk.com
 socel.net
 social.anoxinon.de
 social.cologne
+social.dev-wiki.de
 social.linux.pizza
 social.politicaconciencia.org
 social.vivaldi.net
@@ -3502,6 +3511,7 @@ ssl.connect.facebook.com
 ssl.facebook.com
 ssl.reddit.com
 ssl2.twitter.com.edgekey.net
+st.mycdn.me
 staff.tumblr.com
 staging-us-east1-aws.api.snapchat.com
 staging.joinclubhouse.com
@@ -3604,8 +3614,10 @@ tiktok-platform-lb-maliva.byteoversea.net
 tiktok.com
 tiktok.in
 tiktok.org
+tiktok.tps.dv.tech
 tiktokcdn-com.akamaized.net
 tiktokcdn-eu.com
+tiktokcdn-eu.com.ttdns3.com
 tiktokcdn-eu.net
 tiktokcdn-in.com
 tiktokcdn-row.com
@@ -3638,8 +3650,11 @@ tiktokv.com
 tiktokv.com.c.bytefcdn-oversea.com
 tiktokv.com.c.worldfcdn.com
 tiktokv.com.c.worldfcdn2.com
+tiktokv.com.edgesuite.net
 tiktokv.eu
+tiktokv.eu.edgesuite.net
 tiktokv.us
+tiktokv.us.edgesuite.net
 tiktokw.eu
 tiktokw.us
 timbrasil.m.facebook.com
@@ -3868,6 +3883,7 @@ viewmorepics.myspace.com
 viewpoints.fb.com
 viewpointsfromfacebook.com
 vine.co
+vk-cdn.me
 vk-cdn.net
 vk-portal.net
 vk.cc
@@ -3877,6 +3893,7 @@ vk.design
 vk.link
 vk.me
 vk.ru
+vkcache.com
 vkgo.app
 vklive.app
 vkmessenger.app
@@ -3918,6 +3935,9 @@ w3-reporting-nel.reddit.com.cdn.cloudflare.net
 w3-reporting.reddit.com
 w3-reporting.reddit.com.cdn.cloudflare.net
 watchanimeattheoffice.com
+wbimg.cn
+wbimg.com
+wcdn.cn
 weareher.com
 web-cdn.bsky.app
 web-chat-e2ee.facebook.com
@@ -3932,6 +3952,10 @@ webattachments.snapchat.com
 webcast.tiktok.com
 webcast16-normal-c-useast2a.tiktokv.com
 webdav.facebook.com
+weibo.cn
+weibo.com
+weibo.com.cn
+weibocdn.com
 welcome.joinclubhouse.com
 wh.reddit.com
 white.ish.instagram.com
@@ -4053,6 +4077,11 @@ wxw.moe
 x.com
 x.facebook.com
 x.myspacecdn.com
+xhscdn.com
+xhscdn.net
+xiaohongshu.com
+xiaohongshu.com.my
+xiaohongshu.net
 xlog-va.byteoversea.com
 xlog-va.tiktokv.com
 xlog.tiktokv.com

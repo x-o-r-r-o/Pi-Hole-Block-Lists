@@ -2,8 +2,8 @@
 # Description: Microsoft data collection from Windows and Office. Windows Update and Office keep working.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 21:54 UTC
-# Entries: 381
+# Last modified: 2026-10-10 04:24 UTC
+# Entries: 383
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Native Tracker: Windows/Office: https://github.com/hagezi/dns-blocklists
@@ -240,6 +240,7 @@
 0.0.0.0 office-events-data.trafficmanager.net
 0.0.0.0 oms-analytics.trafficmanager.net
 0.0.0.0 outlookads.live.com
+0.0.0.0 partnerfraudevents.trafficmanager.net
 0.0.0.0 pgtbr1-excel-telemetry-vip.officeapps.live.com
 0.0.0.0 pgtbr1-powerpoint-telemetry-vip.officeapps.live.com
 0.0.0.0 pgtbr1-word-telemetry-vip.officeapps.live.com
@@ -297,6 +298,7 @@
 0.0.0.0 ppc-word-telemetry.officeapps.live.com
 0.0.0.0 ppc-word-telemetry.wac.trafficmanager.net
 0.0.0.0 ppm-licensingtelemetry.servicebus.windows.net
+0.0.0.0 prd-qlik-telemetry.servicebus.windows.net
 0.0.0.0 preview.msn.com
 0.0.0.0 prod-eh-v1-analytics.servicebus.windows.net
 0.0.0.0 prod-eventhub-analytics.servicebus.windows.net

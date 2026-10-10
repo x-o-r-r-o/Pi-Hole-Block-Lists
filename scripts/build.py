@@ -59,13 +59,18 @@ def parse(text):
         if line.startswith("*."):
             line = line[2:]
 
-        if line.startswith("||") or line.startswith("@@||"):
+        if line.startswith(("|", "@@|")):
+            # Adblock rule: "||d^", "|d^" (exact start), optionally ending in "|" and/or "$modifiers".
             exception = line.startswith("@@")
-            body = line[4:] if exception else line[2:]
+            body = line[2:] if exception else line
+            body = body[2:] if body.startswith("||") else body[1:]
             if "^" not in body:
                 continue
             domain, _, rest = body.partition("^")
-            modifiers = rest.lstrip("$").split(",") if rest else [""]
+            rest = rest.lstrip("|")
+            if rest and not rest.startswith("$"):
+                continue  # path or pattern after the domain: not a DNS block
+            modifiers = rest[1:].split(",") if rest else [""]
             if any(m.strip().lstrip("~") not in SAFE_MODIFIERS for m in modifiers):
                 continue  # app-, path- or site-specific rule: not a DNS block
             d = clean(domain)
@@ -264,9 +269,18 @@ def main():
             sid = futures[fut]
             try:
                 text = fut.result()
-                blocked, exceptions = parse(text)
                 src = sources[sid]
-                # Optional per-source "exclude" regexes drop entries that would break things.
+                # "services": take the rules of these AdGuard Home "Blocked services" entries.
+                if src.get("services"):
+                    text = "\n".join(r for svc in json.loads(text)["blocked_services"]
+                                     if svc["id"] in src["services"] for r in svc["rules"])
+                blocked, exceptions = parse(text)
+                # Optional "include" regexes keep only matching entries; "exclude" regexes drop
+                # entries that would break things.
+                includes = [re.compile(p) for p in src.get("include", [])]
+                if includes:
+                    blocked = {d for d in blocked if any(p.search(d) for p in includes)}
+                    exceptions = {d for d in exceptions if any(p.search(d) for p in includes)}
                 excludes = [re.compile(p) for p in src.get("exclude", [])]
                 if excludes:
                     blocked = {d for d in blocked if not any(p.search(d) for p in excludes)}
@@ -291,13 +305,15 @@ def main():
         if missing:
             problems.append("%s: skipped, source(s) failed: %s" % (name, ", ".join(missing)))
             continue
-        domains, tlds, list_allow = set(), set(), set()
+        domains, tlds, list_allow, upstream_allow = set(), set(), set(), set()
         for sid in meta["sources"]:
             blocked, exceptions, src_tlds = results[sid]
             domains |= blocked - exceptions
             tlds |= src_tlds
             if sources[sid].get("exceptions"):
                 list_allow |= exceptions
+            else:
+                upstream_allow |= exceptions
         domains |= read_local(ROOT / "custom" / ("%s.txt" % name))
         # Essential sites are never blocked unless this list is meant to block them.
         guard = protected - set(meta.get("may_block", []))
@@ -320,7 +336,9 @@ def main():
             sorted(tlds)
         # Allowlisted subdomains of a blocked parent (or TLD) need an explicit exception.
         blocked_all = domains | tlds if tlds else domains
-        wild_allow = sorted(a for a in list_allow if any(
+        # Upstream "@@" exceptions (e.g. AdGuard keeps pagead.l.doubleclick.net working) are kept
+        # unless another source blocks that exact domain.
+        wild_allow = sorted(a for a in list_allow | (upstream_allow - domains) if any(
             ".".join(a.split(".")[i:]) in blocked_all for i in range(1, a.count(".") + 1)))
 
         write_if_changed(out, header("#", meta, len(plain), "plain domains (Pi-hole, AdGuard Home)")

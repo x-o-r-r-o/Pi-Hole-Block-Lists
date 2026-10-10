@@ -2,11 +2,12 @@
 # Description: AI chatbots and writing tools (ChatGPT, Claude, Gemini, Copilot, DeepSeek, Character.AI...). Useful for schools and homework time.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 16:21 UTC
-# Entries: 77
+# Last modified: 2026-10-10 04:24 UTC
+# Entries: 93
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: AI tools: https://dsi.ut-capitole.fr/blacklists/
+#   - AdGuard Home Blocked Services: chatgpt, claude, copilot, gemini, deepseek, grok, perplexity, meta_ai, qwen, manus, questionai, dola: https://github.com/AdguardTeam/HostlistsRegistry
 
 ai-hay.vn
 andisearch.com
@@ -18,16 +19,23 @@ bolt.new
 botsonic.com
 character.ai
 chatgpt.com
+cici.com
+ciciai.com
 claude.ai
 colomboai.com
 compute.hyper.space
 consensus.app
+copilot.ai
+copilot.cloud.microsoft
+copilot.com
 copilot.microsoft.com
+copilotstudio.microsoft.com
 copy.ai
 correkt.ai
 deepfind.co
 deepseek.com
 devv.ai
+dola.com
 doubao.com
 duck.ai
 failingfast.io
@@ -52,12 +60,17 @@ llama.com
 lmarena.ai
 lumigo.ai
 lumo.proton.me
+manus.im
+manuscdn.com
+meta.ai
 metaso.cn
 miromind.ai
 mistral.ai
 mixmyai.com
 monica.so
 msty.app
+oaistatic.com
+oaiusercontent.com
 omnexio.ai
 openai.com
 ordalie.com
@@ -65,7 +78,10 @@ perplexity.ai
 phind.com
 pi.ai
 poe.com
+questionai.ai
+questionai.com
 qwen.ai
+qwenlm.ai
 so.360.com
 stellar.chatastra.ai
 suno.ai
@@ -81,6 +97,7 @@ uncovr.app
 use.ai
 venice.ai
 writesonic.com
+x.ai
 xdash.ai
 you.com
 yuewen.cn

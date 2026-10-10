@@ -3,14 +3,17 @@
 ! Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-09 16:21 UTC
-! Entries: 10556
+! Last modified: 2026-10-10 04:24 UTC
+! Entries: 10941
 !
 ! Built from these sources (see their licenses):
 !   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
 !   - Dating app servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/dating.json
+!   - ShadowWhisperer's Dating List: https://github.com/ShadowWhisperer/BlockLists
+!   - AdGuard Home Blocked Services: tinder, grindr, plenty_of_fish: https://github.com/AdguardTeam/HostlistsRegistry
 
 ||007agent-russian-women.net^
+||06i0c3.top^
 ||1-800-flirt.com^
 ||10-best-dating-apps.com^
 ||10-best-dating-sites-au.com^
@@ -20,6 +23,7 @@
 ||100-best-dating-sites.com^
 ||100-best-single-sites.com^
 ||100-top-dating-sites.com^
+||1000-dating-sites.com^
 ||1000amigos.com^
 ||1000sitidating.com^
 ||1001-rencontres.com^
@@ -163,6 +167,7 @@
 ||265dates.com^
 ||2amor.nl^
 ||2backpage.com^
+||2be2.ch^
 ||2become1.co.il^
 ||2darlings-agency.com^
 ||2day.nl^
@@ -225,6 +230,7 @@
 ||40singles.net^
 ||40smeet.co.nz^
 ||40smeet.com.au^
+||411-singles.com^
 ||41205.com^
 ||416dates.com^
 ||41stdating.com^
@@ -316,6 +322,7 @@
 ||7secondsdating.com^
 ||808singles.com^
 ||830pmdating.com^
+||8at8.com^
 ||8minutedating.com^
 ||8moneydates.com^
 ||8p.com.br^
@@ -351,6 +358,7 @@
 ||abledating.net^
 ||abledatingreview.com^
 ||abledlove.com^
+||ablesingles.co.uk^
 ||aboriginaldating.com^
 ||aboriginaldating.com.au^
 ||aboriginaldatingservice.com.au^
@@ -401,6 +409,7 @@
 ||adatingnet.com^
 ||adbalt-dating.com^
 ||addatingservices.com.au^
+||addictsocial.com^
 ||addisondating.com^
 ||addisonsingles.com^
 ||addissingles.com^
@@ -460,6 +469,7 @@
 ||adultcasualdating.com^
 ||adultcontactsonline.com^
 ||adultcougardating.com^
+||adultdatelink.com^
 ||adultdates.net^
 ||adultdating-co-uk.api-news.ru^
 ||adultdating-personals.com^
@@ -868,6 +878,7 @@
 ||alopeciadating.com^
 ||alovelyasian.com^
 ||alovelynite.co.uk^
+||alovoa.com^
 ||alpenflirts.com^
 ||alphadatingacademy-online.com^
 ||alpharettasingles.com^
@@ -895,6 +906,8 @@
 ||amarillomatchmaking.com^
 ||amarru.com^
 ||amateur-de-rencontre.com^
+||amateurmatch.com^
+||amaxhosa.co.za^
 ||amazingasianz.com^
 ||amazingdating.org^
 ||ambiancematchmaking.com^
@@ -922,7 +935,10 @@
 ||amesoeur.org^
 ||amidating.com^
 ||amiez.org^
+||amigos.com^
 ||amigos.nosotras.com^
+||amigosadventistas.com.br^
+||amigosamores.com^
 ||amigosargentina.com.ar^
 ||amigosfree.com^
 ||amigosingleses.com^
@@ -930,6 +946,7 @@
 ||amigosvalencia.com^
 ||amigosyencuentros.com^
 ||amiouplus.com^
+||amirru.com^
 ||amishdating.com^
 ||amishdatingservice.com^
 ||amishsingleschat.com^
@@ -944,6 +961,7 @@
 ||amordating.org^
 ||amore-incontri.sexy.easyincontro.com^
 ||amoreconnectingsingles.com^
+||amoredate.com^
 ||amoredates.com^
 ||amoreflirt.com^
 ||amoreflirt.net^
@@ -957,11 +975,13 @@
 ||amour-libertin.net^
 ||amour-mature.com^
 ||amour-vaucluse.fr^
+||amour.dk^
 ||amourdating.com^
 ||amourderussie.com^
 ||amoureux.com^
 ||amoureux.fr^
 ||amourfactory.com^
+||amourfeel.com^
 ||amourheart.com^
 ||amourland.com^
 ||amourmaghreb.com^
@@ -970,6 +990,7 @@
 ||amours-bio.com^
 ||amourtimes.com^
 ||amputeeangels.com^
+||amputeedate.co.uk^
 ||amputeedating.com.au^
 ||amputeedatingclub.com^
 ||amputeedatingservice.com^
@@ -1092,6 +1113,7 @@
 ||arabicsinglesmeet.com^
 ||arabonlinedating.com^
 ||arabs4dating.com^
+||arabsingles.biz^
 ||arabsingles.com.au^
 ||arabsinglesdate.com^
 ||arabsinglesmatch.com^
@@ -1128,6 +1150,7 @@
 ||arlequin-rencontre.com^
 ||arlingtonmatchmaker.com^
 ||arlingtonmatchmakers.com^
+||armadillo.co.za^
 ||armeniansingles.com.au^
 ||armenianspeeddating.com^
 ||armonies-rencontres.com^
@@ -1147,7 +1170,9 @@
 ||ashevilledating.com^
 ||ashleymadison.com^
 ||asiabliss.com^
+||asiafind.com^
 ||asiaflame.com^
+||asiafriendfinder.com^
 ||asialove.kulichki.com^
 ||asiame.com^
 ||asian-lover.net^
@@ -1164,9 +1189,13 @@
 ||asiandatingplanet.com^
 ||asianetclub.com^
 ||asianfaces.co.uk^
+||asianfriendfinder.com^
+||asiangirls4u.com^
+||asianhearts.com^
 ||asiankraze.com^
 ||asianlesbiandating.com.au^
 ||asianload.com^
+||asianlovesearch.com^
 ||asianmatch.com^
 ||asianmatching.com^
 ||asianmatchmate.com^
@@ -1208,6 +1237,7 @@
 ||atlantasingles.com^
 ||atolin.ru^
 ||atoutcoeur-nc.com^
+||attentionsingles.com^
 ||attisemoi.com^
 ||attractiondating.co.uk^
 ||attractiondiary.com^
@@ -1254,6 +1284,7 @@
 ||b2d8.com^
 ||babes2date.com^
 ||babyboomerpassions.com^
+||babyboomerpeoplemeet.biz^
 ||babyshambles.org^
 ||bachelorism.org^
 ||bachpan.com^
@@ -1263,6 +1294,7 @@
 ||badoo.com^
 ||badoocdn.com^
 ||baerendienst.de^
+||bahamasdatingonline.com^
 ||baihe.com^
 ||baise-directe.com^
 ||bakeat350.com^
@@ -1283,6 +1315,7 @@
 ||baptistpeoplemeet.com^
 ||baptistpm.com^
 ||baredating.app^
+||baseballovers.com^
 ||basherte.com^
 ||basi-musicali.com^
 ||batifolage.com^
@@ -1291,7 +1324,9 @@
 ||bayareadate.net^
 ||bazardusexe.com^
 ||bazoocam.org^
+||bbdiva.com^
 ||bbpeoplejoin.com^
+||bbpeoplemeet.biz^
 ||bbpeoplemeet.com^
 ||bbpeoplemeet.net^
 ||bbw-dates.com^
@@ -1319,8 +1354,8 @@
 ||bbw-singlesmeet.com^
 ||bbw.dating^
 ||bbw.mingle.com^
+||bbw.net^
 ||bbw.singles^
-||bbw.uppdating.com^
 ||bbwadmire.com^
 ||bbwadultdating.com^
 ||bbwbbm.com^
@@ -1570,7 +1605,9 @@
 ||beautifulpeople.com^
 ||beautyabroad.com^
 ||beavertonsingles.com^
+||beboo.ru^
 ||bebopx.ifrance.com^
+||becoquin.com^
 ||bedrockgaming.com^
 ||beerpassions.com^
 ||beflirty.com^
@@ -1592,6 +1629,7 @@
 ||belles-rondes.com^
 ||bellevuesingles.com^
 ||bellezzarussa.com^
+||benaughty.com^
 ||bend-me-over.com^
 ||bengalimatrimony.com^
 ||bentonvillematchmakers.com^
@@ -1626,6 +1664,7 @@
 ||besthandever.com^
 ||bestofmeetic.fr^
 ||bestofrencontre.fr^
+||bestprice.co.za^
 ||bestrussianwoman.com^
 ||bestsingle.com^
 ||bestsingle.it^
@@ -1641,6 +1680,7 @@
 ||bewareofloverboys.nl^
 ||beyondages.com^
 ||bez-kompleksov.com^
+||bezzabran.com^
 ||bezzobowiazan.com^
 ||bharatmatrimony.com^
 ||bhozapper.com^
@@ -1649,12 +1689,14 @@
 ||bibbwdating.com^
 ||biblepassions.com^
 ||bicupid.co^
+||bicupid.com^
 ||bicupid.uk^
 ||bidating.lovez.it^
 ||bigadda.com^
 ||bigboobdating.com.au^
 ||bigbootydating.com.au^
 ||bigbreastdating.com.au^
+||bigchurch.com^
 ||bigdates.ai^
 ||bigdates.webweaver.app^
 ||biggerbear.com^
@@ -2014,6 +2056,7 @@
 ||blacklabeldating.shagg.me^
 ||blacklabeldatinggroup.com.ph^
 ||blacklatinodating.com^
+||blacklesbianclub.com^
 ||blacklesbiandating.org^
 ||blacklesbiansingles.co.uk^
 ||blacklistdating.com^
@@ -2288,6 +2331,7 @@
 ||blue-memoly.net^
 ||bluebirdsdating.com^
 ||blued.com^
+||blueswingers.com^
 ||bmidate.com^
 ||bnatcity.byethost5.com^
 ||boardpassions.com^
@@ -2336,6 +2380,7 @@
 ||braziliandating.com.au^
 ||braziliansingles.com.au^
 ||brazink.com.br^
+||bride.ru^
 ||bridegirl.com^
 ||brides-from.ru^
 ||brides.com^
@@ -2397,6 +2442,7 @@
 ||c-date.es^
 ||c-dating.app^
 ||c-dating.at^
+||c-dating.fr^
 ||c-ship.jp^
 ||c2la-bombe.com^
 ||cache32vegas.com^
@@ -2417,6 +2463,7 @@
 ||cameroun-love.com^
 ||cameroun-rencontre.com^
 ||campagnes-compagnes.com^
+||campus.co.za^
 ||campusdating.app^
 ||cams2filles.com^
 ||camsympa.com^
@@ -2440,6 +2487,7 @@
 ||carbondating.art^
 ||caribbeancupid.com^
 ||caribbeankisses.com^
+||caribsingles.com^
 ||carolinaintroductions.com^
 ||carolinecrowther.com^
 ||carpassions.com^
@@ -2454,15 +2502,21 @@
 ||casual-dating.fr^
 ||casual-fling.com^
 ||casualclub.com^
+||casualdating-club.de^
 ||casualdating.at^
 ||casualdating.fr^
+||casualdating.net^
+||casualdating4u.com^
 ||casualdating69.at^
+||casualdating69.com^
 ||casualdatingclub.at^
 ||casualdatingdeluxe.at^
 ||casuale-dating24.de^
 ||casualflirt.com.au^
+||casualfriendfinder.co.uk^
 ||casualkiss.com^
 ||casualnaai.com^
+||casualrandki.pl^
 ||casualroot.com^
 ||casualsexdating.com.au^
 ||casualxdates.at^
@@ -2478,6 +2532,7 @@
 ||catholicmates.com^
 ||catholicpassions.com^
 ||catholicpeoplemeet.com^
+||cazavo.sk^
 ||ccelibat.com^
 ||cdating.app^
 ||cdating.at^
@@ -2494,6 +2549,7 @@
 ||celibat.com^
 ||celibataire-lille.com^
 ||celibataire-rencontre.net^
+||celibataires.info^
 ||celibatairesduweb.com^
 ||celibatedating.app^
 ||celibatepassions.com^
@@ -2594,7 +2650,9 @@
 ||chinasilk.net^
 ||chinesedating.app^
 ||chinesedating.co.nz^
+||chinesefriendfinder.com^
 ||chinesefriendsonline.com^
+||chinesekisses.com^
 ||chineselovelinks.com^
 ||chinesepeoplemeet.com^
 ||chinesepersonals.ca^
@@ -2652,6 +2710,7 @@
 ||cinqe.com^
 ||circlesdating.app^
 ||citasnet.com^
+||citassenioronline.es^
 ||citasweb.com^
 ||citasweb.net^
 ||citerencontre.com^
@@ -2670,6 +2729,7 @@
 ||clevelandmatchmaking.com^
 ||clevelandsingles.com^
 ||click-a-date.at^
+||clickandflirt.com^
 ||clicksingles.co.uk^
 ||clicktocouple.online^
 ||clickwed.com^
@@ -2705,6 +2765,7 @@
 ||clubreseau.com^
 ||clubrusse.net^
 ||clubs-de-rencontres.fr^
+||clubsadomasoquismo.com^
 ||clubsirius.com^
 ||cmatch.com^
 ||cnarx.com^
@@ -2755,10 +2816,13 @@
 ||compatiblesingles.app^
 ||completelyfreedating.com.au^
 ||computerpassions.com^
+||comunidadbondage.com^
 ||conceptlife.fr^
 ||concorddating.com^
 ||conectados.com^
+||conexionbisexual.com^
 ||conexiongay.es^
+||conexiontrios.com^
 ||confidenceonline.net^
 ||confidentialconnections.com^
 ||confidentielles.com^
@@ -2771,6 +2835,7 @@
 ||connecticutpassions.com^
 ||connecticutsexdating.com^
 ||connecticutsingles.com^
+||connectingsingles.com^
 ||conociendote.com^
 ||conscioussingles.app^
 ||consolidatingstudentloans.co.tv^
@@ -2778,6 +2843,7 @@
 ||contact.libre.free.fr^
 ||contacte.free.fr^
 ||contacten-dating.snuffelcorner.nl^
+||contactos-casuales.com^
 ||contactosbisex.com^
 ||contactsarabes.com^
 ||contactsingles.co.uk^
@@ -2842,6 +2908,7 @@
 ||croatiapassions.com^
 ||croquecoeur.fr^
 ||crossdresserdating.com.au^
+||crossdressinglover.com^
 ||crossroad.ru^
 ||crowndating.app^
 ||cruel.sadizma.net^
@@ -2858,6 +2925,7 @@
 ||ctdating.com^
 ||ctk.hu^
 ||cu-ty.com^
+||cuckold-lovers.com^
 ||cuddle-jp.com^
 ||cuddlecomfort.com^
 ||cuddlyconnect.com^
@@ -2936,6 +3004,7 @@
 ||d2cxe615jwk4sg.cloudfront.net^
 ||d8me.co.uk^
 ||d8u.com^
+||d8uk.com^
 ||dahlia.it^
 ||dallasdating.com^
 ||dallasftworthdating.com^
@@ -2952,6 +3021,37 @@
 ||datamateuk.com^
 ||datanta.com^
 ||datanta.fr^
+||date-in-aachen.de^
+||date-in-augsburg.de^
+||date-in-berlin.de^
+||date-in-bielefeld.de^
+||date-in-bochum.de^
+||date-in-bonn.de^
+||date-in-bremen.de^
+||date-in-chemnitz.de^
+||date-in-dortmund.de^
+||date-in-dresden.de^
+||date-in-duesseldorf.de^
+||date-in-duisburg.de^
+||date-in-essen.de^
+||date-in-frankfurt.de^
+||date-in-halle.de^
+||date-in-hamburg.de^
+||date-in-hannover.de^
+||date-in-karlsruhe.de^
+||date-in-kiel.de^
+||date-in-koeln.de^
+||date-in-leipzig.de^
+||date-in-mannheim.de^
+||date-in-muenchen.de^
+||date-in-muenster.de^
+||date-in-nuernberg.de^
+||date-in-potsdam.de^
+||date-in-rostock.de^
+||date-in-stuttgart.de^
+||date-in-wiesbaden.de^
+||date-in-wuppertal.de^
+||date-in-zuerich.ch^
 ||date-local-gays.com^
 ||date-me.org^
 ||date.ca^
@@ -2965,6 +3065,7 @@
 ||dateaddict.com^
 ||dateamillionaire.com^
 ||datearea.de^
+||dateasian.org^
 ||dateasians.net^
 ||dateaustralia.com^
 ||datebrowse.com^
@@ -2973,6 +3074,7 @@
 ||datedate.gr^
 ||dateforeal.com^
 ||datefromukraine.com^
+||datehotcougar.com^
 ||dateim.com^
 ||dateinasia.com^
 ||dateinspire.com^
@@ -2995,6 +3097,7 @@
 ||dateover60.com^
 ||datepartner.life^
 ||datepersms.nl^
+||dateplaza.de^
 ||datereadingsingles.co.uk^
 ||daterfinder.com^
 ||datermeister.com^
@@ -3010,9 +3113,11 @@
 ||datescan.app^
 ||datescope.app^
 ||dateseeker.net^
+||dateseniors.co.za^
 ||dateseniorukrainian.com^
 ||datesense.app^
 ||datesforseniors.com^
+||datesforyou.org^
 ||datesfromlastnight.app^
 ||datesgern.com^
 ||datesim.app^
@@ -3043,9 +3148,11 @@
 ||datetheuk.com^
 ||datetodate.co.uk^
 ||datetomarry.net^
+||datetonight.in^
 ||dateukrainiangirl.com^
 ||datewesternislessingles.co.uk^
 ||datewhoyouwant.com^
+||datewithgays.com^
 ||datewiz.me^
 ||dateworld.co^
 ||dateyou.com^
@@ -3093,6 +3200,7 @@
 ||dating-services-singles.com^
 ||dating-sextips.com^
 ||dating-site-vergleich.at^
+||dating-site.co.za^
 ||dating-sites-singapore.com^
 ||dating-sites-singles.com^
 ||dating-sites.whoo.net^
@@ -3117,6 +3225,7 @@
 ||dating.findfitlove.com.au^
 ||dating.hioff.ru^
 ||dating.hundiesltd.com^
+||dating.lekgay.no^
 ||dating.lls.imaginary.co.za^
 ||dating.lovetoknow.com^
 ||dating.lt^
@@ -3145,6 +3254,7 @@
 ||dating.webfinder.ru^
 ||dating.yeahh.com^
 ||dating24.ie^
+||dating4bisexuals.com^
 ||dating4disabledgays.com^
 ||dating4single-online.com^
 ||dating4u.ai^
@@ -3191,6 +3301,7 @@
 ||datingbest2011.asia^
 ||datingbest2012.asia^
 ||datingbest2012.info^
+||datingbisexualsingles.com^
 ||datingblog.hostarea.org^
 ||datingboard.app^
 ||datingbook.at^
@@ -3272,7 +3383,9 @@
 ||datingfuchs.at^
 ||datingga.com^
 ||datinggames.app^
+||datinggayblacksingles.com^
 ||datinggeorgia.com^
+||datinggold.com^
 ||datinggrandrapids.com^
 ||datingguide.com.au^
 ||datinghalaman.art^
@@ -3294,8 +3407,10 @@
 ||datingindiana.com^
 ||datingindianapolis.com^
 ||datingindy.com^
+||datinginqatar.com^
 ||datinginsider.com.au^
 ||datinginsider.swingersaustralia.com.au^
+||datinginterracialsingles.com^
 ||datinginyour50s.com.au^
 ||datingiowa.com^
 ||datingire.com^
@@ -3311,7 +3426,9 @@
 ||datingla.com^
 ||datinglabel.com^
 ||datinglansing.com^
+||datinglargewomen.com^
 ||datingli.com^
+||datingline.co.za^
 ||datinglisa.app^
 ||datinglive247.co.uk^
 ||datinglondon.com^
@@ -3404,6 +3521,8 @@
 ||datingplace.com^
 ||datingplace.info^
 ||datingplaneet.nl^
+||datingplanet.org^
+||datingplanetnetwork.com^
 ||datingplatform.co.uk^
 ||datingplaza.nl^
 ||datingpofekmi.ru^
@@ -3501,11 +3620,13 @@
 ||datingsingless.com^
 ||datingsite.ai^
 ||datingsite.be^
+||datingsite.de^
 ||datingsite.nl^
 ||datingsitefree4all.com^
 ||datingsitereviews.com.au^
 ||datingsites-reviewed.com^
 ||datingsites.at^
+||datingsites.nl^
 ||datingsites2.com^
 ||datingsitesandservices.com^
 ||datingsitesdirectory.com^
@@ -3579,12 +3700,14 @@
 ||datingvermont.com^
 ||datingvip.com^
 ||datingvirginia.com^
+||datingvoormensenmeteenbeperking.nl^
 ||datingvt.com^
 ||datingwa.com^
 ||datingwashington.com^
 ||datingwashingtondc.com^
 ||datingwatch.org^
 ||datingwebsite-reviews.co.uk^
+||datingwebsite.co.za^
 ||datingwebsites.at^
 ||datingwestvirginia.com^
 ||datingwi.com^
@@ -3850,11 +3973,15 @@
 ||dirtydollar.com^
 ||dirtyflirt9.com^
 ||dirtylove.buzznet.com^
+||dirtysexdates.com^
 ||dirtyzone.com^
 ||disabilitydate.org^
+||disabilitydating.net^
+||disabilitymatch.co.uk^
 ||disableddating.com.au^
 ||disableddating.net^
 ||disableddatingclub.org^
+||disabledlove.us^
 ||disabledpassions.com^
 ||disabledsingles.com.au^
 ||disabledsinglesusa.com^
@@ -3883,6 +4010,7 @@
 ||dmpet.imgix.net^
 ||dmvmatchmakers.com^
 ||dnafindvp.com^
+||dnaromance.com^
 ||do-it-candidates.at^
 ||do312.com^
 ||dobretesty.cz^
@@ -3895,6 +4023,7 @@
 ||doggytherapy.com^
 ||doitcandidates.at^
 ||dolsa.co.za^
+||domerencontre.com^
 ||dominadates.at^
 ||dominanz.net^
 ||dominicancupid.com^
@@ -3955,8 +4084,10 @@
 ||duskdating.app^
 ||dutchgirly.com^
 ||dwarfdating.com.au^
+||dxbexpats.com^
 ||dynamitemovies.com^
 ||dzf1174d4gjln.cloudfront.net^
+||e-amour.ch^
 ||e-dating.at^
 ||e-discus.com^
 ||e-kantei.net^
@@ -4054,6 +4185,7 @@
 ||edatest.kiosk.club^
 ||edatesting.zeabur.app^
 ||edating.ch^
+||edating.dk^
 ||edating.org^
 ||edatingcentral.com^
 ||edatings.com^
@@ -4091,6 +4223,7 @@
 ||elitedating.app^
 ||elitedatingcompany.net^
 ||elitedatingwebsites.org^
+||elitekink.com^
 ||elitemate.com^
 ||elitepartner.at^
 ||elitepartner.de^
@@ -4139,11 +4272,15 @@
 ||encontrossexoportugal.com^
 ||encount.com^
 ||encounterdating.com.au^
+||encounters.uk^
 ||encuentro-gay.com^
+||encuentroadulto.es^
+||encuentroadulto.net^
 ||encuentros-gay.com^
 ||encuentrosenred.blogspot.com^
 ||encuentrosenred.com^
 ||encuentrosenred.com.ar^
+||encuentrosparagays.com^
 ||endlessopps.com^
 ||enfantillages.com^
 ||engagedencounter.com^
@@ -4154,6 +4291,7 @@
 ||enotalone.com^
 ||entre-infideles.com^
 ||entre-seniors.fr^
+||entrefemmes.ca^
 ||entremetteurs.com^
 ||eonsystems.com^
 ||epicgalls.com^
@@ -4178,6 +4316,7 @@
 ||esohbet.net^
 ||espace-live.com^
 ||estellereyna.com^
+||eterocuriosi.it^
 ||ethiopianpersonals.com^
 ||ethiosingles.app^
 ||etre-deux.com^
@@ -4197,6 +4336,7 @@
 ||europe.mingle.com^
 ||european-woman.net^
 ||europeandating.net^
+||europeandatingagency.com^
 ||europeandatingplanet.com^
 ||europeanonlinedating.net^
 ||europeansingles.com.au^
@@ -4236,6 +4376,7 @@
 ||faceflow.com^
 ||facelink.ru^
 ||faceofsiberia.com^
+||facetoface.com^
 ||fafa-photos.phpbb9.com^
 ||fairdating.nl^
 ||fairfieldsingles.com^
@@ -4275,6 +4416,7 @@
 ||femme-africaine.net^
 ||femme-russe.org^
 ||femmecougaryvelines.com^
+||femmemure.ch^
 ||femmes-mariees.com^
 ||femmes-russes-mariage.com^
 ||femmes-russes.be^
@@ -4282,6 +4424,7 @@
 ||festiflirt.app^
 ||festivuspassions.com^
 ||fetish-dating.app^
+||fetishcontacts.co.uk^
 ||fetishdating.com.au^
 ||fiancee.ru^
 ||fickdates.at^
@@ -4295,17 +4438,23 @@
 ||filipinaeyes.com^
 ||filipinaheart.com^
 ||filipinasingles.com.au^
+||filipinawife.com^
 ||filipino2date.com^
 ||filipinocupid.com^
 ||filipinodating.com.au^
+||filipinofriendfinder.com^
 ||filipinokisses.com^
 ||filmy.abi.pl^
 ||filthyoverfiftydating.com.au^
 ||find.vu^
+||findanewlover.com^
+||findashemalelover.com^
 ||findathreesome.com^
 ||findbride.com^
+||finder.co.za^
 ||findhappy.com^
 ||findloveasia.com^
+||findme.co.za^
 ||findmeseniorsingles.com^
 ||findmy.gay^
 ||findmymatches.com^
@@ -4345,6 +4494,7 @@
 ||fitness-singles.com^
 ||fitnessdates.com^
 ||fitnessdating.app^
+||fjortis.se^
 ||flash-rencontres.com^
 ||flashplayer-updating.com^
 ||flashplayerupdating.com^
@@ -4353,6 +4503,7 @@
 ||flechanos.com^
 ||fleetingdates.life^
 ||fleurafricaine.com^
+||fling.com^
 ||flingcentral.com^
 ||flingdatingapp.com^
 ||flipflirt.app^
@@ -4394,6 +4545,7 @@
 ||flirtbot.app^
 ||flirtbox.com^
 ||flirtbox.us^
+||flirtcafe.de^
 ||flirtcam.ai^
 ||flirtcard.at^
 ||flirtchat.app^
@@ -4432,6 +4584,7 @@
 ||flirtic.ee^
 ||flirtico.app^
 ||flirting-lab.app^
+||flirtingbuddies.com^
 ||flirtini.ai^
 ||flirtini.app^
 ||flirtini.com^
@@ -4456,6 +4609,7 @@
 ||flirtmeeting.com^
 ||flirtmind.app^
 ||flirtmit.at^
+||flirtmoi.com^
 ||flirtmoms.com^
 ||flirtnacht.at^
 ||flirtnet.app^
@@ -4740,6 +4894,7 @@
 ||gayatheistdating.com^
 ||gaybarebackdates.com^
 ||gaybdsmdate.co.uk^
+||gaybdsmdate.com^
 ||gaybdsmdating.com.au^
 ||gaybdsmsingles.com^
 ||gaybearsdating.com^
@@ -4768,6 +4923,7 @@
 ||gaycowboydating.com^
 ||gaycowboysingles.com^
 ||gaycubdating.com^
+||gaycupid.com^
 ||gaydaddating.com^
 ||gaydar.net^
 ||gaydates.com^
@@ -4889,6 +5045,7 @@
 ||gaymarinedating.com^
 ||gaymarrieddating.com^
 ||gaymaturedating.com^
+||gaymeetmarket.com^
 ||gaymen.ircq.it^
 ||gaymendating.at^
 ||gaymendating.com^
@@ -4984,6 +5141,7 @@
 ||gayspanishdating.com^
 ||gayspeeddates.com^
 ||gaysugardaddydating.com^
+||gaysugardaddydating.net^
 ||gaysugardating.com^
 ||gayteendatingapps.com^
 ||gayteens.co.uk^
@@ -4999,6 +5157,7 @@
 ||gaytruckerdates.com^
 ||gaytruckerdating.com^
 ||gayukdating.com^
+||gayukonlinepersonals.com^
 ||gayuniformsingles.com^
 ||gayvegetariandating.com^
 ||gayworldvideodates.com^
@@ -5017,6 +5176,7 @@
 ||genteahora.com^
 ||gentedemsn.com^
 ||genuinesingles.com^
+||genxpeoplemeet.com^
 ||geoflirt.com^
 ||georgiadating.com^
 ||georgiamatchmaker.com^
@@ -5104,6 +5264,7 @@
 ||golfingpassions.com^
 ||golfsingle.com^
 ||golove.de^
+||gomatch.com^
 ||gonnalove.com^
 ||gonuldensevenler.com^
 ||good-fucking.com^
@@ -5125,6 +5286,7 @@
 ||gothscene.com^
 ||gotinder.com^
 ||gottabreakup.com^
+||gotthem.com^
 ||goudou.fr^
 ||goulburndating.com.au^
 ||grabateen.com^
@@ -5138,6 +5300,7 @@
 ||grannydating.au^
 ||grannydating.net^
 ||grannydating.org^
+||grannydatingclub.co.uk^
 ||grannydatingsite.co.uk^
 ||grannydatingsite.com^
 ||grannydatingwebsite.com^
@@ -5145,6 +5308,7 @@
 ||grannyfunonline.com^
 ||grannymatch.org^
 ||grannysexdating.com.au^
+||grannysexfriend.com^
 ||grannysingles.com^
 ||grannyswipe.com^
 ||grapps.me^
@@ -5195,7 +5359,9 @@
 ||growlrapp.com^
 ||grownupdatingagency.com^
 ||gruppensex-land.de^
+||gstatvb.com^
 ||gtrouve.com^
+||guapasmaduras.com^
 ||guayu.com^
 ||guide-site-rencontre.fr^
 ||guide-sites-rencontres.ch^
@@ -5221,6 +5387,7 @@
 ||halloweenpassions.com^
 ||hana-mail.jp^
 ||handicap-singles.com^
+||handilove.fr^
 ||handysprueche.de^
 ||hangoutnow.com^
 ||happiness.mk.ua^
@@ -5275,6 +5442,7 @@
 ||henhoonline.net^
 ||hepcsinglesonline.com^
 ||herbal-place.com^
+||herkert.name^
 ||herothemovie.com^
 ||herpesdating.au^
 ||herpespassions.com^
@@ -5340,6 +5508,7 @@
 ||hot-sensation.info^
 ||hotasiadate.com^
 ||hotbbwdating.com^
+||hotbuddies.co.uk^
 ||hotdate.joanaheiss.de^
 ||hotdating-girl.life^
 ||hotdatingcentral.com^
@@ -5367,6 +5536,7 @@
 ||httpwww-lorraine-vip.monforum.com^
 ||hubpeople.ai^
 ||hubpeople.com^
+||hubz.pl^
 ||hugavenue.com^
 ||hukdating.com^
 ||humsafar.co.uk^
@@ -5431,6 +5601,8 @@
 ||ilove.terra.com.br^
 ||iloveandyou.com^
 ||iloveim.com^
+||ilovemessenger.fr^
+||iltuoamore.it^
 ||iluzi0n.free.fr^
 ||im.qq.com^
 ||ima-dating.com^
@@ -5444,10 +5616,20 @@
 ||inboxify.com^
 ||incisozluk.co^
 ||incontramilf.com^
+||incontri-adulti.it^
 ||incontri-donne.vivastreet.alice.it^
 ||incontri-uomini.vivastreet.alice.it^
+||incontri.biz^
+||incontriadult.communityincontri.com^
+||incontricasual.com^
+||incontricasual.net^
+||incontricatanzaro.net^
+||incontrilatex.it^
 ||incontriromantici.it^
+||incontrisugardaddy.it^
 ||incontritalia.sexy.easyincontro.com^
+||incontriveloci.com^
+||incontrixadulti.it^
 ||indating.com^
 ||independencesingles.com^
 ||india-passions.com^
@@ -5584,6 +5766,7 @@
 ||itsrencontres.com^
 ||ivorytowers.net^
 ||iwannadate.nl^
+||iwantu.com^
 ||ixg.llc^
 ||j4l.com^
 ||jackd.com^
@@ -5654,13 +5837,16 @@
 ||jollyromance.com^
 ||jongerendating.nl^
 ||joondating.app^
+||jpeoplemeet.biz^
 ||jplove.com^
 ||jrencontre.com^
 ||jsbs2012.jp^
 ||jsingles.com^
 ||jsoulmate.com^
 ||jswsn.org^
+||jubilant.net^
 ||judischesingles.at^
+||juicy.business^
 ||jujme.com^
 ||julienlove.eu^
 ||juliyaweb.com^
@@ -5932,6 +6118,7 @@
 ||latestdating2012.asia^
 ||latestdating2012.info^
 ||latestdating2013.info^
+||latesummerlove.com^
 ||latidate.com^
 ||latidates.net^
 ||latin-wife.com^
@@ -5999,16 +6186,24 @@
 ||leetempire.com^
 ||leftwingdating.co.uk^
 ||legalpassions.com^
+||lekdate.no^
 ||lemonswan.de^
 ||leparfaitgentleman.fr^
 ||lesbian.com^
+||lesbian.singles^
+||lesbianasenmexico.com^
 ||lesbianchatonline.com^
 ||lesbiandating.net^
 ||lesbiandatingservices.co.cc^
 ||lesbiandatingsites.info^
+||lesbianmatchmaker.com.au^
 ||lesbianonlinedating.com.au^
+||lesbians-in-america.com^
+||lesbians-in-canada.com^
+||lesbidating.com^
 ||lesbiedates.com^
 ||lesbiemates.com^
+||lesbiskdating.dk^
 ||lesclesdelarencontre.com^
 ||lesmeilleursrencontres.com^
 ||lesoffresrencontres.com^
@@ -6020,11 +6215,13 @@
 ||letsmakelove.com^
 ||letsmeet.co.za^
 ||letsmeet.com^
+||letsmeetup.com^
 ||lex.lgbt^
 ||lexa.nl^
 ||lexadating.com^
 ||lexingtonmatchmaker.com^
 ||lezfindr.com^
+||lgbt-dating.com^
 ||lgbtdating.org^
 ||lgbth.com^
 ||liados.net^
@@ -6050,6 +6247,7 @@
 ||linked-upsingles.com.au^
 ||linkstore.co.jp^
 ||linkylove.net^
+||lipsticklesbians.net^
 ||list-faces.com^
 ||list-manage.com^
 ||list-vk-24.com^
@@ -6075,6 +6273,8 @@
 ||localgrannies.net^
 ||localhottiesnow.com^
 ||localmatch.com^
+||localmaturedating.net^
+||localmeets.ie^
 ||localolderdating.com^
 ||localphotoratings.com^
 ||localromance.com^
@@ -6099,6 +6299,7 @@
 ||londonercontacts.co.uk^
 ||londonintroductions.com^
 ||lonelyparentsdate.com^
+||lonelywivesdatelink.com^
 ||longbeachmatchmaker.com^
 ||longhairyo.com^
 ||longislandquickdate.com^
@@ -6212,7 +6413,9 @@
 ||lovealizer.de^
 ||loveandfriends.co.uk^
 ||loveandfriends.com^
+||loveandseek.biz^
 ||loveandseek.com^
+||loveandseek.tv^
 ||lovearts.com^
 ||loveawake.com^
 ||lovebbw.com^
@@ -6233,6 +6436,7 @@
 ||lovedatingsites.com^
 ||loveday.ch^
 ||lovedays.ru^
+||lovedesir.fr^
 ||lovedetectives.com^
 ||lovedetoi.com^
 ||lovedetoi.fr^
@@ -6257,6 +6461,7 @@
 ||loveissexy.com^
 ||lovelab.com.ua^
 ||lovelee.com^
+||lovelife.ca^
 ||loveline.fr^
 ||lovelineireland.com^
 ||lovelive.fr^
@@ -6279,6 +6484,7 @@
 ||loveo.fr^
 ||loveorama.com^
 ||loveorsexe.com^
+||loveplace.ch^
 ||loveplanet.ru^
 ||loveplanet.ua^
 ||loveplanets.kiev.ua^
@@ -6332,6 +6538,7 @@
 ||lubbockmatchmaker.com^
 ||lubovdating.com^
 ||lubovy.ru^
+||lulusloveshack.com^
 ||lumasearch.com^
 ||lunchdates.com^
 ||lusomeet.com^
@@ -6426,6 +6633,7 @@
 ||marriedpassions.com^
 ||marrish.com^
 ||marry-an-ugly-millionaire-online-dating-agency.com^
+||marryy.me^
 ||marsetvenus.com^
 ||marydating.com^
 ||marylanddating.com^
@@ -6435,6 +6643,7 @@
 ||marylandsexdating.com^
 ||mashable.com^
 ||masked.love^
+||masochiste.org^
 ||massachusettsdating.com^
 ||massachusettsmatchmaker.com^
 ||massachusettsmatchmaking.com^
@@ -6445,6 +6654,7 @@
 ||match-ru.com^
 ||match-seeker.com^
 ||match-usa.com^
+||match-wizard.com^
 ||match.com^
 ||match.com.ar^
 ||match.com.au^
@@ -6460,6 +6670,7 @@
 ||match4me.nl^
 ||matchadating.app^
 ||matchakiss.co.uk^
+||matchasiansingles.com^
 ||matchdating.app^
 ||matcheddating.tk^
 ||matchedwithlove.com^
@@ -6491,6 +6702,7 @@
 ||matrimonialnetwork.com^
 ||matrimonials.com^
 ||matrimus.kharkiv.com^
+||matrymonia.pl^
 ||matthewhussey.com^
 ||mature-adult-dating-sites.misternifty.com^
 ||mature-adult-dating.digitalcompetence.org^
@@ -6600,6 +6812,7 @@
 ||mature-women-dating.org^
 ||mature-women-sex-dating.kenkounavi.net^
 ||mature.dating^
+||mature.exchange^
 ||mature.se^
 ||mature88dates.info^
 ||matureaberdeendating.co.uk^
@@ -6614,6 +6827,7 @@
 ||maturebedfordshiredating.co.uk^
 ||maturebelfastdating.co.uk^
 ||matureberkshiredating.co.uk^
+||maturebi.com^
 ||maturebirminghamdating.co.uk^
 ||maturebristoldating.co.uk^
 ||maturebuckinghamshiredating.co.uk^
@@ -7066,6 +7280,7 @@
 ||medicalpassions.com^
 ||meebo.com^
 ||meet-card.com^
+||meet-dating.com^
 ||meet-gay-men.com^
 ||meet-island.com^
 ||meet-seniors.com^
@@ -7136,6 +7351,7 @@
 ||meetolderwomen.net^
 ||meetouting.com^
 ||meetromanian.com^
+||meetrussianbrides.com^
 ||meetrussiangirl.com^
 ||meets.com.ar^
 ||meetseniorme.com^
@@ -7244,6 +7460,7 @@
 ||miamisinglesonline.com^
 ||miamispeeddating.com^
 ||miamiwomengirls.com^
+||miayo.com^
 ||micane.jp^
 ||michiamo.com^
 ||michigandating.com^
@@ -7267,6 +7484,7 @@
 ||milf-match.be^
 ||milf-match.nl^
 ||milf.singles^
+||milfdatelink.com^
 ||milfdates.org^
 ||milfdates24.com^
 ||milfdating-site.net^
@@ -7326,6 +7544,7 @@
 ||millionaire-matchdating.com^
 ||millionaire-singles.org^
 ||millionaire.dating^
+||millionairebuddies.com^
 ||millionaireclubdating.com^
 ||millionairedates.com^
 ||millionairedating.app^
@@ -7354,6 +7573,7 @@
 ||millionairematch.com^
 ||millionairematchdatingapp.com^
 ||millionairematchdatingsites.com^
+||millionairematchmaker.ca^
 ||millionairepassions.com^
 ||millionairesclub123.com^
 ||millionairesdating.org^
@@ -7499,6 +7719,8 @@
 ||myblacky.com^
 ||mycheekydate.com^
 ||mydarling.ru^
+||mydate.dk^
+||mydates.com^
 ||mydating2013.asia^
 ||mydatingphoto.com^
 ||mydatingtoday.com^
@@ -7513,6 +7735,7 @@
 ||mylol.com^
 ||mylove.kiev.ua^
 ||mylove.ru^
+||mynaughtyfriend.com^
 ||mypartnerforever.com^
 ||mysexyflirt.com^
 ||mysinglefriend.com^
@@ -7563,11 +7786,13 @@
 ||nebraskaintroductions.com^
 ||nebraskapassions.com^
 ||nebraskasexdating.com^
+||neckdate.de^
 ||nedating.com^
 ||nederland-date-dating.nl^
 ||nederlanddating.com^
 ||nederlanddating.nl^
 ||neighborhoodcutie.com^
+||neiubim.ro^
 ||nematchmaking.com^
 ||neo-rencontre.com^
 ||neodating.biz^
@@ -7652,6 +7877,7 @@
 ||nightsites.com^
 ||nineinchnails-lovers.hyves.nl^
 ||ninjapassions.com^
+||nipagonicobro.es^
 ||nirvam.it^
 ||njdating.com^
 ||njpersonals.com^
@@ -7682,6 +7908,7 @@
 ||norwegiandating.com.au^
 ||norwegiansingles.app^
 ||nospensees.fr^
+||nostringsattached.com^
 ||notadatingapp.app^
 ||nottinghillintroductions.com^
 ||nourdating.app^
@@ -7705,6 +7932,7 @@
 ||nudedating.com.au^
 ||nudgedating.app^
 ||nudistdating.com.au^
+||nudistonlinedating.com^
 ||nuopsexdate.nl^
 ||nvdating.com^
 ||nwdatenight.com^
@@ -7816,6 +8044,7 @@
 ||onlinedatingtest.at^
 ||onlinedatinguk.co.uk^
 ||onlinedatingukraine.app^
+||onlinedejt.se^
 ||onlineforlove.com^
 ||onlinelovedating.com^
 ||onlinesexbutik.se^
@@ -7878,11 +8107,14 @@
 ||outdoordating.app^
 ||outdoorpeoplemeet.com^
 ||over40datingsite.co.uk^
+||over40sdating.in^
 ||over50datingnorge.com^
 ||over50datingservices.com^
+||over50sdating.net^
 ||over50singlesmeet.com^
 ||over60.singles^
 ||over60dating.com.au^
+||over60dating.online^
 ||over70dating.com^
 ||overseafriend.com^
 ||overseas-match.com^
@@ -7931,6 +8163,7 @@
 ||parshipmeet.com^
 ||partner-services.com^
 ||partner.de^
+||partner24online.de^
 ||partneri.sk^
 ||partnerkereso.info^
 ||partnermedniveau.dk^
@@ -7951,6 +8184,8 @@
 ||passionsearch.com^
 ||passionsnetwork.com^
 ||pasya.ru^
+||patakadates.in^
+||patchwork-paar.de^
 ||patolo.jp^
 ||pausecafe62.com^
 ||pazintys.lt^
@@ -7961,6 +8196,8 @@
 ||peekabooheart.com^
 ||pegging.group^
 ||pegging.love^
+||peggingdates.com^
+||pegginglovers.com^
 ||penndating.com^
 ||pennsylvaniadating.com^
 ||pennsylvaniamatchmaker.com^
@@ -8081,14 +8318,19 @@
 ||policedating.com.au^
 ||polishdating.at^
 ||polishdating.fr^
+||polishdating.org^
 ||polishhearts.com^
 ||polishsingles.com.au^
 ||polovinka.org^
 ||polska-erotyka.org^
+||polyamorosos.com^
 ||polyamorouspassions.com^
+||polyamorsenior.com^
+||polyamorsenior.es^
 ||polydates.at^
 ||polygamistdating.com.au^
 ||pontevedrasingles.com^
+||pop6.com^
 ||popmates.co.uk^
 ||popteen.net^
 ||poptheballoondating.app^
@@ -8099,6 +8341,7 @@
 ||portlandintroductions.com^
 ||portugal-tchat.com^
 ||portugalpassions.com^
+||portugays.pt^
 ||posdating.club^
 ||positivedating.app^
 ||positivesingles.app^
@@ -8163,6 +8406,7 @@
 ||purematrimony.com^
 ||pussydating.ru^
 ||pyometrack.com^
+||q2w.net^
 ||quackquack.in^
 ||quality-singles.com^
 ||quantomipiaci.it^
@@ -8190,6 +8434,7 @@
 ||rande.sk^
 ||randevum.com^
 ||randivonal.hu^
+||randkisympatia.pl^
 ||randocelibat.forumsactifs.com^
 ||rank-beauty.com^
 ||rapid-rencontres.com^
@@ -8323,6 +8568,7 @@
 ||redneckpassions.com^
 ||regiosexcontact.nl^
 ||regiosexdating.com^
+||register.co.za^
 ||reifefickdates.at^
 ||reifeflirts.at^
 ||reifefrauen.com^
@@ -8337,6 +8583,7 @@
 ||relatieplanet.nl^
 ||relatiinoi.com^
 ||relationshipminded.com^
+||relaxiones.es^
 ||relrules.com^
 ||rencontre-2.com^
 ||rencontre-ado.com^
@@ -8463,24 +8710,36 @@
 ||rencontrea.com^
 ||rencontreabj.orgfree.com^
 ||rencontreafricaine.com^
+||rencontreamoureuse.ch^
+||rencontreasiatique.org^
 ||rencontrebisexuel.com^
 ||rencontrebisexuelle.fr.st^
+||rencontrecavalier.fr^
 ||rencontrechaude.be^
+||rencontrechretien.org^
 ||rencontrecoquincoquine.com^
+||rencontrecoquine.ch^
+||rencontrecougar.ca^
 ||rencontrecougarsexy.com^
 ||rencontrediscret.com^
 ||rencontreduquebec.com^
 ||rencontrefemme-rencontrehomme.com^
+||rencontregatineau.ca^
+||rencontregay.ch^
 ||rencontrehot.site.voila.fr^
 ||rencontreinedite.ch^
 ||rencontrejuive.com^
 ||rencontrelesbiennes.fr^
 ||rencontrelibertinage.com^
 ||rencontrelibertine.be^
+||rencontrelibertine.ch^
 ||rencontrelover.com^
+||rencontremalentendant.fr^
+||rencontremariage.ch^
 ||rencontremsn.com^
 ||rencontreo.fr^
 ||rencontreparis.net^
+||rencontrepiercing.fr^
 ||rencontrer-rencontre.com^
 ||rencontrer-sur-internet.com^
 ||rencontrer.com^
@@ -8507,6 +8766,7 @@
 ||rencontres-champagne.net^
 ||rencontres-clermont-ferrand.net^
 ||rencontres-com.fr^
+||rencontres-coquines.ca^
 ||rencontres-coquines.info^
 ||rencontres-corse.fr^
 ||rencontres-dating.com^
@@ -8576,6 +8836,7 @@
 ||rencontres-poitou-charentes.net^
 ||rencontres-reunion.com^
 ||rencontres-rhone-alpes.fr^
+||rencontres-rondes.fr^
 ||rencontres-sexe-gratuites.ifrance.com^
 ||rencontres-site.com^
 ||rencontres-suisse.ch^
@@ -8663,6 +8924,8 @@
 ||rencontrescorse.com^
 ||rencontresdansmaville.com^
 ||rencontresduweb.com^
+||rencontresecrete.ca^
+||rencontreseniors.org^
 ||rencontresentrehommes.com^
 ||rencontreservice.org^
 ||rencontresfillesexy.com^
@@ -8670,6 +8933,7 @@
 ||rencontresgratuites.net^
 ||rencontresgratuites.org^
 ||rencontresgueret.com^
+||rencontresherbrooke.ca^
 ||rencontresitrans.com^
 ||rencontreslanguedoc.net^
 ||rencontreslaroche.com^
@@ -8706,6 +8970,7 @@
 ||rencontresrennes.net^
 ||rencontresrhone.net^
 ||rencontresrodez.com^
+||rencontresrondes.ca^
 ||rencontresrouen.net^
 ||rencontressaintbrieuc.com^
 ||rencontressaintetienne.com^
@@ -8737,6 +9002,7 @@
 ||reseaucontact.com^
 ||retrouve-moi.fr^
 ||reveuse.fr^
+||review.co.za^
 ||revolutiondating.com^
 ||rezog.com^
 ||rhodeislanddating.com^
@@ -8770,9 +9036,12 @@
 ||rollosfaciles.com^
 ||romance-cafe.com^
 ||romance-net.com^
+||romancedubai.com^
 ||romanceideal.com.br^
+||romancelinker.com^
 ||romancepassions.com^
 ||romancingcupid.com^
+||romancium.com^
 ||romaniansingles.com.au^
 ||romantic-dating.tk^
 ||romanticrelay.com^
@@ -8781,6 +9050,7 @@
 ||romeo.com^
 ||romeojuliet.com^
 ||rondevo.com^
+||ropebondagemeetups.com^
 ||rosebrides.com^
 ||rosevillesingles.com^
 ||roswellsingles.com^
@@ -8797,6 +9067,7 @@
 ||rumbacaracas.com^
 ||rummble.com^
 ||runningpassions.com^
+||ruralsingles.com^
 ||rus-romance.de^
 ||rusdate.de^
 ||rusdate.net^
@@ -8837,6 +9108,7 @@
 ||russianwomendiscussion.com^
 ||russianwomensexy.com^
 ||russievisit.com^
+||russischefrauen.ch^
 ||rustop.link^
 ||rvsp.com.au^
 ||ryerose.net^
@@ -8880,6 +9152,7 @@
 ||saucydates.com^
 ||savannahmatchmaker.com^
 ||say.fr^
+||scambiocoppie.org^
 ||scandimatch.com^
 ||scandinaviansingles.com.au^
 ||scapadasamorosas.com^
@@ -8911,6 +9184,7 @@
 ||searchloveonline.com^
 ||searchmate.co.uk^
 ||searchthepersonals.com^
+||seasonsdating.co.uk^
 ||seatfortwo.com^
 ||seattlegaymatchmaker.com^
 ||seattleintroductions.com^
@@ -8939,6 +9213,7 @@
 ||seekmysugardaddy.com^
 ||seekmytoyboy.com^
 ||seksafspraakjes.nl^
+||sekscamera.nl^
 ||sekssohbet.org^
 ||selectivesearch-inc.com^
 ||selectperfect.com^
@@ -8947,39 +9222,68 @@
 ||self-contact.com^
 ||senegal-mariage.com^
 ||senegal-rencontre.com^
+||senior-love-match.co.uk^
 ||senior-match.com^
 ||senior.date^
 ||senior.dk^
+||seniorbdsmusa.us^
+||seniorbi.com^
 ||seniorblackpeoplemeet.com^
+||seniorbondage.com^
 ||seniorcasualdating.com^
 ||seniorchatt.se^
+||seniorcrossdresser.com^
+||seniorcrossdressusa.us^
+||seniordate.dk^
 ||seniordatelink.com^
+||seniordating.es^
+||seniordatingagency-scotland.co.uk^
+||seniordatingagency-spain.com^
+||seniordatingagency.net^
+||seniordatingagency.nl^
 ||seniordatinglove.com^
+||seniordatingonline.co.uk^
 ||seniordatingplanet.com^
+||seniordatingsite.co.za^
 ||seniordesire.com^
+||seniordogging.com^
+||seniordomination.com^
 ||senioren-dating-websites.at^
 ||seniorendates24.at^
+||seniorfetish.com^
 ||seniorfriendfinder.com^
 ||seniorfriendship.co.uk^
 ||seniorfriendsonline.com^
+||seniorlesbians.com^
 ||seniorlove.org^
 ||seniormatch.com^
+||seniormatch.us^
 ||seniormatchcom.com^
 ||seniormatchdatingsite.com^
 ||seniormates.com^
 ||seniorpassions.com^
+||seniorpeoplemeet.biz^
+||seniorpolyamory.com^
 ||seniorrmatch.com^
 ||seniors-rencontre.com^
+||seniorsbi.com^
 ||seniorsdatinghub.com^
 ||seniorsexdating.com^
 ||seniorsexdating.com.au^
 ||seniorsfindlove.com^
+||seniorsingles.biz^
 ||seniorsinglesdating.com.au^
+||seniorsinglesnear.me^
 ||seniorsinglesplace.com^
 ||seniorsmeet.com^
 ||seniorsrencontres.com^
 ||seniorstodate.com^
+||seniorsubdomclub.com^
+||seniorsubdomclub.us^
+||seniorswingersclubusa.us^
+||seniorthreesomes.com^
 ||seniortruelove.com^
+||seniorwhipping.com^
 ||senseflirt.com^
 ||sentimente.com^
 ||sentimente.ro^
@@ -9064,6 +9368,7 @@
 ||seznamka.cz^
 ||seznamka.hyperinzerce.cz^
 ||shaadi.com^
+||shaadicrowd.com^
 ||shag-me.co.uk^
 ||shagafatty.com^
 ||shakelove.com^
@@ -9092,6 +9397,8 @@
 ||sikardating.app^
 ||silver--singles.com^
 ||silver-singles.com.au^
+||silverdating.com^
+||silvergaysingles.com^
 ||silverlove.com^
 ||silverseniordating.com.au^
 ||silverseniormeet.com^
@@ -9103,6 +9410,7 @@
 ||singaporematchmaker.com^
 ||singaporepassions.com^
 ||singelringen.com^
+||singels-flirten.de^
 ||singels.ch^
 ||single-baltic-lady.com^
 ||single-emsland.de^
@@ -9113,9 +9421,13 @@
 ||single.at^
 ||single.de^
 ||single.dk^
+||single2.com^
 ||single2single.nl^
 ||single40sdating.co.za^
+||single50plus.com^
 ||singleangels.com^
+||singlebikerscanada.ca^
+||singlebodybuilders.com^
 ||singleboersen.de^
 ||singlebox.at^
 ||singlebrides.com^
@@ -9125,6 +9437,7 @@
 ||singlegays.ca^
 ||singlejew.com^
 ||singleladies.com^
+||singlematuredates.com^
 ||singleme.com^
 ||singlemomsanddads.com^
 ||singlemomsdatelink.com^
@@ -9136,11 +9449,15 @@
 ||singleover70s.com^
 ||singleparentdating.net.au^
 ||singleparentmatch.net^
+||singleparentmeet.biz^
+||singleparentmeet.com^
 ||singleparentpassions.com^
+||singleparentscanada.ca^
 ||singleparentsingles.co.uk^
 ||singleparentsmeet.com^
 ||singleplanet.at^
 ||singleprojekt.de^
+||singler.dk^
 ||singles-aus-wien.at^
 ||singles-dating.net^
 ||singles-elite.at^
@@ -9151,6 +9468,7 @@
 ||singles.ai^
 ||singles.app^
 ||singles.at^
+||singles.com^
 ||singles.com.ua^
 ||singles2meet.co.za^
 ||singles365.com^
@@ -9171,8 +9489,11 @@
 ||singlescheckin.app^
 ||singlesclub.app^
 ||singlescoach.app^
+||singlescrowd.co.uk^
+||singlescrowd.com^
 ||singlesdating.app^
 ||singlesdating247.com^
+||singlesdatingagency.es^
 ||singlesday.app^
 ||singlesday.com.ar^
 ||singlesdaydeals.at^
@@ -9183,6 +9504,7 @@
 ||singlesgrapevine.co.uk^
 ||singleshot.app^
 ||singlesignal.ai^
+||singlesintoronto.ca^
 ||singlesites.com^
 ||singleskifahren.at^
 ||singleslavic.com^
@@ -9214,8 +9536,10 @@
 ||singlesucht.com^
 ||singlesward.app^
 ||singletreff.de^
+||singletreffpunkt.ch^
 ||singlevoten.de^
 ||singlewithattitude.com^
+||sinsflirt.com^
 ||siouxcitydating.com^
 ||siouxfallsmatchmaker.com^
 ||sissydating.com.au^
@@ -9293,6 +9617,7 @@
 ||soifdetoi.com^
 ||soireesdannie.com^
 ||soireesdannie.pushdate.com^
+||soirsexy.com^
 ||solasingles.app^
 ||solestride.com^
 ||solitasysolos.com.ar^
@@ -9319,6 +9644,7 @@
 ||soullovers.com^
 ||soulmatcher.app^
 ||soulmate-searching.com^
+||soulmate.dk^
 ||soulmate4ever.nl^
 ||soulsingles.com^
 ||southafricadatingreview.co.za^
@@ -9391,6 +9717,7 @@
 ||spiritualsingles.com.au^
 ||spiritualsociety.co^
 ||spiritualsociety.com^
+||spojeniprotebe.com^
 ||spokanematchmaker.com^
 ||spokanematchmakers.com^
 ||sportdatingplanet.com^
@@ -9399,6 +9726,7 @@
 ||sportsdating.com^
 ||sportsinglesmeet.com^
 ||sportspassions.com^
+||sportydates.de^
 ||springfielddating.com^
 ||ssbbwdating.ca^
 ||ssbbwdating.com^
@@ -9418,6 +9746,7 @@
 ||start.rencontresmatures.fr^
 ||starting-dating-today.com^
 ||startupspace.us^
+||stastnatrefa.cz^
 ||static-easyflirt.com^
 ||statusimagens.com^
 ||statusparty.jp^
@@ -9484,6 +9813,7 @@
 ||swedishsingles.com.au^
 ||sweet.yeewa.net^
 ||sweetdating.fr^
+||sweetdiscreet.com^
 ||sweetkisses.net^
 ||sweetmeet.me^
 ||swiftdater.net^
@@ -9522,6 +9852,7 @@
 ||tabor.ru^
 ||tacomamatchmaker.com^
 ||tadade55.com^
+||tadum.com^
 ||tagged.com^
 ||taggedmail.com^
 ||tagstat.com^
@@ -9531,6 +9862,8 @@
 ||talksaferdating.com^
 ||tallahasseematchmaker.com^
 ||tallbbwdating.com^
+||talldater.com^
+||tallfriends.com^
 ||tallpassions.com^
 ||tallsinglepeople.com^
 ||tamanokosi.net^
@@ -9625,6 +9958,7 @@
 ||texaspassions.com^
 ||texassexdating.com^
 ||texpundit.com^
+||textdatingservice.com^
 ||textgod.com^
 ||tgguide.com^
 ||tgirldating.com.au^
@@ -9632,7 +9966,9 @@
 ||tgromance.com^
 ||thai-dating.com^
 ||thaicupid.com^
+||thaidate.dk^
 ||thaidating.com.au^
+||thaidating.dk^
 ||thaidating.nl^
 ||thaiflirting.com^
 ||thaifriendly.com^
@@ -9679,10 +10015,13 @@
 ||thelovereview.com^
 ||theluckydate.com^
 ||thematchmakerofmaine.com^
+||thematureconnection.com^
 ||themodernman.com^
 ||themoscowcity.ru^
 ||thenewrelationships.com^
 ||theotokos.fr^
+||thepeggingclub.com^
+||thepeggingclub.us^
 ||thepersonalsfinder.com^
 ||thepickuppros.com^
 ||theplusr.com^
@@ -9695,11 +10034,16 @@
 ||thesinglesolution.co.uk^
 ||thespeeddatingcompany.com^
 ||thespeeddatingwinetour.com.au^
+||thethreesomeconnection.com^
 ||thetransconnection.com^
 ||theway2date.co.uk^
 ||theyoungandtherestless.com^
+||thirtyflirty.co.uk^
 ||thoughtsdating.app^
 ||threadsdating.app^
+||threesomeconnection.com^
+||threesomegroup.com^
+||threesomegroup.us^
 ||thrivedating.app^
 ||thunderboltcity.com^
 ||ti-tchat.net^
@@ -9707,9 +10051,12 @@
 ||tiilt.fr^
 ||timberdates.at^
 ||timeout.com^
+||tinder.co.nz^
 ||tinder.com^
 ||tinderoplus.com^
 ||tinderphotos-d1-ue1.s3.amazonaws.com^
+||tinderphotos.s3.amazonaws.com^
+||tindersparks.com^
 ||tinpak.us^
 ||tinychat.com^
 ||titusvillesingles.com^
@@ -9718,6 +10065,7 @@
 ||tnsingles.com^
 ||todomaduras.es^
 ||todoofeminin.com^
+||togethernetworks.com^
 ||toietmoi.fr^
 ||tokiotube.net^
 ||toky.it^
@@ -9743,12 +10091,14 @@
 ||top10datingsites.com.au^
 ||top10maturedatingsites.com^
 ||top10sexdatingreviews.com^
+||top20.co.za^
 ||top5dating.co.uk^
 ||top5datingsites.com.au^
 ||top5datingwebsites.com.au^
 ||top6-sites-gay-rencontre.com^
 ||topchristiandatingsites.com^
 ||topdating.com^
+||topdatings.com^
 ||topdatingwebsites.com.au^
 ||topekamatchmaker.com^
 ||toplocalsingles.app^
@@ -9778,6 +10128,7 @@
 ||transchatr.com^
 ||transdatecupid.com^
 ||transdatinguk.co.uk^
+||transen-dating.com^
 ||transensexdating.com^
 ||transexualdating.co.za^
 ||transexualdating.com.au^
@@ -9793,10 +10144,14 @@
 ||travel.whoo.net^
 ||travelinghearts.com^
 ||travelingpassions.com^
+||travesti.net^
 ||trck-org.com^
 ||trekpassions.com^
 ||trennungsschmerzen.de^
 ||trentonmatchmaker.com^
+||tresor-sexe.com^
+||triocontactos.es^
+||trioespana.com^
 ||trip-avenue.com^
 ||trivial-girlfriend.com^
 ||trkgovo.com^
@@ -9824,6 +10179,7 @@
 ||tsdate.com^
 ||tsdates.com^
 ||tsdates.us^
+||tsdating.com^
 ||tsdating.com.au^
 ||tsdating.site^
 ||tseeks.com^
@@ -9843,6 +10199,7 @@
 ||turbo-dating.com^
 ||turboflirt.com^
 ||turkeypassions.com^
+||turkish-gayland.com^
 ||turkishdating.com.au^
 ||turkishsingles.com.au^
 ||tuscaloosadating.com^
@@ -9852,6 +10209,7 @@
 ||tvojerande.cz^
 ||tvpassions.com^
 ||tvrepublika.pl^
+||tvtsdating.co.uk^
 ||twinedating.com.au^
 ||twoasianmatchmakers.com^
 ||twoo.com^
@@ -9872,6 +10230,7 @@
 ||udolly.com^
 ||ugay.net^
 ||uk-date.com^
+||uk-lottery.net^
 ||uk-personals.co.uk^
 ||uk-speed-dating.co.uk^
 ||uk.letsstartdating.net^
@@ -9897,6 +10256,7 @@
 ||ulteem.it^
 ||ultidate.info^
 ||ultimateteenmovies.com^
+||ultrarichmatch.com^
 ||unclepasha.com^
 ||uncontedefee.com^
 ||undercoverbrothas.com^
@@ -9907,6 +10267,7 @@
 ||une-rencontre-serieuse.com^
 ||une.rencontre-bordeaux-33.com^
 ||unebellerencontre.fr^
+||unefemmeronde.com^
 ||unerencontre.com^
 ||uni-rencontre.com^
 ||unidating.app^
@@ -9927,7 +10288,9 @@
 ||updating.me^
 ||updatingfb.tk^
 ||updatinginf.com^
+||upforit.com^
 ||upoznavanje.net^
+||uppdating.com^
 ||uptowndate.com^
 ||upward-app.com^
 ||upyourdatingame.com.au^
@@ -9943,9 +10306,11 @@
 ||usa.uniformdating.com^
 ||usacupid.net^
 ||usadatinggroup.co^
+||usadatingplanet.com^
 ||usdates.com^
 ||usdating.net^
 ||userplane.com^
+||usgay.org^
 ||utahdates.com^
 ||utahdating.com^
 ||utahintroductions.com^
@@ -9967,11 +10332,13 @@
 ||vampirepassions.com^
 ||vancouverintroductions.com^
 ||vancouvermatchmakers.com^
+||vanessa69.com^
 ||vaxthatthangup.com^
 ||veemance.com.au^
 ||vegadating.com^
 ||vegaia.com^
 ||vegandating.com.au^
+||vegandating.org^
 ||vegandatinguk.co.uk^
 ||veganesingles.at^
 ||veganland.io^
@@ -9983,6 +10350,7 @@
 ||vegetarianpassions.com^
 ||vegetariansingles.com.au^
 ||veggie-singles.com^
+||veggieflirt.com^
 ||veggiematchmakers.com^
 ||veggiepeoplemeet.com^
 ||velida.net^
@@ -10008,7 +10376,9 @@
 ||vestafortune.ru^
 ||vestarencontre.com^
 ||veyadating.app^
+||vglove.fr^
 ||viagemdossolteiros.com.br^
+||vibeline.com^
 ||victoriamilan.com^
 ||victoriasagency.com.ua^
 ||vidaselect.com^
@@ -10029,6 +10399,7 @@
 ||virginiabeachmatchmaker.com^
 ||virginiadating.com^
 ||virginiamatchmaking.com^
+||virginiaonlinepersonals.com^
 ||virginiapassions.com^
 ||virtua-live.com^
 ||virtualdating.eu^
@@ -10046,6 +10417,7 @@
 ||vivid-enter.com^
 ||vivito.net^
 ||vocaldating.app^
+||voksenkontakt.com^
 ||volosdate.com^
 ||vooboo.ru^
 ||voodoopassions.com^
@@ -10056,6 +10428,7 @@
 ||voyancealice.com^
 ||vrooda.com^
 ||vrouwzoektman.nu^
+||vryers.co.za^
 ||vsegda.love^
 ||vtdating.com^
 ||w-ru.com^
@@ -10089,6 +10462,7 @@
 ||waytohey.com^
 ||wazami.com^
 ||wcac.us^
+||wearedogging.co.uk^
 ||weareher.com^
 ||weatherpassions.com^
 ||web-ados.com^
@@ -10113,6 +10487,7 @@
 ||weddingbazaar.com^
 ||weekenddating.com^
 ||weemove.com^
+||wellhello.com^
 ||wellmatched.com^
 ||welovedates.com^
 ||werewolfpassions.com^
@@ -10120,6 +10495,7 @@
 ||west-speed-dating.com^
 ||westcoastmatchmaker.com^
 ||westernmatch.com^
+||westmidlandstransvestites.co.uk^
 ||westpalmbeachmatchmaker.com^
 ||westvirginiadating.com^
 ||westvirginiamatchmaker.com^
@@ -10144,12 +10520,14 @@
 ||whitedate.net^
 ||whosdatingwho.app^
 ||wiccandating.com.au^
+||wiccandatingsite.com^
 ||wiccanpassions.com^
 ||wiccanpersonals.com^
 ||wichitafallssingles.com^
 ||wichitamatchmaking.com^
 ||widating.com^
 ||widowdating.com.au^
+||widowedsinglesnear.me^
 ||widowmatch.com^
 ||wien-singles.at^
 ||wienersingles.at^
@@ -10283,7 +10661,9 @@
 ||xnxx.com^
 ||xor-dating.com^
 ||xoxoflirtprom.com^
+||xpartner.com^
 ||xpeeddating.com^
+||xpress.com^
 ||xs3events.com^
 ||xsessodigruppo.sitio.net^
 ||xsexdating.com^
@@ -10375,6 +10755,7 @@
 ||youandmedating.com^
 ||youbride.jp^
 ||youcangetme.com^
+||youdate.dk^
 ||youdates-online.org^
 ||youflirt.com^
 ||youmedating.com^
@@ -10438,6 +10819,7 @@
 ||yoursecretdates.com^
 ||yoursecretflirt.com^
 ||yoursecretflirts.com^
+||yoursecrethookup.com^
 ||yoursingleshub.com^
 ||yoursinglesolution.com^
 ||yoursinglestory.com^
@@ -10474,6 +10856,7 @@
 ||yycsingles.com^
 ||za-gay.org^
 ||zabava.atlas.cz^
+||zabido.com^
 ||zabota.org^
 ||zacbrownbandtourdates.com^
 ||zadatingadvice.com^
@@ -10491,6 +10874,7 @@
 ||zap-sexy.com^
 ||zapisanisobie.pl^
 ||zappallas.com^
+||zarf.com^
 ||zawajdating.com^
 ||zdating.com^
 ||zdrowie.onet.pl^
@@ -10538,9 +10922,12 @@
 ||zodiacsignsdates.com^
 ||zodiaks.bizland.com^
 ||zombiepassions.com^
+||zonabdsm.com^
+||zonabisexual.es^
 ||zonacitas.com^
 ||zonacitas.com.ar^
 ||zonagente.com^
+||zone.bz^
 ||zoneados.francite.com^
 ||zonefrance.com^
 ||zoneseniors.com^

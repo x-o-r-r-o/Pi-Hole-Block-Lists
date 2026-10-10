@@ -2,36 +2,103 @@
 # Description: Telegram, Discord, WhatsApp, Messenger, Signal, Viber, LINE, Kik, imo, WeChat, Threema, Botim. Blocks calls and chats in these apps.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 21:54 UTC
-# Entries: 27
+# Last modified: 2026-10-10 04:25 UTC
+# Entries: 93
 #
 # Built from these sources (see their licenses):
 #   - Messaging app servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/messaging.json
+#   - AdGuard Home Blocked Services: whatsapp, telegram, discord, signal, viber, line, wechat, kik, kakaotalk, qq, olvid: https://github.com/AdguardTeam/HostlistsRegistry
 
+0.0.0.0 airhorn.solutions
+0.0.0.0 airhornbot.com
+0.0.0.0 bigbeans.solutions
 0.0.0.0 botim.me
+0.0.0.0 comments.app
+0.0.0.0 contest.com
+0.0.0.0 dis.gd
+0.0.0.0 discord-activities.com
+0.0.0.0 discord.co
 0.0.0.0 discord.com
+0.0.0.0 discord.design
+0.0.0.0 discord.dev
 0.0.0.0 discord.gg
+0.0.0.0 discord.gift
+0.0.0.0 discord.gifts
 0.0.0.0 discord.media
+0.0.0.0 discord.new
+0.0.0.0 discord.store
+0.0.0.0 discord.tools
+0.0.0.0 discordactivities.com
 0.0.0.0 discordapp.com
+0.0.0.0 discordapp.io
 0.0.0.0 discordapp.net
+0.0.0.0 discordcdn.com
+0.0.0.0 discordmerch.com
+0.0.0.0 discordpartygames.com
+0.0.0.0 discordsays.com
+0.0.0.0 discordstatus.com
+0.0.0.0 gcld-line.com
+0.0.0.0 graph.org
+0.0.0.0 hammerandchisel.ssl.zendesk.com
 0.0.0.0 imo.im
+0.0.0.0 kakao.com
+0.0.0.0 kgslb.com
 0.0.0.0 kik.com
+0.0.0.0 lin.ee
+0.0.0.0 line-apps-beta.com
+0.0.0.0 line-apps-rc.com
 0.0.0.0 line-apps.com
+0.0.0.0 line-cdn.net
 0.0.0.0 line-scdn.net
+0.0.0.0 line.biz
 0.0.0.0 line.me
+0.0.0.0 line.naver.jp
+0.0.0.0 linecorp.com
+0.0.0.0 linefriends.com
+0.0.0.0 linefriends.com.tw
+0.0.0.0 linegame.jp
+0.0.0.0 linemobile.com
+0.0.0.0 linemyshop.com
+0.0.0.0 lineshoppingseller.com
+0.0.0.0 linetv.tw
 0.0.0.0 messenger.com
+0.0.0.0 olvid-attachment-chunks.s3.eu-west-3.amazonaws.com
+0.0.0.0 olvid.io
+0.0.0.0 qq-video.cdn-go.cn
+0.0.0.0 quiz.directory
 0.0.0.0 signal.group
 0.0.0.0 signal.org
 0.0.0.0 t.me
 0.0.0.0 tdesktop.com
+0.0.0.0 telega.one
 0.0.0.0 telegra.ph
+0.0.0.0 telegram-cdn.org
+0.0.0.0 telegram.dog
 0.0.0.0 telegram.me
 0.0.0.0 telegram.org
+0.0.0.0 telegram.space
 0.0.0.0 telesco.pe
+0.0.0.0 tg.dev
 0.0.0.0 threema.ch
+0.0.0.0 tx.me
+0.0.0.0 url.cn
+0.0.0.0 usercontent.dev
 0.0.0.0 viber.com
 0.0.0.0 wa.me
+0.0.0.0 watchanimeattheoffice.com
 0.0.0.0 wechat.com
+0.0.0.0 weixin.qq.com
+0.0.0.0 weixin.qq.com.cn
+0.0.0.0 weixinbridge.com
+0.0.0.0 whatsapp-plus.info
+0.0.0.0 whatsapp-plus.me
+0.0.0.0 whatsapp-plus.net
+0.0.0.0 whatsapp.cc
 0.0.0.0 whatsapp.com
+0.0.0.0 whatsapp.info
 0.0.0.0 whatsapp.net
+0.0.0.0 whatsapp.org
+0.0.0.0 whatsapp.tv
+0.0.0.0 whatsappbrand.com
 0.0.0.0 whispersystems.org
+0.0.0.0 wx.qq.com

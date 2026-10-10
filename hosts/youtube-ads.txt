@@ -2,25 +2,32 @@
 # Description: Google/YouTube ad servers. Partial: DNS cannot block all YouTube video ads (see note below).
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-08 20:58 UTC
-# Entries: 16
+# Last modified: 2026-10-10 04:26 UTC
+# Entries: 22
 #
 # Built from these sources (see their licenses):
 #   - kboghdady YouTube ads for Pi-hole (ad servers only): https://github.com/kboghdady/youTube_ads_4_pi-hole
+#   - AdGuard DNS filter: Google/YouTube ad-serving rules only: https://github.com/AdguardTeam/AdGuardSDNSFilter
 
 0.0.0.0 11165441.fls.doubleclick.net
 0.0.0.0 ad.doubleclick.net
 0.0.0.0 ad.youtube.com
 0.0.0.0 ade.googlesyndication.com
 0.0.0.0 ads.youtube.com
+0.0.0.0 afs.googlesyndication.com
+0.0.0.0 doubleclick.net
+0.0.0.0 fcmatch.youtube.com
 0.0.0.0 googleads.g.doubleclick.net
 0.0.0.0 googleads4.g.doubleclick.net
+0.0.0.0 googleadservices.com
 0.0.0.0 pagead2.googlesyndication.com
 0.0.0.0 partnerad.l.doubleclick.net
 0.0.0.0 pubads.g.doubleclick.net
 0.0.0.0 s0.2mdn.net
+0.0.0.0 s2.youtube.com
+0.0.0.0 safeframe.googlesyndication.com
 0.0.0.0 securepubads.g.doubleclick.net
 0.0.0.0 static.doubleclick.net
 0.0.0.0 stats.g.doubleclick.net
 0.0.0.0 tpc.googlesyndication.com
-0.0.0.0 www.googleadservices.com
+0.0.0.0 video-ad-stats.googlesyndication.com

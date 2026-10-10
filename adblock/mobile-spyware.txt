@@ -3,7 +3,7 @@
 ! Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-08 18:50 UTC
+! Last modified: 2026-10-10 04:28 UTC
 ! Entries: 3081
 !
 ! Built from these sources (see their licenses):
@@ -16,7 +16,10 @@
 !   - HaGeZi Native Tracker: Oppo/Realme: https://github.com/hagezi/dns-blocklists
 !   - HaGeZi Native Tracker: Vivo: https://github.com/hagezi/dns-blocklists
 !   - HaGeZi Native Tracker: TikTok: https://github.com/hagezi/dns-blocklists
+!   - AdGuard Tracking Protection: mobile allowlist: https://github.com/AdguardTeam/AdguardFilters
 
+@@||redirect.appmetrica.yandex.com^
+@@||redirect.appmetrica.yandex.net^
 ||0001-metrics1-data-hicloud-com.geac.dbankedge.cn^
 ||0001-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn^
 ||0002-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn^
@@ -647,6 +650,7 @@
 ||child.sec.miui.com^
 ||chong.sec.miui.com^
 ||cirrus-full-snapshots-track-csv-v1-0-na-prod.s3.amazonaws.com^
+||clarity.ms^
 ||classify-app-eu.allawnos.com^
 ||classify-app-in.allawnos.com^
 ||classify-app-sg.allawnos.com^
@@ -786,6 +790,7 @@
 ||cname-in-ctdbonrt-stsdk.vivoglobal.com^
 ||cname-sin01-stsdk09.vivoglobal.com^
 ||cnlogs.umengcloud.com^
+||co-album-api.vivoglobal.com^
 ||co-cota.vivoglobal.com^
 ||co-domaincfg.vivoglobal.com^
 ||co-onrt-stsdk.vivoglobal.com^
@@ -1755,7 +1760,6 @@
 ||mcs-i18n.tiktok.com^
 ||mcs-ie.tiktokw.eu^
 ||mcs-ie2.tiktokw.eu^
-||mcs-ie2.tiktokw.eu.dvaitas.lt^
 ||mcs-normal-sg.capcutapi.com^
 ||mcs-tiktok.byteoversea.net^
 ||mcs-ttp2.tiktokv.us^
@@ -1972,7 +1976,6 @@
 ||mon-csj-maliva-ios.byteoversea.com^
 ||mon-hl.snssdk.com^
 ||mon-i18n.tiktokv.com^
-||mon-i18n.tiktokv.com.dvaitas.lt^
 ||mon-phx.tiktokv.com^
 ||mon-ru.tiktokv.com^
 ||mon-sg.capcutapi.com^

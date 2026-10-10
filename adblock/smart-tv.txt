@@ -1,10 +1,10 @@
 [Adblock Plus]
 ! Title: Smart TV & Streaming Devices
-! Description: Tracking and ads on smart TVs and streaming sticks (Samsung, LG webOS, Roku, Amazon Fire).
+! Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-08 18:50 UTC
-! Entries: 1283
+! Last modified: 2026-10-10 04:25 UTC
+! Entries: 1242
 !
 ! Built from these sources (see their licenses):
 !   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -12,8 +12,14 @@
 !   - HaGeZi Native Tracker: Roku: https://github.com/hagezi/dns-blocklists
 !   - HaGeZi Native Tracker: Amazon: https://github.com/hagezi/dns-blocklists
 !   - HaGeZi Native Tracker: Samsung: https://github.com/hagezi/dns-blocklists
+!   - Perflyst and Dandelion Sprout's Smart-TV Blocklist: https://github.com/Perflyst/PiHoleBlocklist
+!   - Dandelion Sprout's Game Console Adblock List: https://github.com/DandelionSprout/adfilt
 
-||0077777700140002.myhomescreen.tv^
+@@||infolink.pavv.co.kr^
+@@||mhc-ajax-eu-s2.myhomescreen.tv^
+@@||mhc-ajax-eu.myhomescreen.tv^
+@@||mhc-xpana-eu-s2.myhomescreen.tv^
+@@||mhc-xpana-eu.myhomescreen.tv^
 ||2mdn.net^
 ||3px.axp.amazon-adsystem.com^
 ||7345023508.fxm9485766783.com^
@@ -132,7 +138,9 @@
 ||adeng-looker-bi-oneview-prod-1001.bdp.roku.com^
 ||adeng-looker-dev-1001.bdp.roku.com^
 ||adeng-looker-dev-1003.bdp.roku.com^
+||adgrx.com^
 ||adi-airflow.bdp.roku.com^
+||adproxy.ndmdhs.com^
 ||ads-aka-us-east-1.delivery.roku.com^
 ||ads-aka-us-west-2.delivery.roku.com^
 ||ads-cf-us-east-1.delivery.roku.com^
@@ -148,13 +156,12 @@
 ||ads.amazon.com^
 ||ads.beta.roku.com^
 ||ads.gcp.roku.com^
-||ads.lgtvcommon.com^
 ||ads.roku.com^
 ||ads.rokuapi.net^
+||ads.spotx.tv^
 ||ads.staging.roku.com^
 ||adserver.pubtech.amazon.dev^
 ||adservices.roku.com^
-||adts.lgtvcommon.com^
 ||adv.ettoday.net^
 ||advertising-api-eu.amazon.com^
 ||advertising-qa.us-east-1.dev.msc.roku.com^
@@ -197,7 +204,6 @@
 ||ai.nextlgsdp.com^
 ||aic-gfts.nextlgsdp.com^
 ||aic-ngfts.lge.com^
-||aic.cdpsvc.lgtvcommon.com^
 ||akcjasamsung.e-kei.pl^
 ||al-ad-lgsmartad-com.aws-prd.net^
 ||al-info-lgsmartad-com.aws-prd.net^
@@ -268,6 +274,7 @@
 ||at-info-lgsmartad-com.aws-prd.net^
 ||at-rdx2-lgtvsdp-com.aws-prd.net^
 ||at-us-east.amazon-adsystem.com^
+||at.atwola.com^
 ||at.nextlgsdp.com^
 ||atfe.amazon-adsystem.com^
 ||atue.amazon-adsystem.com^
@@ -356,8 +363,6 @@
 ||cdn-a.amazon-adsystem.com^
 ||cdn-d.amazon-adsystem.com^
 ||cdn-t.amazon-adsystem.com^
-||cdpbeacon.lgtvcommon.com^
-||cdpbeacon2.lgtvcommon.com^
 ||cert-test.sandbox.google.com^
 ||cf.nextlgsdp.com^
 ||cg-ad-lgsmartad-com.aws-prd.net^
@@ -382,25 +387,6 @@
 ||cn.nextlgsdp.com^
 ||co-ad-lgsmartad-com.aws-prd.net^
 ||co.nextlgsdp.com^
-||collect-eu-fy2014.myhomescreen.tv^
-||collect-eu-fy2015.myhomescreen.tv^
-||collect-eu-fy2016.myhomescreen.tv^
-||collect-eu-fy2017.myhomescreen.tv^
-||collect-eu-fy2018.myhomescreen.tv^
-||collect-eu-fy2019.myhomescreen.tv^
-||collect-eu-fy2020.myhomescreen.tv^
-||collect-eu-fy2021.myhomescreen.tv^
-||collect-eu-fy2022.myhomescreen.tv^
-||collect-us-fy2014.myhomescreen.tv^
-||collect-us-fy2015.myhomescreen.tv^
-||collect-us-fy2016.myhomescreen.tv^
-||collect-us-fy2017.myhomescreen.tv^
-||collect-us-fy2018.myhomescreen.tv^
-||collect-us-fy2019.myhomescreen.tv^
-||collect-us-fy2020.myhomescreen.tv^
-||collect-us-fy2021.myhomescreen.tv^
-||collect-us-fy2022.myhomescreen.tv^
-||collect.myhomescreen.tv^
 ||connecttv.pelmorex.com^
 ||control-zoo-dai-default.tvinteractive.tv^
 ||control.tvinteractive.tv^
@@ -443,6 +429,7 @@
 ||device-metrics-us-2.amazon.com^
 ||device-metrics-us-ud.amazon.com^
 ||device-metrics-us.amazon.com^
+||devicemessaging.us-east-1.amazon.com^
 ||diagmon-policy.samsungdm.com^
 ||diagmon-serviceapi.samsungdm.com^
 ||dj.nextlgsdp.com^
@@ -599,6 +586,7 @@
 ||hu.nextlgsdp.com^
 ||i-stream.pl^
 ||ibis.lgappstv.com^
+||ibs.lgappstv.com^
 ||ichnaea.netflix.com^
 ||id-ad-lgsmartad-com.aws-prd.net^
 ||id.nextlgsdp.com^
@@ -651,7 +639,6 @@
 ||jo-ad-lgsmartad-com.aws-prd.net^
 ||jo.nextlgsdp.com^
 ||jp-ad-lgsmartad-com.aws-prd.net^
-||jp.lgtvsdp.com^
 ||jp.nextlgsdp.com^
 ||ke-ad-lgsmartad-com.aws-prd.net^
 ||ke.nextlgsdp.com^
@@ -681,6 +668,8 @@
 ||lgads.adsmeasurement.com^
 ||lgads.tv^
 ||lgsmartad.com^
+||lgtvcommon.com^
+||lgtvsdp.com^
 ||li-ad-lgsmartad-com.aws-prd.net^
 ||li.nextlgsdp.com^
 ||live-events.ono.axp.amazon-adsystem.com^
@@ -691,6 +680,7 @@
 ||logs.qa.ap.int.roku.com^
 ||logs.roku.com^
 ||logs.sr.roku.com^
+||logs1409.xiti.com^
 ||lp.americas.business.samsung.com^
 ||lp.apac.business.samsung.com^
 ||lp.mkt-email.samsungsds.com^
@@ -734,6 +724,7 @@
 ||md.nextlgsdp.com^
 ||me-ad-lgsmartad-com.aws-prd.net^
 ||me.nextlgsdp.com^
+||mercury.dl.playstation.net^
 ||metric.account-samsung.com^
 ||metrics.eu-south-2.iris.apx.amazon.dev^
 ||metrics.eu-west-1.iris.apx.amazon.dev^
@@ -743,8 +734,6 @@
 ||mg-ad-lgsmartad-com.aws-prd.net^
 ||mg.nextlgsdp.com^
 ||mh.nextlgsdp.com^
-||mhc-sec-eu.myhomescreen.tv^
-||mhc-sec-us.myhomescreen.tv^
 ||minerva.devices.a2z.com^
 ||mk-ad-lgsmartad-com.aws-prd.net^
 ||mk.nextlgsdp.com^
@@ -775,6 +764,7 @@
 ||mx.nextlgsdp.com^
 ||my-ad-lgsmartad-com.aws-prd.net^
 ||my.nextlgsdp.com^
+||myhomescreen.tv^
 ||mz-ad-lgsmartad-com.aws-prd.net^
 ||mz.nextlgsdp.com^
 ||na-ad-lgsmartad-com.aws-prd.net^
@@ -801,7 +791,10 @@
 ||no.nextlgsdp.com^
 ||np.nextlgsdp.com^
 ||nr.nextlgsdp.com^
+||nsx-e.np.dl.playstation.net^
+||nsx.np.dl.playstation.net^
 ||nu.nextlgsdp.com^
+||nw-umwatson.events.data.microsoft.com^
 ||nz-ad-lgsmartad-com.aws-prd.net^
 ||nz.nextlgsdp.com^
 ||om-ad-lgsmartad-com.aws-prd.net^
@@ -859,6 +852,7 @@
 ||qa-ad-lgsmartad-com.aws-prd.net^
 ||qa.nextlgsdp.com^
 ||qmds-dev-samsung.com^
+||rad.msn.com^
 ||ravm-staging.data.roku.com^
 ||ravm.tv^
 ||rcm-eu.amazon-adsystem.com^
@@ -868,12 +862,9 @@
 ||rcm-na.amazon-adsystem.com^
 ||rcm-uk.amazon.co.uk^
 ||rcm.amazon.com^
-||rdl.lgtvcommon.com^
-||rdx2.lgtvsdp.com^
 ||rdx2.nextlgsdp.com^
 ||re-ad-lgsmartad-com.aws-prd.net^
 ||re.nextlgsdp.com^
-||recommend.lgtvcommon.com^
 ||redbutton-adproxy-lb-prod.redbutton.de^
 ||redbutton-lb-prod.redbutton.de^
 ||redbutton.sim-technik.de^
@@ -1018,6 +1009,8 @@
 ||se-rdx2-lgtvsdp-com.aws-prd.net^
 ||se.nextlgsdp.com^
 ||seao.business.samsung.com^
+||secure-eu.imrworldwide.com^
+||settings.crashlytics.com^
 ||sg-ad-lgsmartad-com.aws-prd.net^
 ||sg.nextlgsdp.com^
 ||sh.nextlgsdp.com^
@@ -1036,7 +1029,6 @@
 ||sm.nextlgsdp.com^
 ||smartclip.com^
 ||smartclip.net^
-||smartshare.lgtvsdp.com^
 ||smetrics.samsung.com^
 ||smetrics.samsung.com.cn^
 ||sn-ad-lgsmartad-com.aws-prd.net^
@@ -1100,13 +1092,14 @@
 ||target-us.samsung.com^
 ||tc.nextlgsdp.com^
 ||td.nextlgsdp.com^
+||telemetry-cii.api.playstation.com^
+||telemetry-console.api.playstation.com^
 ||test.samsungrm.net^
 ||tf.nextlgsdp.com^
 ||tg-ad-lgsmartad-com.aws-prd.net^
 ||tg.nextlgsdp.com^
 ||th-ad-lgsmartad-com.aws-prd.net^
 ||th.nextlgsdp.com^
-||thinqrecommend.lgtvcommon.com^
 ||tj.nextlgsdp.com^
 ||tk-beta.amazon-adsystem.com^
 ||tk-eu.amazon-adsystem.com^
@@ -1132,17 +1125,16 @@
 ||tracking.intl.miui.com^
 ||tracking.mkt-email.samsungsds.com^
 ||tracking.smartbusiness.samsung.com^
+||tracksrv.zdf.de^
 ||trvdp.com^
 ||ts-gamma.amazon-adsystem.com^
 ||ts.amazon-adsystem.com^
 ||tt-ad-lgsmartad-com.aws-prd.net^
 ||tt.nextlgsdp.com^
 ||tv-static.scdn.co^
-||tv.ads.spotx.tv^
 ||tv.nextlgsdp.com^
 ||tvmeta-dynamic.tvinteractive.tv^
 ||tvsideviewandroidv2-cfgdst-ore-pro.bda.ndmdhs.com^
-||tvx.adgrx.com^
 ||tw-ad-lgsmartad-com.aws-prd.net^
 ||tw.nextlgsdp.com^
 ||tz-ad-lgsmartad-com.aws-prd.net^
@@ -1185,31 +1177,7 @@
 ||us-info-lgsmartad-com.aws-prd.net^
 ||us-rdx2-lgtvsdp-com.aws-prd.net^
 ||us-report.gras.samsungdm.com^
-||us.cdpsvc.lgtvcommon.com^
-||us.homeprv.lgtvcommon.com^
-||us.ibs.lgappstv.com^
 ||us.nextlgsdp.com^
-||us.nudge.lgtvcommon.com^
-||us.service.lgtvcommon.com^
-||usage-eu-fy2014.myhomescreen.tv^
-||usage-eu-fy2015.myhomescreen.tv^
-||usage-eu-fy2016.myhomescreen.tv^
-||usage-eu-fy2017.myhomescreen.tv^
-||usage-eu-fy2018.myhomescreen.tv^
-||usage-eu-fy2019.myhomescreen.tv^
-||usage-eu-fy2020.myhomescreen.tv^
-||usage-eu-fy2021.myhomescreen.tv^
-||usage-eu-fy2022.myhomescreen.tv^
-||usage-us-fy2014.myhomescreen.tv^
-||usage-us-fy2015.myhomescreen.tv^
-||usage-us-fy2016.myhomescreen.tv^
-||usage-us-fy2017.myhomescreen.tv^
-||usage-us-fy2018.myhomescreen.tv^
-||usage-us-fy2019.myhomescreen.tv^
-||usage-us-fy2020.myhomescreen.tv^
-||usage-us-fy2021.myhomescreen.tv^
-||usage-us-fy2022.myhomescreen.tv^
-||usage.myhomescreen.tv^
 ||userdata.dev.sr.roku.com^
 ||userdata.sr.roku.com^
 ||uy-ad-lgsmartad-com.aws-prd.net^
@@ -1249,7 +1217,7 @@
 ||vg.nextlgsdp.com^
 ||vi.nextlgsdp.com^
 ||video-ads.a2z.com^
-||videoads.lgtvcommon.com^
+||vindicosuite.com^
 ||vn-ad-lgsmartad-com.aws-prd.net^
 ||vn.nextlgsdp.com^
 ||vq-eu-west-1.amazon-adsystem.com^
@@ -1260,7 +1228,6 @@
 ||vu-ad-lgsmartad-com.aws-prd.net^
 ||vu.nextlgsdp.com^
 ||wf.nextlgsdp.com^
-||wiseconfig.lgtvcommon.com^
 ||wms-eu.amazon-adsystem.com^
 ||wms-fe.amazon-adsystem.com^
 ||wms-in.amazon-adsystem.com^
@@ -1274,7 +1241,6 @@
 ||www.samsungrm.net^
 ||wwwimg.roku.com^
 ||wwwimg.staging.roku.com^
-||x2.vindicosuite.com^
 ||xk.nextlgsdp.com^
 ||xml.opera.com^
 ||ye-ad-lgsmartad-com.aws-prd.net^

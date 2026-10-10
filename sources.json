@@ -224,7 +224,8 @@
     "home": "https://github.com/kboghdady/youTube_ads_4_pi-hole",
     "license": "see repository",
     "exclude": [
-      "(^|\\.)googlevideo\\.com$"
+      "(^|\\.)googlevideo\\.com$",
+      "^www\\.googleadservices\\.com$"
     ]
   },
   "threatfox": {
@@ -475,5 +476,401 @@
     "path": "data/messaging.txt",
     "home": "https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/messaging.json",
     "license": "this repository"
+  },
+  "adguard-dns-filter": {
+    "name": "AdGuard DNS filter (AdGuard Home default)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+    "home": "https://github.com/AdguardTeam/AdGuardSDNSFilter",
+    "license": "GPL-3.0"
+  },
+  "adguard-popup-hosts": {
+    "name": "AdGuard DNS Popup Hosts filter",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt",
+    "home": "https://github.com/AdguardTeam/AdGuardSDNSFilter",
+    "license": "GPL-3.0"
+  },
+  "dan-pollock": {
+    "name": "Dan Pollock's List",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt",
+    "home": "https://someonewhocares.org/hosts/",
+    "license": "non-commercial (see home page)"
+  },
+  "shadowwhisperer-tracking": {
+    "name": "ShadowWhisperer Tracking List",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_69.txt",
+    "home": "https://github.com/ShadowWhisperer/BlockLists",
+    "license": "MIT"
+  },
+  "awavenue-ads": {
+    "name": "AWAvenue Ads Rule (mobile app ads)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt",
+    "home": "https://github.com/TG-Twilight/AWAvenue-Ads-Rule",
+    "license": "GPL-3.0"
+  },
+  "dandelion-anti-push": {
+    "name": "Dandelion Sprout's Anti Push Notifications",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_39.txt",
+    "home": "https://github.com/DandelionSprout/adfilt",
+    "license": "Dandelicence (see repo)"
+  },
+  "smarttv-perflyst-dandelion": {
+    "name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt",
+    "home": "https://github.com/Perflyst/PiHoleBlocklist",
+    "license": "MIT"
+  },
+  "dandelion-game-console": {
+    "name": "Dandelion Sprout's Game Console Adblock List",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
+    "home": "https://github.com/DandelionSprout/adfilt",
+    "license": "Dandelicence (see repo)"
+  },
+  "shadowwhisperer-dating": {
+    "name": "ShadowWhisperer's Dating List",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_57.txt",
+    "home": "https://github.com/ShadowWhisperer/BlockLists",
+    "license": "MIT"
+  },
+  "hacked-malware-sites": {
+    "name": "The Big List of Hacked Malware Web Sites",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt",
+    "home": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites",
+    "license": "MIT"
+  },
+  "shadowwhisperer-malware": {
+    "name": "ShadowWhisperer's Malware List",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_42.txt",
+    "home": "https://github.com/ShadowWhisperer/BlockLists",
+    "license": "MIT"
+  },
+  "ublock-badware": {
+    "name": "uBlock Origin filters: Badware risks",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt",
+    "home": "https://github.com/uBlockOrigin/uAssets",
+    "license": "GPL-3.0"
+  },
+  "cert-polska": {
+    "name": "CERT Polska list of malicious domains",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_41.txt",
+    "home": "https://cert.pl/en/warning-list/",
+    "license": "see home page"
+  },
+  "ukrainian-security": {
+    "name": "Ukrainian Security Filter",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_62.txt",
+    "home": "https://github.com/braveinnovators/ukrainian-security-filter",
+    "license": "MIT"
+  },
+  "phishing-url-blocklist": {
+    "name": "Phishing URL Blocklist (PhishTank and OpenPhish)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
+    "home": "https://gitlab.com/malware-filter/phishing-filter",
+    "license": "MIT / CC0"
+  },
+  "stalkerware-indicators": {
+    "name": "Stalkerware Indicators List",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_31.txt",
+    "home": "https://github.com/AssoEchap/stalkerware-indicators",
+    "license": "CC BY 4.0"
+  },
+  "adguard-dns-youtube-ads": {
+    "name": "AdGuard DNS filter: Google/YouTube ad-serving rules only",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
+    "home": "https://github.com/AdguardTeam/AdGuardSDNSFilter",
+    "license": "GPL-3.0",
+    "include": [
+      "(^|\\.)(doubleclick\\.net|googlesyndication\\.com|googleadservices\\.com|2mdn\\.net|googletagservices\\.com|youtube\\.com|youtube-nocookie\\.com)$"
+    ]
+  },
+  "adguard-services-youtube": {
+    "name": "AdGuard Home Blocked Services: youtube",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "youtube"
+    ]
+  },
+  "adguard-services-social": {
+    "name": "AdGuard Home Blocked Services: social networks (WhatsApp media hosts kept working)",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "facebook",
+      "instagram",
+      "twitter",
+      "tiktok",
+      "snapchat",
+      "reddit",
+      "linkedin",
+      "pinterest",
+      "tumblr",
+      "bluesky",
+      "vk",
+      "ok",
+      "weibo",
+      "xiaohongshu",
+      "douban",
+      "zhihu",
+      "9gag",
+      "4chan",
+      "imgur",
+      "mastodon",
+      "amino",
+      "clubhouse"
+    ],
+    "exclude": [
+      "(^|\\.)fbcdn\\.(net|com)$",
+      "(^|\\.)whatsapp\\.(com|net)$"
+    ]
+  },
+  "adguard-services-messaging": {
+    "name": "AdGuard Home Blocked Services: whatsapp, telegram, discord, signal, viber, line, wechat, kik, kakaotalk, qq, olvid",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "whatsapp",
+      "telegram",
+      "discord",
+      "signal",
+      "viber",
+      "line",
+      "wechat",
+      "kik",
+      "kakaotalk",
+      "qq",
+      "olvid"
+    ]
+  },
+  "adguard-services-video": {
+    "name": "AdGuard Home Blocked Services: netflix, disneyplus, hulu, hbomax, max, paramountplus, peacock_tv, amazon_streaming, apple_streaming, crunchyroll, iqiyi, pluto_tv, twitch, rakuten_viki, discoveryplus, plex, dailymotion, vimeo, nebula, odysee, bilibili, lionsgateplus, globoplay, canais_globo, directvgo, looke, voot, samsung_tv_plus, spotify_video, vivo_play",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "netflix",
+      "disneyplus",
+      "hulu",
+      "hbomax",
+      "max",
+      "paramountplus",
+      "peacock_tv",
+      "amazon_streaming",
+      "apple_streaming",
+      "crunchyroll",
+      "iqiyi",
+      "pluto_tv",
+      "twitch",
+      "rakuten_viki",
+      "discoveryplus",
+      "plex",
+      "dailymotion",
+      "vimeo",
+      "nebula",
+      "odysee",
+      "bilibili",
+      "lionsgateplus",
+      "globoplay",
+      "canais_globo",
+      "directvgo",
+      "looke",
+      "voot",
+      "samsung_tv_plus",
+      "spotify_video",
+      "vivo_play"
+    ]
+  },
+  "adguard-services-gaming": {
+    "name": "AdGuard Home Blocked Services: roblox, epic_games, steam, playstation, xboxlive, nintendo, minecraft, leagueoflegends, riot_games, valorant, battle_net, blizzard_entertainment, activision_blizzard, electronic_arts, origin, ubisoft, rockstar_games, gog, wargaming, warnerbrosgames, io_interactive, shell_shockers",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "roblox",
+      "epic_games",
+      "steam",
+      "playstation",
+      "xboxlive",
+      "nintendo",
+      "minecraft",
+      "leagueoflegends",
+      "riot_games",
+      "valorant",
+      "battle_net",
+      "blizzard_entertainment",
+      "activision_blizzard",
+      "electronic_arts",
+      "origin",
+      "ubisoft",
+      "rockstar_games",
+      "gog",
+      "wargaming",
+      "warnerbrosgames",
+      "io_interactive",
+      "shell_shockers"
+    ]
+  },
+  "adguard-services-ai": {
+    "name": "AdGuard Home Blocked Services: chatgpt, claude, copilot, gemini, deepseek, grok, perplexity, meta_ai, qwen, manus, questionai, dola",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "chatgpt",
+      "claude",
+      "copilot",
+      "gemini",
+      "deepseek",
+      "grok",
+      "perplexity",
+      "meta_ai",
+      "qwen",
+      "manus",
+      "questionai",
+      "dola"
+    ]
+  },
+  "adguard-services-shopping": {
+    "name": "AdGuard Home Blocked Services: aliexpress, ebay, shein, temu, shopee, lazada, mercado_libre",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "aliexpress",
+      "ebay",
+      "shein",
+      "temu",
+      "shopee",
+      "lazada",
+      "mercado_libre"
+    ]
+  },
+  "adguard-services-gambling": {
+    "name": "AdGuard Home Blocked Services: betano, betfair, betway, fdj_united, blaze",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "betano",
+      "betfair",
+      "betway",
+      "fdj_united",
+      "blaze"
+    ]
+  },
+  "adguard-services-adult": {
+    "name": "AdGuard Home Blocked Services: onlyfans",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "onlyfans"
+    ]
+  },
+  "adguard-services-dating": {
+    "name": "AdGuard Home Blocked Services: tinder, grindr, plenty_of_fish",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "tinder",
+      "grindr",
+      "plenty_of_fish"
+    ]
+  },
+  "adguard-services-live": {
+    "name": "AdGuard Home Blocked Services: bigo_live, yy",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "bigo_live",
+      "yy"
+    ]
+  },
+  "adguard-services-files": {
+    "name": "AdGuard Home Blocked Services: dropbox, box",
+    "url": "https://adguardteam.github.io/HostlistsRegistry/assets/services.json",
+    "home": "https://github.com/AdguardTeam/HostlistsRegistry",
+    "license": "GPL-3.0",
+    "services": [
+      "dropbox",
+      "box"
+    ]
+  },
+  "agf-base-adservers": {
+    "name": "AdGuard Base filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-tracking-servers": {
+    "name": "AdGuard Tracking Protection: tracking servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/tracking_servers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-mobile-adservers": {
+    "name": "AdGuard Mobile Ads filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-mobile-allowlist": {
+    "name": "AdGuard Tracking Protection: mobile allowlist",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/mobile_allowlist.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0",
+    "exceptions": true
+  },
+  "agf-chinese-adservers": {
+    "name": "AdGuard Chinese filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-cyrillic-adservers": {
+    "name": "AdGuard Cyrillic (Russian/Ukrainian) filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/common-sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-japanese-adservers": {
+    "name": "AdGuard Japanese filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-spanish-adservers": {
+    "name": "AdGuard Spanish/Portuguese filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpanishFilter/sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-turkish-adservers": {
+    "name": "AdGuard Turkish filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-german-adservers": {
+    "name": "AdGuard German filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-dutch-adservers": {
+    "name": "AdGuard Dutch filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/DutchFilter/sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
+  },
+  "agf-french-adservers": {
+    "name": "AdGuard French filter: ad servers",
+    "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/FrenchFilter/sections/adservers.txt",
+    "home": "https://github.com/AdguardTeam/AdguardFilters",
+    "license": "GPL-3.0"
   }
 }

@@ -3,11 +3,12 @@
 ! Description: Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-09 16:21 UTC
-! Entries: 525
+! Last modified: 2026-10-10 04:24 UTC
+! Entries: 532
 !
 ! Built from these sources (see their licenses):
 !   - Université Toulouse Capitole: stalkerware & monitoring apps: https://dsi.ut-capitole.fr/blacklists/
+!   - Stalkerware Indicators List: https://github.com/AssoEchap/stalkerware-indicators
 
 ||12d60.appspot.com^
 ||12d60.firebaseio.com^
@@ -138,6 +139,7 @@
 ||copy9.com^
 ||copy9db.com^
 ||corn-cob.com^
+||cp.spystealth.com^
 ||cp.thewispy.com^
 ||cpcalendars.spymasterpro.com^
 ||cpcontacts.spymasterpro.com^
@@ -256,6 +258,7 @@
 ||microtracker-1ca43.firebaseio.com^
 ||mintrack.vip^
 ||mlite-app.livekit.cloud^
+||mob-app-gw.spynger.net^
 ||mob.eurotrans.kz^
 ||mobi22.com^
 ||mobiispy.com^
@@ -428,8 +431,11 @@
 ||spyzie-a.firebaseio.com^
 ||spyzie.com^
 ||sse.chyldmonitor.com^
+||stage.spystealth.com^
 ||staging-all-tracker.appspot.com^
 ||staging.smstracker.com^
+||strapi.msafely.com^
+||strapi.spyphone.cc^
 ||studio11-7e288.firebaseio.com^
 ||support.phoneparental.com^
 ||sync-a.exactspy.com^
@@ -471,12 +477,14 @@
 ||trkps.com^
 ||true-truck-86810.firebaseio.com^
 ||truewebmedia.com^
+||tt.spystealth.com^
 ||ttjj.ga^
 ||ttjj.ml^
 ||ttjj.tk^
 ||ttspy.com^
 ||ttspy.net^
 ||ttspy.top^
+||tun-cos-1258344701.file.myqcloud.com^
 ||ua.evaspy.com^
 ||ub.evaspy.com^
 ||uc.evaspy.com^

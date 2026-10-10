@@ -2,7 +2,7 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-08 18:50 UTC
+# Last modified: 2026-10-10 04:28 UTC
 # Entries: 3163
 #
 # Built from these sources (see their licenses):
@@ -15,6 +15,7 @@
 #   - HaGeZi Native Tracker: Oppo/Realme: https://github.com/hagezi/dns-blocklists
 #   - HaGeZi Native Tracker: Vivo: https://github.com/hagezi/dns-blocklists
 #   - HaGeZi Native Tracker: TikTok: https://github.com/hagezi/dns-blocklists
+#   - AdGuard Tracking Protection: mobile allowlist: https://github.com/AdguardTeam/AdguardFilters
 
 0.0.0.0 0001-metrics1-data-hicloud-com.geac.dbankedge.cn
 0.0.0.0 0001-metrics1-drcn-dt-dbankcloud-cn.geac.dbankedge.cn
@@ -656,6 +657,7 @@
 0.0.0.0 child.sec.miui.com
 0.0.0.0 chong.sec.miui.com
 0.0.0.0 cirrus-full-snapshots-track-csv-v1-0-na-prod.s3.amazonaws.com
+0.0.0.0 clarity.ms
 0.0.0.0 classify-app-eu.allawnos.com
 0.0.0.0 classify-app-in.allawnos.com
 0.0.0.0 classify-app-sg.allawnos.com
@@ -795,6 +797,7 @@
 0.0.0.0 cname-in-ctdbonrt-stsdk.vivoglobal.com
 0.0.0.0 cname-sin01-stsdk09.vivoglobal.com
 0.0.0.0 cnlogs.umengcloud.com
+0.0.0.0 co-album-api.vivoglobal.com
 0.0.0.0 co-cota.vivoglobal.com
 0.0.0.0 co-domaincfg.vivoglobal.com
 0.0.0.0 co-onrt-stsdk.vivoglobal.com
@@ -1787,7 +1790,6 @@
 0.0.0.0 mcs-i18n.tiktok.com
 0.0.0.0 mcs-ie.tiktokw.eu
 0.0.0.0 mcs-ie2.tiktokw.eu
-0.0.0.0 mcs-ie2.tiktokw.eu.dvaitas.lt
 0.0.0.0 mcs-normal-sg.capcutapi.com
 0.0.0.0 mcs-tiktok.byteoversea.net
 0.0.0.0 mcs-ttp2.tiktokv.us
@@ -2004,7 +2006,6 @@
 0.0.0.0 mon-csj-maliva-ios.byteoversea.com
 0.0.0.0 mon-hl.snssdk.com
 0.0.0.0 mon-i18n.tiktokv.com
-0.0.0.0 mon-i18n.tiktokv.com.dvaitas.lt
 0.0.0.0 mon-phx.tiktokv.com
 0.0.0.0 mon-ru.tiktokv.com
 0.0.0.0 mon-sg.capcutapi.com

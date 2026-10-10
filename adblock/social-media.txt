@@ -3,12 +3,13 @@
 ! Description: Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-08 20:50 UTC
-! Entries: 1391
+! Last modified: 2026-10-10 04:25 UTC
+! Entries: 1413
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Social Networks (WhatsApp kept working): https://github.com/hagezi/dns-blocklists
 !   - StevenBlack Social extension (WhatsApp kept working): https://github.com/StevenBlack/hosts
+!   - AdGuard Home Blocked Services: social networks (WhatsApp media hosts kept working): https://github.com/AdguardTeam/HostlistsRegistry
 
 ||2ch.org^
 ||4cdn.org^
@@ -62,6 +63,7 @@
 ||buyingfacebooklikes.com^
 ||bytecdn.cn^
 ||bytedance.com^
+||bytedance.map.fastly.net^
 ||bytedapm.com^
 ||byteglb.com^
 ||bytegoofy.com^
@@ -307,6 +309,7 @@
 ||facebook-web-clients.appspot.com^
 ||facebook.at^
 ||facebook.be^
+||facebook.br^
 ||facebook.ca^
 ||facebook.cc^
 ||facebook.co^
@@ -515,6 +518,7 @@
 ||fbbmarket.com^
 ||fbboostyourbusiness.com^
 ||fbcallback.wechat.com^
+||fbcdn-a.akamaihd.net^
 ||fbcdn-creative-a.akamaihd.net^
 ||fbcdn-photos-a.akamaihd.net^
 ||fbcdn-photos-e-a.akamaihd.net^
@@ -639,7 +643,6 @@
 ||gacebook.com^
 ||gameroom.com^
 ||gcld-line.com^
-||gecko-va.tiktokv.com.edgesuite.net^
 ||gfacecbook.com^
 ||glasgow.social^
 ||groups.com^
@@ -678,6 +681,7 @@
 ||igsonar.com^
 ||igtv.com^
 ||imgsmail.ru^
+||imgur.com^
 ||impala-media-production.s3.amazonaws.com^
 ||imstagram.com^
 ||imtagram.com^
@@ -839,6 +843,7 @@
 ||linkedin.com.br^
 ||linkedin.com.cdn.cloudflare.net^
 ||linkedin.nl^
+||linkedin.qtlcdn.com^
 ||live-video.net^
 ||livellosegreto.it^
 ||liverail.com^
@@ -846,7 +851,6 @@
 ||lnkd.in^
 ||lnstagram-help.com^
 ||log-va.tiktokv.com.edgekey.net^
-||log.tiktokv.com.edgesuite.net^
 ||login-account.net^
 ||looky.com^
 ||lor.sh^
@@ -899,8 +903,6 @@
 ||mirtesen.ru^
 ||misskey.io^
 ||mobilefacebook.com^
-||mon-va.tiktokv.com.edgesuite.net^
-||mon.tiktokv.com.edgesuite.net^
 ||moneywithfacebook.com^
 ||mstdn.ca^
 ||mstdn.jp^
@@ -1098,7 +1100,9 @@
 ||redditmedia.com^
 ||redditstatic.com^
 ||redkix.com^
+||rocksdb.com^
 ||rocksdb.net^
+||rocksdb.org^
 ||rollenspiel.social^
 ||rossgram.ru^
 ||ruby.social^
@@ -1133,6 +1137,7 @@
 ||socel.net^
 ||social.anoxinon.de^
 ||social.cologne^
+||social.dev-wiki.de^
 ||social.linux.pizza^
 ||social.politicaconciencia.org^
 ||social.vivaldi.net^
@@ -1167,8 +1172,10 @@
 ||tiktok.com^
 ||tiktok.in^
 ||tiktok.org^
+||tiktok.tps.dv.tech^
 ||tiktokcdn-com.akamaized.net^
 ||tiktokcdn-eu.com^
+||tiktokcdn-eu.com.ttdns3.com^
 ||tiktokcdn-eu.net^
 ||tiktokcdn-in.com^
 ||tiktokcdn-row.com^
@@ -1200,8 +1207,11 @@
 ||tiktokv.com.c.bytefcdn-oversea.com^
 ||tiktokv.com.c.worldfcdn.com^
 ||tiktokv.com.c.worldfcdn2.com^
+||tiktokv.com.edgesuite.net^
 ||tiktokv.eu^
+||tiktokv.eu.edgesuite.net^
 ||tiktokv.us^
+||tiktokv.us.edgesuite.net^
 ||tiktokw.eu^
 ||tiktokw.us^
 ||tinder.com^
@@ -1263,6 +1273,7 @@
 ||video.fphx1-1.fbcdn.net^
 ||viewpointsfromfacebook.com^
 ||vine.co^
+||vk-cdn.me^
 ||vk-cdn.net^
 ||vk-portal.net^
 ||vk.cc^
@@ -1272,6 +1283,7 @@
 ||vk.link^
 ||vk.me^
 ||vk.ru^
+||vkcache.com^
 ||vkgo.app^
 ||vklive.app^
 ||vkmessenger.app^
@@ -1285,8 +1297,15 @@
 ||vkuservideo.net^
 ||vthumb.ak.fbcdn.net^
 ||watchanimeattheoffice.com^
+||wbimg.cn^
+||wbimg.com^
+||wcdn.cn^
 ||weareher.com^
 ||web-instagram.net^
+||weibo.cn^
+||weibo.com^
+||weibo.com.cn^
+||weibocdn.com^
 ||whyfacebook.com^
 ||wibes.ru^
 ||wien.rocks^
@@ -1303,7 +1322,11 @@
 ||wwwmfacebook.com^
 ||wxw.moe^
 ||x.com^
-||xlog.tiktokv.com.edgesuite.net^
+||xhscdn.com^
+||xhscdn.net^
+||xiaohongshu.com^
+||xiaohongshu.com.my^
+||xiaohongshu.net^
 ||xx-fbcdn-ecmp-02-atl1.fbcdn.net^
 ||xx-fbcdn-ecmp-02-ord1.fbcdn.net^
 ||xx-fbcdn-ecmp-04-sjc1.fbcdn.net^

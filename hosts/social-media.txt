@@ -2,12 +2,13 @@
 # Description: Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-08 20:50 UTC
-# Entries: 4422
+# Last modified: 2026-10-10 04:25 UTC
+# Entries: 4450
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Social Networks (WhatsApp kept working): https://github.com/hagezi/dns-blocklists
 #   - StevenBlack Social extension (WhatsApp kept working): https://github.com/StevenBlack/hosts
+#   - AdGuard Home Blocked Services: social networks (WhatsApp media hosts kept working): https://github.com/AdguardTeam/HostlistsRegistry
 
 0.0.0.0 0-act.channel.facebook.com
 0.0.0.0 0-edge-chat.facebook.com
@@ -594,6 +595,7 @@
 0.0.0.0 buyingfacebooklikes.com
 0.0.0.0 bytecdn.cn
 0.0.0.0 bytedance.com
+0.0.0.0 bytedance.map.fastly.net
 0.0.0.0 bytedapm.com
 0.0.0.0 byteglb.com
 0.0.0.0 bytegoofy.com
@@ -1314,6 +1316,7 @@
 0.0.0.0 facebook-web-clients.appspot.com
 0.0.0.0 facebook.at
 0.0.0.0 facebook.be
+0.0.0.0 facebook.br
 0.0.0.0 facebook.ca
 0.0.0.0 facebook.cc
 0.0.0.0 facebook.co
@@ -1532,6 +1535,7 @@
 0.0.0.0 fbbmarket.com
 0.0.0.0 fbboostyourbusiness.com
 0.0.0.0 fbcallback.wechat.com
+0.0.0.0 fbcdn-a.akamaihd.net
 0.0.0.0 fbcdn-creative-a.akamaihd.net
 0.0.0.0 fbcdn-photos-a.akamaihd.net
 0.0.0.0 fbcdn-photos-e-a.akamaihd.net
@@ -1837,6 +1841,7 @@
 0.0.0.0 images.tweet.twitter.com
 0.0.0.0 imagine.linkedin.com
 0.0.0.0 imgsmail.ru
+0.0.0.0 imgur.com
 0.0.0.0 imp2.ads.linkedin.com
 0.0.0.0 impala-media-production.s3.amazonaws.com
 0.0.0.0 imstagram.com
@@ -2076,6 +2081,7 @@
 0.0.0.0 linkedin.com.br
 0.0.0.0 linkedin.com.cdn.cloudflare.net
 0.0.0.0 linkedin.nl
+0.0.0.0 linkedin.qtlcdn.com
 0.0.0.0 linkedinforgood.linkedin.com
 0.0.0.0 linux.myspace.com
 0.0.0.0 lists.facebook.com
@@ -2753,7 +2759,9 @@
 0.0.0.0 ro-ro.facebook.com
 0.0.0.0 ro.linkedin.com
 0.0.0.0 ro.pinterest.com
+0.0.0.0 rocksdb.com
 0.0.0.0 rocksdb.net
+0.0.0.0 rocksdb.org
 0.0.0.0 rollenspiel.social
 0.0.0.0 rossgram.ru
 0.0.0.0 rs.linkedin.com
@@ -3439,6 +3447,7 @@
 0.0.0.0 socel.net
 0.0.0.0 social.anoxinon.de
 0.0.0.0 social.cologne
+0.0.0.0 social.dev-wiki.de
 0.0.0.0 social.linux.pizza
 0.0.0.0 social.politicaconciencia.org
 0.0.0.0 social.vivaldi.net
@@ -3502,6 +3511,7 @@
 0.0.0.0 ssl.facebook.com
 0.0.0.0 ssl.reddit.com
 0.0.0.0 ssl2.twitter.com.edgekey.net
+0.0.0.0 st.mycdn.me
 0.0.0.0 staff.tumblr.com
 0.0.0.0 staging-us-east1-aws.api.snapchat.com
 0.0.0.0 staging.joinclubhouse.com
@@ -3604,8 +3614,10 @@
 0.0.0.0 tiktok.com
 0.0.0.0 tiktok.in
 0.0.0.0 tiktok.org
+0.0.0.0 tiktok.tps.dv.tech
 0.0.0.0 tiktokcdn-com.akamaized.net
 0.0.0.0 tiktokcdn-eu.com
+0.0.0.0 tiktokcdn-eu.com.ttdns3.com
 0.0.0.0 tiktokcdn-eu.net
 0.0.0.0 tiktokcdn-in.com
 0.0.0.0 tiktokcdn-row.com
@@ -3638,8 +3650,11 @@
 0.0.0.0 tiktokv.com.c.bytefcdn-oversea.com
 0.0.0.0 tiktokv.com.c.worldfcdn.com
 0.0.0.0 tiktokv.com.c.worldfcdn2.com
+0.0.0.0 tiktokv.com.edgesuite.net
 0.0.0.0 tiktokv.eu
+0.0.0.0 tiktokv.eu.edgesuite.net
 0.0.0.0 tiktokv.us
+0.0.0.0 tiktokv.us.edgesuite.net
 0.0.0.0 tiktokw.eu
 0.0.0.0 tiktokw.us
 0.0.0.0 timbrasil.m.facebook.com
@@ -3868,6 +3883,7 @@
 0.0.0.0 viewpoints.fb.com
 0.0.0.0 viewpointsfromfacebook.com
 0.0.0.0 vine.co
+0.0.0.0 vk-cdn.me
 0.0.0.0 vk-cdn.net
 0.0.0.0 vk-portal.net
 0.0.0.0 vk.cc
@@ -3877,6 +3893,7 @@
 0.0.0.0 vk.link
 0.0.0.0 vk.me
 0.0.0.0 vk.ru
+0.0.0.0 vkcache.com
 0.0.0.0 vkgo.app
 0.0.0.0 vklive.app
 0.0.0.0 vkmessenger.app
@@ -3918,6 +3935,9 @@
 0.0.0.0 w3-reporting.reddit.com
 0.0.0.0 w3-reporting.reddit.com.cdn.cloudflare.net
 0.0.0.0 watchanimeattheoffice.com
+0.0.0.0 wbimg.cn
+0.0.0.0 wbimg.com
+0.0.0.0 wcdn.cn
 0.0.0.0 weareher.com
 0.0.0.0 web-cdn.bsky.app
 0.0.0.0 web-chat-e2ee.facebook.com
@@ -3932,6 +3952,10 @@
 0.0.0.0 webcast.tiktok.com
 0.0.0.0 webcast16-normal-c-useast2a.tiktokv.com
 0.0.0.0 webdav.facebook.com
+0.0.0.0 weibo.cn
+0.0.0.0 weibo.com
+0.0.0.0 weibo.com.cn
+0.0.0.0 weibocdn.com
 0.0.0.0 welcome.joinclubhouse.com
 0.0.0.0 wh.reddit.com
 0.0.0.0 white.ish.instagram.com
@@ -4053,6 +4077,11 @@
 0.0.0.0 x.com
 0.0.0.0 x.facebook.com
 0.0.0.0 x.myspacecdn.com
+0.0.0.0 xhscdn.com
+0.0.0.0 xhscdn.net
+0.0.0.0 xiaohongshu.com
+0.0.0.0 xiaohongshu.com.my
+0.0.0.0 xiaohongshu.net
 0.0.0.0 xlog-va.byteoversea.com
 0.0.0.0 xlog-va.tiktokv.com
 0.0.0.0 xlog.tiktokv.com

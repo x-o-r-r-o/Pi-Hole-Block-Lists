@@ -1,9 +1,9 @@
 # Title: Smart TV & Streaming Devices
-# Description: Tracking and ads on smart TVs and streaming sticks (Samsung, LG webOS, Roku, Amazon Fire).
+# Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-08 18:50 UTC
-# Entries: 1349
+# Last modified: 2026-10-10 04:25 UTC
+# Entries: 1370
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -11,6 +11,8 @@
 #   - HaGeZi Native Tracker: Roku: https://github.com/hagezi/dns-blocklists
 #   - HaGeZi Native Tracker: Amazon: https://github.com/hagezi/dns-blocklists
 #   - HaGeZi Native Tracker: Samsung: https://github.com/hagezi/dns-blocklists
+#   - Perflyst and Dandelion Sprout's Smart-TV Blocklist: https://github.com/Perflyst/PiHoleBlocklist
+#   - Dandelion Sprout's Game Console Adblock List: https://github.com/DandelionSprout/adfilt
 
 0077777700140002.myhomescreen.tv
 2mdn.net
@@ -135,7 +137,9 @@ adeng-identity-prod3.bdp.roku.com
 adeng-looker-bi-oneview-prod-1001.bdp.roku.com
 adeng-looker-dev-1001.bdp.roku.com
 adeng-looker-dev-1003.bdp.roku.com
+adgrx.com
 adi-airflow.bdp.roku.com
+adproxy.ndmdhs.com
 ads-aka-us-east-1.delivery.roku.com
 ads-aka-us-west-2.delivery.roku.com
 ads-cf-us-east-1.delivery.roku.com
@@ -155,6 +159,7 @@ ads.lgtvcommon.com
 ads.roku.com
 ads.rokuapi.net
 ads.samsungads.com
+ads.spotx.tv
 ads.staging.roku.com
 adserver.pubtech.amazon.dev
 adservices.roku.com
@@ -276,6 +281,7 @@ at-ad-lgsmartad-com.aws-prd.net
 at-info-lgsmartad-com.aws-prd.net
 at-rdx2-lgtvsdp-com.aws-prd.net
 at-us-east.amazon-adsystem.com
+at.atwola.com
 at.nextlgsdp.com
 atfe.amazon-adsystem.com
 atue.amazon-adsystem.com
@@ -459,6 +465,7 @@ device-metrics-us-2.amazon.com
 device-metrics-us-ud.amazon.com
 device-metrics-us.amazon.com
 devicelog.samsungcloudsolution.net
+devicemessaging.us-east-1.amazon.com
 diagmon-policy.samsungdm.com
 diagmon-serviceapi.samsungdm.com
 display.ravm.tv
@@ -620,6 +627,7 @@ hu-ad-lgsmartad-com.aws-prd.net
 hu.nextlgsdp.com
 i-stream.pl
 ibis.lgappstv.com
+ibs.lgappstv.com
 ichnaea.netflix.com
 id-ad-lgsmartad-com.aws-prd.net
 id.nextlgsdp.com
@@ -705,6 +713,8 @@ lgad.cjpowercast.com.edgesuite.net
 lgads.adsmeasurement.com
 lgads.tv
 lgsmartad.com
+lgtvcommon.com
+lgtvsdp.com
 li-ad-lgsmartad-com.aws-prd.net
 li.nextlgsdp.com
 liberty.logs.roku.com
@@ -721,6 +731,7 @@ logs.dev.sr.roku.com
 logs.qa.ap.int.roku.com
 logs.roku.com
 logs.sr.roku.com
+logs1409.xiti.com
 lp.americas.business.samsung.com
 lp.apac.business.samsung.com
 lp.mkt-email.samsungsds.com
@@ -764,6 +775,7 @@ md-ad-lgsmartad-com.aws-prd.net
 md.nextlgsdp.com
 me-ad-lgsmartad-com.aws-prd.net
 me.nextlgsdp.com
+mercury.dl.playstation.net
 metric.account-samsung.com
 metrics.eu-south-2.iris.apx.amazon.dev
 metrics.eu-west-1.iris.apx.amazon.dev
@@ -809,6 +821,7 @@ mx-ad-lgsmartad-com.aws-prd.net
 mx.nextlgsdp.com
 my-ad-lgsmartad-com.aws-prd.net
 my.nextlgsdp.com
+myhomescreen.tv
 mz-ad-lgsmartad-com.aws-prd.net
 mz.nextlgsdp.com
 na-ad-lgsmartad-com.aws-prd.net
@@ -838,7 +851,10 @@ noticecdn.samsungcloudsolution.com
 noticefile.samsungcloudsolution.com
 np.nextlgsdp.com
 nr.nextlgsdp.com
+nsx-e.np.dl.playstation.net
+nsx.np.dl.playstation.net
 nu.nextlgsdp.com
+nw-umwatson.events.data.microsoft.com
 nz-ad-lgsmartad-com.aws-prd.net
 nz.nextlgsdp.com
 oempprd.samsungcloudsolution.com
@@ -905,6 +921,7 @@ py.nextlgsdp.com
 qa-ad-lgsmartad-com.aws-prd.net
 qa.nextlgsdp.com
 qmds-dev-samsung.com
+rad.msn.com
 ravm-staging.data.roku.com
 ravm.tv
 rcm-eu.amazon-adsystem.com
@@ -1068,6 +1085,8 @@ se-info-lgsmartad-com.aws-prd.net
 se-rdx2-lgtvsdp-com.aws-prd.net
 se.nextlgsdp.com
 seao.business.samsung.com
+secure-eu.imrworldwide.com
+settings.crashlytics.com
 sg-ad-lgsmartad-com.aws-prd.net
 sg.nextlgsdp.com
 sh.nextlgsdp.com
@@ -1153,6 +1172,8 @@ target-us.samsung.com
 targeted-config-test.samsungacr.com
 tc.nextlgsdp.com
 td.nextlgsdp.com
+telemetry-cii.api.playstation.com
+telemetry-console.api.playstation.com
 test.samsungrm.net
 tf.nextlgsdp.com
 tg-ad-lgsmartad-com.aws-prd.net
@@ -1185,6 +1206,7 @@ tracking.europe.business.samsung.com
 tracking.intl.miui.com
 tracking.mkt-email.samsungsds.com
 tracking.smartbusiness.samsung.com
+tracksrv.zdf.de
 trvdp.com
 ts-gamma.amazon-adsystem.com
 ts.amazon-adsystem.com
@@ -1312,6 +1334,7 @@ vg.nextlgsdp.com
 vi.nextlgsdp.com
 video-ads.a2z.com
 videoads.lgtvcommon.com
+vindicosuite.com
 vn-ad-lgsmartad-com.aws-prd.net
 vn.nextlgsdp.com
 vq-eu-west-1.amazon-adsystem.com

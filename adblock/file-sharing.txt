@@ -3,11 +3,12 @@
 ! Description: File-hosting and file-sharing sites (including Dropbox and many free hosts), common sources of malware and pirated files.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-09 21:56 UTC
-! Entries: 940
+! Last modified: 2026-10-10 04:24 UTC
+! Entries: 961
 !
 ! Built from these sources (see their licenses):
 !   - Université Toulouse Capitole: file hosting: https://dsi.ut-capitole.fr/blacklists/
+!   - AdGuard Home Blocked Services: dropbox, box: https://github.com/AdguardTeam/HostlistsRegistry
 
 ||1000go.fr^
 ||11mbit.de^
@@ -34,6 +35,7 @@
 ||9giga.sfr.fr^
 ||abload.de^
 ||abrutis-videos.com^
+||addtodropbox.com^
 ||adrive.com^
 ||ahstatic.com^
 ||airset.com^
@@ -50,6 +52,7 @@
 ||anonfile.com^
 ||anyhub.net^
 ||anzwers.org^
+||app.hellosign.com^
 ||arcadeupload.com^
 ||arcadya.net^
 ||archivosgrandes.com^
@@ -88,6 +91,8 @@
 ||boomycloud.com^
 ||box.com^
 ||box.net^
+||boxcdn.net^
+||boxcloud.com^
 ||briefcase.yahoo.com^
 ||browsl.com^
 ||bubbleshare.com^
@@ -120,9 +125,11 @@
 ||dailyuploads.net^
 ||daofile.com^
 ||dardarkom.com^
+||dash.ai^
 ||datafilehost.com^
 ||datanodes.to^
 ||datapickup.com^
+||db.tt^
 ||ddl-share.org^
 ||deaddrops.com^
 ||debrid-link.fr^
@@ -141,6 +148,7 @@
 ||dl-b.free.fr^
 ||dl-more.eu^
 ||dl.free.fr^
+||docsend.com^
 ||dominiord.com^
 ||douploads.net^
 ||download.anim-area11.net^
@@ -153,8 +161,21 @@
 ||driveway.com^
 ||drop.io^
 ||dropapk.to^
+||dropbox-dns.com^
 ||dropbox.com^
+||dropbox.tech^
+||dropbox.zendesk.com^
+||dropboxapi.com^
+||dropboxbusiness.com^
+||dropboxcaptcha.com^
+||dropboxforum.com^
+||dropboxforums.com^
+||dropboxinsiders.com^
+||dropboxlegal.com^
+||dropboxmail.com^
+||dropboxpartners.com^
 ||dropboxstatic.com^
+||dropboxteam.com^
 ||dropboxusercontent.com^
 ||dropfiles.net^
 ||dropload.com^
@@ -319,6 +340,7 @@
 ||geekimages.com^
 ||geralink.in^
 ||get-mu.com^
+||getdropbox.com^
 ||getfile.biz^
 ||getkeepsafe.com^
 ||gigabyteupload.com^

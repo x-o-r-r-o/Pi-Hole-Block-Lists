@@ -2,15 +2,18 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 22:41 UTC
-# Entries: 12797
+# Last modified: 2026-10-10 04:24 UTC
+# Entries: 13184
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
 #   - Dating app servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/dating.json
+#   - ShadowWhisperer's Dating List: https://github.com/ShadowWhisperer/BlockLists
+#   - AdGuard Home Blocked Services: tinder, grindr, plenty_of_fish: https://github.com/AdguardTeam/HostlistsRegistry
 
 0.0.0.0 007agent-russian-women.net
 0.0.0.0 01ecde46708b840a1320342727d2ab30.pof.com
+0.0.0.0 06i0c3.top
 0.0.0.0 1-800-flirt.com
 0.0.0.0 10-best-dating-apps.com
 0.0.0.0 10-best-dating-sites-au.com
@@ -20,6 +23,7 @@
 0.0.0.0 100-best-dating-sites.com
 0.0.0.0 100-best-single-sites.com
 0.0.0.0 100-top-dating-sites.com
+0.0.0.0 1000-dating-sites.com
 0.0.0.0 1000amigos.com
 0.0.0.0 1000sitidating.com
 0.0.0.0 1001-rencontres.com
@@ -165,6 +169,7 @@
 0.0.0.0 265dates.com
 0.0.0.0 2amor.nl
 0.0.0.0 2backpage.com
+0.0.0.0 2be2.ch
 0.0.0.0 2become1.co.il
 0.0.0.0 2darlings-agency.com
 0.0.0.0 2day.nl
@@ -231,6 +236,7 @@
 0.0.0.0 40singles.net
 0.0.0.0 40smeet.co.nz
 0.0.0.0 40smeet.com.au
+0.0.0.0 411-singles.com
 0.0.0.0 41205.com
 0.0.0.0 416dates.com
 0.0.0.0 41stdating.com
@@ -322,6 +328,7 @@
 0.0.0.0 7secondsdating.com
 0.0.0.0 808singles.com
 0.0.0.0 830pmdating.com
+0.0.0.0 8at8.com
 0.0.0.0 8minutedating.com
 0.0.0.0 8moneydates.com
 0.0.0.0 8p.com.br
@@ -362,6 +369,7 @@
 0.0.0.0 abledating.net
 0.0.0.0 abledatingreview.com
 0.0.0.0 abledlove.com
+0.0.0.0 ablesingles.co.uk
 0.0.0.0 ablink.email.weareher.com
 0.0.0.0 ablink.messaging.zoosk.com
 0.0.0.0 ablink.security.zoosk.com
@@ -433,6 +441,7 @@
 0.0.0.0 adbalt-dating.com
 0.0.0.0 adbuilder.grindr.com
 0.0.0.0 addatingservices.com.au
+0.0.0.0 addictsocial.com
 0.0.0.0 addisondating.com
 0.0.0.0 addisonsingles.com
 0.0.0.0 addissingles.com
@@ -505,6 +514,7 @@
 0.0.0.0 adultcasualdating.com
 0.0.0.0 adultcontactsonline.com
 0.0.0.0 adultcougardating.com
+0.0.0.0 adultdatelink.com
 0.0.0.0 adultdates.net
 0.0.0.0 adultdating-co-uk.api-news.ru
 0.0.0.0 adultdating-personals.com
@@ -926,6 +936,7 @@
 0.0.0.0 alopeciadating.com
 0.0.0.0 alovelyasian.com
 0.0.0.0 alovelynite.co.uk
+0.0.0.0 alovoa.com
 0.0.0.0 alpenflirts.com
 0.0.0.0 alpha.meetme.com
 0.0.0.0 alpha.trulymadly.com
@@ -956,6 +967,8 @@
 0.0.0.0 amarillomatchmaking.com
 0.0.0.0 amarru.com
 0.0.0.0 amateur-de-rencontre.com
+0.0.0.0 amateurmatch.com
+0.0.0.0 amaxhosa.co.za
 0.0.0.0 amazingasianz.com
 0.0.0.0 amazingdating.org
 0.0.0.0 amb.badoo.com
@@ -987,7 +1000,10 @@
 0.0.0.0 amesoeur.org
 0.0.0.0 amidating.com
 0.0.0.0 amiez.org
+0.0.0.0 amigos.com
 0.0.0.0 amigos.nosotras.com
+0.0.0.0 amigosadventistas.com.br
+0.0.0.0 amigosamores.com
 0.0.0.0 amigosargentina.com.ar
 0.0.0.0 amigosfree.com
 0.0.0.0 amigosingleses.com
@@ -995,6 +1011,7 @@
 0.0.0.0 amigosvalencia.com
 0.0.0.0 amigosyencuentros.com
 0.0.0.0 amiouplus.com
+0.0.0.0 amirru.com
 0.0.0.0 amishdating.com
 0.0.0.0 amishdatingservice.com
 0.0.0.0 amishsingleschat.com
@@ -1009,6 +1026,7 @@
 0.0.0.0 amordating.org
 0.0.0.0 amore-incontri.sexy.easyincontro.com
 0.0.0.0 amoreconnectingsingles.com
+0.0.0.0 amoredate.com
 0.0.0.0 amoredates.com
 0.0.0.0 amoreflirt.com
 0.0.0.0 amoreflirt.net
@@ -1022,11 +1040,13 @@
 0.0.0.0 amour-libertin.net
 0.0.0.0 amour-mature.com
 0.0.0.0 amour-vaucluse.fr
+0.0.0.0 amour.dk
 0.0.0.0 amourdating.com
 0.0.0.0 amourderussie.com
 0.0.0.0 amoureux.com
 0.0.0.0 amoureux.fr
 0.0.0.0 amourfactory.com
+0.0.0.0 amourfeel.com
 0.0.0.0 amourheart.com
 0.0.0.0 amourland.com
 0.0.0.0 amourmaghreb.com
@@ -1042,6 +1062,7 @@
 0.0.0.0 amp.se.ourtime.com
 0.0.0.0 amp.uk.match.com
 0.0.0.0 amputeeangels.com
+0.0.0.0 amputeedate.co.uk
 0.0.0.0 amputeedating.com.au
 0.0.0.0 amputeedatingclub.com
 0.0.0.0 amputeedatingservice.com
@@ -1232,6 +1253,7 @@
 0.0.0.0 arabicsinglesmeet.com
 0.0.0.0 arabonlinedating.com
 0.0.0.0 arabs4dating.com
+0.0.0.0 arabsingles.biz
 0.0.0.0 arabsingles.com.au
 0.0.0.0 arabsinglesdate.com
 0.0.0.0 arabsinglesmatch.com
@@ -1268,6 +1290,7 @@
 0.0.0.0 arlequin-rencontre.com
 0.0.0.0 arlingtonmatchmaker.com
 0.0.0.0 arlingtonmatchmakers.com
+0.0.0.0 armadillo.co.za
 0.0.0.0 armeniansingles.com.au
 0.0.0.0 armenianspeeddating.com
 0.0.0.0 armonies-rencontres.com
@@ -1291,7 +1314,9 @@
 0.0.0.0 ashleymadison.com
 0.0.0.0 asia.grindr.com
 0.0.0.0 asiabliss.com
+0.0.0.0 asiafind.com
 0.0.0.0 asiaflame.com
+0.0.0.0 asiafriendfinder.com
 0.0.0.0 asialove.kulichki.com
 0.0.0.0 asiame.com
 0.0.0.0 asian-lover.net
@@ -1308,9 +1333,13 @@
 0.0.0.0 asiandatingplanet.com
 0.0.0.0 asianetclub.com
 0.0.0.0 asianfaces.co.uk
+0.0.0.0 asianfriendfinder.com
+0.0.0.0 asiangirls4u.com
+0.0.0.0 asianhearts.com
 0.0.0.0 asiankraze.com
 0.0.0.0 asianlesbiandating.com.au
 0.0.0.0 asianload.com
+0.0.0.0 asianlovesearch.com
 0.0.0.0 asianmatch.com
 0.0.0.0 asianmatching.com
 0.0.0.0 asianmatchmate.com
@@ -1380,6 +1409,7 @@
 0.0.0.0 atreveteahora.terra.latino.match.com
 0.0.0.0 atreveteahora.univision.cl.match.com
 0.0.0.0 atreveteahora.univision.co.match.com
+0.0.0.0 attentionsingles.com
 0.0.0.0 attisemoi.com
 0.0.0.0 attractiondating.co.uk
 0.0.0.0 attractiondiary.com
@@ -1448,6 +1478,7 @@
 0.0.0.0 b9.gotinder.com
 0.0.0.0 babes2date.com
 0.0.0.0 babyboomerpassions.com
+0.0.0.0 babyboomerpeoplemeet.biz
 0.0.0.0 babyshambles.org
 0.0.0.0 bachelorism.org
 0.0.0.0 bachpan.com
@@ -1459,6 +1490,7 @@
 0.0.0.0 badoocdn.com
 0.0.0.0 badootech.badoo.com
 0.0.0.0 baerendienst.de
+0.0.0.0 bahamasdatingonline.com
 0.0.0.0 baihe.com
 0.0.0.0 baise-directe.com
 0.0.0.0 bakeat350.com
@@ -1481,6 +1513,7 @@
 0.0.0.0 baptistpeoplemeet.com
 0.0.0.0 baptistpm.com
 0.0.0.0 baredating.app
+0.0.0.0 baseballovers.com
 0.0.0.0 basherte.com
 0.0.0.0 basi-musicali.com
 0.0.0.0 batch.mabillapi.match.com
@@ -1490,7 +1523,9 @@
 0.0.0.0 bayareadate.net
 0.0.0.0 bazardusexe.com
 0.0.0.0 bazoocam.org
+0.0.0.0 bbdiva.com
 0.0.0.0 bbpeoplejoin.com
+0.0.0.0 bbpeoplemeet.biz
 0.0.0.0 bbpeoplemeet.com
 0.0.0.0 bbpeoplemeet.net
 0.0.0.0 bbw-dates.com
@@ -1518,6 +1553,7 @@
 0.0.0.0 bbw-singlesmeet.com
 0.0.0.0 bbw.dating
 0.0.0.0 bbw.mingle.com
+0.0.0.0 bbw.net
 0.0.0.0 bbw.singles
 0.0.0.0 bbw.uppdating.com
 0.0.0.0 bbwadmire.com
@@ -1772,7 +1808,9 @@
 0.0.0.0 beautifulpeople.com
 0.0.0.0 beautyabroad.com
 0.0.0.0 beavertonsingles.com
+0.0.0.0 beboo.ru
 0.0.0.0 bebopx.ifrance.com
+0.0.0.0 becoquin.com
 0.0.0.0 bedrockgaming.com
 0.0.0.0 bee-dev.cloud.bumble.com
 0.0.0.0 bee-stage.cloud.bumble.com
@@ -1799,6 +1837,7 @@
 0.0.0.0 belles-rondes.com
 0.0.0.0 bellevuesingles.com
 0.0.0.0 bellezzarussa.com
+0.0.0.0 benaughty.com
 0.0.0.0 bend-me-over.com
 0.0.0.0 bengalimatrimony.com
 0.0.0.0 bentonvillematchmakers.com
@@ -1833,6 +1872,7 @@
 0.0.0.0 besthandever.com
 0.0.0.0 bestofmeetic.fr
 0.0.0.0 bestofrencontre.fr
+0.0.0.0 bestprice.co.za
 0.0.0.0 bestrussianwoman.com
 0.0.0.0 bestsingle.com
 0.0.0.0 bestsingle.it
@@ -1857,6 +1897,7 @@
 0.0.0.0 bewareofloverboys.nl
 0.0.0.0 beyondages.com
 0.0.0.0 bez-kompleksov.com
+0.0.0.0 bezzabran.com
 0.0.0.0 bezzobowiazan.com
 0.0.0.0 bharatmatrimony.com
 0.0.0.0 bhozapper.com
@@ -1865,12 +1906,14 @@
 0.0.0.0 bibbwdating.com
 0.0.0.0 biblepassions.com
 0.0.0.0 bicupid.co
+0.0.0.0 bicupid.com
 0.0.0.0 bicupid.uk
 0.0.0.0 bidating.lovez.it
 0.0.0.0 bigadda.com
 0.0.0.0 bigboobdating.com.au
 0.0.0.0 bigbootydating.com.au
 0.0.0.0 bigbreastdating.com.au
+0.0.0.0 bigchurch.com
 0.0.0.0 bigdates.ai
 0.0.0.0 bigdates.webweaver.app
 0.0.0.0 biggerbear.com
@@ -2248,6 +2291,7 @@
 0.0.0.0 blacklabeldating.shagg.me
 0.0.0.0 blacklabeldatinggroup.com.ph
 0.0.0.0 blacklatinodating.com
+0.0.0.0 blacklesbianclub.com
 0.0.0.0 blacklesbiandating.org
 0.0.0.0 blacklesbiansingles.co.uk
 0.0.0.0 blacklistdating.com
@@ -2539,6 +2583,7 @@
 0.0.0.0 blue-memoly.net
 0.0.0.0 bluebirdsdating.com
 0.0.0.0 blued.com
+0.0.0.0 blueswingers.com
 0.0.0.0 bma.bumble.com
 0.0.0.0 bmidate.com
 0.0.0.0 bnatcity.byethost5.com
@@ -2605,6 +2650,7 @@
 0.0.0.0 braziliandating.com.au
 0.0.0.0 braziliansingles.com.au
 0.0.0.0 brazink.com.br
+0.0.0.0 bride.ru
 0.0.0.0 bridegirl.com
 0.0.0.0 brides-from.ru
 0.0.0.0 brides.com
@@ -2667,6 +2713,7 @@
 0.0.0.0 c-date.es
 0.0.0.0 c-dating.app
 0.0.0.0 c-dating.at
+0.0.0.0 c-dating.fr
 0.0.0.0 c-ship.jp
 0.0.0.0 c.pof.com
 0.0.0.0 c.ue1az.gotinder.com
@@ -2693,6 +2740,7 @@
 0.0.0.0 cameroun-love.com
 0.0.0.0 cameroun-rencontre.com
 0.0.0.0 campagnes-compagnes.com
+0.0.0.0 campus.co.za
 0.0.0.0 campusdating.app
 0.0.0.0 cams2filles.com
 0.0.0.0 camsympa.com
@@ -2723,6 +2771,7 @@
 0.0.0.0 careers.match.com
 0.0.0.0 caribbeancupid.com
 0.0.0.0 caribbeankisses.com
+0.0.0.0 caribsingles.com
 0.0.0.0 carolinaintroductions.com
 0.0.0.0 carolinecrowther.com
 0.0.0.0 carpassions.com
@@ -2738,15 +2787,21 @@
 0.0.0.0 casual-dating.fr
 0.0.0.0 casual-fling.com
 0.0.0.0 casualclub.com
+0.0.0.0 casualdating-club.de
 0.0.0.0 casualdating.at
 0.0.0.0 casualdating.fr
+0.0.0.0 casualdating.net
+0.0.0.0 casualdating4u.com
 0.0.0.0 casualdating69.at
+0.0.0.0 casualdating69.com
 0.0.0.0 casualdatingclub.at
 0.0.0.0 casualdatingdeluxe.at
 0.0.0.0 casuale-dating24.de
 0.0.0.0 casualflirt.com.au
+0.0.0.0 casualfriendfinder.co.uk
 0.0.0.0 casualkiss.com
 0.0.0.0 casualnaai.com
+0.0.0.0 casualrandki.pl
 0.0.0.0 casualroot.com
 0.0.0.0 casualsexdating.com.au
 0.0.0.0 casualxdates.at
@@ -2763,6 +2818,7 @@
 0.0.0.0 catholicpassions.com
 0.0.0.0 catholicpeoplemeet.com
 0.0.0.0 causes.meetme.com
+0.0.0.0 cazavo.sk
 0.0.0.0 cb.tagged.com
 0.0.0.0 cb2.tagged.com
 0.0.0.0 ccelibat.com
@@ -2795,6 +2851,7 @@
 0.0.0.0 celibat.com
 0.0.0.0 celibataire-lille.com
 0.0.0.0 celibataire-rencontre.net
+0.0.0.0 celibataires.info
 0.0.0.0 celibatairesduweb.com
 0.0.0.0 celibatedating.app
 0.0.0.0 celibatepassions.com
@@ -2912,7 +2969,9 @@
 0.0.0.0 chinasilk.net
 0.0.0.0 chinesedating.app
 0.0.0.0 chinesedating.co.nz
+0.0.0.0 chinesefriendfinder.com
 0.0.0.0 chinesefriendsonline.com
+0.0.0.0 chinesekisses.com
 0.0.0.0 chineselovelinks.com
 0.0.0.0 chinesepeoplemeet.com
 0.0.0.0 chinesepersonals.ca
@@ -2970,6 +3029,7 @@
 0.0.0.0 cinqe.com
 0.0.0.0 circlesdating.app
 0.0.0.0 citasnet.com
+0.0.0.0 citassenioronline.es
 0.0.0.0 citasweb.com
 0.0.0.0 citasweb.net
 0.0.0.0 citerencontre.com
@@ -3004,6 +3064,7 @@
 0.0.0.0 click.jdate.com
 0.0.0.0 click.mamba.ru
 0.0.0.0 click.weareher.com
+0.0.0.0 clickandflirt.com
 0.0.0.0 clicks.grindr.com
 0.0.0.0 clicksingles.co.uk
 0.0.0.0 clicktocouple.online
@@ -3042,6 +3103,7 @@
 0.0.0.0 clubreseau.com
 0.0.0.0 clubrusse.net
 0.0.0.0 clubs-de-rencontres.fr
+0.0.0.0 clubsadomasoquismo.com
 0.0.0.0 clubsirius.com
 0.0.0.0 cma.match.com
 0.0.0.0 cmatch.com
@@ -3097,10 +3159,13 @@
 0.0.0.0 compatiblesingles.app
 0.0.0.0 completelyfreedating.com.au
 0.0.0.0 computerpassions.com
+0.0.0.0 comunidadbondage.com
 0.0.0.0 conceptlife.fr
 0.0.0.0 concorddating.com
 0.0.0.0 conectados.com
+0.0.0.0 conexionbisexual.com
 0.0.0.0 conexiongay.es
+0.0.0.0 conexiontrios.com
 0.0.0.0 confidenceonline.net
 0.0.0.0 confidentialconnections.com
 0.0.0.0 confidentielles.com
@@ -3116,6 +3181,7 @@
 0.0.0.0 connecticutpassions.com
 0.0.0.0 connecticutsexdating.com
 0.0.0.0 connecticutsingles.com
+0.0.0.0 connectingsingles.com
 0.0.0.0 connection-quizzes-dev.cloud.bumble.com
 0.0.0.0 connection-quizzes-stage.cloud.bumble.com
 0.0.0.0 connection-quizzes.cloud.bumble.com
@@ -3130,6 +3196,7 @@
 0.0.0.0 contact.libre.free.fr
 0.0.0.0 contacte.free.fr
 0.0.0.0 contacten-dating.snuffelcorner.nl
+0.0.0.0 contactos-casuales.com
 0.0.0.0 contactosbisex.com
 0.0.0.0 contactsarabes.com
 0.0.0.0 contactsingles.co.uk
@@ -3219,6 +3286,7 @@
 0.0.0.0 croatiapassions.com
 0.0.0.0 croquecoeur.fr
 0.0.0.0 crossdresserdating.com.au
+0.0.0.0 crossdressinglover.com
 0.0.0.0 crossroad.ru
 0.0.0.0 crowndating.app
 0.0.0.0 cruel.sadizma.net
@@ -3236,6 +3304,7 @@
 0.0.0.0 ctdating.com
 0.0.0.0 ctk.hu
 0.0.0.0 cu-ty.com
+0.0.0.0 cuckold-lovers.com
 0.0.0.0 cuddle-jp.com
 0.0.0.0 cuddlecomfort.com
 0.0.0.0 cuddlyconnect.com
@@ -3328,6 +3397,7 @@
 0.0.0.0 d6y5.ads.pof.com
 0.0.0.0 d8me.co.uk
 0.0.0.0 d8u.com
+0.0.0.0 d8uk.com
 0.0.0.0 da.pof.com
 0.0.0.0 dahlia.it
 0.0.0.0 dallasdating.com
@@ -3351,6 +3421,37 @@
 0.0.0.0 datanta.com
 0.0.0.0 datanta.fr
 0.0.0.0 datasecurity.zoosk.com
+0.0.0.0 date-in-aachen.de
+0.0.0.0 date-in-augsburg.de
+0.0.0.0 date-in-berlin.de
+0.0.0.0 date-in-bielefeld.de
+0.0.0.0 date-in-bochum.de
+0.0.0.0 date-in-bonn.de
+0.0.0.0 date-in-bremen.de
+0.0.0.0 date-in-chemnitz.de
+0.0.0.0 date-in-dortmund.de
+0.0.0.0 date-in-dresden.de
+0.0.0.0 date-in-duesseldorf.de
+0.0.0.0 date-in-duisburg.de
+0.0.0.0 date-in-essen.de
+0.0.0.0 date-in-frankfurt.de
+0.0.0.0 date-in-halle.de
+0.0.0.0 date-in-hamburg.de
+0.0.0.0 date-in-hannover.de
+0.0.0.0 date-in-karlsruhe.de
+0.0.0.0 date-in-kiel.de
+0.0.0.0 date-in-koeln.de
+0.0.0.0 date-in-leipzig.de
+0.0.0.0 date-in-mannheim.de
+0.0.0.0 date-in-muenchen.de
+0.0.0.0 date-in-muenster.de
+0.0.0.0 date-in-nuernberg.de
+0.0.0.0 date-in-potsdam.de
+0.0.0.0 date-in-rostock.de
+0.0.0.0 date-in-stuttgart.de
+0.0.0.0 date-in-wiesbaden.de
+0.0.0.0 date-in-wuppertal.de
+0.0.0.0 date-in-zuerich.ch
 0.0.0.0 date-local-gays.com
 0.0.0.0 date-me.org
 0.0.0.0 date.ca
@@ -3365,6 +3466,7 @@
 0.0.0.0 dateaddict.com
 0.0.0.0 dateamillionaire.com
 0.0.0.0 datearea.de
+0.0.0.0 dateasian.org
 0.0.0.0 dateasians.net
 0.0.0.0 dateaustralia.com
 0.0.0.0 datebrowse.com
@@ -3373,6 +3475,7 @@
 0.0.0.0 datedate.gr
 0.0.0.0 dateforeal.com
 0.0.0.0 datefromukraine.com
+0.0.0.0 datehotcougar.com
 0.0.0.0 dateim.com
 0.0.0.0 dateinasia.com
 0.0.0.0 dateinspire.com
@@ -3396,6 +3499,7 @@
 0.0.0.0 dateover60.com
 0.0.0.0 datepartner.life
 0.0.0.0 datepersms.nl
+0.0.0.0 dateplaza.de
 0.0.0.0 datereadingsingles.co.uk
 0.0.0.0 daterfinder.com
 0.0.0.0 datermeister.com
@@ -3411,9 +3515,11 @@
 0.0.0.0 datescan.app
 0.0.0.0 datescope.app
 0.0.0.0 dateseeker.net
+0.0.0.0 dateseniors.co.za
 0.0.0.0 dateseniorukrainian.com
 0.0.0.0 datesense.app
 0.0.0.0 datesforseniors.com
+0.0.0.0 datesforyou.org
 0.0.0.0 datesfromlastnight.app
 0.0.0.0 datesgern.com
 0.0.0.0 datesim.app
@@ -3444,9 +3550,11 @@
 0.0.0.0 datetheuk.com
 0.0.0.0 datetodate.co.uk
 0.0.0.0 datetomarry.net
+0.0.0.0 datetonight.in
 0.0.0.0 dateukrainiangirl.com
 0.0.0.0 datewesternislessingles.co.uk
 0.0.0.0 datewhoyouwant.com
+0.0.0.0 datewithgays.com
 0.0.0.0 datewiz.me
 0.0.0.0 dateworld.co
 0.0.0.0 dateyou.com
@@ -3494,6 +3602,7 @@
 0.0.0.0 dating-services-singles.com
 0.0.0.0 dating-sextips.com
 0.0.0.0 dating-site-vergleich.at
+0.0.0.0 dating-site.co.za
 0.0.0.0 dating-sites-singapore.com
 0.0.0.0 dating-sites-singles.com
 0.0.0.0 dating-sites.whoo.net
@@ -3522,6 +3631,7 @@
 0.0.0.0 dating.hioff.ru
 0.0.0.0 dating.hundiesltd.com
 0.0.0.0 dating.jdate.com
+0.0.0.0 dating.lekgay.no
 0.0.0.0 dating.lls.imaginary.co.za
 0.0.0.0 dating.lovetoknow.com
 0.0.0.0 dating.lt
@@ -3551,6 +3661,7 @@
 0.0.0.0 dating.yeahh.com
 0.0.0.0 dating.zoosk.com
 0.0.0.0 dating24.ie
+0.0.0.0 dating4bisexuals.com
 0.0.0.0 dating4disabledgays.com
 0.0.0.0 dating4single-online.com
 0.0.0.0 dating4u.ai
@@ -3597,6 +3708,7 @@
 0.0.0.0 datingbest2011.asia
 0.0.0.0 datingbest2012.asia
 0.0.0.0 datingbest2012.info
+0.0.0.0 datingbisexualsingles.com
 0.0.0.0 datingblog.hostarea.org
 0.0.0.0 datingboard.app
 0.0.0.0 datingbook.at
@@ -3678,7 +3790,9 @@
 0.0.0.0 datingfuchs.at
 0.0.0.0 datingga.com
 0.0.0.0 datinggames.app
+0.0.0.0 datinggayblacksingles.com
 0.0.0.0 datinggeorgia.com
+0.0.0.0 datinggold.com
 0.0.0.0 datinggrandrapids.com
 0.0.0.0 datingguide.com.au
 0.0.0.0 datinghalaman.art
@@ -3700,8 +3814,10 @@
 0.0.0.0 datingindiana.com
 0.0.0.0 datingindianapolis.com
 0.0.0.0 datingindy.com
+0.0.0.0 datinginqatar.com
 0.0.0.0 datinginsider.com.au
 0.0.0.0 datinginsider.swingersaustralia.com.au
+0.0.0.0 datinginterracialsingles.com
 0.0.0.0 datinginyour50s.com.au
 0.0.0.0 datingiowa.com
 0.0.0.0 datingire.com
@@ -3717,7 +3833,9 @@
 0.0.0.0 datingla.com
 0.0.0.0 datinglabel.com
 0.0.0.0 datinglansing.com
+0.0.0.0 datinglargewomen.com
 0.0.0.0 datingli.com
+0.0.0.0 datingline.co.za
 0.0.0.0 datinglisa.app
 0.0.0.0 datinglive247.co.uk
 0.0.0.0 datinglondon.com
@@ -3810,6 +3928,8 @@
 0.0.0.0 datingplace.com
 0.0.0.0 datingplace.info
 0.0.0.0 datingplaneet.nl
+0.0.0.0 datingplanet.org
+0.0.0.0 datingplanetnetwork.com
 0.0.0.0 datingplatform.co.uk
 0.0.0.0 datingplaza.nl
 0.0.0.0 datingpofekmi.ru
@@ -3908,11 +4028,13 @@
 0.0.0.0 datingsingless.com
 0.0.0.0 datingsite.ai
 0.0.0.0 datingsite.be
+0.0.0.0 datingsite.de
 0.0.0.0 datingsite.nl
 0.0.0.0 datingsitefree4all.com
 0.0.0.0 datingsitereviews.com.au
 0.0.0.0 datingsites-reviewed.com
 0.0.0.0 datingsites.at
+0.0.0.0 datingsites.nl
 0.0.0.0 datingsites2.com
 0.0.0.0 datingsitesandservices.com
 0.0.0.0 datingsitesdirectory.com
@@ -3987,12 +4109,14 @@
 0.0.0.0 datingvermont.com
 0.0.0.0 datingvip.com
 0.0.0.0 datingvirginia.com
+0.0.0.0 datingvoormensenmeteenbeperking.nl
 0.0.0.0 datingvt.com
 0.0.0.0 datingwa.com
 0.0.0.0 datingwashington.com
 0.0.0.0 datingwashingtondc.com
 0.0.0.0 datingwatch.org
 0.0.0.0 datingwebsite-reviews.co.uk
+0.0.0.0 datingwebsite.co.za
 0.0.0.0 datingwebsites.at
 0.0.0.0 datingwestvirginia.com
 0.0.0.0 datingwi.com
@@ -4306,11 +4430,15 @@
 0.0.0.0 dirtydollar.com
 0.0.0.0 dirtyflirt9.com
 0.0.0.0 dirtylove.buzznet.com
+0.0.0.0 dirtysexdates.com
 0.0.0.0 dirtyzone.com
 0.0.0.0 disabilitydate.org
+0.0.0.0 disabilitydating.net
+0.0.0.0 disabilitymatch.co.uk
 0.0.0.0 disableddating.com.au
 0.0.0.0 disableddating.net
 0.0.0.0 disableddatingclub.org
+0.0.0.0 disabledlove.us
 0.0.0.0 disabledpassions.com
 0.0.0.0 disabledsingles.com.au
 0.0.0.0 disabledsinglesusa.com
@@ -4349,6 +4477,7 @@
 0.0.0.0 dna.lovoo.com
 0.0.0.0 dnadev.lovoo.com
 0.0.0.0 dnafindvp.com
+0.0.0.0 dnaromance.com
 0.0.0.0 dns1.pof.com
 0.0.0.0 dns2.pof.com
 0.0.0.0 do-it-candidates.at
@@ -4363,6 +4492,7 @@
 0.0.0.0 doggytherapy.com
 0.0.0.0 doitcandidates.at
 0.0.0.0 dolsa.co.za
+0.0.0.0 domerencontre.com
 0.0.0.0 dominadates.at
 0.0.0.0 dominanz.net
 0.0.0.0 dominicancupid.com
@@ -4424,9 +4554,11 @@
 0.0.0.0 duskdating.app
 0.0.0.0 dutchgirly.com
 0.0.0.0 dwarfdating.com.au
+0.0.0.0 dxbexpats.com
 0.0.0.0 dynamic-config.gotinder.com
 0.0.0.0 dynamitemovies.com
 0.0.0.0 dzf1174d4gjln.cloudfront.net
+0.0.0.0 e-amour.ch
 0.0.0.0 e-dating.at
 0.0.0.0 e-discus.com
 0.0.0.0 e-kantei.net
@@ -4534,6 +4666,7 @@
 0.0.0.0 edatest.kiosk.club
 0.0.0.0 edatesting.zeabur.app
 0.0.0.0 edating.ch
+0.0.0.0 edating.dk
 0.0.0.0 edating.org
 0.0.0.0 edatingcentral.com
 0.0.0.0 edatings.com
@@ -4571,6 +4704,7 @@
 0.0.0.0 elitedating.app
 0.0.0.0 elitedatingcompany.net
 0.0.0.0 elitedatingwebsites.org
+0.0.0.0 elitekink.com
 0.0.0.0 elitemate.com
 0.0.0.0 elitepartner.at
 0.0.0.0 elitepartner.de
@@ -4630,11 +4764,15 @@
 0.0.0.0 encontrossexoportugal.com
 0.0.0.0 encount.com
 0.0.0.0 encounterdating.com.au
+0.0.0.0 encounters.uk
 0.0.0.0 encuentro-gay.com
+0.0.0.0 encuentroadulto.es
+0.0.0.0 encuentroadulto.net
 0.0.0.0 encuentros-gay.com
 0.0.0.0 encuentrosenred.blogspot.com
 0.0.0.0 encuentrosenred.com
 0.0.0.0 encuentrosenred.com.ar
+0.0.0.0 encuentrosparagays.com
 0.0.0.0 endlessopps.com
 0.0.0.0 enfantillages.com
 0.0.0.0 engagedencounter.com
@@ -4648,6 +4786,7 @@
 0.0.0.0 enter.boo.world
 0.0.0.0 entre-infideles.com
 0.0.0.0 entre-seniors.fr
+0.0.0.0 entrefemmes.ca
 0.0.0.0 entremetteurs.com
 0.0.0.0 eonsystems.com
 0.0.0.0 epicgalls.com
@@ -4681,6 +4820,7 @@
 0.0.0.0 esohbet.net
 0.0.0.0 espace-live.com
 0.0.0.0 estellereyna.com
+0.0.0.0 eterocuriosi.it
 0.0.0.0 ethiopianpersonals.com
 0.0.0.0 ethiosingles.app
 0.0.0.0 etre-deux.com
@@ -4878,6 +5018,7 @@
 0.0.0.0 europe.ourtime.com
 0.0.0.0 european-woman.net
 0.0.0.0 europeandating.net
+0.0.0.0 europeandatingagency.com
 0.0.0.0 europeandatingplanet.com
 0.0.0.0 europeanonlinedating.net
 0.0.0.0 europeansingles.com.au
@@ -4938,6 +5079,7 @@
 0.0.0.0 faceflow.com
 0.0.0.0 facelink.ru
 0.0.0.0 faceofsiberia.com
+0.0.0.0 facetoface.com
 0.0.0.0 factable.internal.zoosk.com
 0.0.0.0 fafa-photos.phpbb9.com
 0.0.0.0 fairdating.nl
@@ -4981,6 +5123,7 @@
 0.0.0.0 femme-africaine.net
 0.0.0.0 femme-russe.org
 0.0.0.0 femmecougaryvelines.com
+0.0.0.0 femmemure.ch
 0.0.0.0 femmes-mariees.com
 0.0.0.0 femmes-russes-mariage.com
 0.0.0.0 femmes-russes.be
@@ -4988,6 +5131,7 @@
 0.0.0.0 festiflirt.app
 0.0.0.0 festivuspassions.com
 0.0.0.0 fetish-dating.app
+0.0.0.0 fetishcontacts.co.uk
 0.0.0.0 fetishdating.com.au
 0.0.0.0 fi.europe.ourtime.com
 0.0.0.0 fi.match.com
@@ -5005,17 +5149,23 @@
 0.0.0.0 filipinaeyes.com
 0.0.0.0 filipinaheart.com
 0.0.0.0 filipinasingles.com.au
+0.0.0.0 filipinawife.com
 0.0.0.0 filipino2date.com
 0.0.0.0 filipinocupid.com
 0.0.0.0 filipinodating.com.au
+0.0.0.0 filipinofriendfinder.com
 0.0.0.0 filipinokisses.com
 0.0.0.0 filmy.abi.pl
 0.0.0.0 filthyoverfiftydating.com.au
 0.0.0.0 find.vu
+0.0.0.0 findanewlover.com
+0.0.0.0 findashemalelover.com
 0.0.0.0 findathreesome.com
 0.0.0.0 findbride.com
+0.0.0.0 finder.co.za
 0.0.0.0 findhappy.com
 0.0.0.0 findloveasia.com
+0.0.0.0 findme.co.za
 0.0.0.0 findmeseniorsingles.com
 0.0.0.0 findmy.gay
 0.0.0.0 findmymatches.com
@@ -5057,6 +5207,7 @@
 0.0.0.0 fitness-singles.com
 0.0.0.0 fitnessdates.com
 0.0.0.0 fitnessdating.app
+0.0.0.0 fjortis.se
 0.0.0.0 flash-rencontres.com
 0.0.0.0 flashplayer-updating.com
 0.0.0.0 flashplayerupdating.com
@@ -5065,6 +5216,7 @@
 0.0.0.0 flechanos.com
 0.0.0.0 fleetingdates.life
 0.0.0.0 fleurafricaine.com
+0.0.0.0 fling.com
 0.0.0.0 flingcentral.com
 0.0.0.0 flingdatingapp.com
 0.0.0.0 flipflirt.app
@@ -5106,6 +5258,7 @@
 0.0.0.0 flirtbot.app
 0.0.0.0 flirtbox.com
 0.0.0.0 flirtbox.us
+0.0.0.0 flirtcafe.de
 0.0.0.0 flirtcam.ai
 0.0.0.0 flirtcard.at
 0.0.0.0 flirtchat.app
@@ -5144,6 +5297,7 @@
 0.0.0.0 flirtic.ee
 0.0.0.0 flirtico.app
 0.0.0.0 flirting-lab.app
+0.0.0.0 flirtingbuddies.com
 0.0.0.0 flirtini.ai
 0.0.0.0 flirtini.app
 0.0.0.0 flirtini.com
@@ -5168,6 +5322,7 @@
 0.0.0.0 flirtmeeting.com
 0.0.0.0 flirtmind.app
 0.0.0.0 flirtmit.at
+0.0.0.0 flirtmoi.com
 0.0.0.0 flirtmoms.com
 0.0.0.0 flirtnacht.at
 0.0.0.0 flirtnet.app
@@ -5505,6 +5660,7 @@
 0.0.0.0 gayatheistdating.com
 0.0.0.0 gaybarebackdates.com
 0.0.0.0 gaybdsmdate.co.uk
+0.0.0.0 gaybdsmdate.com
 0.0.0.0 gaybdsmdating.com.au
 0.0.0.0 gaybdsmsingles.com
 0.0.0.0 gaybearsdating.com
@@ -5533,6 +5689,7 @@
 0.0.0.0 gaycowboydating.com
 0.0.0.0 gaycowboysingles.com
 0.0.0.0 gaycubdating.com
+0.0.0.0 gaycupid.com
 0.0.0.0 gaydaddating.com
 0.0.0.0 gaydar.net
 0.0.0.0 gaydates.com
@@ -5654,6 +5811,7 @@
 0.0.0.0 gaymarinedating.com
 0.0.0.0 gaymarrieddating.com
 0.0.0.0 gaymaturedating.com
+0.0.0.0 gaymeetmarket.com
 0.0.0.0 gaymen.ircq.it
 0.0.0.0 gaymendating.at
 0.0.0.0 gaymendating.com
@@ -5749,6 +5907,7 @@
 0.0.0.0 gayspanishdating.com
 0.0.0.0 gayspeeddates.com
 0.0.0.0 gaysugardaddydating.com
+0.0.0.0 gaysugardaddydating.net
 0.0.0.0 gaysugardating.com
 0.0.0.0 gayteendatingapps.com
 0.0.0.0 gayteens.co.uk
@@ -5764,6 +5923,7 @@
 0.0.0.0 gaytruckerdates.com
 0.0.0.0 gaytruckerdating.com
 0.0.0.0 gayukdating.com
+0.0.0.0 gayukonlinepersonals.com
 0.0.0.0 gayuniformsingles.com
 0.0.0.0 gayvegetariandating.com
 0.0.0.0 gayworldvideodates.com
@@ -5783,6 +5943,7 @@
 0.0.0.0 genteahora.com
 0.0.0.0 gentedemsn.com
 0.0.0.0 genuinesingles.com
+0.0.0.0 genxpeoplemeet.com
 0.0.0.0 geoflirt.com
 0.0.0.0 georgiadating.com
 0.0.0.0 georgiamatchmaker.com
@@ -5884,6 +6045,7 @@
 0.0.0.0 golfingpassions.com
 0.0.0.0 golfsingle.com
 0.0.0.0 golove.de
+0.0.0.0 gomatch.com
 0.0.0.0 gonnalove.com
 0.0.0.0 gonuldensevenler.com
 0.0.0.0 goo.match.com
@@ -5907,6 +6069,7 @@
 0.0.0.0 gothscene.com
 0.0.0.0 gotinder.com
 0.0.0.0 gottabreakup.com
+0.0.0.0 gotthem.com
 0.0.0.0 goudou.fr
 0.0.0.0 goulburndating.com.au
 0.0.0.0 gp.gotinder.com
@@ -5927,6 +6090,7 @@
 0.0.0.0 grannydating.au
 0.0.0.0 grannydating.net
 0.0.0.0 grannydating.org
+0.0.0.0 grannydatingclub.co.uk
 0.0.0.0 grannydatingsite.co.uk
 0.0.0.0 grannydatingsite.com
 0.0.0.0 grannydatingwebsite.com
@@ -5934,6 +6098,7 @@
 0.0.0.0 grannyfunonline.com
 0.0.0.0 grannymatch.org
 0.0.0.0 grannysexdating.com.au
+0.0.0.0 grannysexfriend.com
 0.0.0.0 grannysingles.com
 0.0.0.0 grannyswipe.com
 0.0.0.0 graphjet.air.pof.com
@@ -5992,7 +6157,9 @@
 0.0.0.0 grpc.us-central1.bff-discovery-staging.cloud.bumble.com
 0.0.0.0 grpc.us-central1.bff-discovery.cloud.bumble.com
 0.0.0.0 gruppensex-land.de
+0.0.0.0 gstatvb.com
 0.0.0.0 gtrouve.com
+0.0.0.0 guapasmaduras.com
 0.0.0.0 guayu.com
 0.0.0.0 guide-site-rencontre.fr
 0.0.0.0 guide-sites-rencontres.ch
@@ -6020,6 +6187,7 @@
 0.0.0.0 halloweenpassions.com
 0.0.0.0 hana-mail.jp
 0.0.0.0 handicap-singles.com
+0.0.0.0 handilove.fr
 0.0.0.0 handysprueche.de
 0.0.0.0 hangoutnow.com
 0.0.0.0 happiness.mk.ua
@@ -6089,6 +6257,7 @@
 0.0.0.0 henhoonline.net
 0.0.0.0 hepcsinglesonline.com
 0.0.0.0 herbal-place.com
+0.0.0.0 herkert.name
 0.0.0.0 herothemovie.com
 0.0.0.0 herpesdating.au
 0.0.0.0 herpespassions.com
@@ -6160,6 +6329,7 @@
 0.0.0.0 hot-sensation.info
 0.0.0.0 hotasiadate.com
 0.0.0.0 hotbbwdating.com
+0.0.0.0 hotbuddies.co.uk
 0.0.0.0 hotdate.joanaheiss.de
 0.0.0.0 hotdating-girl.life
 0.0.0.0 hotdatingcentral.com
@@ -6189,6 +6359,7 @@
 0.0.0.0 hub.grindr.com
 0.0.0.0 hubpeople.ai
 0.0.0.0 hubpeople.com
+0.0.0.0 hubz.pl
 0.0.0.0 hugavenue.com
 0.0.0.0 hukdating.com
 0.0.0.0 humsafar.co.uk
@@ -6267,6 +6438,8 @@
 0.0.0.0 ilove.terra.com.br
 0.0.0.0 iloveandyou.com
 0.0.0.0 iloveim.com
+0.0.0.0 ilovemessenger.fr
+0.0.0.0 iltuoamore.it
 0.0.0.0 iluzi0n.free.fr
 0.0.0.0 im.qq.com
 0.0.0.0 ima-dating.com
@@ -6275,6 +6448,7 @@
 0.0.0.0 images.gotinder.com
 0.0.0.0 images.hinge.co
 0.0.0.0 images.match.com
+0.0.0.0 images.prod.boo.dating
 0.0.0.0 img.meetme.com
 0.0.0.0 img.tagged.com
 0.0.0.0 img2.hily.com
@@ -6302,10 +6476,20 @@
 0.0.0.0 inc.pd2us.badoocdn.com
 0.0.0.0 incisozluk.co
 0.0.0.0 incontramilf.com
+0.0.0.0 incontri-adulti.it
 0.0.0.0 incontri-donne.vivastreet.alice.it
 0.0.0.0 incontri-uomini.vivastreet.alice.it
+0.0.0.0 incontri.biz
+0.0.0.0 incontriadult.communityincontri.com
+0.0.0.0 incontricasual.com
+0.0.0.0 incontricasual.net
+0.0.0.0 incontricatanzaro.net
+0.0.0.0 incontrilatex.it
 0.0.0.0 incontriromantici.it
+0.0.0.0 incontrisugardaddy.it
 0.0.0.0 incontritalia.sexy.easyincontro.com
+0.0.0.0 incontriveloci.com
+0.0.0.0 incontrixadulti.it
 0.0.0.0 indating.com
 0.0.0.0 independencesingles.com
 0.0.0.0 india-passions.com
@@ -6472,6 +6656,7 @@
 0.0.0.0 itsrencontres.com
 0.0.0.0 ivorytowers.net
 0.0.0.0 iwannadate.nl
+0.0.0.0 iwantu.com
 0.0.0.0 ixg.llc
 0.0.0.0 j4l.com
 0.0.0.0 ja.int.tantanapp.com
@@ -6551,13 +6736,16 @@
 0.0.0.0 jongerendating.nl
 0.0.0.0 joondating.app
 0.0.0.0 jp.match.com
+0.0.0.0 jpeoplemeet.biz
 0.0.0.0 jplove.com
 0.0.0.0 jrencontre.com
 0.0.0.0 jsbs2012.jp
 0.0.0.0 jsingles.com
 0.0.0.0 jsoulmate.com
 0.0.0.0 jswsn.org
+0.0.0.0 jubilant.net
 0.0.0.0 judischesingles.at
+0.0.0.0 juicy.business
 0.0.0.0 jujme.com
 0.0.0.0 julienlove.eu
 0.0.0.0 juliyaweb.com
@@ -6849,6 +7037,7 @@
 0.0.0.0 latestdating2012.asia
 0.0.0.0 latestdating2012.info
 0.0.0.0 latestdating2013.info
+0.0.0.0 latesummerlove.com
 0.0.0.0 latidate.com
 0.0.0.0 latidates.net
 0.0.0.0 latin-wife.com
@@ -6928,16 +7117,24 @@
 0.0.0.0 legal-agreements-dev.grindr.com
 0.0.0.0 legal-agreements-prod.grindr.com
 0.0.0.0 legalpassions.com
+0.0.0.0 lekdate.no
 0.0.0.0 lemonswan.de
 0.0.0.0 leparfaitgentleman.fr
 0.0.0.0 lesbian.com
+0.0.0.0 lesbian.singles
+0.0.0.0 lesbianasenmexico.com
 0.0.0.0 lesbianchatonline.com
 0.0.0.0 lesbiandating.net
 0.0.0.0 lesbiandatingservices.co.cc
 0.0.0.0 lesbiandatingsites.info
+0.0.0.0 lesbianmatchmaker.com.au
 0.0.0.0 lesbianonlinedating.com.au
+0.0.0.0 lesbians-in-america.com
+0.0.0.0 lesbians-in-canada.com
+0.0.0.0 lesbidating.com
 0.0.0.0 lesbiedates.com
 0.0.0.0 lesbiemates.com
+0.0.0.0 lesbiskdating.dk
 0.0.0.0 lesclesdelarencontre.com
 0.0.0.0 lesmeilleursrencontres.com
 0.0.0.0 lesoffresrencontres.com
@@ -6949,11 +7146,13 @@
 0.0.0.0 letsmakelove.com
 0.0.0.0 letsmeet.co.za
 0.0.0.0 letsmeet.com
+0.0.0.0 letsmeetup.com
 0.0.0.0 lex.lgbt
 0.0.0.0 lexa.nl
 0.0.0.0 lexadating.com
 0.0.0.0 lexingtonmatchmaker.com
 0.0.0.0 lezfindr.com
+0.0.0.0 lgbt-dating.com
 0.0.0.0 lgbtdating.org
 0.0.0.0 lgbth.com
 0.0.0.0 liados.net
@@ -7000,6 +7199,7 @@
 0.0.0.0 links.zoosk.com
 0.0.0.0 linkstore.co.jp
 0.0.0.0 linkylove.net
+0.0.0.0 lipsticklesbians.net
 0.0.0.0 lis.zoosk.com
 0.0.0.0 list-faces.com
 0.0.0.0 list-manage.com
@@ -7042,6 +7242,8 @@
 0.0.0.0 localgrannies.net
 0.0.0.0 localhottiesnow.com
 0.0.0.0 localmatch.com
+0.0.0.0 localmaturedating.net
+0.0.0.0 localmeets.ie
 0.0.0.0 localolderdating.com
 0.0.0.0 localphotoratings.com
 0.0.0.0 localromance.com
@@ -7082,6 +7284,7 @@
 0.0.0.0 londonercontacts.co.uk
 0.0.0.0 londonintroductions.com
 0.0.0.0 lonelyparentsdate.com
+0.0.0.0 lonelywivesdatelink.com
 0.0.0.0 longbeachmatchmaker.com
 0.0.0.0 longhairyo.com
 0.0.0.0 longislandquickdate.com
@@ -7212,7 +7415,9 @@
 0.0.0.0 lovealizer.de
 0.0.0.0 loveandfriends.co.uk
 0.0.0.0 loveandfriends.com
+0.0.0.0 loveandseek.biz
 0.0.0.0 loveandseek.com
+0.0.0.0 loveandseek.tv
 0.0.0.0 lovearts.com
 0.0.0.0 loveawake.com
 0.0.0.0 lovebbw.com
@@ -7233,6 +7438,7 @@
 0.0.0.0 lovedatingsites.com
 0.0.0.0 loveday.ch
 0.0.0.0 lovedays.ru
+0.0.0.0 lovedesir.fr
 0.0.0.0 lovedetectives.com
 0.0.0.0 lovedetoi.com
 0.0.0.0 lovedetoi.fr
@@ -7257,6 +7463,7 @@
 0.0.0.0 loveissexy.com
 0.0.0.0 lovelab.com.ua
 0.0.0.0 lovelee.com
+0.0.0.0 lovelife.ca
 0.0.0.0 loveline.fr
 0.0.0.0 lovelineireland.com
 0.0.0.0 lovelive.fr
@@ -7279,6 +7486,7 @@
 0.0.0.0 loveo.fr
 0.0.0.0 loveorama.com
 0.0.0.0 loveorsexe.com
+0.0.0.0 loveplace.ch
 0.0.0.0 loveplanet.ru
 0.0.0.0 loveplanet.ua
 0.0.0.0 loveplanets.kiev.ua
@@ -7338,6 +7546,7 @@
 0.0.0.0 lubbockmatchmaker.com
 0.0.0.0 lubovdating.com
 0.0.0.0 lubovy.ru
+0.0.0.0 lulusloveshack.com
 0.0.0.0 lumasearch.com
 0.0.0.0 lunchdates.com
 0.0.0.0 lusomeet.com
@@ -7473,6 +7682,7 @@
 0.0.0.0 marriedpassions.com
 0.0.0.0 marrish.com
 0.0.0.0 marry-an-ugly-millionaire-online-dating-agency.com
+0.0.0.0 marryy.me
 0.0.0.0 marsetvenus.com
 0.0.0.0 marydating.com
 0.0.0.0 marylanddating.com
@@ -7482,6 +7692,7 @@
 0.0.0.0 marylandsexdating.com
 0.0.0.0 mashable.com
 0.0.0.0 masked.love
+0.0.0.0 masochiste.org
 0.0.0.0 massachusettsdating.com
 0.0.0.0 massachusettsmatchmaker.com
 0.0.0.0 massachusettsmatchmaking.com
@@ -7492,6 +7703,7 @@
 0.0.0.0 match-ru.com
 0.0.0.0 match-seeker.com
 0.0.0.0 match-usa.com
+0.0.0.0 match-wizard.com
 0.0.0.0 match.com
 0.0.0.0 match.com.ar
 0.0.0.0 match.com.au
@@ -7508,6 +7720,7 @@
 0.0.0.0 match4me.nl
 0.0.0.0 matchadating.app
 0.0.0.0 matchakiss.co.uk
+0.0.0.0 matchasiansingles.com
 0.0.0.0 matchdating.app
 0.0.0.0 matcheddating.tk
 0.0.0.0 matchedwithlove.com
@@ -7545,6 +7758,7 @@
 0.0.0.0 matrimonialnetwork.com
 0.0.0.0 matrimonials.com
 0.0.0.0 matrimus.kharkiv.com
+0.0.0.0 matrymonia.pl
 0.0.0.0 matthewhussey.com
 0.0.0.0 mature-adult-dating-sites.misternifty.com
 0.0.0.0 mature-adult-dating.digitalcompetence.org
@@ -7654,6 +7868,7 @@
 0.0.0.0 mature-women-dating.org
 0.0.0.0 mature-women-sex-dating.kenkounavi.net
 0.0.0.0 mature.dating
+0.0.0.0 mature.exchange
 0.0.0.0 mature.se
 0.0.0.0 mature88dates.info
 0.0.0.0 matureaberdeendating.co.uk
@@ -7668,6 +7883,7 @@
 0.0.0.0 maturebedfordshiredating.co.uk
 0.0.0.0 maturebelfastdating.co.uk
 0.0.0.0 matureberkshiredating.co.uk
+0.0.0.0 maturebi.com
 0.0.0.0 maturebirminghamdating.co.uk
 0.0.0.0 maturebristoldating.co.uk
 0.0.0.0 maturebuckinghamshiredating.co.uk
@@ -8127,6 +8343,7 @@
 0.0.0.0 medicalpassions.com
 0.0.0.0 meebo.com
 0.0.0.0 meet-card.com
+0.0.0.0 meet-dating.com
 0.0.0.0 meet-gay-men.com
 0.0.0.0 meet-island.com
 0.0.0.0 meet-seniors.com
@@ -8197,6 +8414,7 @@
 0.0.0.0 meetolderwomen.net
 0.0.0.0 meetouting.com
 0.0.0.0 meetromanian.com
+0.0.0.0 meetrussianbrides.com
 0.0.0.0 meetrussiangirl.com
 0.0.0.0 meets.com.ar
 0.0.0.0 meetseniorme.com
@@ -8311,6 +8529,7 @@
 0.0.0.0 miamisinglesonline.com
 0.0.0.0 miamispeeddating.com
 0.0.0.0 miamiwomengirls.com
+0.0.0.0 miayo.com
 0.0.0.0 micane.jp
 0.0.0.0 michiamo.com
 0.0.0.0 michigandating.com
@@ -8334,6 +8553,7 @@
 0.0.0.0 milf-match.be
 0.0.0.0 milf-match.nl
 0.0.0.0 milf.singles
+0.0.0.0 milfdatelink.com
 0.0.0.0 milfdates.org
 0.0.0.0 milfdates24.com
 0.0.0.0 milfdating-site.net
@@ -8393,6 +8613,7 @@
 0.0.0.0 millionaire-matchdating.com
 0.0.0.0 millionaire-singles.org
 0.0.0.0 millionaire.dating
+0.0.0.0 millionairebuddies.com
 0.0.0.0 millionaireclubdating.com
 0.0.0.0 millionairedates.com
 0.0.0.0 millionairedating.app
@@ -8421,6 +8642,7 @@
 0.0.0.0 millionairematch.com
 0.0.0.0 millionairematchdatingapp.com
 0.0.0.0 millionairematchdatingsites.com
+0.0.0.0 millionairematchmaker.ca
 0.0.0.0 millionairepassions.com
 0.0.0.0 millionairesclub123.com
 0.0.0.0 millionairesdating.org
@@ -8640,6 +8862,8 @@
 0.0.0.0 mydarling.ru
 0.0.0.0 mydata.meetme.com
 0.0.0.0 mydata.tagged.com
+0.0.0.0 mydate.dk
+0.0.0.0 mydates.com
 0.0.0.0 mydating2013.asia
 0.0.0.0 mydatingphoto.com
 0.0.0.0 mydatingtoday.com
@@ -8654,6 +8878,7 @@
 0.0.0.0 mylol.com
 0.0.0.0 mylove.kiev.ua
 0.0.0.0 mylove.ru
+0.0.0.0 mynaughtyfriend.com
 0.0.0.0 mynews.elitesingles.com
 0.0.0.0 mypartnerforever.com
 0.0.0.0 mysexyflirt.com
@@ -8708,11 +8933,13 @@
 0.0.0.0 nebraskaintroductions.com
 0.0.0.0 nebraskapassions.com
 0.0.0.0 nebraskasexdating.com
+0.0.0.0 neckdate.de
 0.0.0.0 nedating.com
 0.0.0.0 nederland-date-dating.nl
 0.0.0.0 nederlanddating.com
 0.0.0.0 nederlanddating.nl
 0.0.0.0 neighborhoodcutie.com
+0.0.0.0 neiubim.ro
 0.0.0.0 nematchmaking.com
 0.0.0.0 neo-cf.grindr.com
 0.0.0.0 neo-qax-api.grindr.com
@@ -8811,6 +9038,7 @@
 0.0.0.0 nightsites.com
 0.0.0.0 nineinchnails-lovers.hyves.nl
 0.0.0.0 ninjapassions.com
+0.0.0.0 nipagonicobro.es
 0.0.0.0 nirvam.it
 0.0.0.0 njdating.com
 0.0.0.0 njpersonals.com
@@ -8849,6 +9077,7 @@
 0.0.0.0 norwegiandating.com.au
 0.0.0.0 norwegiansingles.app
 0.0.0.0 nospensees.fr
+0.0.0.0 nostringsattached.com
 0.0.0.0 notadatingapp.app
 0.0.0.0 notifications.christianmingle.com
 0.0.0.0 notifications.elitesingles.com
@@ -8877,6 +9106,7 @@
 0.0.0.0 nudedating.com.au
 0.0.0.0 nudgedating.app
 0.0.0.0 nudistdating.com.au
+0.0.0.0 nudistonlinedating.com
 0.0.0.0 nuopsexdate.nl
 0.0.0.0 nvdating.com
 0.0.0.0 nwdatenight.com
@@ -8999,6 +9229,7 @@
 0.0.0.0 onlinedatingtest.at
 0.0.0.0 onlinedatinguk.co.uk
 0.0.0.0 onlinedatingukraine.app
+0.0.0.0 onlinedejt.se
 0.0.0.0 onlineforlove.com
 0.0.0.0 onlinelovedating.com
 0.0.0.0 onlinesexbutik.se
@@ -9065,11 +9296,14 @@
 0.0.0.0 outdoordating.app
 0.0.0.0 outdoorpeoplemeet.com
 0.0.0.0 over40datingsite.co.uk
+0.0.0.0 over40sdating.in
 0.0.0.0 over50datingnorge.com
 0.0.0.0 over50datingservices.com
+0.0.0.0 over50sdating.net
 0.0.0.0 over50singlesmeet.com
 0.0.0.0 over60.singles
 0.0.0.0 over60dating.com.au
+0.0.0.0 over60dating.online
 0.0.0.0 over70dating.com
 0.0.0.0 overseafriend.com
 0.0.0.0 overseas-match.com
@@ -9128,6 +9362,7 @@
 0.0.0.0 partner-services.com
 0.0.0.0 partner.de
 0.0.0.0 partner.eharmony.com
+0.0.0.0 partner24online.de
 0.0.0.0 partneri.sk
 0.0.0.0 partnerkereso.info
 0.0.0.0 partnermedniveau.dk
@@ -9150,6 +9385,8 @@
 0.0.0.0 passionsearch.com
 0.0.0.0 passionsnetwork.com
 0.0.0.0 pasya.ru
+0.0.0.0 patakadates.in
+0.0.0.0 patchwork-paar.de
 0.0.0.0 patolo.jp
 0.0.0.0 pausecafe62.com
 0.0.0.0 pay-dev.cloud.bumble.com
@@ -9192,6 +9429,8 @@
 0.0.0.0 peekabooheart.com
 0.0.0.0 pegging.group
 0.0.0.0 pegging.love
+0.0.0.0 peggingdates.com
+0.0.0.0 pegginglovers.com
 0.0.0.0 pendingpictures.intl.match.com
 0.0.0.0 pendingprimary.intl.match.com
 0.0.0.0 penndating.com
@@ -9364,16 +9603,21 @@
 0.0.0.0 policies.tinder.com
 0.0.0.0 polishdating.at
 0.0.0.0 polishdating.fr
+0.0.0.0 polishdating.org
 0.0.0.0 polishhearts.com
 0.0.0.0 polishsingles.com.au
 0.0.0.0 polls.tinder.com
 0.0.0.0 polovinka.org
 0.0.0.0 polska-erotyka.org
+0.0.0.0 polyamorosos.com
 0.0.0.0 polyamorouspassions.com
+0.0.0.0 polyamorsenior.com
+0.0.0.0 polyamorsenior.es
 0.0.0.0 polydates.at
 0.0.0.0 polygamistdating.com.au
 0.0.0.0 ponies.tagged.com
 0.0.0.0 pontevedrasingles.com
+0.0.0.0 pop6.com
 0.0.0.0 popmates.co.uk
 0.0.0.0 popteen.net
 0.0.0.0 poptheballoondating.app
@@ -9384,6 +9628,7 @@
 0.0.0.0 portlandintroductions.com
 0.0.0.0 portugal-tchat.com
 0.0.0.0 portugalpassions.com
+0.0.0.0 portugays.pt
 0.0.0.0 posdating.club
 0.0.0.0 positivedating.app
 0.0.0.0 positivesingles.app
@@ -9488,6 +9733,7 @@
 0.0.0.0 pussydating.ru
 0.0.0.0 pwa.trulymadly.com
 0.0.0.0 pyometrack.com
+0.0.0.0 q2w.net
 0.0.0.0 qa.azr.pof.com
 0.0.0.0 qa.gcp.pof.com
 0.0.0.0 qa1.match.com
@@ -9535,6 +9781,7 @@
 0.0.0.0 rande.sk
 0.0.0.0 randevum.com
 0.0.0.0 randivonal.hu
+0.0.0.0 randkisympatia.pl
 0.0.0.0 randocelibat.forumsactifs.com
 0.0.0.0 rank-beauty.com
 0.0.0.0 rapid-rencontres.com
@@ -9674,6 +9921,7 @@
 0.0.0.0 reflections-staging.feeld.co
 0.0.0.0 regiosexcontact.nl
 0.0.0.0 regiosexdating.com
+0.0.0.0 register.co.za
 0.0.0.0 register2.match.com
 0.0.0.0 register3.match.com
 0.0.0.0 registration.pof.com
@@ -9691,6 +9939,7 @@
 0.0.0.0 relatieplanet.nl
 0.0.0.0 relatiinoi.com
 0.0.0.0 relationshipminded.com
+0.0.0.0 relaxiones.es
 0.0.0.0 relrules.com
 0.0.0.0 rencontre-2.com
 0.0.0.0 rencontre-ado.com
@@ -9818,24 +10067,36 @@
 0.0.0.0 rencontrea.com
 0.0.0.0 rencontreabj.orgfree.com
 0.0.0.0 rencontreafricaine.com
+0.0.0.0 rencontreamoureuse.ch
+0.0.0.0 rencontreasiatique.org
 0.0.0.0 rencontrebisexuel.com
 0.0.0.0 rencontrebisexuelle.fr.st
+0.0.0.0 rencontrecavalier.fr
 0.0.0.0 rencontrechaude.be
+0.0.0.0 rencontrechretien.org
 0.0.0.0 rencontrecoquincoquine.com
+0.0.0.0 rencontrecoquine.ch
+0.0.0.0 rencontrecougar.ca
 0.0.0.0 rencontrecougarsexy.com
 0.0.0.0 rencontrediscret.com
 0.0.0.0 rencontreduquebec.com
 0.0.0.0 rencontrefemme-rencontrehomme.com
+0.0.0.0 rencontregatineau.ca
+0.0.0.0 rencontregay.ch
 0.0.0.0 rencontrehot.site.voila.fr
 0.0.0.0 rencontreinedite.ch
 0.0.0.0 rencontrejuive.com
 0.0.0.0 rencontrelesbiennes.fr
 0.0.0.0 rencontrelibertinage.com
 0.0.0.0 rencontrelibertine.be
+0.0.0.0 rencontrelibertine.ch
 0.0.0.0 rencontrelover.com
+0.0.0.0 rencontremalentendant.fr
+0.0.0.0 rencontremariage.ch
 0.0.0.0 rencontremsn.com
 0.0.0.0 rencontreo.fr
 0.0.0.0 rencontreparis.net
+0.0.0.0 rencontrepiercing.fr
 0.0.0.0 rencontrer-rencontre.com
 0.0.0.0 rencontrer-sur-internet.com
 0.0.0.0 rencontrer.com
@@ -9862,6 +10123,7 @@
 0.0.0.0 rencontres-champagne.net
 0.0.0.0 rencontres-clermont-ferrand.net
 0.0.0.0 rencontres-com.fr
+0.0.0.0 rencontres-coquines.ca
 0.0.0.0 rencontres-coquines.info
 0.0.0.0 rencontres-corse.fr
 0.0.0.0 rencontres-dating.com
@@ -9931,6 +10193,7 @@
 0.0.0.0 rencontres-poitou-charentes.net
 0.0.0.0 rencontres-reunion.com
 0.0.0.0 rencontres-rhone-alpes.fr
+0.0.0.0 rencontres-rondes.fr
 0.0.0.0 rencontres-sexe-gratuites.ifrance.com
 0.0.0.0 rencontres-site.com
 0.0.0.0 rencontres-suisse.ch
@@ -10018,6 +10281,8 @@
 0.0.0.0 rencontrescorse.com
 0.0.0.0 rencontresdansmaville.com
 0.0.0.0 rencontresduweb.com
+0.0.0.0 rencontresecrete.ca
+0.0.0.0 rencontreseniors.org
 0.0.0.0 rencontresentrehommes.com
 0.0.0.0 rencontreservice.org
 0.0.0.0 rencontresfillesexy.com
@@ -10025,6 +10290,7 @@
 0.0.0.0 rencontresgratuites.net
 0.0.0.0 rencontresgratuites.org
 0.0.0.0 rencontresgueret.com
+0.0.0.0 rencontresherbrooke.ca
 0.0.0.0 rencontresitrans.com
 0.0.0.0 rencontreslanguedoc.net
 0.0.0.0 rencontreslaroche.com
@@ -10061,6 +10327,7 @@
 0.0.0.0 rencontresrennes.net
 0.0.0.0 rencontresrhone.net
 0.0.0.0 rencontresrodez.com
+0.0.0.0 rencontresrondes.ca
 0.0.0.0 rencontresrouen.net
 0.0.0.0 rencontressaintbrieuc.com
 0.0.0.0 rencontressaintetienne.com
@@ -10108,6 +10375,7 @@
 0.0.0.0 rest.van1.pd.pof.com
 0.0.0.0 retrouve-moi.fr
 0.0.0.0 reveuse.fr
+0.0.0.0 review.co.za
 0.0.0.0 revolutiondating.com
 0.0.0.0 rewards.video.pof.com
 0.0.0.0 rezog.com
@@ -10142,9 +10410,12 @@
 0.0.0.0 rollosfaciles.com
 0.0.0.0 romance-cafe.com
 0.0.0.0 romance-net.com
+0.0.0.0 romancedubai.com
 0.0.0.0 romanceideal.com.br
+0.0.0.0 romancelinker.com
 0.0.0.0 romancepassions.com
 0.0.0.0 romancingcupid.com
+0.0.0.0 romancium.com
 0.0.0.0 romaniansingles.com.au
 0.0.0.0 romantic-dating.tk
 0.0.0.0 romanticrelay.com
@@ -10153,6 +10424,7 @@
 0.0.0.0 romeo.com
 0.0.0.0 romeojuliet.com
 0.0.0.0 rondevo.com
+0.0.0.0 ropebondagemeetups.com
 0.0.0.0 rosebrides.com
 0.0.0.0 rosevillesingles.com
 0.0.0.0 roswellsingles.com
@@ -10172,6 +10444,7 @@
 0.0.0.0 rummble.com
 0.0.0.0 runningpassions.com
 0.0.0.0 runwayer.dilmil.co
+0.0.0.0 ruralsingles.com
 0.0.0.0 rus-romance.de
 0.0.0.0 rusdate.de
 0.0.0.0 rusdate.net
@@ -10212,6 +10485,7 @@
 0.0.0.0 russianwomendiscussion.com
 0.0.0.0 russianwomensexy.com
 0.0.0.0 russievisit.com
+0.0.0.0 russischefrauen.ch
 0.0.0.0 rustop.link
 0.0.0.0 rvsp.com.au
 0.0.0.0 ryerose.net
@@ -10267,6 +10541,7 @@
 0.0.0.0 sc-cd-nps04.immomo.com
 0.0.0.0 sc-cd-nps05.immomo.com
 0.0.0.0 sc-cd-nps06.immomo.com
+0.0.0.0 scambiocoppie.org
 0.0.0.0 scandimatch.com
 0.0.0.0 scandinaviansingles.com.au
 0.0.0.0 scapadasamorosas.com
@@ -10303,6 +10578,7 @@
 0.0.0.0 searchloveonline.com
 0.0.0.0 searchmate.co.uk
 0.0.0.0 searchthepersonals.com
+0.0.0.0 seasonsdating.co.uk
 0.0.0.0 seatfortwo.com
 0.0.0.0 seattlegaymatchmaker.com
 0.0.0.0 seattleintroductions.com
@@ -10354,6 +10630,7 @@
 0.0.0.0 seekmysugardaddy.com
 0.0.0.0 seekmytoyboy.com
 0.0.0.0 seksafspraakjes.nl
+0.0.0.0 sekscamera.nl
 0.0.0.0 sekssohbet.org
 0.0.0.0 selectivesearch-inc.com
 0.0.0.0 selectperfect.com
@@ -10363,39 +10640,68 @@
 0.0.0.0 selfservice.grindr.com
 0.0.0.0 senegal-mariage.com
 0.0.0.0 senegal-rencontre.com
+0.0.0.0 senior-love-match.co.uk
 0.0.0.0 senior-match.com
 0.0.0.0 senior.date
 0.0.0.0 senior.dk
+0.0.0.0 seniorbdsmusa.us
+0.0.0.0 seniorbi.com
 0.0.0.0 seniorblackpeoplemeet.com
+0.0.0.0 seniorbondage.com
 0.0.0.0 seniorcasualdating.com
 0.0.0.0 seniorchatt.se
+0.0.0.0 seniorcrossdresser.com
+0.0.0.0 seniorcrossdressusa.us
+0.0.0.0 seniordate.dk
 0.0.0.0 seniordatelink.com
+0.0.0.0 seniordating.es
+0.0.0.0 seniordatingagency-scotland.co.uk
+0.0.0.0 seniordatingagency-spain.com
+0.0.0.0 seniordatingagency.net
+0.0.0.0 seniordatingagency.nl
 0.0.0.0 seniordatinglove.com
+0.0.0.0 seniordatingonline.co.uk
 0.0.0.0 seniordatingplanet.com
+0.0.0.0 seniordatingsite.co.za
 0.0.0.0 seniordesire.com
+0.0.0.0 seniordogging.com
+0.0.0.0 seniordomination.com
 0.0.0.0 senioren-dating-websites.at
 0.0.0.0 seniorendates24.at
+0.0.0.0 seniorfetish.com
 0.0.0.0 seniorfriendfinder.com
 0.0.0.0 seniorfriendship.co.uk
 0.0.0.0 seniorfriendsonline.com
+0.0.0.0 seniorlesbians.com
 0.0.0.0 seniorlove.org
 0.0.0.0 seniormatch.com
+0.0.0.0 seniormatch.us
 0.0.0.0 seniormatchcom.com
 0.0.0.0 seniormatchdatingsite.com
 0.0.0.0 seniormates.com
 0.0.0.0 seniorpassions.com
+0.0.0.0 seniorpeoplemeet.biz
+0.0.0.0 seniorpolyamory.com
 0.0.0.0 seniorrmatch.com
 0.0.0.0 seniors-rencontre.com
+0.0.0.0 seniorsbi.com
 0.0.0.0 seniorsdatinghub.com
 0.0.0.0 seniorsexdating.com
 0.0.0.0 seniorsexdating.com.au
 0.0.0.0 seniorsfindlove.com
+0.0.0.0 seniorsingles.biz
 0.0.0.0 seniorsinglesdating.com.au
+0.0.0.0 seniorsinglesnear.me
 0.0.0.0 seniorsinglesplace.com
 0.0.0.0 seniorsmeet.com
 0.0.0.0 seniorsrencontres.com
 0.0.0.0 seniorstodate.com
+0.0.0.0 seniorsubdomclub.com
+0.0.0.0 seniorsubdomclub.us
+0.0.0.0 seniorswingersclubusa.us
+0.0.0.0 seniorthreesomes.com
 0.0.0.0 seniortruelove.com
+0.0.0.0 seniorwhipping.com
 0.0.0.0 senseflirt.com
 0.0.0.0 sentimente.com
 0.0.0.0 sentimente.ro
@@ -10488,6 +10794,7 @@
 0.0.0.0 sg-office-nps02.immomo.com
 0.0.0.0 sg.match.com
 0.0.0.0 shaadi.com
+0.0.0.0 shaadicrowd.com
 0.0.0.0 shag-me.co.uk
 0.0.0.0 shagafatty.com
 0.0.0.0 shakelove.com
@@ -10529,6 +10836,8 @@
 0.0.0.0 sikardating.app
 0.0.0.0 silver--singles.com
 0.0.0.0 silver-singles.com.au
+0.0.0.0 silverdating.com
+0.0.0.0 silvergaysingles.com
 0.0.0.0 silverlove.com
 0.0.0.0 silverseniordating.com.au
 0.0.0.0 silverseniormeet.com
@@ -10540,6 +10849,7 @@
 0.0.0.0 singaporematchmaker.com
 0.0.0.0 singaporepassions.com
 0.0.0.0 singelringen.com
+0.0.0.0 singels-flirten.de
 0.0.0.0 singels.ch
 0.0.0.0 single-baltic-lady.com
 0.0.0.0 single-emsland.de
@@ -10550,9 +10860,13 @@
 0.0.0.0 single.at
 0.0.0.0 single.de
 0.0.0.0 single.dk
+0.0.0.0 single2.com
 0.0.0.0 single2single.nl
 0.0.0.0 single40sdating.co.za
+0.0.0.0 single50plus.com
 0.0.0.0 singleangels.com
+0.0.0.0 singlebikerscanada.ca
+0.0.0.0 singlebodybuilders.com
 0.0.0.0 singleboersen.de
 0.0.0.0 singlebox.at
 0.0.0.0 singlebrides.com
@@ -10562,6 +10876,7 @@
 0.0.0.0 singlegays.ca
 0.0.0.0 singlejew.com
 0.0.0.0 singleladies.com
+0.0.0.0 singlematuredates.com
 0.0.0.0 singleme.com
 0.0.0.0 singlemomsanddads.com
 0.0.0.0 singlemomsdatelink.com
@@ -10573,12 +10888,16 @@
 0.0.0.0 singleover70s.com
 0.0.0.0 singleparentdating.net.au
 0.0.0.0 singleparentmatch.net
+0.0.0.0 singleparentmeet.biz
+0.0.0.0 singleparentmeet.com
 0.0.0.0 singleparentpassions.com
 0.0.0.0 singleparents.match.com
+0.0.0.0 singleparentscanada.ca
 0.0.0.0 singleparentsingles.co.uk
 0.0.0.0 singleparentsmeet.com
 0.0.0.0 singleplanet.at
 0.0.0.0 singleprojekt.de
+0.0.0.0 singler.dk
 0.0.0.0 singles-aus-wien.at
 0.0.0.0 singles-dating.net
 0.0.0.0 singles-elite.at
@@ -10589,6 +10908,7 @@
 0.0.0.0 singles.ai
 0.0.0.0 singles.app
 0.0.0.0 singles.at
+0.0.0.0 singles.com
 0.0.0.0 singles.com.ua
 0.0.0.0 singles2meet.co.za
 0.0.0.0 singles365.com
@@ -10609,8 +10929,11 @@
 0.0.0.0 singlescheckin.app
 0.0.0.0 singlesclub.app
 0.0.0.0 singlescoach.app
+0.0.0.0 singlescrowd.co.uk
+0.0.0.0 singlescrowd.com
 0.0.0.0 singlesdating.app
 0.0.0.0 singlesdating247.com
+0.0.0.0 singlesdatingagency.es
 0.0.0.0 singlesday.app
 0.0.0.0 singlesday.com.ar
 0.0.0.0 singlesdaydeals.at
@@ -10621,6 +10944,7 @@
 0.0.0.0 singlesgrapevine.co.uk
 0.0.0.0 singleshot.app
 0.0.0.0 singlesignal.ai
+0.0.0.0 singlesintoronto.ca
 0.0.0.0 singlesites.com
 0.0.0.0 singleskifahren.at
 0.0.0.0 singleslavic.com
@@ -10652,8 +10976,10 @@
 0.0.0.0 singlesucht.com
 0.0.0.0 singlesward.app
 0.0.0.0 singletreff.de
+0.0.0.0 singletreffpunkt.ch
 0.0.0.0 singlevoten.de
 0.0.0.0 singlewithattitude.com
+0.0.0.0 sinsflirt.com
 0.0.0.0 siouxcitydating.com
 0.0.0.0 siouxfallsmatchmaker.com
 0.0.0.0 sip.pof.com
@@ -10740,6 +11066,7 @@
 0.0.0.0 soifdetoi.com
 0.0.0.0 soireesdannie.com
 0.0.0.0 soireesdannie.pushdate.com
+0.0.0.0 soirsexy.com
 0.0.0.0 solasingles.app
 0.0.0.0 solestride.com
 0.0.0.0 solitasysolos.com.ar
@@ -10766,6 +11093,7 @@
 0.0.0.0 soullovers.com
 0.0.0.0 soulmatcher.app
 0.0.0.0 soulmate-searching.com
+0.0.0.0 soulmate.dk
 0.0.0.0 soulmate4ever.nl
 0.0.0.0 soulsingles.com
 0.0.0.0 soulverse.boo.world
@@ -10846,6 +11174,7 @@
 0.0.0.0 splunk-1-us.grindr.com
 0.0.0.0 splunk-2-us.grindr.com
 0.0.0.0 splunk.grindr.com
+0.0.0.0 spojeniprotebe.com
 0.0.0.0 spokanematchmaker.com
 0.0.0.0 spokanematchmakers.com
 0.0.0.0 sportdatingplanet.com
@@ -10854,6 +11183,7 @@
 0.0.0.0 sportsdating.com
 0.0.0.0 sportsinglesmeet.com
 0.0.0.0 sportspassions.com
+0.0.0.0 sportydates.de
 0.0.0.0 springfielddating.com
 0.0.0.0 ssbbwdating.ca
 0.0.0.0 ssbbwdating.com
@@ -10916,6 +11246,7 @@
 0.0.0.0 start.rencontresmatures.fr
 0.0.0.0 starting-dating-today.com
 0.0.0.0 startupspace.us
+0.0.0.0 stastnatrefa.cz
 0.0.0.0 statamic.feeld.co
 0.0.0.0 static-assets.gotinder.com
 0.0.0.0 static-easyflirt.com
@@ -11035,6 +11366,7 @@
 0.0.0.0 swedishsingles.com.au
 0.0.0.0 sweet.yeewa.net
 0.0.0.0 sweetdating.fr
+0.0.0.0 sweetdiscreet.com
 0.0.0.0 sweetkisses.net
 0.0.0.0 sweetmeet.me
 0.0.0.0 swiftdater.net
@@ -11084,6 +11416,7 @@
 0.0.0.0 tabor.ru
 0.0.0.0 tacomamatchmaker.com
 0.0.0.0 tadade55.com
+0.0.0.0 tadum.com
 0.0.0.0 tagged.com
 0.0.0.0 taggedmail.com
 0.0.0.0 tagman.christianmingle.com
@@ -11095,6 +11428,8 @@
 0.0.0.0 talksaferdating.com
 0.0.0.0 tallahasseematchmaker.com
 0.0.0.0 tallbbwdating.com
+0.0.0.0 talldater.com
+0.0.0.0 tallfriends.com
 0.0.0.0 tallpassions.com
 0.0.0.0 tallsinglepeople.com
 0.0.0.0 tamanokosi.net
@@ -11217,6 +11552,7 @@
 0.0.0.0 texaspassions.com
 0.0.0.0 texassexdating.com
 0.0.0.0 texpundit.com
+0.0.0.0 textdatingservice.com
 0.0.0.0 textgod.com
 0.0.0.0 tgguide.com
 0.0.0.0 tgirldating.com.au
@@ -11226,7 +11562,9 @@
 0.0.0.0 th.match.com
 0.0.0.0 thai-dating.com
 0.0.0.0 thaicupid.com
+0.0.0.0 thaidate.dk
 0.0.0.0 thaidating.com.au
+0.0.0.0 thaidating.dk
 0.0.0.0 thaidating.nl
 0.0.0.0 thaiflirting.com
 0.0.0.0 thaifriendly.com
@@ -11275,6 +11613,7 @@
 0.0.0.0 thelovereview.com
 0.0.0.0 theluckydate.com
 0.0.0.0 thematchmakerofmaine.com
+0.0.0.0 thematureconnection.com
 0.0.0.0 themis.zcdn1.zoosk.com
 0.0.0.0 themis.zcdn2.zoosk.com
 0.0.0.0 themis.zoosk.com
@@ -11282,6 +11621,8 @@
 0.0.0.0 themoscowcity.ru
 0.0.0.0 thenewrelationships.com
 0.0.0.0 theotokos.fr
+0.0.0.0 thepeggingclub.com
+0.0.0.0 thepeggingclub.us
 0.0.0.0 thepersonalsfinder.com
 0.0.0.0 thepickuppros.com
 0.0.0.0 theplusr.com
@@ -11294,11 +11635,16 @@
 0.0.0.0 thesinglesolution.co.uk
 0.0.0.0 thespeeddatingcompany.com
 0.0.0.0 thespeeddatingwinetour.com.au
+0.0.0.0 thethreesomeconnection.com
 0.0.0.0 thetransconnection.com
 0.0.0.0 theway2date.co.uk
 0.0.0.0 theyoungandtherestless.com
+0.0.0.0 thirtyflirty.co.uk
 0.0.0.0 thoughtsdating.app
 0.0.0.0 threadsdating.app
+0.0.0.0 threesomeconnection.com
+0.0.0.0 threesomegroup.com
+0.0.0.0 threesomegroup.us
 0.0.0.0 thrivedating.app
 0.0.0.0 thunderboltcity.com
 0.0.0.0 ti-tchat.net
@@ -11307,9 +11653,12 @@
 0.0.0.0 timberdates.at
 0.0.0.0 timecapsule2017.hily.com
 0.0.0.0 timeout.com
+0.0.0.0 tinder.co.nz
 0.0.0.0 tinder.com
 0.0.0.0 tinderoplus.com
 0.0.0.0 tinderphotos-d1-ue1.s3.amazonaws.com
+0.0.0.0 tinderphotos.s3.amazonaws.com
+0.0.0.0 tindersparks.com
 0.0.0.0 tinpak.us
 0.0.0.0 tinychat.com
 0.0.0.0 titusvillesingles.com
@@ -11325,6 +11674,7 @@
 0.0.0.0 toau10tix.bumble.com
 0.0.0.0 todomaduras.es
 0.0.0.0 todoofeminin.com
+0.0.0.0 togethernetworks.com
 0.0.0.0 toietmoi.fr
 0.0.0.0 tokiotube.net
 0.0.0.0 toky.it
@@ -11353,12 +11703,14 @@
 0.0.0.0 top10datingsites.com.au
 0.0.0.0 top10maturedatingsites.com
 0.0.0.0 top10sexdatingreviews.com
+0.0.0.0 top20.co.za
 0.0.0.0 top5dating.co.uk
 0.0.0.0 top5datingsites.com.au
 0.0.0.0 top5datingwebsites.com.au
 0.0.0.0 top6-sites-gay-rencontre.com
 0.0.0.0 topchristiandatingsites.com
 0.0.0.0 topdating.com
+0.0.0.0 topdatings.com
 0.0.0.0 topdatingwebsites.com.au
 0.0.0.0 topekamatchmaker.com
 0.0.0.0 toplocalsingles.app
@@ -11395,6 +11747,7 @@
 0.0.0.0 transchatr.com
 0.0.0.0 transdatecupid.com
 0.0.0.0 transdatinguk.co.uk
+0.0.0.0 transen-dating.com
 0.0.0.0 transensexdating.com
 0.0.0.0 transexualdating.co.za
 0.0.0.0 transexualdating.com.au
@@ -11410,13 +11763,17 @@
 0.0.0.0 travel.whoo.net
 0.0.0.0 travelinghearts.com
 0.0.0.0 travelingpassions.com
+0.0.0.0 travesti.net
 0.0.0.0 trck-org.com
 0.0.0.0 trck.quackquack.in
 0.0.0.0 trekpassions.com
 0.0.0.0 trennungsschmerzen.de
 0.0.0.0 trentonmatchmaker.com
+0.0.0.0 tresor-sexe.com
 0.0.0.0 triage.pof.com
 0.0.0.0 trinity-cf.grindr.com
+0.0.0.0 triocontactos.es
+0.0.0.0 trioespana.com
 0.0.0.0 trip-avenue.com
 0.0.0.0 trivial-girlfriend.com
 0.0.0.0 trkgovo.com
@@ -11446,6 +11803,7 @@
 0.0.0.0 tsdate.com
 0.0.0.0 tsdates.com
 0.0.0.0 tsdates.us
+0.0.0.0 tsdating.com
 0.0.0.0 tsdating.com.au
 0.0.0.0 tsdating.site
 0.0.0.0 tseeks.com
@@ -11465,6 +11823,7 @@
 0.0.0.0 turbo-dating.com
 0.0.0.0 turboflirt.com
 0.0.0.0 turkeypassions.com
+0.0.0.0 turkish-gayland.com
 0.0.0.0 turkishdating.com.au
 0.0.0.0 turkishsingles.com.au
 0.0.0.0 tuscaloosadating.com
@@ -11475,6 +11834,7 @@
 0.0.0.0 tvojerande.cz
 0.0.0.0 tvpassions.com
 0.0.0.0 tvrepublika.pl
+0.0.0.0 tvtsdating.co.uk
 0.0.0.0 tw.match.com
 0.0.0.0 twiml.pof.com
 0.0.0.0 twinedating.com.au
@@ -11501,6 +11861,7 @@
 0.0.0.0 ue1az.gotinder.com
 0.0.0.0 ugay.net
 0.0.0.0 uk-date.com
+0.0.0.0 uk-lottery.net
 0.0.0.0 uk-personals.co.uk
 0.0.0.0 uk-speed-dating.co.uk
 0.0.0.0 uk.europe.ourtime.com
@@ -11530,6 +11891,7 @@
 0.0.0.0 ulteem.it
 0.0.0.0 ultidate.info
 0.0.0.0 ultimateteenmovies.com
+0.0.0.0 ultrarichmatch.com
 0.0.0.0 unclepasha.com
 0.0.0.0 uncontedefee.com
 0.0.0.0 uncoupled.grindr.com
@@ -11541,6 +11903,7 @@
 0.0.0.0 une-rencontre-serieuse.com
 0.0.0.0 une.rencontre-bordeaux-33.com
 0.0.0.0 unebellerencontre.fr
+0.0.0.0 unefemmeronde.com
 0.0.0.0 unerencontre.com
 0.0.0.0 uni-rencontre.com
 0.0.0.0 unidating.app
@@ -11563,11 +11926,13 @@
 0.0.0.0 updating.me
 0.0.0.0 updatingfb.tk
 0.0.0.0 updatinginf.com
+0.0.0.0 upforit.com
 0.0.0.0 upgrade-test.gotinder.com
 0.0.0.0 upload-img.quackquack.in
 0.0.0.0 upload.zoosk.com
 0.0.0.0 uploadphoto.match.com
 0.0.0.0 upoznavanje.net
+0.0.0.0 uppdating.com
 0.0.0.0 uptowndate.com
 0.0.0.0 upward-app.com
 0.0.0.0 upyourdatingame.com.au
@@ -11874,10 +12239,12 @@
 0.0.0.0 usa.uniformdating.com
 0.0.0.0 usacupid.net
 0.0.0.0 usadatinggroup.co
+0.0.0.0 usadatingplanet.com
 0.0.0.0 usc1.bapi.bumble.com
 0.0.0.0 usdates.com
 0.0.0.0 usdating.net
 0.0.0.0 userplane.com
+0.0.0.0 usgay.org
 0.0.0.0 usmarketing.coffeemeetsbagel.com
 0.0.0.0 ussupport.coffeemeetsbagel.com
 0.0.0.0 usw2.dv.aws.pof.com
@@ -11907,6 +12274,7 @@
 0.0.0.0 vampirepassions.com
 0.0.0.0 vancouverintroductions.com
 0.0.0.0 vancouvermatchmakers.com
+0.0.0.0 vanessa69.com
 0.0.0.0 vault.ase1.gotinder.com
 0.0.0.0 vaxthatthangup.com
 0.0.0.0 ve.match.com
@@ -11914,6 +12282,7 @@
 0.0.0.0 vegadating.com
 0.0.0.0 vegaia.com
 0.0.0.0 vegandating.com.au
+0.0.0.0 vegandating.org
 0.0.0.0 vegandatinguk.co.uk
 0.0.0.0 veganesingles.at
 0.0.0.0 veganland.io
@@ -11925,6 +12294,7 @@
 0.0.0.0 vegetarianpassions.com
 0.0.0.0 vegetariansingles.com.au
 0.0.0.0 veggie-singles.com
+0.0.0.0 veggieflirt.com
 0.0.0.0 veggiematchmakers.com
 0.0.0.0 veggiepeoplemeet.com
 0.0.0.0 velida.net
@@ -11950,8 +12320,10 @@
 0.0.0.0 vestafortune.ru
 0.0.0.0 vestarencontre.com
 0.0.0.0 veyadating.app
+0.0.0.0 vglove.fr
 0.0.0.0 vi.int.tantanapp.com
 0.0.0.0 viagemdossolteiros.com.br
+0.0.0.0 vibeline.com
 0.0.0.0 victoriamilan.com
 0.0.0.0 victoriasagency.com.ua
 0.0.0.0 vidaselect.com
@@ -11978,6 +12350,7 @@
 0.0.0.0 virginiabeachmatchmaker.com
 0.0.0.0 virginiadating.com
 0.0.0.0 virginiamatchmaking.com
+0.0.0.0 virginiaonlinepersonals.com
 0.0.0.0 virginiapassions.com
 0.0.0.0 virtua-live.com
 0.0.0.0 virtualdating.eu
@@ -11999,6 +12372,7 @@
 0.0.0.0 vn.match.com
 0.0.0.0 vocaldating.app
 0.0.0.0 voga-api-online.immomo.com
+0.0.0.0 voksenkontakt.com
 0.0.0.0 volosdate.com
 0.0.0.0 vooboo.ru
 0.0.0.0 voodoopassions.com
@@ -12022,6 +12396,7 @@
 0.0.0.0 vpn02.scs.meetme.com
 0.0.0.0 vrooda.com
 0.0.0.0 vrouwzoektman.nu
+0.0.0.0 vryers.co.za
 0.0.0.0 vsegda.love
 0.0.0.0 vtdating.com
 0.0.0.0 w-ru.com
@@ -12072,6 +12447,7 @@
 0.0.0.0 waytohey.com
 0.0.0.0 wazami.com
 0.0.0.0 wcac.us
+0.0.0.0 wearedogging.co.uk
 0.0.0.0 weareher.com
 0.0.0.0 weatherpassions.com
 0.0.0.0 web-ados.com
@@ -12126,6 +12502,7 @@
 0.0.0.0 weekenddating.com
 0.0.0.0 weemove.com
 0.0.0.0 welcome.scruff.com
+0.0.0.0 wellhello.com
 0.0.0.0 wellmatched.com
 0.0.0.0 welovedates.com
 0.0.0.0 werewolfpassions.com
@@ -12133,6 +12510,7 @@
 0.0.0.0 west-speed-dating.com
 0.0.0.0 westcoastmatchmaker.com
 0.0.0.0 westernmatch.com
+0.0.0.0 westmidlandstransvestites.co.uk
 0.0.0.0 westpalmbeachmatchmaker.com
 0.0.0.0 westvirginiadating.com
 0.0.0.0 westvirginiamatchmaker.com
@@ -12157,12 +12535,14 @@
 0.0.0.0 whitedate.net
 0.0.0.0 whosdatingwho.app
 0.0.0.0 wiccandating.com.au
+0.0.0.0 wiccandatingsite.com
 0.0.0.0 wiccanpassions.com
 0.0.0.0 wiccanpersonals.com
 0.0.0.0 wichitafallssingles.com
 0.0.0.0 wichitamatchmaking.com
 0.0.0.0 widating.com
 0.0.0.0 widowdating.com.au
+0.0.0.0 widowedsinglesnear.me
 0.0.0.0 widowmatch.com
 0.0.0.0 wien-singles.at
 0.0.0.0 wienersingles.at
@@ -12482,7 +12862,9 @@
 0.0.0.0 xor-dating.com
 0.0.0.0 xoxoflirtprom.com
 0.0.0.0 xp-gateway.cloud.bumble.com
+0.0.0.0 xpartner.com
 0.0.0.0 xpeeddating.com
+0.0.0.0 xpress.com
 0.0.0.0 xs3events.com
 0.0.0.0 xsessodigruppo.sitio.net
 0.0.0.0 xsexdating.com
@@ -12580,6 +12962,7 @@
 0.0.0.0 youandmedating.com
 0.0.0.0 youbride.jp
 0.0.0.0 youcangetme.com
+0.0.0.0 youdate.dk
 0.0.0.0 youdates-online.org
 0.0.0.0 youflirt.com
 0.0.0.0 youmedating.com
@@ -12643,6 +13026,7 @@
 0.0.0.0 yoursecretdates.com
 0.0.0.0 yoursecretflirt.com
 0.0.0.0 yoursecretflirts.com
+0.0.0.0 yoursecrethookup.com
 0.0.0.0 yoursingleshub.com
 0.0.0.0 yoursinglesolution.com
 0.0.0.0 yoursinglestory.com
@@ -12680,6 +13064,7 @@
 0.0.0.0 za-gay.org
 0.0.0.0 za.match.com
 0.0.0.0 zabava.atlas.cz
+0.0.0.0 zabido.com
 0.0.0.0 zabota.org
 0.0.0.0 zacbrownbandtourdates.com
 0.0.0.0 zadatingadvice.com
@@ -12697,6 +13082,7 @@
 0.0.0.0 zap-sexy.com
 0.0.0.0 zapisanisobie.pl
 0.0.0.0 zappallas.com
+0.0.0.0 zarf.com
 0.0.0.0 zawajdating.com
 0.0.0.0 zcdn1.zoosk.com
 0.0.0.0 zcdn10.zoosk.com
@@ -12778,9 +13164,12 @@
 0.0.0.0 zodiacsignsdates.com
 0.0.0.0 zodiaks.bizland.com
 0.0.0.0 zombiepassions.com
+0.0.0.0 zonabdsm.com
+0.0.0.0 zonabisexual.es
 0.0.0.0 zonacitas.com
 0.0.0.0 zonacitas.com.ar
 0.0.0.0 zonagente.com
+0.0.0.0 zone.bz
 0.0.0.0 zoneados.francite.com
 0.0.0.0 zonefrance.com
 0.0.0.0 zoneseniors.com

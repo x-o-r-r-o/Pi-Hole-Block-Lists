@@ -6,7 +6,10 @@
       "hagezi-light",
       "stevenblack",
       "adaway",
-      "peterlowe"
+      "peterlowe",
+      "adguard-dns-filter",
+      "agf-base-adservers",
+      "agf-tracking-servers"
     ]
   },
   "ads-and-tracking-extended": {
@@ -22,7 +25,22 @@
       "easyprivacy",
       "frogeye-firstparty",
       "adaway",
-      "peterlowe"
+      "peterlowe",
+      "adguard-dns-filter",
+      "adguard-popup-hosts",
+      "dan-pollock",
+      "shadowwhisperer-tracking",
+      "dandelion-anti-push",
+      "agf-base-adservers",
+      "agf-tracking-servers",
+      "agf-chinese-adservers",
+      "agf-cyrillic-adservers",
+      "agf-japanese-adservers",
+      "agf-spanish-adservers",
+      "agf-turkish-adservers",
+      "agf-german-adservers",
+      "agf-dutch-adservers",
+      "agf-french-adservers"
     ]
   },
   "mobile-ads": {
@@ -30,7 +48,9 @@
     "description": "Ad networks used inside Android and iOS apps.",
     "sources": [
       "adaway",
-      "adguard-mobile-ads"
+      "adguard-mobile-ads",
+      "awavenue-ads",
+      "agf-mobile-adservers"
     ]
   },
   "mobile-spyware": {
@@ -45,14 +65,16 @@
       "hagezi-native-huawei",
       "hagezi-native-oppo-realme",
       "hagezi-native-vivo",
-      "hagezi-native-tiktok"
+      "hagezi-native-tiktok",
+      "agf-mobile-allowlist"
     ]
   },
   "youtube-ads": {
     "title": "YouTube Ads",
     "description": "Google/YouTube ad servers. Partial: DNS cannot block all YouTube video ads (see note below).",
     "sources": [
-      "kboghdady-youtube"
+      "kboghdady-youtube",
+      "adguard-dns-youtube-ads"
     ]
   },
   "gambling": {
@@ -60,7 +82,8 @@
     "description": "Online casinos, sports betting, poker, lotteries and other gambling sites.",
     "sources": [
       "hagezi-gambling",
-      "stevenblack-gambling"
+      "stevenblack-gambling",
+      "adguard-services-gambling"
     ]
   },
   "adult": {
@@ -69,7 +92,8 @@
     "sources": [
       "hagezi-nsfw",
       "oisd-nsfw",
-      "stevenblack-porn"
+      "stevenblack-porn",
+      "adguard-services-adult"
     ]
   },
   "social-media": {
@@ -77,11 +101,11 @@
     "description": "Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked.",
     "sources": [
       "hagezi-social",
-      "stevenblack-social"
+      "stevenblack-social",
+      "adguard-services-social"
     ],
     "may_block": [
       "facebook.com",
-      "fbcdn.net",
       "instagram.com",
       "tiktok.com",
       "x.com",
@@ -94,13 +118,15 @@
   },
   "smart-tv": {
     "title": "Smart TV & Streaming Devices",
-    "description": "Tracking and ads on smart TVs and streaming sticks (Samsung, LG webOS, Roku, Amazon Fire).",
+    "description": "Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).",
     "sources": [
       "perflyst-smarttv",
       "hagezi-native-lgwebos",
       "hagezi-native-roku",
       "hagezi-native-amazon",
-      "hagezi-native-samsung"
+      "hagezi-native-samsung",
+      "smarttv-perflyst-dandelion",
+      "dandelion-game-console"
     ]
   },
   "security": {
@@ -112,14 +138,21 @@
       "urlhaus",
       "phishing-army-extended",
       "threatfox",
-      "dandelion-antimalware"
+      "dandelion-antimalware",
+      "hacked-malware-sites",
+      "shadowwhisperer-malware",
+      "ublock-badware",
+      "cert-polska",
+      "ukrainian-security",
+      "phishing-url-blocklist"
     ]
   },
   "stalkerware": {
     "title": "Stalkerware & Phone Monitoring",
     "description": "Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one.",
     "sources": [
-      "ut1-stalkerware"
+      "ut1-stalkerware",
+      "stalkerware-indicators"
     ]
   },
   "crypto-mining": {
@@ -138,14 +171,17 @@
       "hagezi-fake",
       "phishing-database",
       "malware-filter-phishing",
-      "durablenapkin-scam"
+      "durablenapkin-scam",
+      "phishing-url-blocklist",
+      "cert-polska"
     ]
   },
   "live-streaming": {
     "title": "Live-Streaming & Video-Chat Apps",
     "description": "Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see note below).",
     "sources": [
-      "live-streaming-apps"
+      "live-streaming-apps",
+      "adguard-services-live"
     ]
   },
   "dating": {
@@ -153,7 +189,9 @@
     "description": "Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.",
     "sources": [
       "ut1-dating",
-      "dating-apps"
+      "dating-apps",
+      "shadowwhisperer-dating",
+      "adguard-services-dating"
     ]
   },
   "vpn-proxy-bypass": {
@@ -208,7 +246,8 @@
     "title": "AI Chatbots",
     "description": "AI chatbots and writing tools (ChatGPT, Claude, Gemini, Copilot, DeepSeek, Character.AI...). Useful for schools and homework time.",
     "sources": [
-      "ut1-ai"
+      "ut1-ai",
+      "adguard-services-ai"
     ],
     "may_block": [
       "chatgpt.com",
@@ -227,7 +266,8 @@
     "title": "Gaming Platforms",
     "description": "Roblox, Fortnite/Epic, Free Fire, PUBG/BGMI, Minecraft, Steam, Xbox, PlayStation, Nintendo, EA, Riot (League, Valorant), Battle.net, Ubisoft, Call of Duty, Clash of Clans, Mobile Legends, Genshin Impact, Candy Crush, Among Us.",
     "sources": [
-      "gaming-platforms-apps"
+      "gaming-platforms-apps",
+      "adguard-services-gaming"
     ],
     "may_block": [
       "steampowered.com",
@@ -238,7 +278,9 @@
   "youtube": {
     "title": "YouTube",
     "description": "All of YouTube, including YouTube Kids and embedded YouTube videos on other sites. For homework or bedtime.",
-    "sources": [],
+    "sources": [
+      "adguard-services-youtube"
+    ],
     "may_block": [
       "youtube.com",
       "youtu.be",
@@ -250,7 +292,8 @@
     "title": "Video Streaming",
     "description": "Netflix, Disney+, Prime Video, Hulu, Max, Paramount+, Peacock, Shahid, OSN+, STARZPLAY, Viu, iQIYI, WeTV, Crunchyroll, Tubi, Pluto TV, JioHotstar, ZEE5, Sony LIV, Twitch, Kick, Apple TV+.",
     "sources": [
-      "video-streaming-apps"
+      "video-streaming-apps",
+      "adguard-services-video"
     ],
     "may_block": [
       "netflix.com"
@@ -260,7 +303,8 @@
     "title": "Messaging Apps",
     "description": "Telegram, Discord, WhatsApp, Messenger, Signal, Viber, LINE, Kik, imo, WeChat, Threema, Botim. Blocks calls and chats in these apps.",
     "sources": [
-      "messaging-apps"
+      "messaging-apps",
+      "adguard-services-messaging"
     ],
     "may_block": [
       "whatsapp.com",
@@ -324,7 +368,8 @@
     "title": "File Sharing",
     "description": "File-hosting and file-sharing sites (including Dropbox and many free hosts), common sources of malware and pirated files.",
     "sources": [
-      "ut1-filehosting"
+      "ut1-filehosting",
+      "adguard-services-files"
     ],
     "may_block": [
       "dropbox.com"
@@ -341,7 +386,8 @@
     "title": "Shopping",
     "description": "Online shopping sites, for limiting impulse buying.",
     "sources": [
-      "ut1-shopping"
+      "ut1-shopping",
+      "adguard-services-shopping"
     ],
     "may_block": [
       "amazon.com"

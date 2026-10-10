@@ -2,11 +2,12 @@
 # Description: Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see note below).
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 16:58 UTC
-# Entries: 2316
+# Last modified: 2026-10-10 04:24 UTC
+# Entries: 2319
 #
 # Built from these sources (see their licenses):
 #   - Live-streaming & video-chat app servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/live-streaming.json
+#   - AdGuard Home Blocked Services: bigo_live, yy: https://github.com/AdguardTeam/HostlistsRegistry
 
 0.chamet.com
 17.live
@@ -195,6 +196,8 @@ bgtest-bbs.bigo.tv
 bigerator.tango.me
 bigo.sg
 bigo.tv
+bigolive.tv
+bigovideo.tv
 blog.fachatapp.com
 blog.kumu.ph
 blog.poppo.com
@@ -2321,6 +2324,7 @@ yeetalkapp.com
 yjd-proxy-turnover.ihago.net
 yoho.media
 yuwka.chamet.com
+yy.com
 zabbix-grafana.micous.com
 zabbix.micous.com
 zbase.nimo.tv

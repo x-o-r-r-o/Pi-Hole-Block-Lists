@@ -2,11 +2,12 @@
 # Description: File-hosting and file-sharing sites (including Dropbox and many free hosts), common sources of malware and pirated files.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 21:56 UTC
-# Entries: 940
+# Last modified: 2026-10-10 04:24 UTC
+# Entries: 961
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: file hosting: https://dsi.ut-capitole.fr/blacklists/
+#   - AdGuard Home Blocked Services: dropbox, box: https://github.com/AdguardTeam/HostlistsRegistry
 
 0.0.0.0 1000go.fr
 0.0.0.0 11mbit.de
@@ -33,6 +34,7 @@
 0.0.0.0 9giga.sfr.fr
 0.0.0.0 abload.de
 0.0.0.0 abrutis-videos.com
+0.0.0.0 addtodropbox.com
 0.0.0.0 adrive.com
 0.0.0.0 ahstatic.com
 0.0.0.0 airset.com
@@ -49,6 +51,7 @@
 0.0.0.0 anonfile.com
 0.0.0.0 anyhub.net
 0.0.0.0 anzwers.org
+0.0.0.0 app.hellosign.com
 0.0.0.0 arcadeupload.com
 0.0.0.0 arcadya.net
 0.0.0.0 archivosgrandes.com
@@ -87,6 +90,8 @@
 0.0.0.0 boomycloud.com
 0.0.0.0 box.com
 0.0.0.0 box.net
+0.0.0.0 boxcdn.net
+0.0.0.0 boxcloud.com
 0.0.0.0 briefcase.yahoo.com
 0.0.0.0 browsl.com
 0.0.0.0 bubbleshare.com
@@ -119,9 +124,11 @@
 0.0.0.0 dailyuploads.net
 0.0.0.0 daofile.com
 0.0.0.0 dardarkom.com
+0.0.0.0 dash.ai
 0.0.0.0 datafilehost.com
 0.0.0.0 datanodes.to
 0.0.0.0 datapickup.com
+0.0.0.0 db.tt
 0.0.0.0 ddl-share.org
 0.0.0.0 deaddrops.com
 0.0.0.0 debrid-link.fr
@@ -140,6 +147,7 @@
 0.0.0.0 dl-b.free.fr
 0.0.0.0 dl-more.eu
 0.0.0.0 dl.free.fr
+0.0.0.0 docsend.com
 0.0.0.0 dominiord.com
 0.0.0.0 douploads.net
 0.0.0.0 download.anim-area11.net
@@ -152,8 +160,21 @@
 0.0.0.0 driveway.com
 0.0.0.0 drop.io
 0.0.0.0 dropapk.to
+0.0.0.0 dropbox-dns.com
 0.0.0.0 dropbox.com
+0.0.0.0 dropbox.tech
+0.0.0.0 dropbox.zendesk.com
+0.0.0.0 dropboxapi.com
+0.0.0.0 dropboxbusiness.com
+0.0.0.0 dropboxcaptcha.com
+0.0.0.0 dropboxforum.com
+0.0.0.0 dropboxforums.com
+0.0.0.0 dropboxinsiders.com
+0.0.0.0 dropboxlegal.com
+0.0.0.0 dropboxmail.com
+0.0.0.0 dropboxpartners.com
 0.0.0.0 dropboxstatic.com
+0.0.0.0 dropboxteam.com
 0.0.0.0 dropboxusercontent.com
 0.0.0.0 dropfiles.net
 0.0.0.0 dropload.com
@@ -318,6 +339,7 @@
 0.0.0.0 geekimages.com
 0.0.0.0 geralink.in
 0.0.0.0 get-mu.com
+0.0.0.0 getdropbox.com
 0.0.0.0 getfile.biz
 0.0.0.0 getkeepsafe.com
 0.0.0.0 gigabyteupload.com

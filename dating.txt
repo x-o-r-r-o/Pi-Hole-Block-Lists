@@ -2,15 +2,18 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 22:41 UTC
-# Entries: 12797
+# Last modified: 2026-10-10 04:24 UTC
+# Entries: 13184
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
 #   - Dating app servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/dating.json
+#   - ShadowWhisperer's Dating List: https://github.com/ShadowWhisperer/BlockLists
+#   - AdGuard Home Blocked Services: tinder, grindr, plenty_of_fish: https://github.com/AdguardTeam/HostlistsRegistry
 
 007agent-russian-women.net
 01ecde46708b840a1320342727d2ab30.pof.com
+06i0c3.top
 1-800-flirt.com
 10-best-dating-apps.com
 10-best-dating-sites-au.com
@@ -20,6 +23,7 @@
 100-best-dating-sites.com
 100-best-single-sites.com
 100-top-dating-sites.com
+1000-dating-sites.com
 1000amigos.com
 1000sitidating.com
 1001-rencontres.com
@@ -165,6 +169,7 @@
 265dates.com
 2amor.nl
 2backpage.com
+2be2.ch
 2become1.co.il
 2darlings-agency.com
 2day.nl
@@ -231,6 +236,7 @@
 40singles.net
 40smeet.co.nz
 40smeet.com.au
+411-singles.com
 41205.com
 416dates.com
 41stdating.com
@@ -322,6 +328,7 @@
 7secondsdating.com
 808singles.com
 830pmdating.com
+8at8.com
 8minutedating.com
 8moneydates.com
 8p.com.br
@@ -362,6 +369,7 @@ abilidating.com
 abledating.net
 abledatingreview.com
 abledlove.com
+ablesingles.co.uk
 ablink.email.weareher.com
 ablink.messaging.zoosk.com
 ablink.security.zoosk.com
@@ -433,6 +441,7 @@ adatingnet.com
 adbalt-dating.com
 adbuilder.grindr.com
 addatingservices.com.au
+addictsocial.com
 addisondating.com
 addisonsingles.com
 addissingles.com
@@ -505,6 +514,7 @@ adultblackdating.com
 adultcasualdating.com
 adultcontactsonline.com
 adultcougardating.com
+adultdatelink.com
 adultdates.net
 adultdating-co-uk.api-news.ru
 adultdating-personals.com
@@ -926,6 +936,7 @@ alonesingles.com
 alopeciadating.com
 alovelyasian.com
 alovelynite.co.uk
+alovoa.com
 alpenflirts.com
 alpha.meetme.com
 alpha.trulymadly.com
@@ -956,6 +967,8 @@ amarillodating.com
 amarillomatchmaking.com
 amarru.com
 amateur-de-rencontre.com
+amateurmatch.com
+amaxhosa.co.za
 amazingasianz.com
 amazingdating.org
 amb.badoo.com
@@ -987,7 +1000,10 @@ americateve.com
 amesoeur.org
 amidating.com
 amiez.org
+amigos.com
 amigos.nosotras.com
+amigosadventistas.com.br
+amigosamores.com
 amigosargentina.com.ar
 amigosfree.com
 amigosingleses.com
@@ -995,6 +1011,7 @@ amigossingles.com
 amigosvalencia.com
 amigosyencuentros.com
 amiouplus.com
+amirru.com
 amishdating.com
 amishdatingservice.com
 amishsingleschat.com
@@ -1009,6 +1026,7 @@ amoradating.net
 amordating.org
 amore-incontri.sexy.easyincontro.com
 amoreconnectingsingles.com
+amoredate.com
 amoredates.com
 amoreflirt.com
 amoreflirt.net
@@ -1022,11 +1040,13 @@ amour-en-portrait.vu.cx
 amour-libertin.net
 amour-mature.com
 amour-vaucluse.fr
+amour.dk
 amourdating.com
 amourderussie.com
 amoureux.com
 amoureux.fr
 amourfactory.com
+amourfeel.com
 amourheart.com
 amourland.com
 amourmaghreb.com
@@ -1042,6 +1062,7 @@ amp.se.match.com
 amp.se.ourtime.com
 amp.uk.match.com
 amputeeangels.com
+amputeedate.co.uk
 amputeedating.com.au
 amputeedatingclub.com
 amputeedatingservice.com
@@ -1232,6 +1253,7 @@ arabianfest.com
 arabicsinglesmeet.com
 arabonlinedating.com
 arabs4dating.com
+arabsingles.biz
 arabsingles.com.au
 arabsinglesdate.com
 arabsinglesmatch.com
@@ -1268,6 +1290,7 @@ arladys.com
 arlequin-rencontre.com
 arlingtonmatchmaker.com
 arlingtonmatchmakers.com
+armadillo.co.za
 armeniansingles.com.au
 armenianspeeddating.com
 armonies-rencontres.com
@@ -1291,7 +1314,9 @@ ashevilledating.com
 ashleymadison.com
 asia.grindr.com
 asiabliss.com
+asiafind.com
 asiaflame.com
+asiafriendfinder.com
 asialove.kulichki.com
 asiame.com
 asian-lover.net
@@ -1308,9 +1333,13 @@ asiandatingjournal.com
 asiandatingplanet.com
 asianetclub.com
 asianfaces.co.uk
+asianfriendfinder.com
+asiangirls4u.com
+asianhearts.com
 asiankraze.com
 asianlesbiandating.com.au
 asianload.com
+asianlovesearch.com
 asianmatch.com
 asianmatching.com
 asianmatchmate.com
@@ -1380,6 +1409,7 @@ atreveteahora.telemundo.co.match.com
 atreveteahora.terra.latino.match.com
 atreveteahora.univision.cl.match.com
 atreveteahora.univision.co.match.com
+attentionsingles.com
 attisemoi.com
 attractiondating.co.uk
 attractiondiary.com
@@ -1448,6 +1478,7 @@ b2d8.com
 b9.gotinder.com
 babes2date.com
 babyboomerpassions.com
+babyboomerpeoplemeet.biz
 babyshambles.org
 bachelorism.org
 bachpan.com
@@ -1459,6 +1490,7 @@ badoo.com
 badoocdn.com
 badootech.badoo.com
 baerendienst.de
+bahamasdatingonline.com
 baihe.com
 baise-directe.com
 bakeat350.com
@@ -1481,6 +1513,7 @@ bannedvids.com
 baptistpeoplemeet.com
 baptistpm.com
 baredating.app
+baseballovers.com
 basherte.com
 basi-musicali.com
 batch.mabillapi.match.com
@@ -1490,7 +1523,9 @@ batonrougematchmaking.com
 bayareadate.net
 bazardusexe.com
 bazoocam.org
+bbdiva.com
 bbpeoplejoin.com
+bbpeoplemeet.biz
 bbpeoplemeet.com
 bbpeoplemeet.net
 bbw-dates.com
@@ -1518,6 +1553,7 @@ bbw-singles.digitalcompetence.org
 bbw-singlesmeet.com
 bbw.dating
 bbw.mingle.com
+bbw.net
 bbw.singles
 bbw.uppdating.com
 bbwadmire.com
@@ -1772,7 +1808,9 @@ beautifullybigger.com
 beautifulpeople.com
 beautyabroad.com
 beavertonsingles.com
+beboo.ru
 bebopx.ifrance.com
+becoquin.com
 bedrockgaming.com
 bee-dev.cloud.bumble.com
 bee-stage.cloud.bumble.com
@@ -1799,6 +1837,7 @@ belleronde.net
 belles-rondes.com
 bellevuesingles.com
 bellezzarussa.com
+benaughty.com
 bend-me-over.com
 bengalimatrimony.com
 bentonvillematchmakers.com
@@ -1833,6 +1872,7 @@ bestesingleboerse.at
 besthandever.com
 bestofmeetic.fr
 bestofrencontre.fr
+bestprice.co.za
 bestrussianwoman.com
 bestsingle.com
 bestsingle.it
@@ -1857,6 +1897,7 @@ betweenthecheeks.grindr.com
 bewareofloverboys.nl
 beyondages.com
 bez-kompleksov.com
+bezzabran.com
 bezzobowiazan.com
 bharatmatrimony.com
 bhozapper.com
@@ -1865,12 +1906,14 @@ bi4real.nl
 bibbwdating.com
 biblepassions.com
 bicupid.co
+bicupid.com
 bicupid.uk
 bidating.lovez.it
 bigadda.com
 bigboobdating.com.au
 bigbootydating.com.au
 bigbreastdating.com.au
+bigchurch.com
 bigdates.ai
 bigdates.webweaver.app
 biggerbear.com
@@ -2248,6 +2291,7 @@ blacklabeldating.com
 blacklabeldating.shagg.me
 blacklabeldatinggroup.com.ph
 blacklatinodating.com
+blacklesbianclub.com
 blacklesbiandating.org
 blacklesbiansingles.co.uk
 blacklistdating.com
@@ -2539,6 +2583,7 @@ blue-alessi.com
 blue-memoly.net
 bluebirdsdating.com
 blued.com
+blueswingers.com
 bma.bumble.com
 bmidate.com
 bnatcity.byethost5.com
@@ -2605,6 +2650,7 @@ brazilcupid.com
 braziliandating.com.au
 braziliansingles.com.au
 brazink.com.br
+bride.ru
 bridegirl.com
 brides-from.ru
 brides.com
@@ -2667,6 +2713,7 @@ c-date.de
 c-date.es
 c-dating.app
 c-dating.at
+c-dating.fr
 c-ship.jp
 c.pof.com
 c.ue1az.gotinder.com
@@ -2693,6 +2740,7 @@ camelya.com
 cameroun-love.com
 cameroun-rencontre.com
 campagnes-compagnes.com
+campus.co.za
 campusdating.app
 cams2filles.com
 camsympa.com
@@ -2723,6 +2771,7 @@ carbondating.art
 careers.match.com
 caribbeancupid.com
 caribbeankisses.com
+caribsingles.com
 carolinaintroductions.com
 carolinecrowther.com
 carpassions.com
@@ -2738,15 +2787,21 @@ casual-dating.com.ar
 casual-dating.fr
 casual-fling.com
 casualclub.com
+casualdating-club.de
 casualdating.at
 casualdating.fr
+casualdating.net
+casualdating4u.com
 casualdating69.at
+casualdating69.com
 casualdatingclub.at
 casualdatingdeluxe.at
 casuale-dating24.de
 casualflirt.com.au
+casualfriendfinder.co.uk
 casualkiss.com
 casualnaai.com
+casualrandki.pl
 casualroot.com
 casualsexdating.com.au
 casualxdates.at
@@ -2763,6 +2818,7 @@ catholicmates.com
 catholicpassions.com
 catholicpeoplemeet.com
 causes.meetme.com
+cazavo.sk
 cb.tagged.com
 cb2.tagged.com
 ccelibat.com
@@ -2795,6 +2851,7 @@ celibart.com
 celibat.com
 celibataire-lille.com
 celibataire-rencontre.net
+celibataires.info
 celibatairesduweb.com
 celibatedating.app
 celibatepassions.com
@@ -2912,7 +2969,9 @@ chinapassions.com
 chinasilk.net
 chinesedating.app
 chinesedating.co.nz
+chinesefriendfinder.com
 chinesefriendsonline.com
+chinesekisses.com
 chineselovelinks.com
 chinesepeoplemeet.com
 chinesepersonals.ca
@@ -2970,6 +3029,7 @@ cindy-sexy.com
 cinqe.com
 circlesdating.app
 citasnet.com
+citassenioronline.es
 citasweb.com
 citasweb.net
 citerencontre.com
@@ -3004,6 +3064,7 @@ click.christianmingle.com
 click.jdate.com
 click.mamba.ru
 click.weareher.com
+clickandflirt.com
 clicks.grindr.com
 clicksingles.co.uk
 clicktocouple.online
@@ -3042,6 +3103,7 @@ clubrencontre.org
 clubreseau.com
 clubrusse.net
 clubs-de-rencontres.fr
+clubsadomasoquismo.com
 clubsirius.com
 cma.match.com
 cmatch.com
@@ -3097,10 +3159,13 @@ compatibleintroductions.bc.ca
 compatiblesingles.app
 completelyfreedating.com.au
 computerpassions.com
+comunidadbondage.com
 conceptlife.fr
 concorddating.com
 conectados.com
+conexionbisexual.com
 conexiongay.es
+conexiontrios.com
 confidenceonline.net
 confidentialconnections.com
 confidentielles.com
@@ -3116,6 +3181,7 @@ connecticutmatchmaker.com
 connecticutpassions.com
 connecticutsexdating.com
 connecticutsingles.com
+connectingsingles.com
 connection-quizzes-dev.cloud.bumble.com
 connection-quizzes-stage.cloud.bumble.com
 connection-quizzes.cloud.bumble.com
@@ -3130,6 +3196,7 @@ contact-rencontre.net
 contact.libre.free.fr
 contacte.free.fr
 contacten-dating.snuffelcorner.nl
+contactos-casuales.com
 contactosbisex.com
 contactsarabes.com
 contactsingles.co.uk
@@ -3219,6 +3286,7 @@ crmappdirect.services.match.com
 croatiapassions.com
 croquecoeur.fr
 crossdresserdating.com.au
+crossdressinglover.com
 crossroad.ru
 crowndating.app
 cruel.sadizma.net
@@ -3236,6 +3304,7 @@ csr.pof.com
 ctdating.com
 ctk.hu
 cu-ty.com
+cuckold-lovers.com
 cuddle-jp.com
 cuddlecomfort.com
 cuddlyconnect.com
@@ -3328,6 +3397,7 @@ d6y4.ads.pof.com
 d6y5.ads.pof.com
 d8me.co.uk
 d8u.com
+d8uk.com
 da.pof.com
 dahlia.it
 dallasdating.com
@@ -3351,6 +3421,37 @@ datamateuk.com
 datanta.com
 datanta.fr
 datasecurity.zoosk.com
+date-in-aachen.de
+date-in-augsburg.de
+date-in-berlin.de
+date-in-bielefeld.de
+date-in-bochum.de
+date-in-bonn.de
+date-in-bremen.de
+date-in-chemnitz.de
+date-in-dortmund.de
+date-in-dresden.de
+date-in-duesseldorf.de
+date-in-duisburg.de
+date-in-essen.de
+date-in-frankfurt.de
+date-in-halle.de
+date-in-hamburg.de
+date-in-hannover.de
+date-in-karlsruhe.de
+date-in-kiel.de
+date-in-koeln.de
+date-in-leipzig.de
+date-in-mannheim.de
+date-in-muenchen.de
+date-in-muenster.de
+date-in-nuernberg.de
+date-in-potsdam.de
+date-in-rostock.de
+date-in-stuttgart.de
+date-in-wiesbaden.de
+date-in-wuppertal.de
+date-in-zuerich.ch
 date-local-gays.com
 date-me.org
 date.ca
@@ -3365,6 +3466,7 @@ date4u.co.il
 dateaddict.com
 dateamillionaire.com
 datearea.de
+dateasian.org
 dateasians.net
 dateaustralia.com
 datebrowse.com
@@ -3373,6 +3475,7 @@ datecougar.net
 datedate.gr
 dateforeal.com
 datefromukraine.com
+datehotcougar.com
 dateim.com
 dateinasia.com
 dateinspire.com
@@ -3396,6 +3499,7 @@ dateninamsterdam.com
 dateover60.com
 datepartner.life
 datepersms.nl
+dateplaza.de
 datereadingsingles.co.uk
 daterfinder.com
 datermeister.com
@@ -3411,9 +3515,11 @@ datesamerica.com
 datescan.app
 datescope.app
 dateseeker.net
+dateseniors.co.za
 dateseniorukrainian.com
 datesense.app
 datesforseniors.com
+datesforyou.org
 datesfromlastnight.app
 datesgern.com
 datesim.app
@@ -3444,9 +3550,11 @@ datethelatina.com
 datetheuk.com
 datetodate.co.uk
 datetomarry.net
+datetonight.in
 dateukrainiangirl.com
 datewesternislessingles.co.uk
 datewhoyouwant.com
+datewithgays.com
 datewiz.me
 dateworld.co
 dateyou.com
@@ -3494,6 +3602,7 @@ dating-service.com
 dating-services-singles.com
 dating-sextips.com
 dating-site-vergleich.at
+dating-site.co.za
 dating-sites-singapore.com
 dating-sites-singles.com
 dating-sites.whoo.net
@@ -3522,6 +3631,7 @@ dating.findfitlove.com.au
 dating.hioff.ru
 dating.hundiesltd.com
 dating.jdate.com
+dating.lekgay.no
 dating.lls.imaginary.co.za
 dating.lovetoknow.com
 dating.lt
@@ -3551,6 +3661,7 @@ dating.webfinder.ru
 dating.yeahh.com
 dating.zoosk.com
 dating24.ie
+dating4bisexuals.com
 dating4disabledgays.com
 dating4single-online.com
 dating4u.ai
@@ -3597,6 +3708,7 @@ datingbest2010.asia
 datingbest2011.asia
 datingbest2012.asia
 datingbest2012.info
+datingbisexualsingles.com
 datingblog.hostarea.org
 datingboard.app
 datingbook.at
@@ -3678,7 +3790,9 @@ datingfriendships.com
 datingfuchs.at
 datingga.com
 datinggames.app
+datinggayblacksingles.com
 datinggeorgia.com
+datinggold.com
 datinggrandrapids.com
 datingguide.com.au
 datinghalaman.art
@@ -3700,8 +3814,10 @@ datinginafrica.com
 datingindiana.com
 datingindianapolis.com
 datingindy.com
+datinginqatar.com
 datinginsider.com.au
 datinginsider.swingersaustralia.com.au
+datinginterracialsingles.com
 datinginyour50s.com.au
 datingiowa.com
 datingire.com
@@ -3717,7 +3833,9 @@ datingky.com
 datingla.com
 datinglabel.com
 datinglansing.com
+datinglargewomen.com
 datingli.com
+datingline.co.za
 datinglisa.app
 datinglive247.co.uk
 datinglondon.com
@@ -3810,6 +3928,8 @@ datingpittsburgh.com
 datingplace.com
 datingplace.info
 datingplaneet.nl
+datingplanet.org
+datingplanetnetwork.com
 datingplatform.co.uk
 datingplaza.nl
 datingpofekmi.ru
@@ -3908,11 +4028,13 @@ datingsingles.no
 datingsingless.com
 datingsite.ai
 datingsite.be
+datingsite.de
 datingsite.nl
 datingsitefree4all.com
 datingsitereviews.com.au
 datingsites-reviewed.com
 datingsites.at
+datingsites.nl
 datingsites2.com
 datingsitesandservices.com
 datingsitesdirectory.com
@@ -3987,12 +4109,14 @@ datingvergleiche.at
 datingvermont.com
 datingvip.com
 datingvirginia.com
+datingvoormensenmeteenbeperking.nl
 datingvt.com
 datingwa.com
 datingwashington.com
 datingwashingtondc.com
 datingwatch.org
 datingwebsite-reviews.co.uk
+datingwebsite.co.za
 datingwebsites.at
 datingwestvirginia.com
 datingwi.com
@@ -4306,11 +4430,15 @@ dirtyassdating.ru
 dirtydollar.com
 dirtyflirt9.com
 dirtylove.buzznet.com
+dirtysexdates.com
 dirtyzone.com
 disabilitydate.org
+disabilitydating.net
+disabilitymatch.co.uk
 disableddating.com.au
 disableddating.net
 disableddatingclub.org
+disabledlove.us
 disabledpassions.com
 disabledsingles.com.au
 disabledsinglesusa.com
@@ -4349,6 +4477,7 @@ dmvmatchmakers.com
 dna.lovoo.com
 dnadev.lovoo.com
 dnafindvp.com
+dnaromance.com
 dns1.pof.com
 dns2.pof.com
 do-it-candidates.at
@@ -4363,6 +4492,7 @@ dogging.com.au
 doggytherapy.com
 doitcandidates.at
 dolsa.co.za
+domerencontre.com
 dominadates.at
 dominanz.net
 dominicancupid.com
@@ -4424,9 +4554,11 @@ durka.ru
 duskdating.app
 dutchgirly.com
 dwarfdating.com.au
+dxbexpats.com
 dynamic-config.gotinder.com
 dynamitemovies.com
 dzf1174d4gjln.cloudfront.net
+e-amour.ch
 e-dating.at
 e-discus.com
 e-kantei.net
@@ -4534,6 +4666,7 @@ edates.at
 edatest.kiosk.club
 edatesting.zeabur.app
 edating.ch
+edating.dk
 edating.org
 edatingcentral.com
 edatings.com
@@ -4571,6 +4704,7 @@ elitedating.al
 elitedating.app
 elitedatingcompany.net
 elitedatingwebsites.org
+elitekink.com
 elitemate.com
 elitepartner.at
 elitepartner.de
@@ -4630,11 +4764,15 @@ encontrossexoangola.com
 encontrossexoportugal.com
 encount.com
 encounterdating.com.au
+encounters.uk
 encuentro-gay.com
+encuentroadulto.es
+encuentroadulto.net
 encuentros-gay.com
 encuentrosenred.blogspot.com
 encuentrosenred.com
 encuentrosenred.com.ar
+encuentrosparagays.com
 endlessopps.com
 enfantillages.com
 engagedencounter.com
@@ -4648,6 +4786,7 @@ enotalone.com
 enter.boo.world
 entre-infideles.com
 entre-seniors.fr
+entrefemmes.ca
 entremetteurs.com
 eonsystems.com
 epicgalls.com
@@ -4681,6 +4820,7 @@ eskimi.com
 esohbet.net
 espace-live.com
 estellereyna.com
+eterocuriosi.it
 ethiopianpersonals.com
 ethiosingles.app
 etre-deux.com
@@ -4878,6 +5018,7 @@ europe.mingle.com
 europe.ourtime.com
 european-woman.net
 europeandating.net
+europeandatingagency.com
 europeandatingplanet.com
 europeanonlinedating.net
 europeansingles.com.au
@@ -4938,6 +5079,7 @@ facebook8.zoosk.com
 faceflow.com
 facelink.ru
 faceofsiberia.com
+facetoface.com
 factable.internal.zoosk.com
 fafa-photos.phpbb9.com
 fairdating.nl
@@ -4981,6 +5123,7 @@ femdomdating.com.au
 femme-africaine.net
 femme-russe.org
 femmecougaryvelines.com
+femmemure.ch
 femmes-mariees.com
 femmes-russes-mariage.com
 femmes-russes.be
@@ -4988,6 +5131,7 @@ femmeslave.com
 festiflirt.app
 festivuspassions.com
 fetish-dating.app
+fetishcontacts.co.uk
 fetishdating.com.au
 fi.europe.ourtime.com
 fi.match.com
@@ -5005,17 +5149,23 @@ filipinadatingsites.net
 filipinaeyes.com
 filipinaheart.com
 filipinasingles.com.au
+filipinawife.com
 filipino2date.com
 filipinocupid.com
 filipinodating.com.au
+filipinofriendfinder.com
 filipinokisses.com
 filmy.abi.pl
 filthyoverfiftydating.com.au
 find.vu
+findanewlover.com
+findashemalelover.com
 findathreesome.com
 findbride.com
+finder.co.za
 findhappy.com
 findloveasia.com
+findme.co.za
 findmeseniorsingles.com
 findmy.gay
 findmymatches.com
@@ -5057,6 +5207,7 @@ fitness-dating.com.au
 fitness-singles.com
 fitnessdates.com
 fitnessdating.app
+fjortis.se
 flash-rencontres.com
 flashplayer-updating.com
 flashplayerupdating.com
@@ -5065,6 +5216,7 @@ fldating.com
 flechanos.com
 fleetingdates.life
 fleurafricaine.com
+fling.com
 flingcentral.com
 flingdatingapp.com
 flipflirt.app
@@ -5106,6 +5258,7 @@ flirtbook.at
 flirtbot.app
 flirtbox.com
 flirtbox.us
+flirtcafe.de
 flirtcam.ai
 flirtcard.at
 flirtchat.app
@@ -5144,6 +5297,7 @@ flirtia.art
 flirtic.ee
 flirtico.app
 flirting-lab.app
+flirtingbuddies.com
 flirtini.ai
 flirtini.app
 flirtini.com
@@ -5168,6 +5322,7 @@ flirtme.art
 flirtmeeting.com
 flirtmind.app
 flirtmit.at
+flirtmoi.com
 flirtmoms.com
 flirtnacht.at
 flirtnet.app
@@ -5505,6 +5660,7 @@ gayasiansingles.com
 gayatheistdating.com
 gaybarebackdates.com
 gaybdsmdate.co.uk
+gaybdsmdate.com
 gaybdsmdating.com.au
 gaybdsmsingles.com
 gaybearsdating.com
@@ -5533,6 +5689,7 @@ gaychubsingles.com
 gaycowboydating.com
 gaycowboysingles.com
 gaycubdating.com
+gaycupid.com
 gaydaddating.com
 gaydar.net
 gaydates.com
@@ -5654,6 +5811,7 @@ gaymaleadultdating.com
 gaymarinedating.com
 gaymarrieddating.com
 gaymaturedating.com
+gaymeetmarket.com
 gaymen.ircq.it
 gaymendating.at
 gaymendating.com
@@ -5749,6 +5907,7 @@ gayspa.com.tw
 gayspanishdating.com
 gayspeeddates.com
 gaysugardaddydating.com
+gaysugardaddydating.net
 gaysugardating.com
 gayteendatingapps.com
 gayteens.co.uk
@@ -5764,6 +5923,7 @@ gaytreffen.info
 gaytruckerdates.com
 gaytruckerdating.com
 gayukdating.com
+gayukonlinepersonals.com
 gayuniformsingles.com
 gayvegetariandating.com
 gayworldvideodates.com
@@ -5783,6 +5943,7 @@ generations.dating
 genteahora.com
 gentedemsn.com
 genuinesingles.com
+genxpeoplemeet.com
 geoflirt.com
 georgiadating.com
 georgiamatchmaker.com
@@ -5884,6 +6045,7 @@ goldiesplace.net
 golfingpassions.com
 golfsingle.com
 golove.de
+gomatch.com
 gonnalove.com
 gonuldensevenler.com
 goo.match.com
@@ -5907,6 +6069,7 @@ gothpassions.com
 gothscene.com
 gotinder.com
 gottabreakup.com
+gotthem.com
 goudou.fr
 goulburndating.com.au
 gp.gotinder.com
@@ -5927,6 +6090,7 @@ grannydating.app
 grannydating.au
 grannydating.net
 grannydating.org
+grannydatingclub.co.uk
 grannydatingsite.co.uk
 grannydatingsite.com
 grannydatingwebsite.com
@@ -5934,6 +6098,7 @@ grannydildo.com
 grannyfunonline.com
 grannymatch.org
 grannysexdating.com.au
+grannysexfriend.com
 grannysingles.com
 grannyswipe.com
 graphjet.air.pof.com
@@ -5992,7 +6157,9 @@ grpc.us-central1.bff-discovery-dev.cloud.bumble.com
 grpc.us-central1.bff-discovery-staging.cloud.bumble.com
 grpc.us-central1.bff-discovery.cloud.bumble.com
 gruppensex-land.de
+gstatvb.com
 gtrouve.com
+guapasmaduras.com
 guayu.com
 guide-site-rencontre.fr
 guide-sites-rencontres.ch
@@ -6020,6 +6187,7 @@ hallokoko.com
 halloweenpassions.com
 hana-mail.jp
 handicap-singles.com
+handilove.fr
 handysprueche.de
 hangoutnow.com
 happiness.mk.ua
@@ -6089,6 +6257,7 @@ henho.top
 henhoonline.net
 hepcsinglesonline.com
 herbal-place.com
+herkert.name
 herothemovie.com
 herpesdating.au
 herpespassions.com
@@ -6160,6 +6329,7 @@ hot-dating.net
 hot-sensation.info
 hotasiadate.com
 hotbbwdating.com
+hotbuddies.co.uk
 hotdate.joanaheiss.de
 hotdating-girl.life
 hotdatingcentral.com
@@ -6189,6 +6359,7 @@ httpwww-lorraine-vip.monforum.com
 hub.grindr.com
 hubpeople.ai
 hubpeople.com
+hubz.pl
 hugavenue.com
 hukdating.com
 humsafar.co.uk
@@ -6267,6 +6438,8 @@ ilove.kiev.ua
 ilove.terra.com.br
 iloveandyou.com
 iloveim.com
+ilovemessenger.fr
+iltuoamore.it
 iluzi0n.free.fr
 im.qq.com
 ima-dating.com
@@ -6275,6 +6448,7 @@ images-ssl.gotinder.com
 images.gotinder.com
 images.hinge.co
 images.match.com
+images.prod.boo.dating
 img.meetme.com
 img.tagged.com
 img2.hily.com
@@ -6302,10 +6476,20 @@ inc.pd2eu.badoocdn.com
 inc.pd2us.badoocdn.com
 incisozluk.co
 incontramilf.com
+incontri-adulti.it
 incontri-donne.vivastreet.alice.it
 incontri-uomini.vivastreet.alice.it
+incontri.biz
+incontriadult.communityincontri.com
+incontricasual.com
+incontricasual.net
+incontricatanzaro.net
+incontrilatex.it
 incontriromantici.it
+incontrisugardaddy.it
 incontritalia.sexy.easyincontro.com
+incontriveloci.com
+incontrixadulti.it
 indating.com
 independencesingles.com
 india-passions.com
@@ -6472,6 +6656,7 @@ itsokaytolook.com
 itsrencontres.com
 ivorytowers.net
 iwannadate.nl
+iwantu.com
 ixg.llc
 j4l.com
 ja.int.tantanapp.com
@@ -6551,13 +6736,16 @@ jollyromance.com
 jongerendating.nl
 joondating.app
 jp.match.com
+jpeoplemeet.biz
 jplove.com
 jrencontre.com
 jsbs2012.jp
 jsingles.com
 jsoulmate.com
 jswsn.org
+jubilant.net
 judischesingles.at
+juicy.business
 jujme.com
 julienlove.eu
 juliyaweb.com
@@ -6849,6 +7037,7 @@ latamdate.com
 latestdating2012.asia
 latestdating2012.info
 latestdating2013.info
+latesummerlove.com
 latidate.com
 latidates.net
 latin-wife.com
@@ -6928,16 +7117,24 @@ legacy.match.com
 legal-agreements-dev.grindr.com
 legal-agreements-prod.grindr.com
 legalpassions.com
+lekdate.no
 lemonswan.de
 leparfaitgentleman.fr
 lesbian.com
+lesbian.singles
+lesbianasenmexico.com
 lesbianchatonline.com
 lesbiandating.net
 lesbiandatingservices.co.cc
 lesbiandatingsites.info
+lesbianmatchmaker.com.au
 lesbianonlinedating.com.au
+lesbians-in-america.com
+lesbians-in-canada.com
+lesbidating.com
 lesbiedates.com
 lesbiemates.com
+lesbiskdating.dk
 lesclesdelarencontre.com
 lesmeilleursrencontres.com
 lesoffresrencontres.com
@@ -6949,11 +7146,13 @@ letshangout.com
 letsmakelove.com
 letsmeet.co.za
 letsmeet.com
+letsmeetup.com
 lex.lgbt
 lexa.nl
 lexadating.com
 lexingtonmatchmaker.com
 lezfindr.com
+lgbt-dating.com
 lgbtdating.org
 lgbth.com
 liados.net
@@ -7000,6 +7199,7 @@ links.weareher.com
 links.zoosk.com
 linkstore.co.jp
 linkylove.net
+lipsticklesbians.net
 lis.zoosk.com
 list-faces.com
 list-manage.com
@@ -7042,6 +7242,8 @@ localgilfs.com
 localgrannies.net
 localhottiesnow.com
 localmatch.com
+localmaturedating.net
+localmeets.ie
 localolderdating.com
 localphotoratings.com
 localromance.com
@@ -7082,6 +7284,7 @@ londoncitydating.co.uk
 londonercontacts.co.uk
 londonintroductions.com
 lonelyparentsdate.com
+lonelywivesdatelink.com
 longbeachmatchmaker.com
 longhairyo.com
 longislandquickdate.com
@@ -7212,7 +7415,9 @@ loveaholics.com
 lovealizer.de
 loveandfriends.co.uk
 loveandfriends.com
+loveandseek.biz
 loveandseek.com
+loveandseek.tv
 lovearts.com
 loveawake.com
 lovebbw.com
@@ -7233,6 +7438,7 @@ lovedating.org
 lovedatingsites.com
 loveday.ch
 lovedays.ru
+lovedesir.fr
 lovedetectives.com
 lovedetoi.com
 lovedetoi.fr
@@ -7257,6 +7463,7 @@ loveismatch.com
 loveissexy.com
 lovelab.com.ua
 lovelee.com
+lovelife.ca
 loveline.fr
 lovelineireland.com
 lovelive.fr
@@ -7279,6 +7486,7 @@ loventine.com
 loveo.fr
 loveorama.com
 loveorsexe.com
+loveplace.ch
 loveplanet.ru
 loveplanet.ua
 loveplanets.kiev.ua
@@ -7338,6 +7546,7 @@ lubbockdating.com
 lubbockmatchmaker.com
 lubovdating.com
 lubovy.ru
+lulusloveshack.com
 lumasearch.com
 lunchdates.com
 lusomeet.com
@@ -7473,6 +7682,7 @@ marriedgay.org
 marriedpassions.com
 marrish.com
 marry-an-ugly-millionaire-online-dating-agency.com
+marryy.me
 marsetvenus.com
 marydating.com
 marylanddating.com
@@ -7482,6 +7692,7 @@ marylandpassions.com
 marylandsexdating.com
 mashable.com
 masked.love
+masochiste.org
 massachusettsdating.com
 massachusettsmatchmaker.com
 massachusettsmatchmaking.com
@@ -7492,6 +7703,7 @@ match-dating.nl
 match-ru.com
 match-seeker.com
 match-usa.com
+match-wizard.com
 match.com
 match.com.ar
 match.com.au
@@ -7508,6 +7720,7 @@ match2date.net
 match4me.nl
 matchadating.app
 matchakiss.co.uk
+matchasiansingles.com
 matchdating.app
 matcheddating.tk
 matchedwithlove.com
@@ -7545,6 +7758,7 @@ matriarchmatch.com
 matrimonialnetwork.com
 matrimonials.com
 matrimus.kharkiv.com
+matrymonia.pl
 matthewhussey.com
 mature-adult-dating-sites.misternifty.com
 mature-adult-dating.digitalcompetence.org
@@ -7654,6 +7868,7 @@ mature-women-dating.net
 mature-women-dating.org
 mature-women-sex-dating.kenkounavi.net
 mature.dating
+mature.exchange
 mature.se
 mature88dates.info
 matureaberdeendating.co.uk
@@ -7668,6 +7883,7 @@ maturebdsmdating.com
 maturebedfordshiredating.co.uk
 maturebelfastdating.co.uk
 matureberkshiredating.co.uk
+maturebi.com
 maturebirminghamdating.co.uk
 maturebristoldating.co.uk
 maturebuckinghamshiredating.co.uk
@@ -8127,6 +8343,7 @@ mediakit.lnu.edu.ua
 medicalpassions.com
 meebo.com
 meet-card.com
+meet-dating.com
 meet-gay-men.com
 meet-island.com
 meet-seniors.com
@@ -8197,6 +8414,7 @@ meetngo.com
 meetolderwomen.net
 meetouting.com
 meetromanian.com
+meetrussianbrides.com
 meetrussiangirl.com
 meets.com.ar
 meetseniorme.com
@@ -8311,6 +8529,7 @@ miamisingleschat.net
 miamisinglesonline.com
 miamispeeddating.com
 miamiwomengirls.com
+miayo.com
 micane.jp
 michiamo.com
 michigandating.com
@@ -8334,6 +8553,7 @@ milf-dates.com
 milf-match.be
 milf-match.nl
 milf.singles
+milfdatelink.com
 milfdates.org
 milfdates24.com
 milfdating-site.net
@@ -8393,6 +8613,7 @@ millionaire-datingapp.com
 millionaire-matchdating.com
 millionaire-singles.org
 millionaire.dating
+millionairebuddies.com
 millionaireclubdating.com
 millionairedates.com
 millionairedating.app
@@ -8421,6 +8642,7 @@ millionairegaydating.com
 millionairematch.com
 millionairematchdatingapp.com
 millionairematchdatingsites.com
+millionairematchmaker.ca
 millionairepassions.com
 millionairesclub123.com
 millionairesdating.org
@@ -8640,6 +8862,8 @@ mycheekydate.com
 mydarling.ru
 mydata.meetme.com
 mydata.tagged.com
+mydate.dk
+mydates.com
 mydating2013.asia
 mydatingphoto.com
 mydatingtoday.com
@@ -8654,6 +8878,7 @@ mylifedates.app
 mylol.com
 mylove.kiev.ua
 mylove.ru
+mynaughtyfriend.com
 mynews.elitesingles.com
 mypartnerforever.com
 mysexyflirt.com
@@ -8708,11 +8933,13 @@ nebraskadating.com
 nebraskaintroductions.com
 nebraskapassions.com
 nebraskasexdating.com
+neckdate.de
 nedating.com
 nederland-date-dating.nl
 nederlanddating.com
 nederlanddating.nl
 neighborhoodcutie.com
+neiubim.ro
 nematchmaking.com
 neo-cf.grindr.com
 neo-qax-api.grindr.com
@@ -8811,6 +9038,7 @@ nightdating.info
 nightsites.com
 nineinchnails-lovers.hyves.nl
 ninjapassions.com
+nipagonicobro.es
 nirvam.it
 njdating.com
 njpersonals.com
@@ -8849,6 +9077,7 @@ norwegian-singles.app
 norwegiandating.com.au
 norwegiansingles.app
 nospensees.fr
+nostringsattached.com
 notadatingapp.app
 notifications.christianmingle.com
 notifications.elitesingles.com
@@ -8877,6 +9106,7 @@ nu-date.com
 nudedating.com.au
 nudgedating.app
 nudistdating.com.au
+nudistonlinedating.com
 nuopsexdate.nl
 nvdating.com
 nwdatenight.com
@@ -8999,6 +9229,7 @@ onlinedatingsingles.net
 onlinedatingtest.at
 onlinedatinguk.co.uk
 onlinedatingukraine.app
+onlinedejt.se
 onlineforlove.com
 onlinelovedating.com
 onlinesexbutik.se
@@ -9065,11 +9296,14 @@ ourtime.com
 outdoordating.app
 outdoorpeoplemeet.com
 over40datingsite.co.uk
+over40sdating.in
 over50datingnorge.com
 over50datingservices.com
+over50sdating.net
 over50singlesmeet.com
 over60.singles
 over60dating.com.au
+over60dating.online
 over70dating.com
 overseafriend.com
 overseas-match.com
@@ -9128,6 +9362,7 @@ parshipmeet.com
 partner-services.com
 partner.de
 partner.eharmony.com
+partner24online.de
 partneri.sk
 partnerkereso.info
 partnermedniveau.dk
@@ -9150,6 +9385,8 @@ passiondamour.com
 passionsearch.com
 passionsnetwork.com
 pasya.ru
+patakadates.in
+patchwork-paar.de
 patolo.jp
 pausecafe62.com
 pay-dev.cloud.bumble.com
@@ -9192,6 +9429,8 @@ pearmatch.co.uk
 peekabooheart.com
 pegging.group
 pegging.love
+peggingdates.com
+pegginglovers.com
 pendingpictures.intl.match.com
 pendingprimary.intl.match.com
 penndating.com
@@ -9364,16 +9603,21 @@ policies.pof.com
 policies.tinder.com
 polishdating.at
 polishdating.fr
+polishdating.org
 polishhearts.com
 polishsingles.com.au
 polls.tinder.com
 polovinka.org
 polska-erotyka.org
+polyamorosos.com
 polyamorouspassions.com
+polyamorsenior.com
+polyamorsenior.es
 polydates.at
 polygamistdating.com.au
 ponies.tagged.com
 pontevedrasingles.com
+pop6.com
 popmates.co.uk
 popteen.net
 poptheballoondating.app
@@ -9384,6 +9628,7 @@ portlandgaymatchmaker.com
 portlandintroductions.com
 portugal-tchat.com
 portugalpassions.com
+portugays.pt
 posdating.club
 positivedating.app
 positivesingles.app
@@ -9488,6 +9733,7 @@ push.badoo.com
 pussydating.ru
 pwa.trulymadly.com
 pyometrack.com
+q2w.net
 qa.azr.pof.com
 qa.gcp.pof.com
 qa1.match.com
@@ -9535,6 +9781,7 @@ rande.cz
 rande.sk
 randevum.com
 randivonal.hu
+randkisympatia.pl
 randocelibat.forumsactifs.com
 rank-beauty.com
 rapid-rencontres.com
@@ -9674,6 +9921,7 @@ reflections-beta.feeld.co
 reflections-staging.feeld.co
 regiosexcontact.nl
 regiosexdating.com
+register.co.za
 register2.match.com
 register3.match.com
 registration.pof.com
@@ -9691,6 +9939,7 @@ relatie.vindjeviahier.nl
 relatieplanet.nl
 relatiinoi.com
 relationshipminded.com
+relaxiones.es
 relrules.com
 rencontre-2.com
 rencontre-ado.com
@@ -9818,24 +10067,36 @@ rencontre95.com
 rencontrea.com
 rencontreabj.orgfree.com
 rencontreafricaine.com
+rencontreamoureuse.ch
+rencontreasiatique.org
 rencontrebisexuel.com
 rencontrebisexuelle.fr.st
+rencontrecavalier.fr
 rencontrechaude.be
+rencontrechretien.org
 rencontrecoquincoquine.com
+rencontrecoquine.ch
+rencontrecougar.ca
 rencontrecougarsexy.com
 rencontrediscret.com
 rencontreduquebec.com
 rencontrefemme-rencontrehomme.com
+rencontregatineau.ca
+rencontregay.ch
 rencontrehot.site.voila.fr
 rencontreinedite.ch
 rencontrejuive.com
 rencontrelesbiennes.fr
 rencontrelibertinage.com
 rencontrelibertine.be
+rencontrelibertine.ch
 rencontrelover.com
+rencontremalentendant.fr
+rencontremariage.ch
 rencontremsn.com
 rencontreo.fr
 rencontreparis.net
+rencontrepiercing.fr
 rencontrer-rencontre.com
 rencontrer-sur-internet.com
 rencontrer.com
@@ -9862,6 +10123,7 @@ rencontres-champagne-ardenne.fr
 rencontres-champagne.net
 rencontres-clermont-ferrand.net
 rencontres-com.fr
+rencontres-coquines.ca
 rencontres-coquines.info
 rencontres-corse.fr
 rencontres-dating.com
@@ -9931,6 +10193,7 @@ rencontres-poitou-charentes.fr
 rencontres-poitou-charentes.net
 rencontres-reunion.com
 rencontres-rhone-alpes.fr
+rencontres-rondes.fr
 rencontres-sexe-gratuites.ifrance.com
 rencontres-site.com
 rencontres-suisse.ch
@@ -10018,6 +10281,8 @@ rencontrescoquines.eu
 rencontrescorse.com
 rencontresdansmaville.com
 rencontresduweb.com
+rencontresecrete.ca
+rencontreseniors.org
 rencontresentrehommes.com
 rencontreservice.org
 rencontresfillesexy.com
@@ -10025,6 +10290,7 @@ rencontresgap.com
 rencontresgratuites.net
 rencontresgratuites.org
 rencontresgueret.com
+rencontresherbrooke.ca
 rencontresitrans.com
 rencontreslanguedoc.net
 rencontreslaroche.com
@@ -10061,6 +10327,7 @@ rencontrespyrenees.net
 rencontresrennes.net
 rencontresrhone.net
 rencontresrodez.com
+rencontresrondes.ca
 rencontresrouen.net
 rencontressaintbrieuc.com
 rencontressaintetienne.com
@@ -10108,6 +10375,7 @@ rest-gateway.tagged.com
 rest.van1.pd.pof.com
 retrouve-moi.fr
 reveuse.fr
+review.co.za
 revolutiondating.com
 rewards.video.pof.com
 rezog.com
@@ -10142,9 +10410,12 @@ rockwallsingles.com
 rollosfaciles.com
 romance-cafe.com
 romance-net.com
+romancedubai.com
 romanceideal.com.br
+romancelinker.com
 romancepassions.com
 romancingcupid.com
+romancium.com
 romaniansingles.com.au
 romantic-dating.tk
 romanticrelay.com
@@ -10153,6 +10424,7 @@ romeo-et-juliette.com
 romeo.com
 romeojuliet.com
 rondevo.com
+ropebondagemeetups.com
 rosebrides.com
 rosevillesingles.com
 roswellsingles.com
@@ -10172,6 +10444,7 @@ rumbacaracas.com
 rummble.com
 runningpassions.com
 runwayer.dilmil.co
+ruralsingles.com
 rus-romance.de
 rusdate.de
 rusdate.net
@@ -10212,6 +10485,7 @@ russianwomendating.us
 russianwomendiscussion.com
 russianwomensexy.com
 russievisit.com
+russischefrauen.ch
 rustop.link
 rvsp.com.au
 ryerose.net
@@ -10267,6 +10541,7 @@ sc-cd-nps03.immomo.com
 sc-cd-nps04.immomo.com
 sc-cd-nps05.immomo.com
 sc-cd-nps06.immomo.com
+scambiocoppie.org
 scandimatch.com
 scandinaviansingles.com.au
 scapadasamorosas.com
@@ -10303,6 +10578,7 @@ searchingforsingles.com
 searchloveonline.com
 searchmate.co.uk
 searchthepersonals.com
+seasonsdating.co.uk
 seatfortwo.com
 seattlegaymatchmaker.com
 seattleintroductions.com
@@ -10354,6 +10630,7 @@ seeklovenet.s3.amazonaws.com
 seekmysugardaddy.com
 seekmytoyboy.com
 seksafspraakjes.nl
+sekscamera.nl
 sekssohbet.org
 selectivesearch-inc.com
 selectperfect.com
@@ -10363,39 +10640,68 @@ self-contact.com
 selfservice.grindr.com
 senegal-mariage.com
 senegal-rencontre.com
+senior-love-match.co.uk
 senior-match.com
 senior.date
 senior.dk
+seniorbdsmusa.us
+seniorbi.com
 seniorblackpeoplemeet.com
+seniorbondage.com
 seniorcasualdating.com
 seniorchatt.se
+seniorcrossdresser.com
+seniorcrossdressusa.us
+seniordate.dk
 seniordatelink.com
+seniordating.es
+seniordatingagency-scotland.co.uk
+seniordatingagency-spain.com
+seniordatingagency.net
+seniordatingagency.nl
 seniordatinglove.com
+seniordatingonline.co.uk
 seniordatingplanet.com
+seniordatingsite.co.za
 seniordesire.com
+seniordogging.com
+seniordomination.com
 senioren-dating-websites.at
 seniorendates24.at
+seniorfetish.com
 seniorfriendfinder.com
 seniorfriendship.co.uk
 seniorfriendsonline.com
+seniorlesbians.com
 seniorlove.org
 seniormatch.com
+seniormatch.us
 seniormatchcom.com
 seniormatchdatingsite.com
 seniormates.com
 seniorpassions.com
+seniorpeoplemeet.biz
+seniorpolyamory.com
 seniorrmatch.com
 seniors-rencontre.com
+seniorsbi.com
 seniorsdatinghub.com
 seniorsexdating.com
 seniorsexdating.com.au
 seniorsfindlove.com
+seniorsingles.biz
 seniorsinglesdating.com.au
+seniorsinglesnear.me
 seniorsinglesplace.com
 seniorsmeet.com
 seniorsrencontres.com
 seniorstodate.com
+seniorsubdomclub.com
+seniorsubdomclub.us
+seniorswingersclubusa.us
+seniorthreesomes.com
 seniortruelove.com
+seniorwhipping.com
 senseflirt.com
 sentimente.com
 sentimente.ro
@@ -10488,6 +10794,7 @@ sg-office-nps01.immomo.com
 sg-office-nps02.immomo.com
 sg.match.com
 shaadi.com
+shaadicrowd.com
 shag-me.co.uk
 shagafatty.com
 shakelove.com
@@ -10529,6 +10836,8 @@ signup.boo.world
 sikardating.app
 silver--singles.com
 silver-singles.com.au
+silverdating.com
+silvergaysingles.com
 silverlove.com
 silverseniordating.com.au
 silverseniormeet.com
@@ -10540,6 +10849,7 @@ singaporelovelinks.com
 singaporematchmaker.com
 singaporepassions.com
 singelringen.com
+singels-flirten.de
 singels.ch
 single-baltic-lady.com
 single-emsland.de
@@ -10550,9 +10860,13 @@ single.ag
 single.at
 single.de
 single.dk
+single2.com
 single2single.nl
 single40sdating.co.za
+single50plus.com
 singleangels.com
+singlebikerscanada.ca
+singlebodybuilders.com
 singleboersen.de
 singlebox.at
 singlebrides.com
@@ -10562,6 +10876,7 @@ singlegateway.com
 singlegays.ca
 singlejew.com
 singleladies.com
+singlematuredates.com
 singleme.com
 singlemomsanddads.com
 singlemomsdatelink.com
@@ -10573,12 +10888,16 @@ singlenetwork.com
 singleover70s.com
 singleparentdating.net.au
 singleparentmatch.net
+singleparentmeet.biz
+singleparentmeet.com
 singleparentpassions.com
 singleparents.match.com
+singleparentscanada.ca
 singleparentsingles.co.uk
 singleparentsmeet.com
 singleplanet.at
 singleprojekt.de
+singler.dk
 singles-aus-wien.at
 singles-dating.net
 singles-elite.at
@@ -10589,6 +10908,7 @@ singles-speed-date.co.uk
 singles.ai
 singles.app
 singles.at
+singles.com
 singles.com.ua
 singles2meet.co.za
 singles365.com
@@ -10609,8 +10929,11 @@ singleschat.at
 singlescheckin.app
 singlesclub.app
 singlescoach.app
+singlescrowd.co.uk
+singlescrowd.com
 singlesdating.app
 singlesdating247.com
+singlesdatingagency.es
 singlesday.app
 singlesday.com.ar
 singlesdaydeals.at
@@ -10621,6 +10944,7 @@ singleselpaso.com
 singlesgrapevine.co.uk
 singleshot.app
 singlesignal.ai
+singlesintoronto.ca
 singlesites.com
 singleskifahren.at
 singleslavic.com
@@ -10652,8 +10976,10 @@ singlestoday.de
 singlesucht.com
 singlesward.app
 singletreff.de
+singletreffpunkt.ch
 singlevoten.de
 singlewithattitude.com
+sinsflirt.com
 siouxcitydating.com
 siouxfallsmatchmaker.com
 sip.pof.com
@@ -10740,6 +11066,7 @@ softdating.com
 soifdetoi.com
 soireesdannie.com
 soireesdannie.pushdate.com
+soirsexy.com
 solasingles.app
 solestride.com
 solitasysolos.com.ar
@@ -10766,6 +11093,7 @@ soulfulencounters.com
 soullovers.com
 soulmatcher.app
 soulmate-searching.com
+soulmate.dk
 soulmate4ever.nl
 soulsingles.com
 soulverse.boo.world
@@ -10846,6 +11174,7 @@ spiritualsociety.com
 splunk-1-us.grindr.com
 splunk-2-us.grindr.com
 splunk.grindr.com
+spojeniprotebe.com
 spokanematchmaker.com
 spokanematchmakers.com
 sportdatingplanet.com
@@ -10854,6 +11183,7 @@ sportsbrief.com
 sportsdating.com
 sportsinglesmeet.com
 sportspassions.com
+sportydates.de
 springfielddating.com
 ssbbwdating.ca
 ssbbwdating.com
@@ -10916,6 +11246,7 @@ start.pof.com
 start.rencontresmatures.fr
 starting-dating-today.com
 startupspace.us
+stastnatrefa.cz
 statamic.feeld.co
 static-assets.gotinder.com
 static-easyflirt.com
@@ -11035,6 +11366,7 @@ swedenpassions.com
 swedishsingles.com.au
 sweet.yeewa.net
 sweetdating.fr
+sweetdiscreet.com
 sweetkisses.net
 sweetmeet.me
 swiftdater.net
@@ -11084,6 +11416,7 @@ tableau.gotinder.com
 tabor.ru
 tacomamatchmaker.com
 tadade55.com
+tadum.com
 tagged.com
 taggedmail.com
 tagman.christianmingle.com
@@ -11095,6 +11428,8 @@ talent.video.pof.com
 talksaferdating.com
 tallahasseematchmaker.com
 tallbbwdating.com
+talldater.com
+tallfriends.com
 tallpassions.com
 tallsinglepeople.com
 tamanokosi.net
@@ -11217,6 +11552,7 @@ texasmatchmaking.com
 texaspassions.com
 texassexdating.com
 texpundit.com
+textdatingservice.com
 textgod.com
 tgguide.com
 tgirldating.com.au
@@ -11226,7 +11562,9 @@ th.int.tantanapp.com
 th.match.com
 thai-dating.com
 thaicupid.com
+thaidate.dk
 thaidating.com.au
+thaidating.dk
 thaidating.nl
 thaiflirting.com
 thaifriendly.com
@@ -11275,6 +11613,7 @@ theloveguarantee.com
 thelovereview.com
 theluckydate.com
 thematchmakerofmaine.com
+thematureconnection.com
 themis.zcdn1.zoosk.com
 themis.zcdn2.zoosk.com
 themis.zoosk.com
@@ -11282,6 +11621,8 @@ themodernman.com
 themoscowcity.ru
 thenewrelationships.com
 theotokos.fr
+thepeggingclub.com
+thepeggingclub.us
 thepersonalsfinder.com
 thepickuppros.com
 theplusr.com
@@ -11294,11 +11635,16 @@ thesinglesgroup.com
 thesinglesolution.co.uk
 thespeeddatingcompany.com
 thespeeddatingwinetour.com.au
+thethreesomeconnection.com
 thetransconnection.com
 theway2date.co.uk
 theyoungandtherestless.com
+thirtyflirty.co.uk
 thoughtsdating.app
 threadsdating.app
+threesomeconnection.com
+threesomegroup.com
+threesomegroup.us
 thrivedating.app
 thunderboltcity.com
 ti-tchat.net
@@ -11307,9 +11653,12 @@ tiilt.fr
 timberdates.at
 timecapsule2017.hily.com
 timeout.com
+tinder.co.nz
 tinder.com
 tinderoplus.com
 tinderphotos-d1-ue1.s3.amazonaws.com
+tinderphotos.s3.amazonaws.com
+tindersparks.com
 tinpak.us
 tinychat.com
 titusvillesingles.com
@@ -11325,6 +11674,7 @@ tnsingles.com
 toau10tix.bumble.com
 todomaduras.es
 todoofeminin.com
+togethernetworks.com
 toietmoi.fr
 tokiotube.net
 toky.it
@@ -11353,12 +11703,14 @@ top10datingreviews.org
 top10datingsites.com.au
 top10maturedatingsites.com
 top10sexdatingreviews.com
+top20.co.za
 top5dating.co.uk
 top5datingsites.com.au
 top5datingwebsites.com.au
 top6-sites-gay-rencontre.com
 topchristiandatingsites.com
 topdating.com
+topdatings.com
 topdatingwebsites.com.au
 topekamatchmaker.com
 toplocalsingles.app
@@ -11395,6 +11747,7 @@ transallure.co.uk
 transchatr.com
 transdatecupid.com
 transdatinguk.co.uk
+transen-dating.com
 transensexdating.com
 transexualdating.co.za
 transexualdating.com.au
@@ -11410,13 +11763,17 @@ transzone.com
 travel.whoo.net
 travelinghearts.com
 travelingpassions.com
+travesti.net
 trck-org.com
 trck.quackquack.in
 trekpassions.com
 trennungsschmerzen.de
 trentonmatchmaker.com
+tresor-sexe.com
 triage.pof.com
 trinity-cf.grindr.com
+triocontactos.es
+trioespana.com
 trip-avenue.com
 trivial-girlfriend.com
 trkgovo.com
@@ -11446,6 +11803,7 @@ ts.dating
 tsdate.com
 tsdates.com
 tsdates.us
+tsdating.com
 tsdating.com.au
 tsdating.site
 tseeks.com
@@ -11465,6 +11823,7 @@ tupian.com
 turbo-dating.com
 turboflirt.com
 turkeypassions.com
+turkish-gayland.com
 turkishdating.com.au
 turkishsingles.com.au
 tuscaloosadating.com
@@ -11475,6 +11834,7 @@ tvoi-znakomstva.ru
 tvojerande.cz
 tvpassions.com
 tvrepublika.pl
+tvtsdating.co.uk
 tw.match.com
 twiml.pof.com
 twinedating.com.au
@@ -11501,6 +11861,7 @@ udolly.com
 ue1az.gotinder.com
 ugay.net
 uk-date.com
+uk-lottery.net
 uk-personals.co.uk
 uk-speed-dating.co.uk
 uk.europe.ourtime.com
@@ -11530,6 +11891,7 @@ ulteem.fr
 ulteem.it
 ultidate.info
 ultimateteenmovies.com
+ultrarichmatch.com
 unclepasha.com
 uncontedefee.com
 uncoupled.grindr.com
@@ -11541,6 +11903,7 @@ une-rencontre-gratuite.fr
 une-rencontre-serieuse.com
 une.rencontre-bordeaux-33.com
 unebellerencontre.fr
+unefemmeronde.com
 unerencontre.com
 uni-rencontre.com
 unidating.app
@@ -11563,11 +11926,13 @@ updating.ddns.info
 updating.me
 updatingfb.tk
 updatinginf.com
+upforit.com
 upgrade-test.gotinder.com
 upload-img.quackquack.in
 upload.zoosk.com
 uploadphoto.match.com
 upoznavanje.net
+uppdating.com
 uptowndate.com
 upward-app.com
 upyourdatingame.com.au
@@ -11874,10 +12239,12 @@ usa-mailbrides.com
 usa.uniformdating.com
 usacupid.net
 usadatinggroup.co
+usadatingplanet.com
 usc1.bapi.bumble.com
 usdates.com
 usdating.net
 userplane.com
+usgay.org
 usmarketing.coffeemeetsbagel.com
 ussupport.coffeemeetsbagel.com
 usw2.dv.aws.pof.com
@@ -11907,6 +12274,7 @@ vampiredating.com.au
 vampirepassions.com
 vancouverintroductions.com
 vancouvermatchmakers.com
+vanessa69.com
 vault.ase1.gotinder.com
 vaxthatthangup.com
 ve.match.com
@@ -11914,6 +12282,7 @@ veemance.com.au
 vegadating.com
 vegaia.com
 vegandating.com.au
+vegandating.org
 vegandatinguk.co.uk
 veganesingles.at
 veganland.io
@@ -11925,6 +12294,7 @@ vegetariandating.club
 vegetarianpassions.com
 vegetariansingles.com.au
 veggie-singles.com
+veggieflirt.com
 veggiematchmakers.com
 veggiepeoplemeet.com
 velida.net
@@ -11950,8 +12320,10 @@ verynaughtydating.co.uk
 vestafortune.ru
 vestarencontre.com
 veyadating.app
+vglove.fr
 vi.int.tantanapp.com
 viagemdossolteiros.com.br
+vibeline.com
 victoriamilan.com
 victoriasagency.com.ua
 vidaselect.com
@@ -11978,6 +12350,7 @@ vipswingers.nl
 virginiabeachmatchmaker.com
 virginiadating.com
 virginiamatchmaking.com
+virginiaonlinepersonals.com
 virginiapassions.com
 virtua-live.com
 virtualdating.eu
@@ -11999,6 +12372,7 @@ vmalert-helper.mamba.ru
 vn.match.com
 vocaldating.app
 voga-api-online.immomo.com
+voksenkontakt.com
 volosdate.com
 vooboo.ru
 voodoopassions.com
@@ -12022,6 +12396,7 @@ vpn01.scs.meetme.com
 vpn02.scs.meetme.com
 vrooda.com
 vrouwzoektman.nu
+vryers.co.za
 vsegda.love
 vtdating.com
 w-ru.com
@@ -12072,6 +12447,7 @@ wayn.com
 waytohey.com
 wazami.com
 wcac.us
+wearedogging.co.uk
 weareher.com
 weatherpassions.com
 web-ados.com
@@ -12126,6 +12502,7 @@ weddingbazaar.com
 weekenddating.com
 weemove.com
 welcome.scruff.com
+wellhello.com
 wellmatched.com
 welovedates.com
 werewolfpassions.com
@@ -12133,6 +12510,7 @@ west-love.com
 west-speed-dating.com
 westcoastmatchmaker.com
 westernmatch.com
+westmidlandstransvestites.co.uk
 westpalmbeachmatchmaker.com
 westvirginiadating.com
 westvirginiamatchmaker.com
@@ -12157,12 +12535,14 @@ whispers4u.com
 whitedate.net
 whosdatingwho.app
 wiccandating.com.au
+wiccandatingsite.com
 wiccanpassions.com
 wiccanpersonals.com
 wichitafallssingles.com
 wichitamatchmaking.com
 widating.com
 widowdating.com.au
+widowedsinglesnear.me
 widowmatch.com
 wien-singles.at
 wienersingles.at
@@ -12482,7 +12862,9 @@ xnxx.com
 xor-dating.com
 xoxoflirtprom.com
 xp-gateway.cloud.bumble.com
+xpartner.com
 xpeeddating.com
+xpress.com
 xs3events.com
 xsessodigruppo.sitio.net
 xsexdating.com
@@ -12580,6 +12962,7 @@ yoshkar-ola.com
 youandmedating.com
 youbride.jp
 youcangetme.com
+youdate.dk
 youdates-online.org
 youflirt.com
 youmedating.com
@@ -12643,6 +13026,7 @@ yoursdating.com
 yoursecretdates.com
 yoursecretflirt.com
 yoursecretflirts.com
+yoursecrethookup.com
 yoursingleshub.com
 yoursinglesolution.com
 yoursinglestory.com
@@ -12680,6 +13064,7 @@ yycsingles.com
 za-gay.org
 za.match.com
 zabava.atlas.cz
+zabido.com
 zabota.org
 zacbrownbandtourdates.com
 zadatingadvice.com
@@ -12697,6 +13082,7 @@ zankqcldating.com
 zap-sexy.com
 zapisanisobie.pl
 zappallas.com
+zarf.com
 zawajdating.com
 zcdn1.zoosk.com
 zcdn10.zoosk.com
@@ -12778,9 +13164,12 @@ zodiacsigndates.net
 zodiacsignsdates.com
 zodiaks.bizland.com
 zombiepassions.com
+zonabdsm.com
+zonabisexual.es
 zonacitas.com
 zonacitas.com.ar
 zonagente.com
+zone.bz
 zoneados.francite.com
 zonefrance.com
 zoneseniors.com
