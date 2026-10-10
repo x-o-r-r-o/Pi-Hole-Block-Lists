@@ -1682,7 +1682,7 @@ Latest changes (the full history is in [CHANGELOG.md](CHANGELOG.md); the lists' 
 
 - **2026-10-10:**
   - **Added:** a Quick start; guides for routers, NAS systems, TVs, consoles, phones and away from home; device installers
-    for macOS, Windows, Linux, Android and EdgeRouter; YouTube browser lists; and 18 more lists, including
+    for macOS, Windows, Linux, Android and EdgeRouter; YouTube browser lists; and 17 more lists, including
     `ads-regional`, `game-consoles`, `youtube`, `messaging` and `security-strict`.
   - **Fixed:** `t.co` and `bit.ly` links being blocked; `chat-strangers` blocking WhatsApp and Discord; and the wrong
     claim that `security` contains `phishing-and-scams`.
