@@ -2,8 +2,8 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 11:02 UTC
-# Entries: 12972
+# Last modified: 2026-10-10 11:39 UTC
+# Entries: 12903
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
@@ -369,6 +369,7 @@
 0.0.0.0 ablesingles.co.uk
 0.0.0.0 ablink.messaging.zoosk.com
 0.0.0.0 ablink.security.zoosk.com
+0.0.0.0 ablinks.jdate.com
 0.0.0.0 ablinks.mail.christianmingle.com
 0.0.0.0 ablinks.mail.hinge.co
 0.0.0.0 ablinks.newsletters.christianmingle.com
@@ -451,10 +452,8 @@
 0.0.0.0 admin.connect.cloud.bumble.com
 0.0.0.0 admin.dilmil.co
 0.0.0.0 admin.node.dilmil.co
-0.0.0.0 admin.sandbox.dilmil.co
-0.0.0.0 admin.staging1.dilmil.co
-0.0.0.0 admin.staging2.dilmil.co
 0.0.0.0 adminmedia.in
+0.0.0.0 adminportal.jdate.com
 0.0.0.0 ado55.com
 0.0.0.0 adocity.com
 0.0.0.0 adopteunmec.com
@@ -678,6 +677,7 @@
 0.0.0.0 affiliact.com
 0.0.0.0 affiliate-help.ru
 0.0.0.0 affiliate2dating.com
+0.0.0.0 affiliates.jdate.com
 0.0.0.0 affiliates.match.com
 0.0.0.0 affiliation-dating.com
 0.0.0.0 affinitas.io
@@ -1160,7 +1160,6 @@
 0.0.0.0 api-gw.happn.fr
 0.0.0.0 api-internal.meetme.com
 0.0.0.0 api-legacy.meetme.com
-0.0.0.0 api-preprod-gw.happn.com
 0.0.0.0 api-preprod.happn.com
 0.0.0.0 api-stage.cloud.bumble.com
 0.0.0.0 api.as1.gotinder.com
@@ -1173,7 +1172,6 @@
 0.0.0.0 api.meetme.com
 0.0.0.0 api.okcupid.com
 0.0.0.0 api.pof.com
-0.0.0.0 api.sandbox.dilmil.co
 0.0.0.0 api.sharemydate.gotinder.com
 0.0.0.0 api.speeddate.tinder.com
 0.0.0.0 api.staging-segment.elitesingles.com
@@ -1197,7 +1195,6 @@
 0.0.0.0 apostasingles.com
 0.0.0.0 app-active-flirting.com
 0.0.0.0 app.40s.co.za
-0.0.0.0 app.aisle.co
 0.0.0.0 app.boo.world
 0.0.0.0 app.hinge.co
 0.0.0.0 app.lovoo.com
@@ -1858,6 +1855,8 @@
 0.0.0.0 besttopinfo.com
 0.0.0.0 bestweekforsex.com
 0.0.0.0 beta-web.dilmil.co
+0.0.0.0 beta.hornetapp.com
+0.0.0.0 beta.jdate.com
 0.0.0.0 beta.login.boo.world
 0.0.0.0 beta.meetme.com
 0.0.0.0 beta.muzz.com
@@ -2532,7 +2531,6 @@
 0.0.0.0 blog.ads.pof.com
 0.0.0.0 blog.aisle.co
 0.0.0.0 blog.bumble.com
-0.0.0.0 blog.dilmil.co
 0.0.0.0 blog.gotinder.com
 0.0.0.0 blog.grindr.com
 0.0.0.0 blog.hinge.co
@@ -2543,7 +2541,6 @@
 0.0.0.0 blog.quackquack.in
 0.0.0.0 blog.test.trulymadly.com
 0.0.0.0 blog.trulymadly.com
-0.0.0.0 blog2.dilmil.co
 0.0.0.0 blondpassions.com
 0.0.0.0 blossoms.com
 0.0.0.0 blue-alessi.com
@@ -2587,11 +2584,6 @@
 0.0.0.0 bostonintroductions.com
 0.0.0.0 bostonsinglemingle.com
 0.0.0.0 bot.dev.okcupid.com
-0.0.0.0 bot.gateway1.dilmil.co
-0.0.0.0 bot.gateway2.dilmil.co
-0.0.0.0 bot.sandbox.dilmil.co
-0.0.0.0 bot.staging1.dilmil.co
-0.0.0.0 bot.staging2.dilmil.co
 0.0.0.0 bothsingle.co.uk
 0.0.0.0 boulderdating.com
 0.0.0.0 bouncedating.app
@@ -2696,6 +2688,7 @@
 0.0.0.0 californiaflirt.com
 0.0.0.0 californiaintroductions.com
 0.0.0.0 californiapassions.com
+0.0.0.0 callback.jdate.com
 0.0.0.0 callback.lovoo.com
 0.0.0.0 cambodiancupid.com
 0.0.0.0 camelya.com
@@ -3352,7 +3345,6 @@
 0.0.0.0 darmowe2.sexarchiwum.pl
 0.0.0.0 darnipora.lt
 0.0.0.0 dashboard-sec.weareher.com
-0.0.0.0 dashboard.aisle.co
 0.0.0.0 dashboard.weareher.com
 0.0.0.0 dashboard.xp-gateway.cloud.bumble.com
 0.0.0.0 dashingdates.com
@@ -3570,6 +3562,7 @@
 0.0.0.0 dating.findfitlove.com.au
 0.0.0.0 dating.hioff.ru
 0.0.0.0 dating.hundiesltd.com
+0.0.0.0 dating.jdate.com
 0.0.0.0 dating.lekgay.no
 0.0.0.0 dating.lls.imaginary.co.za
 0.0.0.0 dating.lovetoknow.com
@@ -4188,7 +4181,6 @@
 0.0.0.0 design.bumble.com
 0.0.0.0 designdating.biz
 0.0.0.0 desirmoi.fr
-0.0.0.0 desisareromantics.aisle.co
 0.0.0.0 desmoinesintroductions.com
 0.0.0.0 desmoinesmatchmaking.com
 0.0.0.0 desperadocasino.com
@@ -4350,7 +4342,6 @@
 0.0.0.0 digitalpixworld.com
 0.0.0.0 dijon.onvasortir.com
 0.0.0.0 dil-mil.com
-0.0.0.0 dildiaries.dilmil.co
 0.0.0.0 dilkarishta.com
 0.0.0.0 dilmil.co
 0.0.0.0 dimup.com
@@ -4747,15 +4738,11 @@
 0.0.0.0 erotikanzeige.net
 0.0.0.0 erotikdates.at
 0.0.0.0 erwinsdate.de
-0.0.0.0 es.dilmil.co
 0.0.0.0 es.europe.ourtime.com
 0.0.0.0 es.feeld.co
 0.0.0.0 es.match.com
 0.0.0.0 es.ourtime.com
 0.0.0.0 es.pof.com
-0.0.0.0 es.sandbox.dilmil.co
-0.0.0.0 es.staging1.dilmil.co
-0.0.0.0 es.staging2.dilmil.co
 0.0.0.0 esconda.com
 0.0.0.0 escortgirl-fr.com
 0.0.0.0 eskimi.com
@@ -5116,8 +5103,6 @@
 0.0.0.0 finnicella.net
 0.0.0.0 finya.de
 0.0.0.0 fiorry.co
-0.0.0.0 firebase-prod.aisle.co
-0.0.0.0 firebase-testing.aisle.co
 0.0.0.0 fireflychat.com
 0.0.0.0 firozamatrimony.com
 0.0.0.0 firstaffair.com
@@ -5520,9 +5505,6 @@
 0.0.0.0 gateway.meetme.com
 0.0.0.0 gateway.pof.com
 0.0.0.0 gateway.tagged.com
-0.0.0.0 gateway1.dilmil.co
-0.0.0.0 gateway2.dilmil.co
-0.0.0.0 gateway3.dilmil.co
 0.0.0.0 gauche-rencontre.com
 0.0.0.0 gay-army.org
 0.0.0.0 gay-dating-apps.com
@@ -5871,7 +5853,6 @@
 0.0.0.0 germansingles.com.au
 0.0.0.0 germanydatingnet.com
 0.0.0.0 germanypassions.com
-0.0.0.0 gesture.aisle.co
 0.0.0.0 get.feeld.co
 0.0.0.0 getarussianbride.com
 0.0.0.0 getdates.ai
@@ -5935,7 +5916,6 @@
 0.0.0.0 gmen.co.za
 0.0.0.0 go-dating.app
 0.0.0.0 go-get-guys.com
-0.0.0.0 go.dilmil.co
 0.0.0.0 go.feeld.co
 0.0.0.0 go.grindr.com
 0.0.0.0 go.match.com
@@ -6091,7 +6071,6 @@
 0.0.0.0 gunloverspassions.com
 0.0.0.0 guygetsgirl.com
 0.0.0.0 guysforsex.com
-0.0.0.0 gw.aisle.co
 0.0.0.0 gyao.match.com
 0.0.0.0 gydoo.com
 0.0.0.0 gymdating.app
@@ -6633,6 +6612,7 @@
 0.0.0.0 jira.pof.com
 0.0.0.0 jiskreni.cz
 0.0.0.0 jkarma.com
+0.0.0.0 jlife.jdate.com
 0.0.0.0 jlifestatic.jdate.com
 0.0.0.0 jm-date.com
 0.0.0.0 jmatch.com
@@ -6830,9 +6810,6 @@
 0.0.0.0 keywestdating.com
 0.0.0.0 khersongirls.com
 0.0.0.0 ki-dating.app
-0.0.0.0 kibana.dilmil.co
-0.0.0.0 kibana.staging1.dilmil.co
-0.0.0.0 kibana.staging2.dilmil.co
 0.0.0.0 kievconnections.com
 0.0.0.0 kiffmeeting.com
 0.0.0.0 kiflove.com
@@ -7166,17 +7143,20 @@
 0.0.0.0 lockandkeyevents.com
 0.0.0.0 log4love.com
 0.0.0.0 logdate.com
-0.0.0.0 login.aisle.co
 0.0.0.0 login.boo.world
 0.0.0.0 login.christianmingle.com
 0.0.0.0 login.dev.christianmingle.com
 0.0.0.0 login.dev.elitesingles.com
+0.0.0.0 login.dev.jdate.com
 0.0.0.0 login.elitesingles.com
+0.0.0.0 login.jdate.com
 0.0.0.0 login.pof.com
 0.0.0.0 login.stg.christianmingle.com
 0.0.0.0 login.stg.elitesingles.com
+0.0.0.0 login.stg.jdate.com
 0.0.0.0 login.test.christianmingle.com
 0.0.0.0 login.test.elitesingles.com
+0.0.0.0 login.test.jdate.com
 0.0.0.0 logon2dating.com
 0.0.0.0 loisir-chat.exolia.net
 0.0.0.0 loisirados.com
@@ -7223,6 +7203,7 @@
 0.0.0.0 love-dating.me
 0.0.0.0 love-dev.christianmingle.com
 0.0.0.0 love-dev.elitesingles.com
+0.0.0.0 love-dev.jdate.com
 0.0.0.0 love-discount.net
 0.0.0.0 love-exchange.co.uk
 0.0.0.0 love-for-ever.com
@@ -7258,6 +7239,7 @@
 0.0.0.0 love.cz
 0.0.0.0 love.dev.christianmingle.com
 0.0.0.0 love.dev.elitesingles.com
+0.0.0.0 love.dev.jdate.com
 0.0.0.0 love.dk
 0.0.0.0 love.druzba.org.ua
 0.0.0.0 love.elitesingles.com
@@ -7290,6 +7272,7 @@
 0.0.0.0 love.spbland.ru
 0.0.0.0 love.stg.christianmingle.com
 0.0.0.0 love.stg.elitesingles.com
+0.0.0.0 love.stg.jdate.com
 0.0.0.0 love.studic.info
 0.0.0.0 love.talkcity.ru
 0.0.0.0 love.volgavolga.com
@@ -7471,6 +7454,7 @@
 0.0.0.0 m.date-me.com
 0.0.0.0 m.elitesingles.com
 0.0.0.0 m.hinge.co
+0.0.0.0 m.jdate.com
 0.0.0.0 m.jp.match.com
 0.0.0.0 m.meetme.com
 0.0.0.0 m.msnjp.match.com
@@ -7635,6 +7619,7 @@
 0.0.0.0 matchmakermatchmaker.com
 0.0.0.0 matchmaking.christianmingle.com
 0.0.0.0 matchmaking.elitesingles.com
+0.0.0.0 matchmaking.jdate.com
 0.0.0.0 matchmaking.zoosk.com
 0.0.0.0 matchmakingcalifornia.com
 0.0.0.0 matchmakingmichigan.com
@@ -8224,8 +8209,6 @@
 0.0.0.0 mecacroquer.com
 0.0.0.0 medating.com
 0.0.0.0 medcentr-pobeda.ru
-0.0.0.0 media-preprod.happn.com
-0.0.0.0 media.aisle.co
 0.0.0.0 media.elitesingles.com
 0.0.0.0 media.match.com
 0.0.0.0 media.pof.com
@@ -9294,11 +9277,6 @@
 0.0.0.0 payment-flow-us-central1.payment-processing-staging.cloud.bumble.com
 0.0.0.0 payment-flow-us-central1.payment-processing.cloud.bumble.com
 0.0.0.0 payments.boo.world
-0.0.0.0 payments.gateway1.dilmil.co
-0.0.0.0 payments.gateway2.dilmil.co
-0.0.0.0 payments.sandbox.dilmil.co
-0.0.0.0 payments.staging1.dilmil.co
-0.0.0.0 payments.staging2.dilmil.co
 0.0.0.0 paystaging.tinder.com
 0.0.0.0 pazintys.lt
 0.0.0.0 pcmax.jp
@@ -9368,8 +9346,6 @@
 0.0.0.0 phoenixgaymatchmaker.com
 0.0.0.0 phoenixsingles.com
 0.0.0.0 phonesex.com.pl
-0.0.0.0 photo-analysis-preprod.happn.com
-0.0.0.0 photo-analysis.happn.com
 0.0.0.0 photo-faces.com
 0.0.0.0 photodating.ai
 0.0.0.0 photofeeler.com
@@ -9453,13 +9429,6 @@
 0.0.0.0 plussizeddating.com.au
 0.0.0.0 plussizematch.com
 0.0.0.0 plussizepersonals.co.uk
-0.0.0.0 pm2.gateway1.dilmil.co
-0.0.0.0 pm2.gateway2.dilmil.co
-0.0.0.0 pm2.sandbox.dilmil.co
-0.0.0.0 pma.dilmil.co
-0.0.0.0 pma.sandbox.dilmil.co
-0.0.0.0 pma.staging1.dilmil.co
-0.0.0.0 pma.staging2.dilmil.co
 0.0.0.0 podrygi.goldflirts.ru
 0.0.0.0 poepsexdating.com
 0.0.0.0 pof.com
@@ -9531,7 +9500,6 @@
 0.0.0.0 premiumcasualdating.at
 0.0.0.0 premiumdates.at
 0.0.0.0 premiumvideoupdating.be
-0.0.0.0 preprod-images.happn.com
 0.0.0.0 preprod1.grindr.com
 0.0.0.0 preprod2.quackquack.in
 0.0.0.0 presbyterianpeoplemeet.com
@@ -9558,8 +9526,6 @@
 0.0.0.0 prod.jdate.com
 0.0.0.0 prod.muzz.com
 0.0.0.0 prod.zoosk.com
-0.0.0.0 prodgraph.aisle.co
-0.0.0.0 prodsocket.aisle.co
 0.0.0.0 prodtest1-keepalive-alb.gotinder.com
 0.0.0.0 prodtest2-keepalive-alb.gotinder.com
 0.0.0.0 prodtest3-keepalive-alb.gotinder.com
@@ -9569,7 +9535,6 @@
 0.0.0.0 professionalpeoplemeet.com
 0.0.0.0 professionalpeoplemeet.mobi
 0.0.0.0 professionalsingles.app
-0.0.0.0 profile-verification-preprod.happn.com
 0.0.0.0 profile.meetme.com
 0.0.0.0 profile.speeddate.tinder.com
 0.0.0.0 progressivedate.com
@@ -9580,6 +9545,7 @@
 0.0.0.0 prophet4you.com
 0.0.0.0 protect.christianmingle.com
 0.0.0.0 protect.elitesingles.com
+0.0.0.0 protect.jdate.com
 0.0.0.0 protohive-dev.cloud.bumble.com
 0.0.0.0 protohive.cloud.bumble.com
 0.0.0.0 providencematchmaking.com
@@ -9634,12 +9600,6 @@
 0.0.0.0 r-std.com
 0.0.0.0 r.tantanapp.com
 0.0.0.0 r5y2gy824h6rdjjax3en.blog.bumble.com
-0.0.0.0 rabbit.sandbox.dilmil.co
-0.0.0.0 rabbit.staging1.dilmil.co
-0.0.0.0 rabbit.staging2.dilmil.co
-0.0.0.0 rabbit3.dilmil.co
-0.0.0.0 rabbit4.dilmil.co
-0.0.0.0 rabbit5.dilmil.co
 0.0.0.0 raccoon.tagged.com
 0.0.0.0 radar-rencontres.fr
 0.0.0.0 raleighintroductions.com
@@ -9912,6 +9872,7 @@
 0.0.0.0 rencontre.francite.com
 0.0.0.0 rencontre.gay.infideles.be
 0.0.0.0 rencontre.gayadultere.fr
+0.0.0.0 rencontre.jdate.com
 0.0.0.0 rencontre.kosmopolyte.com
 0.0.0.0 rencontre.lepost.fr
 0.0.0.0 rencontre.love.masculin.com
@@ -10226,7 +10187,6 @@
 0.0.0.0 report-import.cloud.bumble.com
 0.0.0.0 report-staging.cloud.bumble.com
 0.0.0.0 report.cloud.bumble.com
-0.0.0.0 reports.aisle.co
 0.0.0.0 reports.gotinder.com
 0.0.0.0 republicanmeet.com
 0.0.0.0 republicanpassions.com
@@ -10674,7 +10634,6 @@
 0.0.0.0 shidduch.8m.com
 0.0.0.0 shiftmatchmaking.com
 0.0.0.0 shop.bumble.com
-0.0.0.0 shop.dilmil.co
 0.0.0.0 shop.grindr.com
 0.0.0.0 shop.pof.com
 0.0.0.0 shop.scruff.com
@@ -10919,7 +10878,6 @@
 0.0.0.0 socialistpassions.com
 0.0.0.0 socialself.com
 0.0.0.0 socialsexdating.com
-0.0.0.0 socket.aisle.co
 0.0.0.0 sofiadate.com
 0.0.0.0 sofianebahri.chatango.com
 0.0.0.0 soft-rencontre.com
@@ -11094,12 +11052,9 @@
 0.0.0.0 staging.scruff.com
 0.0.0.0 staging.tinder.com
 0.0.0.0 staging.trulymadly.com
-0.0.0.0 staging1.dilmil.co
 0.0.0.0 staging1.gotinder.com
 0.0.0.0 staging1.trulymadly.com
-0.0.0.0 staging2.dilmil.co
 0.0.0.0 staging3.gotinder.com
-0.0.0.0 stagingblog.dilmil.co
 0.0.0.0 stamfordmatchmaker.com
 0.0.0.0 starescort.co.uk
 0.0.0.0 start.pof.com
@@ -11111,7 +11066,6 @@
 0.0.0.0 static-assets.gotinder.com
 0.0.0.0 static-easyflirt.com
 0.0.0.0 static.elitesingles.com
-0.0.0.0 stats.aisle.co
 0.0.0.0 stats01.pof.com
 0.0.0.0 status-test.feeld.co
 0.0.0.0 status.coffeemeetsbagel.com
@@ -11374,7 +11328,6 @@
 0.0.0.0 test-api.feeld.co
 0.0.0.0 test-rencontre-amour-amitie-voyance-ohanah.com
 0.0.0.0 test-us.taimi.com
-0.0.0.0 test.aisle.co
 0.0.0.0 test.api.pof.com
 0.0.0.0 test.christianmingle.com
 0.0.0.0 test.dev.okcupid.com
@@ -11383,16 +11336,11 @@
 0.0.0.0 test.trulymadly.com
 0.0.0.0 test.zoosk.com
 0.0.0.0 test2.trulymadly.com
-0.0.0.0 testa2.aisle.co
 0.0.0.0 testblog.trulymadly.com
 0.0.0.0 testdash.weareher.com
-0.0.0.0 testlocation.aisle.co
 0.0.0.0 testname.me
-0.0.0.0 testoffers.aisle.co
 0.0.0.0 testrail.tinder.com
-0.0.0.0 testsocket.aisle.co
 0.0.0.0 teststream.trulymadly.com
-0.0.0.0 testvideo.aisle.co
 0.0.0.0 tetoo.net
 0.0.0.0 tetovaexpres.com
 0.0.0.0 texas-dating-sites.com
@@ -12467,7 +12415,6 @@
 0.0.0.0 www-assets-dev.grindr.com
 0.0.0.0 www-assets-prod.grindr.com
 0.0.0.0 www-stage.grindr.com
-0.0.0.0 www.aisle.co
 0.0.0.0 www.api.gotinder.com
 0.0.0.0 www.app.lovoo.com
 0.0.0.0 www.appl-pn.pof.com
@@ -12484,7 +12431,6 @@
 0.0.0.0 www.bj-dzc-nps02.immomo.com
 0.0.0.0 www.bj-dzc-nps03.immomo.com
 0.0.0.0 www.bj-dzc-nps04.immomo.com
-0.0.0.0 www.blog.aisle.co
 0.0.0.0 www.blog.bumble.com
 0.0.0.0 www.blog.grindr.com
 0.0.0.0 www.blog.hinge.co
@@ -12495,8 +12441,6 @@
 0.0.0.0 www.bt.match.com
 0.0.0.0 www.careers.match.com
 0.0.0.0 www.cb.tagged.com
-0.0.0.0 www.cdn.dilmil.co
-0.0.0.0 www.cdnmojo.dilmil.co
 0.0.0.0 www.ch.match.com
 0.0.0.0 www.ch.ourtime.com
 0.0.0.0 www.checkout.pof.com
@@ -12512,7 +12456,6 @@
 0.0.0.0 www.de.ourtime.com
 0.0.0.0 www.dev.studio.bumble.com
 0.0.0.0 www.dil-mil.com
-0.0.0.0 www.dildiaries.dilmil.co
 0.0.0.0 www.dk.match.com
 0.0.0.0 www.dk.ourtime.com
 0.0.0.0 www.ec.match.com
@@ -12543,6 +12486,7 @@
 0.0.0.0 www.ipa1.office.okcupid.com
 0.0.0.0 www.it.match.com
 0.0.0.0 www.it.ourtime.com
+0.0.0.0 www.jdate.com
 0.0.0.0 www.jp.match.com
 0.0.0.0 www.kindr.grindr.com
 0.0.0.0 www.kr.match.com
@@ -12903,6 +12847,7 @@
 0.0.0.0 zawajdating.com
 0.0.0.0 zdating.com
 0.0.0.0 zdrowie.onet.pl
+0.0.0.0 zdsso.jdate.com
 0.0.0.0 zedates.com
 0.0.0.0 zeddtourdates.com
 0.0.0.0 zeitfurdating.com

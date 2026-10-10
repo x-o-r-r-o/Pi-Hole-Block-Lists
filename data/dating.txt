@@ -1014,12 +1014,15 @@ zendesk4.pof.com
 
 # Match, OurTime, Christian Mingle, JDate
 _.rtn.services.match.com
+ablinks.jdate.com
 ablinks.mail.christianmingle.com
 ablinks.newsletters.christianmingle.com
 about.christianmingle.com
 about.jdate.com
 accounts.christianmingle.com
 accounts.jdate.com
+adminportal.jdate.com
+affiliates.jdate.com
 affiliates.match.com
 amp.dk.match.com
 amp.fi.match.com
@@ -1064,12 +1067,14 @@ be.europe.ourtime.com
 be.ourtime.com
 believe.christianmingle.com
 believeint.christianmingle.com
+beta.jdate.com
 biglobe.match.com
 blog-origin.match.com
 blog.match.com
 blog.ourtime.com
 br.match.com
 ca.match.com
+callback.jdate.com
 careers.match.com
 ch.europe.ourtime.com
 ch.ourtime.com
@@ -1091,6 +1096,7 @@ crm.match.com
 crmappdirect.services.match.com
 date.jubii.match.com
 dating.christianmingle.com
+dating.jdate.com
 datingreset.match.com
 datingtips.match.com
 de.europe.ourtime.com
@@ -1150,6 +1156,7 @@ it.europe.ourtime.com
 it.ourtime.com
 jayshetty.services.match.com
 jdate.com
+jlife.jdate.com
 jlifestatic.jdate.com
 jp.match.com
 kr.match.com
@@ -1163,17 +1170,25 @@ live.match.com
 livedoor.match.com
 login.christianmingle.com
 login.dev.christianmingle.com
+login.dev.jdate.com
+login.jdate.com
 login.stg.christianmingle.com
+login.stg.jdate.com
 login.test.christianmingle.com
+login.test.jdate.com
 love-dev.christianmingle.com
+love-dev.jdate.com
 love.christianmingle.com
 love.dev.christianmingle.com
+love.dev.jdate.com
 love.jdate.com
 love.stg.christianmingle.com
+love.stg.jdate.com
 love2.jdate.com
 lu.europe.ourtime.com
 lu.ourtime.com
 m.aoljp.match.com
+m.jdate.com
 m.jp.match.com
 m.msnjp.match.com
 m.nifty.match.com
@@ -1191,6 +1206,7 @@ marriage.match.com
 marriage.ocn.match.com
 match.com
 matchmaking.christianmingle.com
+matchmaking.jdate.com
 matesplaza.match.com
 media.match.com
 mi2.intl.match.com
@@ -1281,6 +1297,7 @@ pk.match.com
 prod.christianmingle.com
 prod.jdate.com
 protect.christianmingle.com
+protect.jdate.com
 proxy.match.com
 pt.europe.ourtime.com
 pt.ourtime.com
@@ -1289,6 +1306,7 @@ qa2.match.com
 qa3.match.com
 register2.match.com
 register3.match.com
+rencontre.jdate.com
 rtn.services.match.com
 santest.match.com
 se.europe.ourtime.com
@@ -1386,6 +1404,7 @@ www.hk.match.com
 www.ie.ourtime.com
 www.it.match.com
 www.it.ourtime.com
+www.jdate.com
 www.jp.match.com
 www.kr.match.com
 www.latam.match.com
@@ -1413,6 +1432,7 @@ www4.match.com
 www4.mobile.match.com
 yahoo.match.com
 za.match.com
+zdsso.jdate.com
 
 # Grindr
 assets.grindr.com
@@ -1565,7 +1585,6 @@ a-prod.happn.com
 a.happn.com
 api-bi.happn.com
 api-gw.happn.fr
-api-preprod-gw.happn.com
 api-preprod.happn.com
 api.happn.fr
 connect.happn.fr
@@ -1575,11 +1594,6 @@ happn.com
 happn.fr
 info.happn.com
 landing.happn.com
-media-preprod.happn.com
-photo-analysis-preprod.happn.com
-photo-analysis.happn.com
-preprod-images.happn.com
-profile-verification-preprod.happn.com
 support.happn.fr
 www.happn.com
 
@@ -1991,97 +2005,27 @@ www.raya.app
 # Dil Mil
 admin.dilmil.co
 admin.node.dilmil.co
-admin.sandbox.dilmil.co
-admin.staging1.dilmil.co
-admin.staging2.dilmil.co
-api.sandbox.dilmil.co
 beta-web.dilmil.co
-blog.dilmil.co
-blog2.dilmil.co
-bot.gateway1.dilmil.co
-bot.gateway2.dilmil.co
-bot.sandbox.dilmil.co
-bot.staging1.dilmil.co
-bot.staging2.dilmil.co
 cdn.dilmil.co
 cdn2.dilmil.co
 cdnmojo.dilmil.co
 dil-mil.com
-dildiaries.dilmil.co
 dilmil.co
 dl.dilmil.co
-es.dilmil.co
-es.sandbox.dilmil.co
-es.staging1.dilmil.co
-es.staging2.dilmil.co
-gateway1.dilmil.co
-gateway2.dilmil.co
-gateway3.dilmil.co
-go.dilmil.co
-kibana.dilmil.co
-kibana.staging1.dilmil.co
-kibana.staging2.dilmil.co
 node.dilmil.co
 onboarding.dilmil.co
-payments.gateway1.dilmil.co
-payments.gateway2.dilmil.co
-payments.sandbox.dilmil.co
-payments.staging1.dilmil.co
-payments.staging2.dilmil.co
-pm2.gateway1.dilmil.co
-pm2.gateway2.dilmil.co
-pm2.sandbox.dilmil.co
-pma.dilmil.co
-pma.sandbox.dilmil.co
-pma.staging1.dilmil.co
-pma.staging2.dilmil.co
-rabbit.sandbox.dilmil.co
-rabbit.staging1.dilmil.co
-rabbit.staging2.dilmil.co
-rabbit3.dilmil.co
-rabbit4.dilmil.co
-rabbit5.dilmil.co
 runwayer.dilmil.co
 sandbox.dilmil.co
 sergey.dilmil.co
-shop.dilmil.co
 staging.bollymoji.dilmil.co
 staging.dilmil.co
-staging1.dilmil.co
-staging2.dilmil.co
-stagingblog.dilmil.co
-www.cdn.dilmil.co
-www.cdnmojo.dilmil.co
 www.dil-mil.com
-www.dildiaries.dilmil.co
 
 # Aisle
 aisle.co
-app.aisle.co
 autodiscover.aisle.co
 blog.aisle.co
-dashboard.aisle.co
-desisareromantics.aisle.co
-firebase-prod.aisle.co
-firebase-testing.aisle.co
-gesture.aisle.co
-gw.aisle.co
-login.aisle.co
 mail-tracker.aisle.co
-media.aisle.co
-prodgraph.aisle.co
-prodsocket.aisle.co
-reports.aisle.co
-socket.aisle.co
-stats.aisle.co
-test.aisle.co
-testa2.aisle.co
-testlocation.aisle.co
-testoffers.aisle.co
-testsocket.aisle.co
-testvideo.aisle.co
-www.aisle.co
-www.blog.aisle.co
 
 # TrulyMadly
 alex.blog.test.trulymadly.com

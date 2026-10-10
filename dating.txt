@@ -2,8 +2,8 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 11:02 UTC
-# Entries: 12972
+# Last modified: 2026-10-10 11:39 UTC
+# Entries: 12903
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
@@ -369,6 +369,7 @@ abledlove.com
 ablesingles.co.uk
 ablink.messaging.zoosk.com
 ablink.security.zoosk.com
+ablinks.jdate.com
 ablinks.mail.christianmingle.com
 ablinks.mail.hinge.co
 ablinks.newsletters.christianmingle.com
@@ -451,10 +452,8 @@ admin.connect-dev.cloud.bumble.com
 admin.connect.cloud.bumble.com
 admin.dilmil.co
 admin.node.dilmil.co
-admin.sandbox.dilmil.co
-admin.staging1.dilmil.co
-admin.staging2.dilmil.co
 adminmedia.in
+adminportal.jdate.com
 ado55.com
 adocity.com
 adopteunmec.com
@@ -678,6 +677,7 @@ affectiondatingservices.com
 affiliact.com
 affiliate-help.ru
 affiliate2dating.com
+affiliates.jdate.com
 affiliates.match.com
 affiliation-dating.com
 affinitas.io
@@ -1160,7 +1160,6 @@ api-gateway.tagged.com
 api-gw.happn.fr
 api-internal.meetme.com
 api-legacy.meetme.com
-api-preprod-gw.happn.com
 api-preprod.happn.com
 api-stage.cloud.bumble.com
 api.as1.gotinder.com
@@ -1173,7 +1172,6 @@ api.match.com
 api.meetme.com
 api.okcupid.com
 api.pof.com
-api.sandbox.dilmil.co
 api.sharemydate.gotinder.com
 api.speeddate.tinder.com
 api.staging-segment.elitesingles.com
@@ -1197,7 +1195,6 @@ apnacollege.in
 apostasingles.com
 app-active-flirting.com
 app.40s.co.za
-app.aisle.co
 app.boo.world
 app.hinge.co
 app.lovoo.com
@@ -1858,6 +1855,8 @@ bestsingle.it
 besttopinfo.com
 bestweekforsex.com
 beta-web.dilmil.co
+beta.hornetapp.com
+beta.jdate.com
 beta.login.boo.world
 beta.meetme.com
 beta.muzz.com
@@ -2532,7 +2531,6 @@ blog-rencontres.fr
 blog.ads.pof.com
 blog.aisle.co
 blog.bumble.com
-blog.dilmil.co
 blog.gotinder.com
 blog.grindr.com
 blog.hinge.co
@@ -2543,7 +2541,6 @@ blog.pof.com
 blog.quackquack.in
 blog.test.trulymadly.com
 blog.trulymadly.com
-blog2.dilmil.co
 blondpassions.com
 blossoms.com
 blue-alessi.com
@@ -2587,11 +2584,6 @@ bostongaymatchmaker.com
 bostonintroductions.com
 bostonsinglemingle.com
 bot.dev.okcupid.com
-bot.gateway1.dilmil.co
-bot.gateway2.dilmil.co
-bot.sandbox.dilmil.co
-bot.staging1.dilmil.co
-bot.staging2.dilmil.co
 bothsingle.co.uk
 boulderdating.com
 bouncedating.app
@@ -2696,6 +2688,7 @@ californiadatingapp.com
 californiaflirt.com
 californiaintroductions.com
 californiapassions.com
+callback.jdate.com
 callback.lovoo.com
 cambodiancupid.com
 camelya.com
@@ -3352,7 +3345,6 @@ dansksexdating.com
 darmowe2.sexarchiwum.pl
 darnipora.lt
 dashboard-sec.weareher.com
-dashboard.aisle.co
 dashboard.weareher.com
 dashboard.xp-gateway.cloud.bumble.com
 dashingdates.com
@@ -3570,6 +3562,7 @@ dating.fijilove.com.au
 dating.findfitlove.com.au
 dating.hioff.ru
 dating.hundiesltd.com
+dating.jdate.com
 dating.lekgay.no
 dating.lls.imaginary.co.za
 dating.lovetoknow.com
@@ -4188,7 +4181,6 @@ design-bumble.bumble.com
 design.bumble.com
 designdating.biz
 desirmoi.fr
-desisareromantics.aisle.co
 desmoinesintroductions.com
 desmoinesmatchmaking.com
 desperadocasino.com
@@ -4350,7 +4342,6 @@ digitalpixgallery.com
 digitalpixworld.com
 dijon.onvasortir.com
 dil-mil.com
-dildiaries.dilmil.co
 dilkarishta.com
 dilmil.co
 dimup.com
@@ -4747,15 +4738,11 @@ erot.lv
 erotikanzeige.net
 erotikdates.at
 erwinsdate.de
-es.dilmil.co
 es.europe.ourtime.com
 es.feeld.co
 es.match.com
 es.ourtime.com
 es.pof.com
-es.sandbox.dilmil.co
-es.staging1.dilmil.co
-es.staging2.dilmil.co
 esconda.com
 escortgirl-fr.com
 eskimi.com
@@ -5116,8 +5103,6 @@ finlandpassions.com
 finnicella.net
 finya.de
 fiorry.co
-firebase-prod.aisle.co
-firebase-testing.aisle.co
 fireflychat.com
 firozamatrimony.com
 firstaffair.com
@@ -5520,9 +5505,6 @@ gateway.lovoo.com
 gateway.meetme.com
 gateway.pof.com
 gateway.tagged.com
-gateway1.dilmil.co
-gateway2.dilmil.co
-gateway3.dilmil.co
 gauche-rencontre.com
 gay-army.org
 gay-dating-apps.com
@@ -5871,7 +5853,6 @@ germandating.com.au
 germansingles.com.au
 germanydatingnet.com
 germanypassions.com
-gesture.aisle.co
 get.feeld.co
 getarussianbride.com
 getdates.ai
@@ -5935,7 +5916,6 @@ gma.bz
 gmen.co.za
 go-dating.app
 go-get-guys.com
-go.dilmil.co
 go.feeld.co
 go.grindr.com
 go.match.com
@@ -6091,7 +6071,6 @@ gulfstreammedia.com
 gunloverspassions.com
 guygetsgirl.com
 guysforsex.com
-gw.aisle.co
 gyao.match.com
 gydoo.com
 gymdating.app
@@ -6633,6 +6612,7 @@ jira.gotinder.com
 jira.pof.com
 jiskreni.cz
 jkarma.com
+jlife.jdate.com
 jlifestatic.jdate.com
 jm-date.com
 jmatch.com
@@ -6830,9 +6810,6 @@ keydates.app
 keywestdating.com
 khersongirls.com
 ki-dating.app
-kibana.dilmil.co
-kibana.staging1.dilmil.co
-kibana.staging2.dilmil.co
 kievconnections.com
 kiffmeeting.com
 kiflove.com
@@ -7166,17 +7143,20 @@ locanto.com
 lockandkeyevents.com
 log4love.com
 logdate.com
-login.aisle.co
 login.boo.world
 login.christianmingle.com
 login.dev.christianmingle.com
 login.dev.elitesingles.com
+login.dev.jdate.com
 login.elitesingles.com
+login.jdate.com
 login.pof.com
 login.stg.christianmingle.com
 login.stg.elitesingles.com
+login.stg.jdate.com
 login.test.christianmingle.com
 login.test.elitesingles.com
+login.test.jdate.com
 logon2dating.com
 loisir-chat.exolia.net
 loisirados.com
@@ -7223,6 +7203,7 @@ love-dating-services.com
 love-dating.me
 love-dev.christianmingle.com
 love-dev.elitesingles.com
+love-dev.jdate.com
 love-discount.net
 love-exchange.co.uk
 love-for-ever.com
@@ -7258,6 +7239,7 @@ love.copypast.ru
 love.cz
 love.dev.christianmingle.com
 love.dev.elitesingles.com
+love.dev.jdate.com
 love.dk
 love.druzba.org.ua
 love.elitesingles.com
@@ -7290,6 +7272,7 @@ love.smsonline.ru
 love.spbland.ru
 love.stg.christianmingle.com
 love.stg.elitesingles.com
+love.stg.jdate.com
 love.studic.info
 love.talkcity.ru
 love.volgavolga.com
@@ -7471,6 +7454,7 @@ m.aoljp.match.com
 m.date-me.com
 m.elitesingles.com
 m.hinge.co
+m.jdate.com
 m.jp.match.com
 m.meetme.com
 m.msnjp.match.com
@@ -7635,6 +7619,7 @@ matchmakerintl.com
 matchmakermatchmaker.com
 matchmaking.christianmingle.com
 matchmaking.elitesingles.com
+matchmaking.jdate.com
 matchmaking.zoosk.com
 matchmakingcalifornia.com
 matchmakingmichigan.com
@@ -8224,8 +8209,6 @@ mec.kiff.fr
 mecacroquer.com
 medating.com
 medcentr-pobeda.ru
-media-preprod.happn.com
-media.aisle.co
 media.elitesingles.com
 media.match.com
 media.pof.com
@@ -9294,11 +9277,6 @@ payment-flow-us-central1.payment-processing-dev.cloud.bumble.com
 payment-flow-us-central1.payment-processing-staging.cloud.bumble.com
 payment-flow-us-central1.payment-processing.cloud.bumble.com
 payments.boo.world
-payments.gateway1.dilmil.co
-payments.gateway2.dilmil.co
-payments.sandbox.dilmil.co
-payments.staging1.dilmil.co
-payments.staging2.dilmil.co
 paystaging.tinder.com
 pazintys.lt
 pcmax.jp
@@ -9368,8 +9346,6 @@ phoenixareasingles.com
 phoenixgaymatchmaker.com
 phoenixsingles.com
 phonesex.com.pl
-photo-analysis-preprod.happn.com
-photo-analysis.happn.com
 photo-faces.com
 photodating.ai
 photofeeler.com
@@ -9453,13 +9429,6 @@ plussizedating.org
 plussizeddating.com.au
 plussizematch.com
 plussizepersonals.co.uk
-pm2.gateway1.dilmil.co
-pm2.gateway2.dilmil.co
-pm2.sandbox.dilmil.co
-pma.dilmil.co
-pma.sandbox.dilmil.co
-pma.staging1.dilmil.co
-pma.staging2.dilmil.co
 podrygi.goldflirts.ru
 poepsexdating.com
 pof.com
@@ -9531,7 +9500,6 @@ premium.lovoo.com
 premiumcasualdating.at
 premiumdates.at
 premiumvideoupdating.be
-preprod-images.happn.com
 preprod1.grindr.com
 preprod2.quackquack.in
 presbyterianpeoplemeet.com
@@ -9558,8 +9526,6 @@ prod.elitesingles.com
 prod.jdate.com
 prod.muzz.com
 prod.zoosk.com
-prodgraph.aisle.co
-prodsocket.aisle.co
 prodtest1-keepalive-alb.gotinder.com
 prodtest2-keepalive-alb.gotinder.com
 prodtest3-keepalive-alb.gotinder.com
@@ -9569,7 +9535,6 @@ professionalpassions.com
 professionalpeoplemeet.com
 professionalpeoplemeet.mobi
 professionalsingles.app
-profile-verification-preprod.happn.com
 profile.meetme.com
 profile.speeddate.tinder.com
 progressivedate.com
@@ -9580,6 +9545,7 @@ pronadjivezu.com
 prophet4you.com
 protect.christianmingle.com
 protect.elitesingles.com
+protect.jdate.com
 protohive-dev.cloud.bumble.com
 protohive.cloud.bumble.com
 providencematchmaking.com
@@ -9634,12 +9600,6 @@ quiz.okcupid.com
 r-std.com
 r.tantanapp.com
 r5y2gy824h6rdjjax3en.blog.bumble.com
-rabbit.sandbox.dilmil.co
-rabbit.staging1.dilmil.co
-rabbit.staging2.dilmil.co
-rabbit3.dilmil.co
-rabbit4.dilmil.co
-rabbit5.dilmil.co
 raccoon.tagged.com
 radar-rencontres.fr
 raleighintroductions.com
@@ -9912,6 +9872,7 @@ rencontre.fr.msn.com
 rencontre.francite.com
 rencontre.gay.infideles.be
 rencontre.gayadultere.fr
+rencontre.jdate.com
 rencontre.kosmopolyte.com
 rencontre.lepost.fr
 rencontre.love.masculin.com
@@ -10226,7 +10187,6 @@ report-import-staging.cloud.bumble.com
 report-import.cloud.bumble.com
 report-staging.cloud.bumble.com
 report.cloud.bumble.com
-reports.aisle.co
 reports.gotinder.com
 republicanmeet.com
 republicanpassions.com
@@ -10674,7 +10634,6 @@ shemaleflirt.at
 shidduch.8m.com
 shiftmatchmaking.com
 shop.bumble.com
-shop.dilmil.co
 shop.grindr.com
 shop.pof.com
 shop.scruff.com
@@ -10919,7 +10878,6 @@ socialgrid.com
 socialistpassions.com
 socialself.com
 socialsexdating.com
-socket.aisle.co
 sofiadate.com
 sofianebahri.chatango.com
 soft-rencontre.com
@@ -11094,12 +11052,9 @@ staging.quackquack.in
 staging.scruff.com
 staging.tinder.com
 staging.trulymadly.com
-staging1.dilmil.co
 staging1.gotinder.com
 staging1.trulymadly.com
-staging2.dilmil.co
 staging3.gotinder.com
-stagingblog.dilmil.co
 stamfordmatchmaker.com
 starescort.co.uk
 start.pof.com
@@ -11111,7 +11066,6 @@ statamic.feeld.co
 static-assets.gotinder.com
 static-easyflirt.com
 static.elitesingles.com
-stats.aisle.co
 stats01.pof.com
 status-test.feeld.co
 status.coffeemeetsbagel.com
@@ -11374,7 +11328,6 @@ terrehautedating.com
 test-api.feeld.co
 test-rencontre-amour-amitie-voyance-ohanah.com
 test-us.taimi.com
-test.aisle.co
 test.api.pof.com
 test.christianmingle.com
 test.dev.okcupid.com
@@ -11383,16 +11336,11 @@ test.jdate.com
 test.trulymadly.com
 test.zoosk.com
 test2.trulymadly.com
-testa2.aisle.co
 testblog.trulymadly.com
 testdash.weareher.com
-testlocation.aisle.co
 testname.me
-testoffers.aisle.co
 testrail.tinder.com
-testsocket.aisle.co
 teststream.trulymadly.com
-testvideo.aisle.co
 tetoo.net
 tetovaexpres.com
 texas-dating-sites.com
@@ -12467,7 +12415,6 @@ wwsupport.coffeemeetsbagel.com
 www-assets-dev.grindr.com
 www-assets-prod.grindr.com
 www-stage.grindr.com
-www.aisle.co
 www.api.gotinder.com
 www.app.lovoo.com
 www.appl-pn.pof.com
@@ -12484,7 +12431,6 @@ www.bj-dzc-nps01.immomo.com
 www.bj-dzc-nps02.immomo.com
 www.bj-dzc-nps03.immomo.com
 www.bj-dzc-nps04.immomo.com
-www.blog.aisle.co
 www.blog.bumble.com
 www.blog.grindr.com
 www.blog.hinge.co
@@ -12495,8 +12441,6 @@ www.br.match.com
 www.bt.match.com
 www.careers.match.com
 www.cb.tagged.com
-www.cdn.dilmil.co
-www.cdnmojo.dilmil.co
 www.ch.match.com
 www.ch.ourtime.com
 www.checkout.pof.com
@@ -12512,7 +12456,6 @@ www.de.match.com
 www.de.ourtime.com
 www.dev.studio.bumble.com
 www.dil-mil.com
-www.dildiaries.dilmil.co
 www.dk.match.com
 www.dk.ourtime.com
 www.ec.match.com
@@ -12543,6 +12486,7 @@ www.investors.grindr.com
 www.ipa1.office.okcupid.com
 www.it.match.com
 www.it.ourtime.com
+www.jdate.com
 www.jp.match.com
 www.kindr.grindr.com
 www.kr.match.com
@@ -12903,6 +12847,7 @@ zarf.com
 zawajdating.com
 zdating.com
 zdrowie.onet.pl
+zdsso.jdate.com
 zedates.com
 zeddtourdates.com
 zeitfurdating.com
