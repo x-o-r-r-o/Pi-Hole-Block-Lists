@@ -285,6 +285,13 @@ def build_ip_lists(built):
         write_if_changed(out, head("CIDR, IPv4 + IPv6 (router/firewall)", len(v4) + len(v6)) + "\n".join(v4 + v6) + "\n")
         write_if_changed(ROOT / "ips" / ("%s-ipv4.txt" % name), head("CIDR, IPv4 only", len(v4)) + "\n".join(v4) + "\n")
         write_if_changed(ROOT / "ips" / ("%s-ipv6.txt" % name), head("CIDR, IPv6 only", len(v6)) + "\n".join(v6) + "\n")
+        # MikroTik RouterOS script: replaces the address list each time it's imported.
+        rsc = ["# %s" % l for l in head("MikroTik RouterOS script (/import file-name=...)", len(v4) + len(v6)).replace("# ", "").splitlines() if l]
+        rsc += ['/ip firewall address-list remove [find where list="%s"]' % name]
+        rsc += ['/ip firewall address-list add list=%s address=%s comment="Pi-Hole-Block-Lists"' % (name, n) for n in v4]
+        rsc += ['/ipv6 firewall address-list remove [find where list="%s"]' % name]
+        rsc += ['/ipv6 firewall address-list add list=%s address=%s comment="Pi-Hole-Block-Lists"' % (name, n) for n in v6]
+        write_if_changed(ROOT / "ips" / ("%s-mikrotik.rsc" % name), "\n".join(rsc) + "\n")
         rules = adguard_ip_rules(prefixes)
         write_if_changed(ROOT / "ips" / ("%s-adguard.txt" % name),
                          "[Adblock Plus]\n" + head("AdGuard Home rules: block DNS answers pointing into these IP ranges", len(rules)).replace("# ", "! ")

@@ -22,10 +22,11 @@ from well-maintained upstream sources, merged and de-duplicated.
 - [UniFi Cloud Gateway (UCG Ultra / Max / Fiber, UDM, UDR)](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr)
   - [Option 1 (recommended): UniFi + AdGuard Home or Pi-hole, updates automatically](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically)
   - [Option 2: UniFi only, no extra device (manual updates)](#option-2-unifi-only-no-extra-device-manual-updates)
-- [Routers: pfSense, OPNsense and OpenWrt](#routers-pfsense-opnsense-and-openwrt)
+- [Routers: pfSense, OPNsense, OpenWrt and MikroTik](#routers-pfsense-opnsense-openwrt-and-mikrotik)
   - [pfSense](#pfsense)
   - [OPNsense](#opnsense)
   - [OpenWrt](#openwrt)
+  - [MikroTik](#mikrotik)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -336,6 +337,7 @@ Cloudflare...), so blocking their IPs would break normal websites, and they're n
 |---|---|
 | [`ips/live-streaming-adguard.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-adguard.txt) | AdGuard Home |
 | [`ips/live-streaming-ipv4.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv4.txt) / [`-ipv6.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv6.txt) | Routers and firewalls (pfSense, OPNsense, OpenWrt, UniFi, Windows Firewall) |
+| [`ips/live-streaming-mikrotik.rsc`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-mikrotik.rsc) | MikroTik RouterOS (`/import`) |
 | [`ips/live-streaming.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming.txt) | Same, IPv4 and IPv6 together |
 
 **AdGuard Home:** Filters → DNS blocklists → Add blocklist → Add a custom list → paste the `-adguard.txt` link → Save.
@@ -352,6 +354,8 @@ Apply.
 
 **OpenWrt** ([full router guide](#openwrt)): with the **banIP** package, add the `-ipv4.txt` / `-ipv6.txt` links as custom feeds (see the banIP docs for
 your OpenWrt version).
+
+**MikroTik** ([full router guide](#mikrotik)): import [`ips/live-streaming-mikrotik.rsc`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-mikrotik.rsc), which fills an address list named `live-streaming`, then block that list in the forward chain.
 
 **Windows Firewall (one PC):** in PowerShell as administrator:
 ```powershell
@@ -412,18 +416,19 @@ block them with Option 1, step 3. Menu names move around between UniFi Network v
 and [Zone-Based Firewall](https://help.ui.com/hc/en-us/articles/115003173168-Zone-Based-Firewalls-in-UniFi) help pages
 show the current ones.
 
-## Routers: pfSense, OPNsense and OpenWrt
+## Routers: pfSense, OPNsense, OpenWrt and MikroTik
 
-If your router runs pfSense, OPNsense or OpenWrt, it can do the blocking itself for every device at home, and update the lists
+If your router runs pfSense, OPNsense, OpenWrt or MikroTik RouterOS, it can do the blocking itself for every device at home, and update the lists
 every day. Each router has two ways: its own blocking package, or AdGuard Home running next to it.
 
 Which list link to use:
 - **pfSense (pfBlockerNG)**, **OPNsense (Unbound blocklists)** and **OpenWrt (adblock-fast)**: the **plain** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/<list>.txt`
   (for example `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking.txt`).
-- **AdGuard Home** (on either router): the **adblock** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/<list>.txt`.
+- **MikroTik (DNS adlist)**: the **hosts** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/<list>.txt`.
+- **AdGuard Home** (on any of them): the **adblock** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/<list>.txt`.
 
-Router memory is the limit: roughly 100 MB of free RAM per 500,000 domains. Check **Status → Dashboard** (pfSense), **Lobby → Dashboard** (OPNsense) or
-**Status → Overview** (OpenWrt) and start small (`ads-and-tracking` + `security`), adding more lists while there's room.
+Router memory is the limit: roughly 100 MB of free RAM per 500,000 domains. Check **Status → Dashboard** (pfSense), **Lobby → Dashboard** (OPNsense),
+**Status → Overview** (OpenWrt) or **System → Resources** (MikroTik) and start small (`ads-and-tracking` + `security`), adding more lists while there's room.
 
 ### pfSense
 
@@ -516,6 +521,55 @@ options, also add the `vpn-proxy-bypass` list: encrypted DNS (DoH/DoT) can't be 
 
 **Block by IP (optional):** install **luci-app-banip** and add the [IP list](#blocking-by-ip-address-ips) links as
 custom feeds.
+
+### MikroTik
+
+Commands below are typed in **New Terminal** (WinBox or WebFig) and need **RouterOS 7.15 or newer** (check with
+`/system package update check-for-updates`). They assume MikroTik's default configuration, where the router is the DNS
+server for your devices and the `LAN` interface list exists.
+
+**Option A: DNS adlist (built in, recommended).**
+1. Let the router answer DNS and give it room for the lists (adlist entries are kept in the DNS cache):
+   ```
+   /ip dns set allow-remote-requests=yes cache-size=65536KiB
+   ```
+   Use less on routers with little memory (check **System → Resources**): `ads-and-tracking` alone is about 280,000
+   names. If the DNS log says the maximum cache size was reached, raise `cache-size` or use fewer lists.
+2. Add each list with its **hosts** link:
+   ```
+   /ip dns adlist add url=https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/ads-and-tracking.txt ssl-verify=no
+   /ip dns adlist add url=https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/security.txt ssl-verify=no
+   ```
+   RouterOS checks the lists for updates every 4 hours by itself. `/ip dns adlist print` shows how many names each list
+   loaded, and `/ip dns adlist reload` updates them right away.
+3. If a site breaks, let it through with a forwarding entry, e.g. `/ip dns static add name=example.com type=FWD`
+   (or permanently in [`allowlist.txt`](allowlist.txt)).
+
+`ssl-verify=no` follows MikroTik's own example; with trusted root certificates installed on the router you can use
+`ssl-verify=yes`.
+
+**Option B: AdGuard Home on another device.** Add the adblock links in AdGuard Home, then hand it out as the DNS server:
+`/ip dhcp-server network set [find] dns-server=192.168.88.2` (use your AdGuard Home's IP), and reconnect your devices.
+(RouterOS can also run AdGuard Home in a *container* on models with enough storage; that's an advanced setup.)
+
+**Stop devices from going around it (both options):**
+```
+/ip firewall nat add chain=dstnat in-interface-list=LAN protocol=udp dst-port=53 action=redirect to-ports=53 comment="Force DNS"
+/ip firewall nat add chain=dstnat in-interface-list=LAN protocol=tcp dst-port=53 action=redirect to-ports=53 comment="Force DNS"
+/ip firewall filter add chain=forward in-interface-list=LAN protocol=tcp dst-port=853 action=reject reject-with=tcp-reset comment="Block DNS-over-TLS"
+```
+(Option B: instead of `redirect`, use `action=dst-nat to-addresses=<AdGuard Home IP> to-ports=53`, and add
+`src-address=!<AdGuard Home IP>` so AdGuard Home itself can still reach the internet.) Also add the `vpn-proxy-bypass`
+list.
+
+**Block by IP (optional):** load Bigo's network into an address list, block it, and refresh it daily:
+```
+/tool fetch url="https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-mikrotik.rsc" dst-path=live-streaming.rsc
+/import file-name=live-streaming.rsc
+/ip firewall filter add chain=forward dst-address-list=live-streaming action=drop comment="Block Bigo network"
+/ipv6 firewall filter add chain=forward dst-address-list=live-streaming action=drop comment="Block Bigo network"
+/system scheduler add name=update-live-streaming-ips interval=1d start-time=04:30:00 on-event="/tool fetch url=\"https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-mikrotik.rsc\" dst-path=live-streaming.rsc; :delay 5s; /import file-name=live-streaming.rsc"
+```
 
 ## Smart TVs and streaming sticks
 
