@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A ./*.txt adblock hosts ips unifi data browser install/catalog.tsv README.md
+          git add -A ./*.txt adblock hosts ips unifi data browser install/catalog.tsv README.md docs
           # build.py leaves files untouched when only the timestamp would change.
           if git diff --cached --quiet; then
             echo "No list changes."

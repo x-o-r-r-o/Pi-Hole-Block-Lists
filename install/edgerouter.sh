@@ -87,7 +87,7 @@ fi
 
 if [ "$TESTING" = 0 ] && ! grep -q 'forwarding' /config/config.boot 2>/dev/null; then
   echo "The router's DNS forwarding service isn't set up, so devices don't use it for DNS." >&2
-  echo "Run the 'Basic Setup' wizard, or see the EdgeRouter section of the README, then run this again." >&2
+  echo "Run the 'Basic Setup' wizard, or see docs/routers.md (Ubiquiti EdgeRouter) in the repository, then run this again." >&2
   exit 1
 fi
 

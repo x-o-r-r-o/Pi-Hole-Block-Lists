@@ -168,7 +168,8 @@ def write_catalog(lists):
     """install/catalog.tsv: the menu the device installers show (name, title, entries, description)."""
     rows = ["name\ttitle\tentries\tdescription"]
     for name, meta in lists.items():
-        desc = re.sub(r"[`\t\n]", "", meta["description"])
+        desc = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", meta["description"])  # markdown links -> text
+        desc = re.sub(r"[`\t\n]", "", desc)
         rows.append("%s\t%s\t%d\t%s" % (name, meta["title"], existing_count(ROOT / ("%s.txt" % name)), desc))
     (ROOT / "install").mkdir(exist_ok=True)
     write_if_changed(ROOT / "install" / "catalog.tsv", "\n".join(rows) + "\n")
@@ -183,7 +184,7 @@ def slug(heading, seen):
 
 
 def table_of_contents(text):
-    """Bullet list of the README's ## and ### headings (skipping code blocks and the contents itself)."""
+    """Bullet list of a page's ## and ### headings (skipping code blocks and the contents itself)."""
     lines, seen, fenced = [], {}, False
     for line in text.splitlines():
         if line.startswith("```"):
@@ -200,11 +201,69 @@ def table_of_contents(text):
     return "\n".join(lines)
 
 
-def update_readme(lists, sources):
-    """Regenerate the Lists and Sources tables in README.md from the config."""
-    path = ROOT / "README.md"
-    if not path.exists():
-        return
+BACK_TO_TOP = '<div align="right"><a href="#contents">↑ Back to top</a></div>'
+
+
+def doc_files():
+    """README.md plus the guides in docs/, which share the automatic tables, contents and links."""
+    return [ROOT / "README.md"] + sorted((ROOT / "docs").glob("*.md"))
+
+
+def add_back_links(text):
+    """Put a "Back to top" link at the end of every ## and ### section that follows the Contents section."""
+    lines = [l for l in text.split("\n") if l.strip() != BACK_TO_TOP]
+    out, fenced, seen_contents, started = [], False, False, False
+    for line in lines:
+        if line.startswith("```"):
+            fenced = not fenced
+        if not fenced and (line.startswith("## ") or line.startswith("### ")):
+            if line.strip() == "## Contents":
+                seen_contents = True
+            elif seen_contents:
+                if started:
+                    while out and out[-1] == "":
+                        out.pop()
+                    out += ["", BACK_TO_TOP, ""]
+                started = True
+        out.append(line)
+    while out and out[-1] == "":
+        out.pop()
+    if started:
+        out += ["", BACK_TO_TOP]
+    return "\n".join(out) + "\n"
+
+
+def heading_anchors(text):
+    seen, anchors, fenced = {}, set(), False
+    for line in text.splitlines():
+        if line.startswith("```"):
+            fenced = not fenced
+        m = None if fenced else re.match(r"^#{1,6} (.+)$", line)
+        if m:
+            anchors.add(slug(m.group(1), seen))
+    return anchors
+
+
+def check_doc_links():
+    """Every link between README.md and docs/*.md must point to an existing file and heading."""
+    problems = []
+    texts = {p.resolve(): p.read_text(encoding="utf-8") for p in doc_files()}
+    anchors = {p: heading_anchors(t) for p, t in texts.items()}
+    for path, text in texts.items():
+        for target in re.findall(r"\]\(([^)\s]+)\)", text):
+            if re.match(r"^(https?:|mailto:)", target):
+                continue
+            file_part, _, anchor = target.partition("#")
+            dest = (path.parent / file_part).resolve() if file_part else path
+            if not dest.exists():
+                problems.append("%s: link to missing file %s" % (path.name, target))
+            elif anchor and dest in anchors and anchor not in anchors[dest]:
+                problems.append("%s: link to missing section %s" % (path.name, target))
+    return problems
+
+
+def update_docs(lists, sources):
+    """Regenerate the Lists and Sources tables, each file's contents and back-to-top links."""
     raw = REPO_URL.replace("github.com", "raw.githubusercontent.com") + "/master/"
     rows = ["| List | What it blocks | Domains | Download |", "|---|---|---|---|"]
     for name, meta in lists.items():
@@ -221,11 +280,13 @@ def update_readme(lists, sources):
         if sid in used:
             srows.append("| [%s](%s) | %s | %s |" % (src["name"], src["home"], ", ".join(used[sid]), src["license"]))
 
-    text = path.read_text(encoding="utf-8")
-    text = replace_block(text, "LISTS", "\n".join(rows))
-    text = replace_block(text, "SOURCES", "\n".join(srows))
-    text = replace_block(text, "TOC", table_of_contents(text))
-    write_if_changed(path, text)
+    for path in doc_files():
+        text = path.read_text(encoding="utf-8")
+        text = replace_block(text, "LISTS", "\n".join(rows))
+        text = replace_block(text, "SOURCES", "\n".join(srows))
+        text = replace_block(text, "TOC", table_of_contents(text))
+        write_if_changed(path, add_back_links(text))
+    return check_doc_links()
 
 
 def adguard_ip_rules(prefixes):
@@ -437,7 +498,7 @@ def main():
         print("  wrote %-26s %8d plain / %8d adblock" % (name, len(plain), len(wild)))
 
     problems += build_ip_lists(built)
-    update_readme(lists, sources)
+    problems += update_docs(lists, sources)
     write_catalog(lists)
     for p in problems:
         print("WARNING: " + p)

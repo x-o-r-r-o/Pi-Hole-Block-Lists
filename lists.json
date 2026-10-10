@@ -116,7 +116,7 @@
   },
   "youtube-ads": {
     "title": "YouTube Ads",
-    "description": "Google/YouTube ad servers. Partial: DNS cannot block all YouTube video ads (see note below).",
+    "description": "Google/YouTube ad servers. Partial: DNS cannot block all YouTube video ads (see [YouTube ads](docs/lists.md#youtube-ads)).",
     "sources": [
       "kboghdady-youtube",
       "adguard-dns-youtube-ads"
@@ -133,7 +133,7 @@
   },
   "adult": {
     "title": "Adult Content",
-    "description": "Porn and other adult (NSFW) sites (see Safe Search tip below).",
+    "description": "Porn and other adult (NSFW) sites (see the [Safe Search tip](docs/lists.md#adult-safe-search)).",
     "sources": [
       "hagezi-nsfw",
       "oisd-nsfw",
@@ -233,7 +233,7 @@
   },
   "live-streaming": {
     "title": "Live-Streaming & Video-Chat Apps",
-    "description": "Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see note below).",
+    "description": "Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see [notes](docs/lists.md#live-streaming)).",
     "sources": [
       "live-streaming-apps",
       "adguard-services-live"

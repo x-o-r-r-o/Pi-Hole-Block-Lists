@@ -33,6 +33,9 @@ automatic updates aren't listed here. Dates are UTC.
   build removes them from any list not meant to block them.
 
 ### Changed
+- **Guides moved out of the README** into separate pages in `docs/` (lists, devices, routers, servers & NAS, TVs &
+  consoles, troubleshooting, maintainers). The README is now a short front page with a Guides index. Every page has its
+  own contents list and "Back to top" links, and the build checks that every link between pages works.
 - **IP lists:** neighbouring ranges are merged (226 → about 70 IPv4 entries; same coverage).
 - **List containment is now guaranteed:** `ads-and-tracking-extended` always includes all of `ads-and-tracking`, and
   `smart-tv` all of `game-consoles`.
