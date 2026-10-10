@@ -2,12 +2,47 @@
 
 [![Update block lists](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/actions/workflows/update.yml/badge.svg)](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/actions/workflows/update.yml)
 
-Ready-to-use DNS block lists for **Pi-hole** and **AdGuard Home**, rebuilt **every day**
-from well-maintained upstream sources, merged and de-duplicated.
+Ready-to-use block lists for ads, trackers, malware, phishing and unwanted content, rebuilt **every day** from
+well-maintained sources. Use them in **AdGuard Home** or **Pi-hole**, on your **router**, or on a single **computer or
+phone**, with step-by-step guides for each.
+
+## Quick start
+
+**1. You already run AdGuard Home or Pi-hole** (2 minutes). Add these two links, which block ads, trackers, malware and
+phishing without breaking normal sites:
+```
+https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/ads-and-tracking.txt
+https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/security.txt
+```
+- **AdGuard Home:** **Filters → DNS blocklists → Add blocklist → Add a custom list** → paste one link → **Save**; repeat for
+  the second.
+- **Pi-hole v6:** **Lists** → paste a link → **Add blocklist** (both links), then **Tools → Update Gravity**. (Pi-hole v5:
+  use the same links without `/adblock`.)
+
+**2. Protect one computer, no extra hardware** (2 minutes). Pick the recommended set from the menu by pressing Enter:
+- **macOS / Linux** (Terminal):
+  ```bash
+  curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/install/macos.sh && sudo bash macos.sh
+  ```
+  (on Linux use `linux.sh` instead of `macos.sh`)
+- **Windows** (PowerShell): see [Windows 10 / 11](#windows-10--11); on Windows choose smaller lists, or run
+  [AdGuard Home on the PC](#adguard-home-on-a-windows-or-mac-computer) for the big ones.
+
+**3. Protect every device at home** (about 30 minutes). Run AdGuard Home or Pi-hole on an always-on device, add the two
+links from step 1, and point your router at it:
+[Raspberry Pi](#raspberry-pi) · [Docker](#docker) · [Synology](#synology-nas) · [other NAS / servers](#choose-your-setup)
+· then your [router](#routers).
+
+**4. Phones:** Android without root: the free [AdAway app](#android). iPhone / iPad: [use your home blocker or the
+AdGuard app](#iphone-and-ipad).
+
+Then check it worked with [Is it working?](#is-it-working). More lists (adult content, gambling, social media, kids'
+apps...) are in [Lists](#lists) and [Suggested setups](#suggested-setups).
 
 ## Contents
 
 <!-- TOC:START -->
+- [Quick start](#quick-start)
 - [Choose your setup](#choose-your-setup)
 - [Lists](#lists)
   - [Suggested setups](#suggested-setups)

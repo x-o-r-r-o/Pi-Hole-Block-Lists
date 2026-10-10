@@ -3,8 +3,8 @@
 ! Description: Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone (add `phishing-and-scams` for extra phishing feeds).
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-10 10:21 UTC
-! Entries: 762727
+! Last modified: 2026-10-10 10:30 UTC
+! Entries: 762725
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Threat Intelligence Feeds (Medium): https://github.com/hagezi/dns-blocklists
@@ -506324,7 +506324,6 @@
 ||oux36.dev-process.work^
 ||ouxlg.com^
 ||ouxmera.click^
-||ouya691.xynotrax.in.net^
 ||ouyaoxiazai.com^
 ||ouyi.fans^
 ||ouyicn.vc^
@@ -652045,7 +652044,6 @@
 ||sudburyplumber.co.uk^
 ||sudclient.1zorelin.lat^
 ||sudcom.org^
-||sudden-lab.xynotrax.in.net^
 ||suddencast.doe-negotation.surf^
 ||suddenemergency.com^
 ||suddenhar.currencysn0ut.pics^
