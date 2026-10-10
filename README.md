@@ -22,8 +22,9 @@ from well-maintained upstream sources, merged and de-duplicated.
 - [UniFi Cloud Gateway (UCG Ultra / Max / Fiber, UDM, UDR)](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr)
   - [Option 1 (recommended): UniFi + AdGuard Home or Pi-hole, updates automatically](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically)
   - [Option 2: UniFi only, no extra device (manual updates)](#option-2-unifi-only-no-extra-device-manual-updates)
-- [Routers: pfSense and OpenWrt](#routers-pfsense-and-openwrt)
+- [Routers: pfSense, OPNsense and OpenWrt](#routers-pfsense-opnsense-and-openwrt)
   - [pfSense](#pfsense)
+  - [OPNsense](#opnsense)
   - [OpenWrt](#openwrt)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
@@ -345,7 +346,7 @@ Use it together with `adblock/live-streaming.txt`. (Pi-hole can't block by IP; u
 Action *Deny Both*, Update frequency *Once a day* → Save, then run **Update → Force Update**. Repeat under **IPv6** with
 `-ipv6.txt`.
 
-**OPNsense:** Firewall → **Aliases** → + → Type *URL Table (IPs)*, Content: the `live-streaming.txt` link, Refresh
+**OPNsense** ([full router guide](#opnsense)): Firewall → **Aliases** → + → Type *URL Table (IPs)*, Content: the `live-streaming.txt` link, Refresh
 frequency 1 day → Save → Apply. Then Firewall → **Rules → LAN** → + → Action *Block*, Destination: the alias → Save →
 Apply.
 
@@ -411,17 +412,17 @@ block them with Option 1, step 3. Menu names move around between UniFi Network v
 and [Zone-Based Firewall](https://help.ui.com/hc/en-us/articles/115003173168-Zone-Based-Firewalls-in-UniFi) help pages
 show the current ones.
 
-## Routers: pfSense and OpenWrt
+## Routers: pfSense, OPNsense and OpenWrt
 
-If your router runs pfSense or OpenWrt, it can do the blocking itself for every device at home, and update the lists
+If your router runs pfSense, OPNsense or OpenWrt, it can do the blocking itself for every device at home, and update the lists
 every day. Each router has two ways: its own blocking package, or AdGuard Home running next to it.
 
 Which list link to use:
-- **pfSense (pfBlockerNG)** and **OpenWrt (adblock-fast)**: the **plain** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/<list>.txt`
+- **pfSense (pfBlockerNG)**, **OPNsense (Unbound blocklists)** and **OpenWrt (adblock-fast)**: the **plain** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/<list>.txt`
   (for example `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking.txt`).
 - **AdGuard Home** (on either router): the **adblock** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/<list>.txt`.
 
-Router memory is the limit: roughly 100 MB of free RAM per 500,000 domains. Check **Status → Dashboard** (pfSense) or
+Router memory is the limit: roughly 100 MB of free RAM per 500,000 domains. Check **Status → Dashboard** (pfSense), **Lobby → Dashboard** (OPNsense) or
 **Status → Overview** (OpenWrt) and start small (`ads-and-tracking` + `security`), adding more lists while there's room.
 
 ### pfSense
@@ -451,6 +452,36 @@ Save, and reconnect your devices.
 *TCP/UDP*, Destination tick **Invert match** and choose *LAN address*, Destination port *DNS (53)*, Redirect target IP
 *127.0.0.1* (Option B: the AdGuard Home IP), Redirect port *53* → Save → Apply. Then **Firewall → Rules → LAN → Add**:
 Action *Block*, Protocol *TCP/UDP*, Destination port *853* → Save → Apply. Also add the `vpn-proxy-bypass` list.
+
+### OPNsense
+
+**Option A: Unbound DNS blocklists (built in, recommended).** No extra package needed.
+1. **Services → Unbound DNS → General**: make sure **Enable Unbound** is ticked (it is by default, and DHCP hands out
+   OPNsense as the DNS server).
+2. **Services → Unbound DNS → Blocklists** → **Enable**. Leave **Type of DNSBL** empty (or keep any predefined lists you
+   like) and paste the plain links of the lists you want into **URLs of Blocklists**, one per entry, e.g.
+   `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking.txt` and `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/security.txt` → **Apply**. Unbound loads them within about a minute,
+   without restarting.
+3. Different lists per network: add a second blocklist policy and set its **Source Net(s)** to, for example, the kids'
+   network, with stricter lists such as `adult`, `gambling` and `live-streaming`. Leave Source Net(s) empty on the policy
+   that should apply to everyone.
+4. Daily updates: **System → Settings → Cron** → **+** → Command **Update Unbound DNSBLs**, Hours *4*, Minutes *30* →
+   Save → Apply.
+5. Check it: **Reporting → Unbound DNS** shows blocked queries, and the Blocklists page has a tester for single names.
+   If a site breaks, add it under **Allowlist Domains** (or permanently in [`allowlist.txt`](allowlist.txt)).
+
+**Option B: AdGuard Home on another device.** Add the adblock links in AdGuard Home, then set your LAN's DHCP service
+(**Services → ISC DHCPv4 → LAN**, or **Dnsmasq DNS & DHCP** / **Kea DHCP** on newer versions) to hand out the AdGuard
+Home IP address as the DNS server, and reconnect your devices. (Community plugins can run AdGuard Home on OPNsense
+itself, but they're not official.)
+
+**Stop devices from going around it (both options):** **Firewall → NAT → Port Forward → +**: Interface *LAN*, Protocol
+*TCP/UDP*, Destination tick **Destination / Invert** and choose *This Firewall*, Destination port *DNS*, Redirect target
+IP *127.0.0.1* (Option B: the AdGuard Home IP), Redirect target port *DNS*, Filter rule association *Add associated
+filter rule* → Save → Apply. Then **Firewall → Rules → LAN → +**: Action *Block*, Protocol *TCP/UDP*, Destination port
+*853* → Save → Apply. Also add the `vpn-proxy-bypass` list.
+
+**Block by IP (optional):** see the OPNsense steps under [Blocking by IP address](#blocking-by-ip-address-ips).
 
 ### OpenWrt
 
