@@ -2,8 +2,8 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 09:41 UTC
-# Entries: 12959
+# Last modified: 2026-10-10 11:02 UTC
+# Entries: 12972
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
@@ -423,6 +423,7 @@ actuallyfreedating.com
 acul-dev.cloud.bumble.com
 acul-stage.cloud.bumble.com
 acutedating.com
+ad.badoo.com
 adam-and-eva.com
 adameve.com.au
 adammeeteve.com
@@ -958,7 +959,9 @@ amateurmatch.com
 amaxhosa.co.za
 amazingasianz.com
 amazingdating.org
+amb.badoo.com
 amb.bumble.com
+ambassador.badoo.com
 ambassador.bumble.com
 ambiancematchmaking.com
 ame-soeur.com
@@ -1435,7 +1438,6 @@ autisticdating.com.au
 autoconfig.shop.bumble.com
 autodiscover.aisle.co
 autodiscover.match.com
-autodiscover.tantan.com
 autumn-kiss.com
 av1.match.com
 avantidating.co.uk
@@ -1465,6 +1467,7 @@ baddkittyclub.com
 badoo.app
 badoo.com
 badoocdn.com
+badootech.badoo.com
 baerendienst.de
 bahamasdatingonline.com
 baihe.com
@@ -1855,7 +1858,6 @@ bestsingle.it
 besttopinfo.com
 bestweekforsex.com
 beta-web.dilmil.co
-beta.hornetapp.com
 beta.login.boo.world
 beta.meetme.com
 beta.muzz.com
@@ -2779,6 +2781,7 @@ cazavo.sk
 cb.tagged.com
 cb2.tagged.com
 ccelibat.com
+ccm1.corp.badoo.com
 ccpa.grindr.com
 cdating.app
 cdating.at
@@ -2845,6 +2848,7 @@ chat-paradise.com
 chat-place.org
 chat-solution.com
 chat.coffeemeetsbagel.com
+chat.corp.badoo.com
 chat.hu
 chat.ru
 chat.trulymadly.com
@@ -3090,7 +3094,6 @@ comicbookpassions.com
 commondating.app
 commondreams.org
 communauty.net
-community.hornetapp.com
 communitypassions.com
 compa.co.uk
 companions.com.au
@@ -3209,8 +3212,6 @@ courtisez.com
 cowboydate.com
 cp.match.com
 cpa.meetme.com
-cpcalendars.tantan.com
-cpcontacts.tantan.com
 cppm.gotinder.com
 cr.match.com
 craftofcharisma.com
@@ -3253,6 +3254,7 @@ cum.fr
 cumplegenial.com
 cumulus.pof.com
 cuoregemello.it
+cup1.corp.badoo.com
 cupiboom.com
 cupid-match.com
 cupid-today.com
@@ -4765,6 +4767,7 @@ ethiopianpersonals.com
 ethiosingles.app
 etre-deux.com
 etre-ensemble.com
+eu-turn.badoo.com
 eu.auth-dev.bumble.com
 eu.auth-dev.cloud.bumble.com
 eu.auth-stage.bumble.com
@@ -6252,6 +6255,7 @@ hotdatingcentral.com
 hotdatinglist.com
 hotdatingsearch.com
 hotie.pics
+hotline.badoo.com
 hotlinksdating.app
 hotmessenger.fr
 hotornot.de
@@ -6456,6 +6460,7 @@ interfortune.com
 interfriendship.de
 interislandcasino.com
 interkontakt.net
+internal.cup1.corp.badoo.com
 internal.zoosk.com
 international-dating.info
 international.blued.com
@@ -7258,7 +7263,6 @@ love.druzba.org.ua
 love.elitesingles.com
 love.fm
 love.gala.net
-love.hornetapp.com
 love.in-alushta.ru
 love.isun.ru
 love.jdate.com
@@ -8603,6 +8607,7 @@ mlkp.hily.com
 mlkp.taimi.com
 mlove.ru
 mm.christianmingle.com
+mm.corp.badoo.com
 mm.elitesingles.com
 mm.jdate.com
 mm.zoosk.com
@@ -8703,6 +8708,8 @@ msdating.com
 msdumps.pof.com
 mshot.badoo.com
 mshot.bumble.com
+mshoteu.badoo.com
+mshotus.badoo.com
 msn.match.com
 msnjp.marriage.match.com
 mtch.com
@@ -9592,6 +9599,7 @@ punkpassions.com
 pure-app.com
 pure.app
 purematrimony.com
+push.badoo.com
 pussydating.ru
 pwa.trulymadly.com
 pyometrack.com
@@ -11345,6 +11353,7 @@ telugumatrimony.com
 temp.trulymadly.com
 tempematchmaker.com
 tempesingles.com
+templefix.corp.badoo.com
 tempodates.at
 temptasian.com
 temptationsdating.com
@@ -11689,6 +11698,7 @@ uat-api.feeld.co
 ub-lp.bumble.com
 ubsexxy.com
 uchat.de
+ucs1.corp.badoo.com
 udate.com
 udatex.co.uk
 udeworld.com
@@ -12053,6 +12063,7 @@ us-central1.xp-gateway.cloud.bumble.com
 us-central1.xpi-dev.cloud.bumble.com
 us-central1.xpi-staging.cloud.bumble.com
 us-central1.xpi.cloud.bumble.com
+us-turn.badoo.com
 us.50date.com
 us.auth-dev.bumble.com
 us.auth-dev.cloud.bumble.com
@@ -12307,6 +12318,10 @@ webcenter.match.com
 webconnexions.com
 webdate.com
 webdev.zoosk.com
+webex.corp.badoo.com
+webex1.corp.badoo.com
+webexadm1.corp.badoo.com
+webexsrv1.corp.badoo.com
 webhook-processor-europe-west4.payment-processing.cloud.bumble.com
 webhook-processor-us-central1.payment-processing-dev.cloud.bumble.com
 webhook-processor-us-central1.payment-processing-staging.cloud.bumble.com
@@ -12351,7 +12366,6 @@ whatdates.app
 whats-dates.app
 whats-dating.app
 whats-sexdates.app
-whatsapp.tantan.com
 whatsdates.app
 whatsyourprice.com
 wheelchairdating.com.au
@@ -12462,6 +12476,8 @@ www.at.match.com
 www.at.ourtime.com
 www.au.match.com
 www.b9.gotinder.com
+www.badoo.com
+www.badootech.badoo.com
 www.be.match.com
 www.be.ourtime.com
 www.bj-dzc-nps01.immomo.com
@@ -12489,7 +12505,6 @@ www.christianmingle.com
 www.cl.match.com
 www.co.match.com
 www.coffeemeetsbagel.com
-www.community.hornetapp.com
 www.content.gotinder.com
 www.core.tantanapp.com
 www.cr.match.com
@@ -12537,7 +12552,6 @@ www.ldap-master.internal.zoosk.com
 www.leadthink.christianmingle.com
 www.lesgrandesfemmes.bumble.com
 www.login.pof.com
-www.love.hornetapp.com
 www.lu.ourtime.com
 www.m.hinge.co
 www.match.com
@@ -12602,7 +12616,6 @@ www.vpn.meetme.com
 www.webdev.zoosk.com
 www.webprd.zoosk.com
 www.webstg.zoosk.com
-www.whatsapp.tantan.com
 www.www2.christianmingle.com
 www1.tubededentifrice.com
 www2.christianmingle.com

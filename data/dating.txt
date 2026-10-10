@@ -110,10 +110,13 @@ www.vpn.gotinder.com
 # Bumble, Badoo
 acul-dev.cloud.bumble.com
 acul-stage.cloud.bumble.com
+ad.badoo.com
 admin.connect-dev.cloud.bumble.com
 admin.connect.cloud.bumble.com
 am1.bapi.bumble.com
+amb.badoo.com
 amb.bumble.com
+ambassador.badoo.com
 ambassador.bumble.com
 api-dev.cloud.bumble.com
 api-stage.cloud.bumble.com
@@ -124,6 +127,7 @@ auth.cloud.bumble.com
 autoconfig.shop.bumble.com
 badoo.com
 badoocdn.com
+badootech.badoo.com
 bee-dev.cloud.bumble.com
 bee-stage.cloud.bumble.com
 bee.cloud.bumble.com
@@ -133,6 +137,8 @@ brand.badoo.com
 brand.bumble.com
 bumble.com
 casting-bachelor.shop.bumble.com
+ccm1.corp.badoo.com
+chat.corp.badoo.com
 citrix.badoo.com
 city-guides.bumble.com
 connection-quizzes-dev.cloud.bumble.com
@@ -143,6 +149,7 @@ consent.bumble.com
 corp.badoo.com
 cosmos-health-dev.cloud.bumble.com
 cosmos-portal-dev.cloud.bumble.com
+cup1.corp.badoo.com
 d2zh3kxlwenffrxx7pjc.lesgrandesfemmes.bumble.com
 dashboard.xp-gateway.cloud.bumble.com
 debug.report-dev.cloud.bumble.com
@@ -156,6 +163,7 @@ dev.v2.badoocdn.com
 eblgnwwk7jawlzh6bzg4.thebeehive.bumble.com
 ecdn1.badoocdn.com
 ecdn2.badoocdn.com
+eu-turn.badoo.com
 eu.auth-dev.bumble.com
 eu.auth-dev.cloud.bumble.com
 eu.auth-stage.bumble.com
@@ -342,14 +350,19 @@ grpc.us-central1.bff-activity.cloud.bumble.com
 grpc.us-central1.bff-discovery-dev.cloud.bumble.com
 grpc.us-central1.bff-discovery-staging.cloud.bumble.com
 grpc.us-central1.bff-discovery.cloud.bumble.com
+hotline.badoo.com
 idocs.corp.badoo.com
+internal.cup1.corp.badoo.com
 ir.bumble.com
 kafka-console-us.report-dev.cloud.bumble.com
 links.bumble.com
+mm.corp.badoo.com
 mobile-platform-dev.cloud.bumble.com
 mobile-platform-predev.cloud.bumble.com
 mshot.badoo.com
 mshot.bumble.com
+mshoteu.badoo.com
+mshotus.badoo.com
 ololo.shop.bumble.com
 pay-dev.cloud.bumble.com
 pay-stage.cloud.bumble.com
@@ -371,6 +384,7 @@ prd.v2.badoocdn.com
 prod.cloud.bumble.com
 protohive-dev.cloud.bumble.com
 protohive.cloud.bumble.com
+push.badoo.com
 qaapi.cloud.bumble.com
 r5y2gy824h6rdjjax3en.blog.bumble.com
 report-dev.cloud.bumble.com
@@ -391,9 +405,11 @@ support.bumble.com
 t-dev.cloud.bumble.com
 t-stage.cloud.bumble.com
 t.cloud.bumble.com
+templefix.corp.badoo.com
 thebeehive.bumble.com
 toau10tix.bumble.com
 ub-lp.bumble.com
+ucs1.corp.badoo.com
 us-central1-green.vote.cloud.bumble.com
 us-central1.account-dev.cloud.bumble.com
 us-central1.account-location-dev.cloud.bumble.com
@@ -673,6 +689,7 @@ us-central1.xp-gateway.cloud.bumble.com
 us-central1.xpi-dev.cloud.bumble.com
 us-central1.xpi-staging.cloud.bumble.com
 us-central1.xpi.cloud.bumble.com
+us-turn.badoo.com
 us.auth-dev.bumble.com
 us.auth-dev.cloud.bumble.com
 us.auth-stage.bumble.com
@@ -684,10 +701,16 @@ us1.bapi.bumble.com
 usc1.bapi.bumble.com
 vpn-shot.badoo.com
 vpn-shot.bumble.com
+webex.corp.badoo.com
+webex1.corp.badoo.com
+webexadm1.corp.badoo.com
+webexsrv1.corp.badoo.com
 webhook-processor-europe-west4.payment-processing.cloud.bumble.com
 webhook-processor-us-central1.payment-processing-dev.cloud.bumble.com
 webhook-processor-us-central1.payment-processing-staging.cloud.bumble.com
 webhook-processor-us-central1.payment-processing.cloud.bumble.com
+www.badoo.com
+www.badootech.badoo.com
 www.blog.bumble.com
 www.dev.studio.bumble.com
 www.lesgrandesfemmes.bumble.com
@@ -1449,13 +1472,8 @@ www.shop.scruff.com
 www.support.scruff.com
 
 # Hornet
-beta.hornetapp.com
-community.hornetapp.com
 front.hornetapp.com
 hornetapp.com
-love.hornetapp.com
-www.community.hornetapp.com
-www.love.hornetapp.com
 
 # Blued
 bdexch01.blued.com
@@ -1469,7 +1487,6 @@ www.blued.com
 # Tantan
 android.webview.tantanapp.com
 apk.tantanapp.com
-autodiscover.tantan.com
 bj-gh-nps-01.tantanapp.com
 bj-gh-nps-02.tantanapp.com
 cloud.tantanapp.com
@@ -1479,8 +1496,6 @@ core-baidu.tantanapp.com
 core-cc.tantanapp.com
 core-gaofang.tantanapp.com
 core.tantanapp.com
-cpcalendars.tantan.com
-cpcontacts.tantan.com
 d.tantanapp.com
 ditui.tantanapp.com
 id.int.tantanapp.com
@@ -1501,12 +1516,10 @@ tantan.com
 tantanapp.com
 th.int.tantanapp.com
 vi.int.tantanapp.com
-whatsapp.tantan.com
 www.core.tantanapp.com
 www.int.tantanapp.com
 www.tantan.com
 www.tantanapp.com
-www.whatsapp.tantan.com
 wwwc.tantanapp.com
 zh-tw.int.tantanapp.com
 

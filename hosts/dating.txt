@@ -2,8 +2,8 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 09:41 UTC
-# Entries: 12959
+# Last modified: 2026-10-10 11:02 UTC
+# Entries: 12972
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
@@ -423,6 +423,7 @@
 0.0.0.0 acul-dev.cloud.bumble.com
 0.0.0.0 acul-stage.cloud.bumble.com
 0.0.0.0 acutedating.com
+0.0.0.0 ad.badoo.com
 0.0.0.0 adam-and-eva.com
 0.0.0.0 adameve.com.au
 0.0.0.0 adammeeteve.com
@@ -958,7 +959,9 @@
 0.0.0.0 amaxhosa.co.za
 0.0.0.0 amazingasianz.com
 0.0.0.0 amazingdating.org
+0.0.0.0 amb.badoo.com
 0.0.0.0 amb.bumble.com
+0.0.0.0 ambassador.badoo.com
 0.0.0.0 ambassador.bumble.com
 0.0.0.0 ambiancematchmaking.com
 0.0.0.0 ame-soeur.com
@@ -1435,7 +1438,6 @@
 0.0.0.0 autoconfig.shop.bumble.com
 0.0.0.0 autodiscover.aisle.co
 0.0.0.0 autodiscover.match.com
-0.0.0.0 autodiscover.tantan.com
 0.0.0.0 autumn-kiss.com
 0.0.0.0 av1.match.com
 0.0.0.0 avantidating.co.uk
@@ -1465,6 +1467,7 @@
 0.0.0.0 badoo.app
 0.0.0.0 badoo.com
 0.0.0.0 badoocdn.com
+0.0.0.0 badootech.badoo.com
 0.0.0.0 baerendienst.de
 0.0.0.0 bahamasdatingonline.com
 0.0.0.0 baihe.com
@@ -1855,7 +1858,6 @@
 0.0.0.0 besttopinfo.com
 0.0.0.0 bestweekforsex.com
 0.0.0.0 beta-web.dilmil.co
-0.0.0.0 beta.hornetapp.com
 0.0.0.0 beta.login.boo.world
 0.0.0.0 beta.meetme.com
 0.0.0.0 beta.muzz.com
@@ -2779,6 +2781,7 @@
 0.0.0.0 cb.tagged.com
 0.0.0.0 cb2.tagged.com
 0.0.0.0 ccelibat.com
+0.0.0.0 ccm1.corp.badoo.com
 0.0.0.0 ccpa.grindr.com
 0.0.0.0 cdating.app
 0.0.0.0 cdating.at
@@ -2845,6 +2848,7 @@
 0.0.0.0 chat-place.org
 0.0.0.0 chat-solution.com
 0.0.0.0 chat.coffeemeetsbagel.com
+0.0.0.0 chat.corp.badoo.com
 0.0.0.0 chat.hu
 0.0.0.0 chat.ru
 0.0.0.0 chat.trulymadly.com
@@ -3090,7 +3094,6 @@
 0.0.0.0 commondating.app
 0.0.0.0 commondreams.org
 0.0.0.0 communauty.net
-0.0.0.0 community.hornetapp.com
 0.0.0.0 communitypassions.com
 0.0.0.0 compa.co.uk
 0.0.0.0 companions.com.au
@@ -3209,8 +3212,6 @@
 0.0.0.0 cowboydate.com
 0.0.0.0 cp.match.com
 0.0.0.0 cpa.meetme.com
-0.0.0.0 cpcalendars.tantan.com
-0.0.0.0 cpcontacts.tantan.com
 0.0.0.0 cppm.gotinder.com
 0.0.0.0 cr.match.com
 0.0.0.0 craftofcharisma.com
@@ -3253,6 +3254,7 @@
 0.0.0.0 cumplegenial.com
 0.0.0.0 cumulus.pof.com
 0.0.0.0 cuoregemello.it
+0.0.0.0 cup1.corp.badoo.com
 0.0.0.0 cupiboom.com
 0.0.0.0 cupid-match.com
 0.0.0.0 cupid-today.com
@@ -4765,6 +4767,7 @@
 0.0.0.0 ethiosingles.app
 0.0.0.0 etre-deux.com
 0.0.0.0 etre-ensemble.com
+0.0.0.0 eu-turn.badoo.com
 0.0.0.0 eu.auth-dev.bumble.com
 0.0.0.0 eu.auth-dev.cloud.bumble.com
 0.0.0.0 eu.auth-stage.bumble.com
@@ -6252,6 +6255,7 @@
 0.0.0.0 hotdatinglist.com
 0.0.0.0 hotdatingsearch.com
 0.0.0.0 hotie.pics
+0.0.0.0 hotline.badoo.com
 0.0.0.0 hotlinksdating.app
 0.0.0.0 hotmessenger.fr
 0.0.0.0 hotornot.de
@@ -6456,6 +6460,7 @@
 0.0.0.0 interfriendship.de
 0.0.0.0 interislandcasino.com
 0.0.0.0 interkontakt.net
+0.0.0.0 internal.cup1.corp.badoo.com
 0.0.0.0 internal.zoosk.com
 0.0.0.0 international-dating.info
 0.0.0.0 international.blued.com
@@ -7258,7 +7263,6 @@
 0.0.0.0 love.elitesingles.com
 0.0.0.0 love.fm
 0.0.0.0 love.gala.net
-0.0.0.0 love.hornetapp.com
 0.0.0.0 love.in-alushta.ru
 0.0.0.0 love.isun.ru
 0.0.0.0 love.jdate.com
@@ -8603,6 +8607,7 @@
 0.0.0.0 mlkp.taimi.com
 0.0.0.0 mlove.ru
 0.0.0.0 mm.christianmingle.com
+0.0.0.0 mm.corp.badoo.com
 0.0.0.0 mm.elitesingles.com
 0.0.0.0 mm.jdate.com
 0.0.0.0 mm.zoosk.com
@@ -8703,6 +8708,8 @@
 0.0.0.0 msdumps.pof.com
 0.0.0.0 mshot.badoo.com
 0.0.0.0 mshot.bumble.com
+0.0.0.0 mshoteu.badoo.com
+0.0.0.0 mshotus.badoo.com
 0.0.0.0 msn.match.com
 0.0.0.0 msnjp.marriage.match.com
 0.0.0.0 mtch.com
@@ -9592,6 +9599,7 @@
 0.0.0.0 pure-app.com
 0.0.0.0 pure.app
 0.0.0.0 purematrimony.com
+0.0.0.0 push.badoo.com
 0.0.0.0 pussydating.ru
 0.0.0.0 pwa.trulymadly.com
 0.0.0.0 pyometrack.com
@@ -11345,6 +11353,7 @@
 0.0.0.0 temp.trulymadly.com
 0.0.0.0 tempematchmaker.com
 0.0.0.0 tempesingles.com
+0.0.0.0 templefix.corp.badoo.com
 0.0.0.0 tempodates.at
 0.0.0.0 temptasian.com
 0.0.0.0 temptationsdating.com
@@ -11689,6 +11698,7 @@
 0.0.0.0 ub-lp.bumble.com
 0.0.0.0 ubsexxy.com
 0.0.0.0 uchat.de
+0.0.0.0 ucs1.corp.badoo.com
 0.0.0.0 udate.com
 0.0.0.0 udatex.co.uk
 0.0.0.0 udeworld.com
@@ -12053,6 +12063,7 @@
 0.0.0.0 us-central1.xpi-dev.cloud.bumble.com
 0.0.0.0 us-central1.xpi-staging.cloud.bumble.com
 0.0.0.0 us-central1.xpi.cloud.bumble.com
+0.0.0.0 us-turn.badoo.com
 0.0.0.0 us.50date.com
 0.0.0.0 us.auth-dev.bumble.com
 0.0.0.0 us.auth-dev.cloud.bumble.com
@@ -12307,6 +12318,10 @@
 0.0.0.0 webconnexions.com
 0.0.0.0 webdate.com
 0.0.0.0 webdev.zoosk.com
+0.0.0.0 webex.corp.badoo.com
+0.0.0.0 webex1.corp.badoo.com
+0.0.0.0 webexadm1.corp.badoo.com
+0.0.0.0 webexsrv1.corp.badoo.com
 0.0.0.0 webhook-processor-europe-west4.payment-processing.cloud.bumble.com
 0.0.0.0 webhook-processor-us-central1.payment-processing-dev.cloud.bumble.com
 0.0.0.0 webhook-processor-us-central1.payment-processing-staging.cloud.bumble.com
@@ -12351,7 +12366,6 @@
 0.0.0.0 whats-dates.app
 0.0.0.0 whats-dating.app
 0.0.0.0 whats-sexdates.app
-0.0.0.0 whatsapp.tantan.com
 0.0.0.0 whatsdates.app
 0.0.0.0 whatsyourprice.com
 0.0.0.0 wheelchairdating.com.au
@@ -12462,6 +12476,8 @@
 0.0.0.0 www.at.ourtime.com
 0.0.0.0 www.au.match.com
 0.0.0.0 www.b9.gotinder.com
+0.0.0.0 www.badoo.com
+0.0.0.0 www.badootech.badoo.com
 0.0.0.0 www.be.match.com
 0.0.0.0 www.be.ourtime.com
 0.0.0.0 www.bj-dzc-nps01.immomo.com
@@ -12489,7 +12505,6 @@
 0.0.0.0 www.cl.match.com
 0.0.0.0 www.co.match.com
 0.0.0.0 www.coffeemeetsbagel.com
-0.0.0.0 www.community.hornetapp.com
 0.0.0.0 www.content.gotinder.com
 0.0.0.0 www.core.tantanapp.com
 0.0.0.0 www.cr.match.com
@@ -12537,7 +12552,6 @@
 0.0.0.0 www.leadthink.christianmingle.com
 0.0.0.0 www.lesgrandesfemmes.bumble.com
 0.0.0.0 www.login.pof.com
-0.0.0.0 www.love.hornetapp.com
 0.0.0.0 www.lu.ourtime.com
 0.0.0.0 www.m.hinge.co
 0.0.0.0 www.match.com
@@ -12602,7 +12616,6 @@
 0.0.0.0 www.webdev.zoosk.com
 0.0.0.0 www.webprd.zoosk.com
 0.0.0.0 www.webstg.zoosk.com
-0.0.0.0 www.whatsapp.tantan.com
 0.0.0.0 www.www2.christianmingle.com
 0.0.0.0 www1.tubededentifrice.com
 0.0.0.0 www2.christianmingle.com
