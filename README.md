@@ -45,9 +45,10 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 2: install AdGuard Home or Pi-hole](#step-2-install-adguard-home-or-pi-hole)
   - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-1)
 - [Docker](#docker)
-  - [Step 1: free port 53 (Ubuntu and Debian servers)](#step-1-free-port-53-ubuntu-and-debian-servers)
-  - [Step 2: start AdGuard Home or Pi-hole](#step-2-start-adguard-home-or-pi-hole)
-  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-2)
+  - [Step 1: install Docker and download AdGuard Home or Pi-hole](#step-1-install-docker-and-download-adguard-home-or-pi-hole)
+  - [Step 2: free port 53 (Ubuntu and Debian servers)](#step-2-free-port-53-ubuntu-and-debian-servers)
+  - [Step 3: start it](#step-3-start-it)
+  - [Step 4: use it for the whole home](#step-4-use-it-for-the-whole-home)
 - [Proxmox VE](#proxmox-ve)
   - [Step 1: create the container](#step-1-create-the-container)
   - [Step 2: install AdGuard Home or Pi-hole](#step-2-install-adguard-home-or-pi-hole-1)
@@ -55,15 +56,15 @@ from well-maintained upstream sources, merged and de-duplicated.
 - [TrueNAS](#truenas)
   - [Step 1: prepare TrueNAS](#step-1-prepare-truenas)
   - [Step 2: install AdGuard Home or Pi-hole from the Apps catalogue](#step-2-install-adguard-home-or-pi-hole-from-the-apps-catalogue)
-  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-3)
+  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-2)
 - [Unraid](#unraid)
   - [Step 1: install the container](#step-1-install-the-container)
   - [Step 2: set it up](#step-2-set-it-up)
-  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-4)
+  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-3)
 - [OpenMediaVault](#openmediavault)
   - [Step 1: install omv-extras and the Compose plugin](#step-1-install-omv-extras-and-the-compose-plugin)
   - [Step 2: add AdGuard Home or Pi-hole](#step-2-add-adguard-home-or-pi-hole)
-  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-5)
+  - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-4)
 - [QNAP NAS](#qnap-nas)
 - [Home Assistant](#home-assistant)
 - [Away from home](#away-from-home)
@@ -82,10 +83,11 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [What to expect](#what-to-expect-1)
 - [Is it working?](#is-it-working)
 - [Something broke?](#something-broke)
-- [Adding your own domains](#adding-your-own-domains)
-- [How it updates](#how-it-updates)
 - [Sources](#sources)
-- [Adding a new list or source](#adding-a-new-list-or-source)
+- [For maintainers](#for-maintainers)
+  - [Adding your own domains](#adding-your-own-domains)
+  - [How it updates](#how-it-updates)
+  - [Adding a new list or source](#adding-a-new-list-or-source)
 <!-- TOC:END -->
 
 ## Choose your setup
@@ -161,7 +163,7 @@ The table below and the Sources table are updated automatically on every build.
 | **Stronger privacy & security** | swap in `ads-and-tracking-extended`, add `security-strict`, `mobile-spyware`, `smart-tv`, `windows-telemetry`, `crypto-mining` |
 | **Smart TVs & streaming sticks** | `smart-tv`, `ads-and-tracking` ([full guide](#smart-tvs-and-streaming-sticks)) |
 | **Game consoles** | `game-consoles`, `ads-and-tracking` ([full guide](#game-consoles)) |
-| **Older or less tech-savvy relatives** | `ads-and-tracking`, `security`, `security-strict`, `phishing-and-scams`, `remote-control`, `crypto-trading` |
+| **Older or less tech-savvy relatives** | `ads-and-tracking`, `security`, `security-strict`, `remote-control`, `crypto-trading` |
 | **Kids / family** | `adult`, `safesearch-bypass`, `gambling`, `dating`, `live-streaming`, `chat-strangers`, `drugs`, `violence-hate`, `vpn-proxy-bypass` (stops getting around the blocks) |
 | **Focus / school / bedtime** | `social-media`, `youtube`, `video-streaming`, `gaming-platforms`, `online-games`, `messaging`, `ai-chatbots`, `cheating` |
 
@@ -223,14 +225,22 @@ The original root URLs (`ads-and-tracking.txt`, `ads-and-tracking-extended.txt`,
 
 ## How to add a list
 
-**AdGuard Home:** Filters → DNS blocklists → Add blocklist → Add a custom list → paste an `adblock/` URL → Save.
+Copy a list's **Adblock** link from the [Lists](#lists) table (right-click → Copy link), then:
 
-**Pi-hole v6:** Lists → paste an `adblock/` URL into "Domain or URL" → Add blocklist.
-Then run `pihole -g` (or Tools → Update Gravity).
+**AdGuard Home:** **Filters → DNS blocklists → Add blocklist → Add a custom list** → enter a name (e.g. the list's name)
+and paste the link → **Save**. AdGuard Home checks every list for updates once a day by itself (**Settings → General
+settings → Filters update interval**).
 
-**Pi-hole v5:** Group Management → Adlists → paste a plain (root) URL → Add. Then run `pihole -g`.
+**Pi-hole v6:** **Lists** → paste the link into *Domain or URL* (add a comment if you like) → **Add blocklist** → then
+**Tools → Update Gravity** → **Update** (or run `pihole -g`). Pi-hole refreshes its lists once a week by itself.
 
-Don't combine `ads-and-tracking` and `ads-and-tracking-extended`. The extended list already contains everything in the smaller one.
+**Pi-hole v5:** **Group Management → Adlists** → paste the **Plain** link instead → **Add**, then run `pihole -g`.
+
+Good to know:
+- Don't combine `ads-and-tracking` with `ads-and-tracking-extended`, or `security` with `phishing-and-scams`: the bigger
+  list already contains the smaller one.
+- Every list uses memory on the device running your blocker; the [Lists](#lists) table shows how many names each has.
+- Then check it with [Is it working?](#is-it-working).
 
 ## Use on one device, without Pi-hole or AdGuard Home
 
@@ -248,13 +258,17 @@ every list above, lets you pick one or several, backs up your original hosts fil
 | iPhone / iPad | no script possible (see [iPhone and iPad](#iphone-and-ipad)) | your AdGuard Home / Pi-hole, the AdGuard app, AdGuard DNS, or Screen Time |
 
 **Good to know before you start**
-- Pick only what you need. The hosts file has no wildcards, so every server name is listed one by one. Big lists such as
-  `ads-and-tracking-extended`, `security` or `adult` (500k+ names each) are fine on macOS and Linux, but **Windows gets
-  slow above ~150,000 names**; the Windows script warns you. `ads-and-tracking` + `security` is a good start.
-- It blocks in every app and browser on that device, including with the browser's "Secure DNS" setting on.
+- Pick only what you need. The hosts file has no wildcards, so every server name is listed one by one.
+  - **macOS and Linux** handle big lists fine: `ads-and-tracking` + `security` is a good start.
+  - **Windows gets slow above ~150,000 names** (the script warns you), so pick smaller lists there, such as
+    `mobile-ads`, `smart-tv`, `youtube-ads`, `live-streaming` or `dating`. For the big ad and security lists on Windows,
+    run [AdGuard Home on the PC](#adguard-home-on-a-windows-or-mac-computer) instead: it handles millions of names and
+    can protect just that PC.
+- It works in every app. A browser set to its own "secure DNS" may skip it; see [Is it working?](#is-it-working), step 3.
 - It only protects the device you run it on. To protect every device at home at once, use Pi-hole or AdGuard Home.
 - Your original hosts file is saved once as `hosts.block-lists-backup` next to it, and `--remove` / `-Remove` takes out
   only what the script added.
+- Afterwards, check it with [Is it working?](#is-it-working).
 
 ### macOS
 
@@ -287,11 +301,13 @@ You can also skip the menu: `sudo bash macos.sh --lists ads-and-tracking,securit
    ```powershell
    powershell -ExecutionPolicy Bypass -File .\windows.ps1
    ```
-4. A window lists every block list. Click the ones you want (hold **Ctrl** to pick several), then click **OK**.
+   A second PowerShell window opens with administrator rights; the rest happens there.
+4. A window lists every block list. Click the ones you want (hold **Ctrl** to pick several), then click **OK**. Keep the
+   total under ~150,000 names (see the *Domains* column) or Windows may get slow.
 5. Answer **y** to the daily-update question if you want that, then restart your browser.
 
 Later (in PowerShell, in your Downloads folder): `... -File .\windows.ps1 -Update`, `-Remove`, `-AutoUpdate off`, or
-`-Lists ads-and-tracking,security` to skip the window. `-NoGui` shows a text menu instead of the window.
+`-Lists mobile-ads,smart-tv` to skip the window. `-NoGui` shows a text menu instead of the window.
 
 If you choose `windows-telemetry`, Microsoft Defender may warn about a "HostsFileHijack". That's expected (the list blocks
 Microsoft's own data collection): choose *Allow on device*.
@@ -313,6 +329,8 @@ these lists directly and blocks them through a local VPN (nothing leaves your ph
 2. Go to **Hosts sources → +** and add the link of each list you want, in the `hosts/` format:
    `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/<list>.txt` (for example `.../hosts/ads-and-tracking.txt`).
 3. Tap the update button. AdAway keeps the lists up to date.
+4. Set **Settings → Network & internet → Private DNS** to **Off** or **Automatic**: a named Private DNS provider makes
+   Android skip AdAway.
 
 Want help picking? Install [Termux](https://termux.dev) (from F-Droid), then run the script; it shows the menu and copies
 the links for AdAway to your clipboard (with the Termux:API add-on):
@@ -457,13 +475,18 @@ Run AdGuard Home or Pi-hole on any always-on device (a Raspberry Pi, a NAS, a mi
 
 1. In the **UniFi Network** app: **Settings → Networks** → choose your network → **DHCP** (under *DHCP Service
    Management*) → **DNS Server**: turn off *Auto* and enter the IP address of your AdGuard Home / Pi-hole → **Apply**.
-   Repeat for each network (for example a separate Kids or IoT network).
+   Leave the second DNS field empty, or enter a second blocker; never a public DNS server, or devices skip the blocking
+   part of the time. Repeat for each network (for example a separate Kids or IoT network).
 2. Turn **off** UniFi's own **Ad Blocking** (Settings → CyberSecure → Ad Blocking, or Settings → Security on older
    versions). While it's on, the gateway sends all DNS to itself, which skips AdGuard Home / Pi-hole.
-3. Stop devices from going around it: **Settings → Policy Engine → Firewall** (Zone-Based Firewall) → **Create Policy** →
-   Action *Block*, Source zone *Internal* (exclude the AdGuard Home / Pi-hole IP), Destination zone *External*, port
-   **53** and **853**, protocol TCP and UDP → Save. Also add the `vpn-proxy-bypass` list in AdGuard Home / Pi-hole to
-   stop encrypted DNS (DNS-over-HTTPS) and VPN apps.
+3. Stop devices from going around it, with two policies in **Settings → Policy Engine → Firewall** (Zone-Based
+   Firewall) → **Create Policy**:
+   - **Allow blocker DNS:** Action *Allow*, Source zone *Internal* with source IP = your AdGuard Home / Pi-hole, Destination
+     zone *External*, ports **53** and **853**, TCP and UDP.
+   - **Block other DNS:** Action *Block*, Source zone *Internal*, Destination zone *External*, ports **53** and **853**,
+     TCP and UDP. Make sure the *Allow* policy is listed above this one.
+
+   Also add the `vpn-proxy-bypass` list in AdGuard Home / Pi-hole to stop encrypted DNS (DNS-over-HTTPS) and VPN apps.
 4. Turn Wi-Fi off and on (or reconnect) on each device so it picks up the new DNS server.
 
 To block Bigo by IP as well, add `ips/live-streaming-adguard.txt` in AdGuard Home (above) or use Option 2, step 4.
@@ -479,7 +502,7 @@ comments, and each entry also blocks its subdomains.
 3. Repeat every few weeks with a fresh download: UniFi can't update the list by itself.
 4. To block Bigo by IP: **Settings → Profiles → IP Groups** (*Port & IP Groups* / *Network Lists* on some versions) →
    create a group named *Bigo network* and add the ranges from
-   [`ips/live-streaming-ipv4.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv4.txt) (66 entries). Then **Policy Engine → Firewall →
+   [`ips/live-streaming-ipv4.txt`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ips/live-streaming-ipv4.txt) (about 70 entries). Then **Policy Engine → Firewall →
    Create Policy** → Action *Block*, Source zone *Internal*, Destination zone *External* → destination: the IP group →
    Save.
 
@@ -506,8 +529,10 @@ Which list link to use:
 - **MikroTik (DNS adlist)**: the **hosts** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/hosts/<list>.txt`.
 - **AdGuard Home** (on any of them): the **adblock** links, `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/adblock/<list>.txt`.
 
-Router memory is the limit: roughly 100 MB of free RAM per 500,000 domains. Check **Status → Dashboard** (pfSense), **Lobby → Dashboard** (OPNsense),
-**Status → Overview** (OpenWrt) or **System → Resources** (MikroTik) and start small (`ads-and-tracking` + `security`), adding more lists while there's room.
+Router memory is the limit: roughly 100 MB of free RAM per 500,000 domains. Check **Status → Dashboard** (pfSense),
+**Lobby → Dashboard** (OPNsense), **Status → Overview** (OpenWrt) or **System → Resources** (MikroTik). Start with
+`ads-and-tracking` (about 280,000 names, ~60 MB), then add `security` (about 800,000 names, ~160 MB) and others only while
+there's room.
 
 ### pfSense
 
@@ -534,7 +559,8 @@ Save, and reconnect your devices.
 
 **Stop devices from going around it (both options):** **Firewall → NAT → Port Forward → Add**: Interface *LAN*, Protocol
 *TCP/UDP*, Destination tick **Invert match** and choose *LAN address*, Destination port *DNS (53)*, Redirect target IP
-*127.0.0.1* (Option B: the AdGuard Home IP), Redirect port *53* → Save → Apply. Then **Firewall → Rules → LAN → Add**:
+*127.0.0.1* (Option B: the AdGuard Home IP, and also set **Source**: tick *Invert match*, *Single host or alias*, the
+AdGuard Home IP, so AdGuard Home itself can still reach the internet), Redirect port *53* → Save → Apply. Then **Firewall → Rules → LAN → Add**:
 Action *Block*, Protocol *TCP/UDP*, Destination port *853* → Save → Apply. Also add the `vpn-proxy-bypass` list.
 
 ### OPNsense
@@ -552,7 +578,7 @@ Action *Block*, Protocol *TCP/UDP*, Destination port *853* → Save → Apply. A
 4. Daily updates: **System → Settings → Cron** → **+** → Command **Update Unbound DNSBLs**, Hours *4*, Minutes *30* →
    Save → Apply.
 5. Check it: **Reporting → Unbound DNS** shows blocked queries, and the Blocklists page has a tester for single names.
-   If a site breaks, add it under **Allowlist Domains** (or permanently in [`allowlist.txt`](allowlist.txt)).
+   If a site breaks, add it under **Allowlist Domains** (and [report it](#something-broke)).
 
 **Option B: AdGuard Home on another device.** Add the adblock links in AdGuard Home, then set your LAN's DHCP service
 (**Services → ISC DHCPv4 → LAN**, or **Dnsmasq DNS & DHCP** / **Kea DHCP** on newer versions) to hand out the AdGuard
@@ -561,8 +587,8 @@ itself, but they're not official.)
 
 **Stop devices from going around it (both options):** **Firewall → NAT → Port Forward → +**: Interface *LAN*, Protocol
 *TCP/UDP*, Destination tick **Destination / Invert** and choose *This Firewall*, Destination port *DNS*, Redirect target
-IP *127.0.0.1* (Option B: the AdGuard Home IP), Redirect target port *DNS*, Filter rule association *Add associated
-filter rule* → Save → Apply. Then **Firewall → Rules → LAN → +**: Action *Block*, Protocol *TCP/UDP*, Destination port
+IP *127.0.0.1* (Option B: the AdGuard Home IP, and set **Source** to *Invert* + the AdGuard Home IP so it can still
+reach the internet), Redirect target port *DNS*, Filter rule association *Add associated filter rule* → Save → Apply. Then **Firewall → Rules → LAN → +**: Action *Block*, Protocol *TCP/UDP*, Destination port
 *853* → Save → Apply. Also add the `vpn-proxy-bypass` list.
 
 **Block by IP (optional):** see the OPNsense steps under [Blocking by IP address](#blocking-by-ip-address-ips).
@@ -622,7 +648,7 @@ server for your devices and the `LAN` interface list exists.
    RouterOS checks the lists for updates every 4 hours by itself. `/ip dns adlist print` shows how many names each list
    loaded, and `/ip dns adlist reload` updates them right away.
 3. If a site breaks, let it through with a forwarding entry, e.g. `/ip dns static add name=example.com type=FWD`
-   (or permanently in [`allowlist.txt`](allowlist.txt)).
+   (and [report it](#something-broke)).
 
 `ssl-verify=no` follows MikroTik's own example; with trusted root certificates installed on the router you can use
 `ssl-verify=yes`.
@@ -735,8 +761,8 @@ all-in-one option, including as a travel router.
    **Apply**.
 2. Click **Settings Page** to open AdGuard Home (or go to `http://192.168.8.1:3000`) → **Filters → DNS blocklists → Add
    blocklist → Add a custom list** → paste the adblock links of the lists you want.
-3. Keep it modest: router memory is limited, and big combinations (several 500,000-name lists) can make the built-in
-   AdGuard Home slow. `ads-and-tracking` + `security` is a good start.
+3. Keep it modest: router memory is limited, and big combinations can make the built-in AdGuard Home slow. Start with
+   `ads-and-tracking`; add `security` on models with 512 MB of RAM or more (e.g. Flint 2).
 4. If you use VPN domain-based routing, leave GL.iNet's *AdGuard Home Handle Client Requests* option off: it can conflict
    with those VPN policies.
 
@@ -758,7 +784,8 @@ After changing DNS, reach the router by its IP address (e.g. `http://192.168.50.
 
 These can't load block lists, but you can make every device use your blocker (AdGuard Home or Pi-hole on a
 [Raspberry Pi](#raspberry-pi), [Docker](#docker), a NAS or [Home Assistant](#home-assistant)). Look in the router's
-**LAN / DHCP** settings for a **DNS server** field and enter the blocker's IP address. Typical places:
+**LAN / DHCP** settings for a **DNS server** field and enter the blocker's IP address. If there's a second DNS field, leave
+it empty or repeat the same address; a public DNS server there lets devices skip the blocking. Typical places:
 
 | Router | Where |
 |---|---|
@@ -877,9 +904,10 @@ server; adding a public one as backup means some lookups will skip the block lis
 A Raspberry Pi is the classic way to run **Pi-hole** or **AdGuard Home** for the whole home: small, quiet and cheap to
 leave on. Any Pi 3, 4, 5 or Zero 2 W works. Use a wired network cable if you can.
 
-**How many lists fit:** a Pi with 512 MB (Zero 2 W, Pi 3) is fine with a few lists (roughly 500,000 names in total, e.g.
-`ads-and-tracking` + `mobile-ads` + `smart-tv`); a Pi 4 or 5 with 2 GB or more handles the big combinations such as
-`ads-and-tracking-extended` + `security` + `adult`.
+**How many lists fit:** a Zero 2 W (512 MB) is fine with a few lists (roughly 500,000 names in total, e.g.
+`ads-and-tracking` + `mobile-ads` + `smart-tv`); a Pi 3 (1 GB) handles about a million (e.g. `ads-and-tracking` +
+`security`); a Pi 4 or 5 with 2 GB or more handles the big combinations such as `ads-and-tracking-extended` + `security`
++ `adult`.
 
 ### Step 1: set up the Pi
 
@@ -918,13 +946,19 @@ Answer the questions (the defaults are fine; choose any upstream DNS provider). 
 ### Step 3: use it for the whole home
 
 1. In your router's DHCP / LAN settings, set the **DNS server** to the Pi's address, save, and reconnect your devices
-   (turn Wi-Fi off and on). UniFi users: [Option 1](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically).
+   (turn Wi-Fi off and on, or restart them; otherwise they can take up to a day to pick up the change). Find your
+   router's menu in [Routers](#routers); UniFi users:
+   [Option 1](#option-1-recommended-unifi--adguard-home-or-pi-hole-updates-automatically).
+   - If the router asks for a **second DNS server**, enter the same address again or a second blocker. **Don't** put a
+     public DNS server (8.8.8.8, 1.1.1.1...) there: devices use both at random, and would skip the blocking part of the
+     time.
 2. **Router won't let you change DNS** (common on internet-provider routers)? Let the Pi hand out addresses instead:
    turn **off** DHCP on the router, then turn it **on** in AdGuard Home (**Settings → DHCP settings**) or Pi-hole
    (**Settings → DHCP**). Every device then gets the Pi as its DNS server automatically.
 3. Stop devices from going around it with your router's firewall if it can (see the [router guides](#routers))
    and the `vpn-proxy-bypass` list.
-4. Check it works: the dashboard should show queries and blocked requests within a few minutes.
+4. Check it works: the dashboard should show queries and blocked requests within a few minutes; then run the checks in
+   [Is it working?](#is-it-working).
 
 **Keeping it updated:** the lists update by themselves. Update the Pi now and then with
 `sudo apt update && sudo apt full-upgrade -y`; update AdGuard Home from its web page when it offers a new version, or
@@ -941,10 +975,33 @@ Run AdGuard Home or Pi-hole in Docker on any always-on computer: a Linux server 
 Docker. OpenMediaVault, QNAP and Unraid users: see [OpenMediaVault](#openmediavault), [QNAP NAS](#qnap-nas) and [Unraid](#unraid); Proxmox users: see [Proxmox VE](#proxmox-ve); TrueNAS users: see [TrueNAS](#truenas). Ready-made files are in [`docker/`](docker/); they're tested
 automatically on every change. (Synology users: see [Synology NAS](#synology-nas).)
 
-### Step 1: free port 53 (Ubuntu and Debian servers)
+Commands below use `sudo docker`; you can leave out `sudo` if your user is in the `docker` group.
 
-DNS uses port 53. On Ubuntu (and some Debian setups) the built-in `systemd-resolved` already listens there, so the
-container can't start ("address already in use"). Turn that listener off and let the server use AdGuard Home / Pi-hole
+### Step 1: install Docker and download AdGuard Home or Pi-hole
+
+Install Docker if needed ([docs.docker.com/engine/install](https://docs.docker.com/engine/install/), or
+`curl -fsSL https://get.docker.com | sudo sh` on most Linux systems). Then download the ready-made file for the one you
+want, and the program itself (do this first: step 2 briefly changes how the server looks up names):
+
+**AdGuard Home**
+```bash
+mkdir -p ~/adguardhome && cd ~/adguardhome
+curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/adguardhome/compose.yaml
+sudo docker compose pull
+```
+
+**Pi-hole** (set your own password and time zone in the `.env` file; Docker reads it on every start, so updates keep it)
+```bash
+mkdir -p ~/pihole && cd ~/pihole
+curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/pihole/compose.yaml
+printf 'PIHOLE_PASSWORD=choose-a-password\nTZ=Europe/London\n' > .env
+sudo docker compose pull
+```
+
+### Step 2: free port 53 (Ubuntu and Debian servers)
+
+DNS uses port 53. Check whether something already uses it: `sudo ss -lunp | grep ':53 '`. If nothing is printed, go to
+step 3. If `systemd-resolved` is listed (usual on Ubuntu), turn its listener off and let the server use your blocker
 itself (AdGuard's documented fix):
 ```bash
 sudo mkdir -p /etc/systemd/resolved.conf.d
@@ -953,35 +1010,16 @@ sudo mv /etc/resolv.conf /etc/resolv.conf.backup
 sudo ln -s /run/systemd/resolve/resolv.conf /etc/resolv.conf
 sudo systemctl reload-or-restart systemd-resolved
 ```
-Do this **after** step 2's `docker compose pull` (the server needs working DNS to download the image). Check nothing
-else uses the port with `sudo ss -lunp | grep ':53 '`.
 
-### Step 2: start AdGuard Home or Pi-hole
+### Step 3: start it
 
-Install Docker first if needed ([docs.docker.com/engine/install](https://docs.docker.com/engine/install/), or
-`curl -fsSL https://get.docker.com | sh` on most Linux systems). Then pick one:
+In the folder from step 1 run `sudo docker compose up -d`. Then:
+- **AdGuard Home:** open `http://<server IP>:3000` and follow the setup wizard (keep the admin web interface on port
+  **3000** and the DNS server on port **53**), then add the lists ([How to add a list](#how-to-add-a-list)).
+- **Pi-hole:** open `http://<server IP>:8081/admin`, sign in with the password from `.env`, add the lists under **Lists**,
+  then **Tools → Update Gravity**.
 
-**AdGuard Home**
-```bash
-mkdir -p ~/adguardhome && cd ~/adguardhome
-curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/adguardhome/compose.yaml
-docker compose pull
-docker compose up -d
-```
-Open `http://<server IP>:3000`, follow the setup wizard (keep the admin web interface on port **3000** and the DNS server
-on port **53**), and add the lists under **Filters → DNS blocklists** with the adblock links
-([How to add a list](#how-to-add-a-list)).
-
-**Pi-hole**
-```bash
-mkdir -p ~/pihole && cd ~/pihole
-curl -fsSLO https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/pihole/compose.yaml
-docker compose pull
-PIHOLE_PASSWORD='choose-a-password' TZ='Europe/London' docker compose up -d
-```
-Open `http://<server IP>:8081/admin`, sign in, add the adblock links under **Lists**, then **Tools → Update Gravity**.
-
-### Step 3: use it for the whole home
+### Step 4: use it for the whole home
 
 Follow [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1): set the server's IP as the DNS server in your router
 (or let AdGuard Home / Pi-hole run DHCP), stop devices going around it, and check the dashboard. If the server has a
@@ -989,8 +1027,8 @@ firewall, allow port 53 (TCP and UDP) and the admin port: `sudo ufw allow 53 && 
 `8081/tcp`).
 
 **Updating:** the lists update themselves. To update AdGuard Home / Pi-hole, in its folder run
-`docker compose pull && docker compose up -d`. Your settings are kept in the `work`/`conf` (or `etc-pihole`) folders
-next to `compose.yaml`; back those up.
+`sudo docker compose pull && sudo docker compose up -d`. Your settings are kept in the `work`/`conf` (or `etc-pihole`)
+folders next to `compose.yaml`; back those up.
 
 **Good to know**
 - On Linux you can change AdGuard Home's file to `network_mode: host` (see the comment in it): it then sees each
@@ -1154,9 +1192,10 @@ ready-made files.
 
 ### Step 1: install omv-extras and the Compose plugin
 
-1. Log in to the NAS over SSH as `root` (or with `sudo`) and install omv-extras with its official command:
+1. Log in to the NAS over SSH (enable SSH under **Services → SSH** if needed) and install omv-extras with its official
+   command:
    ```bash
-   wget -O - https://github.com/OpenMediaVault-Plugin-Developers/packages/raw/master/install | bash
+   wget -O - https://github.com/OpenMediaVault-Plugin-Developers/packages/raw/master/install | sudo bash
    ```
 2. In the OMV web interface: **System → Plugins** → search **openmediavault-compose** → **Install**.
 3. **Storage → Shared Folders → Create**: a folder for app data, e.g. `appdata`. Then **Services → Compose → Settings**:
@@ -1166,10 +1205,11 @@ ready-made files.
 ### Step 2: add AdGuard Home or Pi-hole
 
 1. Check port 53 is free (OMV's own web interface uses port 80 and doesn't need it): over SSH run
-   `sudo ss -lunp | grep ':53 '`; if `systemd-resolved` shows up, apply [Docker, step 1](#step-1-free-port-53-ubuntu-and-debian-servers).
+   `sudo ss -lunp | grep ':53 '`; if `systemd-resolved` shows up, apply [Docker, step 2](#step-2-free-port-53-ubuntu-and-debian-servers).
 2. **Services → Compose → Files → Create (+)**: name it `adguardhome` (or `pihole`) and paste
    [`docker/adguardhome/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/adguardhome/compose.yaml)
-   (or [`docker/pihole/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/pihole/compose.yaml), setting your own password) → **Save**.
+   (or [`docker/pihole/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/pihole/compose.yaml): replace `${PIHOLE_PASSWORD:-change-me}` with
+   your own password and `${TZ:-UTC}` with your time zone, e.g. `Europe/London`) → **Save**.
 3. Select the file → **Up** (▲). Then open `http://<NAS IP>:3000` (AdGuard Home setup wizard: keep the admin port
    3000 and DNS on 53) or `http://<NAS IP>:8081/admin` (Pi-hole), and add the lists ([How to add a list](#how-to-add-a-list)).
 
@@ -1185,7 +1225,8 @@ On a QNAP NAS, use **Container Station** (version 3) with our ready-made Compose
 1. **App Center** → install **Container Station** and open it.
 2. **Applications → Create**: application name `adguardhome` (or `pihole`), paste
    [`docker/adguardhome/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/adguardhome/compose.yaml)
-   (or [`docker/pihole/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/pihole/compose.yaml), setting your own password) → **Validate YAML**
+   (or [`docker/pihole/compose.yaml`](https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/docker/pihole/compose.yaml): replace `${PIHOLE_PASSWORD:-change-me}` with
+   your own password and `${TZ:-UTC}` with your time zone) → **Validate YAML**
    → **Create**. Container Station keeps the files under `/share/Container/container-station-data/application/<name>`.
 3. Open `http://<NAS IP>:3000` (AdGuard Home setup wizard: keep the admin port 3000 and DNS on 53) or
    `http://<NAS IP>:8081/admin` (Pi-hole), and add the lists ([How to add a list](#how-to-add-a-list)).
@@ -1224,7 +1265,9 @@ work or while travelling, connect them back to your AdGuard Home / Pi-hole.
 
 Tailscale creates a private, encrypted network between your devices, without opening anything on your router.
 1. Create a free account at [tailscale.com](https://tailscale.com) and install Tailscale on the device running AdGuard
-   Home / Pi-hole (Raspberry Pi, NAS, server). On that device turn off Tailscale's own DNS, so the blocker doesn't ask
+   Home / Pi-hole. On a Raspberry Pi or Linux server: `curl -fsSL https://tailscale.com/install.sh | sh` then
+   `sudo tailscale up` (open the link it prints to sign in). Synology, QNAP, TrueNAS, Unraid and Home Assistant have a
+   Tailscale app in their app stores. Then turn off Tailscale's own DNS on that device, so the blocker doesn't ask
    itself: `sudo tailscale set --accept-dns=false`.
 2. In the [admin console](https://login.tailscale.com/admin/machines), note the blocker's Tailscale address (it starts
    with `100.`).
@@ -1234,6 +1277,8 @@ Tailscale creates a private, encrypted network between your devices, without ope
    settings** on). Their DNS now goes through your blocker wherever they are.
 5. AdGuard Home must listen on all interfaces (the default, `0.0.0.0`); in Pi-hole set **Settings → DNS → Interface
    settings → Permit all origins**.
+
+On phones, Tailscale counts as a VPN, so it can't run at the same time as another VPN app (or AdGuard / AdAway).
 
 ### Option B: encrypted DNS from AdGuard Home
 
@@ -1273,8 +1318,13 @@ curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/s
 The official script installs it into `/Applications/AdGuardHome` as a service. Open `http://127.0.0.1:3000`, finish
 the wizard and add the lists. Allow incoming connections if macOS asks.
 
-Then point your network at the computer: [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1). Manage the service
-later with `AdGuardHome -s stop|start|uninstall` (as administrator / with `sudo`).
+Then either:
+- **Protect the whole home:** point your network at the computer: [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1).
+- **Protect only this computer:** set its own DNS server to `127.0.0.1`. Windows 11: **Settings → Network & internet →
+  Wi-Fi** (or Ethernet) → your network → **DNS server assignment → Edit → Manual** → IPv4 on → Preferred DNS `127.0.0.1` →
+  Save. macOS: **System Settings → Network** → your network → **Details → DNS** → **+** `127.0.0.1` (remove the others).
+
+Manage the service later with `AdGuardHome -s stop|start|uninstall` (as administrator / with `sudo`).
 
 ## Technitium DNS Server
 
@@ -1348,7 +1398,7 @@ for firewall rules or "DNS redirect". Add the `vpn-proxy-bypass` list too, so en
   servers as the shows), and ads the TV maker serves from the same servers as essential features.
 - **If something breaks** (the home screen won't load, an app or a free channel stops working, updates fail): open your
   AdGuard Home / Pi-hole **query log**, filter by the TV's IP address, find the blocked name that appeared when it
-  broke, and allow it (in AdGuard Home / Pi-hole right away, or permanently in [`allowlist.txt`](allowlist.txt)).
+  broke, and allow it (in AdGuard Home / Pi-hole; see [Something broke?](#something-broke)).
   Samsung TV Plus, LG Channels and The Roku Channel are free channels paid for by ads; they may stop playing when their
   ad servers are blocked.
 
@@ -1402,8 +1452,7 @@ Menu names change with system updates; if a path doesn't match, look for *privac
   consoles only if that's what you want (for example on a child's console with time limits).
 - DNS blocking doesn't change your **NAT type**, ping or download speed.
 - **If something breaks:** open the AdGuard Home / Pi-hole query log, filter by the console's IP address, find the
-  blocked name from when it broke and allow it (right away in the blocker, or permanently in
-  [`allowlist.txt`](allowlist.txt)).
+  blocked name from when it broke and allow it (right away in the blocker; see [Something broke?](#something-broke)).
 
 ## Is it working?
 
@@ -1436,41 +1485,29 @@ broke, and allow the blocked name it shows. Common ones:
 - **Links in emails** (newsletters, receipts) often go through a tracking address: allow the address shown in the log.
 - **Smart-home devices, app stores, sign-in and payment pages:** allow the blocked name from the log.
 
-Then see [Something broke?](#something-broke) to make the fix permanent for everyone using these lists.
+Then [report it](#something-broke) so it's fixed for everyone using these lists.
 
 ## Something broke?
 
-Add the domain to [`allowlist.txt`](allowlist.txt). It will be removed from every list on the next build.
-You can also allow it right away in Pi-hole/AdGuard Home.
+A site, app or device stopped working after adding a list? Fix it on your own blocker right away, then tell us so it's
+fixed for everyone.
+
+1. **Find the blocked name:** open the **Query Log** in AdGuard Home / Pi-hole, filter by the affected device's IP address,
+   repeat what broke, and look for the blocked entries that appear.
+2. **Allow it:**
+   - **AdGuard Home:** click **Unblock** next to the entry in the Query Log (or add `@@||example.com^` under **Filters →
+     Custom filtering rules**).
+   - **Pi-hole:** click **Allow** next to the entry in the Query Log (or **Domains** → add it as an *allow* domain).
+   - **Device scripts** (hosts file): remove the list that contains it and run the script again, or use
+     `--remove` / `-Remove`.
+   - **Routers:** use your router's allow / whitelist option (e.g. OPNsense *Allowlist Domains*, MikroTik `type=FWD`).
+3. **Report it:** [open an issue](https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/issues) with the domain name and what broke, so it can be added to the shared
+   [`allowlist.txt`](allowlist.txt) and removed from the lists for everyone on the next daily build.
 
 Essential sites (Google, Microsoft, Apple, WhatsApp, PayPal, big CDNs, common link shorteners...) are listed in
 [`protected.txt`](protected.txt). Every build removes them from all lists automatically, unless a list is meant to block
 them (set with `may_block` in `lists.json`, e.g. `social-media` may block Facebook). This stops a mistake in an upstream
 source from breaking those sites.
-
-## Adding your own domains
-
-Put extra domains in `custom/<list>.txt`, one per line. They are always included in that list.
-`custom/mobile-ads.txt` and `custom/mobile-spyware.txt` hold the original 2019 lists.
-
-## How it updates
-
-A GitHub Action ([`.github/workflows/update.yml`](.github/workflows/update.yml)) runs daily, plus whenever
-the config changes, and runs [`scripts/build.py`](scripts/build.py) (Python standard library only):
-
-1. Downloads every source in [`sources.json`](sources.json). Hosts, plain-domain and adblock formats are all understood.
-2. Merges the sources for each list as defined in [`lists.json`](lists.json), honouring upstream `@@` exceptions.
-3. Adds `custom/` domains and removes `allowlist.txt` domains.
-4. Writes the three formats, refreshes the tables in this README, and commits only if something changed.
-
-Safety checks: if a source fails to download, or a list would shrink by more than half, that list keeps its previous
-version and the run is marked as failed so you notice.
-
-Run it locally:
-
-```
-python3 scripts/build.py
-```
 
 ## Sources
 
@@ -1631,7 +1668,35 @@ its filter lists, the rules behind its **Blocked services** switches, and the DN
 
 All credit goes to these maintainers. Each generated file lists its sources in its header.
 
-## Adding a new list or source
+## For maintainers
+
+This part is for people running their own copy (fork) of this repository; you don't need it to use the lists.
+
+### Adding your own domains
+
+Put extra domains in `custom/<list>.txt` (in your own copy / fork of this repository), one per line. They are always included in that list.
+`custom/mobile-ads.txt` and `custom/mobile-spyware.txt` hold the original 2019 lists.
+
+### How it updates
+
+A GitHub Action ([`.github/workflows/update.yml`](.github/workflows/update.yml)) runs daily, plus whenever
+the config changes, and runs [`scripts/build.py`](scripts/build.py) (Python standard library only):
+
+1. Downloads every source in [`sources.json`](sources.json). Hosts, plain-domain and adblock formats are all understood.
+2. Merges the sources for each list as defined in [`lists.json`](lists.json), honouring upstream `@@` exceptions.
+3. Adds `custom/` domains and removes `allowlist.txt` domains.
+4. Writes the three formats, refreshes the tables in this README, and commits only if something changed.
+
+Safety checks: if a source fails to download, or a list would shrink by more than half, that list keeps its previous
+version and the run is marked as failed so you notice.
+
+Run it locally:
+
+```
+python3 scripts/build.py
+```
+
+### Adding a new list or source
 
 1. Add the source to [`sources.json`](sources.json) (`name`, `url` or a repo `path`, `home`, `license`, and optionally `exclude` regexes).
 2. Add or edit the list in [`lists.json`](lists.json) (`title`, `description`, `sources`).

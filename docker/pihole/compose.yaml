@@ -1,5 +1,8 @@
-# Pi-hole v6 for Pi-Hole-Block-Lists. Start with: docker compose up -d
-# Then open http://<this computer's IP>:8081/admin and sign in with the password below.
+# Pi-hole v6 for Pi-Hole-Block-Lists.
+# Put your password and time zone in a .env file next to this one (read on every start, so updates keep them):
+#   printf 'PIHOLE_PASSWORD=choose-a-password\nTZ=Europe/London\n' > .env
+# Start with: docker compose up -d   Then open http://<this computer's IP>:8081/admin and sign in.
+# (No .env? Replace ${PIHOLE_PASSWORD:-change-me} below with your password.)
 services:
   pihole:
     image: pihole/pihole:latest
