@@ -18,6 +18,7 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Linux](#linux)
   - [Android](#android)
   - [iPhone and iPad](#iphone-and-ipad)
+  - [Chromebook](#chromebook)
 - [YouTube ads in the browser](#youtube-ads-in-the-browser)
 - [Blocking by IP address (ips/)](#blocking-by-ip-address-ips)
 - [UniFi Cloud Gateway (UCG Ultra / Max / Fiber, UDM, UDR)](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr)
@@ -32,6 +33,9 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [GL.iNet](#glinet)
   - [Asus](#asus)
   - [Any other router (TP-Link, Netgear, Fritz!Box, internet-provider routers)](#any-other-router-tp-link-netgear-fritzbox-internet-provider-routers)
+  - [Mesh Wi-Fi (eero, Google Nest Wifi, Deco, Orbi, Velop)](#mesh-wi-fi-eero-google-nest-wifi-deco-orbi-velop)
+  - [Starlink, 4G and 5G home routers](#starlink-4g-and-5g-home-routers)
+  - [TP-Link Omada and other business gateways](#tp-link-omada-and-other-business-gateways)
 - [Synology NAS](#synology-nas)
   - [Step 1: prepare the NAS](#step-1-prepare-the-nas)
   - [Step 2: run AdGuard Home](#step-2-run-adguard-home)
@@ -62,6 +66,11 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 3: use it for the whole home](#step-3-use-it-for-the-whole-home-5)
 - [QNAP NAS](#qnap-nas)
 - [Home Assistant](#home-assistant)
+- [Away from home](#away-from-home)
+  - [Option A: Tailscale (easiest, free for personal use)](#option-a-tailscale-easiest-free-for-personal-use)
+  - [Option B: encrypted DNS from AdGuard Home](#option-b-encrypted-dns-from-adguard-home)
+- [AdGuard Home on a Windows or Mac computer](#adguard-home-on-a-windows-or-mac-computer)
+- [Technitium DNS Server](#technitium-dns-server)
 - [Smart TVs and streaming sticks](#smart-tvs-and-streaming-sticks)
   - [Step 1: block the TV's ad and tracking servers](#step-1-block-the-tvs-ad-and-tracking-servers)
   - [Step 2: turn off viewing data and ad tracking on the TV](#step-2-turn-off-viewing-data-and-ad-tracking-on-the-tv)
@@ -71,6 +80,7 @@ from well-maintained upstream sources, merged and de-duplicated.
   - [Step 1: block console ads and telemetry](#step-1-block-console-ads-and-telemetry)
   - [Step 2: turn off tracking and ads in the console's settings](#step-2-turn-off-tracking-and-ads-in-the-consoles-settings)
   - [What to expect](#what-to-expect-1)
+- [Is it working?](#is-it-working)
 - [Something broke?](#something-broke)
 - [Adding your own domains](#adding-your-own-domains)
 - [How it updates](#how-it-updates)
@@ -86,8 +96,11 @@ from well-maintained upstream sources, merged and de-duplicated.
 | Nothing yet, and want the whole home protected | a [Raspberry Pi](#raspberry-pi), or your [NAS / server](#docker), then your [router](#routers) |
 | A NAS or home server | [Synology](#synology-nas), [QNAP](#qnap-nas), [TrueNAS](#truenas), [Unraid](#unraid), [OpenMediaVault](#openmediavault), [Proxmox VE](#proxmox-ve), [Home Assistant](#home-assistant), any [Docker](#docker) host |
 | A router that can block by itself | [pfSense](#pfsense), [OPNsense](#opnsense), [OpenWrt](#openwrt), [MikroTik](#mikrotik), [EdgeRouter](#ubiquiti-edgerouter), [GL.iNet](#glinet), [UniFi](#unifi-cloud-gateway-ucg-ultra--max--fiber-udm-udr) |
-| Another router (Asus, TP-Link, Netgear, Fritz!Box, internet provider) | [Asus](#asus) or [Any other router](#any-other-router-tp-link-netgear-fritzbox-internet-provider-routers), plus a blocker from the row above |
-| Just one computer or phone | [macOS, Windows, Linux, Android, iPhone](#use-on-one-device-without-pi-hole-or-adguard-home) |
+| Another router (Asus, TP-Link, Netgear, Fritz!Box, internet provider) | [Asus](#asus), [Any other router](#any-other-router-tp-link-netgear-fritzbox-internet-provider-routers), [Mesh Wi-Fi](#mesh-wi-fi-eero-google-nest-wifi-deco-orbi-velop), [Starlink / 4G / 5G](#starlink-4g-and-5g-home-routers), [Omada](#tp-link-omada-and-other-business-gateways), plus a blocker from the rows above |
+| Blocking doesn't seem to work | [Is it working?](#is-it-working) |
+| Just one computer or phone | [macOS, Windows, Linux, Android, iPhone, Chromebook](#use-on-one-device-without-pi-hole-or-adguard-home) |
+| Phones and laptops away from home | [Away from home](#away-from-home) |
+| Only a Windows or Mac computer to run a blocker on | [AdGuard Home on a Windows or Mac computer](#adguard-home-on-a-windows-or-mac-computer), or [Technitium DNS Server](#technitium-dns-server) |
 | YouTube ads | [YouTube ads in the browser](#youtube-ads-in-the-browser) |
 | Smart TVs, streaming sticks, consoles | [Smart TVs](#smart-tvs-and-streaming-sticks), [Game consoles](#game-consoles) |
 | Kids' devices, parental controls | [Suggested setups](#suggested-setups) (Kids / family) |
@@ -350,6 +363,16 @@ its **Devices** page. The Personal plan allows only 1,000 rules, so this fits on
 **Settings → Screen Time → Content & Privacy Restrictions → App Store, Media, Web & Games**: under **Web Content** choose
 **Limit Adult Websites** and add any sites you want to block under *Never Allow* (for example `bigo.tv`, `tiktok.com`);
 under **App Store** limit apps by age or block app installs. App Limits and Downtime set time limits per app.
+
+### Chromebook
+
+ChromeOS doesn't let scripts change its hosts file, so point it at a blocker instead:
+- **At home:** **Settings → Network → Wi-Fi** → your network → **Network** → **Name servers** → **Custom name servers** →
+  enter your AdGuard Home / Pi-hole IP address. (If your router already hands out the blocker, there's nothing to do.)
+- **Away from home:** install the **Tailscale** app from the Play Store and follow [Away from home](#away-from-home), or
+  use Chrome's **Settings → Privacy and security → Security → Use secure DNS → With: Custom** with an encrypted
+  AdGuard Home address (`https://<your AdGuard Home>/dns-query`).
+- School or work Chromebooks are managed by an administrator, who may block these settings.
 
 ## YouTube ads in the browser
 
@@ -745,6 +768,38 @@ These can't load block lists, but you can make every device use your blocker (Ad
 | **Internet-provider routers** | Often locked. If there's no DNS field, turn **off** the router's DHCP and turn it **on** in AdGuard Home (**Settings → DHCP settings**) or Pi-hole (**Settings → DHCP**) |
 
 Save, then reconnect your devices (turn Wi-Fi off and on). Menu names vary by model and firmware.
+
+### Mesh Wi-Fi (eero, Google Nest Wifi, Deco, Orbi, Velop)
+
+Mesh systems are set up in a phone app, and most let you choose the DNS server. Enter your AdGuard Home / Pi-hole IP
+address (and leave the second DNS field empty or set to a second blocker):
+- **eero:** eero app → **Settings → Network settings → DNS → Customized DNS**.
+- **Google Nest Wifi / Wifi Pro:** Google Home app → **Wi-Fi** → ⚙ **Settings → Advanced networking → DNS → Custom**.
+- **TP-Link Deco, Netgear Orbi, Linksys Velop:** see the TP-Link / Netgear rows above; for Velop look under the app's
+  **Advanced settings** for DNS.
+
+Many mesh systems forward DNS themselves, so AdGuard Home / Pi-hole may show all queries coming from the router instead of
+each device; blocking still works. Turn off the system's own filtering subscriptions (eero Plus, Netgear Armor...) if
+they override DNS.
+
+### Starlink, 4G and 5G home routers
+
+- **Starlink:** check the Starlink app for a **Custom DNS** option first (Settings) and enter the blocker's IP there. If
+  your router doesn't offer it, turn on **Bypass mode** (Starlink app → Settings → Router) and use your own router behind
+  it, then follow that router's section. Gen 2 kits need Starlink's Ethernet adapter for this; undoing bypass mode
+  requires a factory reset of the Starlink router.
+- **4G / 5G home routers** (Huawei, ZTE, Netgear Nighthawk M-series, provider-branded): look for DNS under **DHCP** /
+  **LAN** settings. If there's none, either turn off the router's DHCP and let AdGuard Home / Pi-hole hand out addresses,
+  or put the router in **bridge / IP passthrough** mode and use your own router behind it.
+
+### TP-Link Omada and other business gateways
+
+Omada gateways can't load these lists, but they can hand out your blocker as the DNS server: in the Omada controller
+(software, OC200/OC300 or cloud) → **Settings → Wired & Wireless Networks → LAN** → edit your network → **DHCP Server**
+(under advanced settings) → **DNS Server: Manual** → enter the AdGuard Home / Pi-hole IP → **Save**. Repeat for each
+network (VLAN). To stop devices going around it, add an ACL (**Settings → Network Security → ACL**) blocking LAN → WAN
+traffic to ports 53 and 853 except from the blocker. Other business gateways (Sophos, Fortinet, Cisco...) work the same
+way: set the DNS server their DHCP hands out, and block outgoing DNS from everything else.
 
 ## Synology NAS
 
@@ -1160,6 +1215,82 @@ Running Home Assistant OS? Its **AdGuard Home** app (add-on) turns the same box 
 If Home Assistant runs as a VM or container on another system (Proxmox, a NAS), you can instead follow that system's
 section ([Proxmox VE](#proxmox-ve), [Docker](#docker)...).
 
+## Away from home
+
+Phones and laptops are only protected while they use your home network. To keep the same blocking on mobile data, at
+work or while travelling, connect them back to your AdGuard Home / Pi-hole.
+
+### Option A: Tailscale (easiest, free for personal use)
+
+Tailscale creates a private, encrypted network between your devices, without opening anything on your router.
+1. Create a free account at [tailscale.com](https://tailscale.com) and install Tailscale on the device running AdGuard
+   Home / Pi-hole (Raspberry Pi, NAS, server). On that device turn off Tailscale's own DNS, so the blocker doesn't ask
+   itself: `sudo tailscale set --accept-dns=false`.
+2. In the [admin console](https://login.tailscale.com/admin/machines), note the blocker's Tailscale address (it starts
+   with `100.`).
+3. Admin console → **DNS** → **Global nameservers** → **Add nameserver → Custom** → enter that `100.x.x.x` address →
+   **Save**, then turn on **Override DNS servers**.
+4. Install the Tailscale app on your phones and laptops and sign in with the same account (keep **Use Tailscale DNS
+   settings** on). Their DNS now goes through your blocker wherever they are.
+5. AdGuard Home must listen on all interfaces (the default, `0.0.0.0`); in Pi-hole set **Settings → DNS → Interface
+   settings → Permit all origins**.
+
+### Option B: encrypted DNS from AdGuard Home
+
+AdGuard Home can serve encrypted DNS (DNS-over-HTTPS and DNS-over-TLS) to devices anywhere. This needs a domain name, a
+certificate (**Settings → Encryption settings**) and ports 443/853 forwarded to it from your router, so it's for more
+experienced users. Devices then use:
+- **Android:** **Settings → Network & internet → Private DNS** → your AdGuard Home hostname.
+- **iPhone / iPad:** the profile from **Setup Guide → DNS Privacy → iOS** (see [iPhone and iPad](#iphone-and-ipad)).
+- **Browsers / Chromebooks:** **Use secure DNS** with `https://<your hostname>/dns-query`.
+
+Pi-hole has no encrypted DNS of its own: use Option A.
+
+## AdGuard Home on a Windows or Mac computer
+
+No Raspberry Pi or NAS? AdGuard Home also runs directly on an always-on Windows or Mac computer as a background service,
+and can protect the whole home from there. The computer needs a fixed IP address (reserve it in your router) and must
+stay on.
+
+**Windows**
+1. Download `AdGuardHome_windows_amd64.zip` from the [latest release](https://github.com/AdguardTeam/AdGuardHome/releases/latest)
+   and unzip it to a permanent folder, e.g. `C:\AdGuardHome`.
+2. Open **PowerShell as administrator** in that folder and install it as a service:
+   ```powershell
+   cd C:\AdGuardHome
+   .\AdGuardHome.exe -s install
+   New-NetFirewallRule -DisplayName "AdGuard Home DNS" -Direction Inbound -Protocol UDP -LocalPort 53 -Action Allow
+   New-NetFirewallRule -DisplayName "AdGuard Home DNS TCP" -Direction Inbound -Protocol TCP -LocalPort 53,3000 -Action Allow
+   ```
+3. Open `http://127.0.0.1:3000`, follow the setup wizard (keep the admin port 3000 and DNS on 53) and add the lists
+   ([How to add a list](#how-to-add-a-list)). If it reports port 53 in use, check with `netstat -ano | findstr ":53 "`
+   (Windows *Internet Connection Sharing* is a common cause).
+
+**macOS**
+```bash
+curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
+```
+The official script installs it into `/Applications/AdGuardHome` as a service. Open `http://127.0.0.1:3000`, finish
+the wizard and add the lists. Allow incoming connections if macOS asks.
+
+Then point your network at the computer: [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1). Manage the service
+later with `AdGuardHome -s stop|start|uninstall` (as administrator / with `sudo`).
+
+## Technitium DNS Server
+
+[Technitium DNS Server](https://technitium.com/dns/) is a free alternative to AdGuard Home and Pi-hole. It runs natively
+on Windows, Linux, macOS and in Docker, and accepts these lists by link.
+
+1. Install it:
+   - **Windows:** download and run the installer from [technitium.com/dns](https://technitium.com/dns/).
+   - **Linux / Raspberry Pi:** `curl -sSL https://download.technitium.com/dns/install.sh | sudo bash`
+   - **Docker:** the `technitium/dns-server` image (ports 53/udp, 53/tcp and 5380/tcp).
+2. Open the web console at `http://<computer IP>:5380` and set an admin password.
+3. **Settings → Blocking** → make sure blocking is enabled → under **Allow / Block List URLs**, add the plain links of
+   the lists you want, one per line, e.g. `https://raw.githubusercontent.com/x-o-r-r-o/Pi-Hole-Block-Lists/master/ads-and-tracking.txt` → **Save Settings**. Technitium downloads them in
+   the background and refreshes them every day.
+4. Point your network at it: [Raspberry Pi, step 3](#step-3-use-it-for-the-whole-home-1).
+
 ## Smart TVs and streaming sticks
 
 Smart TVs (Samsung, LG, Sony, TCL, Hisense, Vizio, Philips) and streaming sticks (Roku, Fire TV, Chromecast / Google TV,
@@ -1273,6 +1404,39 @@ Menu names change with system updates; if a path doesn't match, look for *privac
 - **If something breaks:** open the AdGuard Home / Pi-hole query log, filter by the console's IP address, find the
   blocked name from when it broke and allow it (right away in the blocker, or permanently in
   [`allowlist.txt`](allowlist.txt)).
+
+## Is it working?
+
+**1. Is the device using your blocker?** On a computer run `nslookup example.com`: the **Server** line should show your
+AdGuard Home / Pi-hole address (or your router's, if the router forwards to it). Phones: open the blocker's query log and
+look for the phone's address after browsing.
+
+**2. Is blocking working?** Run `nslookup doubleclick.net` (it's in `ads-and-tracking`): the answer should be `0.0.0.0`
+or "can't find". The [d3ward ad-block test](https://d3ward.github.io/toolz/adblock) shows which ad and tracking servers
+are blocked from your browser (its "cosmetic" tests are for browser ad blockers and won't change with DNS blocking).
+
+**3. Still seeing ads or no blocking?** Something is going around your blocker:
+- **Browser "secure DNS":** Chrome / Edge: **Settings → Privacy and security → Security → Use secure DNS** → off, or
+  *with your current service provider*. Firefox: **Settings → Privacy & Security → DNS over HTTPS → Default protection**
+  (AdGuard Home and Pi-hole already tell Firefox to use the network's DNS).
+- **Android Private DNS:** **Settings → Network & internet → Private DNS → Off** or *Automatic* (unless you set it up in
+  [Away from home](#away-from-home)).
+- **iPhone iCloud Private Relay:** **Settings → [your name] → iCloud → Private Relay**: off, or switch it off for your
+  home Wi-Fi network.
+- **VPN apps** and devices with hard-coded DNS: see [Smart TVs, step 3](#step-3-stop-devices-that-ignore-your-dns) and add
+  the `vpn-proxy-bypass` list.
+- **Old cached answers:** restart the browser, or flush the cache (`ipconfig /flushdns` on Windows,
+  `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder` on macOS), or toggle Wi-Fi on phones.
+
+**4. Something broke?** Open the **query log** in AdGuard Home / Pi-hole, filter by the device's IP address, repeat what
+broke, and allow the blocked name it shows. Common ones:
+- **Shopping, deal and affiliate links** (cashback sites, newsletter deals): add HaGeZi's referral allowlist in AdGuard
+  Home under **Filters → DNS allowlists → Add allowlist**:
+  `https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt`.
+- **Links in emails** (newsletters, receipts) often go through a tracking address: allow the address shown in the log.
+- **Smart-home devices, app stores, sign-in and payment pages:** allow the blocked name from the log.
+
+Then see [Something broke?](#something-broke) to make the fix permanent for everyone using these lists.
 
 ## Something broke?
 
