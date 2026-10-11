@@ -2,7 +2,7 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 04:24 UTC
+# Last modified: 2026-10-11 10:00 UTC
 # Entries: 2900
 #
 # Built from these sources (see their licenses):
@@ -792,6 +792,7 @@
 0.0.0.0 doomdns.org
 0.0.0.0 doorvpn.com
 0.0.0.0 dot.tk
+0.0.0.0 dothome.co.kr
 0.0.0.0 dougtreadwell.com
 0.0.0.0 douploads.net
 0.0.0.0 downfall.shop
@@ -2461,7 +2462,6 @@
 0.0.0.0 solidwebhost.com
 0.0.0.0 sonnish.com
 0.0.0.0 soon.it
-0.0.0.0 sophiashantidaniel.com
 0.0.0.0 soundcast.me
 0.0.0.0 space-to-rent.com
 0.0.0.0 space.lc
