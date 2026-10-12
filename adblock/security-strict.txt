@@ -3,7 +3,7 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-11 10:00 UTC
+! Last modified: 2026-10-12 11:28 UTC
 ! Entries: 3182
 !
 ! Built from these sources (see their licenses):
@@ -402,6 +402,7 @@
 @@||heyflow.site^
 @@||hf.space^
 @@||highquality.rip^
+@@||hns.family^
 @@||hoes.tube^
 @@||hollowknight.wiki^
 @@||hololive.wiki^
@@ -536,6 +537,7 @@
 @@||majblomman.shop^
 @@||makea.zip^
 @@||malware.expert^
+@@||mangrove.reviews^
 @@||manson.wiki^
 @@||manuals.online^
 @@||mapstodon.space^
