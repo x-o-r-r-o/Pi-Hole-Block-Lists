@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-12 11:28 UTC
-! Entries: 3182
+! Last modified: 2026-10-13 10:35 UTC
+! Entries: 3184
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -644,6 +644,7 @@
 @@||ocr.space^
 @@||octopus.energy^
 @@||oe24cdn.biz^
+@@||oegb-kraken.energy^
 @@||oh.center^
 @@||oldbytes.space^
 @@||oldskool.vip^
@@ -849,6 +850,7 @@
 @@||som.today^
 @@||spaceforce.ink^
 @@||spankbang.party^
+@@||sparepartservice.shop^
 @@||spiegel.work^
 @@||spook.boo^
 @@||spotim.market^
@@ -2591,6 +2593,7 @@
 ||jedimasters.net^
 ||jesus.si^
 ||jetos.com^
+||jimdofree.com^
 ||jixx.de^
 ||jixx.net^
 ||jkub.com^
@@ -2902,6 +2905,7 @@
 ||mysynology.net^
 ||mytempdir.com^
 ||myvnc.com^
+||mywebcommunity.org^
 ||mywebworld.info^
 ||mywire.org^
 ||myxop.com^
