@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
 ! License: GPL-3.0 (same as the source lists)
 ! Expires: 1 day
-! Last modified: 2026-10-13 10:36 UTC
-! Entries: 73
+! Last modified: 2026-10-14 08:43 UTC
+! Entries: 74
 
 *_ad_$media,domain=youtube.com,3p
 tv.youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
@@ -74,6 +74,7 @@ youtube.com#@##player-ads
 www.youtube.com##+js(trusted-rpfr, '"adSlots"', '"no_ads"', /get_watch?)
 /\.googlevideo\.com\/videoplayback\?expire=(?:[02-9]\d+|1[1-68-9]\d+|17[1-7]\d+)&/$xhr,3p,method=get,domain=www.youtube.com
 ||youtube.com/api/stats/atr?ns=*&ver=2&cmt=1.*&fs=0&*&euri&lact=$xhr,method=post,badfilter
+www.youtube.com###toast:has(> #text-container > yt-formatted-string#text.yt-notification-action-renderer)
 @@||youtube.com/yts/jsbin/*$script,domain=breathecast.com|classicalite.com|crossmap.com|hallels.com|newseveryday.com|returnofkings.com
 ||googlevideo.com^$media,redirect=noopmp4-1s,domain=mlb.com
 ||ads.youtube.com^$badfilter
