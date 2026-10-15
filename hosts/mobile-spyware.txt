@@ -2,8 +2,8 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 07:14 UTC
-# Entries: 3166
+# Last modified: 2026-10-15 08:18 UTC
+# Entries: 3167
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -1252,6 +1252,7 @@
 0.0.0.0 gpm-mon-va-useast2a.byteoversea.com
 0.0.0.0 gpm-mon-va.bytegsdk.com
 0.0.0.0 gpm-mon-va.byteoversea.com
+0.0.0.0 gpskeeper.popinfo.jp
 0.0.0.0 graffiti-tags.apple.com
 0.0.0.0 graph.accountkit.com
 0.0.0.0 graph.instagram.com
