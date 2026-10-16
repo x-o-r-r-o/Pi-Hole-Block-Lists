@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-15 08:18 UTC
-! Entries: 3029
+! Last modified: 2026-10-16 08:10 UTC
+! Entries: 3022
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -102,6 +102,7 @@
 @@||bigtimerushuk.store^
 @@||billo.life^
 @@||bio.site^
+@@||biolink.website^
 @@||biqu.equipment^
 @@||bird.makeup^
 @@||bk.world^
@@ -1061,6 +1062,7 @@
 ||000webhostapp.com^
 ||000webhotapp.com^
 ||000worldwide.com^
+||001www.com^
 ||00author.com^
 ||00go.com^
 ||00it.com^
@@ -1324,7 +1326,6 @@
 ||azl.one^
 ||b.gp^
 ||b0tnet.com^
-||b12sites.com^
 ||b2b.lc^
 ||b33r.us^
 ||bad.mn^
@@ -1567,11 +1568,11 @@
 ||cloudns.pro^
 ||cloudrouter.pro^
 ||cloudwatch.net^
-||cloudwaysapps.com^
 ||cloudxns.net^
 ||club-area.de^
 ||club.lc^
 ||clumsy.de^
+||cmirg.com^
 ||cn.gp^
 ||cnstefancelmare.ro^
 ||co.com^
@@ -2511,7 +2512,6 @@
 ||jedimasters.net^
 ||jesus.si^
 ||jetos.com^
-||jimdofree.com^
 ||jixx.de^
 ||jixx.net^
 ||jkub.com^
@@ -2646,7 +2646,6 @@
 ||lundellnet.com^
 ||luzzati.com^
 ||lyli.fi^
-||m-pages.com^
 ||m.vu^
 ||ma.gp^
 ||macao.net^
@@ -2752,7 +2751,6 @@
 ||myblogvoice.com^
 ||mybluehost.me^
 ||mybluehostin.me^
-||myclickfunnels.com^
 ||mycompany.tv^
 ||mycpanel.rs^
 ||mydad.info^
@@ -2795,7 +2793,6 @@
 ||mypicture.info^
 ||mypop3.net^
 ||mypop3.org^
-||myportfolio.com^
 ||mypressonline.com^
 ||mypsx.net^
 ||myq-see.com^
@@ -2829,6 +2826,7 @@
 ||ndcg.com^
 ||neat-url.com^
 ||neibu.911s5.net^
+||neocities.org^
 ||neptunproxies.com^
 ||nerdcamp.net^
 ||nerdpol.ovh^
@@ -3088,7 +3086,6 @@
 ||reodev.com^
 ||replug.link^
 ||repocket.com^
-||rf.gd^
 ||risu.io^
 ||ro.gp^
 ||ro.lt^
@@ -3223,7 +3220,6 @@
 ||simple-url.com^
 ||simplecharity.com^
 ||sino.tw^
-||sitebeat.crazydomains.com^
 ||sitelutions.com^
 ||sitepalace.com^
 ||sitey.me^
@@ -3507,7 +3503,6 @@
 ||vuzelia.com^
 ||vxe6.net^
 ||vz.lc^
-||w3spaces.com^
 ||wakingmoon.com^
 ||wan64.de^
 ||wanip.ch^
@@ -3519,9 +3514,7 @@
 ||web1337.net^
 ||webaccess-alert.com^
 ||webaccess-email.com^
-||webador.com^
 ||webblog24.de^
-||webcindario.com^
 ||webhop.info^
 ||webhop.me^
 ||webhop.net^
@@ -3617,6 +3610,7 @@
 ||youpc.ro^
 ||yourspecialtee.com^
 ||yourtrap.com^
+||yovip.net^
 ||yu3.io^
 ||z.gp^
 ||z0d.eu^

@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-15 08:18 UTC
-# Entries: 2745
+# Last modified: 2026-10-16 08:10 UTC
+# Entries: 2741
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -22,6 +22,7 @@
 0.0.0.0 000webhostapp.com
 0.0.0.0 000webhotapp.com
 0.0.0.0 000worldwide.com
+0.0.0.0 001www.com
 0.0.0.0 00author.com
 0.0.0.0 00go.com
 0.0.0.0 00it.com
@@ -290,7 +291,6 @@
 0.0.0.0 azl.one
 0.0.0.0 b.gp
 0.0.0.0 b0tnet.com
-0.0.0.0 b12sites.com
 0.0.0.0 b2b.lc
 0.0.0.0 b33r.us
 0.0.0.0 bad.mn
@@ -544,11 +544,11 @@
 0.0.0.0 cloudns.pro
 0.0.0.0 cloudrouter.pro
 0.0.0.0 cloudwatch.net
-0.0.0.0 cloudwaysapps.com
 0.0.0.0 cloudxns.net
 0.0.0.0 club-area.de
 0.0.0.0 club.lc
 0.0.0.0 clumsy.de
+0.0.0.0 cmirg.com
 0.0.0.0 cn.gp
 0.0.0.0 cnstefancelmare.ro
 0.0.0.0 co.com
@@ -1153,6 +1153,7 @@
 0.0.0.0 fwh.is
 0.0.0.0 fxnxs.com
 0.0.0.0 g2url.com
+0.0.0.0 gakken.shop
 0.0.0.0 galleonvpn.com
 0.0.0.0 gally.jp
 0.0.0.0 game-host.org
@@ -1354,6 +1355,7 @@
 0.0.0.0 idiot24.de
 0.0.0.0 idleplay.net
 0.0.0.0 ieserver.net
+0.0.0.0 igg.biz
 0.0.0.0 ignify.co.uk
 0.0.0.0 ignorelist.com
 0.0.0.0 iiiii.info
@@ -1540,7 +1542,6 @@
 0.0.0.0 jedimasters.net
 0.0.0.0 jesus.si
 0.0.0.0 jetos.com
-0.0.0.0 jimdofree.com
 0.0.0.0 jixx.de
 0.0.0.0 jixx.net
 0.0.0.0 jkub.com
@@ -1682,7 +1683,6 @@
 0.0.0.0 lundellnet.com
 0.0.0.0 luzzati.com
 0.0.0.0 lyli.fi
-0.0.0.0 m-pages.com
 0.0.0.0 m.vu
 0.0.0.0 ma.gp
 0.0.0.0 macao.net
@@ -1795,7 +1795,6 @@
 0.0.0.0 myblogvoice.com
 0.0.0.0 mybluehost.me
 0.0.0.0 mybluehostin.me
-0.0.0.0 myclickfunnels.com
 0.0.0.0 mycompany.tv
 0.0.0.0 mycpanel.rs
 0.0.0.0 mydad.info
@@ -1841,7 +1840,6 @@
 0.0.0.0 mypicture.info
 0.0.0.0 mypop3.net
 0.0.0.0 mypop3.org
-0.0.0.0 myportfolio.com
 0.0.0.0 mypressonline.com
 0.0.0.0 mypsx.net
 0.0.0.0 myq-see.com
@@ -1877,6 +1875,7 @@
 0.0.0.0 ndcg.com
 0.0.0.0 neat-url.com
 0.0.0.0 neibu.911s5.net
+0.0.0.0 neocities.org
 0.0.0.0 neptunproxies.com
 0.0.0.0 nerdcamp.net
 0.0.0.0 nerdpol.ovh
@@ -1926,6 +1925,7 @@
 0.0.0.0 noipdns.net
 0.0.0.0 noipfreedns.com
 0.0.0.0 noiptos.com
+0.0.0.0 nokojp.shop
 0.0.0.0 notici.as
 0.0.0.0 novamov.com
 0.0.0.0 novgaz-rzn.ru
@@ -2156,7 +2156,6 @@
 0.0.0.0 replug.link
 0.0.0.0 repocket.com
 0.0.0.0 resolve.bar
-0.0.0.0 rf.gd
 0.0.0.0 risu.io
 0.0.0.0 ro.gp
 0.0.0.0 ro.lt
@@ -2300,7 +2299,6 @@
 0.0.0.0 simple-url.com
 0.0.0.0 simplecharity.com
 0.0.0.0 sino.tw
-0.0.0.0 sitebeat.crazydomains.com
 0.0.0.0 sitelutions.com
 0.0.0.0 sitepalace.com
 0.0.0.0 sitey.me
@@ -2601,7 +2599,6 @@
 0.0.0.0 vuzelia.com
 0.0.0.0 vxe6.net
 0.0.0.0 vz.lc
-0.0.0.0 w3spaces.com
 0.0.0.0 wakingmoon.com
 0.0.0.0 wan64.de
 0.0.0.0 wanip.ch
@@ -2618,10 +2615,8 @@
 0.0.0.0 web1337.net
 0.0.0.0 webaccess-alert.com
 0.0.0.0 webaccess-email.com
-0.0.0.0 webador.com
 0.0.0.0 webblog24.de
 0.0.0.0 webboss.site
-0.0.0.0 webcindario.com
 0.0.0.0 webhop.biz
 0.0.0.0 webhop.info
 0.0.0.0 webhop.me
@@ -2727,6 +2722,7 @@
 0.0.0.0 youpc.ro
 0.0.0.0 yourspecialtee.com
 0.0.0.0 yourtrap.com
+0.0.0.0 yovip.net
 0.0.0.0 yu3.io
 0.0.0.0 yuichi.shop
 0.0.0.0 z.gp
