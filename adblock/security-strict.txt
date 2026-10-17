@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-16 08:10 UTC
-! Entries: 3022
+! Last modified: 2026-10-17 07:47 UTC
+! Entries: 3034
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -332,6 +332,7 @@
 @@||form.new^
 @@||found.center^
 @@||frame.work^
+@@||freedium.cfd^
 @@||freshtorge.shop^
 @@||frontiers.shop^
 @@||frontrow.cc^
@@ -429,6 +430,7 @@
 @@||imgus.cc^
 @@||immich.store^
 @@||incdn.online^
+@@||info-matin.ml^
 @@||infomax.online^
 @@||infosec.exchange^
 @@||infosec.pub^
@@ -442,7 +444,6 @@
 @@||ios-countdown.win^
 @@||ip.wtf^
 @@||ippen.space^
-@@||iqunix.store^
 @@||is.cc^
 @@||ishortn.ink^
 @@||isu.pub^
@@ -871,7 +872,6 @@
 @@||stream.vip^
 @@||strem.fun^
 @@||stremio.homes^
-@@||strims.top^
 @@||stripe.partners^
 @@||suiten.top^
 @@||sumerian.ink^
@@ -1326,6 +1326,7 @@
 ||azl.one^
 ||b.gp^
 ||b0tnet.com^
+||b12sites.com^
 ||b2b.lc^
 ||b33r.us^
 ||bad.mn^
@@ -1758,6 +1759,7 @@
 ||doomdns.com^
 ||doomdns.org^
 ||doorvpn.com^
+||dothome.co.kr^
 ||dougtreadwell.com^
 ||douploads.net^
 ||download.ac^
@@ -2043,6 +2045,7 @@
 ||free.bizhat.com^
 ||free.cr^
 ||free.lc^
+||free.nf^
 ||freeasphost.net^
 ||freecities.com^
 ||freeddns.com^
@@ -2512,6 +2515,7 @@
 ||jedimasters.net^
 ||jesus.si^
 ||jetos.com^
+||jimdofree.com^
 ||jixx.de^
 ||jixx.net^
 ||jkub.com^
@@ -2751,6 +2755,7 @@
 ||myblogvoice.com^
 ||mybluehost.me^
 ||mybluehostin.me^
+||myclickfunnels.com^
 ||mycompany.tv^
 ||mycpanel.rs^
 ||mydad.info^
@@ -3086,6 +3091,7 @@
 ||reodev.com^
 ||replug.link^
 ||repocket.com^
+||rf.gd^
 ||risu.io^
 ||ro.gp^
 ||ro.lt^
@@ -3100,6 +3106,7 @@
 ||roxa.org^
 ||royal-host.com^
 ||rplg.co^
+||rr.nu^
 ||rtam.net^
 ||ru.gp^
 ||ru.nu^
@@ -3108,6 +3115,7 @@
 ||rumahweb.org^
 ||rundis.com^
 ||ruok.org^
+||russkoeumea.com^
 ||rwbcode.com^
 ||ryointernational.com^
 ||s.gp^
@@ -3287,6 +3295,7 @@
 ||stormpages.com^
 ||stoupin.ru^
 ||strangled.net^
+||stroyexpert.org^
 ||stuff-4-sale.org^
 ||stuff-4-sale.us^
 ||stufftoread.com^
@@ -3297,6 +3306,7 @@
 ||sumibi.org^
 ||sundby.com^
 ||supload.com^
+||surak.kz^
 ||surfnet.ca^
 ||surl.lt^
 ||suroot.com^
@@ -3515,6 +3525,7 @@
 ||webaccess-alert.com^
 ||webaccess-email.com^
 ||webblog24.de^
+||webcindario.com^
 ||webhop.info^
 ||webhop.me^
 ||webhop.net^
@@ -3580,6 +3591,7 @@
 ||xl.lc^
 ||xml.in^
 ||xname.org^
+||xo.je^
 ||xpresit.net^
 ||xsph.ru^
 ||xtreemhost.com^

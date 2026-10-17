@@ -2,8 +2,8 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-15 08:18 UTC
-# Entries: 3167
+# Last modified: 2026-10-17 07:47 UTC
+# Entries: 3161
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -198,6 +198,7 @@
 0.0.0.0 adx-op-in.heytapmobile.com
 0.0.0.0 adx-op-ru.heytapmobile.com
 0.0.0.0 adx-op-sg.heytapmobile.com
+0.0.0.0 adx-u-in.heytapmobile.com
 0.0.0.0 adx-u-ru.heytapmobile.com
 0.0.0.0 adx-u-sg.heytapmobile.com
 0.0.0.0 adx.tv.mi.com
@@ -657,6 +658,7 @@
 0.0.0.0 child.sec.miui.com
 0.0.0.0 chong.sec.miui.com
 0.0.0.0 cirrus-full-snapshots-track-csv-v1-0-na-prod.s3.amazonaws.com
+0.0.0.0 cl-vcode-api.vivoglobal.com
 0.0.0.0 clarity.ms
 0.0.0.0 classify-app-eu.allawnos.com
 0.0.0.0 classify-app-in.allawnos.com
@@ -1501,11 +1503,13 @@
 0.0.0.0 kz-p.vivoglobal.com
 0.0.0.0 kz-pnrt-stsdk.vivoglobal.com
 0.0.0.0 kz-prt-stsdk.vivoglobal.com
+0.0.0.0 kz-romsp-unifyconfig.vivoglobal.com
 0.0.0.0 kz-st-exappupgrade.vivoglobal.com
 0.0.0.0 kz-st-sl.vivoglobal.com
 0.0.0.0 kz-st-sysupgrade.vivoglobal.com
 0.0.0.0 kz-stsdk.vivoglobal.com
 0.0.0.0 kz-timesync.vivoglobal.com
+0.0.0.0 kz-vcode-api.vivoglobal.com
 0.0.0.0 kz-vcode-od.vivoglobal.com
 0.0.0.0 kz-vcode-or.vivoglobal.com
 0.0.0.0 launch.apple.com
@@ -2056,23 +2060,13 @@
 0.0.0.0 msga.ptqy.gitv.tv
 0.0.0.0 mssdk-boot.cpacutapi.com
 0.0.0.0 mssdk-bu.snssdk.com
-0.0.0.0 mssdk-i18n.tiktok.com
-0.0.0.0 mssdk-i18n.tiktokv.com
-0.0.0.0 mssdk-phx.tiktokv.com
-0.0.0.0 mssdk-ru.tiktokv.com
 0.0.0.0 mssdk-sg-bu.byteoversea.com
 0.0.0.0 mssdk-sg.byteoversea.com
 0.0.0.0 mssdk-sg.capcutapi.com
-0.0.0.0 mssdk-sg.tiktokv.com
 0.0.0.0 mssdk-va-useast2a.byteoversea.com
-0.0.0.0 mssdk-va-useast2a.tiktokv.com
 0.0.0.0 mssdk-va.byteoversea.com
 0.0.0.0 mssdk.capcutapi.us
 0.0.0.0 mssdk.snssdk.com
-0.0.0.0 mssdk.tiktokw.eu
-0.0.0.0 mssdk.tiktokw.us
-0.0.0.0 mssdk.us.tiktok.com
-0.0.0.0 mssdk.us.tiktokv.com
 0.0.0.0 mssdk16-normal-sg.capcutapi.com
 0.0.0.0 mssdk16-normal-us-ttp.capcutapi.us
 0.0.0.0 mssdk16-normal-us-ttp2.capcutapi.us

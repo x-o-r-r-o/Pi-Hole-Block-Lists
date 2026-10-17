@@ -2,8 +2,8 @@
 # Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 07:14 UTC
-# Entries: 1376
+# Last modified: 2026-10-17 07:47 UTC
+# Entries: 1361
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -108,28 +108,12 @@ acr-nz-prd.samsungcloud.tv
 acr-us-prd.samsungcloud.tv
 acr.roku.com
 acr0.samsungcloudsolution.com
-ad-bl.geoproximity.staging.rpay.roku.com
-ad-bl.prod.rpay.int.roku.com
-ad-bl.usw2.staging.rpay.int.roku.com
-ad-eng-bl.geoproximity.staging.rpay.roku.com
-ad-eng-bl.use1.prod.rpay.int.roku.com
-ad-eng-bl.usw2.prod.rpay.int.roku.com
-ad-eng-pci-bl.geoproximity.rpay.roku.com
-ad-eng-pci-bl.geoproximity.staging.rpay.roku.com
-ad-eng-pci-bl.prod.rpay.int.roku.com
-ad-eng-pci-bl.use1.prod.rpay.int.roku.com
-ad-eng-pci-bl.usw2.prod.rpay.int.roku.com
-ad-eng-pci.prod.rpay.int.roku.com
-ad-eng.prod.rpay.int.roku.com
-ad-eng.staging.rpay.int.roku.com
 ad.71i.de
 ad.lgappstv.com
 ad.nettvservices.com
 ad.nextlgsdp.com
-ad.prod.rpay.int.roku.com
 ad.qa.ap.int.roku.com
 ad.samsungadhub.com
-ad.staging.rpay.int.roku.com
 ad.usw2.qa.ap.int.roku.com
 ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv
 ad8641f3cff742de893d919add74c2bb.ssm2.internet.sony.tv
@@ -819,6 +803,7 @@ musicid.samsungcloudsolution.com
 mv.nextlgsdp.com
 mw.nextlgsdp.com
 mx-ad-lgsmartad-com.aws-prd.net
+mx-rdx2-lgtvsdp-com.aws-prd.net
 mx.nextlgsdp.com
 my-ad-lgsmartad-com.aws-prd.net
 my.nextlgsdp.com

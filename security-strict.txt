@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-16 08:10 UTC
-# Entries: 2741
+# Last modified: 2026-10-17 07:47 UTC
+# Entries: 2754
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -291,6 +291,7 @@ az.gp
 azl.one
 b.gp
 b0tnet.com
+b12sites.com
 b2b.lc
 b33r.us
 bad.mn
@@ -748,6 +749,7 @@ doomdns.com
 doomdns.org
 doorvpn.com
 dot.tk
+dothome.co.kr
 dougtreadwell.com
 douploads.net
 downfall.shop
@@ -1050,6 +1052,7 @@ free-ddns.com
 free.bizhat.com
 free.cr
 free.lc
+free.nf
 freeasphost.net
 freeblog.biz
 freecities.com
@@ -1542,6 +1545,7 @@ jdfinancialserver.com
 jedimasters.net
 jesus.si
 jetos.com
+jimdofree.com
 jixx.de
 jixx.net
 jkub.com
@@ -1795,6 +1799,7 @@ mybb.pw
 myblogvoice.com
 mybluehost.me
 mybluehostin.me
+myclickfunnels.com
 mycompany.tv
 mycpanel.rs
 mydad.info
@@ -2156,6 +2161,7 @@ reodev.com
 replug.link
 repocket.com
 resolve.bar
+rf.gd
 risu.io
 ro.gp
 ro.lt
@@ -2172,6 +2178,7 @@ roxa.org
 royal-host.com
 rplg.co
 rpz.su
+rr.nu
 rtam.net
 ru.cm
 ru.gp
@@ -2182,6 +2189,7 @@ rumahweb.org
 run.place
 rundis.com
 ruok.org
+russkoeumea.com
 rwbcode.com
 ryointernational.com
 s.gp
@@ -2281,6 +2289,7 @@ shinevpn.com
 shinevpn.net
 shinevpn.org
 shogun.ca
+shohu.shop
 shoopit.com
 shop.fm
 shop.tm
@@ -2369,6 +2378,7 @@ stocktester.ru
 stormpages.com
 stoupin.ru
 strangled.net
+stroyexpert.org
 stuff-4-sale.org
 stuff-4-sale.us
 stufftoread.com
@@ -2379,6 +2389,7 @@ suchtis.de
 sumibi.org
 sundby.com
 supload.com
+surak.kz
 surfblocked.co.cc
 surfnet.ca
 surl.lt
@@ -2617,6 +2628,7 @@ webaccess-alert.com
 webaccess-email.com
 webblog24.de
 webboss.site
+webcindario.com
 webhop.biz
 webhop.info
 webhop.me
@@ -2688,6 +2700,7 @@ xddns.de
 xl.lc
 xml.in
 xname.org
+xo.je
 xpresit.net
 xsl.tel
 xsph.ru

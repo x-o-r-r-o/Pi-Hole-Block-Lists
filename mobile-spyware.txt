@@ -2,8 +2,8 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-15 08:18 UTC
-# Entries: 3167
+# Last modified: 2026-10-17 07:47 UTC
+# Entries: 3161
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -198,6 +198,7 @@ adx-op-fr.heytapmobile.com
 adx-op-in.heytapmobile.com
 adx-op-ru.heytapmobile.com
 adx-op-sg.heytapmobile.com
+adx-u-in.heytapmobile.com
 adx-u-ru.heytapmobile.com
 adx-u-sg.heytapmobile.com
 adx.tv.mi.com
@@ -657,6 +658,7 @@ channelusa.samsung.com
 child.sec.miui.com
 chong.sec.miui.com
 cirrus-full-snapshots-track-csv-v1-0-na-prod.s3.amazonaws.com
+cl-vcode-api.vivoglobal.com
 clarity.ms
 classify-app-eu.allawnos.com
 classify-app-in.allawnos.com
@@ -1501,11 +1503,13 @@ kz-ort-stsdk.vivoglobal.com
 kz-p.vivoglobal.com
 kz-pnrt-stsdk.vivoglobal.com
 kz-prt-stsdk.vivoglobal.com
+kz-romsp-unifyconfig.vivoglobal.com
 kz-st-exappupgrade.vivoglobal.com
 kz-st-sl.vivoglobal.com
 kz-st-sysupgrade.vivoglobal.com
 kz-stsdk.vivoglobal.com
 kz-timesync.vivoglobal.com
+kz-vcode-api.vivoglobal.com
 kz-vcode-od.vivoglobal.com
 kz-vcode-or.vivoglobal.com
 launch.apple.com
@@ -2056,23 +2060,13 @@ msga.cupid.iqiyi.com
 msga.ptqy.gitv.tv
 mssdk-boot.cpacutapi.com
 mssdk-bu.snssdk.com
-mssdk-i18n.tiktok.com
-mssdk-i18n.tiktokv.com
-mssdk-phx.tiktokv.com
-mssdk-ru.tiktokv.com
 mssdk-sg-bu.byteoversea.com
 mssdk-sg.byteoversea.com
 mssdk-sg.capcutapi.com
-mssdk-sg.tiktokv.com
 mssdk-va-useast2a.byteoversea.com
-mssdk-va-useast2a.tiktokv.com
 mssdk-va.byteoversea.com
 mssdk.capcutapi.us
 mssdk.snssdk.com
-mssdk.tiktokw.eu
-mssdk.tiktokw.us
-mssdk.us.tiktok.com
-mssdk.us.tiktokv.com
 mssdk16-normal-sg.capcutapi.com
 mssdk16-normal-us-ttp.capcutapi.us
 mssdk16-normal-us-ttp2.capcutapi.us
