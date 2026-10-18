@@ -2,8 +2,8 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-17 07:47 UTC
-# Entries: 3161
+# Last modified: 2026-10-18 08:01 UTC
+# Entries: 3165
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -463,6 +463,7 @@ apm-track.xiaohongshu.com
 app-analytics-ru.huami.com
 app-analytics-services.com
 app-analytics.snapchat.com
+app-events.infoapps.apple.com
 app-log-lab.immomo.com
 app-log-oversea.immomo.com
 app-measurement.com
@@ -1201,6 +1202,7 @@ fr-register.xmpush.global.xiaomi.com
 fr.feedback.xmpush.global.xiaomi.com
 fraud.adjoe.zone
 fraudmetrix.cn
+freeform-events.apple.com
 frontier-us-ttp2.capcutw.us
 frontier.byteoversea.com
 frontier.capcutw.us
@@ -2280,6 +2282,7 @@ privacy-sandbox.appsflyersdk.com
 privacy.miui.com
 privatestats.whatsapp.net
 prod-analytics.royal.drmgms.com
+prod-app-analytics-event-gateway.v.aaplimg.com
 prod-clientlog.fastly.newssuite.sinfony.ne.jp
 prod-event-relay-api.v.aaplimg.com
 prod-event-relay-books-api.v.aaplimg.com
@@ -2287,6 +2290,7 @@ prod-event-relay-notes-api.v.aaplimg.com
 prod-event-relay-sports-api.v.aaplimg.com
 prod-event-relay-stocks-api.v.aaplimg.com
 prod-event-relay-weather-api.v.aaplimg.com
+prod-iwork-events.v.aaplimg.com
 prod-news-notification-events.v.aaplimg.com
 prod-ue1-metrics.hingeprod.net
 prod.report.nacustomerexperience.citi.com
