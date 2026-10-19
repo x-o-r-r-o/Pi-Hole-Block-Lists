@@ -3,8 +3,8 @@
 ! Description: Illegal movie, TV, music and software download and streaming sites (torrents, warez).
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-18 08:01 UTC
-! Entries: 56968
+! Last modified: 2026-10-19 09:32 UTC
+! Entries: 56971
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Anti-Piracy: https://github.com/hagezi/dns-blocklists
@@ -12943,6 +12943,7 @@
 ||futbollibre.mobi^
 ||futbollibre.watch^
 ||futbollibre.ws^
+||futbollibree.live^
 ||futbollibres.live^
 ||futbollibretotal.com^
 ||futbollibretv.bet^
@@ -38947,6 +38948,7 @@
 ||newzbin.com^
 ||newzleech.com^
 ||newznab.com^
+||nexanime.app^
 ||nextflicks.link^
 ||nextgenroms.com^
 ||nextmovie.online^
@@ -56013,6 +56015,7 @@
 ||youplex.site^
 ||youpornbook.com^
 ||your-name-lordfilm.cam^
+||youranimebox.com^
 ||youranimerank.com^
 ||yourbittorrent.com^
 ||youreasyip.tv^

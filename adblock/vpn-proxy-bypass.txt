@@ -3,8 +3,8 @@
 ! Description: VPNs, web proxies and encrypted-DNS services that people use to get around blocking. Use with the other lists to stop bypassing (may block a work VPN).
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-18 08:01 UTC
-! Entries: 19498
+! Last modified: 2026-10-19 09:32 UTC
+! Entries: 19489
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi DoH/VPN/Proxy Bypass: https://github.com/hagezi/dns-blocklists
@@ -660,7 +660,6 @@
 ||3dns.eu^
 ||3dphototwitch.com^
 ||3e3c.org^
-||3etare.co.uk^
 ||3fan4.net^
 ||3fancloud.net^
 ||3fsurmp9.com^
@@ -2266,6 +2265,7 @@
 ||apps.truckbel.com^
 ||appsdl.org^
 ||appshost.us^
+||appstoff.info^
 ||apptopay.xyz^
 ||appvpn.info^
 ||appxiazai9.com^
@@ -3175,7 +3175,6 @@
 ||bmqan2static.b-cdn.net^
 ||bn0dghrx.com^
 ||bnj0d3r2.com^
-||bo0ji.co.uk^
 ||bobr.netphoenix.ru^
 ||bobra.bid^
 ||bobstrecansky.com^
@@ -4756,11 +4755,6 @@
 ||dansereau.xyz^
 ||daowli5ih5tw2.cloudfront.net^
 ||dark-proxy.ru^
-||dark1.globalmymusic.co.uk^
-||dark2.globalmymusic.co.uk^
-||dark3.globalmymusic.co.uk^
-||dark4.globalmymusic.co.uk^
-||dark5.globalmymusic.co.uk^
 ||darkboyjyoti.online^
 ||darkfat.com^
 ||darkness.is.my.waifu.cz^
@@ -10151,7 +10145,6 @@
 ||ilovepetezahparty.vincenzodimaro.it.cdn.cloudflare.net^
 ||ilpphgf.ipv64.net^
 ||ilumu.com^
-||im.dumaniltd.co.uk^
 ||imadconiavpn.tk^
 ||imageflow.club^
 ||imagetrove.org^
@@ -10355,7 +10348,6 @@
 ||ir.panhandleflyers.info^
 ||ir.xeonxu.info^
 ||ir.xn--ds-bja.info^
-||iran.bingi.co.uk^
 ||irckyb7t9a.com^
 ||ire.danielfreyr.com^
 ||irenthouseonltkevpn.tk^
@@ -11673,6 +11665,7 @@
 ||lon-dns.bitdefender.net^
 ||longss.xyz^
 ||lonmq6.xyz^
+||lonymi12.mosswren.vip^
 ||look.xshentx.org^
 ||loomjolt.com^
 ||looquae8.xyz^
@@ -11788,6 +11781,7 @@
 ||magiccloak.net^
 ||magnetsnag.com^
 ||maherhost.uk^
+||mahi.poolaki.co.uk^
 ||mahnor.com^
 ||maichongvpn.com^
 ||maifot.com^
@@ -12033,6 +12027,7 @@
 ||mickedi.isgood.host^
 ||micro.alloxr.info^
 ||microvpn.com^
+||mide77.mosswren.vip^
 ||midgard.asguardian.de^
 ||midns.clicinternet.com^
 ||mifengjsd.com^
@@ -12058,7 +12053,6 @@
 ||mimile.despagne.net^
 ||mimile.despagne.ovh^
 ||mimir.netwerk.io^
-||mimizo19.tidelark.cc^
 ||mind.essay.archtech.gr^
 ||minds.plant.theseks.net^
 ||minecraft.info.north-kazakhstan.su.cdn.cloudflare.net^
@@ -12096,7 +12090,6 @@
 ||mistvulture.com^
 ||misty-pine-inn.com^
 ||mitmproxy.org^
-||mito38.mosswren.vip^
 ||mixing.run^
 ||mixturestab.com^
 ||mizban-r.site^
@@ -12817,7 +12810,6 @@
 ||noblock-sitesevpns.tk^
 ||nocensor.work^
 ||nocfmc.cc^
-||nocloudnew.co.uk^
 ||node.network^
 ||node3.b4el.ru^
 ||node9.servernode.store^
@@ -13557,7 +13549,6 @@
 ||perlproxy.com^
 ||peroxide.bury.abrdns.com^
 ||perpetuation.flight.abrdns.com^
-||persia.bingi.co.uk^
 ||persianreserve.ir^
 ||perso.jbperrin.fr^
 ||personal-config.ru^
@@ -13887,6 +13878,7 @@
 ||prettycoolmath.com^
 ||preview.dnsteam.globuscs.info^
 ||prflux.xyz^
+||price.syscloudio.co.uk^
 ||primary-dns.victorhachard.fr^
 ||primeproxy23.info^
 ||primevpn.pro^
@@ -14069,7 +14061,6 @@
 ||proxy.safebrowsing.apple^
 ||proxy.schel.li^
 ||proxy.searchfiles.de^
-||proxy.sosavpn.ru^
 ||proxy.startpage.com^
 ||proxy.sx^
 ||proxy.uz^
@@ -14509,7 +14500,6 @@
 ||racevpn.com^
 ||rachel.jeroenhd.nl^
 ||racinas.com^
-||rade94.tidelark.cc^
 ||radia.bortzmeyer.org^
 ||radiac.xyz^
 ||radianttundra.com^
@@ -14628,6 +14618,7 @@
 ||red-vpn.mom^
 ||red.global.ssl.fastly.net^
 ||redfinger.com^
+||redflag.yazaebalsyadelatproxy.vip^
 ||redgatewayvpn.tk^
 ||redgatewayvpns.tk^
 ||redgatewayvpns9.tk^
@@ -15732,6 +15723,7 @@
 ||ssgreen.org^
 ||ssh-free.com^
 ||ssh-storage.ru^
+||ssh.meow0.co.uk^
 ||sshagan.net^
 ||sshd.me^
 ||sshdropbear.net^
@@ -15971,7 +15963,6 @@
 ||suppervpn-duper-proxyips.tk^
 ||suppervpn-duper8-proxyips.tk^
 ||suppheathcbelgperg.tk^
-||support.infinityhalo.co.uk^
 ||supported.testing4fun.xyz^
 ||supremebarbershopclarendon.net^
 ||sure.registration.abrdns.com^
@@ -16453,7 +16444,7 @@
 ||togppqls.com^
 ||toikemikaramu.easterndns.com^
 ||tois.tech^
-||toka21.mosswren.vip^
+||tokane46.tidelark.cc^
 ||tokap.s3-ap-southeast-1.amazonaws.com^
 ||token.safebrowsing.apple^
 ||tokeu.s3.eu-central-1.amazonaws.com^
@@ -17235,7 +17226,6 @@
 ||vacation.briaquaticcabinets.com^
 ||vadim.online^
 ||vador.sillundil.ovh^
-||vahshianeh.ghodratitarin.info^
 ||vaipn.app^
 ||vaipnvpn1-metadata-rtdb.firebaseio.com^
 ||valarre.com^
@@ -17423,6 +17413,7 @@
 ||vikose.com.vn^
 ||villalazza.stream^
 ||villi.shurakenas.ru^
+||vilomi57.tidelark.cc^
 ||vilor.site^
 ||ving.mozitop.co.uk^
 ||vinny-stinks-like-dudu.com^

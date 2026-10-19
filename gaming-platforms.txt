@@ -2,8 +2,8 @@
 # Description: Roblox, Fortnite/Epic, Free Fire, PUBG/BGMI, Minecraft, Steam, Xbox, PlayStation, Nintendo, EA, Riot (League, Valorant), Battle.net, Ubisoft, Call of Duty, Clash of Clans, Mobile Legends, Genshin Impact, Candy Crush, Among Us.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-12 11:28 UTC
-# Entries: 23875
+# Last modified: 2026-10-19 09:32 UTC
+# Entries: 23877
 #
 # Built from these sources (see their licenses):
 #   - Gaming platform servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/gaming-platforms.json
@@ -1557,6 +1557,7 @@ api.br.store.leagueoflegends.com
 api.brawlstars.com
 api.bugly.cros.wr.pvp.net
 api.bugly.prod01.amer.cros.wr.pvp.net
+api.bugs-test.mojang.com
 api.bunnyemilly.aov.garena.com
 api.c1-np.ac.playstation.net
 api.c1-np.sonyentertainmentnetwork.com
@@ -12777,6 +12778,7 @@ network-test-glb-origin.hoyoverse.com
 neu.prod.monolith.experiences.xboxservices.com
 new-clashmini.inbox-dev.supercell.com
 new-gitlab-dev-pages.krafton.com
+new.bugs-test.mojang.com
 new.minecraft.net
 new.mobilelegends.com
 newage2.web.test.freefiremobile.com
