@@ -3,7 +3,7 @@
 ! Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-18 08:01 UTC
+! Last modified: 2026-10-20 08:32 UTC
 ! Entries: 3083
 !
 ! Built from these sources (see their licenses):
@@ -1974,6 +1974,7 @@
 ||mobile-collector.newrelic.com^
 ||mobile-events.eservice.emarsys.net^
 ||mobile-production.content-square.net^
+||mobile-telemetry.multiball.forzafootball.net^
 ||mobileapptracking.com^
 ||mobileconfig.sascdn.com^
 ||mobilelog.upqzfile.com^
@@ -2084,7 +2085,6 @@
 ||nlog.droid4x.cn^
 ||nmetrics.samsung.com^
 ||nmetrics.samsungmobile.com^
-||node.aibeacon.jp^
 ||notes-analytics-events.apple.com^
 ||notes-analytics-events.news.apple-dns.net^
 ||notice.game.xiaomi.com^
