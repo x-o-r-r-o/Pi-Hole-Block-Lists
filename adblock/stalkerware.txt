@@ -3,8 +3,8 @@
 ! Description: Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-10 04:24 UTC
-! Entries: 532
+! Last modified: 2026-10-21 08:34 UTC
+! Entries: 533
 !
 ! Built from these sources (see their licenses):
 !   - Université Toulouse Capitole: stalkerware & monitoring apps: https://dsi.ut-capitole.fr/blacklists/
@@ -71,6 +71,7 @@
 ||api.ogymogy.com^
 ||api.seniorsafetyapp.com^
 ||api.spylix.com^
+||api.stalkerware.app^
 ||api.trackview.lifecircle.app^
 ||api007.foxspy.com.br^
 ||apidemo.spylix.com^

@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-20 08:32 UTC
-# Entries: 2755
+# Last modified: 2026-10-21 08:34 UTC
+# Entries: 2758
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -2309,6 +2309,7 @@
 0.0.0.0 simple-url.com
 0.0.0.0 simplecharity.com
 0.0.0.0 sino.tw
+0.0.0.0 sitebeat.crazydomains.com
 0.0.0.0 sitelutions.com
 0.0.0.0 sitepalace.com
 0.0.0.0 sitey.me
@@ -2380,6 +2381,7 @@
 0.0.0.0 stoupin.ru
 0.0.0.0 strangled.net
 0.0.0.0 stroyexpert.org
+0.0.0.0 studio.site
 0.0.0.0 stuff-4-sale.org
 0.0.0.0 stuff-4-sale.us
 0.0.0.0 stufftoread.com
@@ -2724,6 +2726,7 @@
 0.0.0.0 yellowflashvpn.com
 0.0.0.0 ygrrvlvvgf.top
 0.0.0.0 ygto.com
+0.0.0.0 yi.org
 0.0.0.0 yiannamarie.com
 0.0.0.0 yiff.fi
 0.0.0.0 yip.su

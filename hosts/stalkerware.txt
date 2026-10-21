@@ -2,8 +2,8 @@
 # Description: Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 04:24 UTC
-# Entries: 949
+# Last modified: 2026-10-21 08:34 UTC
+# Entries: 950
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: stalkerware & monitoring apps: https://dsi.ut-capitole.fr/blacklists/
@@ -92,6 +92,7 @@
 0.0.0.0 api.seniorsafetyapp.com
 0.0.0.0 api.snoopza.com
 0.0.0.0 api.spylix.com
+0.0.0.0 api.stalkerware.app
 0.0.0.0 api.thd.cc
 0.0.0.0 api.trackview.lifecircle.app
 0.0.0.0 api.ttspy.com

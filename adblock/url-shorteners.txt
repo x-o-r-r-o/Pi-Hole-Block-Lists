@@ -3,8 +3,8 @@
 ! Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-20 08:32 UTC
-! Entries: 9905
+! Last modified: 2026-10-21 08:34 UTC
+! Entries: 9906
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -935,6 +935,7 @@
 ||azshrtr.com^
 ||azx.az^
 ||b-gat.es^
+||b-short.link^
 ||b-url.it^
 ||b.bw^
 ||b.link^
