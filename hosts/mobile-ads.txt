@@ -2,8 +2,8 @@
 # Description: Ad networks used inside Android and iOS apps.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-16 08:10 UTC
-# Entries: 8335
+# Last modified: 2026-10-23 08:32 UTC
+# Entries: 8346
 #
 # Built from these sources (see their licenses):
 #   - AdAway Default: https://adaway.org
@@ -377,8 +377,10 @@
 0.0.0.0 ad-cdn.qingting.fm
 0.0.0.0 ad-cdn.technoratimedia.com
 0.0.0.0 ad-channel.wikawika.xyz
+0.0.0.0 ad-cmp.hismarttv.com
 0.0.0.0 ad-creatives-public.commondatastorage.googleapis.com
 0.0.0.0 ad-delivery.net
+0.0.0.0 ad-download.hismarttv.com
 0.0.0.0 ad-emea.doubleclick.net
 0.0.0.0 ad-ettoday.cdn.hinet.net
 0.0.0.0 ad-events.flashtalking.com
@@ -2233,6 +2235,7 @@
 0.0.0.0 bob.dmpxs.com
 0.0.0.0 bond.iad-03.braze.com
 0.0.0.0 books-analytics-events.apple.com
+0.0.0.0 boost-cmp.hismarttv.com
 0.0.0.0 boost.mobileposse.com
 0.0.0.0 boostads.net
 0.0.0.0 bootpreload.uve.weibo.com
@@ -3131,6 +3134,7 @@
 0.0.0.0 da-ads.com
 0.0.0.0 da.anythinktech.com
 0.0.0.0 da.chartboost.com
+0.0.0.0 da.flvcdn.net
 0.0.0.0 da.us.criteo.com
 0.0.0.0 da.us.criteo.net
 0.0.0.0 da1.vip.prod.criteo.com
@@ -4275,6 +4279,7 @@
 0.0.0.0 imgx.mediav.com
 0.0.0.0 imimobile.com
 0.0.0.0 immediatemedia.amp.permutive.com
+0.0.0.0 imp-cmp.hismarttv.com
 0.0.0.0 imp-dsp.bidgear.com
 0.0.0.0 imp-lb-us2.jampp.com
 0.0.0.0 imp.control.kochava.com
@@ -4636,7 +4641,6 @@
 0.0.0.0 lgvlbd.icu
 0.0.0.0 lh3.googleadsserving.cn
 0.0.0.0 lib.vmweb.net
-0.0.0.0 libaishuo.com
 0.0.0.0 libs.coremetrics.com
 0.0.0.0 libs.lavanetwork.net
 0.0.0.0 libs.outbrain.com
@@ -4673,6 +4677,7 @@
 0.0.0.0 load.sumome.com
 0.0.0.0 load77.exelator.com
 0.0.0.0 loada.exelator.com
+0.0.0.0 loading-cmp.hismarttv.com
 0.0.0.0 loadm.exelator.com
 0.0.0.0 loadr.exelator.com
 0.0.0.0 loadus.exelator.com
@@ -5190,6 +5195,7 @@
 0.0.0.0 msdk.qq.com
 0.0.0.0 msdk.rqmob.com
 0.0.0.0 msdk.voiceads.cn
+0.0.0.0 msg-cmp.hismarttv.com
 0.0.0.0 msg.ettoday.net
 0.0.0.0 msg.umengcloud.com
 0.0.0.0 msntest.serving-sys.com
@@ -5578,6 +5584,7 @@
 0.0.0.0 pasta.esfile.duapps.com
 0.0.0.0 pasta.estrongspro.duapps.com
 0.0.0.0 pasta.sd.duapps.com
+0.0.0.0 paster-cmp.hismarttv.com
 0.0.0.0 pavoshare.com
 0.0.0.0 pay.sboot.cn
 0.0.0.0 payload.adadapted.com
@@ -6056,6 +6063,7 @@
 0.0.0.0 reate.info
 0.0.0.0 rebootv5.adfuture.cn
 0.0.0.0 rebootv5.adsunflower.com
+0.0.0.0 recmd-cmp.hismarttv.com
 0.0.0.0 recommend-drcn.hms.dbankcloud.cn
 0.0.0.0 recommender.scarabresearch.com
 0.0.0.0 recommends.media.net
@@ -6103,6 +6111,7 @@
 0.0.0.0 researchnow.com
 0.0.0.0 resizer.mantisadnetwork.com
 0.0.0.0 resolve.umeng.com
+0.0.0.0 resource-cmp.hismarttv.com
 0.0.0.0 resources.crowdtwist.com
 0.0.0.0 resources.presage.io
 0.0.0.0 resources.taboola.com
@@ -6189,6 +6198,7 @@
 0.0.0.0 rtb.gumgum.com
 0.0.0.0 rtb.kds.media
 0.0.0.0 rtb.mfadsrvr.com
+0.0.0.0 rtb.nefta.app
 0.0.0.0 rtb.nexage.com
 0.0.0.0 rtb.ninthdecimal.com
 0.0.0.0 rtb.openx.net
@@ -7853,6 +7863,7 @@
 0.0.0.0 v2.dc.yieldify.com
 0.0.0.0 v2.gdt.qq.com
 0.0.0.0 v2.pixel.newscgp.com
+0.0.0.0 v2.reachmax.cn
 0.0.0.0 v2.yieldlove-ad-serving.net
 0.0.0.0 v2mi.gdt.qq.com
 0.0.0.0 v3-ad.video.yximgs.com

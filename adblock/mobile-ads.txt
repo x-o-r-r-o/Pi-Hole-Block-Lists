@@ -3,8 +3,8 @@
 ! Description: Ad networks used inside Android and iOS apps.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-16 08:10 UTC
-! Entries: 5429
+! Last modified: 2026-10-23 08:32 UTC
+! Entries: 5440
 !
 ! Built from these sources (see their licenses):
 !   - AdAway Default: https://adaway.org
@@ -106,8 +106,10 @@
 ||ad-cdn.qingting.fm^
 ||ad-cdn.technoratimedia.com^
 ||ad-channel.wikawika.xyz^
+||ad-cmp.hismarttv.com^
 ||ad-creatives-public.commondatastorage.googleapis.com^
 ||ad-delivery.net^
+||ad-download.hismarttv.com^
 ||ad-ettoday.cdn.hinet.net^
 ||ad-exchange.toast.com^
 ||ad-files.4pyun.com^
@@ -1533,6 +1535,7 @@
 ||bnmla.com^
 ||bob.dmpxs.com^
 ||books-analytics-events.apple.com^
+||boost-cmp.hismarttv.com^
 ||boostads.net^
 ||bootpreload.uve.weibo.com^
 ||boxoffice.urbanairship.com^
@@ -2094,6 +2097,7 @@
 ||d60y8cj1tje2a.cloudfront.net^
 ||d830x8j3o1b2k.cloudfront.net^
 ||da-ads.com^
+||da.flvcdn.net^
 ||dable.io^
 ||dable.io.edgekey.net^
 ||dacdn.pushcrew.com^
@@ -2801,6 +2805,7 @@
 ||img2.360buyimg.com^
 ||img2.autoimg.cn^
 ||imimobile.com^
+||imp-cmp.hismarttv.com^
 ||imp.voiceads.cn^
 ||impbid.com^
 ||impr.taboola.com^
@@ -3026,7 +3031,6 @@
 ||lgsmartad.com^
 ||lgvlbd.icu^
 ||lh3.googleadsserving.cn^
-||libaishuo.com^
 ||libs.outbrain.com^
 ||liftdna.com^
 ||liftoff-creatives.io^
@@ -3053,6 +3057,7 @@
 ||load.sumo.com^
 ||load77.exelator.com^
 ||loada.exelator.com^
+||loading-cmp.hismarttv.com^
 ||loadm.exelator.com^
 ||loadr.exelator.com^
 ||loadus.exelator.com^
@@ -3451,6 +3456,7 @@
 ||msdk-files.webengage.com^
 ||msdk.qq.com^
 ||msdk.voiceads.cn^
+||msg-cmp.hismarttv.com^
 ||msg.ettoday.net^
 ||mssdk.volces.com^
 ||mssdk.zijieapi.com^
@@ -3707,6 +3713,7 @@
 ||partnerads.ysm.yahoo.com^
 ||partnerearning.com^
 ||partners-hotwire-com.impactradius.com^
+||paster-cmp.hismarttv.com^
 ||pavoshare.com^
 ||pay.sboot.cn^
 ||payload.adadapted.com^
@@ -3989,6 +3996,7 @@
 ||realclever.com^
 ||realtime.clinch.co^
 ||reate.info^
+||recmd-cmp.hismarttv.com^
 ||recommend-drcn.hms.dbankcloud.cn^
 ||recommender.scarabresearch.com^
 ||recommends.media.net^
@@ -4026,6 +4034,7 @@
 ||researchnow.com^
 ||resizer.mantisadnetwork.com^
 ||resolve.umeng.com^
+||resource-cmp.hismarttv.com^
 ||resources.crowdtwist.com^
 ||resources.taboola.com^
 ||resources.xg4ken.com^
@@ -4085,6 +4094,7 @@
 ||rtb.d.adup-tech.com^
 ||rtb.kds.media^
 ||rtb.mfadsrvr.com^
+||rtb.nefta.app^
 ||rtb.nexage.com^
 ||rtb.openx.net^
 ||rtb.voiceads.cn^
@@ -5151,6 +5161,7 @@
 ||v2-api-channel-launcher.hismarttv.com^
 ||v2.gdt.qq.com^
 ||v2.pixel.newscgp.com^
+||v2.reachmax.cn^
 ||v2.yieldlove-ad-serving.net^
 ||v2mi.gdt.qq.com^
 ||v3-ad.video.yximgs.com^

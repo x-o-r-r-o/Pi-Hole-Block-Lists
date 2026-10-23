@@ -1,23 +1,23 @@
 name	title	entries	description
-ads-and-tracking	Ads & Tracking	295228	Ads and trackers with few false positives. Start here.
-ads-and-tracking-extended	Ads & Tracking (Extended)	747879	Aggressive ad, tracker, telemetry and pop-up blocking. Contains everything in ads-and-tracking plus much more; may need occasional allowlisting.
-ads-regional	Regional Ads	242012	Ad servers for non-English websites and apps: Arabic, Chinese, Russian/Ukrainian/Bulgarian, Turkish, Persian, Hebrew, Japanese, Korean, Vietnamese, Indonesian, European languages and more. Add next to ads-and-tracking or the extended list.
-mobile-ads	Mobile Ads	8335	Ad networks used inside Android and iOS apps.
+ads-and-tracking	Ads & Tracking	296177	Ads and trackers with few false positives. Start here.
+ads-and-tracking-extended	Ads & Tracking (Extended)	749424	Aggressive ad, tracker, telemetry and pop-up blocking. Contains everything in ads-and-tracking plus much more; may need occasional allowlisting.
+ads-regional	Regional Ads	242404	Ad servers for non-English websites and apps: Arabic, Chinese, Russian/Ukrainian/Bulgarian, Turkish, Persian, Hebrew, Japanese, Korean, Vietnamese, Indonesian, European languages and more. Add next to ads-and-tracking or the extended list.
+mobile-ads	Mobile Ads	8346	Ad networks used inside Android and iOS apps.
 mobile-spyware	Mobile Spyware & Telemetry	3165	Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 youtube-ads	YouTube Ads	22	Google/YouTube ad servers. Partial: DNS cannot block all YouTube video ads (see YouTube ads).
-gambling	Gambling	608967	Online casinos, sports betting, poker, lotteries and other gambling sites.
-adult	Adult Content	540674	Porn and other adult (NSFW) sites (see the Safe Search tip).
+gambling	Gambling	609558	Online casinos, sports betting, poker, lotteries and other gambling sites.
+adult	Adult Content	541099	Porn and other adult (NSFW) sites (see the Safe Search tip).
 social-media	Social Media	11792	Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked.
 smart-tv	Smart TV & Streaming Devices	1361	Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 game-consoles	Game Consoles	13	Ads in the system menus and telemetry of PlayStation, Xbox and Nintendo Switch consoles. Small and safe for online play (on Xbox it also hides Game Pass Perks).
 security	Security (Malware, Phishing, Scams)	775517	Malware, phishing, scams and fake shops from threat-intelligence feeds. Recommended for everyone (add phishing-and-scams for extra phishing feeds).
 stalkerware	Stalkerware & Phone Monitoring	950	Spy and monitoring apps that can be secretly installed on a phone to track messages and location. Also blocks parental-control apps such as Bark, so don't use it if you rely on one.
 crypto-mining	Crypto Mining (Cryptojacking)	11585	Hidden crypto-mining scripts and mining pools (cryptojacking). Exchanges like Coinbase/Binance are not blocked.
-phishing-and-scams	Phishing & Scams	563370	Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops, from extra phishing feeds. Only partly covered by security: add both for the strongest phishing protection.
+phishing-and-scams	Phishing & Scams	562984	Phishing sites (fake bank, PayPal, Microsoft and delivery logins), scams and fake shops, from extra phishing feeds. Only partly covered by security: add both for the strongest phishing protection.
 live-streaming	Live-Streaming & Video-Chat Apps	2320	Bigo Live, Likee, MICO, SUGO, Poppo, Chamet, Tango, StreamKar, LiveMe, 17LIVE, Uplive, Hago, Yalla, SoulChill, Azar, HOLLA, Mango, GOGO LIVE, SuperLive, Kumu, Ahlan, Ola Party, Hiya, Nimo TV and ~30 more paid live/video-chat apps (see notes).
 dating	Dating	13253	Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
-vpn-proxy-bypass	VPN, Proxy & DNS Bypass	23724	VPNs, web proxies and encrypted-DNS services that people use to get around blocking. Use with the other lists to stop bypassing (may block a work VPN).
-piracy	Piracy	57351	Illegal movie, TV, music and software download and streaming sites (torrents, warez).
+vpn-proxy-bypass	VPN, Proxy & DNS Bypass	23722	VPNs, web proxies and encrypted-DNS services that people use to get around blocking. Use with the other lists to stop bypassing (may block a work VPN).
+piracy	Piracy	57572	Illegal movie, TV, music and software download and streaming sites (torrents, warez).
 drugs	Drugs	436	Sites selling or promoting illegal drugs.
 online-games	Online Games	33697	Online and browser gaming sites, including Steam, Roblox and Epic Games.
 violence-hate	Violence & Hate	267	Violent, aggressive and hate-speech sites.
@@ -31,10 +31,10 @@ chat-strangers	Chat with Strangers	15	Omegle-style random video and text chat si
 cheating	Homework Cheating	78	Homework-answer and essay-writing sites (Chegg, Course Hero, Brainly, Gauth, Studocu, essay mills).
 remote-control	Remote Control Tools	174	AnyDesk, TeamViewer, RustDesk, UltraViewer, ScreenConnect and other remote-access tools that 'tech support' scammers use. Also blocks legitimate remote IT support.
 crypto-trading	Crypto Trading	1406	Crypto exchanges, trading platforms and wallets (Binance, Coinbase, Bybit, OKX, KuCoin, Crypto.com, MetaMask...), a common route for investment scams.
-security-strict	Security (Strict)	2758	Extra protection on top of security: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
+security-strict	Security (Strict)	2761	Extra protection on top of security: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 file-sharing	File Sharing	961	File-hosting and file-sharing sites (including Dropbox and many free hosts), common sources of malware and pirated files.
 windows-telemetry	Windows & Office Telemetry	383	Microsoft data collection from Windows and Office. Windows Update and Office keep working.
 shopping	Shopping	37291	Online shopping sites, for limiting impulse buying.
 fake-news	Fake News	1118	Fake-news and clickbait-scam sites.
 cults	Cults & Psychics	143	Sites of cults, sects and psychic/fortune-telling services.
-url-shorteners	URL Shorteners	9906	Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
+url-shorteners	URL Shorteners	9907	Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.

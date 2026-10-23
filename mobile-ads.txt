@@ -2,8 +2,8 @@
 # Description: Ad networks used inside Android and iOS apps.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-16 08:10 UTC
-# Entries: 8335
+# Last modified: 2026-10-23 08:32 UTC
+# Entries: 8346
 #
 # Built from these sources (see their licenses):
 #   - AdAway Default: https://adaway.org
@@ -377,8 +377,10 @@ ad-brix.com
 ad-cdn.qingting.fm
 ad-cdn.technoratimedia.com
 ad-channel.wikawika.xyz
+ad-cmp.hismarttv.com
 ad-creatives-public.commondatastorage.googleapis.com
 ad-delivery.net
+ad-download.hismarttv.com
 ad-emea.doubleclick.net
 ad-ettoday.cdn.hinet.net
 ad-events.flashtalking.com
@@ -2233,6 +2235,7 @@ bo.goadservices.com
 bob.dmpxs.com
 bond.iad-03.braze.com
 books-analytics-events.apple.com
+boost-cmp.hismarttv.com
 boost.mobileposse.com
 boostads.net
 bootpreload.uve.weibo.com
@@ -3131,6 +3134,7 @@ d9.flashtalking.com
 da-ads.com
 da.anythinktech.com
 da.chartboost.com
+da.flvcdn.net
 da.us.criteo.com
 da.us.criteo.net
 da1.vip.prod.criteo.com
@@ -4275,6 +4279,7 @@ imgx.jampp.com
 imgx.mediav.com
 imimobile.com
 immediatemedia.amp.permutive.com
+imp-cmp.hismarttv.com
 imp-dsp.bidgear.com
 imp-lb-us2.jampp.com
 imp.control.kochava.com
@@ -4636,7 +4641,6 @@ lgsmartad.com
 lgvlbd.icu
 lh3.googleadsserving.cn
 lib.vmweb.net
-libaishuo.com
 libs.coremetrics.com
 libs.lavanetwork.net
 libs.outbrain.com
@@ -4673,6 +4677,7 @@ load.sumo.com
 load.sumome.com
 load77.exelator.com
 loada.exelator.com
+loading-cmp.hismarttv.com
 loadm.exelator.com
 loadr.exelator.com
 loadus.exelator.com
@@ -5190,6 +5195,7 @@ msdk-files.webengage.com
 msdk.qq.com
 msdk.rqmob.com
 msdk.voiceads.cn
+msg-cmp.hismarttv.com
 msg.ettoday.net
 msg.umengcloud.com
 msntest.serving-sys.com
@@ -5578,6 +5584,7 @@ pasta.durecorder.duapps.com
 pasta.esfile.duapps.com
 pasta.estrongspro.duapps.com
 pasta.sd.duapps.com
+paster-cmp.hismarttv.com
 pavoshare.com
 pay.sboot.cn
 payload.adadapted.com
@@ -6056,6 +6063,7 @@ realtime.clinch.co
 reate.info
 rebootv5.adfuture.cn
 rebootv5.adsunflower.com
+recmd-cmp.hismarttv.com
 recommend-drcn.hms.dbankcloud.cn
 recommender.scarabresearch.com
 recommends.media.net
@@ -6103,6 +6111,7 @@ res3.hubcloud.com.cn
 researchnow.com
 resizer.mantisadnetwork.com
 resolve.umeng.com
+resource-cmp.hismarttv.com
 resources.crowdtwist.com
 resources.presage.io
 resources.taboola.com
@@ -6189,6 +6198,7 @@ rtb.da.us.criteo.com
 rtb.gumgum.com
 rtb.kds.media
 rtb.mfadsrvr.com
+rtb.nefta.app
 rtb.nexage.com
 rtb.ninthdecimal.com
 rtb.openx.net
@@ -7853,6 +7863,7 @@ v2.chartboost.com
 v2.dc.yieldify.com
 v2.gdt.qq.com
 v2.pixel.newscgp.com
+v2.reachmax.cn
 v2.yieldlove-ad-serving.net
 v2mi.gdt.qq.com
 v3-ad.video.yximgs.com
