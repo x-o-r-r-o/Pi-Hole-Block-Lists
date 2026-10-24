@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-23 08:32 UTC
-! Entries: 3040
+! Last modified: 2026-10-24 08:07 UTC
+! Entries: 3043
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -2234,6 +2234,7 @@
 ||hanefra7bikiemta.com^
 ||happyforever.com^
 ||hase.in^
+||hashnode.dev^
 ||hatenboer.org^
 ||hbmc.net^
 ||health-carereform.com^
@@ -2654,6 +2655,7 @@
 ||lundellnet.com^
 ||luzzati.com^
 ||lyli.fi^
+||m-pages.com^
 ||m.vu^
 ||ma.gp^
 ||macao.net^
@@ -3471,6 +3473,7 @@
 ||usclargo.com^
 ||user.lc^
 ||userip.911s5.net^
+||usrfiles.com^
 ||uz.gp^
 ||uzhi.ru^
 ||v.gp^
