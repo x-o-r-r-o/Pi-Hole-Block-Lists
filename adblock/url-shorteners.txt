@@ -3,8 +3,8 @@
 ! Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-23 08:32 UTC
-! Entries: 9907
+! Last modified: 2026-10-25 08:24 UTC
+! Entries: 9919
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -1717,9 +1717,13 @@
 ||clotplaynews.live^
 ||cloudfare.icu^
 ||cloudfronte.net^
+||cloudinaryy.net^
 ||cloudinery.net^
 ||cloudiniry.net^
+||cloudnaery.net^
 ||cloudnairy.net^
+||cloudnary.net^
+||cloudnery.net^
 ||cloudradar.net^
 ||cloudshrinker.com^
 ||clourls.com^
@@ -2630,7 +2634,10 @@
 ||flextrig.com^
 ||flic.kr^
 ||flickerlink.com^
+||flickier.net^
 ||flickker.net^
+||flickrnet.net^
+||flickrr.net^
 ||flii.by^
 ||flink.is^
 ||flinkio.com^
@@ -5923,6 +5930,8 @@
 ||petrovay.com^
 ||pew.org^
 ||pewrsr.ch^
+||pexelss.net^
+||pexelsx.net^
 ||pexls.net^
 ||pfapp.io^
 ||pg3d.app^
@@ -5965,6 +5974,7 @@
 ||pitlink.com^
 ||pitt.health^
 ||piurl.com^
+||pixabayy.net^
 ||pixel.link^
 ||pixel.xin^
 ||pixelfy.me^
@@ -8624,7 +8634,9 @@
 ||unshort.site^
 ||unsololink.com^
 ||unsp1ash.net^
+||unspalsh.net^
 ||unsplach.net^
+||unsplah.net^
 ||unsplasc.net^
 ||unsplsh.net^
 ||unsw.to^

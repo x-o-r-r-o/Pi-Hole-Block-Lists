@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-23 08:32 UTC
-# Entries: 9907
+# Last modified: 2026-10-25 08:24 UTC
+# Entries: 9919
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -1716,9 +1716,13 @@
 0.0.0.0 clotplaynews.live
 0.0.0.0 cloudfare.icu
 0.0.0.0 cloudfronte.net
+0.0.0.0 cloudinaryy.net
 0.0.0.0 cloudinery.net
 0.0.0.0 cloudiniry.net
+0.0.0.0 cloudnaery.net
 0.0.0.0 cloudnairy.net
+0.0.0.0 cloudnary.net
+0.0.0.0 cloudnery.net
 0.0.0.0 cloudradar.net
 0.0.0.0 cloudshrinker.com
 0.0.0.0 clourls.com
@@ -2629,7 +2633,10 @@
 0.0.0.0 flextrig.com
 0.0.0.0 flic.kr
 0.0.0.0 flickerlink.com
+0.0.0.0 flickier.net
 0.0.0.0 flickker.net
+0.0.0.0 flickrnet.net
+0.0.0.0 flickrr.net
 0.0.0.0 flii.by
 0.0.0.0 flink.is
 0.0.0.0 flinkio.com
@@ -5922,6 +5929,8 @@
 0.0.0.0 petrovay.com
 0.0.0.0 pew.org
 0.0.0.0 pewrsr.ch
+0.0.0.0 pexelss.net
+0.0.0.0 pexelsx.net
 0.0.0.0 pexls.net
 0.0.0.0 pfapp.io
 0.0.0.0 pg3d.app
@@ -5964,6 +5973,7 @@
 0.0.0.0 pitlink.com
 0.0.0.0 pitt.health
 0.0.0.0 piurl.com
+0.0.0.0 pixabayy.net
 0.0.0.0 pixel.link
 0.0.0.0 pixel.xin
 0.0.0.0 pixelfy.me
@@ -8623,7 +8633,9 @@
 0.0.0.0 unshort.site
 0.0.0.0 unsololink.com
 0.0.0.0 unsp1ash.net
+0.0.0.0 unspalsh.net
 0.0.0.0 unsplach.net
+0.0.0.0 unsplah.net
 0.0.0.0 unsplasc.net
 0.0.0.0 unsplsh.net
 0.0.0.0 unsw.to

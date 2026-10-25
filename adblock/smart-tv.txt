@@ -3,7 +3,7 @@
 ! Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-17 07:47 UTC
+! Last modified: 2026-10-25 08:24 UTC
 ! Entries: 1233
 !
 ! Built from these sources (see their licenses):
@@ -227,7 +227,6 @@
 ||api.eu-west-1.aiv-delivery.net^
 ||api.eu.hismarttv.com^
 ||api.euro.hismarttv.com^
-||api.metrics.eu-central-1.iris.apx.amazon.dev^
 ||api.metrics.us-west-2.iris.apx.amazon.dev^
 ||api.runestone.samsung.com^
 ||api.thetake.com^
@@ -711,6 +710,7 @@
 ||me.nextlgsdp.com^
 ||mercury.dl.playstation.net^
 ||metric.account-samsung.com^
+||metrics.eu-central-1.iris.apx.amazon.dev^
 ||metrics.eu-south-2.iris.apx.amazon.dev^
 ||metrics.eu-west-1.iris.apx.amazon.dev^
 ||metrics.media-amazon.com^

@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-24 08:07 UTC
-# Entries: 2764
+# Last modified: 2026-10-25 08:24 UTC
+# Entries: 2762
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -599,7 +599,6 @@ cs-clan.org
 csproject.org
 cstu.io
 ct.ws
-ctempurl.com
 cuesinc.com
 cupddns.net
 custom-gaming.net
@@ -2445,7 +2444,6 @@ temporary-demo.site
 temporary.site
 tentbuildingservices.eu
 test.lc
-testingnow.me
 texasdollies.com
 tftpd.net
 th.gp
