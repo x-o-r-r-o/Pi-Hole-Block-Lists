@@ -2,8 +2,8 @@
 # Description: Roblox, Fortnite/Epic, Free Fire, PUBG/BGMI, Minecraft, Steam, Xbox, PlayStation, Nintendo, EA, Riot (League, Valorant), Battle.net, Ubisoft, Call of Duty, Clash of Clans, Mobile Legends, Genshin Impact, Candy Crush, Among Us.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-19 09:32 UTC
-# Entries: 23877
+# Last modified: 2026-10-26 09:34 UTC
+# Entries: 23880
 #
 # Built from these sources (see their licenses):
 #   - Gaming platform servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/gaming-platforms.json
@@ -6355,6 +6355,7 @@
 0.0.0.0 developer.xboxservices.com
 0.0.0.0 developer2.xboxlive.com
 0.0.0.0 developerauth.xboxlive.com
+0.0.0.0 developers.krafton.com
 0.0.0.0 developers.roblox.com
 0.0.0.0 developers.ubisoft.com
 0.0.0.0 developertokenservice-canary.xboxservices.com
@@ -22714,6 +22715,7 @@
 0.0.0.0 www.minecraft.net
 0.0.0.0 www.minecraftservices.com
 0.0.0.0 www.minigames.clashofclans.com
+0.0.0.0 www.miobjectbiz.mihoyo.com
 0.0.0.0 www.mmobile.ubisoft.com
 0.0.0.0 www.moba.garena.com
 0.0.0.0 www.mobilebridge-qa.esf.riotgames.com
@@ -23815,6 +23817,7 @@
 0.0.0.0 ys.hoyoverse.com
 0.0.0.0 ys.mihoyo.com
 0.0.0.0 ysmail.mihoyo.com
+0.0.0.0 yuanbao.mihoyo.com
 0.0.0.0 yuzu-staging.xboxservices.com
 0.0.0.0 ywzd.mihoyo.com
 0.0.0.0 yyf.moonton.com
