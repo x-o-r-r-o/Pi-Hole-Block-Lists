@@ -2,8 +2,8 @@
 # Description: Ads in the system menus and telemetry of PlayStation, Xbox and Nintendo Switch consoles. Small and safe for online play (on Xbox it also hides Game Pass Perks).
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 07:14 UTC
-# Entries: 13
+# Last modified: 2026-10-28 09:39 UTC
+# Entries: 16
 #
 # Built from these sources (see their licenses):
 #   - Dandelion Sprout's Game Console Adblock List: https://github.com/DandelionSprout/adfilt
@@ -21,3 +21,6 @@ receive-lp1.er.srv.nintendo.net
 sprofile-lp1.cdn.nintendo.net
 telemetry-cii.api.playstation.com
 telemetry-console.api.playstation.com
+telemetry.microsoft.com
+vortex-win.data.microsoft.com
+vortex.data.microsoft.com

@@ -2,8 +2,8 @@
 # Description: Ad networks used inside Android and iOS apps.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-23 08:32 UTC
-# Entries: 8346
+# Last modified: 2026-10-28 09:39 UTC
+# Entries: 8348
 #
 # Built from these sources (see their licenses):
 #   - AdAway Default: https://adaway.org
@@ -2445,6 +2445,7 @@
 0.0.0.0 cdn-resources.prfct.cc
 0.0.0.0 cdn-rtb.sape.ru
 0.0.0.0 cdn-s2s.buysellads.net
+0.0.0.0 cdn-settings.af-sdk.com
 0.0.0.0 cdn-settings.appsflyersdk.com
 0.0.0.0 cdn-settings.segment.com
 0.0.0.0 cdn-static.formisimo.com
@@ -4319,6 +4320,7 @@
 0.0.0.0 in.wzrkt.com
 0.0.0.0 in1-spiky.wzrkt.com
 0.0.0.0 in1.wzrkt.com
+0.0.0.0 inapps.af-sdk.com
 0.0.0.0 inapps.appsflyer.com
 0.0.0.0 inc2.igexin.com
 0.0.0.0 inclk.com
