@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-28 09:39 UTC
-! Entries: 3039
+! Last modified: 2026-10-29 09:57 UTC
+! Entries: 3033
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -845,6 +845,7 @@
 @@||skystone.games^
 @@||slashtw.space^
 @@||slide.new^
+@@||slopmop.lol^
 @@||slow.pics^
 @@||slowfood.guide^
 @@||slussen.biz^
@@ -1762,7 +1763,6 @@
 ||doomdns.com^
 ||doomdns.org^
 ||doorvpn.com^
-||dothome.co.kr^
 ||dougtreadwell.com^
 ||douploads.net^
 ||download.ac^
@@ -2048,7 +2048,6 @@
 ||free.bizhat.com^
 ||free.cr^
 ||free.lc^
-||free.nf^
 ||freeasphost.net^
 ||freecities.com^
 ||freeddns.com^
@@ -2761,7 +2760,6 @@
 ||myblogvoice.com^
 ||mybluehost.me^
 ||mybluehostin.me^
-||myclickfunnels.com^
 ||mycompany.tv^
 ||mycpanel.rs^
 ||mydad.info^
@@ -3236,7 +3234,6 @@
 ||simple-url.com^
 ||simplecharity.com^
 ||sino.tw^
-||sitebeat.crazydomains.com^
 ||sitelutions.com^
 ||sitepalace.com^
 ||sitey.me^
@@ -3533,7 +3530,6 @@
 ||webaccess-alert.com^
 ||webaccess-email.com^
 ||webblog24.de^
-||webcindario.com^
 ||webhop.info^
 ||webhop.me^
 ||webhop.net^
@@ -3599,7 +3595,6 @@
 ||xl.lc^
 ||xml.in^
 ||xname.org^
-||xo.je^
 ||xpresit.net^
 ||xsph.ru^
 ||xtreemhost.com^

@@ -2,8 +2,8 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-20 08:32 UTC
-# Entries: 3165
+# Last modified: 2026-10-29 09:57 UTC
+# Entries: 3284
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -59,13 +59,22 @@
 0.0.0.0 ad-creative.projectcarmen.com
 0.0.0.0 ad-drcn.media.dbankcloud.cn
 0.0.0.0 ad-drcn.media.dbankcloud.ru
+0.0.0.0 ad-format-i18n.tiktokv.com
+0.0.0.0 ad-format-ie.tiktokv.eu
+0.0.0.0 ad-format-ru.tiktokv.com
 0.0.0.0 ad-format-sg.tiktokv.com
 0.0.0.0 ad-format-ttp2.tiktokv.eu
+0.0.0.0 ad-format-ttp2.tiktokv.us
+0.0.0.0 ad-format-ttp2.us.tiktokv.com
+0.0.0.0 ad-format.tiktokv.eu
 0.0.0.0 ad-format.tiktokv.us
+0.0.0.0 ad-format.us.tiktokv.com
 0.0.0.0 ad-format16-normal-useastred.tiktokv.eu
 0.0.0.0 ad-growth-in.heytapmobile.com
 0.0.0.0 ad-growth-ru.heytapmobile.com
 0.0.0.0 ad-growth-sg.heytapmobile.com
+0.0.0.0 ad-instantpage-i18n.tiktokv.com
+0.0.0.0 ad-instantpage-ie.tiktokv.eu
 0.0.0.0 ad-instantpage-ru.tiktokv.com
 0.0.0.0 ad-instantpage-sg.tiktokv.com
 0.0.0.0 ad-instantpage-sg.tiktokv.com.edgekey.net
@@ -74,10 +83,13 @@
 0.0.0.0 ad-instantpage-ttp2.tiktokv.eu.ttdns3.com
 0.0.0.0 ad-instantpage-ttp2.tiktokv.us
 0.0.0.0 ad-instantpage-ttp2.tiktokv.us.edgesuite.net
+0.0.0.0 ad-instantpage-ttp2.us.tiktokv.com
 0.0.0.0 ad-instantpage-va.tiktokv.com
+0.0.0.0 ad-instantpage.tiktokv.eu
 0.0.0.0 ad-instantpage.tiktokv.us
 0.0.0.0 ad-instantpage.tiktokv.us.edgesuite.net
 0.0.0.0 ad-instantpage.tiktokv.us.ttdns4.com
+0.0.0.0 ad-instantpage.us.tiktokv.com
 0.0.0.0 ad-log-upload-os.hoyoverse.com
 0.0.0.0 ad.cdn.pandora.xiaomi.com
 0.0.0.0 ad.doubleclick.net
@@ -92,6 +104,7 @@
 0.0.0.0 ad.rus.xiaomi.com
 0.0.0.0 ad.tiktok.tv
 0.0.0.0 ad.tiktokv.com
+0.0.0.0 ad.tiktokv.eu
 0.0.0.0 ad.tiktokv.us
 0.0.0.0 ad.xiaomi.com
 0.0.0.0 adash-emas.cn-hangzhou.aliyuncs.com
@@ -140,13 +153,17 @@
 0.0.0.0 ads-sg.business-tiktok.com
 0.0.0.0 ads-sg.tiktok.com
 0.0.0.0 ads-ttp2.tiktokw.eu
+0.0.0.0 ads-ttp2.tiktokw.us
 0.0.0.0 ads-ttp2.us.tiktok.com
+0.0.0.0 ads-useast2a.tiktok.com
 0.0.0.0 ads-va.business-tiktok.com
+0.0.0.0 ads-va.tiktok.com
 0.0.0.0 ads.api.vungle.com
 0.0.0.0 ads.apple.com
 0.0.0.0 ads.cloud.huawei.com
 0.0.0.0 ads.heytapmobi.com
 0.0.0.0 ads.heytapmobile.com
+0.0.0.0 ads.in.tiktok.com
 0.0.0.0 ads.mopub.com
 0.0.0.0 ads.oppomobile.com
 0.0.0.0 ads.tiktok.com
@@ -246,6 +263,7 @@
 0.0.0.0 analytics-events.inshorts.com
 0.0.0.0 analytics-exp-i18n.tiktok.com
 0.0.0.0 analytics-exp-i18n.tiktok.com.edgekey.net
+0.0.0.0 analytics-exp-ie.tiktokw.eu
 0.0.0.0 analytics-exp-ru.tiktok.com
 0.0.0.0 analytics-exp-ru.tiktok.com.edgesuite.net
 0.0.0.0 analytics-exp-ru.tiktok.com.ttdns2.com
@@ -995,6 +1013,7 @@
 0.0.0.0 dls-account.di.atlas.samsung.com
 0.0.0.0 dls-ddc.dqa.samsung.com
 0.0.0.0 dls-udc.dqa.samsung.com
+0.0.0.0 dls.di.atlas.samsung.com
 0.0.0.0 dls.di.runestone.samsung.com
 0.0.0.0 dls2s.appsflyer.com
 0.0.0.0 dm.pstatp.com
@@ -1249,8 +1268,10 @@
 0.0.0.0 googleadapis.l.google.com
 0.0.0.0 googleads.g.doubleclick.net
 0.0.0.0 gplog-sg.byteoversea.com
+0.0.0.0 gplog-sg.capcutapi.com
 0.0.0.0 gplog-va-useast2a.byteoversea.com
 0.0.0.0 gplog-va.byteoversea.com
+0.0.0.0 gplog-va.capcutapi.com
 0.0.0.0 gpm-mon-sg.byteoversea.com
 0.0.0.0 gpm-mon-va-useast1a.byteoversea.com
 0.0.0.0 gpm-mon-va-useast2a.byteoversea.com
@@ -1524,6 +1545,11 @@
 0.0.0.0 lhzbdvm.com
 0.0.0.0 line1-log.biligame.net
 0.0.0.0 live-video-log16-normal-alisg.tiktokv.com
+0.0.0.0 live-video-log16-normal-useast1a.tiktokv.com
+0.0.0.0 live-video-log16-normal-useast2a.tiktokv.com
+0.0.0.0 live-video-log16-normal-useast2a.tiktokv.eu
+0.0.0.0 live-video-log16-normal-useast5.tiktokv.us
+0.0.0.0 live-video-log16-normal-useastred.tiktokv.eu
 0.0.0.0 live.direct.ly
 0.0.0.0 live.miphone.pandora.xiaomi.com
 0.0.0.0 live.ravelin.click
@@ -1532,9 +1558,13 @@
 0.0.0.0 loadus.exelator.com
 0.0.0.0 localytics.com
 0.0.0.0 location-i18n.tiktokv.com
+0.0.0.0 location-ie.tiktokv.eu
 0.0.0.0 location-ru.tiktokv.com
 0.0.0.0 location-sg.tiktokv.com
 0.0.0.0 location-ttp2.tiktokv.eu
+0.0.0.0 location-ttp2.tiktokv.us
+0.0.0.0 location-ttp2.tiktokw.eu
+0.0.0.0 location-ttp2.tiktokw.us
 0.0.0.0 location-ttp2.us.tiktokv.com
 0.0.0.0 location-v6-i18n.tiktokv.com
 0.0.0.0 location-v6-ru.tiktokv.com
@@ -1543,20 +1573,26 @@
 0.0.0.0 location-v6-ttp2.tiktokv.us
 0.0.0.0 location-v6-va.tiktokv.com
 0.0.0.0 location-v6.tiktokv.com
+0.0.0.0 location-v6.tiktokv.eu
 0.0.0.0 location-v6.tiktokv.us
 0.0.0.0 location-va.tiktokv.com
+0.0.0.0 location.capcutapi.us
 0.0.0.0 location.tiktok.com
 0.0.0.0 location.tiktokv.com
 0.0.0.0 location.tiktokv.eu
 0.0.0.0 location.tiktokv.us
+0.0.0.0 location.tiktokw.eu
 0.0.0.0 location.tiktokw.us
 0.0.0.0 location.us.tiktokv.com
 0.0.0.0 location16-normal-useastred.tiktokv.eu
+0.0.0.0 location16-normal-useastred.tiktokw.eu
 0.0.0.0 locationv16-normal-useastred.tiktokv.eu
 0.0.0.0 lockcard-service-in.allawnos.com
 0.0.0.0 log-boot.capcutapi.com
 0.0.0.0 log-collector.shopee
 0.0.0.0 log-dr.tiktokv.com
+0.0.0.0 log-dr.tiktokv.eu
+0.0.0.0 log-dr.tiktokv.us
 0.0.0.0 log-dr16-normal-no1a.tiktokv.eu
 0.0.0.0 log-dr16-normal-useast1a.tiktokv.com
 0.0.0.0 log-dr16-normal-useast5.tiktokv.us
@@ -1592,6 +1628,7 @@
 0.0.0.0 log-v2-boot.capcutapi.com
 0.0.0.0 log-v4-insight.kaizenplatform.net
 0.0.0.0 log-va-useast2a.tiktokv.com
+0.0.0.0 log-va.capcutapi.com
 0.0.0.0 log-va.tiktokv.com
 0.0.0.0 log-verify.mob.com
 0.0.0.0 log.51changdu.com
@@ -1605,6 +1642,7 @@
 0.0.0.0 log.bloodsugars.live
 0.0.0.0 log.byteoversea.com
 0.0.0.0 log.calomeal.com
+0.0.0.0 log.capcutapi.us
 0.0.0.0 log.cleandesigner.live
 0.0.0.0 log.cleanertoolboxonline.live
 0.0.0.0 log.cleanerwish.live
@@ -1654,6 +1692,7 @@
 0.0.0.0 log.sweepycleanplus.com
 0.0.0.0 log.talkie-ai.com
 0.0.0.0 log.tiktokv.com
+0.0.0.0 log.tiktokv.eu
 0.0.0.0 log.tiktokv.us
 0.0.0.0 log.tpns.tencent.com
 0.0.0.0 log.ultimatecleaner.pro
@@ -1672,8 +1711,11 @@
 0.0.0.0 log15-normal.tiktokv.com
 0.0.0.0 log15.byteoversea.com
 0.0.0.0 log16-applog-useast5.us.tiktokv.com
+0.0.0.0 log16-normal-ie.tiktokv.eu
 0.0.0.0 log16-normal-sg.capcutapi.com
 0.0.0.0 log16-normal-us-ttp.capcutapi.us
+0.0.0.0 log16-normal-zr-alisg.tiktokv.com
+0.0.0.0 log16-normal-zr.tiktokv.com
 0.0.0.0 log16-normal.capcutapi.com
 0.0.0.0 log16-normal.tiktokv.com
 0.0.0.0 log16-platform-ycru.tiktokv.com
@@ -1687,8 +1729,14 @@
 0.0.0.0 log19-applog-useast2a.tiktokv.com
 0.0.0.0 log19-applog-useast5.us.tiktokv.com
 0.0.0.0 log19-normal-alisg.tiktokv.com
+0.0.0.0 log19-normal-no1a.tiktokv.eu
 0.0.0.0 log19-normal-useast1a.tiktokv.com
 0.0.0.0 log19-normal-useast2a.tiktokv.com
+0.0.0.0 log19-normal-useast5.tiktokv.us
+0.0.0.0 log19-normal-useast8.tiktokv.us
+0.0.0.0 log19-normal-zr-alisg.tiktokv.com
+0.0.0.0 log19-normal-zr-useast1a.tiktokv.com
+0.0.0.0 log19-normal-zr.tiktokv.com
 0.0.0.0 log19-normal.tiktokv.com
 0.0.0.0 log2.ihubgo.info
 0.0.0.0 log2.perfectworldgames.com
@@ -1698,14 +1746,23 @@
 0.0.0.0 log22-normal-alisg.tiktokv.com
 0.0.0.0 log22-normal-useast1a.tiktokv.com
 0.0.0.0 log22-normal-useast2a.tiktokv.com
+0.0.0.0 log22-normal-zr-alisg.tiktokv.com
+0.0.0.0 log22-normal-zr-useast1a.tiktokv.com
+0.0.0.0 log22-normal-zr.tiktokv.com
+0.0.0.0 log22-normal.capcutapi.com
 0.0.0.0 log22-normal.tiktokv.com
 0.0.0.0 log3-normal-c-alisg.tiktokv.com
 0.0.0.0 log3-normal-c-useast1a.tiktokv.com
 0.0.0.0 log31-normal-alisg.tiktokv.com
 0.0.0.0 log31-normal-no1a.tiktokv.eu
+0.0.0.0 log31-normal-sg.capcutapi.com
 0.0.0.0 log31-normal-useast1a.tiktokv.com
 0.0.0.0 log31-normal-useast2a.tiktokv.com
 0.0.0.0 log31-normal-useastred.tiktokv.eu
+0.0.0.0 log31-normal-zr-alisg.tiktokv.com
+0.0.0.0 log31-normal-zr-useast1a.tiktokv.com
+0.0.0.0 log31-normal-zr.tiktokv.com
+0.0.0.0 log31-normal.capcutapi.com
 0.0.0.0 log31-normal.tiktokv.com
 0.0.0.0 log32-normal-alisg.tiktokv.com
 0.0.0.0 log32-normal-no1a.tiktokv.eu
@@ -1713,6 +1770,8 @@
 0.0.0.0 log32-normal-useast1a.tiktokv.com
 0.0.0.0 log32-normal-useast2a.tiktokv.com
 0.0.0.0 log32-normal-useastred.tiktokv.eu
+0.0.0.0 log32-normal-zr-alisg.tiktokv.com
+0.0.0.0 log32-normal-zr-useast1a.tiktokv.com
 0.0.0.0 log32-normal-zr.tiktokv.com
 0.0.0.0 log32-normal.capcutapi.com
 0.0.0.0 log32-normal.tiktokv.com
@@ -1790,6 +1849,7 @@
 0.0.0.0 mab-mob2.websearchapp.com
 0.0.0.0 maliva-mcs-useast2a.byteoversea.com
 0.0.0.0 maliva-mcs.byteoversea.com
+0.0.0.0 maliva-mcs.capcutapi.com
 0.0.0.0 mantual.pandora.xiaomi.com
 0.0.0.0 marketing.services.apple
 0.0.0.0 matomo.podslink.net
@@ -2035,9 +2095,23 @@
 0.0.0.0 mon.tiktokv.eu
 0.0.0.0 mon.us.tiktokv.com
 0.0.0.0 mon11-misc-lq.fqnovel.com
+0.0.0.0 mon16-normal-ie.tiktokv.eu
 0.0.0.0 mon16-normal-sg.capcutapi.com
 0.0.0.0 mon16-normal-us-ttp.capcutapi.us
+0.0.0.0 mon16-normal-zr-alisg.tiktokv.com
+0.0.0.0 mon16-normal.capcutapi.com
+0.0.0.0 mon19-normal-zr-alisg.tiktokv.com
+0.0.0.0 mon19-normal-zr-useast1a.tiktokv.com
+0.0.0.0 mon22-normal-zr-alisg.tiktokv.com
+0.0.0.0 mon22-normal-zr-useast1a.tiktokv.com
+0.0.0.0 mon31-normal-sg.capcutapi.com
+0.0.0.0 mon31-normal-zr-alisg.tiktokv.com
+0.0.0.0 mon31-normal-zr-useast1a.tiktokv.com
+0.0.0.0 mon31-normal.capcutapi.com
 0.0.0.0 mon32-normal-sg.capcutapi.com
+0.0.0.0 mon32-normal-zr-alisg.tiktokv.com
+0.0.0.0 mon32-normal-zr-useast1a.tiktokv.com
+0.0.0.0 mon32-normal.capcutapi.com
 0.0.0.0 monbk.tiktokv.com
 0.0.0.0 monitor-stsdk.vivoglobal.com
 0.0.0.0 monitor.music.qq.com
@@ -2218,6 +2292,7 @@
 0.0.0.0 p.statp.com
 0.0.0.0 p.www.xiaomi.com
 0.0.0.0 p16-ad.byteoversea.com
+0.0.0.0 p19-tiktok-ads-sg.tiktokcdn.com
 0.0.0.0 package.box.xiaomi.com
 0.0.0.0 package.cdn.pandora.xiaomi.com
 0.0.0.0 pandora.mi.com
@@ -2237,6 +2312,7 @@
 0.0.0.0 pc-mon-normal-sg.capcutapi.com
 0.0.0.0 pc-mon-v2-boot.capcutapi.com
 0.0.0.0 pc-mon-va.byteoversea.com
+0.0.0.0 pc-mon-va.capcutapi.com
 0.0.0.0 pc-mon.snssdk.com
 0.0.0.0 pc-mon16-normal-us-ttp.capcutapi.us
 0.0.0.0 pco-sm-log.tantanapp.com
@@ -2379,13 +2455,16 @@
 0.0.0.0 rtag.farmers.com
 0.0.0.0 rtc-logger-i18n.tiktokv.com
 0.0.0.0 rtc-logger-ie.tiktokv.eu
+0.0.0.0 rtc-logger-ttp2.tiktokv.eu
 0.0.0.0 rtc-logger-ttp2.tiktokv.us
 0.0.0.0 rtc-logger-ttp2.us.tiktokv.com
 0.0.0.0 rtc-logger-va.tiktokv.com
 0.0.0.0 rtc-logger.bytevcloud.com
 0.0.0.0 rtc-logger.tiktokv.com
+0.0.0.0 rtc-logger.tiktokv.eu
 0.0.0.0 rtc-logger.tiktokv.us
 0.0.0.0 rtc-logger.us.tiktokv.com
+0.0.0.0 rtc-logger16-normal-alisg.tiktokv.com
 0.0.0.0 rtc-logger16-normal-useastred.tiktokv.eu
 0.0.0.0 rtlog-i18n.tiktokv.com
 0.0.0.0 rtlog-phx.tiktokv.com
@@ -2395,6 +2474,7 @@
 0.0.0.0 rtlog.byteoversea.com
 0.0.0.0 rtlog.isnssdk.com
 0.0.0.0 rtlog.tiktokv.com
+0.0.0.0 rtlog.tiktokv.eu
 0.0.0.0 rtlog.us.tiktokv.com
 0.0.0.0 rtlog15-normal-alisg.tiktokv.com
 0.0.0.0 rtlog15-normal-useast1a.tiktokv.com
@@ -2404,6 +2484,7 @@
 0.0.0.0 rtlog16-applog-useast2a.tiktokv.com
 0.0.0.0 rtlog16-applog-useast5.us.tiktokv.com
 0.0.0.0 rtlog16-normal-alisg.tiktokv.com
+0.0.0.0 rtlog16-normal-ie.tiktokv.eu
 0.0.0.0 rtlog16-normal-ind.tiktokv.com
 0.0.0.0 rtlog16-normal-no1a.tiktokv.eu
 0.0.0.0 rtlog16-normal-useast1a.tiktokv.com
@@ -2412,6 +2493,9 @@
 0.0.0.0 rtlog16-normal-useast8.tiktokv.us
 0.0.0.0 rtlog16-normal-useast8.us.tiktokv.com
 0.0.0.0 rtlog16-normal-useastred.tiktokv.eu
+0.0.0.0 rtlog16-normal-zr-alisg.tiktokv.com
+0.0.0.0 rtlog16-normal-zr-useast1a.tiktokv.com
+0.0.0.0 rtlog16-normal-zr.tiktokv.com
 0.0.0.0 rtlog16-normal.tiktokv.com
 0.0.0.0 rtlog16-platform-useast5.us.tiktokv.com
 0.0.0.0 rtlog16-tmp-normal-useast1a.tiktokv.com
@@ -2423,9 +2507,14 @@
 0.0.0.0 rtlog19-applog-useast2a.tiktokv.com
 0.0.0.0 rtlog19-applog-useast5.us.tiktokv.com
 0.0.0.0 rtlog19-normal-alisg.tiktokv.com
+0.0.0.0 rtlog19-normal-no1a.tiktokv.eu
 0.0.0.0 rtlog19-normal-useast1a.tiktokv.com
 0.0.0.0 rtlog19-normal-useast2a.tiktokv.com
+0.0.0.0 rtlog19-normal-useast5.tiktokv.us
+0.0.0.0 rtlog19-normal-useast8.tiktokv.us
+0.0.0.0 rtlog19-normal-zr-alisg.tiktokv.com
 0.0.0.0 rtlog19-normal-zr-useast1a.tiktokv.com
+0.0.0.0 rtlog19-normal-zr.tiktokv.com
 0.0.0.0 rtlog19-normal.tiktokv.com
 0.0.0.0 rtlog19-platform-useast5.us.tiktokv.com
 0.0.0.0 rtlog22-applog-useast1a.tiktokv.com
@@ -2433,13 +2522,27 @@
 0.0.0.0 rtlog22-normal-alisg.tiktokv.com
 0.0.0.0 rtlog22-normal-useast1a.tiktokv.com
 0.0.0.0 rtlog22-normal-useast2a.tiktokv.com
+0.0.0.0 rtlog22-normal-zr-alisg.tiktokv.com
+0.0.0.0 rtlog22-normal-zr-useast1a.tiktokv.com
+0.0.0.0 rtlog22-normal-zr.tiktokv.com
 0.0.0.0 rtlog22-normal.tiktokv.com
 0.0.0.0 rtlog31-normal-alisg.tiktokv.com
+0.0.0.0 rtlog31-normal-no1a.tiktokv.eu
 0.0.0.0 rtlog31-normal-useast1a.tiktokv.com
 0.0.0.0 rtlog31-normal-useast2a.tiktokv.com
+0.0.0.0 rtlog31-normal-useastred.tiktokv.eu
+0.0.0.0 rtlog31-normal-zr-alisg.tiktokv.com
+0.0.0.0 rtlog31-normal-zr-useast1a.tiktokv.com
+0.0.0.0 rtlog31-normal-zr.tiktokv.com
 0.0.0.0 rtlog31-normal.tiktokv.com
 0.0.0.0 rtlog32-normal-alisg.tiktokv.com
+0.0.0.0 rtlog32-normal-no1a.tiktokv.eu
+0.0.0.0 rtlog32-normal-useast2a.tiktokv.eu
+0.0.0.0 rtlog32-normal-useastred.tiktokv.eu
+0.0.0.0 rtlog32-normal-zr-alisg.tiktokv.com
+0.0.0.0 rtlog32-normal-zr-useast1a.tiktokv.com
 0.0.0.0 rtlog32-normal-zr.tiktokv.com
+0.0.0.0 rtlog32-normal.tiktokv.com
 0.0.0.0 rtlog58-normal-alisg.tiktokv.com
 0.0.0.0 rtlog58-normal-useast1a.tiktokv.com
 0.0.0.0 rtlog58-normal-useast2a.tiktokv.com
@@ -2610,6 +2713,11 @@
 0.0.0.0 sdk.stats-locations.com
 0.0.0.0 sdkconfig.ad.intl.xiaomi.com
 0.0.0.0 sdkconfig.ad.xiaomi.com
+0.0.0.0 sdkconfig.eu.xiaomi.com
+0.0.0.0 sdkconfig.india.xiaomi.com
+0.0.0.0 sdkconfig.intl.xiaomi.com
+0.0.0.0 sdkconfig.rus.xiaomi.com
+0.0.0.0 sdkconfig.xiaomi.com
 0.0.0.0 sdklogs.avocarrot.com
 0.0.0.0 sdks.stats-locations.com
 0.0.0.0 sdktm.w.inmobi.com
@@ -3015,6 +3123,8 @@
 0.0.0.0 ucus.ucweb.com
 0.0.0.0 ue.flipboard.com
 0.0.0.0 ug-sg.byteoversea.com
+0.0.0.0 ug-sg.capcutapi.com
+0.0.0.0 ug-va.capcutapi.com
 0.0.0.0 ug.snssdk.com
 0.0.0.0 uk-timesync.vivoglobal.com
 0.0.0.0 ulink.adjust.com
@@ -3045,6 +3155,7 @@
 0.0.0.0 upu.samsungelectronics.com
 0.0.0.0 ureca.samsungapps.com
 0.0.0.0 url4077.ads-service.tiktok.com
+0.0.0.0 url7108.ads-service.tiktok.com
 0.0.0.0 us-east-1.paa-reporting-advertising.amazon
 0.0.0.0 us-events.api.iheart.com
 0.0.0.0 us-report.gras.samsungdm.com
@@ -3129,13 +3240,21 @@
 0.0.0.0 xlog-va-useast2a.byteoversea.com
 0.0.0.0 xlog-va-useast2a.tiktokv.com
 0.0.0.0 xlog-va.byteoversea.com
+0.0.0.0 xlog-va.capcutapi.com
 0.0.0.0 xlog-va.tiktokv.com
 0.0.0.0 xlog.byteoversea.com
+0.0.0.0 xlog.capcutapi.us
 0.0.0.0 xlog.snssdk.com
 0.0.0.0 xlog.tiktokv.com
+0.0.0.0 xlog.tiktokv.eu
 0.0.0.0 xlog16-normal-c-useast1a.tiktokv.com
 0.0.0.0 xlog16-normal-c-useast2a.tiktokv.com
+0.0.0.0 xlog16-normal-ie.tiktokv.eu
+0.0.0.0 xlog16-normal-no1a.tiktokv.eu
+0.0.0.0 xlog16-normal-useast5.tiktokv.us
+0.0.0.0 xlog16-normal-useast8.tiktokv.us
 0.0.0.0 xlog16-normal-useast8.us.tiktokv.com
+0.0.0.0 xlog16-normal-useastred.tiktokv.eu
 0.0.0.0 xlog16-platform-useast5.us.tiktokv.com
 0.0.0.0 xlog16-platform-ycru.tiktokv.com
 0.0.0.0 xlog16-tmp-normal-useast1a.tiktokv.com

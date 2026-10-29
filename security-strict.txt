@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-28 09:39 UTC
-# Entries: 2761
+# Last modified: 2026-10-29 09:57 UTC
+# Entries: 2755
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -749,7 +749,6 @@ doomdns.com
 doomdns.org
 doorvpn.com
 dot.tk
-dothome.co.kr
 dougtreadwell.com
 douploads.net
 downfall.shop
@@ -1052,7 +1051,6 @@ free-ddns.com
 free.bizhat.com
 free.cr
 free.lc
-free.nf
 freeasphost.net
 freeblog.biz
 freecities.com
@@ -1802,7 +1800,6 @@ mybb.pw
 myblogvoice.com
 mybluehost.me
 mybluehostin.me
-myclickfunnels.com
 mycompany.tv
 mycpanel.rs
 mydad.info
@@ -2313,7 +2310,6 @@ silksky.com
 simple-url.com
 simplecharity.com
 sino.tw
-sitebeat.crazydomains.com
 sitelutions.com
 sitepalace.com
 sitey.me
@@ -2634,7 +2630,6 @@ webaccess-alert.com
 webaccess-email.com
 webblog24.de
 webboss.site
-webcindario.com
 webhop.biz
 webhop.info
 webhop.me
@@ -2706,7 +2701,6 @@ xddns.de
 xl.lc
 xml.in
 xname.org
-xo.je
 xpresit.net
 xsl.tel
 xsph.ru

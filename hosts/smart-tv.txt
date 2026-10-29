@@ -2,8 +2,8 @@
 # Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-28 09:39 UTC
-# Entries: 1364
+# Last modified: 2026-10-29 09:57 UTC
+# Entries: 1365
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -458,6 +458,7 @@
 0.0.0.0 dls-account.di.atlas.samsung.com
 0.0.0.0 dls-ddc.dqa.samsung.com
 0.0.0.0 dls-udc.dqa.samsung.com
+0.0.0.0 dls.di.atlas.samsung.com
 0.0.0.0 dls.di.runestone.samsung.com
 0.0.0.0 dm-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 dm.nextlgsdp.com

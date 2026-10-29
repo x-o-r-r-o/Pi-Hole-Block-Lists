@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-28 09:39 UTC
-# Entries: 2761
+# Last modified: 2026-10-29 09:57 UTC
+# Entries: 2755
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -749,7 +749,6 @@
 0.0.0.0 doomdns.org
 0.0.0.0 doorvpn.com
 0.0.0.0 dot.tk
-0.0.0.0 dothome.co.kr
 0.0.0.0 dougtreadwell.com
 0.0.0.0 douploads.net
 0.0.0.0 downfall.shop
@@ -1052,7 +1051,6 @@
 0.0.0.0 free.bizhat.com
 0.0.0.0 free.cr
 0.0.0.0 free.lc
-0.0.0.0 free.nf
 0.0.0.0 freeasphost.net
 0.0.0.0 freeblog.biz
 0.0.0.0 freecities.com
@@ -1802,7 +1800,6 @@
 0.0.0.0 myblogvoice.com
 0.0.0.0 mybluehost.me
 0.0.0.0 mybluehostin.me
-0.0.0.0 myclickfunnels.com
 0.0.0.0 mycompany.tv
 0.0.0.0 mycpanel.rs
 0.0.0.0 mydad.info
@@ -2313,7 +2310,6 @@
 0.0.0.0 simple-url.com
 0.0.0.0 simplecharity.com
 0.0.0.0 sino.tw
-0.0.0.0 sitebeat.crazydomains.com
 0.0.0.0 sitelutions.com
 0.0.0.0 sitepalace.com
 0.0.0.0 sitey.me
@@ -2634,7 +2630,6 @@
 0.0.0.0 webaccess-email.com
 0.0.0.0 webblog24.de
 0.0.0.0 webboss.site
-0.0.0.0 webcindario.com
 0.0.0.0 webhop.biz
 0.0.0.0 webhop.info
 0.0.0.0 webhop.me
@@ -2706,7 +2701,6 @@
 0.0.0.0 xl.lc
 0.0.0.0 xml.in
 0.0.0.0 xname.org
-0.0.0.0 xo.je
 0.0.0.0 xpresit.net
 0.0.0.0 xsl.tel
 0.0.0.0 xsph.ru
