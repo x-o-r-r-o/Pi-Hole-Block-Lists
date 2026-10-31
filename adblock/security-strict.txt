@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-29 09:57 UTC
-! Entries: 3033
+! Last modified: 2026-10-31 09:38 UTC
+! Entries: 3024
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -877,6 +877,7 @@
 @@||strims.top^
 @@||stripe.partners^
 @@||suiten.top^
+@@||sukonbu.party^
 @@||sumerian.ink^
 @@||super.money^
 @@||surveycake.biz^
@@ -1274,7 +1275,6 @@
 ||aneisa.com^
 ||anfliegen.de^
 ||angelcamddns.com^
-||annaffiare.org^
 ||anondns.net^
 ||anonfile.com^
 ||anschauen.in^
@@ -1704,7 +1704,6 @@
 ||diskstation.org^
 ||ditchyourip.com^
 ||dive2.net^
-||divx.se^
 ||diyplans.org^
 ||dlinkddns.com^
 ||dmtr.ru^
@@ -1869,7 +1868,6 @@
 ||dynnamn.ru^
 ||dynns.com^
 ||dyns.be^
-||dyns.cx^
 ||dyns.net^
 ||dynserv.org^
 ||dynssl.com^
@@ -2207,7 +2205,6 @@
 ||gt.tc^
 ||gteksecurity.com^
 ||gtk.cl^
-||guardz.ru^
 ||guest.de^
 ||guide.lc^
 ||guild-site.com^
@@ -2532,7 +2529,6 @@
 ||jundy.org^
 ||jungleheart.com^
 ||justdied.com^
-||justns.ru^
 ||jvogt.org^
 ||jwork.ru^
 ||k.gp^
@@ -2600,7 +2596,6 @@
 ||lflinkup.org^
 ||lhosting.info^
 ||liebe.lc^
-||liftmyresume.com^
 ||lihi1.com^
 ||likes-pie.com^
 ||likescandy.com^
@@ -2855,7 +2850,6 @@
 ||networkoutpost.com^
 ||netz.tl^
 ||newmail.ru^
-||nexmicrosystems.com^
 ||nflfan.org^
 ||nhlfan.net^
 ||nicepage.io^
@@ -3234,6 +3228,7 @@
 ||simple-url.com^
 ||simplecharity.com^
 ||sino.tw^
+||sitebeat.crazydomains.com^
 ||sitelutions.com^
 ||sitepalace.com^
 ||sitey.me^
@@ -3364,7 +3359,6 @@
 ||thatip.com^
 ||thddns.net^
 ||the-button.com^
-||the-finance-world.com^
 ||theblacklist.org^
 ||thehomeserver.net^
 ||themcmillans.org^
@@ -3489,7 +3483,6 @@
 ||verkniffen.de^
 ||verymad.net^
 ||viamisoftware.com^
-||vicinanza.org^
 ||vicp.net^
 ||vidcloud.co^
 ||vietnamddns.com^
@@ -3518,6 +3511,7 @@
 ||vuzelia.com^
 ||vxe6.net^
 ||vz.lc^
+||w3spaces.com^
 ||wakingmoon.com^
 ||wan64.de^
 ||wanip.ch^
@@ -3576,7 +3570,6 @@
 ||world-blog.de^
 ||world-store.de^
 ||world.mu^
-||worldsoffinance.com^
 ||worse-than.tv^
 ||writes.de^
 ||writesthisblog.com^
@@ -3614,7 +3607,6 @@
 ||ydns.io^
 ||yellowflashvpn.com^
 ||ygto.com^
-||yi.org^
 ||yiannamarie.com^
 ||yiff.fi^
 ||yj.ae^

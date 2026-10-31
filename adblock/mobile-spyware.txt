@@ -3,8 +3,8 @@
 ! Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-29 09:57 UTC
-! Entries: 3202
+! Last modified: 2026-10-31 09:38 UTC
+! Entries: 3203
 !
 ! Built from these sources (see their licenses):
 !   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -376,6 +376,7 @@
 ||andmlb.kshwtj.com^
 ||android-stat.acestream.net^
 ||android.bugly.qq.com^
+||api-abtest-cdn.learnings.ai^
 ||api-access.pangolin-sdk-toutiao1.com^
 ||api-adservices.apple.com^
 ||api-analytics-bootstrap.metaps.com^

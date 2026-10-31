@@ -2,8 +2,8 @@
 # Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-29 09:57 UTC
-# Entries: 1365
+# Last modified: 2026-10-31 09:38 UTC
+# Entries: 1366
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -233,7 +233,6 @@
 0.0.0.0 api.eu-west-1.aiv-delivery.net
 0.0.0.0 api.eu.hismarttv.com
 0.0.0.0 api.euro.hismarttv.com
-0.0.0.0 api.metrics.us-west-2.iris.apx.amazon.dev
 0.0.0.0 api.runestone.samsung.com
 0.0.0.0 api.thetake.com
 0.0.0.0 api.us-east-1.aiv-delivery.net
@@ -767,6 +766,7 @@
 0.0.0.0 metrics.eu-west-1.iris.apx.amazon.dev
 0.0.0.0 metrics.media-amazon.com
 0.0.0.0 metrics.us-east-1.iris.apx.amazon.dev
+0.0.0.0 metrics.us-west-2.iris.apx.amazon.dev
 0.0.0.0 mf.nextlgsdp.com
 0.0.0.0 mg-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 mg.nextlgsdp.com
@@ -933,6 +933,7 @@
 0.0.0.0 redbutton-lb-prod.redbutton.de
 0.0.0.0 redbutton.sim-technik.de
 0.0.0.0 regi.di.atlas.samsung.com
+0.0.0.0 report.diagnostic.networking.aws.dev
 0.0.0.0 report.gras.samsungdm.com
 0.0.0.0 ro-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ro-info-lgsmartad-com.aws-prd.net

@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-29 09:57 UTC
-# Entries: 2755
+# Last modified: 2026-10-31 09:38 UTC
+# Entries: 2742
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -232,7 +232,6 @@ and-you.de
 aneisa.com
 anfliegen.de
 angelcamddns.com
-annaffiare.org
 anondns.net
 anonfile.com
 anschauen.in
@@ -685,7 +684,6 @@ diskstation.me
 diskstation.org
 ditchyourip.com
 dive2.net
-divx.se
 diyplans.org
 dlinkddns.com
 dmtr.ru
@@ -739,7 +737,6 @@ does-it.net
 doesntexist.com
 doesntexist.org
 domain.lc
-domain.name
 donhoo.com
 donkeyhot.net
 dontexist.com
@@ -860,7 +857,6 @@ dynme.ovh
 dynnamn.ru
 dynns.com
 dyns.be
-dyns.cx
 dyns.net
 dynserv.org
 dynssl.com
@@ -1221,7 +1217,6 @@ gslb.me
 gt.tc
 gteksecurity.com
 gtk.cl
-guardz.ru
 guest.de
 guide.lc
 guild-site.com
@@ -1559,7 +1554,6 @@ jumpingcrab.com
 jundy.org
 jungleheart.com
 justdied.com
-justns.ru
 jvogt.org
 jwork.ru
 k.gp
@@ -1630,7 +1624,6 @@ lflinkup.net
 lflinkup.org
 lhosting.info
 liebe.lc
-liftmyresume.com
 lihi1.com
 lihi3.cc
 likes-pie.com
@@ -1796,7 +1789,6 @@ myactivedirectory.com
 myaddr.dev
 myaddr.io
 myaddr.tools
-mybb.pw
 myblogvoice.com
 mybluehost.me
 mybluehostin.me
@@ -1900,7 +1892,6 @@ networkguru.com
 networkoutpost.com
 netz.tl
 newmail.ru
-nexmicrosystems.com
 nflfan.org
 nhlfan.net
 nicepage.io
@@ -2310,6 +2301,7 @@ silksky.com
 simple-url.com
 simplecharity.com
 sino.tw
+sitebeat.crazydomains.com
 sitelutions.com
 sitepalace.com
 sitey.me
@@ -2381,7 +2373,6 @@ stormpages.com
 stoupin.ru
 strangled.net
 stroyexpert.org
-studio.site
 stuff-4-sale.org
 stuff-4-sale.us
 stufftoread.com
@@ -2448,7 +2439,6 @@ thamboli.co.za
 thatip.com
 thddns.net
 the-button.com
-the-finance-world.com
 theblacklist.org
 thehomeserver.net
 themcmillans.org
@@ -2459,7 +2449,6 @@ theworkpc.com
 thingsnewandused.com
 thruhere.net
 tiiny.io
-tiiny.site
 tinylink.in
 tinyrealm.com
 tinyurl.ph
@@ -2582,7 +2571,6 @@ verifypass.pw
 verkniffen.de
 verymad.net
 viamisoftware.com
-vicinanza.org
 vicp.cc
 vicp.net
 vidcloud.co
@@ -2612,6 +2600,7 @@ vr.lt
 vuzelia.com
 vxe6.net
 vz.lc
+w3spaces.com
 wakingmoon.com
 wan64.de
 wanip.ch
@@ -2679,7 +2668,6 @@ workisboring.com
 world-blog.de
 world-store.de
 world.mu
-worldsoffinance.com
 worse-than.tv
 writes.de
 writesthisblog.com
@@ -2723,7 +2711,6 @@ ydns.io
 yellowflashvpn.com
 ygrrvlvvgf.top
 ygto.com
-yi.org
 yiannamarie.com
 yiff.fi
 yip.su
