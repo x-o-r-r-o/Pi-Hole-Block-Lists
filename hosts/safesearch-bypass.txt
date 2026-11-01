@@ -2,8 +2,8 @@
 # Description: Search engines that can't enforce SafeSearch. Use with `adult` so explicit results can't be reached through other search engines.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-09 16:21 UTC
-# Entries: 203
+# Last modified: 2026-11-01 10:27 UTC
+# Entries: 201
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi No SafeSearch: https://github.com/hagezi/dns-blocklists
@@ -12,7 +12,6 @@
 0.0.0.0 alltheinternet.com
 0.0.0.0 andisearch.com
 0.0.0.0 baidu.com
-0.0.0.0 beezboo.com
 0.0.0.0 blackle.com
 0.0.0.0 boomle.com
 0.0.0.0 dogpile.com
@@ -185,7 +184,6 @@
 0.0.0.0 searxng.biz
 0.0.0.0 searxng.canine.tools
 0.0.0.0 searxng.cups.moe
-0.0.0.0 searxng.diadz.de
 0.0.0.0 searxng.nicfab.eu
 0.0.0.0 searxng.no-logs.com
 0.0.0.0 seeks.hsbp.org

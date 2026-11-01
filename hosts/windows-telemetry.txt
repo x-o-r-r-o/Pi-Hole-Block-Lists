@@ -2,8 +2,8 @@
 # Description: Microsoft data collection from Windows and Office. Windows Update and Office keep working.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 04:24 UTC
-# Entries: 383
+# Last modified: 2026-11-01 10:27 UTC
+# Entries: 384
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Native Tracker: Windows/Office: https://github.com/hagezi/dns-blocklists
@@ -50,6 +50,7 @@
 0.0.0.0 arc2.msn.com
 0.0.0.0 arc3.msn.com
 0.0.0.0 arc9.msn.com
+0.0.0.0 arctb53wmig1gagbqjqgolj2ig.msn.com
 0.0.0.0 auc-visio-telemetry.officeapps.live.com
 0.0.0.0 az667904.vo.msecnd.net
 0.0.0.0 azurewatson.microsoft.com
