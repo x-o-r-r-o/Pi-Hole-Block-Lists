@@ -2,8 +2,8 @@
 # Description: Roblox, Fortnite/Epic, Free Fire, PUBG/BGMI, Minecraft, Steam, Xbox, PlayStation, Nintendo, EA, Riot (League, Valorant), Battle.net, Ubisoft, Call of Duty, Clash of Clans, Mobile Legends, Genshin Impact, Candy Crush, Among Us.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-26 09:34 UTC
-# Entries: 23880
+# Last modified: 2026-11-02 11:46 UTC
+# Entries: 23887
 #
 # Built from these sources (see their licenses):
 #   - Gaming platform servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/gaming-platforms.json
@@ -1335,6 +1335,7 @@
 0.0.0.0 anni5saryinfo.sea.freefiremobile.com
 0.0.0.0 anni5saryinfo.us.freefiremobile.com
 0.0.0.0 anni5saryinfo.web.test.freefiremobile.com
+0.0.0.0 anniversary-online.cxswz.moonton.com
 0.0.0.0 anniversary.ff.garena.com
 0.0.0.0 anniversary.moba.garena.com
 0.0.0.0 anniversary2.ff.garena.com
@@ -7758,6 +7759,7 @@
 0.0.0.0 fairplay.las.leagueoflegends.com
 0.0.0.0 fairplay.web.test.freefiremobile.com
 0.0.0.0 fakebuilder01.builder.supercell.com
+0.0.0.0 family.moonton.com
 0.0.0.0 family.world.ubisoft.com
 0.0.0.0 fanart.br.leagueoflegends.com
 0.0.0.0 fanart.eune.leagueoflegends.com
@@ -9757,6 +9759,7 @@
 0.0.0.0 infra-argo-workflows-staging.las.demonware.net
 0.0.0.0 infra-astro-test.infra.activision.com
 0.0.0.0 infra-astro.infra.activision.com
+0.0.0.0 infra-cfl-verify.hoyoverse.com
 0.0.0.0 infra-dev-astro.infra.activision.com
 0.0.0.0 infra-ext.activision.com
 0.0.0.0 infra-github-bot-stage-migration.kube.activision.com
@@ -10596,6 +10599,7 @@
 0.0.0.0 kube-api-inspector.kube.activision.com
 0.0.0.0 kube-bot.ubisoft.com
 0.0.0.0 kube.activision.com
+0.0.0.0 kubebot-dev.ihs.demonware.net
 0.0.0.0 kubebot.i1.kube.demonware.net
 0.0.0.0 kubebot.ihs.demonware.net
 0.0.0.0 kubernetes-dashboard.dw-internal.blue.aws.demonware.net
@@ -14329,6 +14333,8 @@
 0.0.0.0 postrelay01.supercell.com
 0.0.0.0 postrelay02.supercell.com
 0.0.0.0 postwikimove.krafton.com
+0.0.0.0 potatofarm-mcp.krafton.com
+0.0.0.0 potatofarm-stg-mcp.krafton.com
 0.0.0.0 powerbalance.lol.garena.com
 0.0.0.0 pp-globalqa.rpg.riotgames.com
 0.0.0.0 pp-lt1-us-west-1.pas.si.riotgames.com
@@ -17211,6 +17217,7 @@
 0.0.0.0 sg-r6fix.ubi.com
 0.0.0.0 sg-r6g2w.ubi.com
 0.0.0.0 sg-r6vh.ubi.com
+0.0.0.0 sg-web.mobilelegends.com
 0.0.0.0 sg.cap.riotgames.com
 0.0.0.0 sg.creatorhub.pubgmobile.com
 0.0.0.0 sg.event.freefiremobile.com

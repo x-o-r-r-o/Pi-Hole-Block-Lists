@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-31 09:38 UTC
-# Entries: 2742
+# Last modified: 2026-11-02 11:46 UTC
+# Entries: 2740
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -236,7 +236,6 @@
 0.0.0.0 anonfile.com
 0.0.0.0 anschauen.in
 0.0.0.0 anschiessen.de
-0.0.0.0 antongorbunov.com
 0.0.0.0 any64.de
 0.0.0.0 anyhub.net
 0.0.0.0 anyitsolution.com
@@ -300,7 +299,6 @@
 0.0.0.0 bakli.ru
 0.0.0.0 bakoweb.com
 0.0.0.0 ballern.de
-0.0.0.0 barbaforte.org
 0.0.0.0 barrel-of-knowledge.info
 0.0.0.0 barrell-of-knowledge.info
 0.0.0.0 baselinux.net
@@ -737,6 +735,7 @@
 0.0.0.0 doesntexist.com
 0.0.0.0 doesntexist.org
 0.0.0.0 domain.lc
+0.0.0.0 domain.name
 0.0.0.0 donhoo.com
 0.0.0.0 donkeyhot.net
 0.0.0.0 dontexist.com
@@ -746,6 +745,7 @@
 0.0.0.0 doomdns.org
 0.0.0.0 doorvpn.com
 0.0.0.0 dot.tk
+0.0.0.0 dothome.co.kr
 0.0.0.0 dougtreadwell.com
 0.0.0.0 douploads.net
 0.0.0.0 downfall.shop
@@ -2301,7 +2301,6 @@
 0.0.0.0 simple-url.com
 0.0.0.0 simplecharity.com
 0.0.0.0 sino.tw
-0.0.0.0 sitebeat.crazydomains.com
 0.0.0.0 sitelutions.com
 0.0.0.0 sitepalace.com
 0.0.0.0 sitey.me
@@ -2600,7 +2599,6 @@
 0.0.0.0 vuzelia.com
 0.0.0.0 vxe6.net
 0.0.0.0 vz.lc
-0.0.0.0 w3spaces.com
 0.0.0.0 wakingmoon.com
 0.0.0.0 wan64.de
 0.0.0.0 wanip.ch

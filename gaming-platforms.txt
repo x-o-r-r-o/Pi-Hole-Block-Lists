@@ -2,8 +2,8 @@
 # Description: Roblox, Fortnite/Epic, Free Fire, PUBG/BGMI, Minecraft, Steam, Xbox, PlayStation, Nintendo, EA, Riot (League, Valorant), Battle.net, Ubisoft, Call of Duty, Clash of Clans, Mobile Legends, Genshin Impact, Candy Crush, Among Us.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-26 09:34 UTC
-# Entries: 23880
+# Last modified: 2026-11-02 11:46 UTC
+# Entries: 23887
 #
 # Built from these sources (see their licenses):
 #   - Gaming platform servers (researched app domains + Certificate Transparency discovery): https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists/blob/master/apps/gaming-platforms.json
@@ -1335,6 +1335,7 @@ anni5saryinfo.ind.freefiremobile.com
 anni5saryinfo.sea.freefiremobile.com
 anni5saryinfo.us.freefiremobile.com
 anni5saryinfo.web.test.freefiremobile.com
+anniversary-online.cxswz.moonton.com
 anniversary.ff.garena.com
 anniversary.moba.garena.com
 anniversary2.ff.garena.com
@@ -7758,6 +7759,7 @@ fadedwheel8.web.test.freefiremobile.com
 fairplay.las.leagueoflegends.com
 fairplay.web.test.freefiremobile.com
 fakebuilder01.builder.supercell.com
+family.moonton.com
 family.world.ubisoft.com
 fanart.br.leagueoflegends.com
 fanart.eune.leagueoflegends.com
@@ -9757,6 +9759,7 @@ infosec.on.epicgames.com
 infra-argo-workflows-staging.las.demonware.net
 infra-astro-test.infra.activision.com
 infra-astro.infra.activision.com
+infra-cfl-verify.hoyoverse.com
 infra-dev-astro.infra.activision.com
 infra-ext.activision.com
 infra-github-bot-stage-migration.kube.activision.com
@@ -10596,6 +10599,7 @@ kss-acs.krafton.com
 kube-api-inspector.kube.activision.com
 kube-bot.ubisoft.com
 kube.activision.com
+kubebot-dev.ihs.demonware.net
 kubebot.i1.kube.demonware.net
 kubebot.ihs.demonware.net
 kubernetes-dashboard.dw-internal.blue.aws.demonware.net
@@ -14329,6 +14333,8 @@ postparty-cdn-gamedev.gs.epicgames.com
 postrelay01.supercell.com
 postrelay02.supercell.com
 postwikimove.krafton.com
+potatofarm-mcp.krafton.com
+potatofarm-stg-mcp.krafton.com
 powerbalance.lol.garena.com
 pp-globalqa.rpg.riotgames.com
 pp-lt1-us-west-1.pas.si.riotgames.com
@@ -17211,6 +17217,7 @@ sg-play.mobilelegends.com
 sg-r6fix.ubi.com
 sg-r6g2w.ubi.com
 sg-r6vh.ubi.com
+sg-web.mobilelegends.com
 sg.cap.riotgames.com
 sg.creatorhub.pubgmobile.com
 sg.event.freefiremobile.com

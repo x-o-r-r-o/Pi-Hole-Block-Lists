@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-31 09:38 UTC
-# Entries: 9878
+# Last modified: 2026-11-02 11:46 UTC
+# Entries: 9855
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -80,7 +80,6 @@
 0.0.0.0 1do.me
 0.0.0.0 1drv.ms
 0.0.0.0 1ea.ir
-0.0.0.0 1fashionable.xyz
 0.0.0.0 1fi.us
 0.0.0.0 1fy.ir
 0.0.0.0 1gh.co
@@ -131,7 +130,6 @@
 0.0.0.0 1url.vn
 0.0.0.0 1vk.net
 0.0.0.0 1west.io
-0.0.0.0 1wn.bz
 0.0.0.0 1xfn.tech
 0.0.0.0 1xregister.vip
 0.0.0.0 1z.lc
@@ -167,7 +165,6 @@
 0.0.0.0 2h.ae
 0.0.0.0 2i.gs
 0.0.0.0 2i1i.cn
-0.0.0.0 2it.info
 0.0.0.0 2k1.me
 0.0.0.0 2kgam.es
 0.0.0.0 2l2.me
@@ -261,7 +258,6 @@
 0.0.0.0 4.ly
 0.0.0.0 42jump.com
 0.0.0.0 42l.fr
-0.0.0.0 42url.com
 0.0.0.0 45h.it
 0.0.0.0 46.fi
 0.0.0.0 47.de
@@ -310,7 +306,6 @@
 0.0.0.0 5ia.ir
 0.0.0.0 5il.co
 0.0.0.0 5k.lol
-0.0.0.0 5m.io
 0.0.0.0 5ne.co
 0.0.0.0 5o.io
 0.0.0.0 5or.cc
@@ -539,7 +534,6 @@
 0.0.0.0 adr.ec
 0.0.0.0 adr3.ir
 0.0.0.0 ads.so
-0.0.0.0 adsclick.me
 0.0.0.0 adshort.click
 0.0.0.0 adshort.co
 0.0.0.0 adslinks.site
@@ -568,7 +562,6 @@
 0.0.0.0 agbr.ir
 0.0.0.0 agentassistcrm.org
 0.0.0.0 agileurbia.com
-0.0.0.0 agll.ink
 0.0.0.0 agmd.win
 0.0.0.0 agoz.me
 0.0.0.0 agr.my
@@ -595,7 +588,6 @@
 0.0.0.0 aisurl.com
 0.0.0.0 aitwwl.co
 0.0.0.0 aiurl.app
-0.0.0.0 aje.biz.id
 0.0.0.0 aje.io
 0.0.0.0 ajher.com
 0.0.0.0 ajn.me
@@ -644,7 +636,6 @@
 0.0.0.0 alie.kr
 0.0.0.0 alien-traffic.com
 0.0.0.0 alientraffic.com
-0.0.0.0 aliexpi.com
 0.0.0.0 alishort.com
 0.0.0.0 alisys.it
 0.0.0.0 allamericanpatriots.com
@@ -652,7 +643,6 @@
 0.0.0.0 alldomainwhois.xyz
 0.0.0.0 alli.pub
 0.0.0.0 allinonetab.com
-0.0.0.0 allinonetool.tech
 0.0.0.0 alllinks.in
 0.0.0.0 alllinksinbio.com
 0.0.0.0 allmylinks.link
@@ -737,7 +727,6 @@
 0.0.0.0 annoyingnightmareedit.com
 0.0.0.0 anon.to
 0.0.0.0 anonme.net
-0.0.0.0 anonshort.com
 0.0.0.0 anonymiz.com
 0.0.0.0 anp.su
 0.0.0.0 antiadblockcore.org
@@ -794,7 +783,6 @@
 0.0.0.0 appurl.io
 0.0.0.0 appwhats.in
 0.0.0.0 apsense.cc
-0.0.0.0 aptg.tw
 0.0.0.0 apticirl.com
 0.0.0.0 aptly.co.za
 0.0.0.0 aptsbyusu.com
@@ -869,7 +857,6 @@
 0.0.0.0 atpcf.co.uk
 0.0.0.0 atpz.ir
 0.0.0.0 atres.red
-0.0.0.0 atropinestatuarylandleaper.com
 0.0.0.0 att.ovh
 0.0.0.0 attlinks.com
 0.0.0.0 attolink.com
@@ -964,12 +951,10 @@
 0.0.0.0 bagi.link
 0.0.0.0 bagneed.com
 0.0.0.0 baid.us
-0.0.0.0 baileybelladonna.com
 0.0.0.0 balls.no
 0.0.0.0 bamerus.top
 0.0.0.0 banaccroblox.com
 0.0.0.0 bannercho.com
-0.0.0.0 baoyung.com
 0.0.0.0 baratun.de
 0.0.0.0 barkodi.com
 0.0.0.0 barsoocm.com
@@ -1015,7 +1000,6 @@
 0.0.0.0 bee1s.com
 0.0.0.0 bee4.biz
 0.0.0.0 beeb.us
-0.0.0.0 beelnk.com
 0.0.0.0 beepurl.com
 0.0.0.0 beeshort.de
 0.0.0.0 beeurls.com
@@ -1035,8 +1019,6 @@
 0.0.0.0 beree.io
 0.0.0.0 bersatu.me
 0.0.0.0 beshort.io
-0.0.0.0 bestbet1000.xyz
-0.0.0.0 betaloop.io
 0.0.0.0 betaxfree.net
 0.0.0.0 beteshis.com
 0.0.0.0 beth.games
@@ -1069,7 +1051,6 @@
 0.0.0.0 bigcc.cc
 0.0.0.0 bigfi.sh
 0.0.0.0 bigfk.com
-0.0.0.0 biggiris.link
 0.0.0.0 biggo.tw
 0.0.0.0 bigolink.com
 0.0.0.0 bigurl.io
@@ -1154,7 +1135,6 @@
 0.0.0.0 bitl.app
 0.0.0.0 bitl.to
 0.0.0.0 bitlee.site
-0.0.0.0 bitley.in
 0.0.0.0 bitli.pro
 0.0.0.0 bitlink.one
 0.0.0.0 bitlnx.com
@@ -1247,7 +1227,6 @@
 0.0.0.0 blstg.news
 0.0.0.0 bltn.pro
 0.0.0.0 blueskymap.org
-0.0.0.0 blur.by
 0.0.0.0 blynkn.com
 0.0.0.0 blyto.com
 0.0.0.0 bmai.cc
@@ -8643,7 +8622,6 @@
 0.0.0.0 uri.to
 0.0.0.0 uriok.com
 0.0.0.0 urkbfb.com
-0.0.0.0 url-api.babayev.us
 0.0.0.0 url-l.com
 0.0.0.0 url-qr.tk
 0.0.0.0 url-s.xyz
@@ -8910,7 +8888,6 @@
 0.0.0.0 urlshortener-cyan-five.vercel.app
 0.0.0.0 urlshortener-neon-mu.vercel.app
 0.0.0.0 urlshortener.at
-0.0.0.0 urlshortener.babayev.us
 0.0.0.0 urlshortener.biz
 0.0.0.0 urlshortener.bnpparibas
 0.0.0.0 urlshortener.co.uk

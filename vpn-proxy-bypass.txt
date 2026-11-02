@@ -2,8 +2,8 @@
 # Description: VPNs, web proxies and encrypted-DNS services that people use to get around blocking. Use with the other lists to stop bypassing (may block a work VPN).
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-01 10:27 UTC
-# Entries: 23949
+# Last modified: 2026-11-02 11:46 UTC
+# Entries: 23938
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi DoH/VPN/Proxy Bypass: https://github.com/hagezi/dns-blocklists
@@ -11,6 +11,7 @@
 #   - Université Toulouse Capitole: DNS-over-HTTPS: https://dsi.ut-capitole.fr/blacklists/
 
 000000555.xyz
+0000way.iraj.trsr57d.co.uk
 0025974bf482fe84ac6a59293ae0bc0432a7b9fc.com
 003.tisyang.com
 003153.xyz
@@ -37,7 +38,6 @@
 09gn1v92.com
 09usevpn.website
 09vpn.com
-0a7velfsvpgyy.online
 0ezvtthf.com
 0h6v3eg8.com
 0l682vm5.com
@@ -47,8 +47,8 @@
 1.0rz.space
 1.11i.eu
 1.dns.noridev.moe
-1.hide.newflamingodomain.co.uk
 1.hotelne.com
+1.rdnls.ru
 1.rock-review.ru
 1.thetravelingtourguide.com
 10.ln7371.top
@@ -506,7 +506,6 @@
 1dot1dot1dot1.cloudflaredns.com
 1ee.top
 1ef5be51a2d8d5dfe81bc2d6b620e377fb73846c.com
-1f47epzt.online
 1f4832d80bf373568e78d5911735d041df4c617d.com
 1f76a2ba920d.space
 1k3j1blg.com
@@ -527,7 +526,6 @@
 1vpn.org
 1vpn.website
 1xiaowang.com
-1y23.e7.yayayajd.co.uk
 1ytvipaffa07.cc
 1ytvipaffa08.cc
 1yunti.com
@@ -566,7 +564,6 @@
 20c2597ab50173c5d50332009b2d1dda28f77fdd.com
 20usevpn.website
 21.computerne.com
-21.hide.newflamingodomain.co.uk
 22044.vip
 22044.xyz
 220913.xyz
@@ -598,14 +595,10 @@
 2fastvpn.tk
 2fzyr9m1.com
 2khngrcg.com
-2mrk0bvkkye.online
 2mvplcom.com
 2plus2equal80-dns.duckdns.org
 2poigv.xyz
 2proxy.de
-2proxyweb.com
-2quickproxy.com
-2vpn.help
 2vwijqat.com
 2wired.hopto.org
 3.11i.eu
@@ -616,12 +609,10 @@
 302verify.com
 30eec7eee452ff883ea3d12afa49ef9147ae505f.com
 30t.online
-31.hide.newflamingodomain.co.uk
 317252.xyz
 32.theartieschaffer.com
 3245.uk
 32a4d72553ef312ef80776398f08515bac249ee5.com
-33.benzcls.co.uk
 33253.com
 333.antony-gordon.co.uk
 333.mtprotonewrunningproxasia.info
@@ -655,6 +646,7 @@
 37.27.88.135.traefik.me
 37er19htfd.execute-api.us-east-1.amazonaws.com
 3870fed631d7dd50d1057b4f5415bdd916dca9f9.com
+388024.vm.spacecore.network
 39.theartieschaffer.com
 3a0ef7502f6406decbec8ed5abf2aed35780234b.com
 3b5216f351080d69e9421f5b80e2260294e2f87f.com
@@ -678,7 +670,6 @@
 3nkh5crxol.ch
 3proxy.de
 3proxy.us
-3qguvtvrpyzkatp2.online
 3wvve99e.com
 3x2y.tk
 4.theartieschaffer.com
@@ -688,7 +679,6 @@
 401-retsam-swodniw.b-cdn.net
 40920604.xyz
 40a9ae48588c080dfe207106c48baa8d805276fd.com
-41.hide.newflamingodomain.co.uk
 416d70de.nip.io
 416d70de.sslip.io
 418c31eb9e9155ef148bf64df4e9a004d7c0feac.com
@@ -698,6 +688,7 @@
 43btlxit.com
 443888.xyz
 445bc502a552ca3646f5505ac6b8f0cd6d2541de.com
+45-33-113-218.ip.linodeusercontent.com
 45.32.17.58.vultrusercontent.com
 45543.khsonthespot.com
 46.theartieschaffer.com
@@ -711,13 +702,10 @@
 4dscape.net
 4ebur.net
 4everproxy.com
-4j9echn8mdr.online
 4kaomdf1.ints.f5.si
-4l0qpkh5i4gwifmeb.online
 4littleducks.duckdns.org
 4proxy.de
 4thunter.net
-4vtw3ktojjadh0xlr.online
 4xvnizwg.com
 4y5t.coke0.cc
 5-188-124-13.backname.io
@@ -766,13 +754,11 @@
 51576162.ru
 517wszy.com
 51caiyun.com
-521.mmd1.meli-n12.info
 52lanlan.com
 52uzdbtx.com
 53.slepov.dev
 530e40d68a1f147a86c139427b64fac55ba83b87.com
 53r6z.cn
-54084db9b94f2fc62e22a2f4bf6cf17e.top
 55aktnolkvuoctxitm.online
 55d827dd97bca94cf3bc24d3971f44622c36f301.com
 55gms.com
@@ -796,7 +782,6 @@
 59zh1tpm.com
 5c6349ef4335997128aa2cbf110959a8.top
 5f16g6zr.com
-5fvfofc9f.online
 5g.o0o.re
 5mdvpn.ru
 5noers.xyz
@@ -824,7 +809,6 @@
 66-23-193-126.traefik.me
 66.23.193.126.backname.io
 66.23.193.126.traefik.me
-6621.mmd1.meli-n12.info
 663u6xrx.com
 666.020202.best
 6692.giize.com
@@ -855,13 +839,11 @@
 6dccdha4.com
 6fbsn3q6.com
 6gonfvdy.com
-6ifodhb2vbm0jyf1fhcowag.online
 6zj7kxar.com
 7164.ddns.net
 72.theartieschaffer.com
 731.masi.ir.he6fhd.ru
 735ccd763ea591d7374902d8b1a39dd0f8f5eb39.com
-737fxvxfe6v3.online
 73dkt-vwrqs.xyz
 74-208-174-33.backname.io
 74-208-174-33.nip.io
@@ -892,7 +874,6 @@
 777surfer.info
 77980.bodis.com
 77ae7237c8a5270448b037ab7c41c8a4.top
-77m89.masi.ir.he6fhd.ru
 784ertysdfghjklvnm-l-8dk-4rydfghvbn.vercel.app
 789jiasulinktools.com
 789vpnapp.com
@@ -904,8 +885,6 @@
 7gain.com
 7j81w6om.com
 7vpn.com
-7vpn.help
-7wxp6uc6lszvj.online
 80.theartieschaffer.com
 800vpns.com
 81.brudnowski.eu
@@ -927,13 +906,11 @@
 89.theartieschaffer.com
 890634.xyz
 89fae67a1b1016ca7c514c42713ec6232f374943.com
-89yq10wlfdf.online
 8add79c9f302200540b4a066748af94f.top
 8d4fac431a6657d7a3c2846f37b02c2e03719dc9.com
 8duc6yogvj.site
 8f19246a8b2b8b9bf42d63d919f06bb0ece902da.com
 8hujmi.csb.app
-8locuezmc1dm219uo.online
 8mvnbml4uxmm.online
 8o00imq7asda.mooo.com
 8proxy.com
@@ -1003,7 +980,6 @@
 99catnet.com
 99ftq.xyz
 99goodvpntk.tk
-9b1c27beccb631169b1533c65cca8246.top
 9cvpn.tk
 9evpn.tk
 9evpnour.tk
@@ -1014,7 +990,6 @@
 9h8vpn.tk
 9hvpn.tk
 9hvpn8.tk
-9ilvg7rfx2r79tq4.online
 9ivpnfreesurf.tk
 9j1vpn.tk
 9jvpn.tk
@@ -1043,7 +1018,6 @@ a.sinafreenet.ml
 a.sunday.eu.org
 a.vvvglass.com
 a1i3nx.dev
-a1vmlfqbzrl8wh.online
 a2pt018.oss-ap-southeast-1.aliyuncs.com
 a5135324.csie.io
 a52ops.xyz
@@ -1276,7 +1250,6 @@ actfordeal.com
 actipw3.online
 activefkey.store
 activewebvpn.cf
-activitysforscience.space
 activitysforscience.space.cdn.cloudflare.net
 activpn.com
 actmobile.com
@@ -1363,6 +1336,7 @@ addnsliusvpns.tk
 adelmeli.com
 adenvps.cf
 adevwatkin.com
+adf-118.neta.otrofda.nl
 adf407b1b5cdc2dc40e20364cbeb7966.top
 adfgawidhioawjd.shop
 adfight.ru
@@ -1411,6 +1385,7 @@ adg5yvi.ngatngay.net
 adgaurd.kazhdom.ir
 adgaurd.lingmont.net
 adgdns.duckdns.org
+adgh-fj73eq29hrgf37278.peterge.de
 adgh.catfluori.de
 adgh.imtsui.com
 adgh.laufan.cn
@@ -1423,6 +1398,7 @@ adghres.my1stps.ru
 adghs.de
 adgremoteau.com
 adgrm.duckdns.org
+adguard-acros.duckdns.org
 adguard-aws.charraud.eu
 adguard-aws.gdmn.dev
 adguard-dns.com
@@ -1443,6 +1419,7 @@ adguard-vn2.cloudmini.net
 adguard-vpn.cc
 adguard-vpn.com
 adguard-vpn.online
+adguard.134514.xyz
 adguard.19151120.xyz
 adguard.aa4.co.uk
 adguard.abd.ong
@@ -1485,6 +1462,7 @@ adguard.clawsucht.eu
 adguard.clawsucht.nrw
 adguard.cloud-chen.idv.tw
 adguard.cloudmini.net
+adguard.cloudycloudface.online
 adguard.clroot.io
 adguard.cnbeining.com
 adguard.connexum.mx
@@ -1500,6 +1478,7 @@ adguard.depieri.net
 adguard.derminecrafter2020.de
 adguard.dervart.ru
 adguard.dessoi.cloud
+adguard.devel.win
 adguard.digitalsewer.com
 adguard.discounthost.co.uk
 adguard.diylab.in
@@ -1644,6 +1623,7 @@ adguard.quydang.name.vn
 adguard.rabmoor.cz
 adguard.rameshsoma.tech
 adguard.randomaizer.lentel.ru
+adguard.raynathus.com.br
 adguard.rdekuyper.nl
 adguard.rennes.despagne.net
 adguard.richardapplegate.io
@@ -1822,6 +1802,7 @@ adns.3am.la
 adns.kreonet.net
 adns.onlinetools.rocks
 adresseip.com
+adrubik.duckdns.org
 ads-eu.landgame.net
 ads-help-link2.com
 ads.hunga1k47.com
@@ -1863,7 +1844,6 @@ aelepassproxyvpns.tk
 aesop8824.duckdns.org
 aesvpn.tk
 affiliatescn.net
-affntowl.com
 affordable-vpn.info
 affordablevpn.info
 affsoft.cc
@@ -1926,9 +1906,11 @@ agh.nonocan.com
 agh.noton.tk
 agh.printk.info
 agh.srv.tenete.net
+agh.techsakh.ru
 agh.workfordemo.co.in
 agh.xinfeng16m.top
 agh1.server.my.id
+agh2.dchoe.com
 agh2.server.my.id
 agh3.server.my.id
 agha.sunryu.site
@@ -1937,6 +1919,7 @@ aghvm1.mastomi.id
 agp01.tek411.com
 agp02.tek411.com
 agreetalk.com
+aguard.abcvoltarioltd.com
 ahaan.xyz
 ahaapi.com
 ahadns.net
@@ -1955,7 +1938,6 @@ ai-dns-235.ru
 ai-yuni.top
 ai.in3377.top
 aibuddytech.com
-aicx99.shop
 aihe.app
 aiiaguli.info
 ailivechatweb.com
@@ -1976,7 +1958,6 @@ aisd.mathforkids.buzz.cdn.cloudflare.net
 aisigma-vpn.help
 aiskyapp.com
 aitkcrev.minhduc.pw
-aivpn.mom
 aivpn.space
 aiyun007.top
 aiyunjiasu.net
@@ -2063,7 +2044,6 @@ allorigins.win
 allow.sparks.ddns-ip.net
 alltheproxies.com
 almida.pro
-almptxto.com
 alohabrowser.app
 alohabrowser.com
 alohaprofile.com
@@ -2157,6 +2137,7 @@ andryk111.duckdns.org
 andrykarcew.duckdns.org
 andstaticcache.b-cdn.net
 andybunn.onthewifi.com
+andychan-dns.dedyn.io
 andyvpn.cc
 andz21.dynv6.net
 angdwml6.com
@@ -2278,7 +2259,6 @@ api.cloudflareclient.com
 api.du-just-link.com
 api.fatibara.com
 api.get-just-api.com
-api.godserver52.info
 api.mangoseason5.co.uk
 api.miningbest.com
 api.npvu.me
@@ -2302,7 +2282,6 @@ app-kuailian.cn
 app-letsvpn.com
 app.plugga-matte.ct.ws
 app.sailforeducation.org
-app.telbet.app
 app.vincenzodimaro.it
 app.vincenzodimaro.it.cdn.cloudflare.net
 app.wwwwwwgitlab.zaydstillhasbraindamage.duckdns.org
@@ -2333,8 +2312,6 @@ appshost.us
 appstoff.info
 apptopay.xyz
 appvpn.info
-appxiazai9.com
-aptutorfinder.com
 aptvpn.org
 aq.iaalai.cn
 aqpov.xyz
@@ -2390,8 +2367,6 @@ arts.field.8tb.net
 arts.sage.thehitechhouse.com
 artsineducation.net
 arvpn.info
-aryuyjun.cc
-arywlunqlwvxxtoxgvm.online
 as-1.tyo.jp.a.443.mx
 as-stats.com
 as17820865.click
@@ -2446,7 +2421,6 @@ astrovpn.co
 at-vpn.tk
 at-wie-w-2.nashkan.net
 at.pzhg.me
-at5w361xq.online
 atarikid.com
 atejiasu.com
 atelier.alica.idv.tw
@@ -2492,6 +2466,7 @@ aurora.dns.aq.lu
 auroraest.com
 aurorajiasu.com
 aurorastork.com
+austim.cloud
 austinisd.net
 austinisd.net.cdn.cloudflare.net
 auth-secure-socket.com
@@ -2507,7 +2482,6 @@ autumnbreeze.co
 auu.homes
 auu.mom
 auxometer.biretta.cloud-ip.cc
-ava.goooalir.co.uk
 avaaaal.ir
 available-domains-detection-ayucloud.pages.dev
 avanquestusa.com
@@ -2550,6 +2524,7 @@ axaxa.fun
 axell24.ml
 axistechsupport.com
 axleape.com
+axto.me
 axyno.xyz
 ayako.cc
 ayayo.vip
@@ -2637,7 +2612,6 @@ bapchop.com
 bapfax.com
 bapgox.com
 bapplinks.com
-baran.goooalir.co.uk
 barbecue.echoparklake.com
 barintg.top
 barkcrag.com
@@ -2657,7 +2631,6 @@ base99.com
 bashful-stretch.surge.sh
 basildo.beer
 basketbalo.ir
-bastani.mikhay.co.uk
 bastlipv.com
 bastnet.co
 batcavenetwork.com
@@ -2700,7 +2673,6 @@ beanweb.qzz.io
 beanweb.qzz.io.cdn.cloudflare.net
 beapasswpn.com
 bearvpn.com
-bearvps.mom
 beautician.bury.abrdns.com
 beautifulcity.eu.org
 beautifullife.eu.org
@@ -2750,7 +2722,6 @@ bebracraft.ru
 bebravpn-app.cyou
 bebravpn-app.space
 bebravpn-ru.com
-bebravpn.app
 bebravpn.biz
 bebravpn.blog
 bebravpn.help
@@ -2778,7 +2749,6 @@ begweb.com
 begzar.space
 begzar.xyz
 beherb.xyz
-behtarin.goooalir.co.uk
 beibei.cloud
 beibeicloud.shop
 beibeilink.top
@@ -3096,7 +3066,6 @@ bhcci.cn
 bhejcsfbhd.ipv64.net
 bhjxdrxfc.ipv64.net
 bhkdk.cn
-bhlzibih.cc
 bhpuvkri.com
 bhuibv.ipv64.net
 bhuosr.ipv64.net
@@ -3133,7 +3102,6 @@ bipzefv7.com
 birnenwasser.ddnss.de
 bit01-mfivuot8.top
 bit02-u6bgppq7.top
-bitaqwlx.com
 bitly-galatikx.duckdns.org
 bitphox.com
 bitping.com
@@ -3145,7 +3113,6 @@ bityun.cloud
 bityun.net
 bityun.org
 biubiuvpn.app
-biuspggy.com
 bixberry.com
 bixlimp.com
 bixnod.com
@@ -3153,7 +3120,6 @@ bixorn.com
 bixslim.com
 bixvob.com
 bixways.com
-biyx13mg.online
 bizdomain.store
 bizvpn.info
 bjcgbc.cn
@@ -7284,7 +7250,6 @@ boredomarcade.xyz
 boredomss.a.ssl.fastly.net
 boredonasndkf.global.ssl.fastly.net
 borisov.page
-boro.poolaki.co.uk
 botany.classes.spacejamhd.com
 botclassic.com
 botvpn.help
@@ -7514,6 +7479,7 @@ cachezone.net
 cactusdb.net
 cactusvpn.com
 cadaeibfe.xyz
+caelum.flammigerum.churkabes.ru
 cafedots.com
 cai-yun.com
 caidenhashuzz.global.ssl.fastly.net
@@ -7624,6 +7590,8 @@ ccadguard.ddns.net
 ccadguard.dynu.net
 ccave.com
 ccavea.com
+ccc.horizon555.co.uk
+ccdns.services
 ccyykk.top
 cdiiceyn.com
 cdn-7xf.pages.dev
@@ -8008,7 +7976,6 @@ cobaltvortex.com
 cober-sky.pro
 cocoombr.com
 cocoproxy.com
-cocorichmond.pareporeh.info
 codarka.com
 codecrafterssoft.com
 codegooglehub.com
@@ -8057,7 +8024,6 @@ connect-with.click
 connect.edmoon.co.uk
 connect.info.north-kazakhstan.su.cdn.cloudflare.net
 connect.moonficonnect.com
-connect.mtproxy.me
 connect.pvdatanet.com
 connecte-ru.click
 connectionvpn.com
@@ -8131,7 +8097,6 @@ covwskpb.cc
 cpru.dolbankoinc.lol
 cps.gpu74.ru
 cqoskrvd.com
-cr777.goooalir.co.uk
 crackstuff.pages.dev
 craft.atom.codekit.org
 craft.ela.osperkins.com.ar
@@ -8284,6 +8249,7 @@ d.hxhd.cc
 d.kekew.info
 d.kekew.racing
 d.luwei.date
+d.nonf1.com
 d.onlyjsmylord.org
 d.smart365.tk
 d.svc.ultratop.icu
@@ -8294,7 +8260,6 @@ d.zhanchuraevv.ru
 d0.tada.ly
 d0904c68e362dce88371-d2dc096b53690d6d3857ec60c148f11c.ssl.cf1.rackcdn.com
 d1.12342345.xyz
-d1.jadroom.co.uk
 d101vabyweqq2v.cloudfront.net
 d1030frha4pi98.cloudfront.net
 d10zu8ijzdhnhd.cloudfront.net
@@ -8782,6 +8747,7 @@ d9d2xy38i5m2k.cloudfront.net
 d9riwzrzl2jul.cloudfront.net
 dabache.top
 dabai.in
+dabeeyow.duckdns.org
 dabmix.com
 dac0miaxap05t.cloudfront.net
 daddyproxy.com
@@ -8827,7 +8793,6 @@ dashboard.6brothersimports.com.cdn.cloudflare.net
 dashboard.adidasnmdcitysock.com.cdn.cloudflare.net
 dashboard.vincenzodimaro.it
 dashboard.vincenzodimaro.it.cdn.cloudflare.net
-dashi.estabonita.co.uk
 dashi.mom
 dashuai.us
 daswieddodeushtuhaw.xyz
@@ -8876,6 +8841,7 @@ dclab.live
 dd.elashri.net
 dd.hlm.ovh
 dd34.ru
+dd44ru5ogao8vagvww.ru
 ddd.999369.xyz
 ddd.loukky.com
 ddd2.loukky.com
@@ -9067,7 +9033,6 @@ dijgqz619jiza.cloudfront.net
 dild.loan
 dimqara.ru
 dingdangnao.com
-dingi3.co.uk
 dingjijichang.com
 dining.dipeshshahi.com.np
 dinoo.org
@@ -9107,7 +9072,6 @@ diufks10.easterndns.com
 diuwdkjf.cc
 divalane.com
 divaloo.com
-dizgrakh.mamadali.co.uk
 dj2ozsqktgipp.cloudfront.net
 djc5yls6yrtdmo69.online
 djfbasjbnijasdas.info.north-kazakhstan.su.cdn.cloudflare.net
@@ -9138,6 +9102,7 @@ dmh2vhxzf0tuf.cloudfront.net
 dmhs.tovrixel.com
 dmit.wangjiaqi.store
 dmit.xxxxxxxxx.gq
+dmithk.whzxc.com
 dmjp.joeyl.de
 dms.dms.dms.tcloud.my
 dmvdriverseducation.org
@@ -9222,6 +9187,7 @@ dns.080590.xyz
 dns.0ooo.icu
 dns.0x55.net
 dns.1.bsh4.com
+dns.12032002.xyz
 dns.123099.xyz
 dns.13evl.com
 dns.141664.xyz
@@ -9237,6 +9203,7 @@ dns.240601.xyz
 dns.2poi.com
 dns.2t9.de
 dns.320888.xyz
+dns.331376.xyz
 dns.333551.xyz
 dns.354688.xyz
 dns.3dcapitaltrust.net
@@ -9273,7 +9240,9 @@ dns.abdullahabas.online
 dns.abhimankolte.com
 dns.abppro.ru
 dns.ac-weather.com
+dns.acezy.top
 dns.adblocker.eu.org
+dns.adfreedns.org
 dns.adguard.beltoev.ru
 dns.adguard.com
 dns.adguard.kozich.net
@@ -9282,6 +9251,7 @@ dns.adnull.com
 dns.adrianlam.com
 dns.adriason.co.uk
 dns.adups.com
+dns.aebas.com
 dns.aenth.com
 dns.aerro.in
 dns.aganin.org
@@ -9349,7 +9319,6 @@ dns.auapi.fun
 dns.audet.cloud
 dns.auffray.org
 dns.axiomos.xyz
-dns.axto.me
 dns.aykanbacaksoy.de
 dns.azcom.dev
 dns.azfar.my
@@ -9364,6 +9333,8 @@ dns.bad-taste.app
 dns.bahien.com
 dns.bai0012.com
 dns.baishiyuan.cn
+dns.bartar.me
+dns.barunlabs.dev
 dns.bazipardaz.com
 dns.bcel.email
 dns.beardic.cn
@@ -9493,6 +9464,7 @@ dns.d96.info
 dns.daarrk.tech
 dns.daddyparodz.com
 dns.daemon.za.net
+dns.dailydebian.com
 dns.dallinbryce.com
 dns.damlayayinevi.com.tr
 dns.danamas.net
@@ -9531,6 +9503,8 @@ dns.dns-53.uk
 dns.dns-53.us
 dns.dns-heimdall.com
 dns.dns-over-https.com
+dns.dns-vanhuynh.click
+dns.dns.asovarenko.ru
 dns.dns.tbnk.ca
 dns.dnshome.de
 dns.dnsoverhttps.net
@@ -9716,6 +9690,7 @@ dns.hinytz.com
 dns.hitmw.cn
 dns.hjh2007.top
 dns.hm8.ru
+dns.hocit.xyz
 dns.hoian.one
 dns.home.beckett.io
 dns.home.daniil.it
@@ -9746,6 +9721,7 @@ dns.hyas.com
 dns.iamanuragh.in
 dns.iamninja.ru
 dns.iblockads.net
+dns.ice-dns.ru
 dns.ihaveacloud.com
 dns.ikataruto.com
 dns.iki.my.id
@@ -9785,6 +9761,7 @@ dns.itsec.crolla.net
 dns.itwht.com
 dns.itya.xyz
 dns.ivyeori.live
+dns.jaimeherrera.me
 dns.jallais.dev
 dns.jamessliu.com
 dns.japan.joshcheng.host
@@ -9825,6 +9802,7 @@ dns.karadag.me
 dns.karfamily.net
 dns.karl.one
 dns.karmanet.ch
+dns.karrie.software
 dns.kashall.dev
 dns.kastner-online.de
 dns.kawa.tf
@@ -9851,6 +9829,7 @@ dns.knitish.dev
 dns.knyfie.com
 dns.koala.us.to
 dns.kobo.dev
+dns.koeberle.fr
 dns.kolar-it.com
 dns.koretech.com.br
 dns.korzhyk.pp.ua
@@ -9899,6 +9878,7 @@ dns.libost.xyz
 dns.lihj.me
 dns.lildinosaur.com
 dns.lilith.cloud
+dns.limitlessas.no
 dns.linkr.ninja
 dns.lista.my.id
 dns.listo.click
@@ -9995,6 +9975,7 @@ dns.motazhakim.com
 dns.moulticast.net
 dns.mrkaran.dev
 dns.msameh.tk
+dns.mstolik.org
 dns.msxnet.ru
 dns.mtnh.tk
 dns.mtoo.vip
@@ -10007,7 +9988,9 @@ dns.murzyn.top
 dns.musikantit.fi
 dns.muxinghe.cn
 dns.muzmx.online
+dns.my-softwares.me
 dns.myadguard.top
+dns.mydas.online
 dns.myhomeassistant.ru
 dns.myhomezoo.com
 dns.mymachinepanda.online
@@ -10157,6 +10140,7 @@ dns.pumpkinvrar.com
 dns.pumplex.com
 dns.purbalinggakab.go.id
 dns.puthiyedath.tk
+dns.pwhs.app
 dns.qiyipic.iqiyi.com
 dns.qkc.fr
 dns.qpt.one
@@ -10195,6 +10179,8 @@ dns.repressoh.it
 dns.req1.fr
 dns.resoft.org
 dns.retakecs.com
+dns.reveliq.ai
+dns.rewire.bd
 dns.rgnv.dev
 dns.rhscz.eu
 dns.rin.sh
@@ -10260,6 +10246,7 @@ dns.shecan.ir
 dns.shiina520.fun
 dns.shimul.me
 dns.ship.ga
+dns.shiza.foo
 dns.shrike.ru
 dns.shushu.cf
 dns.sidot.xyz
@@ -10283,6 +10270,7 @@ dns.snaketech.com.br
 dns.sneakypanda.org
 dns.sogemoge.art
 dns.soldier.terumi.club
+dns.speed-benz.co.uk
 dns.spil.co.id
 dns.spirio.fr
 dns.spok.fun
@@ -10340,6 +10328,7 @@ dns.theres.one
 dns.therifleman.name
 dns.thezudrive.xyz
 dns.thierryserver.nl
+dns.thinkbluedata.com
 dns.thiz.top
 dns.thore.cloud
 dns.thouse.qzz.io
@@ -10350,6 +10339,7 @@ dns.titov.cz
 dns.tkhome.nl
 dns.tls-data.de
 dns.tomitomix.net
+dns.tonic3.com
 dns.tooizi.eu
 dns.tracker.ink
 dns.truong.fi
@@ -10367,6 +10357,7 @@ dns.ublobs.com
 dns.uk-london-1.oci.oraclecloud.com
 dns.uk-london-1.oci.oraclecloud.net
 dns.uk-london-1.oraclecloud.com
+dns.ulearning.ru
 dns.umbrella.com
 dns.umbrellapants.xyz
 dns.unerror.network
@@ -10457,6 +10448,7 @@ dns.xhost.tw
 dns.xinwujiang.cn
 dns.xiumu.org
 dns.xivilay.dev
+dns.xlhome.eu
 dns.xlion.tw
 dns.xn--29ab3cg3bhgt.xn--y9a3aq
 dns.xryen.com
@@ -10474,6 +10466,7 @@ dns.yameenassotally.com
 dns.yandex.net
 dns.yandex.ru
 dns.yatima.tv
+dns.ycode.top
 dns.ygonline.de
 dns.yingroad.top
 dns.ymv8.cn
@@ -10524,6 +10517,7 @@ dns1.biryuk.name
 dns1.blackrandcrf.ru
 dns1.burtnet.xyz
 dns1.conne.net
+dns1.dedyn.io
 dns1.digitale-gesellschaft.ch
 dns1.dnscrypt.ca
 dns1.feear.se
@@ -10849,6 +10843,7 @@ doh.5000g.org
 doh.aaaab3n.moe
 doh.abmb.win
 doh.abraservice.xyz
+doh.achmadbagoes.my.id
 doh.adguardhome.site
 doh.afna.link
 doh.aipps.vip
@@ -11009,6 +11004,7 @@ doh.seby.io
 doh.serverhost.no
 doh.sidnlabs.nl
 doh.southam.family
+doh.spairum.my.id
 doh.sublime9.xyz
 doh.suche.org
 doh.sungai.stream
@@ -11079,7 +11075,6 @@ doitnow.ir
 dojianguo.com
 dojifeng.com
 dojikuai.com
-dokhtar.nanaz.co.uk
 dokoala.net
 dokuaigou.com
 dokuailian.com
@@ -11281,7 +11276,6 @@ dpb7lli3zpdp0.cloudfront.net
 dpbaxcum.com
 dpdw1da7o48u.cloudfront.net
 dpeddi.myddns.com
-dpi.server-space52.info
 dpivpn.help
 dplrkwze.com
 dpserver87.ddns.net
@@ -11429,7 +11423,6 @@ dzlj06v4g249i.cloudfront.net
 e-ix.com
 e-ix.org
 e.cpfrx.info
-e.networkmodeai.co.uk
 e0f.cx
 e105l6mnx3.execute-api.eu-west-3.amazonaws.com
 e1c3d12739b3a6a820bf63898f4bfcc393e30922.com
@@ -11645,6 +11638,8 @@ ec2-52-12-183-214.us-west-2.compute.amazonaws.com
 eccotestt.duckdns.org
 echoe1yidzu4ioo5.myfritz.net
 echoingdreamy.com
+echoisles20.duckdns.org
+echooff.xyz
 ecizlqmb.com
 eclicksmarketing.com
 ecoearthbit.click
@@ -11683,6 +11678,7 @@ ednovas.tech
 ednovas.world
 ednovas.xyz
 ednovasyunclash.com
+edns.my.id
 edpuzzle-lol.vercel.app
 edpuzzle.space
 edsqevwp.com
@@ -11803,6 +11799,7 @@ eofgame.app
 eofvpn.cc
 eofvpn.com
 eonvpn.com
+epdns.cc
 epicrisis.luminiferous.abrdns.com
 epolx.xyz
 epsilon.y.glenwaverleychurches.org
@@ -11845,6 +11842,7 @@ eth.link
 ethernet.mxx.giize.com
 ethology.karrozzin.cloud-ip.cc
 etkarta.easterndns.com
+etovsezloy.duckdns.org
 ettego.com
 etyrqg.com
 eu-browse.startpage.com
@@ -11957,7 +11955,6 @@ ezhyperlix.xyz
 ezvenih.com
 f.freetls.fastly.net
 f1.dns.s3cure.me
-f123.e7.yayayajd.co.uk
 f2fenglish.org
 f32300004fb97f8fbcfb805500b8492a1808d4f2.com
 f3556fm3o524m9.com
@@ -12018,7 +12015,7 @@ fast-vpnonline.info
 fast-vpns.info
 fast-vpnshop.info
 fast-vpnsite.info
-fast.finecooking.info
+fast.proxynet.tech
 fast789app.com
 fast91.net
 fastabcapp.com
@@ -12777,6 +12774,7 @@ freevpnsoftware.net
 freevpntoday.info
 freewebproxy.eu
 freewebvpn.ml
+freewhitelists.privatedns.org
 freloop.com
 french-vpn.com
 fresh-mint-market.com
@@ -12808,7 +12806,6 @@ frogiesarcade.win.cdn.cloudflare.net
 frogiesarcade.xyz
 frogs.look.good.pxi-fusion.com.cdn.cloudflare.net
 frogs.sh
-from.goooalir.co.uk
 fromthe.app
 frontend.development.sanluix.org
 frontpace.co.uk
@@ -12939,13 +12936,13 @@ gasketmelt.com
 gasolino.ir
 gatcha.org
 gate.oliver-pietsch.de
+gatepro.duckdns.org
 gatern.info
 gateway-el.cname.ustclug.org
 gateway.baltes.info
 gateway.fomichev.cloud
 gateway.mcebox.com
 gazevale.com
-gazo19.mosswren.vip
 gb-bir-w-1.nashkan.net
 gb-cov-w-1.nashkan.net
 gb-cov-w-f-1.nashkan.net
@@ -13261,7 +13258,6 @@ golinkcn.com
 gologin.com
 gomibako.easterndns.com
 gone-vpn.tk
-good.cipservice.co.uk
 goodfast.it.com
 goodfast.org
 goodfast.xyz
@@ -13335,7 +13331,6 @@ grade.major.grupoinca.com.pe
 graef.in
 graf.mywire.org
 graltexo.com
-gram.blog
 gramercy.luminiferous.abrdns.com
 grammarhelpers.com
 grandcinemachat.org
@@ -13528,7 +13523,6 @@ haita.io
 haita.link
 haita.org
 haita.us
-haji.estabonita.co.uk
 hakoda.wtf
 hallowedhot.com
 halopebble.com
@@ -14119,6 +14113,7 @@ homeworkhelp.cc
 homeworkhelp.click
 homeworkhelper.uk
 homita.id.vn
+honar.saheledarya.co.uk
 honeygain.com
 honeygain.me
 honeyping.com
@@ -14128,7 +14123,6 @@ hongxingjiasu.net
 hongxinglinktools.com
 hoofoo.icu
 hooliganska.duckdns.org
-hopethishelps.7geo7.ru
 hopex.site
 hopperearnin.com
 hopthewall.com
@@ -14395,6 +14389,7 @@ ijustwanttstowork.dsylexia.jdymqic.shop
 ijxhnhx.com
 ikarosalpha.xyz
 ikhebdorst.nl
+iki.at9.eu
 ikilledmydog.vercel.app
 ikitoshi.cc
 iknowthemethods.help
@@ -14626,26 +14621,19 @@ ir-ir.grumpyoldmen.info
 ir-ir.my-pv.info
 ir-ir.naganuma.info
 ir-ir.panhandleflyers.info
-ir-ir.radio-zvez.info
 ir-ir.rebol.info
 ir-ir.simpleelegance-us.info
 ir-ir.xeonxu.info
-ir-ir.xn--ds-bja.info
 ir.ataman.info
+ir.barhousefarm.co.uk
 ir.closcloud.co.uk
 ir.deghy.ir
-ir.dinocol.co.uk
-ir.forzajuve.co.uk
 ir.genesbyjohn.info
-ir.grasic.info
-ir.groundfloorsolutions.co.uk
-ir.grumpyoldmen.info
 ir.lv223.info
 ir.mediaad.co.uk
 ir.mohearn.co.uk
 ir.panhandleflyers.info
-ir.speed.finecooking.info
-ir.strawberrybarn.co.uk
+ir.shentaichiacademy.co.uk
 ir.xeonxu.info
 ir.xn--ds-bja.info
 irckyb7t9a.com
@@ -14778,7 +14766,6 @@ j8rfgtyj8h.easterndns.com
 jabber-germany.de
 jabber-server.de
 jackyes.ovh
-jadide.mamadali.co.uk
 jagoanip.my.id
 jagoanssh.com
 jagovpn.com
@@ -14935,7 +14922,6 @@ joinguoneijichang.com
 joinhaita.com
 joinmassive.com
 joinyongjiumianfeijichang.com
-joje.goooalir.co.uk
 joldoojv.com
 jolly1.dns.army
 joltcobalt.com
@@ -15100,6 +15086,7 @@ k4unvnru.com
 ka4tmb.duckdns.org
 kaandikec.com
 kaans.io
+kabab.mikhay.co.uk
 kafsg.cn
 kahoot.mom.cdn.cloudflare.net
 kaidenhelpzu.info.north-kazakhstan.su.cdn.cloudflare.net
@@ -15127,7 +15114,6 @@ karaseee.f5.si
 karimdns.com
 karnuvia.ru
 karo-vpn.xyz
-kasco.alhosein.co.uk
 katakanachart.com
 katonetwork.com
 kavkaz.monster
@@ -15177,6 +15163,7 @@ kent6.ajaest.net
 kent6.dyn.ajaest.net
 kepard.com
 kerlix.xyz
+ketri.samavar.co.uk
 kettleextend.com
 kevinai.org
 kevinss-us-1.kevinss886.de5.net
@@ -15212,6 +15199,7 @@ kifwhack.com
 kihn.org
 kilabit.info
 killads.vpms.xyz
+kilo.ddns.net
 kimjikononikinikikomonomini-76huki.easterndns.com
 kindlyhuge.com
 kineticmason.com
@@ -15685,6 +15673,7 @@ latiao001.cc
 latiaocloud.net
 latswdyx3.com
 launchjoint.com
+lavashak.mikhay.co.uk
 lavishlylearning.com
 lavortai.online
 lavortai.shop
@@ -15747,6 +15736,7 @@ leflycloud.com
 legaladviser.us
 legaladvisor.us
 legalweb.info
+legato86.quietfjord.click
 lei-su.com
 leidian.uk
 leidian123.com
@@ -15759,7 +15749,6 @@ lekdijk.online
 lelux.fi
 lemonpiesite.duckdns.org
 leochen-dns.ddns.net
-leomessi.goooalir.co.uk
 leonoir.online
 leoygiuj.com
 lerbix.xyz
@@ -15918,6 +15907,7 @@ ljq6lqx2et2prq.online
 lk-lag.one
 lleafyyfr.xyz
 llg01.com
+lllllk.iraj.trsr57d.co.uk
 lmaozev.0rg.us
 lmkatest.ru
 lml2vipaff01.cc
@@ -15953,8 +15943,6 @@ localtonet.com
 locaproxy.com
 location-list.wendysgolang.workers.dev
 locaweb.moleniuk.com
-loga85.tidelark.cc
-logato78.tidelark.cc
 logcraft.shop
 logical.startechcomputacion.com
 logicfuzz.com
@@ -15976,6 +15964,7 @@ lokiproxy.com
 lol.sanluix.org
 loli.sektehalodavid.click
 loli.xianyu1.workers.dev
+lolo89.larchmere.xyz
 lomiktra.study
 lomoff.spb.ru
 lon-dns.bitdefender.net
@@ -15993,7 +15982,6 @@ lordsalty.com
 lostwi.cn
 lothuscorp.com.br
 lotso.cc
-loud-teal.godserver52.info
 loudsheep.ddns.net
 loungef2x-d.freetls.fastly.net
 loungef2x-h.global.ssl.fastly.net
@@ -16088,7 +16076,6 @@ m1dv65c8.com
 m21nhiny.com
 m247-br-01.live
 m2bw3p7s.com
-m6m6.masi.ir.he6fhd.ru
 m7x2hdre.com
 m9ynqi6d.com
 mad4todo.com
@@ -16098,7 +16085,6 @@ madeinchina1987.zapto.org
 madonna.run
 madrid.ciscofreak.com
 madtoyfun.com
-magic.godserver52.info
 magiccloak.net
 magnetsnag.com
 maherhost.uk
@@ -16122,10 +16108,11 @@ mainssh.com
 maintainbrain.us
 majimekun.dynipv6.de
 major.know.unielectronics.ca
-makama85.mosswren.vip
+mak-na.ru
 makomako.easterndns.com
 maku-tech.com
 malanser.ru
+male61.birchquay.xyz
 maleyu.org
 mallocapp.com
 mallocprivacy.com
@@ -16139,7 +16126,6 @@ manazinjamiram.ir
 manchaland.clubskunk.com
 mandarin.chinapoem.org
 mangojiasu.com
-mangoseason8.co.uk
 mangshe.org
 maning.pro
 manually-relaxed-alien.global.ssl.fastly.net
@@ -16237,9 +16223,10 @@ matrixvpn.net
 matthias-prost.com
 mavalleenumerique.hopto.org
 mavrikk.duckdns.org
-max.kimt.click
 max.sardinesindigo.cf
 maxfong.cc
+maximroot.duckdns.org
+maxlichuan.top
 maxmessenger.dev
 maxservice.life
 maxspeedtop.quest
@@ -16316,7 +16303,6 @@ menejpkl.com
 meowless.club
 mer6y5.com
 merchvault.xyz
-meshki.goooalir.co.uk
 mesl.cloud
 message.registration.abrdns.com
 metacubex.one
@@ -16394,6 +16380,7 @@ mio.miosen.cyou
 mipelinusa.ddns.net
 mipelinusa.duckdns.org
 miphgtct.ipv64.net
+mirima84.copperwren.click
 mirqenzo.ru
 mirror4.es-mad-1.linodeobjects.com
 miscrosoft.info
@@ -16554,6 +16541,7 @@ mofang85.com
 mofang86.com
 mofang94.com
 mofangvpn.com
+mofid.saheledarya.co.uk
 mogotech.net
 mogujiasu.net
 moguvpn.net
@@ -16638,7 +16626,6 @@ mtdhbqbf.com
 mtkidjkn.com
 mtpro.xyz
 mtproxy.mom
-mtproxygram.lol
 mtviewbaptist.org
 mtyrqg.com
 muc-ns01.ibytex.systems
@@ -16650,6 +16637,7 @@ muimui.easterndns.com
 mukuyunjc.com
 muli.stusta.mhn.de
 mullvad.net
+multeng.ydns.eu
 multiplydose.com
 multipurpose1.terumi.club
 mumble.ddnss.de
@@ -16702,6 +16690,7 @@ myapps.classlink.trelease.net
 myatris.sbs
 mybestvpn.info
 mybuyvpn.info
+mycactus.duckdns.org
 mycheapfqvpnlist.com
 mycheapladderlist.com
 mycheapvpnlist.com
@@ -16727,6 +16716,7 @@ myforeverfreefqvpnlist.com
 myforeverfreeladderjsqlist.com
 myfree-vpn.info
 myfreeairportlist.com
+myfreedns.dogsmedia.de
 myfreefqvpnlist.com
 myfreeladderlist.com
 myfreetzlist.com
@@ -16757,6 +16747,7 @@ mynicefqairportlist.com
 mynicefqvpnlist.com
 myniceladderjsqlist.com
 myniceladderlist.com
+mynikdns.duckdns.org
 myopenvpn.xyz
 myorveta.ru
 myownadguard.ovh
@@ -16772,6 +16763,7 @@ mypihole.hopto.org
 mypjbfqairportlist.com
 mypjbfqjsqlist.com
 mypjbladderlist.com
+myplanet22.duckdns.org
 myplayed5-vpnanonymouss.tk
 myprivityvpn.softether.net
 myproxy.ca
@@ -16867,13 +16859,11 @@ nano751.vercel.app
 nanopi.cybergroove.net
 nanoproxy.com
 naokdfxw.com
-napoli.goooalir.co.uk
 napps-1.com
 napps-2.com
 napps-3.com
 naprivlq.com
 naproxy.com
-narooo.goooalir.co.uk
 narutoonline.info
 naruzhu.am
 naruzhu.click
@@ -16939,6 +16929,7 @@ nebulaservices.xyz
 nebulo.surge.sh
 nectar39.quest
 neelhatesads.cf
+neka57.mossharbor.xyz
 nekobox.tools
 nekoray.help
 nekoray.org
@@ -16950,6 +16941,7 @@ neochronicles.live
 neodon-vpn.com
 neoncrumb.com
 neonforests.com
+nepo53.foxglade.xyz
 neptune.alpo.me
 nerbix.xyz
 neru.cc
@@ -17074,6 +17066,7 @@ niazpro.ir
 nice-autosurf.com
 nice.rozinalpoku.co.uk
 nicehash.com
+nick.bladeforge.com
 nickcan.xyz
 nickel.klinikfysik.dk
 nicknarayong.ddns.net
@@ -17082,7 +17075,7 @@ nickthedick666.duckdns.org
 nicktruehome.ddns.net
 nicolasog12.github.io
 nicsezcheckfbi.gov
-nigan.goooalir.co.uk
+nidns.tehnopron.org
 nikonikoproxy.casacam.net
 nikonikoproxy.giize.com
 nilanjan.me
@@ -17154,6 +17147,7 @@ noblock-sitesevpn.tk
 noblock-sitesevpns.tk
 nocensor.work
 nocfmc.cc
+nocloudnew.co.uk
 node.network
 node3.b4el.ru
 node9.servernode.store
@@ -17183,10 +17177,8 @@ noodlevpn.com
 nooken-vpn.europe-west1.firebasedatabase.app
 nooken.app
 nookenvpn.help
-noon.begir.co.uk
 noonv2-c55a5-default-rtdb.firebaseio.com
 noonvpn.net
-nooshabe.mikhay.co.uk
 nop.mobi
 noproblem.eu.org
 noprox.com
@@ -17417,8 +17409,6 @@ nym.dev
 nym.network
 nymtech.net
 nymvpn.com
-nyne45.foxglade.xyz
-nypo94.mosswren.vip
 nzitdog.onthewifi.com
 nzkfuwrf.com
 o--o.duckdns.org
@@ -17538,6 +17528,7 @@ omorkovka.ru
 onards.am
 onconnect.info
 one-zs-lk3.com
+one.horizon555.co.uk
 one.one.one.one
 onecat.cloud
 onecat01-ltya8xek.top
@@ -17640,6 +17631,7 @@ oqxcsuk.com
 ora1.nocnik.org
 oracle-lab01.crmd.co.za
 oracle.cepheus0.com
+oracle.q66z.com
 oracle001.330k.biz
 oracle2.herry.dev
 oracle5.losfa.xyz
@@ -17767,6 +17759,7 @@ pakupaku.bounceme.net
 paladinvpn.com
 palazzoddns.tk
 paleoy.com
+pan.yuhui.eu.org
 pancakes.group
 pandaexpert.xyz
 pandapow.co
@@ -17776,7 +17769,6 @@ pandavpn.pro
 pandavpnpro.com
 panel.abolisub.ir
 panel.colacloud.co
-panel.hook--tehran.co.uk
 panel.joosh.ru
 panel.mc.night-x.com
 panel.quiz.courses
@@ -17785,7 +17777,6 @@ pangdavpn.com
 pango-cloud.com
 pango-paas.co
 pangolinvpn.com
-panir.begir.co.uk
 pankvyh.xyz
 panmill.xyz
 panser.web.id
@@ -17828,7 +17819,6 @@ partmo5.xyz
 partyvpn.com
 pasdfn.com
 pashagame456.com
-pashmak.mikhay.co.uk
 pasi.cat
 paskam.tk
 paskam.xyz
@@ -17839,6 +17829,7 @@ passssssssssword.easterndns.com
 passwall2.org
 pates.services.sfr.fr.casepp.sfr.fr
 path1.28bafa6d.top
+patrique.duckdns.org
 patronize.bury.abrdns.com
 paulo.nom.za
 pawg.top
@@ -18146,7 +18137,6 @@ poatvpn.com
 pocketnerve.com
 poczta.sailforeducation.org
 podcamber.com
-pofak.mikhay.co.uk
 poft.top
 point.scheduleholiday.christmas
 pointed.cc
@@ -18177,7 +18167,6 @@ pork.icu
 pork.immo
 porkssr.com
 porn-vpn.tk
-porsorate.co.uk
 portal.app.dontdrinkthekoolaid.duckdns.org
 portal.iddqd.uk
 portbj.xyz
@@ -18205,7 +18194,6 @@ powervpn.github.io
 powervpnfree.com
 powq0.xyz
 powvpn.com
-pozo12.saltfern.xyz
 pp.hamburger.ip-ddns.com
 ppdns.cn
 ppeptv.xyz
@@ -18235,6 +18223,7 @@ prem.deltamath.help.cdn.cloudflare.net
 premium-vpn.app
 premium-vpn.store
 premium-web.info
+premium.speed-benz.co.uk
 premiumproxy.net
 premiumtier-network.instadart.net
 premsocks.com
@@ -18544,6 +18533,7 @@ proxypartner.yiaitool.com
 proxyproxy.net
 proxypy.org
 proxyrack.com
+proxyrepublic.com
 proxyrise.com
 proxyrola.learntechnologyapp.com
 proxyroxy.net
@@ -18626,6 +18616,7 @@ pub-2b2f65db29c04d1f8dc6324a41a698bc.r2.dev
 pub-7673769c88704e338cf94be8e7833d08.r2.dev
 pub-8029ed10cf4e4db0b3757e6b82ef7a40.r2.dev
 pub-a6321dc4515447b698de8db2567150ff.r2.dev
+pub.am.dns24.online
 pub.hsuan.ink
 pub.xapktech.xyz
 pubgmobileonline.com
@@ -18722,7 +18713,6 @@ q1w2e3r4.xyz
 q3i6k7j3.stackpathcdn.com
 q6b2logs.com
 qa-brwsc.org
-qadim.zhigool.co.uk
 qandoria.ru
 qarlovim.hair
 qasfmp.com
@@ -18798,6 +18788,7 @@ quarkvpn.com
 quasar.ezlearning.qzz.io
 quasar.ub.phuri.cc
 quasar.vcsa.superportret.ru
+qucloud.uk
 quench.complex.abrdns.com
 quentaviro.xyz
 query.hdns.io
@@ -18888,6 +18879,7 @@ raidnas.xyz
 rainforest.lol
 raininglondon.com
 rajs.life
+rally.kllevr.com
 ram.kdot.cam
 rameo.myclarevision.com
 ramjam.pythontheproto.com
@@ -19008,7 +19000,6 @@ redvpn.uk
 reenreen.easterndns.com
 reevpnsshour.tk
 reevpnsshourb.tk
-refiq.poolaki.co.uk
 reflect4.me
 refvpntype.com
 regiopolis.cloud
@@ -19107,7 +19098,6 @@ rewardlate.com
 rewardpumpkin.com
 rewivpn.top
 rexdns.duckdns.org
-reyhoon.shambelile.co.uk
 rezerofanbase.com
 rf4.forestberrypi.com
 rf425d-8080.csb.app
@@ -19140,6 +19130,7 @@ rini.id.vn
 rinki.live
 rinki.wiki
 rinki.xyz
+riny51.larchmere.xyz
 riolu-node.link
 riolu.icu
 riolu.ooo
@@ -19214,12 +19205,10 @@ rootcobalt.com
 rootdns.anir0y.in
 rootpony.com
 rootserver.live
-rootssh2.co.uk
 ropavaporopav.cyou
 roriva.com
 ros.osmenoga.com
 roskomnadzor.dev
-rostam.ir.igakwvwa.info
 rotvpn.com
 roucious.dyndns-remote.com
 roundproxies.com
@@ -19317,10 +19306,9 @@ s16-us2.startpage.com
 s17-us2.startpage.com
 s18sef67.com
 s2.d3mik.ru
+s2.eniqx.online
 s2wd5kbq.com
 s3-oregon-1.s3-us-west-2.amazonaws.com
-s3.saalaad.info
-s3.soft98.co.uk
 s4-us2.startpage.com
 s47n.ir.ir.ir.meli-n12.info
 s4m.tech
@@ -19402,7 +19390,6 @@ sapphire.complex.abrdns.com
 sarakou.easterndns.com
 sarawut.ddns.net
 saruman.freeddns.org
-sarzamin.mosbatbashim.info
 sascha-rabold.de
 sat.api.ksfto.dpdns.org
 sat.ksf.qzz.io
@@ -19575,7 +19562,6 @@ seedtunnels.com
 seedupsilon.com
 seelabour.com
 seeu.dev
-sefid.goooalir.co.uk
 seipvscpuneji.xyz
 selectvpn.tk
 selenite-copy.pages.dev
@@ -19600,6 +19586,7 @@ serenewin.com
 sergeykobzar.com.ua
 serioustidy.com
 serkanarslan.com
+serv0.ingener002.ip-dynamic.org
 servad.duckdns.org
 servefaststatic.work
 server-beget.ru
@@ -19613,8 +19600,6 @@ server.unp.im
 server01.karl.one
 server01.vboekel.nl
 server1.greendns.green1052.com
-server1.server-space52.info
-server2.server-space52.info
 server2386.com
 server3.boldteam.ir
 server3233.com
@@ -19625,6 +19610,7 @@ serverrmha1.ddnsku.my.id
 serverssh.net
 servertala.ir
 serveur-yan.synology.me
+service.broe.ru
 service.c698fc0a.cfd
 services.akierry.io
 services.newlifesanctuarychurch.com
@@ -20267,7 +20253,6 @@ storkswift.com
 stormnighter.com
 stormproxies.com
 storydoh.kinergetica.com
-strait-of-hormuz.ir.bcsadwtgd.info
 strassmair.org
 strata.gurupannu.com
 stratus.bugz.fr
@@ -20324,7 +20309,6 @@ suissl.com
 sukidayo.eu.org
 sulink.life
 sulinkcloud.github.io
-sumi59.mosswren.vip
 summer.bury.abrdns.com
 summitag.org
 sunbeam-market.com
@@ -20378,6 +20362,7 @@ supervpn.top
 suppervpn-duper-proxyips.tk
 suppervpn-duper8-proxyips.tk
 suppheathcbelgperg.tk
+support.infinityhalo.co.uk
 supported.testing4fun.xyz
 supremebarbershopclarendon.net
 sure.registration.abrdns.com
@@ -20445,6 +20430,7 @@ surfy-chinaz.com
 surfy-chiny.com
 surfyvpn.top
 surge.best
+surima18.quietfjord.click
 surpriserelative.com
 surt.ml
 surt.ovh
@@ -20452,6 +20438,7 @@ surtshark.com
 surviil.duckdns.org
 susucloud.net
 sutausfjsajfas.englishpapers.online
+suto32.foxglade.xyz
 suusuo-1-rammerhead.easterndns.com
 suusuo-2-rammerhead.easterndns.com
 suusuo-sadako.easterndns.com
@@ -20517,6 +20504,7 @@ szyrzyk.pl
 t-dz.com
 t-kuailian.com.cn
 t.jimmy.best
+t.yuhui.eu.org
 t1c.240130034.xyz
 t2c.240130034.xyz
 t3c.240130034.xyz
@@ -20591,7 +20579,6 @@ teach.media.eyesound.net
 teach.state.teachmetofish.net
 teacher4biology.fit
 tealrat.com
-team.fast--pro.co.uk
 teamspeak.adriason.co.uk
 teamusavpn.info
 tecdrive.site
@@ -20777,7 +20764,6 @@ tifa3.top
 tifabei.top
 tifaix.com
 tifaix123.cc
-tig.ofok.tui.frt.7fg7.88n.jananeman.ir
 tiger.dns.qwer.pw
 tigervpn.com
 tigervpns.co.uk
@@ -20911,7 +20897,6 @@ topic.terms.port0.org
 topman8848.com
 toppal.tech
 toppeopleverse.top
-topproxt.asia
 topsecure.info
 topspeedvpn.homes
 topstudio.one
@@ -21031,6 +21016,7 @@ trilium.rokian.net
 trilqavo.forum
 trinitypreschoolmp.org
 triplemlk.com
+triton.musor-tko.ru
 trlone.com
 trojan.nowave.top
 tronlit.com
@@ -21080,6 +21066,7 @@ tuanvpn.freeddns.org
 tubeismsevpns.tk
 tubeprox.com
 tubevpn.help
+tudat1001.duckdns.org
 tuffled-getit-pleaselaugh.newlifesanctuarychurch.com
 tuffmango.edu.showmyhomes.com
 tuic.salome.my.id
@@ -21153,6 +21140,7 @@ twinkletip.com
 twinwherehaveyoubeen.netlify.app
 twistedpins.com
 twistmasksvpn.tk
+twoncorgi.su
 twoproxy.net
 tx.teradns.org
 txqq.pro
@@ -21486,6 +21474,7 @@ us-kan-w-f-1.nashkan.net
 us-kan-w-p-1.nashkan.net
 us-la-w-4.nashkan.net
 us-la-w-5.nashkan.net
+us-lax-w-f-1.nashkan.net
 us-ny-alula.heliumcloud.cc
 us-ny.foxyfy.net
 us-nyc-w-1.nashkan.net
@@ -21503,6 +21492,7 @@ us.aab.im
 us.doh.cloudveil.org
 us.free-vpn-service.eu
 us.future-world.net
+us.h133r.org
 us.lfac.net.br
 us.libost.xyz
 us.novali.date
@@ -21603,6 +21593,7 @@ v.itsa.cc
 v.or2o.ml
 v.recipes
 v.theartieschaffer.com
+v.yuhui.eu.org
 v.yuwentian.com
 v0dka.ru
 v0jlq071shapnlnhj0p9.online
@@ -21737,7 +21728,6 @@ vaporon.top.cdn.cloudflare.net
 vaporsite.pages.dev
 varganet.org
 varkotim.study
-vasalshim.mamadgoli.co.uk
 vashvpn.help
 vasiliysoldatkin.ru
 vasle.goooalir.co.uk
@@ -21765,6 +21755,7 @@ vdkd6nz8qr.s3.amazonaws.com
 vdoqlrzb.com
 vds2380673.my-ihor.ru
 vdsina.ddns.net
+vdskn.duckdns.org
 vdsn-nl-2.azatmutq.com
 vector9nmb3.info
 vectorvelvet.com
@@ -21855,7 +21846,7 @@ vikose.com.vn
 villalazza.stream
 villi.shurakenas.ru
 vilor.site
-vima74.tidelark.cc
+ving.mozitop.co.uk
 vinny-stinks-like-dudu.com
 vip-xvpn.com
 vipanol.app
@@ -21873,10 +21864,10 @@ virtual-browser.com
 virtual-vpn-ssh.tk
 visitoid.online
 visitor0.com
+visu18.fernlark.xyz
 visualrad.org
 vitalik.space
 vitaproxy.com
-vitori41.tidelark.cc
 viuapi.com
 vivaspeer.org
 vivid-bison.com
@@ -22023,7 +22014,6 @@ vpn-webproxy.cn
 vpn-your.tk
 vpn.1xtrm.com
 vpn.4-the.win
-vpn.52oupa.com
 vpn.ac
 vpn.adrielso.tec.br
 vpn.appsverse.com
@@ -22850,18 +22840,13 @@ wealthify.fr
 weariron.com
 weather-doc.com
 weathercloudapp.com
-web-kook.mosbatbashim.info
 web-letsvpn.org
 web-proxy.org
 web-proxy.site
 web-rated.ie
 web.artweb.website.cdn.cloudflare.net
-web.mangoseason7.co.uk
-web.server-space52.info
 web.unstop.cloudns.ch
 web.vpnproxy.asia
-web3.graduat.co.uk
-web3.magli200.info
 web3jsq.com
 web3jsq.pro
 web3jsq.vip
@@ -23207,6 +23192,7 @@ www.securly.com.jackietian.com
 www.souer.kozow.com
 www.uhutg.nas64.de
 www.yowus.html-5.me
+www.yuhui.eu.org
 www.yuzutyan-3.ipv64.net
 www1www.ir
 www78-62-184-9.ir
@@ -23323,6 +23309,7 @@ xkboxvpn.com
 xkvtuqep.com
 xlhtmuoy.com
 xlink.wiki
+xlmhzs.com
 xm.ln7371.top
 xmfvpn.com
 xmgjsd.com
@@ -23503,6 +23490,7 @@ yahoo-search-s.easterndns.com
 yahoodns.net
 yair.link
 yakutvpn.site
+yandex.cloud.cifra-dn.ru
 yandexapi.online
 yandhi.herokuapp.com
 yangfan73.net
@@ -23528,6 +23516,7 @@ yario.ru
 yarp.lefolgoc.net
 yatesfamily.cloud
 yavdvcrs.com
+yavin.securahost.ca
 yawdg.net
 yawn.affable.cloud-ip.cc
 yawtt.net
@@ -23666,6 +23655,7 @@ ytoogw.com
 ytoojc.com
 ytpom.tk
 ytrqplsdm.com
+ytta.localhostaddr.biz.id
 ytvbbomh.com
 ytyt.kozow.com
 yuanmingming.com
@@ -23822,7 +23812,6 @@ zephir.monocul.us
 zephyrus.id
 zerivox.xyz
 zerlix.xyz
-zero.ir.bcsadwtgd.info
 zerotier.com
 zerotunnel.com
 zerovpn-app.com
