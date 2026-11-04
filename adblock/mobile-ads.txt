@@ -3,8 +3,8 @@
 ! Description: Ad networks used inside Android and iOS apps.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-10-28 09:39 UTC
-! Entries: 5442
+! Last modified: 2026-11-04 10:54 UTC
+! Entries: 5443
 !
 ! Built from these sources (see their licenses):
 !   - AdAway Default: https://adaway.org
@@ -1360,6 +1360,7 @@
 ||assistjs.skimresources.com^
 ||assoc-amazon.com^
 ||astrsk.net^
+||asttoxa.ru^
 ||aswpsdkus.com^
 ||async-px-eu.dynamicyield.com^
 ||async-px.dynamicyield.com^

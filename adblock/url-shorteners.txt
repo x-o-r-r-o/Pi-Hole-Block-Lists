@@ -3,8 +3,8 @@
 ! Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-02 11:46 UTC
-! Entries: 9855
+! Last modified: 2026-11-04 10:54 UTC
+! Entries: 9846
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -1378,7 +1378,6 @@
 ||burl.me^
 ||burnurl.com^
 ||busan.pro^
-||buu.lat^
 ||buufjf.com^
 ||buy.adhitan.com^
 ||buy.interagio.com^
@@ -1435,7 +1434,6 @@
 ||calendrierbdp.info^
 ||caliber.help^
 ||callhub.io^
-||caluni.online^
 ||cam.tips^
 ||campaignware.com^
 ||can.al^
@@ -1443,7 +1441,6 @@
 ||candicegilmerauthor.com^
 ||canon.us^
 ||canyonstudent.net^
-||caosateoria.com^
 ||capdisk.com^
 ||capital.one^
 ||capitalfm.co^
@@ -1460,7 +1457,6 @@
 ||careercrawlerslmv.com^
 ||caridomainku.org^
 ||carmoov.fr^
-||carnalflicks.online^
 ||caro.sl^
 ||cart.mn^
 ||cartisbikur.com^
@@ -1543,8 +1539,6 @@
 ||changelink.pro^
 ||chat.thekphub.com^
 ||chatg.pt^
-||cheap-bitcoin.online^
-||cheap-stocks.biz^
 ||checkbill.biz^
 ||checkout.buzzoid.com^
 ||chem.sg^
@@ -1623,7 +1617,6 @@
 ||cli.gs^
 ||cli.re^
 ||clic.ae^
-||clic.bio^
 ||clica.ai^
 ||clica.link^
 ||clicai.xyz^
@@ -4245,9 +4238,7 @@
 ||link.alfamonkey.com^
 ||link.ameerusa.com^
 ||link.caripvcard.com^
-||link.cashcard.id^
 ||link.cc^
-||link.chanrobotics.org^
 ||link.climatemessengers.ca^
 ||link.cnr.it^
 ||link.colborlight.com^
@@ -5377,7 +5368,6 @@
 ||na2.com^
 ||na5.nl^
 ||naa.gg^
-||nabio.com.br^
 ||nagakuat.com^
 ||nah.uy^
 ||naik-terus.com^
@@ -8595,6 +8585,7 @@
 ||uos.cc^
 ||up.to^
 ||updating.me^
+||uplcm.com^
 ||upld.in^
 ||uplifter.ai^
 ||upmchp.us^

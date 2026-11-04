@@ -3,7 +3,7 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-02 11:46 UTC
+! Last modified: 2026-11-04 10:54 UTC
 ! Entries: 3021
 !
 ! Built from these sources (see their licenses):
@@ -585,6 +585,7 @@
 @@||momonster.space^
 @@||mon.icu^
 @@||mond.how^
+@@||moonlightweb.top^
 @@||mortgage.monster^
 @@||movabletype.biz^
 @@||moyos.restaurant^
@@ -1595,7 +1596,6 @@
 ||compress.to^
 ||compuinter.com^
 ||computersforpeace.net^
-||compy.ca^
 ||comxa.com^
 ||con-ip.com^
 ||conditsis.com^
@@ -2853,6 +2853,7 @@
 ||nflfan.org^
 ||nhlfan.net^
 ||nicepage.io^
+||nip.io^
 ||nl.gp^
 ||nl.kg^
 ||no-ip.ca^
