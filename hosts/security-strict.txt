@@ -2,7 +2,7 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-04 10:54 UTC
+# Last modified: 2026-11-05 10:55 UTC
 # Entries: 2739
 #
 # Built from these sources (see their licenses):
@@ -987,7 +987,6 @@
 0.0.0.0 fastshare.org
 0.0.0.0 fat-fly.com
 0.0.0.0 fatdiary.org
-0.0.0.0 fb-business.com
 0.0.0.0 fdns.uk
 0.0.0.0 fearpenguins.com
 0.0.0.0 ferreracademy.com
@@ -1006,7 +1005,6 @@
 0.0.0.0 fintech-llc.com
 0.0.0.0 firm.nu
 0.0.0.0 fivepals.com
-0.0.0.0 flashbuilder.net
 0.0.0.0 flashhub.net
 0.0.0.0 flat4free.com
 0.0.0.0 flazio.com
@@ -1715,6 +1713,7 @@
 0.0.0.0 merseine.org
 0.0.0.0 metadns.cx
 0.0.0.0 mett.ru
+0.0.0.0 meusitehostgator.com.br
 0.0.0.0 mexsipel.net
 0.0.0.0 mgipr.com
 0.0.0.0 mh-it.com
@@ -1969,6 +1968,7 @@
 0.0.0.0 on-the-web.tv
 0.0.0.0 on.gp
 0.0.0.0 on.lc
+0.0.0.0 onaiappbuilder.com
 0.0.0.0 one4u.0lx.net
 0.0.0.0 onedumb.com
 0.0.0.0 onepage.website

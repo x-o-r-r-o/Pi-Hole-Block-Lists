@@ -3,7 +3,7 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-04 10:54 UTC
+! Last modified: 2026-11-05 10:55 UTC
 ! Entries: 3021
 !
 ! Built from these sources (see their licenses):
@@ -489,6 +489,7 @@
 @@||kustomer.help^
 @@||laelaps.fyi^
 @@||lain.wiki^
+@@||langshuai.site^
 @@||lanparty.house^
 @@||latent.space^
 @@||layers.shop^
@@ -610,6 +611,7 @@
 @@||narpy.shop^
 @@||nation.africa^
 @@||nature.house^
+@@||nautilusforge.shop^
 @@||neal.fun^
 @@||neat.computer^
 @@||neat.tube^
@@ -1994,7 +1996,6 @@
 ||fastshare.org^
 ||fat-fly.com^
 ||fatdiary.org^
-||fb-business.com^
 ||fdns.uk^
 ||fearpenguins.com^
 ||ferreracademy.com^
@@ -2013,7 +2014,6 @@
 ||fintech-llc.com^
 ||firm.nu^
 ||fivepals.com^
-||flashbuilder.net^
 ||flashhub.net^
 ||flat4free.com^
 ||flazio.com^
@@ -2684,6 +2684,7 @@
 ||merseine.org^
 ||metadns.cx^
 ||mett.ru^
+||meusitehostgator.com.br^
 ||mexsipel.net^
 ||mgipr.com^
 ||mh-it.com^
@@ -2917,6 +2918,7 @@
 ||on-the-web.tv^
 ||on.gp^
 ||on.lc^
+||onaiappbuilder.com^
 ||one4u.0lx.net^
 ||onedumb.com^
 ||onionsallyear.mobi^

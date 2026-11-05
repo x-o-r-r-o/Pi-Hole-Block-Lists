@@ -2,7 +2,7 @@
 # Description: All IP ranges announced by Bigo Technology's own network (AS10122: Bigo Live, HelloYo and other Bigo services). For router/firewall blocking, which also stops apps that bypass DNS.
 # Format: CIDR, IPv4 only
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-10 05:06 UTC
+# Last modified: 2026-11-05 10:55 UTC
 # Entries: 66
 # Source: prefixes announced by AS10122 (RIPEstat)
 
@@ -51,6 +51,7 @@
 169.136.136.0/22
 169.136.140.0/24
 169.136.142.0/23
+169.136.144.0/24
 169.136.148.0/22
 169.136.152.0/23
 169.136.155.0/24
@@ -61,13 +62,12 @@
 202.63.32.0/21
 202.63.41.0/24
 202.63.42.0/23
-202.63.45.0/24
+202.63.44.0/23
 202.63.46.0/24
 202.63.48.0/20
 202.168.96.0/23
 202.168.99.0/24
-202.168.100.0/23
-202.168.103.0/24
+202.168.100.0/22
 202.168.104.0/22
 202.168.108.0/23
 202.168.111.0/24
