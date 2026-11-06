@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-05 10:55 UTC
-# Entries: 2739
+# Last modified: 2026-11-06 10:51 UTC
+# Entries: 2734
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -78,7 +78,6 @@
 1x7.de
 2.je
 204.at
-22web.org
 24-7.ro
 24.co.at
 24.eu
@@ -1310,7 +1309,6 @@ hostdns.me
 hostedforfree.com
 hostfree.pw
 hosthampster.com
-hostingersite.com
 hostingsiteforfree.com
 hotfile.com
 hotshare.net
@@ -1348,7 +1346,6 @@ idigo.org
 idiot24.de
 idleplay.net
 ieserver.net
-igg.biz
 ignify.co.uk
 ignorelist.com
 iiiii.info
@@ -1870,7 +1867,6 @@ natrofa.com
 ndcg.com
 neat-url.com
 neibu.911s5.net
-neocities.org
 neptunproxies.com
 nerdcamp.net
 nerdpol.ovh
@@ -2153,7 +2149,6 @@ reodev.com
 replug.link
 repocket.com
 resolve.bar
-rf.gd
 risu.io
 ro.gp
 ro.lt
@@ -2371,6 +2366,7 @@ stormpages.com
 stoupin.ru
 strangled.net
 stroyexpert.org
+studio.site
 stuff-4-sale.org
 stuff-4-sale.us
 stufftoread.com
@@ -2595,7 +2591,6 @@ vpndns.net
 vpntraki.com
 vpnx.nl
 vr.lt
-vuzelia.com
 vxe6.net
 vz.lc
 wakingmoon.com

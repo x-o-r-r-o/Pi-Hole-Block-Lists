@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-05 10:55 UTC
-! Entries: 3021
+! Last modified: 2026-11-06 10:51 UTC
+! Entries: 3016
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -352,6 +352,7 @@
 @@||gdflix.dad^
 @@||gdtot.dad^
 @@||geekchic.shop^
+@@||gem.wiki^
 @@||genderdysphoria.fyi^
 @@||geoigarape.online^
 @@||getindie.wiki^
@@ -1127,7 +1128,6 @@
 ||1x7.de^
 ||2.je^
 ||204.at^
-||22web.org^
 ||24-7.ro^
 ||24.co.at^
 ||24.eu^
@@ -2298,7 +2298,6 @@
 ||hostdns.me^
 ||hostedforfree.com^
 ||hosthampster.com^
-||hostingersite.com^
 ||hostingsiteforfree.com^
 ||hotfile.com^
 ||hotshare.net^
@@ -2832,7 +2831,6 @@
 ||ndcg.com^
 ||neat-url.com^
 ||neibu.911s5.net^
-||neocities.org^
 ||neptunproxies.com^
 ||nerdcamp.net^
 ||nerdpol.ovh^
@@ -3094,7 +3092,6 @@
 ||reodev.com^
 ||replug.link^
 ||repocket.com^
-||rf.gd^
 ||risu.io^
 ||ro.gp^
 ||ro.lt^
@@ -3510,7 +3507,6 @@
 ||vpntraki.com^
 ||vpnx.nl^
 ||vr.lt^
-||vuzelia.com^
 ||vxe6.net^
 ||vz.lc^
 ||wakingmoon.com^

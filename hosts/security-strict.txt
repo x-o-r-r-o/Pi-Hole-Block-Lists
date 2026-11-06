@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-05 10:55 UTC
-# Entries: 2739
+# Last modified: 2026-11-06 10:51 UTC
+# Entries: 2734
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -78,7 +78,6 @@
 0.0.0.0 1x7.de
 0.0.0.0 2.je
 0.0.0.0 204.at
-0.0.0.0 22web.org
 0.0.0.0 24-7.ro
 0.0.0.0 24.co.at
 0.0.0.0 24.eu
@@ -1310,7 +1309,6 @@
 0.0.0.0 hostedforfree.com
 0.0.0.0 hostfree.pw
 0.0.0.0 hosthampster.com
-0.0.0.0 hostingersite.com
 0.0.0.0 hostingsiteforfree.com
 0.0.0.0 hotfile.com
 0.0.0.0 hotshare.net
@@ -1348,7 +1346,6 @@
 0.0.0.0 idiot24.de
 0.0.0.0 idleplay.net
 0.0.0.0 ieserver.net
-0.0.0.0 igg.biz
 0.0.0.0 ignify.co.uk
 0.0.0.0 ignorelist.com
 0.0.0.0 iiiii.info
@@ -1870,7 +1867,6 @@
 0.0.0.0 ndcg.com
 0.0.0.0 neat-url.com
 0.0.0.0 neibu.911s5.net
-0.0.0.0 neocities.org
 0.0.0.0 neptunproxies.com
 0.0.0.0 nerdcamp.net
 0.0.0.0 nerdpol.ovh
@@ -2153,7 +2149,6 @@
 0.0.0.0 replug.link
 0.0.0.0 repocket.com
 0.0.0.0 resolve.bar
-0.0.0.0 rf.gd
 0.0.0.0 risu.io
 0.0.0.0 ro.gp
 0.0.0.0 ro.lt
@@ -2371,6 +2366,7 @@
 0.0.0.0 stoupin.ru
 0.0.0.0 strangled.net
 0.0.0.0 stroyexpert.org
+0.0.0.0 studio.site
 0.0.0.0 stuff-4-sale.org
 0.0.0.0 stuff-4-sale.us
 0.0.0.0 stufftoread.com
@@ -2595,7 +2591,6 @@
 0.0.0.0 vpntraki.com
 0.0.0.0 vpnx.nl
 0.0.0.0 vr.lt
-0.0.0.0 vuzelia.com
 0.0.0.0 vxe6.net
 0.0.0.0 vz.lc
 0.0.0.0 wakingmoon.com
