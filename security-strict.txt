@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-06 10:51 UTC
-# Entries: 2734
+# Last modified: 2026-11-07 10:07 UTC
+# Entries: 2740
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -17,6 +17,7 @@
 000a.de
 000free.us
 000webapp.com
+000webhost.com
 000webhost.fr
 000webhost.info
 000webhostapp.com
@@ -37,6 +38,7 @@
 0pi.com
 0rg.us
 0x.no
+0x0.st
 1.vg
 10001mb.com
 100mountain.com
@@ -78,6 +80,7 @@
 1x7.de
 2.je
 204.at
+22web.org
 24-7.ro
 24.co.at
 24.eu
@@ -124,10 +127,12 @@
 404.mn
 4040.idv.tw
 42t.com
+42web.io
 433.at
 4cloud.click
 4dq.com
 4everland.app
+4everland.io
 4khdcamera.com
 4kp.de
 4mydomain.com
@@ -136,6 +141,7 @@
 4u2.de
 4x.si
 530.at
+5gbfree.com
 5mp.eu
 5on.de
 5oo.de
@@ -143,6 +149,7 @@
 64-b.it
 66ghz.com
 688.org
+6te.net
 741.com
 766.at
 77uam.com
@@ -238,6 +245,7 @@ anschiessen.de
 any64.de
 anyhub.net
 anyitsolution.com
+apac.orbitor.dev
 api.iproyal.com
 api64.de
 appbitly.com
@@ -349,75 +357,6 @@ blogdns.org
 bloggt.de
 blogmonster.de
 blogsite.org
-blogspot.ae
-blogspot.al
-blogspot.am
-blogspot.ba
-blogspot.be
-blogspot.bg
-blogspot.ca
-blogspot.ch
-blogspot.cl
-blogspot.co.at
-blogspot.co.id
-blogspot.co.il
-blogspot.co.ke
-blogspot.co.nz
-blogspot.co.uk
-blogspot.co.za
-blogspot.com
-blogspot.com.ar
-blogspot.com.au
-blogspot.com.br
-blogspot.com.by
-blogspot.com.co
-blogspot.com.cy
-blogspot.com.ee
-blogspot.com.eg
-blogspot.com.es
-blogspot.com.mt
-blogspot.com.ng
-blogspot.com.tr
-blogspot.com.uy
-blogspot.cz
-blogspot.de
-blogspot.dk
-blogspot.fi
-blogspot.fr
-blogspot.gr
-blogspot.hk
-blogspot.hr
-blogspot.hu
-blogspot.ie
-blogspot.in
-blogspot.is
-blogspot.it
-blogspot.jp
-blogspot.kr
-blogspot.li
-blogspot.lt
-blogspot.lu
-blogspot.md
-blogspot.mk
-blogspot.mx
-blogspot.my
-blogspot.nl
-blogspot.no
-blogspot.org
-blogspot.pe
-blogspot.pl
-blogspot.pt
-blogspot.qa
-blogspot.ro
-blogspot.rs
-blogspot.ru
-blogspot.se
-blogspot.sg
-blogspot.si
-blogspot.sk
-blogspot.sn
-blogspot.tw
-blogspot.ug
 blogsyte.com
 bloodforthebloodgod.com
 bloom.us
@@ -452,6 +391,8 @@ byethost11.com
 byethost13.com
 byethost14.com
 byethost18.com
+byethost24.com
+byethost33.com
 byethost4.com
 byethost5.com
 byethost6.com
@@ -470,6 +411,7 @@ cashit.info
 cbkgardens.com
 cbopelousas.com
 cbu.net
+cc.cd
 ccwu.cc
 cebol.me
 cechire.com
@@ -477,6 +419,7 @@ celebsplay.com
 celltrak.mobi
 center.tl
 centserver.com
+cf-ipfs.com
 cf.gs
 ch.gp
 ch.kg
@@ -527,18 +470,24 @@ client.holax.io
 clienturl.net
 clipser.com
 cloud-ip.biz
+cloud-ip.cc
+cloudflare-ipfs.com
 cloudns.asia
 cloudns.be
 cloudns.cc
 cloudns.ch
 cloudns.cl
+cloudns.club
 cloudns.cx
+cloudns.eu
 cloudns.in
 cloudns.info
 cloudns.nz
 cloudns.org
 cloudns.ph
 cloudns.pro
+cloudns.pw
+cloudns.us
 cloudrouter.pro
 cloudwatch.net
 cloudxns.net
@@ -655,6 +604,7 @@ de.im
 de.ki
 de.mg
 de.pl
+de5.net
 dearabba.org
 dedyn.io
 demosoftonline.com
@@ -676,7 +626,6 @@ dimsolo.com
 diowebhost.com
 dip.jp
 diskstation.eu
-diskstation.me
 diskstation.org
 ditchyourip.com
 dive2.net
@@ -759,12 +708,7 @@ drayddns.com
 dreht-auf.de
 dropfiles.net
 drunkensailor.org
-dscloud.me
-dscloud.mobi
 dsmtp.com
-dsmynas.com
-dsmynas.net
-dsmynas.org
 dtdns.com
 dtdns.net
 dtdns.org
@@ -782,6 +726,7 @@ dvr-ddns.com
 dvrcam.info
 dvrdns.org
 dweb.link
+dx.am
 dyn-access.biz
 dyn-access.com
 dyn-access.de
@@ -898,6 +843,7 @@ ehaitao.com
 eiresol.com
 elchemi.com
 electronicfiles.net
+elementfx.com
 elitter.net
 embeddedonline.org
 emergent.sh
@@ -945,8 +891,10 @@ eu.gg
 eu.gl
 eu.gp
 eu.nu
+eu.orbitor.dev
 eu3.biz
 eu5.net
+eu5.org
 eur.lc
 euro.lc
 europa.lc
@@ -973,9 +921,6 @@ faceboook-app.com
 facepl.com
 fairuse.org
 falcongreen.com
-familyds.com
-familyds.net
-familyds.org
 familylobby.com
 fanclub.rocks
 fantasyleague.cc
@@ -990,6 +935,7 @@ fdns.uk
 fearpenguins.com
 ferreracademy.com
 feste-ip.net
+file.io
 fileave.com
 filebin.net
 filecache.de
@@ -1037,14 +983,17 @@ forumz.info
 fotos.lc
 fr.gp
 fragmentary.info
+framer.website
 freakshare.net
 free-ddns.com
 free.bizhat.com
 free.cr
 free.lc
+free.nf
 freeasphost.net
 freeblog.biz
 freecities.com
+freecluster.eu
 freeddns.com
 freeddns.org
 freeddns.uk
@@ -1060,9 +1009,12 @@ freehostingcloud.com
 freehostingking.com
 freehostyou.com
 freemyip.com
+freeoda.com
 freesa.org
 freesite.org
 freetcp.com
+freetzi.com
+freevar.com
 freevpncuba.com
 freevpnghana.com
 freevpnhongkong.com
@@ -1156,6 +1108,7 @@ gaming.lc
 garmanage.com
 garypatel.com
 gastright.com
+gateway.lighthouse.storage
 geekgalaxy.com
 genblogger.com
 geobattery.com
@@ -1186,6 +1139,7 @@ gofreeserve.com
 golaud.com
 goldcrestcc.com
 golffan.us
+gomix.me
 googletagmanagers.com
 got-game.org
 gotdns.ch
@@ -1318,6 +1272,7 @@ hr-organization.com
 hr-rewards.com
 hs.vc
 hst5.com
+hstn.me
 html-5.me
 htmlcomponentservice.com
 htmlpasta.com
@@ -1333,7 +1288,6 @@ hyderabadadda.com
 hyip.com
 hyperphp.com
 i.gp
-i234.me
 i8.ae
 iamallama.com
 ibiz.cc
@@ -1369,6 +1323,7 @@ inbox24.org
 independentonline.ro
 indevs.in
 infinityfree.me
+infinityfreeapp.com
 inflict.us
 info-com.de
 info-home.de
@@ -1380,6 +1335,7 @@ info24h.de
 info4.de
 infos.cx
 infos.lc
+infura-ipfs.io
 infy.uk
 inkcat.net
 innograph.com
@@ -1399,6 +1355,9 @@ ip-ddns.com
 ip-dynamic.com
 ip-dynamic.org
 ip2world.com
+ipfs.best-practice.se
+ipfs.ink
+ipfs.io
 ipidea.io
 iplogger.cn
 iplogger.co
@@ -1547,6 +1506,7 @@ jumpingcrab.com
 jundy.org
 jungleheart.com
 justdied.com
+justns.ru
 jvogt.org
 jwork.ru
 k.gp
@@ -1557,8 +1517,6 @@ kanda.ru
 kann-helfen.de
 kaohsiung.tv
 kck-saratov.ru
-keenetic.link
-keenetic.pro
 keepo.bio
 keine-panik.net
 kellserve.com
@@ -1580,6 +1538,7 @@ kortlink.dk
 kozow.com
 kr.gp
 kraftonevent.com
+kro.kr
 ksk-saratov.ru
 kurzschliessen.de
 kyrgyzstan.kg
@@ -1597,6 +1556,7 @@ land-4-sale.us
 landomain.net
 lanify.ai
 larzzons.com
+latam.orbitor.dev
 launchaco.com
 ldtp.com
 lebtimnetz.de
@@ -1616,11 +1576,13 @@ lflinkup.com
 lflinkup.net
 lflinkup.org
 lhosting.info
+lhr.life
 liebe.lc
 lihi1.com
 lihi3.cc
 likes-pie.com
 likescandy.com
+likesyou.org
 limit.org.uk
 line.pm
 link.ac
@@ -1632,7 +1594,6 @@ links.lc
 linux-site.net
 linuxd1.com
 linuxdigital.org
-list-mgmt.com
 litecsys.com
 littlebyte.net
 live-stream.eu
@@ -1646,6 +1607,9 @@ lmy.de
 lnk.do
 lnkz.at
 loadteam.com
+loca.lt
+localto.net
+localtonet.com
 locumm.com
 login.911s5.net
 loginto.me
@@ -1658,6 +1622,7 @@ loophole.site
 loseyourip.com
 lospenitentes.com
 lostgumball.com
+lovable.app
 lovelocals.us
 loveslife.biz
 lovestoblog.com
@@ -1783,9 +1748,11 @@ myactivedirectory.com
 myaddr.dev
 myaddr.io
 myaddr.tools
+myartsonline.com
 myblogvoice.com
 mybluehost.me
 mybluehostin.me
+myclickfunnels.com
 mycompany.tv
 mycpanel.rs
 mydad.info
@@ -1797,7 +1764,6 @@ mydiscussion.net
 mydissent.net
 mydns.bz
 mydns.jp
-myds.me
 myeffect.net
 myeweb.net
 myfoolmoon.com
@@ -1844,9 +1810,9 @@ myserver.org
 mysterium.network
 mystnodes.com
 mystrikingly.com
-mysynology.net
 mytempdir.com
 myvnc.com
+mywebcommunity.org
 mywebworld.info
 mywire.org
 mywww.biz
@@ -1886,8 +1852,12 @@ networkoutpost.com
 netz.tl
 newmail.ru
 nflfan.org
+nftstorage.link
+ngrok-free.app
+ngrok-free.dev
 nhlfan.net
 nicepage.io
+nichesite.org
 ninth.biz
 nip.io
 nl.gp
@@ -1944,7 +1914,9 @@ ntdll.top
 nufszone.com
 nut.cc
 nx.tc
+nyc.mn
 o-f.com
+o-r.kr
 o.gp
 ocry.com
 ods.org
@@ -1975,6 +1947,7 @@ online.cr
 online.gp
 online.ly
 online.tc
+onlinewebshop.net
 only4u.eu
 onmbl.com
 onmypc.biz
@@ -1988,6 +1961,7 @@ opent2.com
 opior.com
 oray.com
 organiccrap.com
+orgfree.com
 orgsites.com
 orskkino.ru
 otzo.com
@@ -2064,6 +2038,7 @@ portfwd.com
 portmap.host
 portrelay.com
 possessed.us
+pp.ua
 prettyweak.com
 preview-domain.com
 priamaakcia.sk
@@ -2146,9 +2121,12 @@ redirme.com
 reijn.org
 remotecam.nu
 reodev.com
+repl.co
+repl.run
 replug.link
 repocket.com
 resolve.bar
+rf.gd
 risu.io
 ro.gp
 ro.lt
@@ -2163,6 +2141,7 @@ route64.de
 routemehome.com
 roxa.org
 royal-host.com
+royalwebhosting.net
 rplg.co
 rpz.su
 rr.nu
@@ -2189,6 +2168,7 @@ sc.link
 scay.net
 schmust.de
 schoolrack.com
+scienceontheweb.net
 scottlewisonline.com
 scottstreit.com
 scrapitsoftware.com
@@ -2295,6 +2275,7 @@ silksky.com
 simple-url.com
 simplecharity.com
 sino.tw
+sitebeat.crazydomains.com
 sitelutions.com
 sitepalace.com
 sitey.me
@@ -2324,6 +2305,7 @@ softether.net
 solfa.org
 solidmation.com
 solidwebhost.com
+somee.com
 sonnish.com
 soon.it
 soundcast.me
@@ -2348,6 +2330,7 @@ squirly.info
 srv1.org
 srv64.de
 srvdns.de
+sryze.cc
 ssitech.bg
 ssl443.org
 sslip.io
@@ -2362,6 +2345,7 @@ stemmetje.com
 stes.fi
 stfu-kthx.net
 stocktester.ru
+storacha.link
 stormpages.com
 stoupin.ru
 strangled.net
@@ -2420,6 +2404,7 @@ tedfullwood.com
 tehno-politen.ru
 tekkennetwork.com
 teleporthq.app
+temp.sh
 tempisite.com
 temporary-demo.site
 temporary.site
@@ -2445,6 +2430,7 @@ thruhere.net
 tiiny.io
 tinylink.in
 tinyrealm.com
+tinyupload.com
 tinyurl.ph
 tld.cc
 tlsn.io
@@ -2468,6 +2454,7 @@ trackfinanceworld.com
 traeumtgerade.de
 traffmonetizer.com
 trailsendlodge.org
+transfer.sh
 trend.in
 trickip.net
 trickip.org
@@ -2475,9 +2462,11 @@ trieditmyself.com
 trim.one
 tru.io
 truthvid.com
+trycloudflare.com
 tscng.org
 tth.cl
 tunnelbroker.net
+tunnelmole.net
 turbo.site
 turkish.lc
 tvlinux.com
@@ -2493,9 +2482,11 @@ ubpages.com
 ucoz.ru
 ucvradio.cl
 udp64.de
+ueuo.com
 ufcfan.org
 ufodns.com
 ugo.si
+ugu.pl
 uk.cr
 uk.gp
 uk.ms
@@ -2520,6 +2511,7 @@ uploader.eu
 uploadev.org
 uploading.com
 uploadjar.com
+uplooder.net
 uprock.com
 upsara.com
 ur.io
@@ -2530,6 +2522,7 @@ urlaub.lc
 urle.me
 urlyte.com
 urown.cloud
+us.ci
 us.com
 us.kg
 us.nf
@@ -2593,10 +2586,13 @@ vpnx.nl
 vr.lt
 vxe6.net
 vz.lc
+w3s.link
+w3spaces.com
 wakingmoon.com
 wan64.de
 wanip.ch
 wapka.club
+wapka.co
 wapka.site
 wapka.store
 wapka.top
@@ -2611,6 +2607,9 @@ webaccess-alert.com
 webaccess-email.com
 webblog24.de
 webboss.site
+webcindario.com
+webflow.io
+webflowtest.io
 webhop.biz
 webhop.info
 webhop.me
@@ -2665,12 +2664,15 @@ writes.de
 writesthisblog.com
 wstd.io
 wtcsites.com
+wuaze.com
 www1.biz
 www4.me
 wwwhost.biz
 wwwhost.us
 wy5532.com
 x.gp
+x10.bz
+x10.mx
 x24hr.com
 x443.pw
 x9.eu
@@ -2681,6 +2683,7 @@ xddns.de
 xl.lc
 xml.in
 xname.org
+xp3.biz
 xpresit.net
 xsl.tel
 xsph.ru
@@ -2710,6 +2713,7 @@ yj.ae
 ykm.de
 yngling.com
 yoannrolland22-48243.bubbleapps.io
+yolasite.com
 you.lc
 youdontcare.com
 youpc.ro
@@ -2734,7 +2738,9 @@ zeabur.app
 zeitr.ch
 zelslonik.info
 ziddu.com
+zippyshare.com
 zneth.com
+zone.id
 zoneedit.com
 zsh.jp
 zspeed-cdn.com

@@ -3,8 +3,8 @@
 ! Description: Search engines that can't enforce SafeSearch. Use with `adult` so explicit results can't be reached through other search engines.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-01 10:27 UTC
-! Entries: 201
+! Last modified: 2026-11-07 10:07 UTC
+! Entries: 200
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi No SafeSearch: https://github.com/hagezi/dns-blocklists
@@ -149,7 +149,6 @@
 ||searx.gotrust.de^
 ||searx.guillaumea.fr^
 ||searx.hardwired.link^
-||searx.info^
 ||searx.ir^
 ||searx.lavatech.top^
 ||searx.lwhr.xyz^

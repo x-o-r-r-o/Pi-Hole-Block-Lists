@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-06 10:51 UTC
-# Entries: 2734
+# Last modified: 2026-11-07 10:07 UTC
+# Entries: 2740
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -17,6 +17,7 @@
 0.0.0.0 000a.de
 0.0.0.0 000free.us
 0.0.0.0 000webapp.com
+0.0.0.0 000webhost.com
 0.0.0.0 000webhost.fr
 0.0.0.0 000webhost.info
 0.0.0.0 000webhostapp.com
@@ -37,6 +38,7 @@
 0.0.0.0 0pi.com
 0.0.0.0 0rg.us
 0.0.0.0 0x.no
+0.0.0.0 0x0.st
 0.0.0.0 1.vg
 0.0.0.0 10001mb.com
 0.0.0.0 100mountain.com
@@ -78,6 +80,7 @@
 0.0.0.0 1x7.de
 0.0.0.0 2.je
 0.0.0.0 204.at
+0.0.0.0 22web.org
 0.0.0.0 24-7.ro
 0.0.0.0 24.co.at
 0.0.0.0 24.eu
@@ -124,10 +127,12 @@
 0.0.0.0 404.mn
 0.0.0.0 4040.idv.tw
 0.0.0.0 42t.com
+0.0.0.0 42web.io
 0.0.0.0 433.at
 0.0.0.0 4cloud.click
 0.0.0.0 4dq.com
 0.0.0.0 4everland.app
+0.0.0.0 4everland.io
 0.0.0.0 4khdcamera.com
 0.0.0.0 4kp.de
 0.0.0.0 4mydomain.com
@@ -136,6 +141,7 @@
 0.0.0.0 4u2.de
 0.0.0.0 4x.si
 0.0.0.0 530.at
+0.0.0.0 5gbfree.com
 0.0.0.0 5mp.eu
 0.0.0.0 5on.de
 0.0.0.0 5oo.de
@@ -143,6 +149,7 @@
 0.0.0.0 64-b.it
 0.0.0.0 66ghz.com
 0.0.0.0 688.org
+0.0.0.0 6te.net
 0.0.0.0 741.com
 0.0.0.0 766.at
 0.0.0.0 77uam.com
@@ -238,6 +245,7 @@
 0.0.0.0 any64.de
 0.0.0.0 anyhub.net
 0.0.0.0 anyitsolution.com
+0.0.0.0 apac.orbitor.dev
 0.0.0.0 api.iproyal.com
 0.0.0.0 api64.de
 0.0.0.0 appbitly.com
@@ -349,75 +357,6 @@
 0.0.0.0 bloggt.de
 0.0.0.0 blogmonster.de
 0.0.0.0 blogsite.org
-0.0.0.0 blogspot.ae
-0.0.0.0 blogspot.al
-0.0.0.0 blogspot.am
-0.0.0.0 blogspot.ba
-0.0.0.0 blogspot.be
-0.0.0.0 blogspot.bg
-0.0.0.0 blogspot.ca
-0.0.0.0 blogspot.ch
-0.0.0.0 blogspot.cl
-0.0.0.0 blogspot.co.at
-0.0.0.0 blogspot.co.id
-0.0.0.0 blogspot.co.il
-0.0.0.0 blogspot.co.ke
-0.0.0.0 blogspot.co.nz
-0.0.0.0 blogspot.co.uk
-0.0.0.0 blogspot.co.za
-0.0.0.0 blogspot.com
-0.0.0.0 blogspot.com.ar
-0.0.0.0 blogspot.com.au
-0.0.0.0 blogspot.com.br
-0.0.0.0 blogspot.com.by
-0.0.0.0 blogspot.com.co
-0.0.0.0 blogspot.com.cy
-0.0.0.0 blogspot.com.ee
-0.0.0.0 blogspot.com.eg
-0.0.0.0 blogspot.com.es
-0.0.0.0 blogspot.com.mt
-0.0.0.0 blogspot.com.ng
-0.0.0.0 blogspot.com.tr
-0.0.0.0 blogspot.com.uy
-0.0.0.0 blogspot.cz
-0.0.0.0 blogspot.de
-0.0.0.0 blogspot.dk
-0.0.0.0 blogspot.fi
-0.0.0.0 blogspot.fr
-0.0.0.0 blogspot.gr
-0.0.0.0 blogspot.hk
-0.0.0.0 blogspot.hr
-0.0.0.0 blogspot.hu
-0.0.0.0 blogspot.ie
-0.0.0.0 blogspot.in
-0.0.0.0 blogspot.is
-0.0.0.0 blogspot.it
-0.0.0.0 blogspot.jp
-0.0.0.0 blogspot.kr
-0.0.0.0 blogspot.li
-0.0.0.0 blogspot.lt
-0.0.0.0 blogspot.lu
-0.0.0.0 blogspot.md
-0.0.0.0 blogspot.mk
-0.0.0.0 blogspot.mx
-0.0.0.0 blogspot.my
-0.0.0.0 blogspot.nl
-0.0.0.0 blogspot.no
-0.0.0.0 blogspot.org
-0.0.0.0 blogspot.pe
-0.0.0.0 blogspot.pl
-0.0.0.0 blogspot.pt
-0.0.0.0 blogspot.qa
-0.0.0.0 blogspot.ro
-0.0.0.0 blogspot.rs
-0.0.0.0 blogspot.ru
-0.0.0.0 blogspot.se
-0.0.0.0 blogspot.sg
-0.0.0.0 blogspot.si
-0.0.0.0 blogspot.sk
-0.0.0.0 blogspot.sn
-0.0.0.0 blogspot.tw
-0.0.0.0 blogspot.ug
 0.0.0.0 blogsyte.com
 0.0.0.0 bloodforthebloodgod.com
 0.0.0.0 bloom.us
@@ -452,6 +391,8 @@
 0.0.0.0 byethost13.com
 0.0.0.0 byethost14.com
 0.0.0.0 byethost18.com
+0.0.0.0 byethost24.com
+0.0.0.0 byethost33.com
 0.0.0.0 byethost4.com
 0.0.0.0 byethost5.com
 0.0.0.0 byethost6.com
@@ -470,6 +411,7 @@
 0.0.0.0 cbkgardens.com
 0.0.0.0 cbopelousas.com
 0.0.0.0 cbu.net
+0.0.0.0 cc.cd
 0.0.0.0 ccwu.cc
 0.0.0.0 cebol.me
 0.0.0.0 cechire.com
@@ -477,6 +419,7 @@
 0.0.0.0 celltrak.mobi
 0.0.0.0 center.tl
 0.0.0.0 centserver.com
+0.0.0.0 cf-ipfs.com
 0.0.0.0 cf.gs
 0.0.0.0 ch.gp
 0.0.0.0 ch.kg
@@ -527,18 +470,24 @@
 0.0.0.0 clienturl.net
 0.0.0.0 clipser.com
 0.0.0.0 cloud-ip.biz
+0.0.0.0 cloud-ip.cc
+0.0.0.0 cloudflare-ipfs.com
 0.0.0.0 cloudns.asia
 0.0.0.0 cloudns.be
 0.0.0.0 cloudns.cc
 0.0.0.0 cloudns.ch
 0.0.0.0 cloudns.cl
+0.0.0.0 cloudns.club
 0.0.0.0 cloudns.cx
+0.0.0.0 cloudns.eu
 0.0.0.0 cloudns.in
 0.0.0.0 cloudns.info
 0.0.0.0 cloudns.nz
 0.0.0.0 cloudns.org
 0.0.0.0 cloudns.ph
 0.0.0.0 cloudns.pro
+0.0.0.0 cloudns.pw
+0.0.0.0 cloudns.us
 0.0.0.0 cloudrouter.pro
 0.0.0.0 cloudwatch.net
 0.0.0.0 cloudxns.net
@@ -655,6 +604,7 @@
 0.0.0.0 de.ki
 0.0.0.0 de.mg
 0.0.0.0 de.pl
+0.0.0.0 de5.net
 0.0.0.0 dearabba.org
 0.0.0.0 dedyn.io
 0.0.0.0 demosoftonline.com
@@ -676,7 +626,6 @@
 0.0.0.0 diowebhost.com
 0.0.0.0 dip.jp
 0.0.0.0 diskstation.eu
-0.0.0.0 diskstation.me
 0.0.0.0 diskstation.org
 0.0.0.0 ditchyourip.com
 0.0.0.0 dive2.net
@@ -759,12 +708,7 @@
 0.0.0.0 dreht-auf.de
 0.0.0.0 dropfiles.net
 0.0.0.0 drunkensailor.org
-0.0.0.0 dscloud.me
-0.0.0.0 dscloud.mobi
 0.0.0.0 dsmtp.com
-0.0.0.0 dsmynas.com
-0.0.0.0 dsmynas.net
-0.0.0.0 dsmynas.org
 0.0.0.0 dtdns.com
 0.0.0.0 dtdns.net
 0.0.0.0 dtdns.org
@@ -782,6 +726,7 @@
 0.0.0.0 dvrcam.info
 0.0.0.0 dvrdns.org
 0.0.0.0 dweb.link
+0.0.0.0 dx.am
 0.0.0.0 dyn-access.biz
 0.0.0.0 dyn-access.com
 0.0.0.0 dyn-access.de
@@ -898,6 +843,7 @@
 0.0.0.0 eiresol.com
 0.0.0.0 elchemi.com
 0.0.0.0 electronicfiles.net
+0.0.0.0 elementfx.com
 0.0.0.0 elitter.net
 0.0.0.0 embeddedonline.org
 0.0.0.0 emergent.sh
@@ -945,8 +891,10 @@
 0.0.0.0 eu.gl
 0.0.0.0 eu.gp
 0.0.0.0 eu.nu
+0.0.0.0 eu.orbitor.dev
 0.0.0.0 eu3.biz
 0.0.0.0 eu5.net
+0.0.0.0 eu5.org
 0.0.0.0 eur.lc
 0.0.0.0 euro.lc
 0.0.0.0 europa.lc
@@ -973,9 +921,6 @@
 0.0.0.0 facepl.com
 0.0.0.0 fairuse.org
 0.0.0.0 falcongreen.com
-0.0.0.0 familyds.com
-0.0.0.0 familyds.net
-0.0.0.0 familyds.org
 0.0.0.0 familylobby.com
 0.0.0.0 fanclub.rocks
 0.0.0.0 fantasyleague.cc
@@ -990,6 +935,7 @@
 0.0.0.0 fearpenguins.com
 0.0.0.0 ferreracademy.com
 0.0.0.0 feste-ip.net
+0.0.0.0 file.io
 0.0.0.0 fileave.com
 0.0.0.0 filebin.net
 0.0.0.0 filecache.de
@@ -1037,14 +983,17 @@
 0.0.0.0 fotos.lc
 0.0.0.0 fr.gp
 0.0.0.0 fragmentary.info
+0.0.0.0 framer.website
 0.0.0.0 freakshare.net
 0.0.0.0 free-ddns.com
 0.0.0.0 free.bizhat.com
 0.0.0.0 free.cr
 0.0.0.0 free.lc
+0.0.0.0 free.nf
 0.0.0.0 freeasphost.net
 0.0.0.0 freeblog.biz
 0.0.0.0 freecities.com
+0.0.0.0 freecluster.eu
 0.0.0.0 freeddns.com
 0.0.0.0 freeddns.org
 0.0.0.0 freeddns.uk
@@ -1060,9 +1009,12 @@
 0.0.0.0 freehostingking.com
 0.0.0.0 freehostyou.com
 0.0.0.0 freemyip.com
+0.0.0.0 freeoda.com
 0.0.0.0 freesa.org
 0.0.0.0 freesite.org
 0.0.0.0 freetcp.com
+0.0.0.0 freetzi.com
+0.0.0.0 freevar.com
 0.0.0.0 freevpncuba.com
 0.0.0.0 freevpnghana.com
 0.0.0.0 freevpnhongkong.com
@@ -1156,6 +1108,7 @@
 0.0.0.0 garmanage.com
 0.0.0.0 garypatel.com
 0.0.0.0 gastright.com
+0.0.0.0 gateway.lighthouse.storage
 0.0.0.0 geekgalaxy.com
 0.0.0.0 genblogger.com
 0.0.0.0 geobattery.com
@@ -1186,6 +1139,7 @@
 0.0.0.0 golaud.com
 0.0.0.0 goldcrestcc.com
 0.0.0.0 golffan.us
+0.0.0.0 gomix.me
 0.0.0.0 googletagmanagers.com
 0.0.0.0 got-game.org
 0.0.0.0 gotdns.ch
@@ -1318,6 +1272,7 @@
 0.0.0.0 hr-rewards.com
 0.0.0.0 hs.vc
 0.0.0.0 hst5.com
+0.0.0.0 hstn.me
 0.0.0.0 html-5.me
 0.0.0.0 htmlcomponentservice.com
 0.0.0.0 htmlpasta.com
@@ -1333,7 +1288,6 @@
 0.0.0.0 hyip.com
 0.0.0.0 hyperphp.com
 0.0.0.0 i.gp
-0.0.0.0 i234.me
 0.0.0.0 i8.ae
 0.0.0.0 iamallama.com
 0.0.0.0 ibiz.cc
@@ -1369,6 +1323,7 @@
 0.0.0.0 independentonline.ro
 0.0.0.0 indevs.in
 0.0.0.0 infinityfree.me
+0.0.0.0 infinityfreeapp.com
 0.0.0.0 inflict.us
 0.0.0.0 info-com.de
 0.0.0.0 info-home.de
@@ -1380,6 +1335,7 @@
 0.0.0.0 info4.de
 0.0.0.0 infos.cx
 0.0.0.0 infos.lc
+0.0.0.0 infura-ipfs.io
 0.0.0.0 infy.uk
 0.0.0.0 inkcat.net
 0.0.0.0 innograph.com
@@ -1399,6 +1355,9 @@
 0.0.0.0 ip-dynamic.com
 0.0.0.0 ip-dynamic.org
 0.0.0.0 ip2world.com
+0.0.0.0 ipfs.best-practice.se
+0.0.0.0 ipfs.ink
+0.0.0.0 ipfs.io
 0.0.0.0 ipidea.io
 0.0.0.0 iplogger.cn
 0.0.0.0 iplogger.co
@@ -1547,6 +1506,7 @@
 0.0.0.0 jundy.org
 0.0.0.0 jungleheart.com
 0.0.0.0 justdied.com
+0.0.0.0 justns.ru
 0.0.0.0 jvogt.org
 0.0.0.0 jwork.ru
 0.0.0.0 k.gp
@@ -1557,8 +1517,6 @@
 0.0.0.0 kann-helfen.de
 0.0.0.0 kaohsiung.tv
 0.0.0.0 kck-saratov.ru
-0.0.0.0 keenetic.link
-0.0.0.0 keenetic.pro
 0.0.0.0 keepo.bio
 0.0.0.0 keine-panik.net
 0.0.0.0 kellserve.com
@@ -1580,6 +1538,7 @@
 0.0.0.0 kozow.com
 0.0.0.0 kr.gp
 0.0.0.0 kraftonevent.com
+0.0.0.0 kro.kr
 0.0.0.0 ksk-saratov.ru
 0.0.0.0 kurzschliessen.de
 0.0.0.0 kyrgyzstan.kg
@@ -1597,6 +1556,7 @@
 0.0.0.0 landomain.net
 0.0.0.0 lanify.ai
 0.0.0.0 larzzons.com
+0.0.0.0 latam.orbitor.dev
 0.0.0.0 launchaco.com
 0.0.0.0 ldtp.com
 0.0.0.0 lebtimnetz.de
@@ -1616,11 +1576,13 @@
 0.0.0.0 lflinkup.net
 0.0.0.0 lflinkup.org
 0.0.0.0 lhosting.info
+0.0.0.0 lhr.life
 0.0.0.0 liebe.lc
 0.0.0.0 lihi1.com
 0.0.0.0 lihi3.cc
 0.0.0.0 likes-pie.com
 0.0.0.0 likescandy.com
+0.0.0.0 likesyou.org
 0.0.0.0 limit.org.uk
 0.0.0.0 line.pm
 0.0.0.0 link.ac
@@ -1632,7 +1594,6 @@
 0.0.0.0 linux-site.net
 0.0.0.0 linuxd1.com
 0.0.0.0 linuxdigital.org
-0.0.0.0 list-mgmt.com
 0.0.0.0 litecsys.com
 0.0.0.0 littlebyte.net
 0.0.0.0 live-stream.eu
@@ -1646,6 +1607,9 @@
 0.0.0.0 lnk.do
 0.0.0.0 lnkz.at
 0.0.0.0 loadteam.com
+0.0.0.0 loca.lt
+0.0.0.0 localto.net
+0.0.0.0 localtonet.com
 0.0.0.0 locumm.com
 0.0.0.0 login.911s5.net
 0.0.0.0 loginto.me
@@ -1658,6 +1622,7 @@
 0.0.0.0 loseyourip.com
 0.0.0.0 lospenitentes.com
 0.0.0.0 lostgumball.com
+0.0.0.0 lovable.app
 0.0.0.0 lovelocals.us
 0.0.0.0 loveslife.biz
 0.0.0.0 lovestoblog.com
@@ -1783,9 +1748,11 @@
 0.0.0.0 myaddr.dev
 0.0.0.0 myaddr.io
 0.0.0.0 myaddr.tools
+0.0.0.0 myartsonline.com
 0.0.0.0 myblogvoice.com
 0.0.0.0 mybluehost.me
 0.0.0.0 mybluehostin.me
+0.0.0.0 myclickfunnels.com
 0.0.0.0 mycompany.tv
 0.0.0.0 mycpanel.rs
 0.0.0.0 mydad.info
@@ -1797,7 +1764,6 @@
 0.0.0.0 mydissent.net
 0.0.0.0 mydns.bz
 0.0.0.0 mydns.jp
-0.0.0.0 myds.me
 0.0.0.0 myeffect.net
 0.0.0.0 myeweb.net
 0.0.0.0 myfoolmoon.com
@@ -1844,9 +1810,9 @@
 0.0.0.0 mysterium.network
 0.0.0.0 mystnodes.com
 0.0.0.0 mystrikingly.com
-0.0.0.0 mysynology.net
 0.0.0.0 mytempdir.com
 0.0.0.0 myvnc.com
+0.0.0.0 mywebcommunity.org
 0.0.0.0 mywebworld.info
 0.0.0.0 mywire.org
 0.0.0.0 mywww.biz
@@ -1886,8 +1852,12 @@
 0.0.0.0 netz.tl
 0.0.0.0 newmail.ru
 0.0.0.0 nflfan.org
+0.0.0.0 nftstorage.link
+0.0.0.0 ngrok-free.app
+0.0.0.0 ngrok-free.dev
 0.0.0.0 nhlfan.net
 0.0.0.0 nicepage.io
+0.0.0.0 nichesite.org
 0.0.0.0 ninth.biz
 0.0.0.0 nip.io
 0.0.0.0 nl.gp
@@ -1944,7 +1914,9 @@
 0.0.0.0 nufszone.com
 0.0.0.0 nut.cc
 0.0.0.0 nx.tc
+0.0.0.0 nyc.mn
 0.0.0.0 o-f.com
+0.0.0.0 o-r.kr
 0.0.0.0 o.gp
 0.0.0.0 ocry.com
 0.0.0.0 ods.org
@@ -1975,6 +1947,7 @@
 0.0.0.0 online.gp
 0.0.0.0 online.ly
 0.0.0.0 online.tc
+0.0.0.0 onlinewebshop.net
 0.0.0.0 only4u.eu
 0.0.0.0 onmbl.com
 0.0.0.0 onmypc.biz
@@ -1988,6 +1961,7 @@
 0.0.0.0 opior.com
 0.0.0.0 oray.com
 0.0.0.0 organiccrap.com
+0.0.0.0 orgfree.com
 0.0.0.0 orgsites.com
 0.0.0.0 orskkino.ru
 0.0.0.0 otzo.com
@@ -2064,6 +2038,7 @@
 0.0.0.0 portmap.host
 0.0.0.0 portrelay.com
 0.0.0.0 possessed.us
+0.0.0.0 pp.ua
 0.0.0.0 prettyweak.com
 0.0.0.0 preview-domain.com
 0.0.0.0 priamaakcia.sk
@@ -2146,9 +2121,12 @@
 0.0.0.0 reijn.org
 0.0.0.0 remotecam.nu
 0.0.0.0 reodev.com
+0.0.0.0 repl.co
+0.0.0.0 repl.run
 0.0.0.0 replug.link
 0.0.0.0 repocket.com
 0.0.0.0 resolve.bar
+0.0.0.0 rf.gd
 0.0.0.0 risu.io
 0.0.0.0 ro.gp
 0.0.0.0 ro.lt
@@ -2163,6 +2141,7 @@
 0.0.0.0 routemehome.com
 0.0.0.0 roxa.org
 0.0.0.0 royal-host.com
+0.0.0.0 royalwebhosting.net
 0.0.0.0 rplg.co
 0.0.0.0 rpz.su
 0.0.0.0 rr.nu
@@ -2189,6 +2168,7 @@
 0.0.0.0 scay.net
 0.0.0.0 schmust.de
 0.0.0.0 schoolrack.com
+0.0.0.0 scienceontheweb.net
 0.0.0.0 scottlewisonline.com
 0.0.0.0 scottstreit.com
 0.0.0.0 scrapitsoftware.com
@@ -2295,6 +2275,7 @@
 0.0.0.0 simple-url.com
 0.0.0.0 simplecharity.com
 0.0.0.0 sino.tw
+0.0.0.0 sitebeat.crazydomains.com
 0.0.0.0 sitelutions.com
 0.0.0.0 sitepalace.com
 0.0.0.0 sitey.me
@@ -2324,6 +2305,7 @@
 0.0.0.0 solfa.org
 0.0.0.0 solidmation.com
 0.0.0.0 solidwebhost.com
+0.0.0.0 somee.com
 0.0.0.0 sonnish.com
 0.0.0.0 soon.it
 0.0.0.0 soundcast.me
@@ -2348,6 +2330,7 @@
 0.0.0.0 srv1.org
 0.0.0.0 srv64.de
 0.0.0.0 srvdns.de
+0.0.0.0 sryze.cc
 0.0.0.0 ssitech.bg
 0.0.0.0 ssl443.org
 0.0.0.0 sslip.io
@@ -2362,6 +2345,7 @@
 0.0.0.0 stes.fi
 0.0.0.0 stfu-kthx.net
 0.0.0.0 stocktester.ru
+0.0.0.0 storacha.link
 0.0.0.0 stormpages.com
 0.0.0.0 stoupin.ru
 0.0.0.0 strangled.net
@@ -2420,6 +2404,7 @@
 0.0.0.0 tehno-politen.ru
 0.0.0.0 tekkennetwork.com
 0.0.0.0 teleporthq.app
+0.0.0.0 temp.sh
 0.0.0.0 tempisite.com
 0.0.0.0 temporary-demo.site
 0.0.0.0 temporary.site
@@ -2445,6 +2430,7 @@
 0.0.0.0 tiiny.io
 0.0.0.0 tinylink.in
 0.0.0.0 tinyrealm.com
+0.0.0.0 tinyupload.com
 0.0.0.0 tinyurl.ph
 0.0.0.0 tld.cc
 0.0.0.0 tlsn.io
@@ -2468,6 +2454,7 @@
 0.0.0.0 traeumtgerade.de
 0.0.0.0 traffmonetizer.com
 0.0.0.0 trailsendlodge.org
+0.0.0.0 transfer.sh
 0.0.0.0 trend.in
 0.0.0.0 trickip.net
 0.0.0.0 trickip.org
@@ -2475,9 +2462,11 @@
 0.0.0.0 trim.one
 0.0.0.0 tru.io
 0.0.0.0 truthvid.com
+0.0.0.0 trycloudflare.com
 0.0.0.0 tscng.org
 0.0.0.0 tth.cl
 0.0.0.0 tunnelbroker.net
+0.0.0.0 tunnelmole.net
 0.0.0.0 turbo.site
 0.0.0.0 turkish.lc
 0.0.0.0 tvlinux.com
@@ -2493,9 +2482,11 @@
 0.0.0.0 ucoz.ru
 0.0.0.0 ucvradio.cl
 0.0.0.0 udp64.de
+0.0.0.0 ueuo.com
 0.0.0.0 ufcfan.org
 0.0.0.0 ufodns.com
 0.0.0.0 ugo.si
+0.0.0.0 ugu.pl
 0.0.0.0 uk.cr
 0.0.0.0 uk.gp
 0.0.0.0 uk.ms
@@ -2520,6 +2511,7 @@
 0.0.0.0 uploadev.org
 0.0.0.0 uploading.com
 0.0.0.0 uploadjar.com
+0.0.0.0 uplooder.net
 0.0.0.0 uprock.com
 0.0.0.0 upsara.com
 0.0.0.0 ur.io
@@ -2530,6 +2522,7 @@
 0.0.0.0 urle.me
 0.0.0.0 urlyte.com
 0.0.0.0 urown.cloud
+0.0.0.0 us.ci
 0.0.0.0 us.com
 0.0.0.0 us.kg
 0.0.0.0 us.nf
@@ -2593,10 +2586,13 @@
 0.0.0.0 vr.lt
 0.0.0.0 vxe6.net
 0.0.0.0 vz.lc
+0.0.0.0 w3s.link
+0.0.0.0 w3spaces.com
 0.0.0.0 wakingmoon.com
 0.0.0.0 wan64.de
 0.0.0.0 wanip.ch
 0.0.0.0 wapka.club
+0.0.0.0 wapka.co
 0.0.0.0 wapka.site
 0.0.0.0 wapka.store
 0.0.0.0 wapka.top
@@ -2611,6 +2607,9 @@
 0.0.0.0 webaccess-email.com
 0.0.0.0 webblog24.de
 0.0.0.0 webboss.site
+0.0.0.0 webcindario.com
+0.0.0.0 webflow.io
+0.0.0.0 webflowtest.io
 0.0.0.0 webhop.biz
 0.0.0.0 webhop.info
 0.0.0.0 webhop.me
@@ -2665,12 +2664,15 @@
 0.0.0.0 writesthisblog.com
 0.0.0.0 wstd.io
 0.0.0.0 wtcsites.com
+0.0.0.0 wuaze.com
 0.0.0.0 www1.biz
 0.0.0.0 www4.me
 0.0.0.0 wwwhost.biz
 0.0.0.0 wwwhost.us
 0.0.0.0 wy5532.com
 0.0.0.0 x.gp
+0.0.0.0 x10.bz
+0.0.0.0 x10.mx
 0.0.0.0 x24hr.com
 0.0.0.0 x443.pw
 0.0.0.0 x9.eu
@@ -2681,6 +2683,7 @@
 0.0.0.0 xl.lc
 0.0.0.0 xml.in
 0.0.0.0 xname.org
+0.0.0.0 xp3.biz
 0.0.0.0 xpresit.net
 0.0.0.0 xsl.tel
 0.0.0.0 xsph.ru
@@ -2710,6 +2713,7 @@
 0.0.0.0 ykm.de
 0.0.0.0 yngling.com
 0.0.0.0 yoannrolland22-48243.bubbleapps.io
+0.0.0.0 yolasite.com
 0.0.0.0 you.lc
 0.0.0.0 youdontcare.com
 0.0.0.0 youpc.ro
@@ -2734,7 +2738,9 @@
 0.0.0.0 zeitr.ch
 0.0.0.0 zelslonik.info
 0.0.0.0 ziddu.com
+0.0.0.0 zippyshare.com
 0.0.0.0 zneth.com
+0.0.0.0 zone.id
 0.0.0.0 zoneedit.com
 0.0.0.0 zsh.jp
 0.0.0.0 zspeed-cdn.com

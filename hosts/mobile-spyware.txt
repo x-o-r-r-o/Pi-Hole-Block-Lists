@@ -2,8 +2,8 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-01 10:27 UTC
-# Entries: 3289
+# Last modified: 2026-11-07 10:07 UTC
+# Entries: 3277
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -63,11 +63,9 @@
 0.0.0.0 ad-format-ie.tiktokv.eu
 0.0.0.0 ad-format-ru.tiktokv.com
 0.0.0.0 ad-format-sg.tiktokv.com
-0.0.0.0 ad-format-ttp2.tiktokv.eu
 0.0.0.0 ad-format-ttp2.tiktokv.us
 0.0.0.0 ad-format-ttp2.us.tiktokv.com
 0.0.0.0 ad-format.tiktokv.eu
-0.0.0.0 ad-format.tiktokv.us
 0.0.0.0 ad-format.us.tiktokv.com
 0.0.0.0 ad-format16-normal-useastred.tiktokv.eu
 0.0.0.0 ad-growth-in.heytapmobile.com
@@ -215,9 +213,11 @@
 0.0.0.0 adx-op-in.heytapmobile.com
 0.0.0.0 adx-op-ru.heytapmobile.com
 0.0.0.0 adx-op-sg.heytapmobile.com
+0.0.0.0 adx-u-in-heytapmobile-a-9ae47.in-s01.cngw.heytapmobile.com
 0.0.0.0 adx-u-in.heytapmobile.com
 0.0.0.0 adx-u-ru.heytapmobile.com
 0.0.0.0 adx-u-sg.heytapmobile.com
+0.0.0.0 adx-union-sg.heytapmobile.com
 0.0.0.0 adx.tv.mi.com
 0.0.0.0 adxh3-op-sg.heytapmobile.com
 0.0.0.0 adxlog-adnet.vivo.com.cn
@@ -260,7 +260,6 @@
 0.0.0.0 analytics-attribution.tiktok.com
 0.0.0.0 analytics-ccu.qpyou.cn
 0.0.0.0 analytics-dev-api.test.samsunghealth.com
-0.0.0.0 analytics-events.apple.com
 0.0.0.0 analytics-events.inshorts.com
 0.0.0.0 analytics-exp-i18n.tiktok.com
 0.0.0.0 analytics-exp-i18n.tiktok.com.edgekey.net
@@ -806,9 +805,6 @@
 0.0.0.0 cmplay.did.ijinshan.com
 0.0.0.0 cms.sec.miui.com
 0.0.0.0 cn-api.mcsvc.samsung.com.cn
-0.0.0.0 cn-zh-ort-stsdk.vivoglobal.com
-0.0.0.0 cn-zh-prt-stsdk.vivoglobal.com
-0.0.0.0 cn-zh-stsdk.vivoglobal.com
 0.0.0.0 cname-ali-asia-stsdk.vivoglobal.com
 0.0.0.0 cname-asia-comonrt-stsdk.vivoglobal.com
 0.0.0.0 cname-asia-st-exappupgrade.vivoglobal.com
@@ -848,6 +844,7 @@
 0.0.0.0 collector.brandify.com
 0.0.0.0 collector.gamechanger.io
 0.0.0.0 collector.scopely.io
+0.0.0.0 collector.snowplow.supercell.com
 0.0.0.0 collector.vhx.tv
 0.0.0.0 comc4l7.pandora.xiaomi.com
 0.0.0.0 conf-in-dc.heytapdl.com
@@ -1051,7 +1048,6 @@
 0.0.0.0 dutils.com
 0.0.0.0 dvb.pandora.xiaomi.com
 0.0.0.0 dxp.baidu.com
-0.0.0.0 dz1dt3wqswdezgx4j2ryem5iad.apple.com
 0.0.0.0 e-ssl.apsalar.com
 0.0.0.0 e.crashlytics.com
 0.0.0.0 e.mi.com
@@ -1081,12 +1077,12 @@
 0.0.0.0 eu-cota.vivoglobal.com
 0.0.0.0 eu-domaincfg.vivoglobal.com
 0.0.0.0 eu-errup.vivoglobal.com
+0.0.0.0 eu-nrt-stsdk.vivoglobal.com
 0.0.0.0 eu-onrt-stsdk.vivoglobal.com
 0.0.0.0 eu-ort-stsdk.vivoglobal.com
 0.0.0.0 eu-p.vivoglobal.com
 0.0.0.0 eu-pnrt-stsdk.vivoglobal.com
 0.0.0.0 eu-romsp-unifyconfig.vivoglobal.com
-0.0.0.0 eu-st-exappupgrade.vivoglobal.com
 0.0.0.0 eu-st-sl.vivoglobal.com
 0.0.0.0 eu-stsdk.vivoglobal.com
 0.0.0.0 eu-timesync.vivoglobal.com
@@ -1208,7 +1204,6 @@
 0.0.0.0 finosfin.com
 0.0.0.0 flash.sec.intl.miui.com
 0.0.0.0 flash.sec.miui.com
-0.0.0.0 flirfvysba2opz0zmzqs5iuiad.apple.com
 0.0.0.0 flow.sec.miui.com
 0.0.0.0 fm-analytics-api.pocketfm.com
 0.0.0.0 foreign.coloros.com
@@ -1433,7 +1428,6 @@
 0.0.0.0 in-adlog.vivoglobal.com
 0.0.0.0 in-adreq.vivoglobal.com
 0.0.0.0 in-adsjssdk.vivoglobal.com
-0.0.0.0 in-analyzer-appstore.vivoglobal.com
 0.0.0.0 in-api-stsdk.vivoglobal.com
 0.0.0.0 in-apponrt-stsdk.vivoglobal.com
 0.0.0.0 in-apport-stsdk.vivoglobal.com
@@ -1521,7 +1515,6 @@
 0.0.0.0 kpu.samsungelectronics.com
 0.0.0.0 krxd.net
 0.0.0.0 kuyun.com
-0.0.0.0 kz-album-api.vivoglobal.com
 0.0.0.0 kz-cname-sin01-bigdata.vivoglobal.com
 0.0.0.0 kz-cota.vivoglobal.com
 0.0.0.0 kz-err-up.vivoglobal.com
@@ -1564,9 +1557,7 @@
 0.0.0.0 localytics.com
 0.0.0.0 location-i18n.tiktokv.com
 0.0.0.0 location-ie.tiktokv.eu
-0.0.0.0 location-ru.tiktokv.com
 0.0.0.0 location-sg.tiktokv.com
-0.0.0.0 location-ttp2.tiktokv.eu
 0.0.0.0 location-ttp2.tiktokv.us
 0.0.0.0 location-ttp2.tiktokw.eu
 0.0.0.0 location-ttp2.tiktokw.us
@@ -1585,11 +1576,9 @@
 0.0.0.0 location.tiktok.com
 0.0.0.0 location.tiktokv.com
 0.0.0.0 location.tiktokv.eu
-0.0.0.0 location.tiktokv.us
 0.0.0.0 location.tiktokw.eu
 0.0.0.0 location.tiktokw.us
 0.0.0.0 location.us.tiktokv.com
-0.0.0.0 location16-normal-useastred.tiktokv.eu
 0.0.0.0 location16-normal-useastred.tiktokw.eu
 0.0.0.0 locationv16-normal-useastred.tiktokv.eu
 0.0.0.0 lockcard-service-in.allawnos.com
@@ -1749,6 +1738,7 @@
 0.0.0.0 log22-applog-useast1a.tiktokv.com
 0.0.0.0 log22-applog-useast2a.tiktokv.com
 0.0.0.0 log22-normal-alisg.tiktokv.com
+0.0.0.0 log22-normal-alisg.tiktokv.com.kp45.ru
 0.0.0.0 log22-normal-useast1a.tiktokv.com
 0.0.0.0 log22-normal-useast2a.tiktokv.com
 0.0.0.0 log22-normal-zr-alisg.tiktokv.com
@@ -1757,7 +1747,9 @@
 0.0.0.0 log22-normal.capcutapi.com
 0.0.0.0 log22-normal.tiktokv.com
 0.0.0.0 log3-normal-c-alisg.tiktokv.com
+0.0.0.0 log3-normal-c-alisg.tiktokv.com.w.kunlunsl.com
 0.0.0.0 log3-normal-c-useast1a.tiktokv.com
+0.0.0.0 log3-normal-c-useast1a.tiktokv.com.w.kunlunsl.com
 0.0.0.0 log31-normal-alisg.tiktokv.com
 0.0.0.0 log31-normal-no1a.tiktokv.eu
 0.0.0.0 log31-normal-sg.capcutapi.com
@@ -1791,6 +1783,7 @@
 0.0.0.0 log77-normal-c-alisg.tiktokv.com
 0.0.0.0 log77-normal-c-useast1a.tiktokv.com
 0.0.0.0 log9-normal-c-useast1a.tiktokv.com
+0.0.0.0 log9-normal-c-useast1a.tiktokv.com.ecdnx.com
 0.0.0.0 logapi-and.zhipin.com
 0.0.0.0 logapi.bodyevey.com
 0.0.0.0 logbak.hicloud.com
@@ -2028,7 +2021,6 @@
 0.0.0.0 mibi.xiaomi.com
 0.0.0.0 micloudevents.preview.n.xiaomi.com
 0.0.0.0 migc.g.mi.com
-0.0.0.0 migcreport.g.mi.com
 0.0.0.0 milink.pandora.xiaomi.com
 0.0.0.0 mintegral.net
 0.0.0.0 mis.g.mi.com
@@ -2051,6 +2043,7 @@
 0.0.0.0 miui-l7-data-other.pt.miui.com
 0.0.0.0 miui.net
 0.0.0.0 mixpanel-proxy-ivbdkvonca-uc.a.run.app
+0.0.0.0 mkt.supercell.com
 0.0.0.0 mlb.did.ijinshan.com
 0.0.0.0 mlog.search.xiaomi.net
 0.0.0.0 moa-upload-in.allawnos.com
@@ -2149,12 +2142,8 @@
 0.0.0.0 mssdk-va.byteoversea.com
 0.0.0.0 mssdk.capcutapi.us
 0.0.0.0 mssdk.snssdk.com
-0.0.0.0 mssdk16-normal-sg.capcutapi.com
 0.0.0.0 mssdk16-normal-us-ttp.capcutapi.us
 0.0.0.0 mssdk16-normal-us-ttp2.capcutapi.us
-0.0.0.0 mssdk16-normal.capcutapi.com
-0.0.0.0 mssdk32-normal-sg.capcutapi.com
-0.0.0.0 mssdk32-normal.capcutapi.com
 0.0.0.0 mtlog.droid4x.cn
 0.0.0.0 mtrace.qq.com
 0.0.0.0 mum.alibabachengdun.com
@@ -2183,7 +2172,6 @@
 0.0.0.0 nelo2-col.linecorp.com
 0.0.0.0 netapm.music.163.com
 0.0.0.0 netcheck.pandora.xiaomi.com
-0.0.0.0 news-analytics-events.apple.com
 0.0.0.0 news-app-events.apple.com
 0.0.0.0 news-events.apple.com
 0.0.0.0 news-notification-events.apple.com
@@ -2343,7 +2331,6 @@
 0.0.0.0 pls.prd.mz.internal.unity3d.com
 0.0.0.0 pmir.sec.miui.com
 0.0.0.0 pnrt-stsdk.vivoglobal.com
-0.0.0.0 podcasts-analytics-events.apple.com
 0.0.0.0 port.sec.intl.miui.com
 0.0.0.0 port.sec.miui.com
 0.0.0.0 post-log.pushwoosh.com
@@ -2459,7 +2446,6 @@
 0.0.0.0 rt.applvn.com
 0.0.0.0 rtag.farmers.com
 0.0.0.0 rtc-logger-i18n.tiktokv.com
-0.0.0.0 rtc-logger-ie.tiktokv.eu
 0.0.0.0 rtc-logger-ttp2.tiktokv.eu
 0.0.0.0 rtc-logger-ttp2.tiktokv.us
 0.0.0.0 rtc-logger-ttp2.us.tiktokv.com
@@ -2489,6 +2475,7 @@
 0.0.0.0 rtlog16-applog-useast2a.tiktokv.com
 0.0.0.0 rtlog16-applog-useast5.us.tiktokv.com
 0.0.0.0 rtlog16-normal-alisg.tiktokv.com
+0.0.0.0 rtlog16-normal-alisg.tiktokv.com.kp45.ru
 0.0.0.0 rtlog16-normal-ie.tiktokv.eu
 0.0.0.0 rtlog16-normal-ind.tiktokv.com
 0.0.0.0 rtlog16-normal-no1a.tiktokv.eu
@@ -2525,6 +2512,7 @@
 0.0.0.0 rtlog22-applog-useast1a.tiktokv.com
 0.0.0.0 rtlog22-applog-useast2a.tiktokv.com
 0.0.0.0 rtlog22-normal-alisg.tiktokv.com
+0.0.0.0 rtlog22-normal-alisg.tiktokv.com.kp45.ru
 0.0.0.0 rtlog22-normal-useast1a.tiktokv.com
 0.0.0.0 rtlog22-normal-useast2a.tiktokv.com
 0.0.0.0 rtlog22-normal-zr-alisg.tiktokv.com
@@ -3007,6 +2995,7 @@
 0.0.0.0 tr-ort-stsdk.vivoglobal.com
 0.0.0.0 tr-p.vivoglobal.com
 0.0.0.0 tr-pnrt-stsdk.vivoglobal.com
+0.0.0.0 tr-prt-stsdk.vivoglobal.com
 0.0.0.0 tr-romsp-unifyconfig.vivoglobal.com
 0.0.0.0 tr-st-sl.vivoglobal.com
 0.0.0.0 tr-st-sysupgrade.vivoglobal.com
@@ -3113,7 +3102,6 @@
 0.0.0.0 tu.dxcnd.cn
 0.0.0.0 tunein.adswizz.com
 0.0.0.0 tunion-api.m.taobao.com
-0.0.0.0 tv-analytics-events.apple.com
 0.0.0.0 tvboss.pandora.xiaomi.com
 0.0.0.0 tvepg.pandora.xiaomi.com
 0.0.0.0 twns.p2ptun.qq.com

@@ -2,8 +2,8 @@
 # Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-10-31 09:38 UTC
-# Entries: 1366
+# Last modified: 2026-11-07 10:07 UTC
+# Entries: 1454
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -32,19 +32,29 @@
 0.0.0.0 aax-apse-dtb-mobile-events.amazon-adsystem.com
 0.0.0.0 aax-apse-dtb-mobile.amazon-adsystem.com
 0.0.0.0 aax-apse-dtb-web.amazon-adsystem.com
+0.0.0.0 aax-audio.amazon-adsystem.amazon.com
 0.0.0.0 aax-audio.amazon-adsystem.com
 0.0.0.0 aax-beta-us-east.axp.amazon-adsystem.com
+0.0.0.0 aax-cpm.amazon-adsystem.amazon.com
 0.0.0.0 aax-cpm.amazon-adsystem.com
 0.0.0.0 aax-dtb-cf.amazon-adsystem.amazon.com
 0.0.0.0 aax-dtb-cf.amazon-adsystem.com
+0.0.0.0 aax-dtb-legacy.amazon-adsystem.amazon.com
 0.0.0.0 aax-dtb-legacy.amazon-adsystem.com
+0.0.0.0 aax-dtb-mobile-bids-geo.amazon-adsystem.amazon.com
 0.0.0.0 aax-dtb-mobile-bids-geo.amazon-adsystem.com
+0.0.0.0 aax-dtb-mobile-events.amazon-adsystem.amazon.com
 0.0.0.0 aax-dtb-mobile-events.amazon-adsystem.com
 0.0.0.0 aax-dtb-mobile-geo.amazon-adsystem.amazon.com
 0.0.0.0 aax-dtb-mobile-geo.amazon-adsystem.com
+0.0.0.0 aax-dtb-mobile.amazon-adsystem.amazon.com
 0.0.0.0 aax-dtb-mobile.amazon-adsystem.com
+0.0.0.0 aax-dtb-web-bids-geo.amazon-adsystem.amazon.com
 0.0.0.0 aax-dtb-web-bids-geo.amazon-adsystem.com
+0.0.0.0 aax-dtb-web-geo-aax.amazon-adsystem.amazon.com
+0.0.0.0 aax-dtb-web-geo.amazon-adsystem.amazon.com
 0.0.0.0 aax-dtb-web-geo.amazon-adsystem.com
+0.0.0.0 aax-dtb-web.amazon-adsystem.amazon.com
 0.0.0.0 aax-dtb-web.amazon-adsystem.com
 0.0.0.0 aax-eu-dtb-mobile-events.amazon-adsystem.com
 0.0.0.0 aax-eu-dtb-mobile.amazon-adsystem.com
@@ -61,11 +71,11 @@
 0.0.0.0 aax-fe.amazon-adsystem.com
 0.0.0.0 aax-gamma-us-east.axp.amazon-adsystem.com
 0.0.0.0 aax-ott-c2s.amazon-adsystem.com
+0.0.0.0 aax-ott-sdk.amazon-adsystem.amazon.com
 0.0.0.0 aax-ott-sdk.amazon-adsystem.com
 0.0.0.0 aax-ott.amazon-adsystem.amazon.com
 0.0.0.0 aax-ott.amazon-adsystem.com
 0.0.0.0 aax-us-east-1-ott.amazon-adsystem.amazon.com
-0.0.0.0 aax-us-east-dtb-mobile-events.amazon-adsystem.com
 0.0.0.0 aax-us-east-dtb-mobile.amazon-adsystem.com
 0.0.0.0 aax-us-east-dtb.amazon-adsystem.com
 0.0.0.0 aax-us-east-ott.amazon-adsystem.com
@@ -88,6 +98,7 @@
 0.0.0.0 aax-us-west-ott-events.amazon-adsystem.com
 0.0.0.0 aax-us-west-ott.amazon-adsystem.com
 0.0.0.0 aax-us-west-rtb.amazon-adsystem.com
+0.0.0.0 aax-us.amazon-adsystem.amazon.com
 0.0.0.0 aax-us.amazon-adsystem.com
 0.0.0.0 aax-vx-api-us-east-1.amazon-adsystem.com
 0.0.0.0 aax-vx-api-us-west-2.amazon-adsystem.com
@@ -178,6 +189,7 @@
 0.0.0.0 advertising.roku.com
 0.0.0.0 advertising.us-east-1.msc.roku.com
 0.0.0.0 ae-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 ae-info-lgsmartad-com.aws-prd.net
 0.0.0.0 ae-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 ae.nextlgsdp.com
 0.0.0.0 aes-beta.axp.amazon-adsystem.com
@@ -245,6 +257,8 @@
 0.0.0.0 apu.samsungelectronics.com
 0.0.0.0 aq.nextlgsdp.com
 0.0.0.0 ar-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 ar-info-lgsmartad-com.aws-prd.net
+0.0.0.0 ar-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 ar.nextlgsdp.com
 0.0.0.0 as.nextlgsdp.com
 0.0.0.0 assets.sr.roku.com
@@ -262,7 +276,6 @@
 0.0.0.0 at-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 at-info-lgsmartad-com.aws-prd.net
 0.0.0.0 at-rdx2-lgtvsdp-com.aws-prd.net
-0.0.0.0 at-us-east.amazon-adsystem.com
 0.0.0.0 at.atwola.com
 0.0.0.0 at.nextlgsdp.com
 0.0.0.0 atfe.amazon-adsystem.com
@@ -282,11 +295,14 @@
 0.0.0.0 aw-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 aw.nextlgsdp.com
 0.0.0.0 az-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 az-info-lgsmartad-com.aws-prd.net
+0.0.0.0 az-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 az.nextlgsdp.com
 0.0.0.0 az43064.vo.msecnd.net
 0.0.0.0 b02.black.ndmdhs.com
 0.0.0.0 b2banalytics.samsungknox.com
 0.0.0.0 ba-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 ba-info-lgsmartad-com.aws-prd.net
 0.0.0.0 ba.nextlgsdp.com
 0.0.0.0 bb-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 bb.nextlgsdp.com
@@ -295,11 +311,13 @@
 0.0.0.0 bdcore-apr-lb.bda.ndmdhs.com
 0.0.0.0 be-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 be-info-lgsmartad-com.aws-prd.net
+0.0.0.0 be-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 be.nextlgsdp.com
 0.0.0.0 bf-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 bf.nextlgsdp.com
 0.0.0.0 bg-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 bg-info-lgsmartad-com.aws-prd.net
+0.0.0.0 bg-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 bg.nextlgsdp.com
 0.0.0.0 bh-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 bh.nextlgsdp.com
@@ -343,6 +361,7 @@
 0.0.0.0 bz-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 bz.nextlgsdp.com
 0.0.0.0 c.amazon-adsystem.com
+0.0.0.0 c01-info-lgsmartad-com.aws-prd.net
 0.0.0.0 ca-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ca-info-lgsmartad-com.aws-prd.net
 0.0.0.0 ca-rdx2-lgtvsdp-com.aws-prd.net
@@ -372,6 +391,8 @@
 0.0.0.0 ci.nextlgsdp.com
 0.0.0.0 ck.nextlgsdp.com
 0.0.0.0 cl-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 cl-info-lgsmartad-com.aws-prd.net
+0.0.0.0 cl-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 cl.nextlgsdp.com
 0.0.0.0 clientapi-samsung.dtignite.com
 0.0.0.0 cloud.arqiva.tv
@@ -382,6 +403,8 @@
 0.0.0.0 cn-api.mcsvc.samsung.com.cn
 0.0.0.0 cn.nextlgsdp.com
 0.0.0.0 co-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 co-info-lgsmartad-com.aws-prd.net
+0.0.0.0 co-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 co.nextlgsdp.com
 0.0.0.0 collect-eu-fy2014.myhomescreen.tv
 0.0.0.0 collect-eu-fy2015.myhomescreen.tv
@@ -410,6 +433,7 @@
 0.0.0.0 coordinator-production-28516768.us-east-1.elb.amazonaws.com
 0.0.0.0 cpu.samsungelectronics.com
 0.0.0.0 cr-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 cr-info-lgsmartad-com.aws-prd.net
 0.0.0.0 cr.nextlgsdp.com
 0.0.0.0 cu.nextlgsdp.com
 0.0.0.0 customer-feedbacks.web.roku.com
@@ -421,6 +445,8 @@
 0.0.0.0 cy-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 cy.nextlgsdp.com
 0.0.0.0 cz-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 cz-info-lgsmartad-com.aws-prd.net
+0.0.0.0 cz-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 cz.nextlgsdp.com
 0.0.0.0 d179kwmlpc4o47.cloudfront.net
 0.0.0.0 d1jwpcr0q4pcq0.cloudfront.net
@@ -453,6 +479,8 @@
 0.0.0.0 display.ravm.tv
 0.0.0.0 dj.nextlgsdp.com
 0.0.0.0 dk-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 dk-info-lgsmartad-com.aws-prd.net
+0.0.0.0 dk-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 dk.nextlgsdp.com
 0.0.0.0 dls-account.di.atlas.samsung.com
 0.0.0.0 dls-ddc.dqa.samsung.com
@@ -462,15 +490,18 @@
 0.0.0.0 dm-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 dm.nextlgsdp.com
 0.0.0.0 do-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 do-info-lgsmartad-com.aws-prd.net
 0.0.0.0 do.nextlgsdp.com
 0.0.0.0 download-samsung.dtignite.com
 0.0.0.0 dpu.samsungelectronics.com
 0.0.0.0 dqa-auth.di.atlas.samsung.com
 0.0.0.0 dra.amazon-adsystem.com
 0.0.0.0 dz-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 dz-info-lgsmartad-com.aws-prd.net
 0.0.0.0 dz.nextlgsdp.com
 0.0.0.0 e2.resources.foxtel.com.au
 0.0.0.0 ec-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 ec-info-lgsmartad-com.aws-prd.net
 0.0.0.0 ec.nextlgsdp.com
 0.0.0.0 ee-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ee-info-lgsmartad-com.aws-prd.net
@@ -478,11 +509,14 @@
 0.0.0.0 ee.nextlgsdp.com
 0.0.0.0 eg-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 eg-info-lgsmartad-com.aws-prd.net
+0.0.0.0 eg-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 eg.nextlgsdp.com
 0.0.0.0 eh.nextlgsdp.com
 0.0.0.0 ehg-samsungusa.hitbox.com
 0.0.0.0 er.nextlgsdp.com
 0.0.0.0 es-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 es-info-lgsmartad-com.aws-prd.net
+0.0.0.0 es-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 es.nextlgsdp.com
 0.0.0.0 et-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 et.nextlgsdp.com
@@ -558,6 +592,8 @@
 0.0.0.0 gf.nextlgsdp.com
 0.0.0.0 gg.nextlgsdp.com
 0.0.0.0 gh-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 gh-info-lgsmartad-com.aws-prd.net
+0.0.0.0 gh-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 gh.nextlgsdp.com
 0.0.0.0 gi.nextlgsdp.com
 0.0.0.0 gl.nextlgsdp.com
@@ -576,6 +612,7 @@
 0.0.0.0 gr.nextlgsdp.com
 0.0.0.0 gs.nextlgsdp.com
 0.0.0.0 gt-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 gt-info-lgsmartad-com.aws-prd.net
 0.0.0.0 gt.nextlgsdp.com
 0.0.0.0 gu.nextlgsdp.com
 0.0.0.0 gw.nextlgsdp.com
@@ -598,27 +635,38 @@
 0.0.0.0 hbbtv01p.anixe.net
 0.0.0.0 hbbtvapp.sonnenklar.tv
 0.0.0.0 hk-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 hk-info-lgsmartad-com.aws-prd.net
 0.0.0.0 hk.nextlgsdp.com
 0.0.0.0 hm.nextlgsdp.com
 0.0.0.0 hn-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 hn-info-lgsmartad-com.aws-prd.net
 0.0.0.0 hn.nextlgsdp.com
 0.0.0.0 hr-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 hr-info-lgsmartad-com.aws-prd.net
 0.0.0.0 hr.nextlgsdp.com
 0.0.0.0 hse-ctv.com
 0.0.0.0 hse24.tvtelemetrie.de
 0.0.0.0 ht.nextlgsdp.com
 0.0.0.0 hu-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 hu-info-lgsmartad-com.aws-prd.net
+0.0.0.0 hu-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 hu.nextlgsdp.com
 0.0.0.0 i-stream.pl
 0.0.0.0 ibis.lgappstv.com
 0.0.0.0 ibs.lgappstv.com
 0.0.0.0 ichnaea.netflix.com
 0.0.0.0 id-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 id-info-lgsmartad-com.aws-prd.net
+0.0.0.0 id-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 id.nextlgsdp.com
 0.0.0.0 identity.browserapps.amazon.de
 0.0.0.0 ie-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 ie-info-lgsmartad-com.aws-prd.net
+0.0.0.0 ie-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 ie.nextlgsdp.com
 0.0.0.0 il-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 il-info-lgsmartad-com.aws-prd.net
+0.0.0.0 il-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 il.nextlgsdp.com
 0.0.0.0 im.nextlgsdp.com
 0.0.0.0 images.frbusiness.samsung.com
@@ -628,11 +676,13 @@
 0.0.0.0 imdb.amazon-adsystem.com
 0.0.0.0 in-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 in-info-lgsmartad-com.aws-prd.net
+0.0.0.0 in-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 in.nextlgsdp.com
 0.0.0.0 insights.video.a2z.com
 0.0.0.0 invitation.samsungiotcloud.com
 0.0.0.0 io.nextlgsdp.com
 0.0.0.0 iq-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 iq-info-lgsmartad-com.aws-prd.net
 0.0.0.0 iq.nextlgsdp.com
 0.0.0.0 ir-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ir-br.amazon-adsystem.com
@@ -658,12 +708,15 @@
 0.0.0.0 it-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 it.nextlgsdp.com
 0.0.0.0 item-tracking.dev.sr.roku.com
+0.0.0.0 ja7-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 je.nextlgsdp.com
 0.0.0.0 jm-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 jm.nextlgsdp.com
 0.0.0.0 jo-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 jo.nextlgsdp.com
 0.0.0.0 jp-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 jp-info-lgsmartad-com.aws-prd.net
+0.0.0.0 jp-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 jp.info.lgsmartad.com
 0.0.0.0 jp.lgtvsdp.com
 0.0.0.0 jp.nextlgsdp.com
@@ -680,12 +733,15 @@
 0.0.0.0 kp.nextlgsdp.com
 0.0.0.0 kpu.samsungelectronics.com
 0.0.0.0 kr-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 kr-info-lgsmartad-com.aws-prd.net
 0.0.0.0 kr.nextlgsdp.com
 0.0.0.0 kraken-measurements.s3-external-1.amazonaws.com
 0.0.0.0 kw-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 kw.nextlgsdp.com
 0.0.0.0 ky.nextlgsdp.com
 0.0.0.0 kz-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 kz-info-lgsmartad-com.aws-prd.net
+0.0.0.0 kz-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 kz.nextlgsdp.com
 0.0.0.0 la.nextlgsdp.com
 0.0.0.0 lb-ad-lgsmartad-com.aws-prd.net
@@ -724,14 +780,18 @@
 0.0.0.0 ls-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ls.nextlgsdp.com
 0.0.0.0 lt-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 lt-info-lgsmartad-com.aws-prd.net
+0.0.0.0 lt-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 lt.nextlgsdp.com
 0.0.0.0 lu-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 lu.nextlgsdp.com
 0.0.0.0 lv-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 lv-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 lv.nextlgsdp.com
 0.0.0.0 ly-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ly.nextlgsdp.com
 0.0.0.0 ma-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 ma-info-lgsmartad-com.aws-prd.net
 0.0.0.0 ma.nextlgsdp.com
 0.0.0.0 mads-eu.amazon.com
 0.0.0.0 mads-fe.amazon.com
@@ -746,18 +806,17 @@
 0.0.0.0 maws-aax-apse-rtb.amazon-adsystem.com
 0.0.0.0 maws-aax-eu-rtb-adx.amazon-adsystem.com
 0.0.0.0 maws-aax-eu-rtb.amazon-adsystem.com
-0.0.0.0 maws-aax-eu.amazon-adsystem.com
-0.0.0.0 maws-aax-fe.amazon-adsystem.com
 0.0.0.0 maws-aax-us-east-rtb-adx.amazon-adsystem.com
 0.0.0.0 maws-aax-us-east-rtb.amazon-adsystem.com
 0.0.0.0 maws-aax-us-east-test4.amazon-adsystem.com
-0.0.0.0 maws-aax-us-east.amazon-adsystem.com
 0.0.0.0 maws-aax-us-pdx-rtb.amazon-adsystem.com
 0.0.0.0 mc.nextlgsdp.com
 0.0.0.0 mcp.tvinteractive.tv
 0.0.0.0 md-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 md.nextlgsdp.com
 0.0.0.0 me-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 me-info-lgsmartad-com.aws-prd.net
+0.0.0.0 me-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 me.nextlgsdp.com
 0.0.0.0 mercury.dl.playstation.net
 0.0.0.0 metric.account-samsung.com
@@ -777,6 +836,7 @@
 0.0.0.0 minerva.devices.a2z.com
 0.0.0.0 mitv.tracking.intl.miui.com
 0.0.0.0 mk-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 mk-info-lgsmartad-com.aws-prd.net
 0.0.0.0 mk.nextlgsdp.com
 0.0.0.0 ml-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ml.nextlgsdp.com
@@ -804,9 +864,11 @@
 0.0.0.0 mv.nextlgsdp.com
 0.0.0.0 mw.nextlgsdp.com
 0.0.0.0 mx-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 mx-info-lgsmartad-com.aws-prd.net
 0.0.0.0 mx-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 mx.nextlgsdp.com
 0.0.0.0 my-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 my-info-lgsmartad-com.aws-prd.net
 0.0.0.0 my.nextlgsdp.com
 0.0.0.0 myhomescreen.tv
 0.0.0.0 mz-ad-lgsmartad-com.aws-prd.net
@@ -819,6 +881,8 @@
 0.0.0.0 nettv.corio.com
 0.0.0.0 nf.nextlgsdp.com
 0.0.0.0 ng-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 ng-info-lgsmartad-com.aws-prd.net
+0.0.0.0 ng-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 ng.nextlgsdp.com
 0.0.0.0 ngfts.nextlgsdp.com
 0.0.0.0 ni-ad-lgsmartad-com.aws-prd.net
@@ -843,6 +907,7 @@
 0.0.0.0 nu.nextlgsdp.com
 0.0.0.0 nw-umwatson.events.data.microsoft.com
 0.0.0.0 nz-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 nz-info-lgsmartad-com.aws-prd.net
 0.0.0.0 nz.nextlgsdp.com
 0.0.0.0 oempprd.samsungcloudsolution
 0.0.0.0 oempprd.samsungcloudsolution.com
@@ -850,7 +915,6 @@
 0.0.0.0 om-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 om.nextlgsdp.com
 0.0.0.0 openapi.samsung.com
-0.0.0.0 origin-s.amazon-adsystem.com
 0.0.0.0 origin-sq-tungsten-ts.amazon-adsystem.com
 0.0.0.0 orsdls.di.runestone.samsung.com
 0.0.0.0 orsfs.di.runestone.samsung.com
@@ -860,10 +924,12 @@
 0.0.0.0 osb.samsungqbe.com
 0.0.0.0 p-hbbtv.superrtl.de
 0.0.0.0 pa-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 pa-info-lgsmartad-com.aws-prd.net
 0.0.0.0 pa.nextlgsdp.com
 0.0.0.0 paa-reporting-advertising.amazon
 0.0.0.0 pavv.co.kr
 0.0.0.0 pe-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 pe-info-lgsmartad-com.aws-prd.net
 0.0.0.0 pe.nextlgsdp.com
 0.0.0.0 pf.nextlgsdp.com
 0.0.0.0 pg-ad-lgsmartad-com.aws-prd.net
@@ -885,6 +951,8 @@
 0.0.0.0 pm.nextlgsdp.com
 0.0.0.0 pn.nextlgsdp.com
 0.0.0.0 pr-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 pr-info-lgsmartad-com.aws-prd.net
+0.0.0.0 pr-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 pr.nextlgsdp.com
 0.0.0.0 prderrordumphsm.samsungcloudsolution.com
 0.0.0.0 prderrordumpssm.samsungcloudsolution.net
@@ -898,10 +966,14 @@
 0.0.0.0 ps-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ps-eu.amazon-adsystem.com
 0.0.0.0 ps-fe.amazon-adsystem.com
+0.0.0.0 ps-info-lgsmartad-com.aws-prd.net
 0.0.0.0 ps-jp.amazon-adsystem.com
+0.0.0.0 ps-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 ps-us.amazon-adsystem.com
 0.0.0.0 ps.nextlgsdp.com
 0.0.0.0 pt-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 pt-info-lgsmartad-com.aws-prd.net
+0.0.0.0 pt-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 pt.nextlgsdp.com
 0.0.0.0 pw.nextlgsdp.com
 0.0.0.0 py-ad-lgsmartad-com.aws-prd.net
@@ -937,9 +1009,11 @@
 0.0.0.0 report.gras.samsungdm.com
 0.0.0.0 ro-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ro-info-lgsmartad-com.aws-prd.net
+0.0.0.0 ro-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 ro.nextlgsdp.com
 0.0.0.0 roku.adsmeasurement.com
 0.0.0.0 rs-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 rs-info-lgsmartad-com.aws-prd.net
 0.0.0.0 rs.nextlgsdp.com
 0.0.0.0 rtb.axp.amazon-adsystem.com
 0.0.0.0 ru-ad-lgsmartad-com.aws-prd.net
@@ -961,6 +1035,8 @@
 0.0.0.0 s3-dub-ww.cf.videorolls.row.aiv-cdn.net
 0.0.0.0 s3-iad-ww.cf.videorolls.row.aiv-cdn.net
 0.0.0.0 sa-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 sa-info-lgsmartad-com.aws-prd.net
+0.0.0.0 sa-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 sa.nextlgsdp.com
 0.0.0.0 samples.voice.cti.roku.com
 0.0.0.0 samsung-akcja.e-kei.pl
@@ -1080,6 +1156,7 @@
 0.0.0.0 secure-eu.imrworldwide.com
 0.0.0.0 settings.crashlytics.com
 0.0.0.0 sg-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 sg-info-lgsmartad-com.aws-prd.net
 0.0.0.0 sg.nextlgsdp.com
 0.0.0.0 sh.nextlgsdp.com
 0.0.0.0 shealth-analytics-api.samsunghealth.com
@@ -1091,6 +1168,7 @@
 0.0.0.0 sia.internet.apps.samsung.com
 0.0.0.0 sj.nextlgsdp.com
 0.0.0.0 sk-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 sk-info-lgsmartad-com.aws-prd.net
 0.0.0.0 sk.nextlgsdp.com
 0.0.0.0 sl-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 sl.nextlgsdp.com
@@ -1111,7 +1189,6 @@
 0.0.0.0 sponsored-ads-eu.amazon.com.be
 0.0.0.0 sponsored-ads-eu.amazon.com.tr
 0.0.0.0 sponsored-ads-eu.amazon.de
-0.0.0.0 sponsored-ads-eu.amazon.eg
 0.0.0.0 sponsored-ads-eu.amazon.ie
 0.0.0.0 sponsored-ads-eu.amazon.nl
 0.0.0.0 sponsored-ads-eu.amazon.pl
@@ -1133,7 +1210,6 @@
 0.0.0.0 sponsored-ads.amazon.es
 0.0.0.0 sponsored-ads.amazon.fr
 0.0.0.0 sponsored-ads.amazon.in
-0.0.0.0 sponsored-ads.amazon.in.alphionsee.in
 0.0.0.0 sponsored-ads.amazon.it
 0.0.0.0 sponsored-ads.amazon.sa
 0.0.0.0 sponsored-ads.amazon.sg
@@ -1154,6 +1230,7 @@
 0.0.0.0 stats.samsungpass.com
 0.0.0.0 stg-apigw.samsungdmroute.com
 0.0.0.0 sv-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 sv-info-lgsmartad-com.aws-prd.net
 0.0.0.0 sv.nextlgsdp.com
 0.0.0.0 sx.nextlgsdp.com
 0.0.0.0 sy-ad-lgsmartad-com.aws-prd.net
@@ -1173,6 +1250,8 @@
 0.0.0.0 tg-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 tg.nextlgsdp.com
 0.0.0.0 th-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 th-info-lgsmartad-com.aws-prd.net
+0.0.0.0 th-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 th.nextlgsdp.com
 0.0.0.0 thinqrecommend.lgtvcommon.com
 0.0.0.0 tj.nextlgsdp.com
@@ -1188,6 +1267,7 @@
 0.0.0.0 to.nextlgsdp.com
 0.0.0.0 tr-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 tr-info-lgsmartad-com.aws-prd.net
+0.0.0.0 tr-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 tr.nextlgsdp.com
 0.0.0.0 trace.app-performance.music.amazon.dev
 0.0.0.0 traces-us-east-1.dev.sr.roku.com
@@ -1217,6 +1297,8 @@
 0.0.0.0 tz-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 tz.nextlgsdp.com
 0.0.0.0 ua-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 ua-info-lgsmartad-com.aws-prd.net
+0.0.0.0 ua-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 ua.nextlgsdp.com
 0.0.0.0 ug-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ug.nextlgsdp.com
@@ -1268,6 +1350,7 @@
 0.0.0.0 us.rdx2.lgtvsdp.com
 0.0.0.0 us.recommend.lgtvcommon.com
 0.0.0.0 us.service.lgtvcommon.com
+0.0.0.0 us7-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 usage-eu-fy2014.myhomescreen.tv
 0.0.0.0 usage-eu-fy2015.myhomescreen.tv
 0.0.0.0 usage-eu-fy2016.myhomescreen.tv
@@ -1308,6 +1391,7 @@
 0.0.0.0 vd.emp.prd.s3.amazonaws.com
 0.0.0.0 vdterms.samsungcloudsolution.com
 0.0.0.0 ve-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 ve-info-lgsmartad-com.aws-prd.net
 0.0.0.0 ve.nextlgsdp.com
 0.0.0.0 vfw-ap-gamma.amazon-adsystem.com
 0.0.0.0 vfw-ap.amazon-adsystem.com
@@ -1330,6 +1414,8 @@
 0.0.0.0 videoads.lgtvcommon.com
 0.0.0.0 vindicosuite.com
 0.0.0.0 vn-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 vn-info-lgsmartad-com.aws-prd.net
+0.0.0.0 vn-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 vn.nextlgsdp.com
 0.0.0.0 vortex-win.data.microsoft.com
 0.0.0.0 vortex.data.microsoft.com
@@ -1369,6 +1455,8 @@
 0.0.0.0 z-in.amazon-adsystem.com
 0.0.0.0 z-na.amazon-adsystem.com
 0.0.0.0 za-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 za-info-lgsmartad-com.aws-prd.net
+0.0.0.0 za-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 za.nextlgsdp.com
 0.0.0.0 zm-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 zm.nextlgsdp.com

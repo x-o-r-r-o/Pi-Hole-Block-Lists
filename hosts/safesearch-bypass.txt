@@ -2,8 +2,8 @@
 # Description: Search engines that can't enforce SafeSearch. Use with `adult` so explicit results can't be reached through other search engines.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-01 10:27 UTC
-# Entries: 201
+# Last modified: 2026-11-07 10:07 UTC
+# Entries: 200
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi No SafeSearch: https://github.com/hagezi/dns-blocklists
@@ -148,7 +148,6 @@
 0.0.0.0 searx.gotrust.de
 0.0.0.0 searx.guillaumea.fr
 0.0.0.0 searx.hardwired.link
-0.0.0.0 searx.info
 0.0.0.0 searx.ir
 0.0.0.0 searx.lavatech.top
 0.0.0.0 searx.lwhr.xyz
