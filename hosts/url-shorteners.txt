@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-07 10:07 UTC
-# Entries: 9777
+# Last modified: 2026-11-08 10:22 UTC
+# Entries: 9754
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -4882,7 +4882,6 @@
 0.0.0.0 martshort.com
 0.0.0.0 mas.si
 0.0.0.0 mas.so
-0.0.0.0 masklink.org
 0.0.0.0 masl.to
 0.0.0.0 masterlink.dev
 0.0.0.0 masuk-id.info
@@ -6353,7 +6352,6 @@
 0.0.0.0 redu.it
 0.0.0.0 reduced.to
 0.0.0.0 reducelnk.com
-0.0.0.0 redvt.cc
 0.0.0.0 reel.io
 0.0.0.0 reelsdownload.net
 0.0.0.0 ref.gs
@@ -6601,7 +6599,6 @@
 0.0.0.0 s1o.co
 0.0.0.0 s21.us
 0.0.0.0 s223.me
-0.0.0.0 s23.us
 0.0.0.0 s3r.io
 0.0.0.0 s3vip.tw
 0.0.0.0 s3w.net
@@ -6612,7 +6609,6 @@
 0.0.0.0 sa-link.cc
 0.0.0.0 saasmaster.link
 0.0.0.0 sabriabi.net
-0.0.0.0 sactiny.com
 0.0.0.0 sadar.id
 0.0.0.0 saddr.xyz
 0.0.0.0 saerly.com
@@ -6834,7 +6830,6 @@
 0.0.0.0 shlink.in
 0.0.0.0 shlink.io
 0.0.0.0 shlinks.site
-0.0.0.0 shln.io
 0.0.0.0 shln.me
 0.0.0.0 shlom.in
 0.0.0.0 shme.io
@@ -6899,7 +6894,6 @@
 0.0.0.0 short.razinj.com
 0.0.0.0 short.re
 0.0.0.0 short.relaxlikes.com
-0.0.0.0 short.ruksk.com
 0.0.0.0 short.sashem.com
 0.0.0.0 short.securityops.co
 0.0.0.0 short.silex.me
@@ -6930,7 +6924,6 @@
 0.0.0.0 shorte.ink
 0.0.0.0 shorte.pro
 0.0.0.0 shorte.st
-0.0.0.0 shortearn.to
 0.0.0.0 shortearner.in
 0.0.0.0 shorteasy.com
 0.0.0.0 shortedge.pro
@@ -6998,7 +6991,6 @@
 0.0.0.0 shortey.net
 0.0.0.0 shortezy.com
 0.0.0.0 shortfake.com
-0.0.0.0 shortfree.link
 0.0.0.0 shortgo.me
 0.0.0.0 shorti.me
 0.0.0.0 shortie.io
@@ -7072,7 +7064,6 @@
 0.0.0.0 shortme.me
 0.0.0.0 shortme.xyz
 0.0.0.0 shortmenu.com
-0.0.0.0 shortmylink.co
 0.0.0.0 shortn.link
 0.0.0.0 shortna.me
 0.0.0.0 shortnd.com
@@ -7113,7 +7104,6 @@
 0.0.0.0 shorturl.az
 0.0.0.0 shorturl.best
 0.0.0.0 shorturl.biz
-0.0.0.0 shorturl.bond
 0.0.0.0 shorturl.click
 0.0.0.0 shorturl.co.id
 0.0.0.0 shorturl.com
@@ -7191,15 +7181,12 @@
 0.0.0.0 shrinkme.org
 0.0.0.0 shrinkme.pro
 0.0.0.0 shrinkme.site
-0.0.0.0 shrinkme.space
 0.0.0.0 shrinkme.top
 0.0.0.0 shrinkme.us
 0.0.0.0 shrinkme.vip
-0.0.0.0 shrinkmyurl.com
 0.0.0.0 shrinkr.io
 0.0.0.0 shrinkrl.com
 0.0.0.0 shrinkster.com
-0.0.0.0 shrinkuri.com
 0.0.0.0 shrinkurl.us
 0.0.0.0 shrinkurlnow.vercel.app
 0.0.0.0 shrinkurls.vercel.app
@@ -7419,7 +7406,6 @@
 0.0.0.0 smoner.com
 0.0.0.0 smr.sh
 0.0.0.0 smr.to
-0.0.0.0 sms-my.com
 0.0.0.0 sms.bo
 0.0.0.0 sms.club
 0.0.0.0 sms.katapult.com
@@ -7456,7 +7442,6 @@
 0.0.0.0 sndn.link
 0.0.0.0 sng.agency
 0.0.0.0 sng.ng
-0.0.0.0 sngkt.in
 0.0.0.0 sni.ps
 0.0.0.0 snifferip.com
 0.0.0.0 snip.im
@@ -7620,7 +7605,6 @@
 0.0.0.0 steelcut.io
 0.0.0.0 steemhunt.com
 0.0.0.0 steemit.com
-0.0.0.0 stella-ella.org
 0.0.0.0 steps2unlock.com
 0.0.0.0 steveendow.link
 0.0.0.0 stfly.me
@@ -7851,7 +7835,6 @@
 0.0.0.0 techind.co
 0.0.0.0 techshort.co
 0.0.0.0 techuntangler.tools
-0.0.0.0 techwizards.tech
 0.0.0.0 tecn.in
 0.0.0.0 tecn.me
 0.0.0.0 teeny.in
@@ -7879,7 +7862,6 @@
 0.0.0.0 terbar.ink
 0.0.0.0 terbukti.info
 0.0.0.0 terijoss.com
-0.0.0.0 terp.icu
 0.0.0.0 tetherlink.us
 0.0.0.0 texas-lands.org
 0.0.0.0 texas88register.com
@@ -7927,7 +7909,6 @@
 0.0.0.0 thelinkmaster.com
 0.0.0.0 themestub.com
 0.0.0.0 theorist.media
-0.0.0.0 theposhed.com
 0.0.0.0 thesa.us
 0.0.0.0 theseotools.net
 0.0.0.0 theshortener.com
@@ -7991,7 +7972,6 @@
 0.0.0.0 tinesy.com
 0.0.0.0 tini.cc
 0.0.0.0 tini.cx
-0.0.0.0 tinky.cc
 0.0.0.0 tinlie.com
 0.0.0.0 tinlr.com
 0.0.0.0 tinly.cc
@@ -8063,7 +8043,6 @@
 0.0.0.0 tinyurl.mobi
 0.0.0.0 tinyurl.my
 0.0.0.0 tinyurl.ph
-0.0.0.0 tinyurl.rest
 0.0.0.0 tinyurl.rocks
 0.0.0.0 tinyurl.se
 0.0.0.0 tinyurl.smart-home.com.co
@@ -8076,7 +8055,6 @@
 0.0.0.0 tinyvid.io
 0.0.0.0 tinyvnn.com
 0.0.0.0 tinywebz.com
-0.0.0.0 tinyy.me
 0.0.0.0 tinyy.xyz
 0.0.0.0 tipeos.com
 0.0.0.0 tiplink.ru
@@ -8141,7 +8119,6 @@
 0.0.0.0 tny.im
 0.0.0.0 tny.lv
 0.0.0.0 tny.sh
-0.0.0.0 tny.so
 0.0.0.0 tny.ws
 0.0.0.0 tny.xyz
 0.0.0.0 tnyer.com

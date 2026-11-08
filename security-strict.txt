@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-07 10:07 UTC
-# Entries: 2740
+# Last modified: 2026-11-08 10:22 UTC
+# Entries: 2742
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -357,6 +357,7 @@ blogdns.org
 bloggt.de
 blogmonster.de
 blogsite.org
+blogspot.vip
 blogsyte.com
 bloodforthebloodgod.com
 bloom.us
@@ -1886,7 +1887,6 @@ noipdns.com
 noipdns.net
 noipfreedns.com
 noiptos.com
-nokojp.shop
 notici.as
 novamov.com
 novgaz-rzn.ru
@@ -2037,6 +2037,7 @@ portal.lc
 portfwd.com
 portmap.host
 portrelay.com
+pory.app
 possessed.us
 pp.ua
 prettyweak.com
@@ -2302,6 +2303,7 @@ social-networking.me
 socialadhesion.com
 socialsmp.com
 softether.net
+softr.app
 solfa.org
 solidmation.com
 solidwebhost.com
