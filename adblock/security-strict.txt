@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-08 10:22 UTC
-! Entries: 3017
+! Last modified: 2026-11-09 12:11 UTC
+! Entries: 3011
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -649,6 +649,7 @@
 @@||nowplaying.cool^
 @@||nssm.cc^
 @@||ntc.party^
+@@||nura.eco^
 @@||nuvioapp.space^
 @@||nvidia.partners^
 @@||nyarchlinux.moe^
@@ -1076,11 +1077,8 @@
 ||000free.us^
 ||000webapp.com^
 ||000webhost.com^
-||000webhost.fr^
 ||000webhost.info^
 ||000webhostapp.com^
-||000webhotapp.com^
-||000worldwide.com^
 ||001www.com^
 ||00author.com^
 ||00go.com^
@@ -1105,7 +1103,6 @@
 ||10gbfreehost.com^
 ||10h.us^
 ||10x.es^
-||110.vg^
 ||114.at^
 ||115.at^
 ||120v.ac^
@@ -1227,6 +1224,7 @@
 ||9k.com^
 ||a-loch.de^
 ||a.gp^
+||a0001.net^
 ||a3n.de^
 ||aa.am^
 ||aa6.de^
@@ -1337,7 +1335,6 @@
 ||australia.ai^
 ||authorizeddns.net^
 ||authorizeddns.org^
-||authorizeddns.us^
 ||auto.lc^
 ||autoipset.com^
 ||avandns.com^
@@ -1364,7 +1361,6 @@
 ||baselinux.net^
 ||bayfiles.com^
 ||bayipazar.com^
-||bb.vg^
 ||be.gp^
 ||bearshare.app^
 ||beerprojects.com^
@@ -1409,6 +1405,7 @@
 ||bloggt.de^
 ||blogmonster.de^
 ||blogsite.org^
+||blogsite.xyz^
 ||blogsyte.com^
 ||bloodforthebloodgod.com^
 ||bloom.us^
@@ -1418,6 +1415,7 @@
 ||boldlygoingnowhere.org^
 ||bot.nu^
 ||bounceme.net^
+||bouncers4rent.com^
 ||boxathome.net^
 ||boxmode.io^
 ||bproxy.one^
@@ -1436,7 +1434,6 @@
 ||bulkurlshortener.com^
 ||bumbleshrimp.com^
 ||burlingtondrywall.com^
-||business-minagne.com^
 ||buyshouses.net^
 ||bx5.de^
 ||byethost11.com^
@@ -1552,6 +1549,7 @@
 ||compress.to^
 ||compuinter.com^
 ||computersforpeace.net^
+||compy.ca^
 ||comxa.com^
 ||con-ip.com^
 ||conditsis.com^
@@ -1620,7 +1618,6 @@
 ||ddnsgeek.com^
 ||ddnsguru.com^
 ||ddnsking.com^
-||ddnslive.com^
 ||ddnss.ch^
 ||ddnss.de^
 ||ddnss.eu^
@@ -1820,6 +1817,7 @@
 ||dynnamn.ru^
 ||dynns.com^
 ||dyns.be^
+||dyns.cx^
 ||dyns.net^
 ||dynserv.org^
 ||dynssl.com^
@@ -1935,6 +1933,7 @@
 ||facebookid.live^
 ||faceboook-app.com^
 ||facepl.com^
+||fagdns.com^
 ||fairuse.org^
 ||falcongreen.com^
 ||familylobby.com^
@@ -2169,7 +2168,6 @@
 ||gurcanozturk.com^
 ||gurdit.com^
 ||guthriecontainers.com^
-||guzhibo.cn^
 ||gw.lt^
 ||gw1.org^
 ||h.gp^
@@ -2504,6 +2502,7 @@
 ||keine-panik.net^
 ||kellserve.com^
 ||kesug.com^
+||kfco.net^
 ||kicks-ass.net^
 ||kicks-ass.org^
 ||kilu.at^
@@ -2604,7 +2603,6 @@
 ||lovelocals.us^
 ||lovestoblog.com^
 ||lovethosetrains.com^
-||lowrihouston.pro^
 ||lozan.com^
 ||lu.kg^
 ||lum-sdk.io^
@@ -2788,13 +2786,11 @@
 ||n-e.kr^
 ||n.gp^
 ||n0p.at^
-||n4t.co^
 ||name.ac^
 ||name.vg^
 ||nard.ca^
 ||nas64.de^
 ||nat-ddns.com^
-||nathanaeldan.pro^
 ||natrofa.com^
 ||ndcg.com^
 ||neat-url.com^
@@ -2910,6 +2906,7 @@
 ||ooguy.com^
 ||opent2.com^
 ||opior.com^
+||opisial.com^
 ||oray.com^
 ||organiccrap.com^
 ||orgfree.com^
@@ -3266,7 +3263,6 @@
 ||srv64.de^
 ||srvdns.de^
 ||ssitech.bg^
-||ssl443.org^
 ||sslip.io^
 ||ssmailer.com^
 ||star.is^
@@ -3535,7 +3531,6 @@
 ||webs.vc^
 ||webservis.ru^
 ||website-category-lis-5ge9.bolt.host^
-||website-home.ws^
 ||website.at^
 ||webspawner.com^
 ||webstarterz.com^

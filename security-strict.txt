@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-08 10:22 UTC
-# Entries: 2742
+# Last modified: 2026-11-09 12:11 UTC
+# Entries: 2729
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -18,11 +18,8 @@
 000free.us
 000webapp.com
 000webhost.com
-000webhost.fr
 000webhost.info
 000webhostapp.com
-000webhotapp.com
-000worldwide.com
 001www.com
 00author.com
 00go.com
@@ -47,7 +44,6 @@
 10gbfreehost.com
 10h.us
 10x.es
-110.vg
 114.at
 115.at
 120v.ac
@@ -129,7 +125,6 @@
 42t.com
 42web.io
 433.at
-4cloud.click
 4dq.com
 4everland.app
 4everland.io
@@ -172,6 +167,7 @@
 9k.com
 a-loch.de
 a.gp
+a0001.net
 a3n.de
 aa.am
 aa6.de
@@ -283,12 +279,10 @@ ausposaunen.de
 australia.ai
 authorizeddns.net
 authorizeddns.org
-authorizeddns.us
 auto.lc
 autoipset.com
 avandns.com
 aw3.de
-awi.za.com
 awiki.org
 ax.lt
 axifile.com
@@ -311,7 +305,6 @@ barrell-of-knowledge.info
 baselinux.net
 bayfiles.com
 bayipazar.com
-bb.vg
 be.gp
 bearshare.app
 beerprojects.com
@@ -329,7 +322,6 @@ bget.ru
 bhms.com
 bigbluezoo.com
 bigheadhosting.net
-bigmoney.biz
 bilder.lc
 billblett.com
 bine.me
@@ -357,6 +349,7 @@ blogdns.org
 bloggt.de
 blogmonster.de
 blogsite.org
+blogsite.xyz
 blogspot.vip
 blogsyte.com
 bloodforthebloodgod.com
@@ -367,6 +360,7 @@ boblove.org
 boldlygoingnowhere.org
 bot.nu
 bounceme.net
+bouncers4rent.com
 boxathome.net
 boxmode.io
 bproxy.one
@@ -385,7 +379,6 @@ builtfree.org
 bulkurlshortener.com
 bumbleshrimp.com
 burlingtondrywall.com
-business-minagne.com
 buyshouses.net
 bx5.de
 byethost11.com
@@ -514,6 +507,7 @@ company.site
 compress.to
 compuinter.com
 computersforpeace.net
+compy.ca
 comxa.com
 con-ip.com
 conditsis.com
@@ -588,7 +582,6 @@ ddnsfree.com
 ddnsgeek.com
 ddnsguru.com
 ddnsking.com
-ddnslive.com
 ddnss.ch
 ddnss.de
 ddnss.eu
@@ -800,6 +793,7 @@ dynme.ovh
 dynnamn.ru
 dynns.com
 dyns.be
+dyns.cx
 dyns.net
 dynserv.org
 dynssl.com
@@ -920,6 +914,7 @@ f3322.org
 facebookid.live
 faceboook-app.com
 facepl.com
+fagdns.com
 fairuse.org
 falcongreen.com
 familylobby.com
@@ -955,7 +950,6 @@ flashhub.net
 flat4free.com
 flazio.com
 flazzard.com
-fleek.cool
 flf.li
 fli.so
 flick2.me
@@ -1173,7 +1167,6 @@ guild-site.com
 gurcanozturk.com
 gurdit.com
 guthriecontainers.com
-guzhibo.cn
 gw.lt
 gw1.org
 h-o-s-t.name
@@ -1350,7 +1343,6 @@ invoicenotices.com
 inx.lv
 ionexusa.com
 iot64.de
-iownyour.biz
 iownyour.org
 ip-ddns.com
 ip-dynamic.com
@@ -1522,6 +1514,7 @@ keepo.bio
 keine-panik.net
 kellserve.com
 kesug.com
+kfco.net
 kicks-ass.net
 kicks-ass.org
 kilu.at
@@ -1628,7 +1621,6 @@ lovelocals.us
 loveslife.biz
 lovestoblog.com
 lovethosetrains.com
-lowrihouston.pro
 lozan.com
 lu.kg
 lum-sdk.io
@@ -1823,13 +1815,11 @@ n-e-t.name
 n-e.kr
 n.gp
 n0p.at
-n4t.co
 name.ac
 name.vg
 nard.ca
 nas64.de
 nat-ddns.com
-nathanaeldan.pro
 natrofa.com
 ndcg.com
 neat-url.com
@@ -1910,7 +1900,6 @@ ns3.name
 nsfera.pl
 nsignal.net
 nsupdate.info
-ntdll.top
 nufszone.com
 nut.cc
 nx.tc
@@ -1959,6 +1948,7 @@ onthewifi.com
 ooguy.com
 opent2.com
 opior.com
+opisial.com
 oray.com
 organiccrap.com
 orgfree.com
@@ -2012,7 +2002,6 @@ pii.at
 piroge.com
 pixelfucker.com
 pixelt.de
-pizzakeep.shop
 pk.gp
 pktriot.net
 pl.de
@@ -2334,7 +2323,6 @@ srv64.de
 srvdns.de
 sryze.cc
 ssitech.bg
-ssl443.org
 sslip.io
 ssmailer.com
 ssur.cc
@@ -2626,7 +2614,6 @@ webredirect.org
 webs.vc
 webservis.ru
 website-category-lis-5ge9.bolt.host
-website-home.ws
 website.at
 webspawner.com
 webstarterz.com

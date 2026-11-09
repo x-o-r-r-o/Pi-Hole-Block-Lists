@@ -2,8 +2,8 @@
 # Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-06 10:51 UTC
-# Entries: 13411
+# Last modified: 2026-11-09 12:11 UTC
+# Entries: 13419
 #
 # Built from these sources (see their licenses):
 #   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
@@ -1581,7 +1581,6 @@
 0.0.0.0 babyshambles.org
 0.0.0.0 bachelorism.org
 0.0.0.0 bachpan.com
-0.0.0.0 backend-test-automation-report.pages.github.lovoo.com
 0.0.0.0 backstreetboysthegirl.gigafoto.com.br
 0.0.0.0 backup.dus6.jaumo.com
 0.0.0.0 baddkittyclub.com
@@ -5010,10 +5009,13 @@
 0.0.0.0 europe-west4.currency-staging.cloud.bumble.com
 0.0.0.0 europe-west4.currency.cloud.bumble.com
 0.0.0.0 europe-west4.data-facade.cloud.bumble.com
+0.0.0.0 europe-west4.data-requests-b4f.cloud.bumble.com
+0.0.0.0 europe-west4.data-requests.cloud.bumble.com
 0.0.0.0 europe-west4.dgf-cleanup.cloud.bumble.com
 0.0.0.0 europe-west4.dgf-demo-svc.cloud.bumble.com
 0.0.0.0 europe-west4.dgf-registry.cloud.bumble.com
 0.0.0.0 europe-west4.dgf-sars.cloud.bumble.com
+0.0.0.0 europe-west4.discovery-likes-dev.cloud.bumble.com
 0.0.0.0 europe-west4.discovery-location-dev.cloud.bumble.com
 0.0.0.0 europe-west4.discovery-location-staging.cloud.bumble.com
 0.0.0.0 europe-west4.discovery-location.cloud.bumble.com
@@ -6440,6 +6442,7 @@
 0.0.0.0 hiv-single.com
 0.0.0.0 hivdating.com.au
 0.0.0.0 hivdatingplanet.com
+0.0.0.0 hivemind.cloud.bumble.com
 0.0.0.0 hivpassions.com
 0.0.0.0 hivpositivedating.com.au
 0.0.0.0 hivsingles.com.au
@@ -12159,6 +12162,7 @@
 0.0.0.0 us-central1.appeals-import-dev.cloud.bumble.com
 0.0.0.0 us-central1.appeals-import-staging.cloud.bumble.com
 0.0.0.0 us-central1.appeals-import.cloud.bumble.com
+0.0.0.0 us-central1.apple-mock-staging.cloud.bumble.com
 0.0.0.0 us-central1.bee-member-dev.cloud.bumble.com
 0.0.0.0 us-central1.bee-member-staging.cloud.bumble.com
 0.0.0.0 us-central1.bee-member.cloud.bumble.com
@@ -12213,6 +12217,7 @@
 0.0.0.0 us-central1.data-facade-staging.cloud.bumble.com
 0.0.0.0 us-central1.data-facade.cloud.bumble.com
 0.0.0.0 us-central1.data-requests-b4f-dev.cloud.bumble.com
+0.0.0.0 us-central1.data-requests-b4f-staging.cloud.bumble.com
 0.0.0.0 us-central1.dgf-cleanup-dev.cloud.bumble.com
 0.0.0.0 us-central1.dgf-cleanup-staging.cloud.bumble.com
 0.0.0.0 us-central1.dgf-cleanup.cloud.bumble.com
@@ -12225,6 +12230,8 @@
 0.0.0.0 us-central1.dgf-sars-dev.cloud.bumble.com
 0.0.0.0 us-central1.dgf-sars-staging.cloud.bumble.com
 0.0.0.0 us-central1.dgf-sars.cloud.bumble.com
+0.0.0.0 us-central1.discovery-likes-dev.cloud.bumble.com
+0.0.0.0 us-central1.discovery-likes.cloud.bumble.com
 0.0.0.0 us-central1.discovery-location-dev.cloud.bumble.com
 0.0.0.0 us-central1.discovery-location-staging.cloud.bumble.com
 0.0.0.0 us-central1.discovery-location.cloud.bumble.com
@@ -12259,6 +12266,7 @@
 0.0.0.0 us-central1.go.cloud.bumble.com
 0.0.0.0 us-central1.go.localisation-test.cloud.bumble.com
 0.0.0.0 us-central1.guardrails-service-dev.cloud.bumble.com
+0.0.0.0 us-central1.guardrails-service-staging.cloud.bumble.com
 0.0.0.0 us-central1.guardrails-service.cloud.bumble.com
 0.0.0.0 us-central1.help-hub-b4f-dev.cloud.bumble.com
 0.0.0.0 us-central1.help-hub-b4f-staging.cloud.bumble.com

@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-08 10:22 UTC
-# Entries: 2742
+# Last modified: 2026-11-09 12:11 UTC
+# Entries: 2729
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -18,11 +18,8 @@
 0.0.0.0 000free.us
 0.0.0.0 000webapp.com
 0.0.0.0 000webhost.com
-0.0.0.0 000webhost.fr
 0.0.0.0 000webhost.info
 0.0.0.0 000webhostapp.com
-0.0.0.0 000webhotapp.com
-0.0.0.0 000worldwide.com
 0.0.0.0 001www.com
 0.0.0.0 00author.com
 0.0.0.0 00go.com
@@ -47,7 +44,6 @@
 0.0.0.0 10gbfreehost.com
 0.0.0.0 10h.us
 0.0.0.0 10x.es
-0.0.0.0 110.vg
 0.0.0.0 114.at
 0.0.0.0 115.at
 0.0.0.0 120v.ac
@@ -129,7 +125,6 @@
 0.0.0.0 42t.com
 0.0.0.0 42web.io
 0.0.0.0 433.at
-0.0.0.0 4cloud.click
 0.0.0.0 4dq.com
 0.0.0.0 4everland.app
 0.0.0.0 4everland.io
@@ -172,6 +167,7 @@
 0.0.0.0 9k.com
 0.0.0.0 a-loch.de
 0.0.0.0 a.gp
+0.0.0.0 a0001.net
 0.0.0.0 a3n.de
 0.0.0.0 aa.am
 0.0.0.0 aa6.de
@@ -283,12 +279,10 @@
 0.0.0.0 australia.ai
 0.0.0.0 authorizeddns.net
 0.0.0.0 authorizeddns.org
-0.0.0.0 authorizeddns.us
 0.0.0.0 auto.lc
 0.0.0.0 autoipset.com
 0.0.0.0 avandns.com
 0.0.0.0 aw3.de
-0.0.0.0 awi.za.com
 0.0.0.0 awiki.org
 0.0.0.0 ax.lt
 0.0.0.0 axifile.com
@@ -311,7 +305,6 @@
 0.0.0.0 baselinux.net
 0.0.0.0 bayfiles.com
 0.0.0.0 bayipazar.com
-0.0.0.0 bb.vg
 0.0.0.0 be.gp
 0.0.0.0 bearshare.app
 0.0.0.0 beerprojects.com
@@ -329,7 +322,6 @@
 0.0.0.0 bhms.com
 0.0.0.0 bigbluezoo.com
 0.0.0.0 bigheadhosting.net
-0.0.0.0 bigmoney.biz
 0.0.0.0 bilder.lc
 0.0.0.0 billblett.com
 0.0.0.0 bine.me
@@ -357,6 +349,7 @@
 0.0.0.0 bloggt.de
 0.0.0.0 blogmonster.de
 0.0.0.0 blogsite.org
+0.0.0.0 blogsite.xyz
 0.0.0.0 blogspot.vip
 0.0.0.0 blogsyte.com
 0.0.0.0 bloodforthebloodgod.com
@@ -367,6 +360,7 @@
 0.0.0.0 boldlygoingnowhere.org
 0.0.0.0 bot.nu
 0.0.0.0 bounceme.net
+0.0.0.0 bouncers4rent.com
 0.0.0.0 boxathome.net
 0.0.0.0 boxmode.io
 0.0.0.0 bproxy.one
@@ -385,7 +379,6 @@
 0.0.0.0 bulkurlshortener.com
 0.0.0.0 bumbleshrimp.com
 0.0.0.0 burlingtondrywall.com
-0.0.0.0 business-minagne.com
 0.0.0.0 buyshouses.net
 0.0.0.0 bx5.de
 0.0.0.0 byethost11.com
@@ -514,6 +507,7 @@
 0.0.0.0 compress.to
 0.0.0.0 compuinter.com
 0.0.0.0 computersforpeace.net
+0.0.0.0 compy.ca
 0.0.0.0 comxa.com
 0.0.0.0 con-ip.com
 0.0.0.0 conditsis.com
@@ -588,7 +582,6 @@
 0.0.0.0 ddnsgeek.com
 0.0.0.0 ddnsguru.com
 0.0.0.0 ddnsking.com
-0.0.0.0 ddnslive.com
 0.0.0.0 ddnss.ch
 0.0.0.0 ddnss.de
 0.0.0.0 ddnss.eu
@@ -800,6 +793,7 @@
 0.0.0.0 dynnamn.ru
 0.0.0.0 dynns.com
 0.0.0.0 dyns.be
+0.0.0.0 dyns.cx
 0.0.0.0 dyns.net
 0.0.0.0 dynserv.org
 0.0.0.0 dynssl.com
@@ -920,6 +914,7 @@
 0.0.0.0 facebookid.live
 0.0.0.0 faceboook-app.com
 0.0.0.0 facepl.com
+0.0.0.0 fagdns.com
 0.0.0.0 fairuse.org
 0.0.0.0 falcongreen.com
 0.0.0.0 familylobby.com
@@ -955,7 +950,6 @@
 0.0.0.0 flat4free.com
 0.0.0.0 flazio.com
 0.0.0.0 flazzard.com
-0.0.0.0 fleek.cool
 0.0.0.0 flf.li
 0.0.0.0 fli.so
 0.0.0.0 flick2.me
@@ -1173,7 +1167,6 @@
 0.0.0.0 gurcanozturk.com
 0.0.0.0 gurdit.com
 0.0.0.0 guthriecontainers.com
-0.0.0.0 guzhibo.cn
 0.0.0.0 gw.lt
 0.0.0.0 gw1.org
 0.0.0.0 h-o-s-t.name
@@ -1350,7 +1343,6 @@
 0.0.0.0 inx.lv
 0.0.0.0 ionexusa.com
 0.0.0.0 iot64.de
-0.0.0.0 iownyour.biz
 0.0.0.0 iownyour.org
 0.0.0.0 ip-ddns.com
 0.0.0.0 ip-dynamic.com
@@ -1522,6 +1514,7 @@
 0.0.0.0 keine-panik.net
 0.0.0.0 kellserve.com
 0.0.0.0 kesug.com
+0.0.0.0 kfco.net
 0.0.0.0 kicks-ass.net
 0.0.0.0 kicks-ass.org
 0.0.0.0 kilu.at
@@ -1628,7 +1621,6 @@
 0.0.0.0 loveslife.biz
 0.0.0.0 lovestoblog.com
 0.0.0.0 lovethosetrains.com
-0.0.0.0 lowrihouston.pro
 0.0.0.0 lozan.com
 0.0.0.0 lu.kg
 0.0.0.0 lum-sdk.io
@@ -1823,13 +1815,11 @@
 0.0.0.0 n-e.kr
 0.0.0.0 n.gp
 0.0.0.0 n0p.at
-0.0.0.0 n4t.co
 0.0.0.0 name.ac
 0.0.0.0 name.vg
 0.0.0.0 nard.ca
 0.0.0.0 nas64.de
 0.0.0.0 nat-ddns.com
-0.0.0.0 nathanaeldan.pro
 0.0.0.0 natrofa.com
 0.0.0.0 ndcg.com
 0.0.0.0 neat-url.com
@@ -1910,7 +1900,6 @@
 0.0.0.0 nsfera.pl
 0.0.0.0 nsignal.net
 0.0.0.0 nsupdate.info
-0.0.0.0 ntdll.top
 0.0.0.0 nufszone.com
 0.0.0.0 nut.cc
 0.0.0.0 nx.tc
@@ -1959,6 +1948,7 @@
 0.0.0.0 ooguy.com
 0.0.0.0 opent2.com
 0.0.0.0 opior.com
+0.0.0.0 opisial.com
 0.0.0.0 oray.com
 0.0.0.0 organiccrap.com
 0.0.0.0 orgfree.com
@@ -2012,7 +2002,6 @@
 0.0.0.0 piroge.com
 0.0.0.0 pixelfucker.com
 0.0.0.0 pixelt.de
-0.0.0.0 pizzakeep.shop
 0.0.0.0 pk.gp
 0.0.0.0 pktriot.net
 0.0.0.0 pl.de
@@ -2334,7 +2323,6 @@
 0.0.0.0 srvdns.de
 0.0.0.0 sryze.cc
 0.0.0.0 ssitech.bg
-0.0.0.0 ssl443.org
 0.0.0.0 sslip.io
 0.0.0.0 ssmailer.com
 0.0.0.0 ssur.cc
@@ -2626,7 +2614,6 @@
 0.0.0.0 webs.vc
 0.0.0.0 webservis.ru
 0.0.0.0 website-category-lis-5ge9.bolt.host
-0.0.0.0 website-home.ws
 0.0.0.0 website.at
 0.0.0.0 webspawner.com
 0.0.0.0 webstarterz.com
