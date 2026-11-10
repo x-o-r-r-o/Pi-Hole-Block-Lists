@@ -3,8 +3,8 @@
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
 ! License: GPL-3.0 (same as the source lists)
 ! Expires: 1 day
-! Last modified: 2026-11-06 10:52 UTC
-! Entries: 114
+! Last modified: 2026-11-10 11:12 UTC
+! Entries: 113
 
 youtube.com#@##player-ads
 @@||static.doubleclick.net/instream/ad_status.js$domain=youtube.com
@@ -78,7 +78,6 @@ youtube.com###description-inner > ytd-merch-shelf-renderer > #main.ytd-merch-she
 youtube.com###shopping-timely-shelf
 youtube.com###shorts-inner-container > .ytd-shorts:has(> .ytd-reel-video-renderer > ytd-ad-slot-renderer)
 youtube.com###sticker-layer
-youtube.com##.ytReelMetapanelViewModelHost > .ytReelMetapanelViewModelMetapanelItem > .ytShortsSuggestedActionViewModelStaticHost
 youtube.com##.ytd-section-list-renderer > .ytd-item-section-renderer > ytd-search-pyv-renderer.ytd-item-section-renderer
 youtube.com##.ytd-two-column-browse-results-renderer > ytd-rich-grid-renderer > #masthead-ad.ytd-rich-grid-renderer
 youtube.com##.ytd-watch-flexy > .ytd-watch-next-secondary-results-renderer > ytd-ad-slot-renderer.ytd-watch-next-secondary-results-renderer

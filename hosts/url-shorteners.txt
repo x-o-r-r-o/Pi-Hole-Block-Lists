@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-09 12:11 UTC
-# Entries: 9777
+# Last modified: 2026-11-10 11:11 UTC
+# Entries: 9779
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -1007,6 +1007,7 @@
 0.0.0.0 beeurls.com
 0.0.0.0 beingtek.com
 0.0.0.0 belink.me
+0.0.0.0 belink.ph
 0.0.0.0 belink.vebto.com
 0.0.0.0 belinki.cloud
 0.0.0.0 belinksnip.com
@@ -1254,7 +1255,6 @@
 0.0.0.0 boldphoto.link
 0.0.0.0 bolstr.online
 0.0.0.0 boltsly.com
-0.0.0.0 bom.io.vn
 0.0.0.0 bom.so
 0.0.0.0 bom.to
 0.0.0.0 bom88.store
@@ -2109,6 +2109,7 @@
 0.0.0.0 dl100.cc
 0.0.0.0 dld.bz
 0.0.0.0 dlik.ch
+0.0.0.0 dlpeace.com
 0.0.0.0 dlsh.it
 0.0.0.0 dlvr.it
 0.0.0.0 dly.es
@@ -6575,6 +6576,7 @@
 0.0.0.0 s.id
 0.0.0.0 s.kiot.io
 0.0.0.0 s.klinikpintar.id
+0.0.0.0 s.kode4u.tech
 0.0.0.0 s.lalazodiac.com
 0.0.0.0 s.livstick.io
 0.0.0.0 s.locus.cards

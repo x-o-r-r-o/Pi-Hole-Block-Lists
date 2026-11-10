@@ -2,8 +2,8 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-08 10:22 UTC
-# Entries: 3281
+# Last modified: 2026-11-10 11:11 UTC
+# Entries: 3287
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -58,7 +58,6 @@
 0.0.0.0 ad-api-log.colopl.jp
 0.0.0.0 ad-creative.projectcarmen.com
 0.0.0.0 ad-drcn.media.dbankcloud.cn
-0.0.0.0 ad-drcn.media.dbankcloud.ru
 0.0.0.0 ad-format-i18n.tiktokv.com
 0.0.0.0 ad-format-ie.tiktokv.eu
 0.0.0.0 ad-format-ru.tiktokv.com
@@ -391,14 +390,11 @@
 0.0.0.0 api-fp-retry-bj.fengkongcloud.com
 0.0.0.0 api-fp-retry-sa.fengkongcloud.com
 0.0.0.0 api-gl.cdo.heytapmobi.com
-0.0.0.0 api-gl.cdo.heytapmobile.com
-0.0.0.0 api-id.cdo.heytapmobile.com
 0.0.0.0 api-id.game.heytapmobi.com
 0.0.0.0 api-id.game.heytapmobile.com
 0.0.0.0 api-id.play.heytapmobile.com
 0.0.0.0 api-id.theme.heytapmobi.com
 0.0.0.0 api-id.theme.heytapmobile.com
-0.0.0.0 api-in.cdo.heytapmobile.com
 0.0.0.0 api-log-upload.wenext.technology
 0.0.0.0 api-rec.stellar.intl.miui.com
 0.0.0.0 api-samsung.swypeconnect.com
@@ -473,12 +469,18 @@
 0.0.0.0 apisnd.heytapmobi.com
 0.0.0.0 apiv2.moengage.com
 0.0.0.0 apkrep.ff.avast.sec.miui.com
+0.0.0.0 apm-ap.yun.hihonor.com
+0.0.0.0 apm-eu.yun.hihonor.com
 0.0.0.0 apm-fe.rnote.com
 0.0.0.0 apm-fe.xiaohongshu.com
+0.0.0.0 apm-fr.yun.hihonor.com
 0.0.0.0 apm-log-upload-os.hoyoverse.com
 0.0.0.0 apm-native.redbascket.com
 0.0.0.0 apm-native.xiaohongshu.com
+0.0.0.0 apm-ru.yun.hihonor.com
+0.0.0.0 apm-sg.yun.hihonor.com
 0.0.0.0 apm-track.xiaohongshu.com
+0.0.0.0 apm.yun.hihonor.com
 0.0.0.0 app-analytics-ru.huami.com
 0.0.0.0 app-analytics-services.com
 0.0.0.0 app-analytics.snapchat.com
@@ -633,9 +635,7 @@
 0.0.0.0 browser-sdk-ru.heytapmobile.com
 0.0.0.0 browser.miui.com
 0.0.0.0 browsercfg-drcn.cloud.dbankcloud.cn
-0.0.0.0 browserfiles.heytapmobile.com
 0.0.0.0 bs.nakanohito.jp
-0.0.0.0 bsf.sc.heytapmobile.com
 0.0.0.0 bsp-di-in.heytapmobile.com
 0.0.0.0 bsp.sasdc.pandora.xiaomi.com
 0.0.0.0 bss.pandora.xiaomi.com
@@ -668,6 +668,7 @@
 0.0.0.0 cdn1.static.home.miui.com
 0.0.0.0 cdna.sec.miui.com
 0.0.0.0 cdnappicons.appsflyer.com
+0.0.0.0 cdo.heytapmobile.com
 0.0.0.0 ced-ns.sascdn.com
 0.0.0.0 cedexis-radar.net
 0.0.0.0 cedexis.com
@@ -858,23 +859,17 @@
 0.0.0.0 config.toto.zipoapps.com
 0.0.0.0 config.uca.cloud.unity3d.com
 0.0.0.0 config2.mparticle.com
-0.0.0.0 conn-service-cn-01.allawntech.com
 0.0.0.0 conn-service-cn-03.allawntech.com
 0.0.0.0 conn-service-cn-04.allawntech.com
 0.0.0.0 conn-service-cn-05.allawntech.com
 0.0.0.0 conn-service-cn-07.allawntech.com
 0.0.0.0 conn-service-cn-08.allawntech.com
-0.0.0.0 conn-service-eu-01.allawnos.com
-0.0.0.0 conn-service-eu-02.allawnos.com
 0.0.0.0 conn-service-eu-03.allawnos.com
 0.0.0.0 conn-service-eu-04.allawnos.com
 0.0.0.0 conn-service-eu-05.allawnos.com
 0.0.0.0 conn-service-eu-07.allawnos.com
 0.0.0.0 conn-service-eu-08.allawnos.com
 0.0.0.0 conn-service-gl-01.allawntech.com
-0.0.0.0 conn-service-gl-03.allawntech.com
-0.0.0.0 conn-service-gl-04.allawntech.com
-0.0.0.0 conn-service-in-01.allawnos.com
 0.0.0.0 conn-service-in-03.allawnos.com
 0.0.0.0 conn-service-in-04.allawnos.com
 0.0.0.0 conn-service-in-05.allawnos.com
@@ -1280,6 +1275,7 @@
 0.0.0.0 graffiti-tags.apple.com
 0.0.0.0 graph.accountkit.com
 0.0.0.0 graph.instagram.com
+0.0.0.0 grayr.abx.ipd.hihonor.com
 0.0.0.0 grs-dbankcloud-asia-dra.appacc-region.dbankedge.cn
 0.0.0.0 grs-dbankcloud-asia-dra.appacc.dbankedge.cn
 0.0.0.0 grs-dbankcloud-com-dra.appacc-region.dbankedge.cn
@@ -1329,6 +1325,7 @@
 0.0.0.0 hd.xiaomi.com
 0.0.0.0 heyue.xiaomi.com
 0.0.0.0 hibiki-track.logica.bz
+0.0.0.0 hihonor.api.useinsider.com
 0.0.0.0 hilton.data.adobedc.net
 0.0.0.0 hisearch-dra-dt-dbankcloud-com-dra.appacc-region.dbankedge.cn
 0.0.0.0 hisearch-dra-dt-dbankcloud-com-dra.appacc.dbankedge.cn
@@ -1510,6 +1507,7 @@
 0.0.0.0 itracking.ikameglobal.com
 0.0.0.0 jdlog.uu.cc
 0.0.0.0 jpush.io
+0.0.0.0 jscatch-sg-frontend.heytapmobile.com
 0.0.0.0 jupiter.intl.sys.miui.com
 0.0.0.0 jupiter.rus.sys.miui.com
 0.0.0.0 jupiter.sys.miui.com
@@ -1842,6 +1840,7 @@
 0.0.0.0 lp.smartbusiness.samsung.com
 0.0.0.0 lp4.io
 0.0.0.0 lw-c-log.lastwarapp.com
+0.0.0.0 lw-c-log.lastwarapp.net
 0.0.0.0 lxcdn.dl.files.xiaomi.net
 0.0.0.0 m.beehive.in.intl.miui.com
 0.0.0.0 m.quantcount.com
@@ -1990,7 +1989,6 @@
 0.0.0.0 metrics-dra.dt.dbankcloud.cn
 0.0.0.0 metrics-dra.dt.dbankcloud.com
 0.0.0.0 metrics-drcn.dt.dbankcloud.cn
-0.0.0.0 metrics-drcn.dt.dbankcloud.com
 0.0.0.0 metrics-dre.data.dbankcloud.cn
 0.0.0.0 metrics-dre.dt.dbankcloud.cn
 0.0.0.0 metrics-prod.suno.com
@@ -2213,6 +2211,8 @@
 0.0.0.0 obus-conf-sg.heytapmobile.com
 0.0.0.0 obus-conf-us.heytapmobile.com
 0.0.0.0 obus-config-cn.heytapmobi.com
+0.0.0.0 obus-config-in.heytapmobile.com
+0.0.0.0 obus-config-sg.heytapmobile.com
 0.0.0.0 obus-dc-eu.heytapmobile.com
 0.0.0.0 obus-dc-ru.heytapmobile.com
 0.0.0.0 obus-dc-us.heytapmobile.com
@@ -2238,6 +2238,8 @@
 0.0.0.0 obus-dcyitai-cn.heytapmobi.com
 0.0.0.0 obus-dcyitai-in.heytapmobi.com
 0.0.0.0 obus-dcyitai-sg.heytapmobile.com
+0.0.0.0 obus-hid-in.heytapmobile.com
+0.0.0.0 obus-hid-sg.heytapmobile.com
 0.0.0.0 obus-in.dc.heytapmobile.com
 0.0.0.0 obus-jssdk-cn.heytapmobi.com
 0.0.0.0 obus-jssdk-fr.heytapmobile.com
@@ -2256,6 +2258,7 @@
 0.0.0.0 onelink.appsflyer.com
 0.0.0.0 online-metrix.net
 0.0.0.0 onrt-stsdk.vivoglobal.com
+0.0.0.0 opay.heytapmobile.com
 0.0.0.0 open.oneplus.net
 0.0.0.0 open.snssdk.com
 0.0.0.0 openapi.vip.ptqy.gitv.tv
@@ -2340,6 +2343,7 @@
 0.0.0.0 postback.pointwise.co
 0.0.0.0 pp3-sdk-api.profilepassport.jp
 0.0.0.0 pp3-sdkdata-v2-ut.profilepassport.jp
+0.0.0.0 pp3-sdkdata-v2.profilepassport.jp
 0.0.0.0 pps-log.op-mobile.opera.com
 0.0.0.0 prd-usw2-requestattribution-iad.apple.com
 0.0.0.0 prderrordumphsm.samsungcloudsolution.com
@@ -2413,14 +2417,13 @@
 0.0.0.0 register.xmpush.global.xiaomi.com
 0.0.0.0 relap.io
 0.0.0.0 remain.appcpi.net
+0.0.0.0 remoteconfig-dra.platform.hihonorcloud.com
+0.0.0.0 remoteconfig-drcn.platform.hihonorcloud.com
+0.0.0.0 remoteconfig-dre.platform.hihonorcloud.com
+0.0.0.0 remoteconfig-uat-drcn.platform.hihonorcloud.com
 0.0.0.0 report-edge.agora.io
 0.0.0.0 report-edge.rtesvc.com
-0.0.0.0 report-eu.uc.heytapmobile.com
-0.0.0.0 report-in.opay.heytapmobile.com
-0.0.0.0 report-in.uc.heytapmobile.com
 0.0.0.0 report-ps.meettech.net
-0.0.0.0 report-sg.opay.heytapmobile.com
-0.0.0.0 report-sg.uc.heytapmobile.com
 0.0.0.0 report-stats.ad.jiguang.cn
 0.0.0.0 report.1-1.io
 0.0.0.0 report.apkpure.net
@@ -2442,6 +2445,7 @@
 0.0.0.0 rlog-api.under9.co
 0.0.0.0 rlog.9gag.com
 0.0.0.0 rm.aarki.net
+0.0.0.0 rms-behavior-collect-drcn.hihonorcdn.com
 0.0.0.0 rnd-cbgpas01.huawei.com
 0.0.0.0 ro-up.vivoglobal.com
 0.0.0.0 rosenberg.appmetrica.webvisor.com
@@ -2693,6 +2697,7 @@
 0.0.0.0 sau-server-us.allawnos.com
 0.0.0.0 sb.scorecard.research.com
 0.0.0.0 sc-analytics.appspot.com
+0.0.0.0 sc.heytapmobile.com
 0.0.0.0 sca.samsung.com
 0.0.0.0 sdfp.snssdk.com
 0.0.0.0 sdk-api-v1.singular.net
@@ -3115,6 +3120,7 @@
 0.0.0.0 ub-xjp.vvbrd.com
 0.0.0.0 uba.huaweicloud.com
 0.0.0.0 ubacollect-drcn.cloud.dbankcloud.cn
+0.0.0.0 uc.heytapmobile.com
 0.0.0.0 uc.ucweb.com
 0.0.0.0 uc9.ucweb.com
 0.0.0.0 ucus.ucweb.com

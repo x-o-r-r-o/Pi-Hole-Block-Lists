@@ -3,8 +3,8 @@
 ! Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-08 10:22 UTC
-! Entries: 3199
+! Last modified: 2026-11-10 11:11 UTC
+! Entries: 3205
 !
 ! Built from these sources (see their licenses):
 !   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -58,7 +58,6 @@
 ||ad-api-log.colopl.jp^
 ||ad-creative.projectcarmen.com^
 ||ad-drcn.media.dbankcloud.cn^
-||ad-drcn.media.dbankcloud.ru^
 ||ad-format-i18n.tiktokv.com^
 ||ad-format-ie.tiktokv.eu^
 ||ad-format-ru.tiktokv.com^
@@ -388,14 +387,11 @@
 ||api-fp-retry-bj.fengkongcloud.com^
 ||api-fp-retry-sa.fengkongcloud.com^
 ||api-gl.cdo.heytapmobi.com^
-||api-gl.cdo.heytapmobile.com^
-||api-id.cdo.heytapmobile.com^
 ||api-id.game.heytapmobi.com^
 ||api-id.game.heytapmobile.com^
 ||api-id.play.heytapmobile.com^
 ||api-id.theme.heytapmobi.com^
 ||api-id.theme.heytapmobile.com^
-||api-in.cdo.heytapmobile.com^
 ||api-log-upload.wenext.technology^
 ||api-rec.stellar.intl.miui.com^
 ||api-samsung.swypeconnect.com^
@@ -467,12 +463,18 @@
 ||apisnd.heytapmobi.com^
 ||apiv2.moengage.com^
 ||apkrep.ff.avast.sec.miui.com^
+||apm-ap.yun.hihonor.com^
+||apm-eu.yun.hihonor.com^
 ||apm-fe.rnote.com^
 ||apm-fe.xiaohongshu.com^
+||apm-fr.yun.hihonor.com^
 ||apm-log-upload-os.hoyoverse.com^
 ||apm-native.redbascket.com^
 ||apm-native.xiaohongshu.com^
+||apm-ru.yun.hihonor.com^
+||apm-sg.yun.hihonor.com^
 ||apm-track.xiaohongshu.com^
+||apm.yun.hihonor.com^
 ||app-analytics-ru.huami.com^
 ||app-analytics-services.com^
 ||app-analytics.snapchat.com^
@@ -626,9 +628,7 @@
 ||browser-sdk-ru.heytapmobile.com^
 ||browser.miui.com^
 ||browsercfg-drcn.cloud.dbankcloud.cn^
-||browserfiles.heytapmobile.com^
 ||bs.nakanohito.jp^
-||bsf.sc.heytapmobile.com^
 ||bsp-di-in.heytapmobile.com^
 ||bsp.sasdc.pandora.xiaomi.com^
 ||bss.pandora.xiaomi.com^
@@ -661,6 +661,7 @@
 ||cdn1.static.home.miui.com^
 ||cdna.sec.miui.com^
 ||cdnappicons.appsflyer.com^
+||cdo.heytapmobile.com^
 ||ced-ns.sascdn.com^
 ||cedexis-radar.net^
 ||cedexis.com^
@@ -849,23 +850,17 @@
 ||config.toto.zipoapps.com^
 ||config.uca.cloud.unity3d.com^
 ||config2.mparticle.com^
-||conn-service-cn-01.allawntech.com^
 ||conn-service-cn-03.allawntech.com^
 ||conn-service-cn-04.allawntech.com^
 ||conn-service-cn-05.allawntech.com^
 ||conn-service-cn-07.allawntech.com^
 ||conn-service-cn-08.allawntech.com^
-||conn-service-eu-01.allawnos.com^
-||conn-service-eu-02.allawnos.com^
 ||conn-service-eu-03.allawnos.com^
 ||conn-service-eu-04.allawnos.com^
 ||conn-service-eu-05.allawnos.com^
 ||conn-service-eu-07.allawnos.com^
 ||conn-service-eu-08.allawnos.com^
 ||conn-service-gl-01.allawntech.com^
-||conn-service-gl-03.allawntech.com^
-||conn-service-gl-04.allawntech.com^
-||conn-service-in-01.allawnos.com^
 ||conn-service-in-03.allawnos.com^
 ||conn-service-in-04.allawnos.com^
 ||conn-service-in-05.allawnos.com^
@@ -1254,6 +1249,7 @@
 ||graffiti-tags.apple.com^
 ||graph.accountkit.com^
 ||graph.instagram.com^
+||grayr.abx.ipd.hihonor.com^
 ||grs-dbankcloud-asia-dra.appacc-region.dbankedge.cn^
 ||grs-dbankcloud-asia-dra.appacc.dbankedge.cn^
 ||grs-dbankcloud-com-dra.appacc-region.dbankedge.cn^
@@ -1303,6 +1299,7 @@
 ||hd.xiaomi.com^
 ||heyue.xiaomi.com^
 ||hibiki-track.logica.bz^
+||hihonor.api.useinsider.com^
 ||hilton.data.adobedc.net^
 ||hisearch-dra-dt-dbankcloud-com-dra.appacc-region.dbankedge.cn^
 ||hisearch-dra-dt-dbankcloud-com-dra.appacc.dbankedge.cn^
@@ -1483,6 +1480,7 @@
 ||itracking.ikameglobal.com^
 ||jdlog.uu.cc^
 ||jpush.io^
+||jscatch-sg-frontend.heytapmobile.com^
 ||jupiter.intl.sys.miui.com^
 ||jupiter.rus.sys.miui.com^
 ||jupiter.sys.miui.com^
@@ -1813,6 +1811,7 @@
 ||lp.smartbusiness.samsung.com^
 ||lp4.io^
 ||lw-c-log.lastwarapp.com^
+||lw-c-log.lastwarapp.net^
 ||lxcdn.dl.files.xiaomi.net^
 ||m.beehive.in.intl.miui.com^
 ||m.vpadn.com^
@@ -1960,7 +1959,6 @@
 ||metrics-dra.dt.dbankcloud.cn^
 ||metrics-dra.dt.dbankcloud.com^
 ||metrics-drcn.dt.dbankcloud.cn^
-||metrics-drcn.dt.dbankcloud.com^
 ||metrics-dre.data.dbankcloud.cn^
 ||metrics-dre.dt.dbankcloud.cn^
 ||metrics-prod.suno.com^
@@ -2183,6 +2181,8 @@
 ||obus-conf-sg.heytapmobile.com^
 ||obus-conf-us.heytapmobile.com^
 ||obus-config-cn.heytapmobi.com^
+||obus-config-in.heytapmobile.com^
+||obus-config-sg.heytapmobile.com^
 ||obus-dc-eu.heytapmobile.com^
 ||obus-dc-ru.heytapmobile.com^
 ||obus-dc-us.heytapmobile.com^
@@ -2208,6 +2208,8 @@
 ||obus-dcyitai-cn.heytapmobi.com^
 ||obus-dcyitai-in.heytapmobi.com^
 ||obus-dcyitai-sg.heytapmobile.com^
+||obus-hid-in.heytapmobile.com^
+||obus-hid-sg.heytapmobile.com^
 ||obus-jssdk-cn.heytapmobi.com^
 ||obus-jssdk-fr.heytapmobile.com^
 ||obus-jssdk-in.heytapmobile.com^
@@ -2225,6 +2227,7 @@
 ||onelink.appsflyer.com^
 ||online-metrix.net^
 ||onrt-stsdk.vivoglobal.com^
+||opay.heytapmobile.com^
 ||open.oneplus.net^
 ||open.snssdk.com^
 ||openapi.vip.ptqy.gitv.tv^
@@ -2309,6 +2312,7 @@
 ||postback.pointwise.co^
 ||pp3-sdk-api.profilepassport.jp^
 ||pp3-sdkdata-v2-ut.profilepassport.jp^
+||pp3-sdkdata-v2.profilepassport.jp^
 ||pps-log.op-mobile.opera.com^
 ||prd-usw2-requestattribution-iad.apple.com^
 ||prderrordumphsm.samsungcloudsolution.com^
@@ -2378,14 +2382,13 @@
 ||register.appsflyer.com^
 ||register.xmpush.global.xiaomi.com^
 ||relap.io^
+||remoteconfig-dra.platform.hihonorcloud.com^
+||remoteconfig-drcn.platform.hihonorcloud.com^
+||remoteconfig-dre.platform.hihonorcloud.com^
+||remoteconfig-uat-drcn.platform.hihonorcloud.com^
 ||report-edge.agora.io^
 ||report-edge.rtesvc.com^
-||report-eu.uc.heytapmobile.com^
-||report-in.opay.heytapmobile.com^
-||report-in.uc.heytapmobile.com^
 ||report-ps.meettech.net^
-||report-sg.opay.heytapmobile.com^
-||report-sg.uc.heytapmobile.com^
 ||report-stats.ad.jiguang.cn^
 ||report.1-1.io^
 ||report.apkpure.net^
@@ -2406,6 +2409,7 @@
 ||rlog-api.under9.co^
 ||rlog.9gag.com^
 ||rm.aarki.net^
+||rms-behavior-collect-drcn.hihonorcdn.com^
 ||rnd-cbgpas01.huawei.com^
 ||ro-up.vivoglobal.com^
 ||rosenberg.appmetrica.webvisor.com^
@@ -2625,6 +2629,7 @@
 ||sau-server-us.allawnos.com^
 ||sb.scorecard.research.com^
 ||sc-analytics.appspot.com^
+||sc.heytapmobile.com^
 ||sca.samsung.com^
 ||sdfp.snssdk.com^
 ||sdk-api-v1.singular.net^
@@ -3040,6 +3045,7 @@
 ||ub-xjp.vvbrd.com^
 ||uba.huaweicloud.com^
 ||ubacollect-drcn.cloud.dbankcloud.cn^
+||uc.heytapmobile.com^
 ||uc.ucweb.com^
 ||uc9.ucweb.com^
 ||ucus.ucweb.com^

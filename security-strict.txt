@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-09 12:11 UTC
-# Entries: 2729
+# Last modified: 2026-11-10 11:11 UTC
+# Entries: 2727
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -1348,7 +1348,6 @@ ip-ddns.com
 ip-dynamic.com
 ip-dynamic.org
 ip2world.com
-ipfs.best-practice.se
 ipfs.ink
 ipfs.io
 ipidea.io
@@ -1948,7 +1947,6 @@ onthewifi.com
 ooguy.com
 opent2.com
 opior.com
-opisial.com
 oray.com
 organiccrap.com
 orgfree.com
