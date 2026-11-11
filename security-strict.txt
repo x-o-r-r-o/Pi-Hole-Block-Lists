@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-10 11:11 UTC
-# Entries: 2727
+# Last modified: 2026-11-11 10:56 UTC
+# Entries: 2731
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -300,6 +300,7 @@ baikabibai.com
 bakli.ru
 bakoweb.com
 ballern.de
+barbaforte.org
 barrel-of-knowledge.info
 barrell-of-knowledge.info
 baselinux.net
@@ -931,7 +932,6 @@ fdns.uk
 fearpenguins.com
 ferreracademy.com
 feste-ip.net
-file.io
 fileave.com
 filebin.net
 filecache.de
@@ -1876,6 +1876,7 @@ noipdns.com
 noipdns.net
 noipfreedns.com
 noiptos.com
+nokojp.shop
 notici.as
 novamov.com
 novgaz-rzn.ru
@@ -1947,6 +1948,7 @@ onthewifi.com
 ooguy.com
 opent2.com
 opior.com
+opisial.com
 oray.com
 organiccrap.com
 orgfree.com
@@ -2300,6 +2302,7 @@ soon.it
 soundcast.me
 space-to-rent.com
 space.lc
+spaceplay.top
 spacetechnology.net
 spdns.de
 spdns.eu
@@ -2463,6 +2466,7 @@ tw1.ru
 twilight.ws
 twilightparadox.com
 twodns.de
+twsuser.com
 tzo.com
 u.gp
 ua.gp

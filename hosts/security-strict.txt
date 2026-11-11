@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-10 11:11 UTC
-# Entries: 2727
+# Last modified: 2026-11-11 10:56 UTC
+# Entries: 2731
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -300,6 +300,7 @@
 0.0.0.0 bakli.ru
 0.0.0.0 bakoweb.com
 0.0.0.0 ballern.de
+0.0.0.0 barbaforte.org
 0.0.0.0 barrel-of-knowledge.info
 0.0.0.0 barrell-of-knowledge.info
 0.0.0.0 baselinux.net
@@ -931,7 +932,6 @@
 0.0.0.0 fearpenguins.com
 0.0.0.0 ferreracademy.com
 0.0.0.0 feste-ip.net
-0.0.0.0 file.io
 0.0.0.0 fileave.com
 0.0.0.0 filebin.net
 0.0.0.0 filecache.de
@@ -1876,6 +1876,7 @@
 0.0.0.0 noipdns.net
 0.0.0.0 noipfreedns.com
 0.0.0.0 noiptos.com
+0.0.0.0 nokojp.shop
 0.0.0.0 notici.as
 0.0.0.0 novamov.com
 0.0.0.0 novgaz-rzn.ru
@@ -1947,6 +1948,7 @@
 0.0.0.0 ooguy.com
 0.0.0.0 opent2.com
 0.0.0.0 opior.com
+0.0.0.0 opisial.com
 0.0.0.0 oray.com
 0.0.0.0 organiccrap.com
 0.0.0.0 orgfree.com
@@ -2300,6 +2302,7 @@
 0.0.0.0 soundcast.me
 0.0.0.0 space-to-rent.com
 0.0.0.0 space.lc
+0.0.0.0 spaceplay.top
 0.0.0.0 spacetechnology.net
 0.0.0.0 spdns.de
 0.0.0.0 spdns.eu
@@ -2463,6 +2466,7 @@
 0.0.0.0 twilight.ws
 0.0.0.0 twilightparadox.com
 0.0.0.0 twodns.de
+0.0.0.0 twsuser.com
 0.0.0.0 tzo.com
 0.0.0.0 u.gp
 0.0.0.0 ua.gp

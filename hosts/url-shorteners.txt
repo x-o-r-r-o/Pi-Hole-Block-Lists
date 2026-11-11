@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-10 11:11 UTC
-# Entries: 9779
+# Last modified: 2026-11-11 10:56 UTC
+# Entries: 9783
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -560,7 +560,6 @@
 0.0.0.0 aftv.news
 0.0.0.0 aftvnews.com
 0.0.0.0 agbr.ir
-0.0.0.0 agentassistcrm.org
 0.0.0.0 agileurbia.com
 0.0.0.0 agmd.win
 0.0.0.0 agoz.me
@@ -995,7 +994,6 @@
 0.0.0.0 beam.to
 0.0.0.0 beats.is
 0.0.0.0 beautyfitnesshealth.com
-0.0.0.0 bebuiltllc.com
 0.0.0.0 bec.ltd
 0.0.0.0 becsn.net
 0.0.0.0 bee-kz.life
@@ -1007,7 +1005,6 @@
 0.0.0.0 beeurls.com
 0.0.0.0 beingtek.com
 0.0.0.0 belink.me
-0.0.0.0 belink.ph
 0.0.0.0 belink.vebto.com
 0.0.0.0 belinki.cloud
 0.0.0.0 belinksnip.com
@@ -1520,6 +1517,7 @@
 0.0.0.0 celfam.us
 0.0.0.0 centi.ai
 0.0.0.0 cepat.link
+0.0.0.0 cepet.in
 0.0.0.0 certifyde.app
 0.0.0.0 cesinthi.com
 0.0.0.0 ceyss.link
@@ -1620,6 +1618,7 @@
 0.0.0.0 clica.ai
 0.0.0.0 clica.link
 0.0.0.0 clicai.xyz
+0.0.0.0 click-genius.com
 0.0.0.0 click-goo.com
 0.0.0.0 click-myl.ink
 0.0.0.0 click.ps
@@ -2887,6 +2886,7 @@
 0.0.0.0 glowin88.site
 0.0.0.0 glss.co
 0.0.0.0 gma.abc
+0.0.0.0 gmh.bz
 0.0.0.0 gmj.to
 0.0.0.0 gmj.tw
 0.0.0.0 gmlft.co
@@ -4533,6 +4533,7 @@
 0.0.0.0 linksnip.me
 0.0.0.0 linksplit.io
 0.0.0.0 linksqueeze.io
+0.0.0.0 linksshortener.com
 0.0.0.0 linkstack.co
 0.0.0.0 linkste.com
 0.0.0.0 linkstracer.com
@@ -5324,7 +5325,6 @@
 0.0.0.0 na2.com
 0.0.0.0 na5.nl
 0.0.0.0 naa.gg
-0.0.0.0 nabio.com.br
 0.0.0.0 nagakuat.com
 0.0.0.0 nah.uy
 0.0.0.0 naik-terus.com
@@ -7112,6 +7112,7 @@
 0.0.0.0 shortsurl.site
 0.0.0.0 shortswitch.com
 0.0.0.0 shortsy.pro
+0.0.0.0 shortthis.app
 0.0.0.0 shortturl.co
 0.0.0.0 shortu.be
 0.0.0.0 shorturl-frontend-lac.vercel.app
@@ -7570,6 +7571,7 @@
 0.0.0.0 sq6.ru
 0.0.0.0 sqex.to
 0.0.0.0 sqr.co
+0.0.0.0 sqrl.it
 0.0.0.0 sqrx.io
 0.0.0.0 squ.re
 0.0.0.0 squadgen.com
@@ -8008,7 +8010,6 @@
 0.0.0.0 tinlyy.nl
 0.0.0.0 tinu.be
 0.0.0.0 tinurl.pro
-0.0.0.0 tiny-l.com
 0.0.0.0 tiny-link.co
 0.0.0.0 tiny-link.org
 0.0.0.0 tiny-links.com
@@ -8032,6 +8033,7 @@
 0.0.0.0 tiny.us
 0.0.0.0 tiny123.com
 0.0.0.0 tiny1z.com
+0.0.0.0 tinyard.co
 0.0.0.0 tinyarro.ws
 0.0.0.0 tinybit.cc
 0.0.0.0 tinybro.com
@@ -8412,6 +8414,7 @@
 0.0.0.0 u0c.net
 0.0.0.0 u1.mnge.co
 0.0.0.0 u2.to
+0.0.0.0 u2l.io
 0.0.0.0 u2s.ca
 0.0.0.0 u2s.tn
 0.0.0.0 u301.com
@@ -9111,6 +9114,7 @@
 0.0.0.0 vqc.vn
 0.0.0.0 vqijir.com
 0.0.0.0 vqr.vc
+0.0.0.0 vrd.ci
 0.0.0.0 vretive.com
 0.0.0.0 vrnda.us
 0.0.0.0 vrv.su
@@ -9319,7 +9323,6 @@
 0.0.0.0 work.ink
 0.0.0.0 worldpay.live
 0.0.0.0 worrysolve.com
-0.0.0.0 wounofoarausooy.net
 0.0.0.0 wow.doctor
 0.0.0.0 wow.link
 0.0.0.0 wowly.co.in
@@ -9591,6 +9594,7 @@
 0.0.0.0 yourls.newstargeted.com
 0.0.0.0 yourls.org
 0.0.0.0 yourls.ph-freiburg.de
+0.0.0.0 yourls.website
 0.0.0.0 yourwish.es
 0.0.0.0 yous.ee
 0.0.0.0 youweepingt.org

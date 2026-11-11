@@ -2,8 +2,8 @@
 # Description: Ad networks used inside Android and iOS apps.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-04 10:54 UTC
-# Entries: 8349
+# Last modified: 2026-11-11 10:56 UTC
+# Entries: 8350
 #
 # Built from these sources (see their licenses):
 #   - AdAway Default: https://adaway.org
@@ -1078,6 +1078,7 @@
 0.0.0.0 advertising-api-eu.amazon.com
 0.0.0.0 advertising-api-fe.amazon.com
 0.0.0.0 advertising-api.amazon.com
+0.0.0.0 advertising.amazon.dev
 0.0.0.0 advertising.apple.com
 0.0.0.0 advertising.com
 0.0.0.0 advertising.yahoo.com
