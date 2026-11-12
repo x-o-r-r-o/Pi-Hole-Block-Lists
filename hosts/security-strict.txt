@@ -2,7 +2,7 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-11 10:56 UTC
+# Last modified: 2026-11-12 11:08 UTC
 # Entries: 2731
 #
 # Built from these sources (see their licenses):
@@ -1571,6 +1571,7 @@
 0.0.0.0 lhosting.info
 0.0.0.0 lhr.life
 0.0.0.0 liebe.lc
+0.0.0.0 liftmyresume.com
 0.0.0.0 lihi1.com
 0.0.0.0 lihi3.cc
 0.0.0.0 likes-pie.com
@@ -1789,7 +1790,6 @@
 0.0.0.0 mypicture.info
 0.0.0.0 mypop3.net
 0.0.0.0 mypop3.org
-0.0.0.0 myportfolio.com
 0.0.0.0 mypressonline.com
 0.0.0.0 mypsx.net
 0.0.0.0 myq-see.com

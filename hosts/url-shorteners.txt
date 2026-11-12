@@ -2,7 +2,7 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-11 10:56 UTC
+# Last modified: 2026-11-12 11:08 UTC
 # Entries: 9783
 #
 # Built from these sources (see their licenses):
@@ -6573,6 +6573,7 @@
 0.0.0.0 s.g123.jp
 0.0.0.0 s.gdngs.de
 0.0.0.0 s.ggwp.be
+0.0.0.0 s.gy
 0.0.0.0 s.id
 0.0.0.0 s.kiot.io
 0.0.0.0 s.klinikpintar.id
@@ -7538,7 +7539,6 @@
 0.0.0.0 spgrp.sg
 0.0.0.0 spicc.io
 0.0.0.0 spid.io
-0.0.0.0 spidyurl.com
 0.0.0.0 spify.co
 0.0.0.0 spigen.co
 0.0.0.0 spk.st

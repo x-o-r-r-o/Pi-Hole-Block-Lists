@@ -3,7 +3,7 @@
 ! Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-11 10:56 UTC
+! Last modified: 2026-11-12 11:08 UTC
 ! Entries: 9783
 !
 ! Built from these sources (see their licenses):
@@ -6574,6 +6574,7 @@
 ||s.g123.jp^
 ||s.gdngs.de^
 ||s.ggwp.be^
+||s.gy^
 ||s.id^
 ||s.kiot.io^
 ||s.klinikpintar.id^
@@ -7539,7 +7540,6 @@
 ||spgrp.sg^
 ||spicc.io^
 ||spid.io^
-||spidyurl.com^
 ||spify.co^
 ||spigen.co^
 ||spk.st^
