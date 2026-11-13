@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-12 11:08 UTC
-# Entries: 2731
+# Last modified: 2026-11-13 10:58 UTC
+# Entries: 2727
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -686,7 +686,6 @@
 0.0.0.0 doomdns.org
 0.0.0.0 doorvpn.com
 0.0.0.0 dot.tk
-0.0.0.0 dothome.co.kr
 0.0.0.0 dougtreadwell.com
 0.0.0.0 douploads.net
 0.0.0.0 downfall.shop
@@ -1483,7 +1482,6 @@
 0.0.0.0 jedimasters.net
 0.0.0.0 jesus.si
 0.0.0.0 jetos.com
-0.0.0.0 jimdofree.com
 0.0.0.0 jixx.de
 0.0.0.0 jixx.net
 0.0.0.0 jkub.com
@@ -1745,7 +1743,6 @@
 0.0.0.0 myblogvoice.com
 0.0.0.0 mybluehost.me
 0.0.0.0 mybluehostin.me
-0.0.0.0 myclickfunnels.com
 0.0.0.0 mycompany.tv
 0.0.0.0 mycpanel.rs
 0.0.0.0 mydad.info
@@ -2009,6 +2006,7 @@
 0.0.0.0 planet.tl
 0.0.0.0 planetdns.ca
 0.0.0.0 planetdns.net
+0.0.0.0 plasmic.run
 0.0.0.0 play.ai
 0.0.0.0 plu.sh
 0.0.0.0 plwgroup.com
@@ -2026,7 +2024,6 @@
 0.0.0.0 portfwd.com
 0.0.0.0 portmap.host
 0.0.0.0 portrelay.com
-0.0.0.0 pory.app
 0.0.0.0 possessed.us
 0.0.0.0 pp.ua
 0.0.0.0 prettyweak.com
@@ -2292,7 +2289,6 @@
 0.0.0.0 socialadhesion.com
 0.0.0.0 socialsmp.com
 0.0.0.0 softether.net
-0.0.0.0 softr.app
 0.0.0.0 solfa.org
 0.0.0.0 solidmation.com
 0.0.0.0 solidwebhost.com

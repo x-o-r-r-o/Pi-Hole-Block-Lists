@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-12 11:08 UTC
-# Entries: 2731
+# Last modified: 2026-11-13 10:58 UTC
+# Entries: 2727
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -686,7 +686,6 @@ doomdns.com
 doomdns.org
 doorvpn.com
 dot.tk
-dothome.co.kr
 dougtreadwell.com
 douploads.net
 downfall.shop
@@ -1483,7 +1482,6 @@ jdfinancialserver.com
 jedimasters.net
 jesus.si
 jetos.com
-jimdofree.com
 jixx.de
 jixx.net
 jkub.com
@@ -1745,7 +1743,6 @@ myartsonline.com
 myblogvoice.com
 mybluehost.me
 mybluehostin.me
-myclickfunnels.com
 mycompany.tv
 mycpanel.rs
 mydad.info
@@ -2009,6 +2006,7 @@ pl.gp
 planet.tl
 planetdns.ca
 planetdns.net
+plasmic.run
 play.ai
 plu.sh
 plwgroup.com
@@ -2026,7 +2024,6 @@ portal.lc
 portfwd.com
 portmap.host
 portrelay.com
-pory.app
 possessed.us
 pp.ua
 prettyweak.com
@@ -2292,7 +2289,6 @@ social-networking.me
 socialadhesion.com
 socialsmp.com
 softether.net
-softr.app
 solfa.org
 solidmation.com
 solidwebhost.com

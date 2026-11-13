@@ -3,8 +3,8 @@
 ! Description: Dating sites and apps: Tinder, Bumble, Badoo, Hinge, OkCupid, Plenty of Fish, Match, Grindr, Tantan, happn, Hily, Boo, Taimi, Muzz, Coffee Meets Bagel and ~10,000 dating websites.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-10 11:11 UTC
-! Entries: 10961
+! Last modified: 2026-11-13 10:58 UTC
+! Entries: 10962
 !
 ! Built from these sources (see their licenses):
 !   - Université Toulouse Capitole: dating: https://dsi.ut-capitole.fr/blacklists/
@@ -1750,7 +1750,6 @@
 ||black-dating-jack.qwzv.com^
 ||black-dating-lesbian.qwzv.com^
 ||black-dating-line.utag.nl^
-||black-dating-ny.boydategirl.com^
 ||black-dating-show.v-cgw.com^
 ||black-dating-site-web.unclaimed-asset.com^
 ||black-dating-sites-uk-only.v-cgw.com^
@@ -2371,6 +2370,7 @@
 ||bothsingle.co.uk^
 ||boulderdating.com^
 ||bouncedating.app^
+||boydategirl.com^
 ||boymeetsgirl.com.au^
 ||bozirande.cz^
 ||brahminmatrimony.com^
@@ -4314,6 +4314,7 @@
 ||erwinsdate.de^
 ||esconda.com^
 ||escortgirl-fr.com^
+||esdating.com^
 ||eskimi.com^
 ||esohbet.net^
 ||espace-live.com^
