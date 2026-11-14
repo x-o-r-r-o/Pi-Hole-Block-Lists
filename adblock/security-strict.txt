@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-13 10:58 UTC
-! Entries: 3007
+! Last modified: 2026-11-14 10:24 UTC
+! Entries: 3011
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -45,7 +45,6 @@
 @@||akami-solutions.cc^
 @@||akko.wtf^
 @@||aloedent.shop^
-@@||am-cdn.pics^
 @@||am-videos.click^
 @@||amap.ml^
 @@||amazon.science^
@@ -2301,6 +2300,7 @@
 ||imagengratis.org^
 ||imagetemplate.com^
 ||imagetemplate.net^
+||imageurlhost.com^
 ||imexsac.com^
 ||imprendum.com^
 ||in-the-band.net^
@@ -2343,6 +2343,7 @@
 ||ip-dynamic.com^
 ||ip-dynamic.org^
 ||ip2world.com^
+||ipfs.best-practice.se^
 ||ipfs.io^
 ||ipidea.io^
 ||iplogger.cn^
@@ -3137,6 +3138,7 @@
 ||sendsmtp.com^
 ||sequoiapartners.com^
 ||serendipityshores.com^
+||serpgold.com^
 ||serv00.net^
 ||servebbs.com^
 ||servebbs.net^
@@ -3397,6 +3399,7 @@
 ||u.gp^
 ||ua.gp^
 ||ubpages.com^
+||ucoz.com^
 ||ucoz.ru^
 ||ucvradio.cl^
 ||udp64.de^

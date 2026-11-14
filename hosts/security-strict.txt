@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-13 10:58 UTC
-# Entries: 2727
+# Last modified: 2026-11-14 10:24 UTC
+# Entries: 2731
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -1304,6 +1304,7 @@
 0.0.0.0 imagengratis.org
 0.0.0.0 imagetemplate.com
 0.0.0.0 imagetemplate.net
+0.0.0.0 imageurlhost.com
 0.0.0.0 imexsac.com
 0.0.0.0 imprendum.com
 0.0.0.0 in-the-band.net
@@ -1347,6 +1348,7 @@
 0.0.0.0 ip-dynamic.com
 0.0.0.0 ip-dynamic.org
 0.0.0.0 ip2world.com
+0.0.0.0 ipfs.best-practice.se
 0.0.0.0 ipfs.ink
 0.0.0.0 ipfs.io
 0.0.0.0 ipidea.io
@@ -2191,6 +2193,7 @@
 0.0.0.0 sendsmtp.com
 0.0.0.0 sequoiapartners.com
 0.0.0.0 serendipityshores.com
+0.0.0.0 serpgold.com
 0.0.0.0 serv00.net
 0.0.0.0 servebbs.com
 0.0.0.0 servebbs.net
@@ -2467,6 +2470,7 @@
 0.0.0.0 u.gp
 0.0.0.0 ua.gp
 0.0.0.0 ubpages.com
+0.0.0.0 ucoz.com
 0.0.0.0 ucoz.ru
 0.0.0.0 ucvradio.cl
 0.0.0.0 udp64.de

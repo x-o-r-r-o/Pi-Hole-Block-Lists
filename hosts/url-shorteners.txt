@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-13 10:58 UTC
-# Entries: 9784
+# Last modified: 2026-11-14 10:24 UTC
+# Entries: 9794
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -614,6 +614,7 @@
 0.0.0.0 aktfclick.com
 0.0.0.0 akun.gg
 0.0.0.0 akunfix.com
+0.0.0.0 akunjpvip.xyz
 0.0.0.0 akunklik.com
 0.0.0.0 akunnp.com
 0.0.0.0 akunss.com
@@ -635,6 +636,7 @@
 0.0.0.0 alie.kr
 0.0.0.0 alien-traffic.com
 0.0.0.0 alientraffic.com
+0.0.0.0 aliexpi.com
 0.0.0.0 alishort.com
 0.0.0.0 alisys.it
 0.0.0.0 allamericanpatriots.com
@@ -1225,6 +1227,7 @@
 0.0.0.0 blstg.news
 0.0.0.0 bltn.pro
 0.0.0.0 blueskymap.org
+0.0.0.0 blur.by
 0.0.0.0 blynkn.com
 0.0.0.0 blyto.com
 0.0.0.0 bmai.cc
@@ -4172,6 +4175,7 @@
 0.0.0.0 lil.so
 0.0.0.0 lilbt.com
 0.0.0.0 lillink.net
+0.0.0.0 lillink.xyz
 0.0.0.0 lilllil.ru
 0.0.0.0 lilnk.to
 0.0.0.0 liltext.com
@@ -4587,6 +4591,7 @@
 0.0.0.0 linqer.me
 0.0.0.0 linqry.com
 0.0.0.0 linqup.in
+0.0.0.0 lintlink.com
 0.0.0.0 linux.mom
 0.0.0.0 linxonly.com
 0.0.0.0 linxy.pro
@@ -5943,6 +5948,7 @@
 0.0.0.0 postmylink.com
 0.0.0.0 posu.cc
 0.0.0.0 poszlink.com
+0.0.0.0 potong.co
 0.0.0.0 powerapplinks.com
 0.0.0.0 poy.one
 0.0.0.0 pp.cr
@@ -7162,6 +7168,7 @@
 0.0.0.0 shortylink.org
 0.0.0.0 shortyurl.top
 0.0.0.0 shortyzone.com
+0.0.0.0 shotcut.in
 0.0.0.0 shoturl.org
 0.0.0.0 shoturl.us
 0.0.0.0 shotxy.com
@@ -9152,6 +9159,7 @@
 0.0.0.0 w.wiki
 0.0.0.0 w09.ru
 0.0.0.0 w0o.de
+0.0.0.0 w0of-woof.com
 0.0.0.0 w1p.fr
 0.0.0.0 w2link.com
 0.0.0.0 w2u.io
@@ -9302,6 +9310,7 @@
 0.0.0.0 wkpwr.be
 0.0.0.0 wl.co
 0.0.0.0 wl.gl
+0.0.0.0 wlink.us
 0.0.0.0 wlinky.com
 0.0.0.0 wluuns.com
 0.0.0.0 wm.edu
@@ -9592,6 +9601,7 @@
 0.0.0.0 yourls.info
 0.0.0.0 yourls.irex.aretex.ca
 0.0.0.0 yourls.lu
+0.0.0.0 yourls.net
 0.0.0.0 yourls.newstargeted.com
 0.0.0.0 yourls.org
 0.0.0.0 yourls.ph-freiburg.de
