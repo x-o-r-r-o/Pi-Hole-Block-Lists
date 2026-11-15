@@ -2,8 +2,8 @@
 # Description: Ad networks used inside Android and iOS apps.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-11 10:56 UTC
-# Entries: 8350
+# Last modified: 2026-11-15 10:52 UTC
+# Entries: 8348
 #
 # Built from these sources (see their licenses):
 #   - AdAway Default: https://adaway.org
@@ -695,7 +695,6 @@
 0.0.0.0 ads-api-new-2052271615.ap-northeast-1.elb.amazonaws.com
 0.0.0.0 ads-api-o.api.leiniao.com
 0.0.0.0 ads-api.kidsnote.com
-0.0.0.0 ads-api.tiktok.com
 0.0.0.0 ads-api.twitter.com
 0.0.0.0 ads-b-480313385.us-west-1.elb.amazonaws.com
 0.0.0.0 ads-bidder-api.twitter.com
@@ -710,9 +709,9 @@
 0.0.0.0 ads-game-configuration-master.ads.prd.ie.internal.unity3d.com
 0.0.0.0 ads-gdl.imovideo.ru
 0.0.0.0 ads-img-al.xhscdn.com
+0.0.0.0 ads-img-bak.xhscdn.com
 0.0.0.0 ads-img-qc.xhscdn.com
 0.0.0.0 ads-interfaces.sc-cdn.net
-0.0.0.0 ads-jp.tiktok.com
 0.0.0.0 ads-leaseweb.appsgeyser.com
 0.0.0.0 ads-m.rustore.ru
 0.0.0.0 ads-marketing-vivofs.vivo.com.cn
@@ -728,12 +727,12 @@
 0.0.0.0 ads-secure.videohub.tv
 0.0.0.0 ads-segment-profile-noneu.truecaller.com
 0.0.0.0 ads-server.mxplay.com
-0.0.0.0 ads-sg.tiktok.com
 0.0.0.0 ads-shopping.shouqianba.com
 0.0.0.0 ads-static.phonepe.com
 0.0.0.0 ads-twitter.com
 0.0.0.0 ads-video-al.xhscdn.com
 0.0.0.0 ads-video-qc.xhscdn.com
+0.0.0.0 ads-vp5.xhscdn.com
 0.0.0.0 ads.95516.com
 0.0.0.0 ads.ad2iction.com
 0.0.0.0 ads.ad4game.com
@@ -857,7 +856,6 @@
 0.0.0.0 ads.tapdaq.com
 0.0.0.0 ads.taptapnetworks.com
 0.0.0.0 ads.themoneytizer.com
-0.0.0.0 ads.tiktok.com
 0.0.0.0 ads.traffichunt.com
 0.0.0.0 ads.trafficjunky.net
 0.0.0.0 ads.tremorhub.com
@@ -1021,7 +1019,6 @@
 0.0.0.0 adstory.gotrackier.com
 0.0.0.0 adstrategy.biz.weibo.com
 0.0.0.0 adstudio-assets.scdn.co
-0.0.0.0 adstudio.spotify.com
 0.0.0.0 adstune.com
 0.0.0.0 adsunflower.com
 0.0.0.0 adsup.togothermany.cn
@@ -1037,7 +1034,6 @@
 0.0.0.0 adtarget.com.tr
 0.0.0.0 adtech.com
 0.0.0.0 adtech.de
-0.0.0.0 adtech.yahooinc.com
 0.0.0.0 adtheorent.com
 0.0.0.0 adtheorent107077183660.s.moatpixel.com
 0.0.0.0 adthor.com
@@ -1075,14 +1071,9 @@
 0.0.0.0 advertise.com
 0.0.0.0 advertise.ldplayer.net
 0.0.0.0 advertiser.fyber.com
-0.0.0.0 advertising-api-eu.amazon.com
-0.0.0.0 advertising-api-fe.amazon.com
-0.0.0.0 advertising-api.amazon.com
 0.0.0.0 advertising.amazon.dev
-0.0.0.0 advertising.apple.com
 0.0.0.0 advertising.com
 0.0.0.0 advertising.yahoo.com
-0.0.0.0 advertising.yandex.ru
 0.0.0.0 advertnative.com
 0.0.0.0 advertur.ru
 0.0.0.0 adviap.goforandroid.com
@@ -1680,6 +1671,7 @@
 0.0.0.0 apiv2.moengage.com
 0.0.0.0 apiyd.my91app.com
 0.0.0.0 apm.crittercism.com
+0.0.0.0 apmplus.volces.com
 0.0.0.0 apn-winners-ap-southeast-1-rtb.adroll.com
 0.0.0.0 apn-winners-eu-west-1-rtb.adroll.com
 0.0.0.0 apn-winners-us-east-1-rtb.adroll.com
@@ -2754,6 +2746,7 @@
 0.0.0.0 clickkydsp.com
 0.0.0.0 clicktrack.pubmatic.com
 0.0.0.0 client-analytics.braintreegateway.com
+0.0.0.0 client-upload.cn-shanghai.log.aliyuncs.com
 0.0.0.0 client.midosoo.com
 0.0.0.0 client.rave-api.com
 0.0.0.0 clientcdn.pushengage.com
@@ -3060,7 +3053,6 @@
 0.0.0.0 cs.yieldoptimizer.com
 0.0.0.0 cs02-pps-drcn.dbankcdn.com
 0.0.0.0 csi.gstatic.com
-0.0.0.0 csjplatform.com
 0.0.0.0 csm.as.criteo.net
 0.0.0.0 csm.da.us.criteo.net
 0.0.0.0 csm.da1.vip.prod.criteo.net
@@ -3366,6 +3358,7 @@
 0.0.0.0 dts.innovid.com
 0.0.0.0 dts.innovid.com.akadns.net
 0.0.0.0 dts.startappservice.com
+0.0.0.0 du-app.cn-hangzhou.log.aliyuncs.com
 0.0.0.0 dualstack-logs.amap.com
 0.0.0.0 duapps.com
 0.0.0.0 duiba.com.cn
@@ -3485,6 +3478,7 @@
 0.0.0.0 ero-advertising.com
 0.0.0.0 err.izooto.com
 0.0.0.0 errlog.umeng.com
+0.0.0.0 errnewlog.umeng.com
 0.0.0.0 error-collector.ted.com
 0.0.0.0 errors.imrworldwide.com
 0.0.0.0 es-gmtdmp.mookie1.com
@@ -3709,6 +3703,7 @@
 0.0.0.0 foxnews.demdex.net
 0.0.0.0 foxnews.hb.omtrdc.net
 0.0.0.0 foxnews.tt.omtrdc.net
+0.0.0.0 fp-it.fengkongcloud.com
 0.0.0.0 fp3.ads.stickyadstv.com.akadns.net
 0.0.0.0 fr-gmtdmp.mookie1.com
 0.0.0.0 fr.eu.criteo.com
@@ -4631,6 +4626,7 @@
 0.0.0.0 lee.blueconic.net
 0.0.0.0 lentainform.com
 0.0.0.0 lepodownload.mediatek.com
+0.0.0.0 lf-event-manager.oceanengine.com
 0.0.0.0 lf-static.tiktokpangle-cdn-us.com
 0.0.0.0 lfstmedia.com
 0.0.0.0 lftracker.leadfeeder.com
@@ -4695,6 +4691,7 @@
 0.0.0.0 log-api-mn.huxiu.com
 0.0.0.0 log-api.huxiu.com
 0.0.0.0 log-api.pangolin-sdk-toutiao.com
+0.0.0.0 log-auth.zztfly.com
 0.0.0.0 log-collector.svctr.zynga.com
 0.0.0.0 log-collectors-73517960.us-east-1.elb.amazonaws.com
 0.0.0.0 log-dbff2e04.us.v2.we-stats.com
@@ -6672,6 +6669,8 @@
 0.0.0.0 sharethrough.adnxs.com
 0.0.0.0 sharethrough.com
 0.0.0.0 sheilaqeb.com
+0.0.0.0 shihuo-new.log.shihuocdn.cn
+0.0.0.0 shihuo.log.shihuocdn.cn
 0.0.0.0 shiyifacaisalzc.com
 0.0.0.0 shoparty.metrilo.com
 0.0.0.0 shouji.sogou.com
@@ -7732,8 +7731,6 @@
 0.0.0.0 unimhk.com
 0.0.0.0 union-mlog.bigda.com
 0.0.0.0 union-record.oss-cn-zhangjiakou.aliyuncs.com
-0.0.0.0 union.baidu.cn
-0.0.0.0 union.baidu.com
 0.0.0.0 unitedparcelservice.sc.omtrdc.net
 0.0.0.0 unity-imp.aarki.net
 0.0.0.0 unityads.unity3d.com
@@ -7743,6 +7740,7 @@
 0.0.0.0 uop.umeng.com
 0.0.0.0 up.ousabq.tech
 0.0.0.0 upalytics.com
+0.0.0.0 upc.zztfly.com
 0.0.0.0 update.3lift.com
 0.0.0.0 update.adsrvr.org
 0.0.0.0 update.avlyun.sec.miui.com

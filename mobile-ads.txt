@@ -2,8 +2,8 @@
 # Description: Ad networks used inside Android and iOS apps.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-11 10:56 UTC
-# Entries: 8350
+# Last modified: 2026-11-15 10:52 UTC
+# Entries: 8348
 #
 # Built from these sources (see their licenses):
 #   - AdAway Default: https://adaway.org
@@ -695,7 +695,6 @@ ads-ap-venues.yinzcam.com
 ads-api-new-2052271615.ap-northeast-1.elb.amazonaws.com
 ads-api-o.api.leiniao.com
 ads-api.kidsnote.com
-ads-api.tiktok.com
 ads-api.twitter.com
 ads-b-480313385.us-west-1.elb.amazonaws.com
 ads-bidder-api.twitter.com
@@ -710,9 +709,9 @@ ads-delivery.gunosy.com
 ads-game-configuration-master.ads.prd.ie.internal.unity3d.com
 ads-gdl.imovideo.ru
 ads-img-al.xhscdn.com
+ads-img-bak.xhscdn.com
 ads-img-qc.xhscdn.com
 ads-interfaces.sc-cdn.net
-ads-jp.tiktok.com
 ads-leaseweb.appsgeyser.com
 ads-m.rustore.ru
 ads-marketing-vivofs.vivo.com.cn
@@ -728,12 +727,12 @@ ads-sdk.nianticlabs.com
 ads-secure.videohub.tv
 ads-segment-profile-noneu.truecaller.com
 ads-server.mxplay.com
-ads-sg.tiktok.com
 ads-shopping.shouqianba.com
 ads-static.phonepe.com
 ads-twitter.com
 ads-video-al.xhscdn.com
 ads-video-qc.xhscdn.com
+ads-vp5.xhscdn.com
 ads.95516.com
 ads.ad2iction.com
 ads.ad4game.com
@@ -857,7 +856,6 @@ ads.supplyframe.com
 ads.tapdaq.com
 ads.taptapnetworks.com
 ads.themoneytizer.com
-ads.tiktok.com
 ads.traffichunt.com
 ads.trafficjunky.net
 ads.tremorhub.com
@@ -1021,7 +1019,6 @@ adstore-index-1252524079.file.myqcloud.com
 adstory.gotrackier.com
 adstrategy.biz.weibo.com
 adstudio-assets.scdn.co
-adstudio.spotify.com
 adstune.com
 adsunflower.com
 adsup.togothermany.cn
@@ -1037,7 +1034,6 @@ adtaily.pl
 adtarget.com.tr
 adtech.com
 adtech.de
-adtech.yahooinc.com
 adtheorent.com
 adtheorent107077183660.s.moatpixel.com
 adthor.com
@@ -1075,14 +1071,9 @@ advertise.bingads.microsoft.com
 advertise.com
 advertise.ldplayer.net
 advertiser.fyber.com
-advertising-api-eu.amazon.com
-advertising-api-fe.amazon.com
-advertising-api.amazon.com
 advertising.amazon.dev
-advertising.apple.com
 advertising.com
 advertising.yahoo.com
-advertising.yandex.ru
 advertnative.com
 advertur.ru
 adviap.goforandroid.com
@@ -1680,6 +1671,7 @@ apituner.ecbsn.com
 apiv2.moengage.com
 apiyd.my91app.com
 apm.crittercism.com
+apmplus.volces.com
 apn-winners-ap-southeast-1-rtb.adroll.com
 apn-winners-eu-west-1-rtb.adroll.com
 apn-winners-us-east-1-rtb.adroll.com
@@ -2754,6 +2746,7 @@ clickfuse.com
 clickkydsp.com
 clicktrack.pubmatic.com
 client-analytics.braintreegateway.com
+client-upload.cn-shanghai.log.aliyuncs.com
 client.midosoo.com
 client.rave-api.com
 clientcdn.pushengage.com
@@ -3060,7 +3053,6 @@ cs.vdopia.com
 cs.yieldoptimizer.com
 cs02-pps-drcn.dbankcdn.com
 csi.gstatic.com
-csjplatform.com
 csm.as.criteo.net
 csm.da.us.criteo.net
 csm.da1.vip.prod.criteo.net
@@ -3366,6 +3358,7 @@ dts.crispadvertising.com
 dts.innovid.com
 dts.innovid.com.akadns.net
 dts.startappservice.com
+du-app.cn-hangzhou.log.aliyuncs.com
 dualstack-logs.amap.com
 duapps.com
 duiba.com.cn
@@ -3485,6 +3478,7 @@ erg.ihclam.cn
 ero-advertising.com
 err.izooto.com
 errlog.umeng.com
+errnewlog.umeng.com
 error-collector.ted.com
 errors.imrworldwide.com
 es-gmtdmp.mookie1.com
@@ -3709,6 +3703,7 @@ foxnet.demdex.net
 foxnews.demdex.net
 foxnews.hb.omtrdc.net
 foxnews.tt.omtrdc.net
+fp-it.fengkongcloud.com
 fp3.ads.stickyadstv.com.akadns.net
 fr-gmtdmp.mookie1.com
 fr.eu.criteo.com
@@ -4631,6 +4626,7 @@ leanplum.com
 lee.blueconic.net
 lentainform.com
 lepodownload.mediatek.com
+lf-event-manager.oceanengine.com
 lf-static.tiktokpangle-cdn-us.com
 lfstmedia.com
 lftracker.leadfeeder.com
@@ -4695,6 +4691,7 @@ locatorpp.corevm.com
 log-api-mn.huxiu.com
 log-api.huxiu.com
 log-api.pangolin-sdk-toutiao.com
+log-auth.zztfly.com
 log-collector.svctr.zynga.com
 log-collectors-73517960.us-east-1.elb.amazonaws.com
 log-dbff2e04.us.v2.we-stats.com
@@ -6672,6 +6669,8 @@ shared.iad.appboy.com
 sharethrough.adnxs.com
 sharethrough.com
 sheilaqeb.com
+shihuo-new.log.shihuocdn.cn
+shihuo.log.shihuocdn.cn
 shiyifacaisalzc.com
 shoparty.metrilo.com
 shouji.sogou.com
@@ -7732,8 +7731,6 @@ unifiedbidding.ad.smaato.net
 unimhk.com
 union-mlog.bigda.com
 union-record.oss-cn-zhangjiakou.aliyuncs.com
-union.baidu.cn
-union.baidu.com
 unitedparcelservice.sc.omtrdc.net
 unity-imp.aarki.net
 unityads.unity3d.com
@@ -7743,6 +7740,7 @@ universe.send.microad.jp
 uop.umeng.com
 up.ousabq.tech
 upalytics.com
+upc.zztfly.com
 update.3lift.com
 update.adsrvr.org
 update.avlyun.sec.miui.com

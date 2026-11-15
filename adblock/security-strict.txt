@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-14 10:24 UTC
-! Entries: 3011
+! Last modified: 2026-11-15 10:52 UTC
+! Entries: 3009
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -529,6 +529,7 @@
 @@||livwell.asia^
 @@||localise.biz^
 @@||lofi.town^
+@@||logistix.delivery^
 @@||loma.ml^
 @@||loveinfaith.life^
 @@||luckysbarbershop.biz^
@@ -559,6 +560,7 @@
 @@||mavie.bar^
 @@||maxwellcat.world^
 @@||mbcherohub.club^
+@@||mchose.store^
 @@||mediaclients.wiki^
 @@||meetbot.biz^
 @@||mein-kunden.center^
@@ -888,6 +890,7 @@
 @@||stremio.homes^
 @@||strims.top^
 @@||stripe.partners^
+@@||stromae.store^
 @@||suiten.top^
 @@||sukonbu.party^
 @@||sumerian.ink^
@@ -2682,7 +2685,6 @@
 ||mobi.ps^
 ||mobile.web.tr^
 ||mobinteg.com^
-||monitorip.com^
 ||monopolepower.com^
 ||moonangel.com^
 ||mooo.com^
@@ -3138,7 +3140,6 @@
 ||sendsmtp.com^
 ||sequoiapartners.com^
 ||serendipityshores.com^
-||serpgold.com^
 ||serv00.net^
 ||servebbs.com^
 ||servebbs.net^

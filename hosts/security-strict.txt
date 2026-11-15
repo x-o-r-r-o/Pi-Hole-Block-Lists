@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-14 10:24 UTC
-# Entries: 2731
+# Last modified: 2026-11-15 10:52 UTC
+# Entries: 2728
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -1705,7 +1705,6 @@
 0.0.0.0 mobinteg.com
 0.0.0.0 moneyash.top
 0.0.0.0 moneyhome.biz
-0.0.0.0 monitorip.com
 0.0.0.0 monopolepower.com
 0.0.0.0 moonangel.com
 0.0.0.0 mooo.com
@@ -1875,7 +1874,6 @@
 0.0.0.0 noipdns.net
 0.0.0.0 noipfreedns.com
 0.0.0.0 noiptos.com
-0.0.0.0 nokojp.shop
 0.0.0.0 notici.as
 0.0.0.0 novamov.com
 0.0.0.0 novgaz-rzn.ru
@@ -2193,7 +2191,6 @@
 0.0.0.0 sendsmtp.com
 0.0.0.0 sequoiapartners.com
 0.0.0.0 serendipityshores.com
-0.0.0.0 serpgold.com
 0.0.0.0 serv00.net
 0.0.0.0 servebbs.com
 0.0.0.0 servebbs.net
