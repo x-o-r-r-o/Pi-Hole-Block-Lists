@@ -2,7 +2,7 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-15 10:52 UTC
+# Last modified: 2026-11-16 11:57 UTC
 # Entries: 9762
 #
 # Built from these sources (see their licenses):
@@ -6422,7 +6422,6 @@
 0.0.0.0 rfx.today
 0.0.0.0 rgd.app
 0.0.0.0 rgdyk.com
-0.0.0.0 rgister.net
 0.0.0.0 rgl.nl
 0.0.0.0 rh1.eu
 0.0.0.0 rhlink.com
@@ -8401,6 +8400,7 @@
 0.0.0.0 u0c.net
 0.0.0.0 u1.mnge.co
 0.0.0.0 u2.to
+0.0.0.0 u2l.ai
 0.0.0.0 u2l.io
 0.0.0.0 u2s.ca
 0.0.0.0 u2s.tn

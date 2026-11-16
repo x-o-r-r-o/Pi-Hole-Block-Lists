@@ -2,8 +2,8 @@
 # Description: Ad networks used inside Android and iOS apps.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-15 10:52 UTC
-# Entries: 8348
+# Last modified: 2026-11-16 11:57 UTC
+# Entries: 8359
 #
 # Built from these sources (see their licenses):
 #   - AdAway Default: https://adaway.org
@@ -1118,6 +1118,7 @@
 0.0.0.0 adx.ads.heytapmobi.com
 0.0.0.0 adx.ads.oppomobile.com
 0.0.0.0 adx.adwangmai.com
+0.0.0.0 adx.anythinktech.com
 0.0.0.0 adx.appsdk.com.cn
 0.0.0.0 adx.g.doubleclick.net
 0.0.0.0 adx.hasmobi.net
@@ -2169,6 +2170,7 @@
 0.0.0.0 bid.contextweb.com
 0.0.0.0 bid.dr.socdm.com
 0.0.0.0 bid.g.doubleclick.net
+0.0.0.0 bid.shanghailingye.cn
 0.0.0.0 bid.tapjoy.com
 0.0.0.0 bidagent.xad.com
 0.0.0.0 bidder-ap-northeast-1.prod.justpremium.com
@@ -2809,7 +2811,10 @@
 0.0.0.0 cms.analytics.yahoo.com
 0.0.0.0 cms.quantserve.com
 0.0.0.0 cmshow.gtimg.cn
+0.0.0.0 cn-api-sec.anythinktech.com
 0.0.0.0 cn-api.anythinktech.com
+0.0.0.0 cn-da.anythinktech.com
+0.0.0.0 cn-tk.anythinktech.com
 0.0.0.0 cnlogs.umeng.com
 0.0.0.0 cnlogs.umengcloud.com
 0.0.0.0 cnn.bounceexchange.com
@@ -3130,6 +3135,7 @@
 0.0.0.0 da.anythinktech.com
 0.0.0.0 da.chartboost.com
 0.0.0.0 da.flvcdn.net
+0.0.0.0 da.statisticslinks.com
 0.0.0.0 da.us.criteo.com
 0.0.0.0 da.us.criteo.net
 0.0.0.0 da1.vip.prod.criteo.com
@@ -3478,7 +3484,9 @@
 0.0.0.0 ero-advertising.com
 0.0.0.0 err.izooto.com
 0.0.0.0 errlog.umeng.com
+0.0.0.0 errlogos.umeng.com
 0.0.0.0 errnewlog.umeng.com
+0.0.0.0 errnewlogos.umeng.com
 0.0.0.0 error-collector.ted.com
 0.0.0.0 errors.imrworldwide.com
 0.0.0.0 es-gmtdmp.mookie1.com
@@ -6857,6 +6865,7 @@
 0.0.0.0 srv.stackadapt.com
 0.0.0.0 ss.c.appier.net
 0.0.0.0 ss.yomedia.vn
+0.0.0.0 ssapi.anythinktech.com
 0.0.0.0 ssb-sgp.smartadserver.com
 0.0.0.0 ssb-us.smartadserver.com
 0.0.0.0 ssbsync-geo.smartadserver.com
@@ -7407,6 +7416,7 @@
 0.0.0.0 tj.ijinshan.com
 0.0.0.0 tj.video.qq.com
 0.0.0.0 tk.anythinktech.com
+0.0.0.0 tk.statisticslinks.com
 0.0.0.0 tk0x1.com
 0.0.0.0 tkcatrun.aotter.net
 0.0.0.0 tkcatwalk.aotter.net
@@ -7444,6 +7454,7 @@
 0.0.0.0 tnc3-bjlgy.snssdk.com
 0.0.0.0 tnc3-bjlgy.toutiaoapi.com
 0.0.0.0 tnkfactory.com
+0.0.0.0 tobapplog.ctobsnssdk.com
 0.0.0.0 toblog.ctobsnssdk.com
 0.0.0.0 togothermany.com
 0.0.0.0 token.api.kochava.com

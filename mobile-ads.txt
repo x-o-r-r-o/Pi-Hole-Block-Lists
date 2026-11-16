@@ -2,8 +2,8 @@
 # Description: Ad networks used inside Android and iOS apps.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-15 10:52 UTC
-# Entries: 8348
+# Last modified: 2026-11-16 11:57 UTC
+# Entries: 8359
 #
 # Built from these sources (see their licenses):
 #   - AdAway Default: https://adaway.org
@@ -1118,6 +1118,7 @@ adx.admicro.vn
 adx.ads.heytapmobi.com
 adx.ads.oppomobile.com
 adx.adwangmai.com
+adx.anythinktech.com
 adx.appsdk.com.cn
 adx.g.doubleclick.net
 adx.hasmobi.net
@@ -2169,6 +2170,7 @@ bid.adview.com
 bid.contextweb.com
 bid.dr.socdm.com
 bid.g.doubleclick.net
+bid.shanghailingye.cn
 bid.tapjoy.com
 bidagent.xad.com
 bidder-ap-northeast-1.prod.justpremium.com
@@ -2809,7 +2811,10 @@ cms-xch-chicago.33across.com
 cms.analytics.yahoo.com
 cms.quantserve.com
 cmshow.gtimg.cn
+cn-api-sec.anythinktech.com
 cn-api.anythinktech.com
+cn-da.anythinktech.com
+cn-tk.anythinktech.com
 cnlogs.umeng.com
 cnlogs.umengcloud.com
 cnn.bounceexchange.com
@@ -3130,6 +3135,7 @@ da-ads.com
 da.anythinktech.com
 da.chartboost.com
 da.flvcdn.net
+da.statisticslinks.com
 da.us.criteo.com
 da.us.criteo.net
 da1.vip.prod.criteo.com
@@ -3478,7 +3484,9 @@ erg.ihclam.cn
 ero-advertising.com
 err.izooto.com
 errlog.umeng.com
+errlogos.umeng.com
 errnewlog.umeng.com
+errnewlogos.umeng.com
 error-collector.ted.com
 errors.imrworldwide.com
 es-gmtdmp.mookie1.com
@@ -6857,6 +6865,7 @@ srv.pixel.parsely.com
 srv.stackadapt.com
 ss.c.appier.net
 ss.yomedia.vn
+ssapi.anythinktech.com
 ssb-sgp.smartadserver.com
 ssb-us.smartadserver.com
 ssbsync-geo.smartadserver.com
@@ -7407,6 +7416,7 @@ tj.b.qq.com
 tj.ijinshan.com
 tj.video.qq.com
 tk.anythinktech.com
+tk.statisticslinks.com
 tk0x1.com
 tkcatrun.aotter.net
 tkcatwalk.aotter.net
@@ -7444,6 +7454,7 @@ tnc3-bjlgy.bytedance.com
 tnc3-bjlgy.snssdk.com
 tnc3-bjlgy.toutiaoapi.com
 tnkfactory.com
+tobapplog.ctobsnssdk.com
 toblog.ctobsnssdk.com
 togothermany.com
 token.api.kochava.com
