@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-16 11:57 UTC
-# Entries: 9762
+# Last modified: 2026-11-17 11:51 UTC
+# Entries: 9770
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -560,6 +560,7 @@
 0.0.0.0 aftvnews.com
 0.0.0.0 agbr.ir
 0.0.0.0 agileurbia.com
+0.0.0.0 agll.ink
 0.0.0.0 agmd.win
 0.0.0.0 agoz.me
 0.0.0.0 agr.my
@@ -1892,6 +1893,7 @@
 0.0.0.0 cutmy.link
 0.0.0.0 cutmyurl.com
 0.0.0.0 cutqr.com
+0.0.0.0 cuts-url.com
 0.0.0.0 cuts.al
 0.0.0.0 cuts.kr
 0.0.0.0 cuts2.com
@@ -2022,6 +2024,7 @@
 0.0.0.0 dell.to
 0.0.0.0 deloi.tt
 0.0.0.0 delphin.link
+0.0.0.0 delta.live
 0.0.0.0 demcon24.com
 0.0.0.0 demolink.net
 0.0.0.0 demoxpress.xyz
@@ -3656,6 +3659,7 @@
 0.0.0.0 jaga.link
 0.0.0.0 jaglil.com
 0.0.0.0 jagoan-hosting.online
+0.0.0.0 jalanku.me
 0.0.0.0 jalanpintas4d.com
 0.0.0.0 jali.me
 0.0.0.0 jalurvip.co
@@ -4054,6 +4058,7 @@
 0.0.0.0 labs.to
 0.0.0.0 laco.st
 0.0.0.0 lam.bo
+0.0.0.0 lamacchina.de
 0.0.0.0 lammariom.dev
 0.0.0.0 landerlab.io
 0.0.0.0 lanergysolutions.com
@@ -5559,6 +5564,7 @@
 0.0.0.0 okurl.net
 0.0.0.0 oky.li
 0.0.0.0 oldmutualsa.com
+0.0.0.0 olhe.me
 0.0.0.0 oli.vi
 0.0.0.0 olii.me
 0.0.0.0 oline.me
@@ -6047,6 +6053,7 @@
 0.0.0.0 purls.eu
 0.0.0.0 pushlimit.org
 0.0.0.0 putar.link
+0.0.0.0 putar.win
 0.0.0.0 puugs.com
 0.0.0.0 puulp.it
 0.0.0.0 puxt.cc
@@ -9346,6 +9353,7 @@
 0.0.0.0 wuniw.com
 0.0.0.0 wurl.io
 0.0.0.0 wurlie.net
+0.0.0.0 wurlz.com
 0.0.0.0 ww7.fr
 0.0.0.0 wwat.ch
 0.0.0.0 wwf.to
