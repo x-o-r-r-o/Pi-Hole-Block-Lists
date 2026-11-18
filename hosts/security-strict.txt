@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-17 11:51 UTC
-# Entries: 2729
+# Last modified: 2026-11-18 11:40 UTC
+# Entries: 2742
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -16,6 +16,8 @@
 0.0.0.0 0000000000000000000000.com
 0.0.0.0 000a.de
 0.0.0.0 000free.us
+0.0.0.0 000nethost.com
+0.0.0.0 000space.com
 0.0.0.0 000webapp.com
 0.0.0.0 000webhost.com
 0.0.0.0 000webhost.info
@@ -174,6 +176,7 @@
 0.0.0.0 aa8.de
 0.0.0.0 aa9.de
 0.0.0.0 aba.ae
+0.0.0.0 aba.vg
 0.0.0.0 abatek.com
 0.0.0.0 abbremsen.de
 0.0.0.0 abcproxy.com
@@ -363,6 +366,7 @@
 0.0.0.0 bounceme.net
 0.0.0.0 bouncers4rent.com
 0.0.0.0 boxathome.net
+0.0.0.0 boxmail.biz
 0.0.0.0 boxmode.io
 0.0.0.0 bproxy.one
 0.0.0.0 br.gp
@@ -407,10 +411,10 @@
 0.0.0.0 cbopelousas.com
 0.0.0.0 cbu.net
 0.0.0.0 cc.cd
+0.0.0.0 ccname.org
 0.0.0.0 ccwu.cc
 0.0.0.0 cebol.me
 0.0.0.0 cechire.com
-0.0.0.0 celebsplay.com
 0.0.0.0 celltrak.mobi
 0.0.0.0 center.tl
 0.0.0.0 centserver.com
@@ -533,12 +537,14 @@
 0.0.0.0 crazedns.ru
 0.0.0.0 created.app
 0.0.0.0 creatorlink.net
+0.0.0.0 crustwebsites.net
 0.0.0.0 crypto-market-world.com
 0.0.0.0 cryptonight.net
 0.0.0.0 cs-clan.org
 0.0.0.0 csproject.org
 0.0.0.0 cstu.io
 0.0.0.0 ct.ws
+0.0.0.0 ctempurl.com
 0.0.0.0 cuesinc.com
 0.0.0.0 cupddns.net
 0.0.0.0 custom-gaming.net
@@ -975,6 +981,7 @@
 0.0.0.0 forumil.com
 0.0.0.0 forumz.info
 0.0.0.0 fotos.lc
+0.0.0.0 fr.am
 0.0.0.0 fr.gp
 0.0.0.0 fragmentary.info
 0.0.0.0 framer.website
@@ -1527,6 +1534,7 @@
 0.0.0.0 knabrub.com
 0.0.0.0 knowsitall.info
 0.0.0.0 kompaniet.nu
+0.0.0.0 konubinix.eu
 0.0.0.0 kortlink.dk
 0.0.0.0 kozow.com
 0.0.0.0 kr.gp
@@ -1770,7 +1778,6 @@
 0.0.0.0 myip.org
 0.0.0.0 myiphost.com
 0.0.0.0 myjino.ru
-0.0.0.0 mylftv.com
 0.0.0.0 mylinkinb.io
 0.0.0.0 mylogisoft.com
 0.0.0.0 mymediapc.net
@@ -1875,6 +1882,7 @@
 0.0.0.0 noipdns.net
 0.0.0.0 noipfreedns.com
 0.0.0.0 noiptos.com
+0.0.0.0 nokojp.shop
 0.0.0.0 notici.as
 0.0.0.0 novamov.com
 0.0.0.0 novgaz-rzn.ru
@@ -1934,6 +1942,7 @@
 0.0.0.0 online.gp
 0.0.0.0 online.ly
 0.0.0.0 online.tc
+0.0.0.0 onlineweb.shop
 0.0.0.0 onlinewebshop.net
 0.0.0.0 only4u.eu
 0.0.0.0 onmbl.com
@@ -2398,6 +2407,7 @@
 0.0.0.0 temporary.site
 0.0.0.0 tentbuildingservices.eu
 0.0.0.0 test.lc
+0.0.0.0 testingnow.me
 0.0.0.0 texasdollies.com
 0.0.0.0 tftpd.net
 0.0.0.0 th.gp
@@ -2457,6 +2467,7 @@
 0.0.0.0 tunnelmole.net
 0.0.0.0 turbo.site
 0.0.0.0 turkish.lc
+0.0.0.0 tutorial-blog.net
 0.0.0.0 tvlinux.com
 0.0.0.0 tw.gp
 0.0.0.0 tw1.ru
@@ -2606,6 +2617,7 @@
 0.0.0.0 webhop.net
 0.0.0.0 webhop.org
 0.0.0.0 webn.cc
+0.0.0.0 webnode.com.co
 0.0.0.0 webnode.com.pt
 0.0.0.0 webobo.com
 0.0.0.0 webok.net
@@ -2706,6 +2718,7 @@
 0.0.0.0 you.lc
 0.0.0.0 youdontcare.com
 0.0.0.0 youpc.ro
+0.0.0.0 yourdomain.com
 0.0.0.0 yourspecialtee.com
 0.0.0.0 yourtrap.com
 0.0.0.0 yovip.net

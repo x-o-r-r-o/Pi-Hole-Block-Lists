@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-17 11:51 UTC
-# Entries: 2729
+# Last modified: 2026-11-18 11:40 UTC
+# Entries: 2742
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -16,6 +16,8 @@
 0000000000000000000000.com
 000a.de
 000free.us
+000nethost.com
+000space.com
 000webapp.com
 000webhost.com
 000webhost.info
@@ -174,6 +176,7 @@ aa6.de
 aa8.de
 aa9.de
 aba.ae
+aba.vg
 abatek.com
 abbremsen.de
 abcproxy.com
@@ -363,6 +366,7 @@ bot.nu
 bounceme.net
 bouncers4rent.com
 boxathome.net
+boxmail.biz
 boxmode.io
 bproxy.one
 br.gp
@@ -407,10 +411,10 @@ cbkgardens.com
 cbopelousas.com
 cbu.net
 cc.cd
+ccname.org
 ccwu.cc
 cebol.me
 cechire.com
-celebsplay.com
 celltrak.mobi
 center.tl
 centserver.com
@@ -533,12 +537,14 @@ craftum.io
 crazedns.ru
 created.app
 creatorlink.net
+crustwebsites.net
 crypto-market-world.com
 cryptonight.net
 cs-clan.org
 csproject.org
 cstu.io
 ct.ws
+ctempurl.com
 cuesinc.com
 cupddns.net
 custom-gaming.net
@@ -975,6 +981,7 @@ forum7.de
 forumil.com
 forumz.info
 fotos.lc
+fr.am
 fr.gp
 fragmentary.info
 framer.website
@@ -1527,6 +1534,7 @@ klapa.eu
 knabrub.com
 knowsitall.info
 kompaniet.nu
+konubinix.eu
 kortlink.dk
 kozow.com
 kr.gp
@@ -1770,7 +1778,6 @@ myhouse.tv
 myip.org
 myiphost.com
 myjino.ru
-mylftv.com
 mylinkinb.io
 mylogisoft.com
 mymediapc.net
@@ -1875,6 +1882,7 @@ noipdns.com
 noipdns.net
 noipfreedns.com
 noiptos.com
+nokojp.shop
 notici.as
 novamov.com
 novgaz-rzn.ru
@@ -1934,6 +1942,7 @@ online.cr
 online.gp
 online.ly
 online.tc
+onlineweb.shop
 onlinewebshop.net
 only4u.eu
 onmbl.com
@@ -2398,6 +2407,7 @@ temporary-demo.site
 temporary.site
 tentbuildingservices.eu
 test.lc
+testingnow.me
 texasdollies.com
 tftpd.net
 th.gp
@@ -2457,6 +2467,7 @@ tunnelbroker.net
 tunnelmole.net
 turbo.site
 turkish.lc
+tutorial-blog.net
 tvlinux.com
 tw.gp
 tw1.ru
@@ -2606,6 +2617,7 @@ webhop.me
 webhop.net
 webhop.org
 webn.cc
+webnode.com.co
 webnode.com.pt
 webobo.com
 webok.net
@@ -2706,6 +2718,7 @@ yolasite.com
 you.lc
 youdontcare.com
 youpc.ro
+yourdomain.com
 yourspecialtee.com
 yourtrap.com
 yovip.net

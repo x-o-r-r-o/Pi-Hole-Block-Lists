@@ -3,8 +3,8 @@
 ! Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-17 11:51 UTC
-! Entries: 9770
+! Last modified: 2026-11-18 11:40 UTC
+! Entries: 9765
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -944,7 +944,6 @@
 ||b54.in^
 ||b9d.me^
 ||baas.kr^
-||baba.bio^
 ||babblecase.com^
 ||babel.team^
 ||bacc666.mobi^
@@ -1002,6 +1001,7 @@
 ||bee1s.com^
 ||bee4.biz^
 ||beeb.us^
+||beelnk.com^
 ||beepurl.com^
 ||beeshort.de^
 ||beeurls.com^
@@ -1850,7 +1850,6 @@
 ||curl.ro^
 ||curlm.in^
 ||curlmin.com^
-||curriculumsystem.org^
 ||curryfielddistribution.com^
 ||curt.wiz.co^
 ||curts.me^
@@ -2193,7 +2192,6 @@
 ||druuz.com^
 ||drw.sh^
 ||dsastro.com^
-||dsgfs.io^
 ||dsh.re^
 ||dside.ca^
 ||dsn.io^
@@ -2898,6 +2896,7 @@
 ||go-admin.functorz.com^
 ||go-admin.momen.app^
 ||go-link.ru^
+||go-links.net^
 ||go-to.us^
 ||go.9nl.com^
 ||go.acciojob.com^
@@ -3987,7 +3986,6 @@
 ||kutt.it^
 ||kutt.itarian.com^
 ||kutt.mariodian.com^
-||kutt.schantli.cloud^
 ||kutt.this.team^
 ||kutt.to^
 ||kutt.ural-agro.com^
@@ -5019,6 +5017,7 @@
 ||microsoftaistories.com^
 ||microsoftfiles.live^
 ||microurl.org^
+||microurls.io^
 ||midiavip.com^
 ||miffy.me^
 ||mightyurl.mightyscripts.xyz^
@@ -6453,7 +6452,6 @@
 ||rjpl.link^
 ||rjvn.co^
 ||rjyjwq.com^
-||rkt.bio^
 ||rli.io^
 ||rls.my^
 ||rlu.ru^
@@ -6570,7 +6568,6 @@
 ||s.free.fr^
 ||s.g123.jp^
 ||s.gdngs.de^
-||s.ggwp.be^
 ||s.gy^
 ||s.id^
 ||s.kiot.io^
@@ -8809,7 +8806,6 @@
 ||urlshortener.mahamafzar.com^
 ||urlshortener.pro^
 ||urlshortener.site^
-||urlshortenerr.live^
 ||urlshortenertool.com^
 ||urlshortenervip.com^
 ||urlshortening.webalias.com^
@@ -9005,7 +9001,6 @@
 ||vid.lu^
 ||vid4u.net^
 ||vidcy.co^
-||videopro.live^
 ||videos.pbi.tools^
 ||videyx.fun^
 ||vidmy.fun^
@@ -9584,7 +9579,6 @@
 ||yourls.newstargeted.com^
 ||yourls.org^
 ||yourls.ph-freiburg.de^
-||yourls.website^
 ||yourwish.es^
 ||yous.ee^
 ||youweepingt.org^
@@ -9770,6 +9764,7 @@
 ||zyguer.com^
 ||zynexly.com^
 ||zynga.my^
+||zyp.to^
 ||zywv.us^
 ||zz-tw.co^
 ||zz.gd^

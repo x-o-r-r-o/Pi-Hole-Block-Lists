@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-15 10:52 UTC
-! Entries: 3009
+! Last modified: 2026-11-18 11:40 UTC
+! Entries: 3019
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -1078,6 +1078,8 @@
 ||0000000000000000000000.com^
 ||000a.de^
 ||000free.us^
+||000nethost.com^
+||000space.com^
 ||000webapp.com^
 ||000webhost.com^
 ||000webhost.info^
@@ -1234,6 +1236,7 @@
 ||aa8.de^
 ||aa9.de^
 ||aba.ae^
+||aba.vg^
 ||abatek.com^
 ||abbremsen.de^
 ||abcproxy.com^
@@ -1465,9 +1468,9 @@
 ||cbopelousas.com^
 ||cbu.net^
 ||cc.cd^
+||ccname.org^
 ||cebol.me^
 ||cechire.com^
-||celebsplay.com^
 ||celltrak.mobi^
 ||center.tl^
 ||centserver.com^
@@ -1577,12 +1580,14 @@
 ||crazedns.ru^
 ||created.app^
 ||creatorlink.net^
+||crustwebsites.net^
 ||crypto-market-world.com^
 ||cryptonight.net^
 ||cs-clan.org^
 ||csproject.org^
 ||cstu.io^
 ||ct.ws^
+||ctempurl.com^
 ||cuesinc.com^
 ||cupddns.net^
 ||custom-gaming.net^
@@ -1991,6 +1996,7 @@
 ||forumil.com^
 ||forumz.info^
 ||fotos.lc^
+||fr.am^
 ||fr.gp^
 ||fragmentary.info^
 ||freakshare.net^
@@ -2517,6 +2523,7 @@
 ||knabrub.com^
 ||knowsitall.info^
 ||kompaniet.nu^
+||konubinix.eu^
 ||kortlink.dk^
 ||kozow.com^
 ||kr.gp^
@@ -2746,7 +2753,6 @@
 ||myip.org^
 ||myiphost.com^
 ||myjino.ru^
-||mylftv.com^
 ||mylinkinb.io^
 ||mylogisoft.com^
 ||mymediapc.net^
@@ -3333,6 +3339,7 @@
 ||tempisite.com^
 ||tentbuildingservices.eu^
 ||test.lc^
+||testingnow.me^
 ||texasdollies.com^
 ||tftpd.net^
 ||th.gp^
@@ -3389,6 +3396,7 @@
 ||tunnelbroker.net^
 ||tunnelmole.net^
 ||turkish.lc^
+||tutorial-blog.net^
 ||tvlinux.com^
 ||tw.gp^
 ||tw1.ru^
@@ -3524,6 +3532,7 @@
 ||webhop.me^
 ||webhop.net^
 ||webhop.org^
+||webnode.com.co^
 ||webnode.com.pt^
 ||webobo.com^
 ||webok.net^
@@ -3615,6 +3624,7 @@
 ||you.lc^
 ||youdontcare.com^
 ||youpc.ro^
+||yourdomain.com^
 ||yourspecialtee.com^
 ||yourtrap.com^
 ||yovip.net^
