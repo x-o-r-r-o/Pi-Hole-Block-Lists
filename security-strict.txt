@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: plain domains (Pi-hole, AdGuard Home)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-18 11:40 UTC
-# Entries: 2742
+# Last modified: 2026-11-19 11:38 UTC
+# Entries: 2771
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -16,8 +16,6 @@
 0000000000000000000000.com
 000a.de
 000free.us
-000nethost.com
-000space.com
 000webapp.com
 000webhost.com
 000webhost.info
@@ -33,6 +31,7 @@
 078.me
 0bs.de
 0fees.net
+0fees.us
 0hna.com
 0pi.com
 0rg.us
@@ -167,6 +166,7 @@
 9down.com
 9gb.de
 9k.com
+9vpsta1.com
 a-loch.de
 a.gp
 a0001.net
@@ -237,6 +237,7 @@ and-you.de
 aneisa.com
 anfliegen.de
 angelcamddns.com
+angelfire.com
 anondns.net
 anonfile.com
 anschauen.in
@@ -264,6 +265,7 @@ asiamariage.com
 asianfreshproduce.com
 ask2ask.com
 asocks.com
+asset-cdn.dev
 astrabus.ru
 asuscomm.com
 at-band-camp.net
@@ -324,6 +326,7 @@ bg.gp
 bgdsupport.com
 bget.ru
 bhms.com
+bidiurl.com
 bigbluezoo.com
 bigheadhosting.net
 bilder.lc
@@ -366,7 +369,6 @@ bot.nu
 bounceme.net
 bouncers4rent.com
 boxathome.net
-boxmail.biz
 boxmode.io
 bproxy.one
 br.gp
@@ -376,14 +378,15 @@ brawlcustommusic.com
 brdtnet.com
 briansagar.com
 bright-sdk.com
+brizy.site
 broke-it.net
 brweb.org
-bugs3.com
 builderall.net
 builtfree.org
 bulkurlshortener.com
 bumbleshrimp.com
 burlingtondrywall.com
+business.site
 buyshouses.net
 bx5.de
 byethost11.com
@@ -402,6 +405,7 @@ byto.de
 bz.tc
 c.pl
 ca.gp
+cabanova.com
 cable-modem.org
 cableonline.com.mx
 camdvr.org
@@ -411,7 +415,6 @@ cbkgardens.com
 cbopelousas.com
 cbu.net
 cc.cd
-ccname.org
 ccwu.cc
 cebol.me
 cechire.com
@@ -489,6 +492,7 @@ cloudns.pw
 cloudns.us
 cloudrouter.pro
 cloudwatch.net
+cloudwaysapps.com
 cloudxns.net
 club-area.de
 club.lc
@@ -508,6 +512,7 @@ com24.at
 come.ac
 community.lc
 community24.eu
+compact.link
 company.site
 compress.to
 compuinter.com
@@ -544,9 +549,9 @@ cs-clan.org
 csproject.org
 cstu.io
 ct.ws
-ctempurl.com
 cuesinc.com
 cupddns.net
+curryfielddistribution.com
 custom-gaming.net
 cut.vin
 cutedrive.com
@@ -692,6 +697,7 @@ doomdns.com
 doomdns.org
 doorvpn.com
 dot.tk
+dothome.co.kr
 dougtreadwell.com
 douploads.net
 downfall.shop
@@ -825,7 +831,6 @@ easydns.net
 easydns.org
 eating-organic.net
 eatuo.com
-eb2a.com
 ec.gp
 ecardalert.com
 echoparklake.com
@@ -955,6 +960,7 @@ flashhub.net
 flat4free.com
 flazio.com
 flazzard.com
+fleek.co
 flf.li
 fli.so
 flick2.me
@@ -981,7 +987,6 @@ forum7.de
 forumil.com
 forumz.info
 fotos.lc
-fr.am
 fr.gp
 fragmentary.info
 framer.website
@@ -1095,6 +1100,7 @@ fun.gg
 fun.pe
 fun5.de
 fw.bz
+fwb4me.us
 fwh.is
 fxnxs.com
 g2url.com
@@ -1104,12 +1110,13 @@ gally.jp
 game-host.org
 game-server.cc
 game.lc
-gamer.gd
 gaming.lc
 garmanage.com
 garypatel.com
 gastright.com
 gateway.lighthouse.storage
+gateway.pinata.cloud
+gearhostpreview.com
 geekgalaxy.com
 genblogger.com
 geobattery.com
@@ -1192,6 +1199,7 @@ hamshack.info
 han.gl
 hanefra7bikiemta.com
 happyforever.com
+hardbin.com
 hase.in
 hashnode.dev
 hatenboer.org
@@ -1263,6 +1271,7 @@ hostdns.me
 hostedforfree.com
 hostfree.pw
 hosthampster.com
+hostingersite.com
 hostingsiteforfree.com
 hotfile.com
 hotshare.net
@@ -1292,6 +1301,7 @@ i8.ae
 iamallama.com
 ibiz.cc
 iblogger.org
+ic0.app
 iceiy.com
 ics.tw
 id.gp
@@ -1314,6 +1324,7 @@ imagetemplate.net
 imageurlhost.com
 imexsac.com
 imprendum.com
+imrobpolit.pro
 in-the-band.net
 in.gp
 in.run
@@ -1339,6 +1350,7 @@ infos.lc
 infura-ipfs.io
 infy.uk
 inkcat.net
+inmotionhosting.com
 innograph.com
 instantfreesite.com
 instanthq.com
@@ -1358,6 +1370,7 @@ ip2world.com
 ipfs.best-practice.se
 ipfs.ink
 ipfs.io
+ipfs.joaoleitao.org
 ipidea.io
 iplogger.cn
 iplogger.co
@@ -1491,6 +1504,7 @@ jdfinancialserver.com
 jedimasters.net
 jesus.si
 jetos.com
+jimdofree.com
 jixx.de
 jixx.net
 jkub.com
@@ -1498,6 +1512,7 @@ job.ec
 joe.dj
 jomblo.asia
 jonward.com
+joomla.com
 jp.gp
 ju.mp
 jump2me.com
@@ -1534,7 +1549,6 @@ klapa.eu
 knabrub.com
 knowsitall.info
 kompaniet.nu
-konubinix.eu
 kortlink.dk
 kozow.com
 kr.gp
@@ -1703,6 +1717,7 @@ misecure.com
 mistermousepotato.com
 mit-wenig-geld.de
 mithrandir.us
+mixh.jp
 mixturecloud.com
 mlbfan.org
 mmafan.biz
@@ -1718,6 +1733,7 @@ moonangel.com
 mooo.com
 mooo.info
 morganisageek.org
+moy.kr
 mp3.cr
 mrbasic.com
 mrbonus.com
@@ -1753,6 +1769,7 @@ mybb.pw
 myblogvoice.com
 mybluehost.me
 mybluehostin.me
+myclickfunnels.com
 mycompany.tv
 mycpanel.rs
 mydad.info
@@ -1796,6 +1813,7 @@ mypi.co
 mypicture.info
 mypop3.net
 mypop3.org
+myportfolio.com
 mypressonline.com
 mypsx.net
 myq-see.com
@@ -1811,6 +1829,7 @@ mystrikingly.com
 mytempdir.com
 myvnc.com
 mywebcommunity.org
+mywebsitetransfer.com
 mywebworld.info
 mywire.org
 mywww.biz
@@ -1829,6 +1848,7 @@ natrofa.com
 ndcg.com
 neat-url.com
 neibu.911s5.net
+neocities.org
 neptunproxies.com
 nerdcamp.net
 nerdpol.ovh
@@ -1882,7 +1902,6 @@ noipdns.com
 noipdns.net
 noipfreedns.com
 noiptos.com
-nokojp.shop
 notici.as
 novamov.com
 novgaz-rzn.ru
@@ -1911,6 +1930,7 @@ nut.cc
 nx.tc
 nyc.mn
 o-f.com
+o-link.top
 o-r.kr
 o.gp
 ocry.com
@@ -1931,7 +1951,6 @@ on-fleek.app
 on-the-web.tv
 on.gp
 on.lc
-onaiappbuilder.com
 one4u.0lx.net
 onedumb.com
 onepage.website
@@ -1942,7 +1961,6 @@ online.cr
 online.gp
 online.ly
 online.tc
-onlineweb.shop
 onlinewebshop.net
 only4u.eu
 onmbl.com
@@ -1961,7 +1979,9 @@ organiccrap.com
 orgfree.com
 orgsites.com
 orskkino.ru
+os.md
 otzo.com
+oundhertobeconsist.org
 ourhobby.com
 own-free-website.com
 ownip.net
@@ -2034,6 +2054,7 @@ portal.lc
 portfwd.com
 portmap.host
 portrelay.com
+pory.app
 possessed.us
 pp.ua
 prettyweak.com
@@ -2115,6 +2136,7 @@ recruitment7.com
 recyclesolutionsllc.com
 redirectme.net
 redirme.com
+regruhosting.ru
 reijn.org
 remotecam.nu
 reodev.com
@@ -2160,6 +2182,7 @@ sa.com
 sa.gp
 sandmeiers.ch
 sannon-stamm.com
+santuy.me
 saves-the-whales.com
 sc.link
 scay.net
@@ -2272,6 +2295,7 @@ silksky.com
 simple-url.com
 simplecharity.com
 sino.tw
+site44.com
 sitebeat.crazydomains.com
 sitelutions.com
 sitepalace.com
@@ -2294,6 +2318,7 @@ sms.cr
 smsu.io
 snap2.info
 sne.jp
+snifferip.com
 soccerstreamingvpn.com
 social-networking.me
 socialadhesion.com
@@ -2407,7 +2432,6 @@ temporary-demo.site
 temporary.site
 tentbuildingservices.eu
 test.lc
-testingnow.me
 texasdollies.com
 tftpd.net
 th.gp
@@ -2426,6 +2450,7 @@ theworkpc.com
 thingsnewandused.com
 thruhere.net
 tiiny.io
+tiiny.site
 tinylink.in
 tinyrealm.com
 tinyupload.com
@@ -2433,6 +2458,7 @@ tinyurl.ph
 tld.cc
 tlsn.io
 tmpfiles.org
+tmweb.ru
 to.lk
 tobuy.us
 toh.info
@@ -2458,6 +2484,7 @@ trickip.net
 trickip.org
 trieditmyself.com
 trim.one
+tripod.com
 tru.io
 truthvid.com
 trycloudflare.com
@@ -2479,7 +2506,6 @@ tzo.com
 u.gp
 ua.gp
 ubpages.com
-ucoz.com
 ucoz.ru
 ucvradio.cl
 udp64.de
@@ -2505,6 +2531,7 @@ unesa.me
 unibutton.com
 unitedhardwood.com
 unknownproxies.com
+unl.one
 unusualperson.com
 uploadbox.com
 uploadbuzz.cc
@@ -2521,6 +2548,7 @@ url.usacomment.com
 url1.io
 urlaub.lc
 urle.me
+urlto.me
 urlyte.com
 urown.cloud
 us.ci
@@ -2558,6 +2586,7 @@ venez.net
 verifypass.pw
 verkniffen.de
 verymad.net
+via0.com
 viamisoftware.com
 vicp.cc
 vicp.net
@@ -2587,18 +2616,19 @@ vpnx.nl
 vr.lt
 vxe6.net
 vz.lc
+w0of-woof.com
 w3s.link
 w3spaces.com
 wakingmoon.com
 wan64.de
 wanip.ch
 wapka.club
-wapka.co
 wapka.site
 wapka.store
 wapka.top
 wapka.website
 warp9computers.com
+wavesnetwork.dev
 web-chat.eu
 web-clan.de
 web.gg
@@ -2616,8 +2646,8 @@ webhop.info
 webhop.me
 webhop.net
 webhop.org
+weblium.site
 webn.cc
-webnode.com.co
 webnode.com.pt
 webobo.com
 webok.net
@@ -2718,7 +2748,6 @@ yolasite.com
 you.lc
 youdontcare.com
 youpc.ro
-yourdomain.com
 yourspecialtee.com
 yourtrap.com
 yovip.net
