@@ -2,8 +2,8 @@
 # Description: Microsoft data collection from Windows and Office. Windows Update and Office keep working.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-14 10:24 UTC
-# Entries: 398
+# Last modified: 2026-11-21 11:00 UTC
+# Entries: 395
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Native Tracker: Windows/Office: https://github.com/hagezi/dns-blocklists
@@ -32,7 +32,6 @@
 0.0.0.0 adserver.bing.com
 0.0.0.0 adstore.response.gcp.eastus.trafficmanager.net
 0.0.0.0 adsyndication.msn.com
-0.0.0.0 adsyndication.msn.com.nsatc.net
 0.0.0.0 advertising.jp.msn.com
 0.0.0.0 advertising.microsoft.com
 0.0.0.0 agps-location-livenet.trafficmanager.net
@@ -45,7 +44,6 @@
 0.0.0.0 analytics.pstnhub.microsoft.com
 0.0.0.0 analytics.trafficmanager.net
 0.0.0.0 analyticsehnwe.servicebus.windows.net
-0.0.0.0 analyticsiot-prod-mobileapps-ehn.servicebus.windows.net
 0.0.0.0 analyticspixel.microsoft.com
 0.0.0.0 api.edgeoffer.microsoft.com
 0.0.0.0 applicationinsights.azure.com
@@ -161,6 +159,7 @@
 0.0.0.0 eurppc-powerpoint-telemetry.officeapps.live.com
 0.0.0.0 eurppc-word-telemetry.officeapps.live.com
 0.0.0.0 events-sandbox.data.microsoft.com
+0.0.0.0 events-sandbox.data.msn.cn
 0.0.0.0 events-sandbox.data.msn.com
 0.0.0.0 events.data.microsoft.com
 0.0.0.0 events.data.msn.cn
@@ -188,7 +187,7 @@
 0.0.0.0 hk-tracker.trafficmanager.net
 0.0.0.0 hme-uat-loganalytics-namespace.servicebus.windows.net
 0.0.0.0 i1.services.social.microsoft.com
-0.0.0.0 icmskillevents.trafficmanager.net
+0.0.0.0 identity.nel.measure.office.net.intern.schreinereistumpf.de
 0.0.0.0 ieonline.microsoft.com
 0.0.0.0 in.appcenter.ms
 0.0.0.0 in.applicationinsights.azure.cn
@@ -248,6 +247,7 @@
 0.0.0.0 partnerfraudevents.trafficmanager.net
 0.0.0.0 pgtbr1-excel-telemetry-vip.officeapps.live.com
 0.0.0.0 pgtbr2-excel-telemetry-vip.officeapps.live.com
+0.0.0.0 pgtca1-powerpoint-telemetry-vip.officeapps.live.com
 0.0.0.0 pgteu1-excel-telemetry-vip.officeapps.live.com
 0.0.0.0 pgteu1-powerpoint-telemetry-vip.officeapps.live.com
 0.0.0.0 pgteu1-word-telemetry-vip.officeapps.live.com
@@ -261,8 +261,8 @@
 0.0.0.0 pgteu4-powerpoint-telemetry-vip.officeapps.live.com
 0.0.0.0 pgteu4-word-telemetry-vip.officeapps.live.com
 0.0.0.0 pgteu5-excel-telemetry-vip.officeapps.live.com
-0.0.0.0 pgteu5-powerpoint-telemetry-vip.officeapps.live.com
 0.0.0.0 pgteu5-word-telemetry-vip.officeapps.live.com
+0.0.0.0 pgtmx1-excel-telemetry-vip.officeapps.live.com
 0.0.0.0 pgtus1-excel-telemetry-vip.officeapps.live.com
 0.0.0.0 pgtus1-powerpoint-telemetry-vip.officeapps.live.com
 0.0.0.0 pgtus1-word-telemetry-vip.officeapps.live.com
@@ -348,13 +348,11 @@
 0.0.0.0 statsfe2.ws.microsoft.com
 0.0.0.0 stjjp.msn.com
 0.0.0.0 swiftanalyticsprod.servicebus.windows.net
-0.0.0.0 t-ring-fallback-s2.msedge.net
 0.0.0.0 t-ring-fallback.msedge.net
 0.0.0.0 t-ring-fallbacks1.msedge.net
 0.0.0.0 t-ring-s2.msedge.net
 0.0.0.0 t-ring-trafficshield.msedge.net
 0.0.0.0 t-ring.msedge.net
-0.0.0.0 t-s2-ring.msedge.net
 0.0.0.0 teams-events-data.trafficmanager.net
 0.0.0.0 telecommandsvc.microsoft.com
 0.0.0.0 telem-edge.smartscreen.microsoft.com
@@ -377,7 +375,6 @@
 0.0.0.0 udc.msn.com
 0.0.0.0 ukc-onenote-telemetry.officeapps.live.com
 0.0.0.0 ukc-visio-telemetry.officeapps.live.com
-0.0.0.0 us-mesh-events-data-leafs.trafficmanager.net
 0.0.0.0 us1-excel-telemetry.officeapps.live.com
 0.0.0.0 us1-powerpoint-telemetry.officeapps.live.com
 0.0.0.0 us1-word-telemetry.officeapps.live.com

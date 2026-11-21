@@ -3,8 +3,8 @@
 ! Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-14 10:24 UTC
-! Entries: 1486
+! Last modified: 2026-11-21 11:00 UTC
+! Entries: 1485
 !
 ! Built from these sources (see their licenses):
 !   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -537,6 +537,7 @@
 ||et-rdx2-lgtvsdp-com.aws-prd.net^
 ||et.nextlgsdp.com^
 ||eu7-info-lgsmartad-com.aws-prd.net^
+||eu7-rdx2-lgtvsdp-com.aws-prd.net^
 ||event-tracking.samsung.com^
 ||events.app-performance.music.amazon.dev^
 ||events.cid.samba.tv^
@@ -558,7 +559,6 @@
 ||fls-cn.amazon-adsystem.com^
 ||fls-cn.amazon.cn^
 ||fls-cn.amazon.com^
-||fls-eu.amazon-adsystem.com^
 ||fls-eu.amazon.ae^
 ||fls-eu.amazon.co.uk^
 ||fls-eu.amazon.com^
@@ -575,12 +575,10 @@
 ||fls-eu.amazon.sa^
 ||fls-eu.amazon.se^
 ||fls-fe-opf.amazon.com^
-||fls-fe.amazon-adsystem.com^
 ||fls-fe.amazon.co.jp^
 ||fls-fe.amazon.com^
 ||fls-fe.amazon.com.au^
 ||fls-fe.amazon.sg^
-||fls-na.amazon-adsystem.com^
 ||fls-na.amazon.ca^
 ||fls-na.amazon.com^
 ||fls-na.amazon.com.br^
@@ -1246,6 +1244,7 @@
 ||sponsored-ads-eu.amazon.pl^
 ||sponsored-ads-eu.amazon.sa^
 ||sponsored-ads-eu.amazon.se^
+||sponsored-ads-euc-1.amazon-adsystem.com^
 ||sponsored-ads-fe.amazon-adsystem.com^
 ||sponsored-ads-na.amazon-adsystem.com^
 ||sponsored-ads.amazon.ae^

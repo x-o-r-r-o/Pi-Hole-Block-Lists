@@ -2,8 +2,8 @@
 # Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-14 10:24 UTC
-# Entries: 1614
+# Last modified: 2026-11-21 11:00 UTC
+# Entries: 1613
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -575,6 +575,7 @@
 0.0.0.0 et-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 et.nextlgsdp.com
 0.0.0.0 eu7-info-lgsmartad-com.aws-prd.net
+0.0.0.0 eu7-rdx2-lgtvsdp-com.aws-prd.net
 0.0.0.0 event-tracking.samsung.com
 0.0.0.0 events.app-performance.music.amazon.dev
 0.0.0.0 events.cid.samba.tv
@@ -598,7 +599,6 @@
 0.0.0.0 fls-cn.amazon-adsystem.com
 0.0.0.0 fls-cn.amazon.cn
 0.0.0.0 fls-cn.amazon.com
-0.0.0.0 fls-eu.amazon-adsystem.com
 0.0.0.0 fls-eu.amazon.ae
 0.0.0.0 fls-eu.amazon.co.uk
 0.0.0.0 fls-eu.amazon.com
@@ -615,12 +615,10 @@
 0.0.0.0 fls-eu.amazon.sa
 0.0.0.0 fls-eu.amazon.se
 0.0.0.0 fls-fe-opf.amazon.com
-0.0.0.0 fls-fe.amazon-adsystem.com
 0.0.0.0 fls-fe.amazon.co.jp
 0.0.0.0 fls-fe.amazon.com
 0.0.0.0 fls-fe.amazon.com.au
 0.0.0.0 fls-fe.amazon.sg
-0.0.0.0 fls-na.amazon-adsystem.com
 0.0.0.0 fls-na.amazon.ca
 0.0.0.0 fls-na.amazon.com
 0.0.0.0 fls-na.amazon.com.br
@@ -1323,6 +1321,7 @@
 0.0.0.0 sponsored-ads-eu.amazon.pl
 0.0.0.0 sponsored-ads-eu.amazon.sa
 0.0.0.0 sponsored-ads-eu.amazon.se
+0.0.0.0 sponsored-ads-euc-1.amazon-adsystem.com
 0.0.0.0 sponsored-ads-fe.amazon-adsystem.com
 0.0.0.0 sponsored-ads-na.amazon-adsystem.com
 0.0.0.0 sponsored-ads.amazon.ae

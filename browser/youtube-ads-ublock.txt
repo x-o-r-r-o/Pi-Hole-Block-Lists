@@ -3,7 +3,7 @@
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
 ! License: GPL-3.0 (same as the source lists)
 ! Expires: 1 day
-! Last modified: 2026-11-20 11:39 UTC
+! Last modified: 2026-11-21 11:02 UTC
 ! Entries: 77
 
 *_ad_$media,domain=youtube.com,3p
@@ -63,7 +63,7 @@ m.youtube.com,www.youtube.com,www.youtube-nocookie.com##+js(json-prune-fetch-res
 www.youtube.com##+js(json-prune-xhr-response, adPlacements adSlots playerResponse.adPlacements playerResponse.adSlots [].playerResponse.adPlacements [].playerResponse.adSlots, , propsToMatch, /\/player(?:\?.+)?$/)
 !#if !cap_html_filtering
 www.youtube.com##+js(trusted-rpfr, '"adSlots"', '"no_ads"', /^\W+$/)
-www.youtube.com##+js(rmnt, script, window\,"fetch")
+www.youtube.com##+js(rmnt, script, 'window,"fetch"')
 !#endif
 !#if cap_html_filtering
 ||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adPlacements"/"no_ads"/

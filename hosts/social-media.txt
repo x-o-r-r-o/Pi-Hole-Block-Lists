@@ -2,8 +2,8 @@
 # Description: Social networks: Facebook, Instagram, TikTok, X/Twitter, Snapchat, Reddit, LinkedIn, Pinterest, Tumblr, Threads, Bluesky, Discord and more. WhatsApp is not blocked.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-14 10:24 UTC
-# Entries: 11743
+# Last modified: 2026-11-21 11:00 UTC
+# Entries: 11793
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Social Networks (WhatsApp kept working): https://github.com/hagezi/dns-blocklists
@@ -18,6 +18,8 @@
 0.0.0.0 00wd00.com
 0.0.0.0 0ff.space
 0.0.0.0 0fff.top
+0.0.0.0 0w0.kr
+0.0.0.0 0x15lab.net
 0.0.0.0 0x3c.pl
 0.0.0.0 0xdd.org.ru
 0.0.0.0 1-act.channel.facebook.com
@@ -53,6 +55,7 @@
 0.0.0.0 316room.com
 0.0.0.0 333thats33s.cc
 0.0.0.0 338338.xyz
+0.0.0.0 343max.de
 0.0.0.0 36.media.tumblr.com
 0.0.0.0 37.media.tumblr.com
 0.0.0.0 38.media.tumblr.com
@@ -450,10 +453,10 @@
 0.0.0.0 affiliate.tiktok.com
 0.0.0.0 africa.megalopolis.social
 0.0.0.0 after1ife.rip
-0.0.0.0 afternoonauthor.online
 0.0.0.0 afterspace.rocks
 0.0.0.0 agendo.ch
 0.0.0.0 aggregatet.org
+0.0.0.0 agi.cd
 0.0.0.0 agilealliance.social
 0.0.0.0 agora-eu.com
 0.0.0.0 agora-thinktanks.social
@@ -490,7 +493,7 @@
 0.0.0.0 akko.lightnovel-dungeon.de
 0.0.0.0 akkoma.ascyltos.social
 0.0.0.0 akkoma.flyerdonut.net
-0.0.0.0 akkoma.lidny.org
+0.0.0.0 akkoma.moemoekyun.top
 0.0.0.0 akkoma.noellabo.jp
 0.0.0.0 akkoma.tomkrizan.com
 0.0.0.0 akolades.com
@@ -506,6 +509,7 @@
 0.0.0.0 alfredadler.social
 0.0.0.0 algar.m.facebook.com
 0.0.0.0 algufr.com
+0.0.0.0 alicia.dpdns.org
 0.0.0.0 alico.nexus
 0.0.0.0 alicorn.space
 0.0.0.0 alien.insurrection.tech
@@ -529,7 +533,6 @@
 0.0.0.0 alpha-shv-09-frc1.facebook.com
 0.0.0.0 alpha.vvv.facebook.com
 0.0.0.0 alquimidia.cc
-0.0.0.0 alt-f4.sk
 0.0.0.0 alteholz.social
 0.0.0.0 altgag.net
 0.0.0.0 altmedia.house
@@ -538,7 +541,6 @@
 0.0.0.0 amemv.com
 0.0.0.0 amicale.net
 0.0.0.0 amigos.family
-0.0.0.0 amik.eco
 0.0.0.0 aminoapps.com
 0.0.0.0 amok.recoil.org
 0.0.0.0 amormor.art
@@ -565,6 +567,7 @@
 0.0.0.0 anarshy.social
 0.0.0.0 and.farewell.my
 0.0.0.0 anda.lu
+0.0.0.0 andamunda.alda.ms
 0.0.0.0 androidbook2020.keiji.io
 0.0.0.0 androiddev.social
 0.0.0.0 anekdot.ru
@@ -580,7 +583,6 @@
 0.0.0.0 anothersuper.social
 0.0.0.0 antani.cyou
 0.0.0.0 antani.pm
-0.0.0.0 antarian.social
 0.0.0.0 anti-social.online
 0.0.0.0 anticapitalist.party
 0.0.0.0 anticapitalista.it
@@ -687,7 +689,6 @@
 0.0.0.0 artcrimes.gay
 0.0.0.0 arthfach.com
 0.0.0.0 arthropod.social
-0.0.0.0 arti.stic.earth
 0.0.0.0 artistalley.space
 0.0.0.0 artists.tiktok.com
 0.0.0.0 artitube.artifaille.fr
@@ -702,6 +703,7 @@
 0.0.0.0 ascy.mooo.com
 0.0.0.0 ash1.fbcdn.net
 0.0.0.0 ashita.club
+0.0.0.0 ashlande.rs
 0.0.0.0 asia-southeast1-gcp.api.snapchat.com
 0.0.0.0 asistenta.linkedin.com
 0.0.0.0 askfacebook.net
@@ -728,6 +730,7 @@
 0.0.0.0 at.linkedin.com
 0.0.0.0 at.pinterest.com
 0.0.0.0 atdmt2.com
+0.0.0.0 atera.ddns.net
 0.0.0.0 atlas-shv-01-prn2.facebook.com
 0.0.0.0 atlas-shv-04-lla1.facebook.com
 0.0.0.0 atlas-shv-05-ash3.facebook.com
@@ -814,6 +817,7 @@
 0.0.0.0 b.static.ak.facebook.com
 0.0.0.0 b.static.ak.fbcdn.net
 0.0.0.0 b.thumbs.redditmedia.com
+0.0.0.0 b612.icu
 0.0.0.0 b612.me
 0.0.0.0 ba.linkedin.com
 0.0.0.0 babblebox.net
@@ -823,7 +827,6 @@
 0.0.0.0 backend.newsmast.org
 0.0.0.0 baconworks.social
 0.0.0.0 bad.posts.gallery
-0.0.0.0 badatbeing.social
 0.0.0.0 badge.facebook.com
 0.0.0.0 badges.instagram.com
 0.0.0.0 badoo.com
@@ -848,10 +851,12 @@
 0.0.0.0 bark.lgbt
 0.0.0.0 bark.video
 0.0.0.0 barkclub.xyz
+0.0.0.0 base.lc
 0.0.0.0 basilisk.gallery
 0.0.0.0 bastodon.bida.im
 0.0.0.0 batchats.net
 0.0.0.0 bath.social
+0.0.0.0 batyrbloc.org
 0.0.0.0 bauphysik.social
 0.0.0.0 bayern-online.news
 0.0.0.0 bayerwald.social
@@ -892,12 +897,13 @@
 0.0.0.0 beppo.online
 0.0.0.0 bequeme-couch.de
 0.0.0.0 beratna.net
+0.0.0.0 bergamot.social
 0.0.0.0 berlin.social
-0.0.0.0 bermus.dk
 0.0.0.0 bertha.social
 0.0.0.0 bertshouse.social
 0.0.0.0 best-friends.chat
 0.0.0.0 besties.com
+0.0.0.0 besties.house
 0.0.0.0 beta-chat-01-05-ash3.facebook.com
 0.0.0.0 beta-shv-03-atn1.facebook.com
 0.0.0.0 beta-shv-03-lla1.facebook.com
@@ -915,6 +921,7 @@
 0.0.0.0 beyermatthias.de
 0.0.0.0 beyondgender.social
 0.0.0.0 beyondwatts.social
+0.0.0.0 bfed.uk
 0.0.0.0 bg-bg.facebook.com
 0.0.0.0 bg.linkedin.com
 0.0.0.0 bgempire.net
@@ -944,7 +951,6 @@
 0.0.0.0 birdbutt.com
 0.0.0.0 birdon.social
 0.0.0.0 birds.town
-0.0.0.0 biscuit.town
 0.0.0.0 bitbang.social
 0.0.0.0 bitcointv.com
 0.0.0.0 bitlyfool.us
@@ -959,7 +965,6 @@
 0.0.0.0 blackshuck.net
 0.0.0.0 blacktwitter.io
 0.0.0.0 blahaj.love
-0.0.0.0 blahaj.social
 0.0.0.0 blahaj.zone
 0.0.0.0 blasmusik.social
 0.0.0.0 blat.at
@@ -972,7 +977,6 @@
 0.0.0.0 blob.cat
 0.0.0.0 blobfox.es
 0.0.0.0 blockchained.world
-0.0.0.0 blog.1296000.xyz
 0.0.0.0 blog.adieuinternet.com
 0.0.0.0 blog.adjoly.fr
 0.0.0.0 blog.allpurposem.at
@@ -992,7 +996,6 @@
 0.0.0.0 blog.de-lacom.be
 0.0.0.0 blog.demorose.me
 0.0.0.0 blog.djiko.net
-0.0.0.0 blog.dtth.ch
 0.0.0.0 blog.dumango.com
 0.0.0.0 blog.durehed.se
 0.0.0.0 blog.dwickham.me.uk
@@ -1021,7 +1024,9 @@
 0.0.0.0 blog.kobold-cave.eu
 0.0.0.0 blog.kuba-orlik.name
 0.0.0.0 blog.leadingzeroes.com
+0.0.0.0 blog.liberta.vip
 0.0.0.0 blog.librescrum.org
+0.0.0.0 blog.lindegard.xyz
 0.0.0.0 blog.linkedin.com
 0.0.0.0 blog.luismarques.me
 0.0.0.0 blog.mapsupport.club
@@ -1029,15 +1034,16 @@
 0.0.0.0 blog.meghadeep.com
 0.0.0.0 blog.michaeldileo.org
 0.0.0.0 blog.morschel.org
-0.0.0.0 blog.nachitima.com
 0.0.0.0 blog.nanoshinono.me
 0.0.0.0 blog.niklas-meinzer.de
 0.0.0.0 blog.nixgoat.me
 0.0.0.0 blog.ocellaroid.net
 0.0.0.0 blog.palermo.nohost.me
+0.0.0.0 blog.pasargada.digital
 0.0.0.0 blog.philipphoefer.de
 0.0.0.0 blog.philsas.one
 0.0.0.0 blog.pinterest.com
+0.0.0.0 blog.pnpde.social
 0.0.0.0 blog.potetserver.no
 0.0.0.0 blog.radmin.live
 0.0.0.0 blog.raindog.de
@@ -1088,7 +1094,6 @@
 0.0.0.0 bol.social
 0.0.0.0 bolha.blog
 0.0.0.0 bolha.forum
-0.0.0.0 bolha.photos
 0.0.0.0 bolha.review
 0.0.0.0 bolha.tube
 0.0.0.0 bolha.us
@@ -1105,17 +1110,17 @@
 0.0.0.0 books.gayfr.online
 0.0.0.0 books.ihatebeinga.live
 0.0.0.0 books.mxhdr.net
+0.0.0.0 books.rollnotice.com
 0.0.0.0 books.superawesomecorp.space
 0.0.0.0 bookstagram.com
 0.0.0.0 bookstodon.com
 0.0.0.0 bookstodon.es
 0.0.0.0 booktoot.club
 0.0.0.0 bookwor.ms
-0.0.0.0 bookwyr.me
+0.0.0.0 bookwyrm.cincodenada.com
 0.0.0.0 bookwyrm.de
 0.0.0.0 bookwyrm.eble.name
 0.0.0.0 bookwyrm.it
-0.0.0.0 bookwyrm.nimbus-moreti.de
 0.0.0.0 bookwyrm.rollenspiel.monster
 0.0.0.0 bookwyrm.world
 0.0.0.0 booping.synth.download
@@ -1166,6 +1171,7 @@
 0.0.0.0 brotkru.me
 0.0.0.0 browseusers.myspace.com
 0.0.0.0 bs-ba.facebook.com
+0.0.0.0 bsdlab.au
 0.0.0.0 bskey.social
 0.0.0.0 bsky-relay.c.theo.io
 0.0.0.0 bsky.app
@@ -1257,6 +1263,7 @@
 0.0.0.0 camaapp.camfed.org
 0.0.0.0 camarena.cc
 0.0.0.0 camp.smolnet.org
+0.0.0.0 campduffel.social
 0.0.0.0 campfyre.nickwebster.dev
 0.0.0.0 canal.facil.services
 0.0.0.0 canard.tube
@@ -1281,10 +1288,11 @@
 0.0.0.0 catcatnya.com
 0.0.0.0 catgirls.technology
 0.0.0.0 cathode.church
+0.0.0.0 catlogic.me
+0.0.0.0 catpost.link
 0.0.0.0 catsocial.fyi
 0.0.0.0 catwithaclari.net
 0.0.0.0 caw.corbode.com
-0.0.0.0 cb.ameuma.net
 0.0.0.0 cbr.social
 0.0.0.0 ccamatil.m.facebook.com
 0.0.0.0 cccwi.social
@@ -1328,7 +1336,6 @@
 0.0.0.0 chaosphere.hostdon.jp
 0.0.0.0 char.lissocial.com
 0.0.0.0 charisskey.com
-0.0.0.0 charities.place
 0.0.0.0 chaskey.net
 0.0.0.0 chat-e2ee-ig-p42.c10r.facebook.com
 0.0.0.0 chat-e2ee-ig-p42.fallback.c10r.facebook.com
@@ -1349,13 +1356,11 @@
 0.0.0.0 cheekibreeki.express
 0.0.0.0 chemisskey.com
 0.0.0.0 chi.st
-0.0.0.0 chiacchiere.rionecastello.it
 0.0.0.0 chickstagram.com
 0.0.0.0 childcare.hostdon.ne.jp
 0.0.0.0 chilemasto.casa
 0.0.0.0 chillcorner.de
 0.0.0.0 china-facebook.com
-0.0.0.0 chiplak.com
 0.0.0.0 chiranote.com
 0.0.0.0 chirp.enworld.org
 0.0.0.0 chirpi.de
@@ -1376,6 +1381,7 @@
 0.0.0.0 circus.town
 0.0.0.0 cirno9.mynetgear.com
 0.0.0.0 citydweller.social
+0.0.0.0 civicohub.nl
 0.0.0.0 civilloquy.com
 0.0.0.0 cl.linkedin.com
 0.0.0.0 cl.pinterest.com
@@ -1383,6 +1389,7 @@
 0.0.0.0 clanna.dev
 0.0.0.0 clar.ke
 0.0.0.0 claristdon.link
+0.0.0.0 class.lunanova.dev
 0.0.0.0 classe.iro.umontreal.ca
 0.0.0.0 classifieds.myspace.com
 0.0.0.0 click-url.com
@@ -1471,6 +1478,7 @@
 0.0.0.0 content.linkedin.com
 0.0.0.0 content.twitter.com
 0.0.0.0 contenttechtodon.org
+0.0.0.0 conversafiada.net
 0.0.0.0 convo.casa
 0.0.0.0 cookiex.ngd.yahoo.com
 0.0.0.0 coolkids.house
@@ -1489,6 +1497,7 @@
 0.0.0.0 correlation.zone
 0.0.0.0 corteximplant.com
 0.0.0.0 cosmos.social
+0.0.0.0 cosmosenso.site
 0.0.0.0 cosocial.ca
 0.0.0.0 costodon.social
 0.0.0.0 cosy.inkling.social
@@ -1498,6 +1507,7 @@
 0.0.0.0 covelline.social
 0.0.0.0 coywolf.social
 0.0.0.0 cozy-space.blue
+0.0.0.0 cozyver.se
 0.0.0.0 cr.linkedin.com
 0.0.0.0 craba.cab
 0.0.0.0 crabsin.space
@@ -1518,11 +1528,15 @@
 0.0.0.0 creators.facebook.com
 0.0.0.0 creators.instagram.com
 0.0.0.0 creators.social
+0.0.0.0 creature.social
 0.0.0.0 creemoseducacioninclusiva.uma.es
+0.0.0.0 cremebrul.ee
+0.0.0.0 cress.space
 0.0.0.0 crib.social
 0.0.0.0 crispsandwi.ch
 0.0.0.0 critter.cafe
 0.0.0.0 critters.gay
+0.0.0.0 croak.44944.eu
 0.0.0.0 crooklyn.social
 0.0.0.0 crosstalk.tech
 0.0.0.0 crowdtangle.com
@@ -1539,6 +1553,7 @@
 0.0.0.0 cstool.www.linkedin.com
 0.0.0.0 ct-m-fbx.fbsbx.com
 0.0.0.0 ct.pinterest.com
+0.0.0.0 cthulhuallspark.com
 0.0.0.0 cubhub.social
 0.0.0.0 cubnuuy.net
 0.0.0.0 cuddly.pics
@@ -1553,6 +1568,7 @@
 0.0.0.0 cutie.city
 0.0.0.0 cuties.cloud
 0.0.0.0 cuties.social
+0.0.0.0 cuties.zip
 0.0.0.0 cville.online
 0.0.0.0 cvjm.social
 0.0.0.0 cwb.social
@@ -1636,7 +1652,6 @@
 0.0.0.0 deen.social
 0.0.0.0 deepspace.social
 0.0.0.0 defcon.social
-0.0.0.0 deff.no
 0.0.0.0 degrowth.social
 0.0.0.0 democracybook.club
 0.0.0.0 demtech.global
@@ -1674,7 +1689,6 @@
 0.0.0.0 developers.tiktok.com
 0.0.0.0 devhub.social
 0.0.0.0 devianze.city
-0.0.0.0 devil-children-alitaso.com
 0.0.0.0 devmi1.oyasumi.dev
 0.0.0.0 devs.live
 0.0.0.0 dewp.space
@@ -1779,6 +1793,7 @@
 0.0.0.0 does.social
 0.0.0.0 dog-pound.de
 0.0.0.0 dogs.chat
+0.0.0.0 dollars.koromo.moe
 0.0.0.0 domi.love
 0.0.0.0 don.dondododon.com
 0.0.0.0 don.gomasy.jp
@@ -1797,6 +1812,7 @@
 0.0.0.0 dosei.fun
 0.0.0.0 dosgame.club
 0.0.0.0 dostar.moe
+0.0.0.0 dotart.blog
 0.0.0.0 dotfacebook.com
 0.0.0.0 dotfacebook.net
 0.0.0.0 dotgr.id
@@ -1837,20 +1853,23 @@
 0.0.0.0 drk.media
 0.0.0.0 drk.network
 0.0.0.0 drk.st
-0.0.0.0 drobny.blog
 0.0.0.0 drosophila.social
 0.0.0.0 drupal.community
 0.0.0.0 dtf.ru
 0.0.0.0 dtp-mstdn.jp
+0.0.0.0 dtth.ch
+0.0.0.0 dtube.net
 0.0.0.0 du.capricom.info
 0.0.0.0 dualstack.pinterest.map.fastly.net
 0.0.0.0 dualstack.twimg.twitter.map.fastly.net
 0.0.0.0 dualstack.video.twitter.map.fastly.net
 0.0.0.0 duck.haus
+0.0.0.0 duckduckpigeon.co.uk
 0.0.0.0 dudelike.wtf
 0.0.0.0 dudo.social
 0.0.0.0 duebelwein.de
 0.0.0.0 duk.space
+0.0.0.0 duke.social
 0.0.0.0 dullsters.net
 0.0.0.0 dumbo.e-kobi.com
 0.0.0.0 dumpster.social
@@ -1861,6 +1880,7 @@
 0.0.0.0 duuckzz.duckdns.org
 0.0.0.0 dvd.chat
 0.0.0.0 dykes.ca
+0.0.0.0 dynamic.land
 0.0.0.0 dysfunction.social
 0.0.0.0 dz.linkedin.com
 0.0.0.0 dzen.ru
@@ -1869,6 +1889,7 @@
 0.0.0.0 e.reddit.com
 0.0.0.0 e.thumbs.redditmedia.com
 0.0.0.0 e21.kyent.net
+0.0.0.0 e4le.me
 0.0.0.0 ea.twimg.com
 0.0.0.0 eamonn.org
 0.0.0.0 earth.law
@@ -1887,7 +1908,6 @@
 0.0.0.0 echoes.stolen.day
 0.0.0.0 echoingdusk.social
 0.0.0.0 ecoevo.social
-0.0.0.0 ecologie.social
 0.0.0.0 econgood.social
 0.0.0.0 economicgraph.linkedin.com
 0.0.0.0 econtwitter.net
@@ -2243,6 +2263,7 @@
 0.0.0.0 eksisozluk.com
 0.0.0.0 el-gr.facebook.com
 0.0.0.0 el5.net
+0.0.0.0 elbarri.online
 0.0.0.0 eldritch.cafe
 0.0.0.0 election.twitter.com
 0.0.0.0 elefant.social
@@ -2251,6 +2272,7 @@
 0.0.0.0 elephantelephantelephant.com
 0.0.0.0 eletusk.club
 0.0.0.0 elevenjpnxi.hostdon.ne.jp
+0.0.0.0 elion.club
 0.0.0.0 elizur.me
 0.0.0.0 elkjopnordic.m.facebook.com
 0.0.0.0 elltube.gr
@@ -2259,7 +2281,7 @@
 0.0.0.0 embed.reddit.com
 0.0.0.0 embed.tumblr.com
 0.0.0.0 embracing.space
-0.0.0.0 emmecola.it
+0.0.0.0 emmaus-koeln.de
 0.0.0.0 emoji.redditmedia.com
 0.0.0.0 emojisouko.xsns.jp
 0.0.0.0 empire.miyaco.moe
@@ -2290,7 +2312,6 @@
 0.0.0.0 entropysource.ru
 0.0.0.0 eon.social
 0.0.0.0 eorzea.social
-0.0.0.0 eostagram.com
 0.0.0.0 ep1.facebook.com
 0.0.0.0 ep2.facebook.com
 0.0.0.0 ep6.facebook.com
@@ -2325,12 +2346,12 @@
 0.0.0.0 esquite.mazorca.org
 0.0.0.0 esslingen.social
 0.0.0.0 est.social
-0.0.0.0 estradiol.city
 0.0.0.0 estrogen.cat
 0.0.0.0 estrogen.plus
 0.0.0.0 et-ee.facebook.com
 0.0.0.0 et.linkedin.com
 0.0.0.0 etalenta.social
+0.0.0.0 eter9.com
 0.0.0.0 etw.uk
 0.0.0.0 eu-west-1.dc.ads.linkedin.com
 0.0.0.0 eu.tiktokcdn.com
@@ -2340,7 +2361,6 @@
 0.0.0.0 europe.pub
 0.0.0.0 euskirchen.social
 0.0.0.0 eva.openjw.com
-0.0.0.0 evangelisch.video
 0.0.0.0 eventfrontier.com
 0.0.0.0 events.linkedin.com
 0.0.0.0 events.myspace.com
@@ -2355,7 +2375,6 @@
 0.0.0.0 exercise.cafe
 0.0.0.0 existiert.ch
 0.0.0.0 exitmusic.world
-0.0.0.0 exito.social
 0.0.0.0 exode.me
 0.0.0.0 exoria.pe.kr
 0.0.0.0 exp1.www.linkedin.com
@@ -2411,7 +2430,7 @@
 0.0.0.0 f-social.techtransthai.org
 0.0.0.0 f.c-cha.cc
 0.0.0.0 f.cz
-0.0.0.0 f.gp-net.de
+0.0.0.0 f.reun.de
 0.0.0.0 f.starshard.space
 0.0.0.0 f.thumbs.redditmedia.com
 0.0.0.0 f6eec677a80kdno4pyq-kxornjlf1521512613-sonar.xz.fbcdn.net
@@ -2423,6 +2442,7 @@
 0.0.0.0 faasbook.com
 0.0.0.0 fablab.social
 0.0.0.0 fabler.su
+0.0.0.0 fabrykajabo.li
 0.0.0.0 fabula.schizophreni.ca
 0.0.0.0 facbebook.com
 0.0.0.0 facbeok.com
@@ -2686,7 +2706,6 @@
 0.0.0.0 faeboook.com
 0.0.0.0 faecebok.com
 0.0.0.0 faesebook.com
-0.0.0.0 faf.photos
 0.0.0.0 faf.watch
 0.0.0.0 faf.wtf
 0.0.0.0 fafacebook.com
@@ -2710,6 +2729,8 @@
 0.0.0.0 fallsky.xsns.jp
 0.0.0.0 famichiki.jp
 0.0.0.0 family.englesprouts.com
+0.0.0.0 family.jmstevens.ca
+0.0.0.0 family.jonahlahona.com
 0.0.0.0 familycenter.instagram.com
 0.0.0.0 fanaticus.social
 0.0.0.0 fanboys.social
@@ -2784,6 +2805,7 @@
 0.0.0.0 fbinfer.com
 0.0.0.0 fbinnovation.com
 0.0.0.0 fbjs.facebook.com
+0.0.0.0 fbk.moe
 0.0.0.0 fblite-p1.c10r.facebook.com
 0.0.0.0 fblitho.com
 0.0.0.0 fbmarketing.com
@@ -2823,13 +2845,14 @@
 0.0.0.0 fecebook.net
 0.0.0.0 feceboox.com
 0.0.0.0 fececbook.com
+0.0.0.0 fed.bashinform.ru
 0.0.0.0 fed.dyne.org
 0.0.0.0 fed.fsub.de
 0.0.0.0 fed.identify.eu.org
 0.0.0.0 fed.mavzer.org
 0.0.0.0 feddit.cl
 0.0.0.0 feddit.dk
-0.0.0.0 feddit.in
+0.0.0.0 feddit.fr
 0.0.0.0 feddit.it
 0.0.0.0 feddit.nl
 0.0.0.0 feddit.nu
@@ -2837,6 +2860,7 @@
 0.0.0.0 feddit.org
 0.0.0.0 feddit.rocks
 0.0.0.0 feddit.uk
+0.0.0.0 feddyverse.com
 0.0.0.0 federate.social
 0.0.0.0 federated.glacier.dog
 0.0.0.0 federated.photos
@@ -2850,14 +2874,13 @@
 0.0.0.0 fedi.ars-cotidiana.eu
 0.0.0.0 fedi.at
 0.0.0.0 fedi.catto.garden
+0.0.0.0 fedi.chadthundercock.com
 0.0.0.0 fedi.computernewb.com
-0.0.0.0 fedi.copyleft.org
 0.0.0.0 fedi.dzombak.com
 0.0.0.0 fedi.eepycats.place
 0.0.0.0 fedi.enbyinsi.de
 0.0.0.0 fedi.engelise.online
 0.0.0.0 fedi.epicalert.xyz
-0.0.0.0 fedi.fabrykajabo.li
 0.0.0.0 fedi.flauschhaufen.jetzt
 0.0.0.0 fedi.fraw.st
 0.0.0.0 fedi.fyralabs.com
@@ -2874,6 +2897,7 @@
 0.0.0.0 fedi.mousey.world
 0.0.0.0 fedi.munir.tokyo
 0.0.0.0 fedi.notesbylex.com
+0.0.0.0 fedi.omada.cafe
 0.0.0.0 fedi.opendronemap.org
 0.0.0.0 fedi.pathsecho.quest
 0.0.0.0 fedi.pavluk.org
@@ -2889,6 +2913,7 @@
 0.0.0.0 fedi.swedish.fish
 0.0.0.0 fedi.tesaguri.club
 0.0.0.0 fedi.thechangebook.org
+0.0.0.0 fedi.tilde.green
 0.0.0.0 fedi.topaz.id.au
 0.0.0.0 fedi.turbofish.cc
 0.0.0.0 fedi.tyil.nl
@@ -2902,7 +2927,6 @@
 0.0.0.0 fedia.social
 0.0.0.0 fediblog.parleur.net
 0.0.0.0 fedibook.de
-0.0.0.0 fedibots.mldkyt.com
 0.0.0.0 fedidb.org
 0.0.0.0 fedifeed.net
 0.0.0.0 fediffusion.art
@@ -2921,12 +2945,10 @@
 0.0.0.0 fediscience.org
 0.0.0.0 fedisnap.com
 0.0.0.0 fedisocial.de
-0.0.0.0 feditown.com
 0.0.0.0 fediunam.site
 0.0.0.0 fediver.de
 0.0.0.0 fediverse.au
 0.0.0.0 fediverse.distantfuture.org
-0.0.0.0 fediverse.elbehnon.de
 0.0.0.0 fediverse.nicknisi.com
 0.0.0.0 fediverse.observer
 0.0.0.0 fediverse.science
@@ -2942,10 +2964,8 @@
 0.0.0.0 feels.moe
 0.0.0.0 felesitas.cloud
 0.0.0.0 fellies.social
-0.0.0.0 fem.elbarri.online
 0.0.0.0 fem.social
 0.0.0.0 femboy.enterprises
-0.0.0.0 femos.trobada.social
 0.0.0.0 fenmou.cyou
 0.0.0.0 feook.com
 0.0.0.0 ferabook.com
@@ -2971,6 +2991,7 @@
 0.0.0.0 fido.ebash.it
 0.0.0.0 fietkau.social
 0.0.0.0 fietser.social
+0.0.0.0 fika.grin.hu
 0.0.0.0 fikaverse.club
 0.0.0.0 file-explorers.club
 0.0.0.0 film.k-prod.fr
@@ -2979,6 +3000,7 @@
 0.0.0.0 findout.media
 0.0.0.0 findumon.de
 0.0.0.0 finndom.space
+0.0.0.0 firefish.zlendy.com
 0.0.0.0 firefox.twitter.com
 0.0.0.0 firehose3d.theo.io
 0.0.0.0 firekitten.social
@@ -3034,8 +3056,8 @@
 0.0.0.0 fo0bar.org
 0.0.0.0 focal.love
 0.0.0.0 fog.highspirits.games
+0.0.0.0 foggyminds.com
 0.0.0.0 folium-learning.social
-0.0.0.0 follow.schmaller.de
 0.0.0.0 foojay.social
 0.0.0.0 foolisholivia.gay
 0.0.0.0 forall.social
@@ -3046,13 +3068,13 @@
 0.0.0.0 foreveryou.ng
 0.0.0.0 forgi.social
 0.0.0.0 forms.linkedin.com
-0.0.0.0 formu1a.social
 0.0.0.0 foros.fediverso.gal
 0.0.0.0 forum.castellvirtual.com
 0.0.0.0 forum.guncadindex.com
 0.0.0.0 forum.jmklab.dev
 0.0.0.0 forum.myspace.com
 0.0.0.0 forum.storstad.net
+0.0.0.0 forume.social
 0.0.0.0 forums.rereading.space
 0.0.0.0 fosebook.com
 0.0.0.0 fosscad.io
@@ -3144,9 +3166,12 @@
 0.0.0.0 friendica.helvetet.eu
 0.0.0.0 friendica.kommune4.de
 0.0.0.0 friendica.me
+0.0.0.0 friendica.myportal.social
 0.0.0.0 friendica.namestaci.cz
+0.0.0.0 friendica.nz
 0.0.0.0 friendica.opensocial.space
 0.0.0.0 friendica.philipp.info
+0.0.0.0 friendica.rogueproject.org
 0.0.0.0 friendica.rollenspiel.monster
 0.0.0.0 friendica.world
 0.0.0.0 friends-g1.reins-no-misskey.com
@@ -3167,7 +3192,6 @@
 0.0.0.0 fscebook.com
 0.0.0.0 fsdv2-1.fna.fbcdn.net
 0.0.0.0 fsk.im
-0.0.0.0 fsmi.social
 0.0.0.0 fstab.sh
 0.0.0.0 fstube.net
 0.0.0.0 ftlv23-1.fna.fbcdn.net
@@ -3183,13 +3207,11 @@
 0.0.0.0 fundraising.social
 0.0.0.0 fundraisingwithfacebook.com
 0.0.0.0 funk.firobe.fr
-0.0.0.0 funkwhale.agapimou.top
 0.0.0.0 funkwhale.duckdns.org
 0.0.0.0 funkwhale.samtherapy.net
 0.0.0.0 funnyfacebook.org
 0.0.0.0 furca.top
 0.0.0.0 furnu.org
-0.0.0.0 furpark.kr
 0.0.0.0 furries.club
 0.0.0.0 furry.engineer
 0.0.0.0 furry.pm
@@ -3309,7 +3331,6 @@
 0.0.0.0 glebadeldharma.com
 0.0.0.0 glimpster.sk
 0.0.0.0 glitch.cat.family
-0.0.0.0 glitch.lgbt
 0.0.0.0 global.poe.live-video.net
 0.0.0.0 globalskywatch.social
 0.0.0.0 gloria.social
@@ -3318,7 +3339,6 @@
 0.0.0.0 gmajna.social
 0.0.0.0 gnulinux.social
 0.0.0.0 gnulinux.tube
-0.0.0.0 go.ontomy.tv
 0.0.0.0 go5.dev
 0.0.0.0 gob.m.facebook.com
 0.0.0.0 gochisou.dev
@@ -3337,7 +3357,6 @@
 0.0.0.0 goose.directory
 0.0.0.0 goredb.com
 0.0.0.0 gorone.xyz
-0.0.0.0 goto.midnightvalley.net
 0.0.0.0 govrequess.facebook.com
 0.0.0.0 govtech.m.facebook.com
 0.0.0.0 govtrequests.facebook.com
@@ -3376,6 +3395,7 @@
 0.0.0.0 gregtech.eu
 0.0.0.0 greifswald.lgbt
 0.0.0.0 grenzland.club
+0.0.0.0 griff.la
 0.0.0.0 grimoire.eu.org
 0.0.0.0 groomlakeroad.com
 0.0.0.0 groove.city
@@ -3397,10 +3417,10 @@
 0.0.0.0 gt.linkedin.com
 0.0.0.0 gts.bln41.de
 0.0.0.0 gts.byteoversea.net
-0.0.0.0 gts.sangeunahna.com
 0.0.0.0 gu.twimg.com
 0.0.0.0 guelph.social
 0.0.0.0 guerrill.art
+0.0.0.0 gugod.fr
 0.0.0.0 guida.linkedin.com
 0.0.0.0 guild.explorers.gay
 0.0.0.0 guild.pmdcollab.org
@@ -3412,7 +3432,6 @@
 0.0.0.0 gypso.fun
 0.0.0.0 gyutte.site
 0.0.0.0 h-ct-m-fbx.fbsbx.com.online-metrix.net
-0.0.0.0 h-net.social
 0.0.0.0 h.beta.facebook.com
 0.0.0.0 h.facebook.com
 0.0.0.0 h.kokuda.org
@@ -3433,6 +3452,7 @@
 0.0.0.0 hades.bar
 0.0.0.0 hai.z0ne.social
 0.0.0.0 hal9.ooo
+0.0.0.0 halcyon.neon.jp.net
 0.0.0.0 halo.nu
 0.0.0.0 ham.moe
 0.0.0.0 hameln.social
@@ -3447,6 +3467,7 @@
 0.0.0.0 happytobehe.re
 0.0.0.0 happytrpg.club
 0.0.0.0 hapyyr.com
+0.0.0.0 harbour.fedicate.org
 0.0.0.0 hardly.social
 0.0.0.0 hardpass.lol
 0.0.0.0 hardware.watch
@@ -3494,6 +3515,7 @@
 0.0.0.0 help.twitter.com
 0.0.0.0 helpos.ca
 0.0.0.0 helvede.net
+0.0.0.0 herbicide.fallcounty.omg.lol
 0.0.0.0 heretic.social
 0.0.0.0 hermes.twitch.tv
 0.0.0.0 herningrideklub.netscontent-a-ams.xx.fbcdn.net
@@ -3526,6 +3548,7 @@
 0.0.0.0 hinge.co
 0.0.0.0 hippotterystudio.com
 0.0.0.0 hiradai.space
+0.0.0.0 hiryu-yakiniku.hostdon.ne.jp
 0.0.0.0 hispagatos.space
 0.0.0.0 historiette.lokipropagand.art
 0.0.0.0 hitchtube.fr
@@ -3548,6 +3571,7 @@
 0.0.0.0 hol.ogra.ph
 0.0.0.0 hole.ucas.wtf
 0.0.0.0 hollow.raccoon.quest
+0.0.0.0 holm.community
 0.0.0.0 holm.video
 0.0.0.0 holonet.imperialba.se
 0.0.0.0 hom.ph
@@ -3718,6 +3742,7 @@
 0.0.0.0 im-in.space
 0.0.0.0 im.allmendenetz.de
 0.0.0.0 im.ckyl.in
+0.0.0.0 im.stella.fyi
 0.0.0.0 image-proxy-origin.twimg.com
 0.0.0.0 image.gslb.pinterest.net
 0.0.0.0 image.gslb2.pinterest.net
@@ -3748,18 +3773,17 @@
 0.0.0.0 inari.click
 0.0.0.0 inari.opencocon.org
 0.0.0.0 india.goonj.xyz
-0.0.0.0 indie-ver.se
 0.0.0.0 indieapps.space
 0.0.0.0 indieauthors.social
 0.0.0.0 indiehackers.social
 0.0.0.0 indiehackers.space
-0.0.0.0 indiepocalypse.social
 0.0.0.0 indieverse.social
 0.0.0.0 indieweb.social
 0.0.0.0 indigenousgulf.online
 0.0.0.0 inductive.space
 0.0.0.0 indulgent.art
 0.0.0.0 indymotion.fr
+0.0.0.0 ineedmore.money
 0.0.0.0 infinite.party
 0.0.0.0 influence.tools
 0.0.0.0 info.internet.org
@@ -3774,6 +3798,7 @@
 0.0.0.0 infosec.space
 0.0.0.0 infosec.town
 0.0.0.0 ingen.work
+0.0.0.0 ink.synkosmos.org
 0.0.0.0 inne.city
 0.0.0.0 innoq.social
 0.0.0.0 inokashiraskey.jp
@@ -3881,6 +3906,7 @@
 0.0.0.0 instagrm.com
 0.0.0.0 instagtram.com
 0.0.0.0 instagy.com
+0.0.0.0 instakilo.acronet.work
 0.0.0.0 instamgram.com
 0.0.0.0 instancia.org
 0.0.0.0 instangram.com
@@ -3926,9 +3952,10 @@
 0.0.0.0 irc-ws.chat.twitch.tv
 0.0.0.0 irrelephant.co
 0.0.0.0 is-a.cat
+0.0.0.0 is-a.catinsi.de
 0.0.0.0 is-is.facebook.com
 0.0.0.0 is-quite.gay
-0.0.0.0 is.0w0.kr
+0.0.0.0 is.acute.cat
 0.0.0.0 is.badat.dev
 0.0.0.0 is.horse
 0.0.0.0 is.linkedin.com
@@ -3949,6 +3976,7 @@
 0.0.0.0 it.linkedin.com
 0.0.0.0 it.pinterest.com
 0.0.0.0 it.reddit.com
+0.0.0.0 itabashi.0j0.jp
 0.0.0.0 its.bencarneiro.com
 0.0.0.0 itvplus.iiens.net
 0.0.0.0 iu.social
@@ -3971,7 +3999,6 @@
 0.0.0.0 jasette.facil.services
 0.0.0.0 jasonames.com
 0.0.0.0 jauntygoat.net
-0.0.0.0 java.duke.social
 0.0.0.0 jawns.club
 0.0.0.0 jawsome.nevy.xyz
 0.0.0.0 jazztodon.com
@@ -4038,10 +4065,12 @@
 0.0.0.0 kakera.kintsugi.moe
 0.0.0.0 kalakukko.social
 0.0.0.0 kaliex.space
+0.0.0.0 kalli.st
 0.0.0.0 kamel.social
 0.0.0.0 kameuo.turtton.net
 0.0.0.0 kamloops.social
 0.0.0.0 kampftoast.de
+0.0.0.0 kampong.social
 0.0.0.0 kamtube.ru
 0.0.0.0 kamu.social
 0.0.0.0 kancolle.social
@@ -4055,7 +4084,6 @@
 0.0.0.0 karlsruhe-social.de
 0.0.0.0 kasakoso.lol
 0.0.0.0 kasei.ski
-0.0.0.0 kasukabe-leon.me
 0.0.0.0 katholisch.social
 0.0.0.0 katzenleben.fritz.cat
 0.0.0.0 kavlak.uk
@@ -4075,12 +4103,12 @@
 0.0.0.0 key.aoki.app
 0.0.0.0 key.dokodare.ovh
 0.0.0.0 key.ha72ki.cc
-0.0.0.0 key.kubiwa.moe
 0.0.0.0 keyboards.social
 0.0.0.0 kfogel.org
 0.0.0.0 kghorvath.com
 0.0.0.0 kh.linkedin.com
 0.0.0.0 khiar.net
+0.0.0.0 kiek.opensoos.nl
 0.0.0.0 kill-corporations.enterprises
 0.0.0.0 kiloduck.com
 0.0.0.0 kimpire.net
@@ -4095,7 +4123,6 @@
 0.0.0.0 kinowolnosc.pl
 0.0.0.0 kiorin.com
 0.0.0.0 kirakiratter.com
-0.0.0.0 kirche.peertube-host.de
 0.0.0.0 kirche.social
 0.0.0.0 kirishima.cloud
 0.0.0.0 kiritan.work
@@ -4240,6 +4267,7 @@
 0.0.0.0 leclerc.m.facebook.com
 0.0.0.0 lectura.social
 0.0.0.0 leds.social
+0.0.0.0 lef.li
 0.0.0.0 left-bank.net
 0.0.0.0 leftist.network
 0.0.0.0 legal.social
@@ -4266,18 +4294,19 @@
 0.0.0.0 lemmy.0xloc.org
 0.0.0.0 lemmy.100010101.xyz
 0.0.0.0 lemmy.14042003.xyz
+0.0.0.0 lemmy.30p87.de
 0.0.0.0 lemmy.4d2.org
 0.0.0.0 lemmy.8bitar.io
 0.0.0.0 lemmy.8th.world
 0.0.0.0 lemmy.963.pm
 0.0.0.0 lemmy.activitypub.academy
 0.0.0.0 lemmy.ahall.se
-0.0.0.0 lemmy.amxl.com
 0.0.0.0 lemmy.ananace.dev
 0.0.0.0 lemmy.anhanga.com.br
 0.0.0.0 lemmy.ansico.dk
 0.0.0.0 lemmy.asc6.org
 0.0.0.0 lemmy.asudox.dev
+0.0.0.0 lemmy.balamb.fr
 0.0.0.0 lemmy.beagle.quest
 0.0.0.0 lemmy.belegost.net
 0.0.0.0 lemmy.bennett.management
@@ -4290,7 +4319,6 @@
 0.0.0.0 lemmy.bleh.au
 0.0.0.0 lemmy.blehiscool.com
 0.0.0.0 lemmy.blueberryicetea.com
-0.0.0.0 lemmy.bmck.au
 0.0.0.0 lemmy.bosio.info
 0.0.0.0 lemmy.brief.guru
 0.0.0.0 lemmy.browntown.dev
@@ -4333,7 +4361,6 @@
 0.0.0.0 lemmy.entroversal.com
 0.0.0.0 lemmy.eus
 0.0.0.0 lemmy.evangineer.net
-0.0.0.0 lemmy.fait.ch
 0.0.0.0 lemmy.federate.cc
 0.0.0.0 lemmy.federate.lol
 0.0.0.0 lemmy.fedi.ovh
@@ -4353,6 +4380,7 @@
 0.0.0.0 lemmy.gumpri.ch
 0.0.0.0 lemmy.halfbro.xyz
 0.0.0.0 lemmy.halis.io
+0.0.0.0 lemmy.halstead.host
 0.0.0.0 lemmy.hameteman.com
 0.0.0.0 lemmy.hangdaan.com
 0.0.0.0 lemmy.helvetet.eu
@@ -4368,6 +4396,7 @@
 0.0.0.0 lemmy.jaypg.pw
 0.0.0.0 lemmy.jelliefrontier.net
 0.0.0.0 lemmy.johnnei.org
+0.0.0.0 lemmy.k2pk.com
 0.0.0.0 lemmy.keimai.space
 0.0.0.0 lemmy.keniir.wtf
 0.0.0.0 lemmy.kfed.org
@@ -4376,7 +4405,7 @@
 0.0.0.0 lemmy.kmoneyserver.com
 0.0.0.0 lemmy.kya.moe
 0.0.0.0 lemmy.kzkr.xyz
-0.0.0.0 lemmy.labfox.fr
+0.0.0.0 lemmy.lakes.house
 0.0.0.0 lemmy.lidstah.info
 0.0.0.0 lemmy.liebeleu.de
 0.0.0.0 lemmy.linden.social
@@ -4391,6 +4420,7 @@
 0.0.0.0 lemmy.maquis196.io
 0.0.0.0 lemmy.mariusdavid.fr
 0.0.0.0 lemmy.masto.community
+0.0.0.0 lemmy.mats.ooo
 0.0.0.0 lemmy.mayer.rocks
 0.0.0.0 lemmy.mbl.social
 0.0.0.0 lemmy.meissners.me
@@ -4406,13 +4436,13 @@
 0.0.0.0 lemmy.mrm.one
 0.0.0.0 lemmy.mrpostman.ch
 0.0.0.0 lemmy.muffalings.com
-0.0.0.0 lemmy.multivers.cc
 0.0.0.0 lemmy.my-box.dev
 0.0.0.0 lemmy.nanatay.net
 0.0.0.0 lemmy.natsukashii.io
 0.0.0.0 lemmy.neko-in.space
 0.0.0.0 lemmy.net.au
 0.0.0.0 lemmy.nexus
+0.0.0.0 lemmy.nikore.net
 0.0.0.0 lemmy.nocturnal.garden
 0.0.0.0 lemmy.nope.ly
 0.0.0.0 lemmy.norbipeti.eu
@@ -4427,6 +4457,7 @@
 0.0.0.0 lemmy.organic-server.org
 0.0.0.0 lemmy.ourheroandy.club
 0.0.0.0 lemmy.patton.id.au
+0.0.0.0 lemmy.pi4.dad
 0.0.0.0 lemmy.piepjes.net
 0.0.0.0 lemmy.pierre-couy.fr
 0.0.0.0 lemmy.pixelpassport.studio
@@ -4455,17 +4486,15 @@
 0.0.0.0 lemmy.sietch.online
 0.0.0.0 lemmy.skyjake.fi
 0.0.0.0 lemmy.ssba.com
-0.0.0.0 lemmy.stad.social
 0.0.0.0 lemmy.stage.anoxinon.de
 0.0.0.0 lemmy.staphup.nl
 0.0.0.0 lemmy.starlightkel.xyz
 0.0.0.0 lemmy.stefanoprenna.com
 0.0.0.0 lemmy.stinky.rip
-0.0.0.0 lemmy.syltburk.org
 0.0.0.0 lemmy.t-rg.ws
 0.0.0.0 lemmy.tauata.com
-0.0.0.0 lemmy.techtailors.net
 0.0.0.0 lemmy.teqqy.de
+0.0.0.0 lemmy.tevtra.com
 0.0.0.0 lemmy.tgxn.net
 0.0.0.0 lemmy.theknopps.com
 0.0.0.0 lemmy.thewooskeys.com
@@ -4491,9 +4520,10 @@
 0.0.0.0 lemmy.waynetec.us
 0.0.0.0 lemmy.world
 0.0.0.0 lemmy.wtf
-0.0.0.0 lemmy.xeviousx.eu
 0.0.0.0 lemmy.xoynq.com
 0.0.0.0 lemmy.xurxia.net
+0.0.0.0 lemmy.yeetpepe.com
+0.0.0.0 lemmy.zimage.com
 0.0.0.0 lemmy.zip
 0.0.0.0 lemmy.zmartin.me
 0.0.0.0 lemmy.zwanenburg.info
@@ -4508,11 +4538,11 @@
 0.0.0.0 lens.snapchat.com
 0.0.0.0 leo.patiosocial.es
 0.0.0.0 lepoulsdumonde.com
-0.0.0.0 lesbian.school
 0.0.0.0 leselog.de
 0.0.0.0 lethallava.land
 0.0.0.0 letschatnow.me
 0.0.0.0 level-up.zone
+0.0.0.0 lewacki.space
 0.0.0.0 lez.ovh
 0.0.0.0 lf-main-gecko-source.tiktokcdn.com
 0.0.0.0 lf1-ttcdn-tos.pstatp.com
@@ -4530,6 +4560,7 @@
 0.0.0.0 libera.tokyo
 0.0.0.0 liberal.city
 0.0.0.0 liberdon.com
+0.0.0.0 libertatia.org
 0.0.0.0 libertynode.net
 0.0.0.0 libori.social
 0.0.0.0 libranigans.com
@@ -4557,7 +4588,6 @@
 0.0.0.0 lighthouse.co.im
 0.0.0.0 lightparty.me
 0.0.0.0 lighttheunicorn.horse
-0.0.0.0 ligma.pro
 0.0.0.0 like-video.com
 0.0.0.0 like.video
 0.0.0.0 likee.video
@@ -4638,7 +4668,6 @@
 0.0.0.0 livho.uber.space
 0.0.0.0 lizards.live
 0.0.0.0 lk.linkedin.com
-0.0.0.0 lm.9d.fi
 0.0.0.0 lm.boing.icu
 0.0.0.0 lm.facebook.com
 0.0.0.0 lm.inu.is
@@ -4673,6 +4702,7 @@
 0.0.0.0 lohmann.social
 0.0.0.0 lokalmedial.de
 0.0.0.0 lokyoski.casacamelia.xyz
+0.0.0.0 lol.as
 0.0.0.0 lol.lobos.lol
 0.0.0.0 loli.church
 0.0.0.0 loli.rodeo
@@ -4706,7 +4736,6 @@
 0.0.0.0 lt.linkedin.com
 0.0.0.0 lty.f5.si
 0.0.0.0 lu.linkedin.com
-0.0.0.0 lubbock.social
 0.0.0.0 lucha.nyc
 0.0.0.0 ludosphere.fr
 0.0.0.0 lust4love.eu.org
@@ -4717,7 +4746,6 @@
 0.0.0.0 lv-lv.facebook.com
 0.0.0.0 lv.linkedin.com
 0.0.0.0 lviv.social
-0.0.0.0 ly.eok.me
 0.0.0.0 lyingvoid.social
 0.0.0.0 lysbrud.dk
 0.0.0.0 m-i.im
@@ -4736,7 +4764,6 @@
 0.0.0.0 m.chino.tw
 0.0.0.0 m.cmx.im
 0.0.0.0 m.contextmode.xyz
-0.0.0.0 m.coolhost.fr
 0.0.0.0 m.d3bu.net
 0.0.0.0 m.efg-ober-ramstadt.de
 0.0.0.0 m.einverne.info
@@ -4744,7 +4771,6 @@
 0.0.0.0 m.facebook.com
 0.0.0.0 m.fedica.com
 0.0.0.0 m.filmfreedom.net
-0.0.0.0 m.flaem.ing
 0.0.0.0 m.fru.bar
 0.0.0.0 m.futex.au
 0.0.0.0 m.g3l.org
@@ -4769,7 +4795,6 @@
 0.0.0.0 m.okaprog.com
 0.0.0.0 m.otta.world
 0.0.0.0 m.otter.homes
-0.0.0.0 m.pandasemi.co
 0.0.0.0 m.pcgt.link
 0.0.0.0 m.prt.si
 0.0.0.0 m.pupu.moe
@@ -4829,7 +4854,6 @@
 0.0.0.0 mahindra.m.facebook.com
 0.0.0.0 mahno.zacepil.com
 0.0.0.0 maho.app
-0.0.0.0 mahosain.xyz
 0.0.0.0 maidfuku.moe
 0.0.0.0 mail-d.linkedin.com
 0.0.0.0 mail-test.linkedin.com
@@ -4849,8 +4873,10 @@
 0.0.0.0 makersocial.online
 0.0.0.0 makerspace.au
 0.0.0.0 makertube.net
+0.0.0.0 makervine.net
 0.0.0.0 makes.hoof-paw.art
 0.0.0.0 makka.moe
+0.0.0.0 malison.org
 0.0.0.0 malu.today
 0.0.0.0 maly.io
 0.0.0.0 mamba.ru
@@ -4881,6 +4907,7 @@
 0.0.0.0 mas.to
 0.0.0.0 mas.wrong.tools
 0.0.0.0 mascodon.jp
+0.0.0.0 masfloss.net
 0.0.0.0 masost.one
 0.0.0.0 mast.abc.se
 0.0.0.0 mast.areplan.org
@@ -4899,7 +4926,6 @@
 0.0.0.0 mast.shbbl.ru
 0.0.0.0 mast.shitpostbot.com
 0.0.0.0 mast.social-pod.org
-0.0.0.0 mast.swfindercore.org
 0.0.0.0 mast.wmclark.com
 0.0.0.0 mastd.racing
 0.0.0.0 mastdn.social
@@ -4932,6 +4958,7 @@
 0.0.0.0 masto.hitorino.tv
 0.0.0.0 masto.hivane.net
 0.0.0.0 masto.host
+0.0.0.0 masto.i-bobs.com
 0.0.0.0 masto.ink
 0.0.0.0 masto.krashboyz.org
 0.0.0.0 masto.labrafox.com
@@ -4976,12 +5003,13 @@
 0.0.0.0 mastodon-test.thenexus.today
 0.0.0.0 mastodon-tw.com
 0.0.0.0 mastodon.0011.lt
+0.0.0.0 mastodon.1984.cz
 0.0.0.0 mastodon.1in1.net
 0.0.0.0 mastodon.24bit48khz.de
 0.0.0.0 mastodon.360.cymru
 0.0.0.0 mastodon.3dgo.net
 0.0.0.0 mastodon.3fx.ch
-0.0.0.0 mastodon.abstractbits.net
+0.0.0.0 mastodon.aads.cloud
 0.0.0.0 mastodon.acc.sunet.se
 0.0.0.0 mastodon.acm.org
 0.0.0.0 mastodon.adju.st
@@ -4996,10 +5024,12 @@
 0.0.0.0 mastodon.anesthetizeme.net
 0.0.0.0 mastodon.animint.fr
 0.0.0.0 mastodon.anteiku.mydns.jp
+0.0.0.0 mastodon.arabipro.net
 0.0.0.0 mastodon.archive.org
 0.0.0.0 mastodon.art
 0.0.0.0 mastodon.ashevillains.org
 0.0.0.0 mastodon.atikoro.net
+0.0.0.0 mastodon.atjus.uk
 0.0.0.0 mastodon.au
 0.0.0.0 mastodon.aventer.biz
 0.0.0.0 mastodon.baazee.social
@@ -5073,7 +5103,6 @@
 0.0.0.0 mastodon.com.br
 0.0.0.0 mastodon.com.pl
 0.0.0.0 mastodon.com.tr
-0.0.0.0 mastodon.common.se
 0.0.0.0 mastodon.communick.com
 0.0.0.0 mastodon.compositecomputer.club
 0.0.0.0 mastodon.computingcache.com
@@ -5089,7 +5118,6 @@
 0.0.0.0 mastodon.cultuur.social
 0.0.0.0 mastodon.cultuurpers.nl
 0.0.0.0 mastodon.cyperpunk.de
-0.0.0.0 mastodon.dankim.com
 0.0.0.0 mastodon.davinkevin.fr
 0.0.0.0 mastodon.de
 0.0.0.0 mastodon.deadname.gay
@@ -5113,7 +5141,6 @@
 0.0.0.0 mastodon.drjpdns.com
 0.0.0.0 mastodon.drkirkadams.com
 0.0.0.0 mastodon.dtris.moe
-0.0.0.0 mastodon.dungur.ru
 0.0.0.0 mastodon.dystroy.org
 0.0.0.0 mastodon.ecnelises.com
 0.0.0.0 mastodon.eco
@@ -5142,7 +5169,6 @@
 0.0.0.0 mastodon.exposed
 0.0.0.0 mastodon.fabertech.nl
 0.0.0.0 mastodon.faithtree.social
-0.0.0.0 mastodon.faktorzehn.de
 0.0.0.0 mastodon.famillehuber.fr
 0.0.0.0 mastodon.fancy.org.uk
 0.0.0.0 mastodon.fedi.bzh
@@ -5150,6 +5176,7 @@
 0.0.0.0 mastodon.femboyfurry.net
 0.0.0.0 mastodon.fibre74.fr
 0.0.0.0 mastodon.fightforthefuture.org
+0.0.0.0 mastodon.firo.org
 0.0.0.0 mastodon.fivest.one
 0.0.0.0 mastodon.fkpk.org
 0.0.0.0 mastodon.flifloo.fr
@@ -5165,6 +5192,7 @@
 0.0.0.0 mastodon.fsinf.at
 0.0.0.0 mastodon.fsu-snuipp.fr
 0.0.0.0 mastodon.ftp.rip
+0.0.0.0 mastodon.fun7.de
 0.0.0.0 mastodon.furrycon.social
 0.0.0.0 mastodon.futaba.social
 0.0.0.0 mastodon.futurelab.social
@@ -5182,6 +5210,7 @@
 0.0.0.0 mastodon.glombit.de
 0.0.0.0 mastodon.gnomos.org
 0.0.0.0 mastodon.gougere.fr
+0.0.0.0 mastodon.granto.cloud
 0.0.0.0 mastodon.green
 0.0.0.0 mastodon.grey.fail
 0.0.0.0 mastodon.grin.hu
@@ -5243,7 +5272,6 @@
 0.0.0.0 mastodon.juggler.jp
 0.0.0.0 mastodon.juniperrae.net
 0.0.0.0 mastodon.jwsoat.com
-0.0.0.0 mastodon.kampong.social
 0.0.0.0 mastodon.karottenfabrik.net
 0.0.0.0 mastodon.kaschemme701.com
 0.0.0.0 mastodon.kebree.fr
@@ -5264,6 +5292,7 @@
 0.0.0.0 mastodon.lanhq.be
 0.0.0.0 mastodon.lanofthedead.xyz
 0.0.0.0 mastodon.law
+0.0.0.0 mastodon.lender.schule
 0.0.0.0 mastodon.li
 0.0.0.0 mastodon.li7g.com
 0.0.0.0 mastodon.libre-entreprise.com
@@ -5277,7 +5306,6 @@
 0.0.0.0 mastodon.liyuan.app
 0.0.0.0 mastodon.lli.be
 0.0.0.0 mastodon.lmddc.lu
-0.0.0.0 mastodon.loess-aauw.org
 0.0.0.0 mastodon.logilab.fr
 0.0.0.0 mastodon.london
 0.0.0.0 mastodon.longlandclan.id.au
@@ -5321,11 +5349,11 @@
 0.0.0.0 mastodon.moscow
 0.0.0.0 mastodon.motcha.tech
 0.0.0.0 mastodon.moule.world
-0.0.0.0 mastodon.mozysswamp.com
 0.0.0.0 mastodon.muage.org
 0.0.0.0 mastodon.murkworks.net
 0.0.0.0 mastodon.mx
 0.0.0.0 mastodon.my
+0.0.0.0 mastodon.my-ant.myds.me
 0.0.0.0 mastodon.myaddomain.org
 0.0.0.0 mastodon.n5h.co
 0.0.0.0 mastodon.n6.io
@@ -5348,11 +5376,11 @@
 0.0.0.0 mastodon.nu
 0.0.0.0 mastodon.nudecri.unicamp.br
 0.0.0.0 mastodon.nyanshell.com
-0.0.0.0 mastodon.nycmesh.net
 0.0.0.0 mastodon.nz
 0.0.0.0 mastodon.nzoss.nz
 0.0.0.0 mastodon.obspm.fr
 0.0.0.0 mastodon.ocert.at
+0.0.0.0 mastodon.octofriends.garden
 0.0.0.0 mastodon.offerman.com
 0.0.0.0 mastodon.oldstyle-project.org
 0.0.0.0 mastodon.oledu.de
@@ -5367,14 +5395,13 @@
 0.0.0.0 mastodon.org.uk
 0.0.0.0 mastodon.otherworldsink.com
 0.0.0.0 mastodon.ouvaton.coop
-0.0.0.0 mastodon.ozioso.online
 0.0.0.0 mastodon.palewi.re
 0.0.0.0 mastodon.parleur.net
 0.0.0.0 mastodon.partipirate.org
 0.0.0.0 mastodon.pastleo.me
 0.0.0.0 mastodon.pathconnect.de
 0.0.0.0 mastodon.peaceful.social
-0.0.0.0 mastodon.ping.de
+0.0.0.0 mastodon.pirati.cz
 0.0.0.0 mastodon.pix-n-chill.fr
 0.0.0.0 mastodon.pixeloasis.eu
 0.0.0.0 mastodon.pnpde.social
@@ -5382,7 +5409,6 @@
 0.0.0.0 mastodon.praxis.red
 0.0.0.0 mastodon.progaccess.net
 0.0.0.0 mastodon.projetretro.io
-0.0.0.0 mastodon.prorocketeers.com
 0.0.0.0 mastodon.pub.solar
 0.0.0.0 mastodon.puffer.fish
 0.0.0.0 mastodon.pyramix.ca
@@ -5391,6 +5417,7 @@
 0.0.0.0 mastodon.radio
 0.0.0.0 mastodon.raikee.fi
 0.0.0.0 mastodon.raumfahrer.net
+0.0.0.0 mastodon.rayolaser.dev
 0.0.0.0 mastodon.re
 0.0.0.0 mastodon.redgarterclub.com
 0.0.0.0 mastodon.rehtiniko.xyz
@@ -5403,7 +5430,6 @@
 0.0.0.0 mastodon.root.rs
 0.0.0.0 mastodon.rosenberg-watt.com
 0.0.0.0 mastodon.rosiesocosy.com
-0.0.0.0 mastodon.rosiesosocial.com
 0.0.0.0 mastodon.rosseaux.com
 0.0.0.0 mastodon.roundpond.net
 0.0.0.0 mastodon.rozhlas.cz
@@ -5456,7 +5482,6 @@
 0.0.0.0 mastodon.tails.ch
 0.0.0.0 mastodon.tal.org
 0.0.0.0 mastodon.teamnerds.cool
-0.0.0.0 mastodon.teccave.de
 0.0.0.0 mastodon.teia.art
 0.0.0.0 mastodon.tejat.net
 0.0.0.0 mastodon.testausserveri.fi
@@ -5477,7 +5502,6 @@
 0.0.0.0 mastodon.treegecko.com
 0.0.0.0 mastodon.trueten.de
 0.0.0.0 mastodon.tucsonsentinel.com
-0.0.0.0 mastodon.tudgwal.fr
 0.0.0.0 mastodon.tuxtendo.nl
 0.0.0.0 mastodon.twocanoes.com
 0.0.0.0 mastodon.tymoon.eu
@@ -5498,12 +5522,10 @@
 0.0.0.0 mastodon.wakoma.co
 0.0.0.0 mastodon.wazongtest.de
 0.0.0.0 mastodon.well.com
-0.0.0.0 mastodon.wesense.earth
 0.0.0.0 mastodon.wien
 0.0.0.0 mastodon.woitschetzki.de
 0.0.0.0 mastodon.wolfssocial.space
 0.0.0.0 mastodon.wolkenheim.eu
-0.0.0.0 mastodon.woosting.nl
 0.0.0.0 mastodon.wootton.dev
 0.0.0.0 mastodon.work
 0.0.0.0 mastodon.world
@@ -5538,7 +5560,6 @@
 0.0.0.0 mastohack.com
 0.0.0.0 mastoot.fr
 0.0.0.0 mastorol.es
-0.0.0.0 mastos.online
 0.0.0.0 mastoscat.club
 0.0.0.0 mastotut.cat
 0.0.0.0 mastouille.fr
@@ -5590,6 +5611,7 @@
 0.0.0.0 media-exp3.licdn.com
 0.0.0.0 media.cm.licdn.com
 0.0.0.0 media.interior.edu.uy
+0.0.0.0 media.kimbook.cc
 0.0.0.0 media.krashboyz.org
 0.0.0.0 media.licdn.com
 0.0.0.0 media.nolog.cz
@@ -5622,7 +5644,6 @@
 0.0.0.0 mellified.men
 0.0.0.0 mellow.zone
 0.0.0.0 melody.sectiontwo.org
-0.0.0.0 melon.blue
 0.0.0.0 meltystars.xyz
 0.0.0.0 member.ro
 0.0.0.0 members.linkedin.com
@@ -5633,7 +5654,6 @@
 0.0.0.0 mentor.linkedin.com
 0.0.0.0 menzuesute.hostdon.ne.jp
 0.0.0.0 meow.miabaka.moe
-0.0.0.0 meow.morecats.net
 0.0.0.0 meow.nyanpuppu.cat
 0.0.0.0 meow.social
 0.0.0.0 meowr.me
@@ -5717,13 +5737,16 @@
 0.0.0.0 mi.mtomo.uk
 0.0.0.0 mi.mushus.net
 0.0.0.0 mi.nanako-net.info
+0.0.0.0 mi.neko3.dev
 0.0.0.0 mi.nekonet.cyou
 0.0.0.0 mi.nu1.dev
 0.0.0.0 mi.nyaa.app
 0.0.0.0 mi.osamu-storage.info
 0.0.0.0 mi.oya0831.net
+0.0.0.0 mi.re22.net
 0.0.0.0 mi.rerac.dev
 0.0.0.0 mi.riperbool.com
+0.0.0.0 mi.rnana.com
 0.0.0.0 mi.seanut.app
 0.0.0.0 mi.shellgei.org
 0.0.0.0 mi.shiromaru.work
@@ -5796,6 +5819,7 @@
 0.0.0.0 mirastera.net
 0.0.0.0 mirin.eyrin.jp
 0.0.0.0 miroglio.m.facebook.com
+0.0.0.0 mirq.gay
 0.0.0.0 mirtesen.ru
 0.0.0.0 mirtube.ru
 0.0.0.0 miruku.cafe
@@ -5819,13 +5843,11 @@
 0.0.0.0 misskey.2000cho.me
 0.0.0.0 misskey.286.jp
 0.0.0.0 misskey.48maro.com
-0.0.0.0 misskey.7ka.org
 0.0.0.0 misskey.8mitsu.net
 0.0.0.0 misskey.accordi.online
 0.0.0.0 misskey.adlyrs.io
-0.0.0.0 misskey.afy.jp
+0.0.0.0 misskey.adzukimame.com
 0.0.0.0 misskey.always-we-need.games
-0.0.0.0 misskey.amaxtest.com
 0.0.0.0 misskey.amfedisr.net
 0.0.0.0 misskey.amikass.dev
 0.0.0.0 misskey.anjara.eu
@@ -5844,12 +5866,10 @@
 0.0.0.0 misskey.bluelacan.com
 0.0.0.0 misskey.bocc.de
 0.0.0.0 misskey.bootjp.me
-0.0.0.0 misskey.br-project.jp
 0.0.0.0 misskey.buicha.jp
 0.0.0.0 misskey.caligula-sea.net
 0.0.0.0 misskey.cannorin.net
 0.0.0.0 misskey.canpavon.cat
-0.0.0.0 misskey.chcolte.com
 0.0.0.0 misskey.chilitreat.dev
 0.0.0.0 misskey.chn.moe
 0.0.0.0 misskey.claustra01.net
@@ -5866,10 +5886,7 @@
 0.0.0.0 misskey.ee
 0.0.0.0 misskey.ellidaf.ru
 0.0.0.0 misskey.elmakyu.net
-0.0.0.0 misskey.emymin.net
-0.0.0.0 misskey.erenoa.com
 0.0.0.0 misskey.eulendore.xyz
-0.0.0.0 misskey.exmonji.com
 0.0.0.0 misskey.favskey.online
 0.0.0.0 misskey.fearisfreedom.com
 0.0.0.0 misskey.flowers
@@ -5888,11 +5905,11 @@
 0.0.0.0 misskey.greent.jp
 0.0.0.0 misskey.grid-space.io
 0.0.0.0 misskey.grtsinry43.com
-0.0.0.0 misskey.hacusk.net
 0.0.0.0 misskey.hakoniwa-project.com
 0.0.0.0 misskey.haku-kazamaru.club
 0.0.0.0 misskey.halby24.com
 0.0.0.0 misskey.hamadder3.tokyo
+0.0.0.0 misskey.hapichan.dev
 0.0.0.0 misskey.haun.jp
 0.0.0.0 misskey.hawk-tomy.dev
 0.0.0.0 misskey.hikalium.dev
@@ -5912,6 +5929,7 @@
 0.0.0.0 misskey.korucha.com
 0.0.0.0 misskey.kph-l.com
 0.0.0.0 misskey.kushiro-u.jp
+0.0.0.0 misskey.kuzyokaren.com
 0.0.0.0 misskey.kyoupro.com
 0.0.0.0 misskey.kyu.sh
 0.0.0.0 misskey.kzfk.win
@@ -5925,7 +5943,6 @@
 0.0.0.0 misskey.love
 0.0.0.0 misskey.march7th.cn
 0.0.0.0 misskey.mercuryksm.net
-0.0.0.0 misskey.millegliese581.dev
 0.0.0.0 misskey.mintcream.blue
 0.0.0.0 misskey.mirenk.net
 0.0.0.0 misskey.mn841.com
@@ -5953,6 +5970,7 @@
 0.0.0.0 misskey.objektiv2.net
 0.0.0.0 misskey.ogamen.cc
 0.0.0.0 misskey.ogamen.net
+0.0.0.0 misskey.ogauploader.com
 0.0.0.0 misskey.omhnc.net
 0.0.0.0 misskey.oshiire.cc
 0.0.0.0 misskey.osyakasyama.me
@@ -5969,9 +5987,7 @@
 0.0.0.0 misskey.rockcutter.jp
 0.0.0.0 misskey.saku.cool
 0.0.0.0 misskey.sakuzyo.net
-0.0.0.0 misskey.sangeunahna.com
 0.0.0.0 misskey.seitendan.com
-0.0.0.0 misskey.semikoron.work
 0.0.0.0 misskey.shinamonlifelog.uk
 0.0.0.0 misskey.shinanoji.xyz
 0.0.0.0 misskey.shinanomai.xyz
@@ -5996,6 +6012,7 @@
 0.0.0.0 misskey.takashi-tkg.com
 0.0.0.0 misskey.takehi.to
 0.0.0.0 misskey.takeko.cyou
+0.0.0.0 misskey.tako2bo.com
 0.0.0.0 misskey.tarohouse.net
 0.0.0.0 misskey.tech
 0.0.0.0 misskey.tiff-38.net
@@ -6009,8 +6026,6 @@
 0.0.0.0 misskey.vip
 0.0.0.0 misskey.virtualrocketwatching.net
 0.0.0.0 misskey.void.gift
-0.0.0.0 misskey.wagaya.sbs
-0.0.0.0 misskey.walnuts.dev
 0.0.0.0 misskey.waya0125.com
 0.0.0.0 misskey.wotsulabo.net
 0.0.0.0 misskey.xeiu.top
@@ -6027,11 +6042,14 @@
 0.0.0.0 misskeymint.net
 0.0.0.0 misskeytsf.love
 0.0.0.0 misskirara.net
+0.0.0.0 missocial.de
 0.0.0.0 mistodon.cloud
 0.0.0.0 mistyreverie.org
 0.0.0.0 mitir.social
 0.0.0.0 mivatter.com
+0.0.0.0 miwkey.miwpayou0808.info
 0.0.0.0 mix.linkedin.com
+0.0.0.0 mixed-reality.social
 0.0.0.0 mizstadon.com
 0.0.0.0 mjob.me
 0.0.0.0 mk-cyberspace.xsns.jp
@@ -6074,6 +6092,7 @@
 0.0.0.0 mk.takejohn.jp
 0.0.0.0 mk.tebukuro.xyz
 0.0.0.0 mk.tenpest-moon.uk
+0.0.0.0 mk.therwi.net
 0.0.0.0 mk.yopo.work
 0.0.0.0 mk.yurax2.dev
 0.0.0.0 mk.zvz.be
@@ -6110,6 +6129,7 @@
 0.0.0.0 mograph.social
 0.0.0.0 moist.catsweat.com
 0.0.0.0 mojimoji.date
+0.0.0.0 momosuki.f5.si
 0.0.0.0 momou.photo
 0.0.0.0 momou.social
 0.0.0.0 mon-va.byteoversea.com
@@ -6138,6 +6158,7 @@
 0.0.0.0 morph.todon.de
 0.0.0.0 moss.church
 0.0.0.0 mosslawn.space
+0.0.0.0 motube.online
 0.0.0.0 mountaincommunity.co
 0.0.0.0 mountains.photos
 0.0.0.0 mountains.social
@@ -6187,6 +6208,7 @@
 0.0.0.0 mst.akari-network.jp
 0.0.0.0 mst.canor.kr
 0.0.0.0 mst.nekonohige.jp
+0.0.0.0 mst.pingas.ru
 0.0.0.0 mst.ramsdr.ru
 0.0.0.0 mst.universoalterno.es
 0.0.0.0 mst3k.interlinked.me
@@ -6195,7 +6217,6 @@
 0.0.0.0 mstd.seungjin.net
 0.0.0.0 mstdn-g.v-elf.com
 0.0.0.0 mstdn-jp.site
-0.0.0.0 mstdn-kitakubu.com
 0.0.0.0 mstdn-srv1.social.boorloo.dev
 0.0.0.0 mstdn.3naly.xyz
 0.0.0.0 mstdn.al.kut.jp
@@ -6209,13 +6230,13 @@
 0.0.0.0 mstdn.blueday.blue
 0.0.0.0 mstdn.business
 0.0.0.0 mstdn.ca
+0.0.0.0 mstdn.cc
 0.0.0.0 mstdn.ch
 0.0.0.0 mstdn.coasa.me
 0.0.0.0 mstdn.crmbl.uk
 0.0.0.0 mstdn.delmulin.com
 0.0.0.0 mstdn.di-do.net
 0.0.0.0 mstdn.dk
-0.0.0.0 mstdn.feddit.social
 0.0.0.0 mstdn.fedi.kirigiri.me
 0.0.0.0 mstdn.forfun.su
 0.0.0.0 mstdn.fr
@@ -6225,6 +6246,7 @@
 0.0.0.0 mstdn.gsi.li
 0.0.0.0 mstdn.gunma.jp
 0.0.0.0 mstdn.hiyuki2578.net
+0.0.0.0 mstdn.hokkaido.jp
 0.0.0.0 mstdn.hokkaidosm.net
 0.0.0.0 mstdn.home.neso.tech
 0.0.0.0 mstdn.hostdon.jp
@@ -6236,7 +6258,6 @@
 0.0.0.0 mstdn.jp
 0.0.0.0 mstdn.justpost.fyi
 0.0.0.0 mstdn.kemono-friends.info
-0.0.0.0 mstdn.kgtkr.net
 0.0.0.0 mstdn.klamath.jp
 0.0.0.0 mstdn.kodein.be
 0.0.0.0 mstdn.kurame.net
@@ -6276,6 +6297,7 @@
 0.0.0.0 mstdn.social
 0.0.0.0 mstdn.sparkdream.io
 0.0.0.0 mstdn.starnix.network
+0.0.0.0 mstdn.strafpla.net
 0.0.0.0 mstdn.studiofreesia.com
 0.0.0.0 mstdn.sublimer.me
 0.0.0.0 mstdn.superspeed-fall.com
@@ -6302,7 +6324,6 @@
 0.0.0.0 mtdn.nexusresearchlabstest.com
 0.0.0.0 mtg.garden
 0.0.0.0 mtgzone.com
-0.0.0.0 mtn.selfre.cc
 0.0.0.0 mtouch.facebook.com
 0.0.0.0 mu.linkedin.com
 0.0.0.0 mublog.nl
@@ -6378,6 +6399,7 @@
 0.0.0.0 mz.linkedin.com
 0.0.0.0 mzn-potatochips.me
 0.0.0.0 n-kaiwai.work
+0.0.0.0 n00b.fr
 0.0.0.0 n7.social
 0.0.0.0 na.linkedin.com
 0.0.0.0 naapurinpoika.com
@@ -6388,6 +6410,7 @@
 0.0.0.0 nagoyadon.jp
 0.0.0.0 nahe.social
 0.0.0.0 nahetown.social
+0.0.0.0 nako.win
 0.0.0.0 namtao.com
 0.0.0.0 nanotrasen.zone
 0.0.0.0 nantoyadokari.xsns.jp
@@ -6404,9 +6427,8 @@
 0.0.0.0 natur.23.nu
 0.0.0.0 naturschutz.social
 0.0.0.0 natuyasumisskey.jp
-0.0.0.0 naughtylittleangels.xyz
 0.0.0.0 nautilus.place
-0.0.0.0 navi.social
+0.0.0.0 navi.beer
 0.0.0.0 nayukana.info
 0.0.0.0 nb-no.facebook.com
 0.0.0.0 nb-no.facebook.no
@@ -6431,16 +6453,18 @@
 0.0.0.0 neon.cybre.stream
 0.0.0.0 neon.ecarlate.app
 0.0.0.0 neondystopia.world
+0.0.0.0 neonphoenix.net
 0.0.0.0 neopaquita.es
 0.0.0.0 neos.social
 0.0.0.0 nep.one
 0.0.0.0 neph.social
 0.0.0.0 nerdculture.de
+0.0.0.0 nerdica.net
+0.0.0.0 nerdjoy.social
 0.0.0.0 nerdycrew.org
 0.0.0.0 neshweb.tv
 0.0.0.0 net.miaumuh.ch
 0.0.0.0 netalk.site
-0.0.0.0 netburrow.org
 0.0.0.0 netheads.online
 0.0.0.0 netsphere.one
 0.0.0.0 network.seqular.net
@@ -6461,6 +6485,7 @@
 0.0.0.0 news.abolish.capital
 0.0.0.0 news.aunsw.88.io
 0.0.0.0 news.girolab.foo
+0.0.0.0 news.heathenlab.net
 0.0.0.0 news.idlestate.org
 0.0.0.0 news.linkedin.com
 0.0.0.0 news.piaf.im
@@ -6496,6 +6521,7 @@
 0.0.0.0 nicuverse.org
 0.0.0.0 niedersachsen.social
 0.0.0.0 nightcord.de
+0.0.0.0 nightcrawlers.site
 0.0.0.0 nijimiss.moe
 0.0.0.0 nike.m.facebook.com
 0.0.0.0 nikomidon.fedicity.net
@@ -6505,7 +6531,6 @@
 0.0.0.0 nitiasa.com
 0.0.0.0 nitter.kareem.one
 0.0.0.0 nitter.meowing.monster
-0.0.0.0 nitter.pp.ua
 0.0.0.0 nitter.tiekoetter.com
 0.0.0.0 nixie.name
 0.0.0.0 nixnet.social
@@ -6516,6 +6541,7 @@
 0.0.0.0 nl.linkedin.com
 0.0.0.0 nl.pinterest.com
 0.0.0.0 nl.reddit.com
+0.0.0.0 nlnet.nl
 0.0.0.0 nluug.social
 0.0.0.0 nmil.dev
 0.0.0.0 nmnm.na2na.dev
@@ -6571,6 +6597,7 @@
 0.0.0.0 notwork.in
 0.0.0.0 nova.facebook.com
 0.0.0.0 novatube.net
+0.0.0.0 noveltyfactory.net
 0.0.0.0 noventech.social
 0.0.0.0 novoa.nagoya
 0.0.0.0 np.linkedin.com
@@ -6599,6 +6626,7 @@
 0.0.0.0 nuernberg.social
 0.0.0.0 nukers-misskey.hpc-densi.f5.si
 0.0.0.0 nuklear.family
+0.0.0.0 nullisland.social
 0.0.0.0 nunosaki.net
 0.0.0.0 nusara.org
 0.0.0.0 nutmeg.social
@@ -6617,6 +6645,7 @@
 0.0.0.0 nyaw.xyz
 0.0.0.0 nycity.social
 0.0.0.0 nycr.social
+0.0.0.0 nyon.marimo-net.com
 0.0.0.0 nyxa.jojess.net
 0.0.0.0 nz.linkedin.com
 0.0.0.0 nz.pinterest.com
@@ -6634,15 +6663,16 @@
 0.0.0.0 obeya.social
 0.0.0.0 obradoirodaresonancia.lostrego.org
 0.0.0.0 observe.prod.linkedin.com
-0.0.0.0 obufalus.jp
 0.0.0.0 oc.todon.fr
 0.0.0.0 ocbc.m.facebook.com
 0.0.0.0 occm.cc
 0.0.0.0 occult.club
 0.0.0.0 occult.town
+0.0.0.0 oceanplayground.social
 0.0.0.0 ocw.social
 0.0.0.0 odakyu.app
 0.0.0.0 oddprocess.social
+0.0.0.0 oddte.ch
 0.0.0.0 odenwald.social
 0.0.0.0 odin.lanofthedead.xyz
 0.0.0.0 odycdn.com
@@ -6654,6 +6684,7 @@
 0.0.0.0 oflosky.com
 0.0.0.0 oga.aiichiro.jp
 0.0.0.0 ogp.me
+0.0.0.0 ohaa.xyz
 0.0.0.0 ohai.social
 0.0.0.0 ohal473.xsns.jp
 0.0.0.0 ohbear.wtf
@@ -6677,6 +6708,7 @@
 0.0.0.0 oldenburg.social
 0.0.0.0 oldfriends.live
 0.0.0.0 oldinternet.net
+0.0.0.0 olifant.social
 0.0.0.0 oliphaunt.social
 0.0.0.0 olsberg.social
 0.0.0.0 omani.social
@@ -6688,7 +6720,6 @@
 0.0.0.0 omunchu.life
 0.0.0.0 on200.com
 0.0.0.0 onair.sbs
-0.0.0.0 onepicaday.com
 0.0.0.0 onepublicservice.m.facebook.com
 0.0.0.0 onevedanta.m.facebook.com
 0.0.0.0 oninstagram.com
@@ -6708,6 +6739,7 @@
 0.0.0.0 opalstack.social
 0.0.0.0 open-ground.org
 0.0.0.0 open.noyaskey.net
+0.0.0.0 open.obak-key.com
 0.0.0.0 open3dlab.social
 0.0.0.0 openbiblio.social
 0.0.0.0 opencaching.earth
@@ -6718,7 +6750,6 @@
 0.0.0.0 opengraphprotocol.org
 0.0.0.0 openmedia.edunova.it
 0.0.0.0 openshare.me
-0.0.0.0 opensimsocial.com
 0.0.0.0 opensocial.at
 0.0.0.0 opensocial.media
 0.0.0.0 opensource.network
@@ -6727,7 +6758,6 @@
 0.0.0.0 oplay.radiomercure.fr
 0.0.0.0 opportunity.linkedin.com
 0.0.0.0 opsone.social
-0.0.0.0 orbitof.kr
 0.0.0.0 orc.forest.hostdon.ne.jp
 0.0.0.0 orcacruises.pro
 0.0.0.0 orcart.facebook.com
@@ -6763,7 +6793,7 @@
 0.0.0.0 origincache-xx-shv-09-frc3.fbcdn.net
 0.0.0.0 origincache-xx-shv-09-prn2.fbcdn.net
 0.0.0.0 origincache-xx-shv-13-prn1.fbcdn.net
-0.0.0.0 orphaned.monster
+0.0.0.0 orreadi.com
 0.0.0.0 ortensia-moe-moe.club
 0.0.0.0 orthis.social
 0.0.0.0 orwell.fun
@@ -6789,7 +6819,6 @@
 0.0.0.0 ottawa.place
 0.0.0.0 otter.garden
 0.0.0.0 ouch.facebook.com
-0.0.0.0 ouin.land
 0.0.0.0 oulipo.social
 0.0.0.0 our.devchatter.com
 0.0.0.0 oursky.social
@@ -6813,7 +6842,6 @@
 0.0.0.0 owo.town
 0.0.0.0 ozhika.me
 0.0.0.0 ozlabs.house
-0.0.0.0 p-misskey.pusyuuwanko.com
 0.0.0.0 p-upload.facebook.com
 0.0.0.0 p.eertu.be
 0.0.0.0 p.facebook.com
@@ -6873,6 +6901,7 @@
 0.0.0.0 packmates.org
 0.0.0.0 pad.venzano.fr
 0.0.0.0 pader.social
+0.0.0.0 paella.moe
 0.0.0.0 pages.facebook.com
 0.0.0.0 pages.sadmansk.com
 0.0.0.0 paktodon.asia
@@ -6896,14 +6925,17 @@
 0.0.0.0 parenti.sh
 0.0.0.0 parents.snapchat.com
 0.0.0.0 pari.cafe
+0.0.0.0 parkour.wien
 0.0.0.0 parody.town
 0.0.0.0 parse.com
+0.0.0.0 partidopirata.com.ar
 0.0.0.0 partners.eqtube.org
 0.0.0.0 partnerstream1.twitter.com
 0.0.0.0 partnerstream2.twitter.com
 0.0.0.0 partyon.xyz
 0.0.0.0 patashnik.club
 0.0.0.0 pataterie.ca
+0.0.0.0 patavium.social
 0.0.0.0 patches.social
 0.0.0.0 patchwork.io
 0.0.0.0 patesadon.com
@@ -6935,7 +6967,6 @@
 0.0.0.0 peertube.0011.lt
 0.0.0.0 peertube.10mn.space
 0.0.0.0 peertube.22f.uk
-0.0.0.0 peertube.agentn86.xyz
 0.0.0.0 peertube.anduin.net
 0.0.0.0 peertube.anon-kenkai.com
 0.0.0.0 peertube.arch-linux.cz
@@ -6952,6 +6983,7 @@
 0.0.0.0 peertube.boc47.org
 0.0.0.0 peertube.boger.dev
 0.0.0.0 peertube.casually.cat
+0.0.0.0 peertube.cipherbliss.com
 0.0.0.0 peertube.cirkau.art
 0.0.0.0 peertube.cocamserverguild.com
 0.0.0.0 peertube.communecter.org
@@ -6962,17 +6994,18 @@
 0.0.0.0 peertube.designersethiques.org
 0.0.0.0 peertube.dk
 0.0.0.0 peertube.dsmouse.net
-0.0.0.0 peertube.dtth.ch
 0.0.0.0 peertube.eqver.se
 0.0.0.0 peertube.ethibox.fr
 0.0.0.0 peertube.european-pirates.eu
 0.0.0.0 peertube.eus
 0.0.0.0 peertube.euskarabildua.eus
 0.0.0.0 peertube.familie-berner.de
-0.0.0.0 peertube.feddit.social
 0.0.0.0 peertube.fenarinarsa.com
 0.0.0.0 peertube.fourangrydachshunds.nohost.me
 0.0.0.0 peertube.fr
+0.0.0.0 peertube.gaialabs.ch
+0.0.0.0 peertube.gegeweb.eu
+0.0.0.0 peertube.gravitywell.xyz
 0.0.0.0 peertube.heise.de
 0.0.0.0 peertube.helvetet.eu
 0.0.0.0 peertube.hlpnet.dk
@@ -6993,7 +7026,6 @@
 0.0.0.0 peertube.lhc.net.br
 0.0.0.0 peertube.libretic.fr
 0.0.0.0 peertube.livespotting.com
-0.0.0.0 peertube.livingutopia.org
 0.0.0.0 peertube.luanti.ru
 0.0.0.0 peertube.lyceeconnecte.fr
 0.0.0.0 peertube.lyclpg.itereva.pf
@@ -7011,13 +7043,13 @@
 0.0.0.0 peertube.openstreetmap.fr
 0.0.0.0 peertube.party
 0.0.0.0 peertube.pix-n-chill.fr
-0.0.0.0 peertube.plataformess.org
-0.0.0.0 peertube.platta.at
 0.0.0.0 peertube.pnpde.social
 0.0.0.0 peertube.protagio.org
 0.0.0.0 peertube.public.cat
 0.0.0.0 peertube.qtg.fr
+0.0.0.0 peertube.r2.enst.fr
 0.0.0.0 peertube.ra.no
+0.0.0.0 peertube.radres.xyz
 0.0.0.0 peertube.redgate.tv
 0.0.0.0 peertube.researchinstitute.at
 0.0.0.0 peertube.rezel.net
@@ -7034,7 +7066,6 @@
 0.0.0.0 peertube.snarkytechlab.com
 0.0.0.0 peertube.solidev.net
 0.0.0.0 peertube.staudt.bayern
-0.0.0.0 peertube.stream
 0.0.0.0 peertube.tata.casa
 0.0.0.0 peertube.tech
 0.0.0.0 peertube.tiennot.net
@@ -7050,7 +7081,6 @@
 0.0.0.0 peertube.weidensees.net
 0.0.0.0 peertube.wesensstern.net
 0.0.0.0 peertube.wtf
-0.0.0.0 peertube.wtfayla.net
 0.0.0.0 peertube.xwiki.com
 0.0.0.0 peertube.zveronline.ru
 0.0.0.0 peertube2.cpy.re
@@ -7060,11 +7090,12 @@
 0.0.0.0 pegelinux.top
 0.0.0.0 pellicule.bim.land
 0.0.0.0 pen.waltuh.cyou
+0.0.0.0 pen.writefree.ly
 0.0.0.0 penfount.social
 0.0.0.0 penguicon.social
 0.0.0.0 pennyfeatherbooks.com
 0.0.0.0 pensieve.club
-0.0.0.0 penstagram.bubblec.at
+0.0.0.0 people.kernel.org
 0.0.0.0 peoplegroup.social
 0.0.0.0 peoplemaking.games
 0.0.0.0 perf.linkedin.com
@@ -7086,11 +7117,11 @@
 0.0.0.0 ph.linkedin.com
 0.0.0.0 ph.pinterest.com
 0.0.0.0 phalanstere.social
+0.0.0.0 phamhn.com
 0.0.0.0 pharmacy.puppygirl.icu
 0.0.0.0 phijkchu.com
 0.0.0.0 philately.social
 0.0.0.0 phonetown.net
-0.0.0.0 photo.bringer.cloud
 0.0.0.0 photo.ivanamat.es
 0.0.0.0 photocave.net
 0.0.0.0 photodesk.europanewswire.com
@@ -7142,13 +7173,14 @@
 0.0.0.0 piefed.aurionblack.com
 0.0.0.0 piefed.ca
 0.0.0.0 piefed.diffrint.org
+0.0.0.0 piefed.dk
 0.0.0.0 piefed.iridescent.nz
 0.0.0.0 piefed.keyboardvagabond.com
 0.0.0.0 piefed.linenoise.vip
 0.0.0.0 piefed.nl
 0.0.0.0 piefed.nz
 0.0.0.0 piefed.social
-0.0.0.0 piefed.wjs018.xyz
+0.0.0.0 piefed.world
 0.0.0.0 piefed.zeromedia.vip
 0.0.0.0 piefed.zip
 0.0.0.0 piefeed.com
@@ -7159,6 +7191,7 @@
 0.0.0.0 pika.moe
 0.0.0.0 pikabu.ru
 0.0.0.0 pin.it
+0.0.0.0 ping.de
 0.0.0.0 pinimg.com
 0.0.0.0 pinimg.com.edgekey.net
 0.0.0.0 pinimg.com.edgesuite.net
@@ -7237,7 +7270,6 @@
 0.0.0.0 pix.lalafell.org
 0.0.0.0 pix.lgbt
 0.0.0.0 pix.mygaia.org
-0.0.0.0 pix.ontomy.tv
 0.0.0.0 pix.qonzo.de
 0.0.0.0 pix.suqu.be
 0.0.0.0 pix.test.fedi.monster
@@ -7261,6 +7293,7 @@
 0.0.0.0 pixel.sebastianwieser.de
 0.0.0.0 pixel.sp-codes.de
 0.0.0.0 pixel.tchncs.de
+0.0.0.0 pixel.ururu.cloud
 0.0.0.0 pixelateddimensions.com
 0.0.0.0 pixelfed.aargaunet.ch
 0.0.0.0 pixelfed.albertmin.com
@@ -7279,6 +7312,7 @@
 0.0.0.0 pixelfed.ch
 0.0.0.0 pixelfed.cl
 0.0.0.0 pixelfed.clymer.net
+0.0.0.0 pixelfed.co.za
 0.0.0.0 pixelfed.com
 0.0.0.0 pixelfed.com.br
 0.0.0.0 pixelfed.coupou.fr
@@ -7298,6 +7332,7 @@
 0.0.0.0 pixelfed.fftlt.net
 0.0.0.0 pixelfed.fr
 0.0.0.0 pixelfed.franjo.fr
+0.0.0.0 pixelfed.freespeech.club
 0.0.0.0 pixelfed.furryfandom.me
 0.0.0.0 pixelfed.global
 0.0.0.0 pixelfed.gohaveanewone.com
@@ -7309,15 +7344,16 @@
 0.0.0.0 pixelfed.jmsquared.net
 0.0.0.0 pixelfed.judesign.vision
 0.0.0.0 pixelfed.kolosowscy.pl
+0.0.0.0 pixelfed.larafernandes.com
 0.0.0.0 pixelfed.lebeaunuage.net
 0.0.0.0 pixelfed.louy.social
 0.0.0.0 pixelfed.lovetux.net
 0.0.0.0 pixelfed.lt
-0.0.0.0 pixelfed.marcelendechaps.nl
 0.0.0.0 pixelfed.mayer.rocks
 0.0.0.0 pixelfed.moe
 0.0.0.0 pixelfed.mrak.at
 0.0.0.0 pixelfed.mrpetovan.com
+0.0.0.0 pixelfed.ndmissions.fr
 0.0.0.0 pixelfed.nyc
 0.0.0.0 pixelfed.nz
 0.0.0.0 pixelfed.ofsahin.com
@@ -7337,6 +7373,8 @@
 0.0.0.0 pixelfed.sdmtube.fr
 0.0.0.0 pixelfed.seboto.de
 0.0.0.0 pixelfed.social
+0.0.0.0 pixelfed.spukweg.net
+0.0.0.0 pixelfed.stage.anoxinon.de
 0.0.0.0 pixelfed.takeko.cyou
 0.0.0.0 pixelfed.tommydavids.synology.me
 0.0.0.0 pixelfed.tw
@@ -7345,6 +7383,7 @@
 0.0.0.0 pixelfed.vaclavpasek.cz
 0.0.0.0 pixelfed.wizrey.com
 0.0.0.0 pixelfed.wmcan.net
+0.0.0.0 pixelfed.zipmartini.photography
 0.0.0.0 pixelfedsweden.se
 0.0.0.0 pixelfedup.social
 0.0.0.0 pixelfur.maw.best
@@ -7397,6 +7436,7 @@
 0.0.0.0 play.cotv.org.br
 0.0.0.0 play.dotlan.net
 0.0.0.0 play.mittdata.se
+0.0.0.0 player.ojamajo.moe
 0.0.0.0 plaza.vncp.it
 0.0.0.0 please-dominate.me
 0.0.0.0 pleroma.comix.gr
@@ -7489,8 +7529,9 @@
 0.0.0.0 postin.dumbgeon.gay
 0.0.0.0 posting.onl
 0.0.0.0 postmaster.facebook.com
-0.0.0.0 posts.dynamic.land
+0.0.0.0 posts.dship.biz
 0.0.0.0 potate.space
+0.0.0.0 potato.ski
 0.0.0.0 pouet.chapril.org
 0.0.0.0 pouet.evolix.org
 0.0.0.0 pouet.it
@@ -7531,7 +7572,6 @@
 0.0.0.0 procydon.net
 0.0.0.0 prod.facebook.com
 0.0.0.0 prod.pinterest.global.map.fastly.net
-0.0.0.0 prodline.social
 0.0.0.0 prodotmisskey.xsns.jp
 0.0.0.0 prodromou.pub
 0.0.0.0 profile-a-atl.xx.fbcdn.net
@@ -7562,6 +7602,8 @@
 0.0.0.0 proit.org
 0.0.0.0 projectmushroom.social
 0.0.0.0 promis.facebook.com
+0.0.0.0 pronounmail.com
+0.0.0.0 prorocketeers.com
 0.0.0.0 proto7.io
 0.0.0.0 providence.werewolf.lat
 0.0.0.0 prra.uk
@@ -7586,7 +7628,6 @@
 0.0.0.0 pt.thishorsie.rocks
 0.0.0.0 pt01.lehrerfortbildung-bw.de
 0.0.0.0 pt8.dev.cyber4edu.org
-0.0.0.0 ptdr.duniter.eu
 0.0.0.0 pub.communistparty.org.uk
 0.0.0.0 pub.dakloifarwa.de
 0.0.0.0 pub.ehrengruppe.de
@@ -7689,7 +7730,7 @@
 0.0.0.0 puntarella.party
 0.0.0.0 puppyden.st
 0.0.0.0 puppyfire.social
-0.0.0.0 pupy.cafe
+0.0.0.0 puppykitty.racing
 0.0.0.0 purchasing.linkedin.com
 0.0.0.0 puritan.pub
 0.0.0.0 pushingelectrons.net
@@ -7746,6 +7787,7 @@
 0.0.0.0 r2.do
 0.0.0.0 r3dnvmbr.xyz
 0.0.0.0 racoon.social
+0.0.0.0 radbloxia.online
 0.0.0.0 radikal.social
 0.0.0.0 radio.mutebot.net
 0.0.0.0 radiosocial.de
@@ -7782,10 +7824,8 @@
 0.0.0.0 reactor.cc
 0.0.0.0 read.post-self.ink
 0.0.0.0 read.yjmbo.net
-0.0.0.0 reads.netsphere.pub
 0.0.0.0 real-escape.jp
 0.0.0.0 realbitcoin.cash
-0.0.0.0 reallibertymedia.xyz
 0.0.0.0 rear.train.cab
 0.0.0.0 reax.work
 0.0.0.0 rebel-lion.uk
@@ -7832,6 +7872,7 @@
 0.0.0.0 rema.m.facebook.com
 0.0.0.0 remembkey.xyz
 0.0.0.0 remote.linkedin.com
+0.0.0.0 reparierecke.de
 0.0.0.0 reporter.social
 0.0.0.0 republik.social
 0.0.0.0 res.social
@@ -7886,6 +7927,7 @@
 0.0.0.0 ro.linkedin.com
 0.0.0.0 ro.pinterest.com
 0.0.0.0 roanoke.social
+0.0.0.0 rocha.social
 0.0.0.0 rochka.club
 0.0.0.0 rockcd.jp
 0.0.0.0 rockosbasilisk.com
@@ -7900,8 +7942,8 @@
 0.0.0.0 rollenspiel.social
 0.0.0.0 rona.xsns.jp
 0.0.0.0 roolone.space
-0.0.0.0 roost.fd-sns.com
 0.0.0.0 roost.xsns.jp
+0.0.0.0 rosiesosocial.com
 0.0.0.0 rossgram.ru
 0.0.0.0 rosti.social
 0.0.0.0 route66.social
@@ -7936,11 +7978,12 @@
 0.0.0.0 rum6.perf.linkedin.com
 0.0.0.0 rumraisin.cc
 0.0.0.0 runakuwomte.wliageo.dev
+0.0.0.0 runetx.ru
 0.0.0.0 runtube.re
+0.0.0.0 runx.zip
 0.0.0.0 rupload.facebook.com
 0.0.0.0 rustearain.space
 0.0.0.0 rustedneuron.com
-0.0.0.0 ruud.je
 0.0.0.0 ruxa.rumi-room.net
 0.0.0.0 rw.linkedin.com
 0.0.0.0 s-external.ak.fbcdn.net
@@ -7976,6 +8019,7 @@
 0.0.0.0 sac-h-ct-m-fbx.fbsbx.com.online-metrix.net
 0.0.0.0 sachsen-medien.social
 0.0.0.0 sackheads.social
+0.0.0.0 sacred.harpy.faith
 0.0.0.0 sad.earth
 0.0.0.0 safejust.space
 0.0.0.0 saic-ak.facebook.com
@@ -7995,6 +8039,7 @@
 0.0.0.0 samplers.hal-contract.org
 0.0.0.0 sandbox.lms.linkedin.com
 0.0.0.0 sandiegourbanists.com
+0.0.0.0 sangeunahna.com
 0.0.0.0 sangha.social
 0.0.0.0 sappho.social
 0.0.0.0 saptodon.org
@@ -8010,7 +8055,6 @@
 0.0.0.0 sausage.social
 0.0.0.0 savageworlds.social
 0.0.0.0 savethechildren.m.facebook.com
-0.0.0.0 sawakai.space
 0.0.0.0 sayansi.social
 0.0.0.0 sb17.space
 0.0.0.0 sc-cdn.net
@@ -8024,6 +8068,7 @@
 0.0.0.0 scalie.club
 0.0.0.0 scalie.zone
 0.0.0.0 scamper.community
+0.0.0.0 scaringtheho.es
 0.0.0.0 scatto.social
 0.0.0.0 schach.social
 0.0.0.0 schaumburg.social
@@ -8587,7 +8632,6 @@
 0.0.0.0 se.linkedin.com
 0.0.0.0 se.pinterest.com
 0.0.0.0 seacow.social
-0.0.0.0 seafoam.space
 0.0.0.0 seaofog.com
 0.0.0.0 search.myspace.com
 0.0.0.0 search.twitter.com
@@ -8607,9 +8651,10 @@
 0.0.0.0 security.myspace.com
 0.0.0.0 securitycafe.ca
 0.0.0.0 seed.bytedance.com
+0.0.0.0 seediqbale.xyz
 0.0.0.0 seeedstudio.social
 0.0.0.0 segeln.social
-0.0.0.0 seglerinfo.social
+0.0.0.0 seiro-residence.com
 0.0.0.0 seka.pona.la
 0.0.0.0 sekai-biyori.duckdns.org
 0.0.0.0 sekai.social
@@ -8637,7 +8682,6 @@
 0.0.0.0 seller-us.tiktok.com
 0.0.0.0 seller-vn.tiktok.com
 0.0.0.0 seller.tiktok.com
-0.0.0.0 semaphor.social
 0.0.0.0 semisskey.com
 0.0.0.0 semtex.net
 0.0.0.0 semtex.social
@@ -8714,11 +8758,13 @@
 0.0.0.0 sharkey.world
 0.0.0.0 sharlayan.in
 0.0.0.0 shelter.moe
+0.0.0.0 shevtsov.me
 0.0.0.0 shigusegubu.club
 0.0.0.0 shiina.cafe
 0.0.0.0 shimobukure-chan.xsns.jp
 0.0.0.0 shinamikaidou42.com
 0.0.0.0 shiro.dog
+0.0.0.0 shitpost.chayka43.ru
 0.0.0.0 shitpost.cloud
 0.0.0.0 shitpost.trade
 0.0.0.0 shitposter.world
@@ -8731,6 +8777,7 @@
 0.0.0.0 shogi.pkkis.com
 0.0.0.0 shop.tiktok.com
 0.0.0.0 shopfacebook.com
+0.0.0.0 shork.nerdmusic.net
 0.0.0.0 shork.social
 0.0.0.0 shortens.net
 0.0.0.0 shouldagoneoffroad.com
@@ -8739,6 +8786,7 @@
 0.0.0.0 shredderfood.net
 0.0.0.0 shrike.club
 0.0.0.0 shrimp.acute.cat
+0.0.0.0 shrimp.midnightvalley.net
 0.0.0.0 shrk.snfsx.xyz
 0.0.0.0 shusuki.fd-sns.com
 0.0.0.0 shutafem.casa
@@ -8750,7 +8798,6 @@
 0.0.0.0 siengray.com
 0.0.0.0 sigin.fo
 0.0.0.0 sigmoid.social
-0.0.0.0 signalskey.signal-st.com
 0.0.0.0 signers.online
 0.0.0.0 signin.lms.linkedin.com
 0.0.0.0 signs.codes
@@ -8771,7 +8818,6 @@
 0.0.0.0 sivar.cafe
 0.0.0.0 sixfeetup.social
 0.0.0.0 sizecraft.social
-0.0.0.0 sizeriot.com
 0.0.0.0 sizetube.com
 0.0.0.0 sjtu.closed.social
 0.0.0.0 sk-sk.facebook.com
@@ -8851,7 +8897,6 @@
 0.0.0.0 sneakerwave.net
 0.0.0.0 sneed.social
 0.0.0.0 snep.place
-0.0.0.0 snep.spot
 0.0.0.0 snf-19213.ok-kno.grnetcloud.net
 0.0.0.0 sniffies.com
 0.0.0.0 snipe.pics
@@ -8875,11 +8920,9 @@
 0.0.0.0 soapbox.minaduki.dev
 0.0.0.0 soc.bosio.info
 0.0.0.0 soc.bosionet.it
-0.0.0.0 soc.citizen4.eu
 0.0.0.0 soc.eli173.com
 0.0.0.0 soc.jra.sh
 0.0.0.0 soc.kvet.ch
-0.0.0.0 soc.runx.zip
 0.0.0.0 soc.saiyajin.space
 0.0.0.0 soc.schuerz.at
 0.0.0.0 soc.spla.cat
@@ -8914,10 +8957,10 @@
 0.0.0.0 social.amsterdam.nl
 0.0.0.0 social.anaproy.nl
 0.0.0.0 social.anartist.org
-0.0.0.0 social.andrewwet.com
 0.0.0.0 social.anjara.eu
 0.0.0.0 social.annacon.be
 0.0.0.0 social.anoxinon.de
+0.0.0.0 social.anthro.fun
 0.0.0.0 social.antifa.gmbh
 0.0.0.0 social.apes.org.uk
 0.0.0.0 social.apfelfunk.com
@@ -8941,7 +8984,6 @@
 0.0.0.0 social.beachcom.org
 0.0.0.0 social.beaumondephotography.com
 0.0.0.0 social.beeps.gay
-0.0.0.0 social.besties.house
 0.0.0.0 social.bij1.org
 0.0.0.0 social.bim.land
 0.0.0.0 social.bitdrift.io
@@ -8961,8 +9003,6 @@
 0.0.0.0 social.breizhcamp.org
 0.0.0.0 social.brianenigma.com
 0.0.0.0 social.brush-and-tale.com
-0.0.0.0 social.bsdlab.au
-0.0.0.0 social.bufu.link
 0.0.0.0 social.bund.de
 0.0.0.0 social.butnot.today
 0.0.0.0 social.c-moser.at
@@ -8987,11 +9027,9 @@
 0.0.0.0 social.coabai.com
 0.0.0.0 social.codefor.nl
 0.0.0.0 social.colectif.de
-0.0.0.0 social.coletivos.org
 0.0.0.0 social.collectivemoo.net
 0.0.0.0 social.colnodo.apc.org
 0.0.0.0 social.cologne
-0.0.0.0 social.completext.com
 0.0.0.0 social.computerfox.xyz
 0.0.0.0 social.computertruhe.de
 0.0.0.0 social.consoledated.com
@@ -9036,11 +9074,13 @@
 0.0.0.0 social.dn42.us
 0.0.0.0 social.dog-s.global
 0.0.0.0 social.doma.dev
+0.0.0.0 social.doomtrain.org
 0.0.0.0 social.drastical.tech
 0.0.0.0 social.driscoll.co
 0.0.0.0 social.dromografos.report
 0.0.0.0 social.dryan.com
 0.0.0.0 social.ds106.us
+0.0.0.0 social.dsmouse.net
 0.0.0.0 social.duniter.org
 0.0.0.0 social.dvd-regal.org
 0.0.0.0 social.dytrych.cloud
@@ -9054,6 +9094,7 @@
 0.0.0.0 social.eike.in
 0.0.0.0 social.elbespace.de
 0.0.0.0 social.electrafish.tech
+0.0.0.0 social.elitenklo.de
 0.0.0.0 social.emikzam.fr
 0.0.0.0 social.energieincomune.com
 0.0.0.0 social.epfl.ch
@@ -9116,15 +9157,15 @@
 0.0.0.0 social.globalpirates.net
 0.0.0.0 social.gnuweeb.org
 0.0.0.0 social.goonj.xyz
+0.0.0.0 social.governmentbrainwaves.info
 0.0.0.0 social.grat.gay
 0.0.0.0 social.greenpeace.at
 0.0.0.0 social.grifdail.fr
-0.0.0.0 social.griff.la
+0.0.0.0 social.grimneko.de
 0.0.0.0 social.groene.nl
 0.0.0.0 social.growyourown.services
 0.0.0.0 social.gryf-kujawy.pl
 0.0.0.0 social.gyahunkoubou.com
-0.0.0.0 social.hackerspace.pl
 0.0.0.0 social.hamburg
 0.0.0.0 social.harding.dev
 0.0.0.0 social.hardlimit.com
@@ -9134,6 +9175,8 @@
 0.0.0.0 social.hessen.de
 0.0.0.0 social.hever.de
 0.0.0.0 social.highenergymagic.net
+0.0.0.0 social.hiii.au
+0.0.0.0 social.hispa.net
 0.0.0.0 social.hnws.me
 0.0.0.0 social.horrorhub.club
 0.0.0.0 social.humanite.fr
@@ -9152,17 +9195,19 @@
 0.0.0.0 social.itu.dk
 0.0.0.0 social.ixcat.ovh
 0.0.0.0 social.jakob.space
+0.0.0.0 social.jamesfinnerty.ca
 0.0.0.0 social.jazzbutcher.com
 0.0.0.0 social.jears.at
 0.0.0.0 social.jelliefrontier.net
 0.0.0.0 social.jesuislibre.net
 0.0.0.0 social.jigmedatse.com
+0.0.0.0 social.jnpw.net
 0.0.0.0 social.josko.org
 0.0.0.0 social.jp3d.de
 0.0.0.0 social.jrruethe.info
 0.0.0.0 social.jsteuernagel.de
 0.0.0.0 social.jwunited.org
-0.0.0.0 social.karabro.net
+0.0.0.0 social.k2pk.com
 0.0.0.0 social.kendoo.eu
 0.0.0.0 social.kernel.org
 0.0.0.0 social.khajiit.de
@@ -9182,6 +9227,7 @@
 0.0.0.0 social.landshut.org
 0.0.0.0 social.lansky.name
 0.0.0.0 social.learntosolveit.com
+0.0.0.0 social.leinde.de
 0.0.0.0 social.lfx.dev
 0.0.0.0 social.librem.one
 0.0.0.0 social.linodians.com
@@ -9195,7 +9241,6 @@
 0.0.0.0 social.looperlative.com
 0.0.0.0 social.luca.run
 0.0.0.0 social.ludepress.com
-0.0.0.0 social.luizpicolo.com.br
 0.0.0.0 social.lukas-schieren.de
 0.0.0.0 social.lviv.dcomm.net.ua
 0.0.0.0 social.macg.co
@@ -9217,7 +9262,6 @@
 0.0.0.0 social.megorei.net
 0.0.0.0 social.meissa-gmbh.de
 0.0.0.0 social.memes.nz
-0.0.0.0 social.merk.ac
 0.0.0.0 social.metadata.moe
 0.0.0.0 social.meteocon.com
 0.0.0.0 social.meyer.cz
@@ -9258,7 +9302,6 @@
 0.0.0.0 social.nerdzoom.media
 0.0.0.0 social.netlandish.com
 0.0.0.0 social.neuronal.ia.br
-0.0.0.0 social.ng1n.net
 0.0.0.0 social.ngi.eu
 0.0.0.0 social.nifeeden.com
 0.0.0.0 social.nihil.gay
@@ -9279,6 +9322,7 @@
 0.0.0.0 social.okoyono.de
 0.0.0.0 social.older-gamers.eu
 0.0.0.0 social.on2it.net
+0.0.0.0 social.onlinesession.app
 0.0.0.0 social.onnenai.cc
 0.0.0.0 social.openinfra.dev
 0.0.0.0 social.openrightsgroup.org
@@ -9286,6 +9330,7 @@
 0.0.0.0 social.opuadm.com
 0.0.0.0 social.ordinal.garden
 0.0.0.0 social.oshan.studio
+0.0.0.0 social.ouest-france.fr
 0.0.0.0 social.overheid.nl
 0.0.0.0 social.overton.family
 0.0.0.0 social.paladyn.org
@@ -9296,6 +9341,7 @@
 0.0.0.0 social.peakx.com
 0.0.0.0 social.pearqueendom.online
 0.0.0.0 social.penguinability.net
+0.0.0.0 social.penzberg.me
 0.0.0.0 social.periodismoindependiente.org
 0.0.0.0 social.perspective-daily.de
 0.0.0.0 social.phantanews.de
@@ -9317,7 +9363,7 @@
 0.0.0.0 social.prepedia.org
 0.0.0.0 social.process-one.net
 0.0.0.0 social.progressnownm.org
-0.0.0.0 social.pseudo-whiskey.bar
+0.0.0.0 social.protopia.community
 0.0.0.0 social.publicspaces.net
 0.0.0.0 social.pupsplus.fans
 0.0.0.0 social.purrucker.de
@@ -9325,13 +9371,13 @@
 0.0.0.0 social.python-gsoc.org
 0.0.0.0 social.python.it
 0.0.0.0 social.qunn.eu
+0.0.0.0 social.radiofg.com
 0.0.0.0 social.raytec.co
 0.0.0.0 social.realnephestate.xyz
 0.0.0.0 social.reapers.de
 0.0.0.0 social.rebellion.global
 0.0.0.0 social.redflag.ps
 0.0.0.0 social.regenpfeifer.net
-0.0.0.0 social.restless.systems
 0.0.0.0 social.reutlingen.university
 0.0.0.0 social.rheinland.international
 0.0.0.0 social.rickelobe.com
@@ -9357,6 +9403,7 @@
 0.0.0.0 social.screamingatmyscreen.com
 0.0.0.0 social.scribblers.club
 0.0.0.0 social.sdfeu.org
+0.0.0.0 social.seanmcgregor.ca
 0.0.0.0 social.secret-wg.org
 0.0.0.0 social.security.plumbing
 0.0.0.0 social.securitytheater.net
@@ -9371,7 +9418,6 @@
 0.0.0.0 social.skyshaper.org
 0.0.0.0 social.slat.org
 0.0.0.0 social.smekal.at
-0.0.0.0 social.snamellit.com
 0.0.0.0 social.sndevs.com
 0.0.0.0 social.sociopathic.ca
 0.0.0.0 social.soraharu.app
@@ -9398,31 +9444,31 @@
 0.0.0.0 social.taker.fr
 0.0.0.0 social.targaryen.house
 0.0.0.0 social.tchncs.de
+0.0.0.0 social.team-prism.rocks
 0.0.0.0 social.teb.sex.pl
 0.0.0.0 social.technology
 0.0.0.0 social.techreclaimers.club
+0.0.0.0 social.tedium.co
 0.0.0.0 social.tepitus.de
-0.0.0.0 social.tgjb.org
 0.0.0.0 social.the-gdn.net
 0.0.0.0 social.the-mansfields.co.uk
 0.0.0.0 social.theheart.land
 0.0.0.0 social.thej.in
 0.0.0.0 social.thelab.uno
 0.0.0.0 social.themoto.network
+0.0.0.0 social.thetaits.net
 0.0.0.0 social.thirdculture.diy
 0.0.0.0 social.thirdculture.top
 0.0.0.0 social.threefoldeight.com
 0.0.0.0 social.timespiral.co.jp
 0.0.0.0 social.tinygo.org
 0.0.0.0 social.toot9.de
-0.0.0.0 social.toplap.org
 0.0.0.0 social.tpapak.com
 0.0.0.0 social.tr0llhoehle.de
 0.0.0.0 social.transsafety.network
 0.0.0.0 social.treehouse.systems
 0.0.0.0 social.trojaner.dev
 0.0.0.0 social.troll.academy
-0.0.0.0 social.trom.tf
 0.0.0.0 social.tsueri.cloud
 0.0.0.0 social.tulsa.ok.us
 0.0.0.0 social.tupo.space
@@ -9435,7 +9481,6 @@
 0.0.0.0 social.ultimaterez.com
 0.0.0.0 social.umoja.it
 0.0.0.0 social.undrground.org
-0.0.0.0 social.uninformation.net
 0.0.0.0 social.unturf.com
 0.0.0.0 social.uprootnutrition.com
 0.0.0.0 social.ursa.nz
@@ -9445,10 +9490,10 @@
 0.0.0.0 social.vates.tech
 0.0.0.0 social.vdna.be
 0.0.0.0 social.vgiamp.moe
+0.0.0.0 social.vir.group
 0.0.0.0 social.viss.us
 0.0.0.0 social.vissfamily.com
 0.0.0.0 social.vivaldi.net
-0.0.0.0 social.vixenlabs.info
 0.0.0.0 social.vlhl.dev
 0.0.0.0 social.vocedemos.org
 0.0.0.0 social.vonmanstein.de
@@ -9475,6 +9520,7 @@
 0.0.0.0 social.xinghaizhandui.com
 0.0.0.0 social.xwiki.com
 0.0.0.0 social.y-gallery.net
+0.0.0.0 social.yet.moe
 0.0.0.0 social.yolo.ventures
 0.0.0.0 social.yoniflix.homes
 0.0.0.0 social.yoyodyne-it.eu
@@ -9487,6 +9533,7 @@
 0.0.0.0 social.zkd.id
 0.0.0.0 social.zlendy.com
 0.0.0.0 social.zocradio.info
+0.0.0.0 social.zuligen.com
 0.0.0.0 social.zwoelfdreifuenfundvierzig.net
 0.0.0.0 sociala.me
 0.0.0.0 socialbc.ca
@@ -9507,13 +9554,13 @@
 0.0.0.0 softtech.m.facebook.com
 0.0.0.0 softwaremill.social
 0.0.0.0 sok.m.facebook.com
-0.0.0.0 solarcene.community
 0.0.0.0 solarpunk.moe
 0.0.0.0 solarsystem.social
 0.0.0.0 solarsystem.video
 0.0.0.0 solderma.sk
 0.0.0.0 solent.social
 0.0.0.0 solidcharity.net
+0.0.0.0 solutionpoint.in
 0.0.0.0 somamis.it
 0.0.0.0 some.hacklab.fi
 0.0.0.0 someone.elses.computer
@@ -9535,8 +9582,7 @@
 0.0.0.0 sonar6.xy.fbcdn.net
 0.0.0.0 songbird.cloud
 0.0.0.0 sonomu.club
-0.0.0.0 sonora.radioaconchego.org
-0.0.0.0 soph.zip
+0.0.0.0 sopadeletras.club
 0.0.0.0 sopuli.xyz
 0.0.0.0 soratomo.info
 0.0.0.0 sorgatronmedia.social
@@ -9549,7 +9595,6 @@
 0.0.0.0 soziale.cloud
 0.0.0.0 sp.kub2091.ru
 0.0.0.0 space.lilygl.net
-0.0.0.0 space.starnest.app
 0.0.0.0 spaceplace.jonathancandler.com
 0.0.0.0 spacerslike.us
 0.0.0.0 spacetraveler.work
@@ -9565,7 +9610,6 @@
 0.0.0.0 spectra.video
 0.0.0.0 speedlines.stctp.zone
 0.0.0.0 spezi.social
-0.0.0.0 spgrn.com
 0.0.0.0 sphere.fx4.net
 0.0.0.0 sphorb.social
 0.0.0.0 sphotos-a-ams.xx.fbcdn.net
@@ -9692,6 +9736,7 @@
 0.0.0.0 staticxx.facebook.com
 0.0.0.0 stats.redditmedia.com
 0.0.0.0 status.twitter.com
+0.0.0.0 steelfeed.de
 0.0.0.0 stefanbohacek.online
 0.0.0.0 stellanaut.net
 0.0.0.0 stellaria.network
@@ -9714,7 +9759,6 @@
 0.0.0.0 story.goegelshome.de
 0.0.0.0 story.snapchat.com
 0.0.0.0 stpauli.social
-0.0.0.0 strangeplace.me
 0.0.0.0 stranger.social
 0.0.0.0 strapi.reddit.com
 0.0.0.0 stream.conesphere.cloud
@@ -9743,7 +9787,6 @@
 0.0.0.0 subnet-masked.com
 0.0.0.0 subversive.zone
 0.0.0.0 succubi.services
-0.0.0.0 sudhirpanda.com
 0.0.0.0 sueden.social
 0.0.0.0 suffigo.com
 0.0.0.0 sugarplanet.hotoast.cc
@@ -9790,7 +9833,6 @@
 0.0.0.0 swiss.social
 0.0.0.0 swissodon.ch
 0.0.0.0 swisttal.social
-0.0.0.0 swurl.land
 0.0.0.0 syasai.club
 0.0.0.0 sydfyn.social
 0.0.0.0 sylvesfamily.com
@@ -9822,12 +9864,12 @@
 0.0.0.0 tachyon.rintyuu.dev
 0.0.0.0 tacobelllabs.net
 0.0.0.0 tagpush.app
-0.0.0.0 taicang.dpdns.org
 0.0.0.0 tailfeather.twimg.com
 0.0.0.0 taiwan.wtf
 0.0.0.0 takanoriskey.toppu.jp
 0.0.0.0 takeko.monster
 0.0.0.0 takusuki.com
+0.0.0.0 takusuki.net
 0.0.0.0 talamanca.social
 0.0.0.0 tale.violaine.xyz
 0.0.0.0 talent.linkedin.com
@@ -9839,6 +9881,8 @@
 0.0.0.0 talk.stayas.one
 0.0.0.0 talka.social
 0.0.0.0 talkedabout.social
+0.0.0.0 talkerhub.com
+0.0.0.0 talking.dev
 0.0.0.0 talon.pub
 0.0.0.0 talos.link
 0.0.0.0 tamausa.trigonoretrism.com
@@ -9847,6 +9891,7 @@
 0.0.0.0 tankie.tube
 0.0.0.0 tanoshii.site
 0.0.0.0 tanuki.hostdon.ne.jp
+0.0.0.0 tanukitunes.com
 0.0.0.0 tanztee.social
 0.0.0.0 tapbots.social
 0.0.0.0 tapir.tkf.me
@@ -9891,6 +9936,7 @@
 0.0.0.0 telex.disinfo.zone
 0.0.0.0 tellapart.com
 0.0.0.0 temeritas.site
+0.0.0.0 tempest.dev
 0.0.0.0 tenforward.social
 0.0.0.0 tentacle.social
 0.0.0.0 tentacles.gay
@@ -9914,8 +9960,6 @@
 0.0.0.0 test2.lemmy.ddenis.info
 0.0.0.0 tester.social
 0.0.0.0 testflight.joinclubhouse.com
-0.0.0.0 tetrahedron.trisec.se
-0.0.0.0 texasobserver.social
 0.0.0.0 text.andreasschoedl.de
 0.0.0.0 text.tchncs.de
 0.0.0.0 textes.pistache.land
@@ -10049,12 +10093,10 @@
 0.0.0.0 timesink.p3nguin.org
 0.0.0.0 timetheft.rip
 0.0.0.0 timeyak.com
-0.0.0.0 timothycreates.com
 0.0.0.0 tincanphone.club
 0.0.0.0 tinder.com
 0.0.0.0 tinnies.club
 0.0.0.0 tiny.tilde.website
-0.0.0.0 tiphon.nerv-project.eu
 0.0.0.0 tjakosquad.nl
 0.0.0.0 tkm.eus
 0.0.0.0 tkohhh.social
@@ -10085,6 +10127,7 @@
 0.0.0.0 toobnix.org
 0.0.0.0 toon.social
 0.0.0.0 tooot.im
+0.0.0.0 toot-test.ebhh-hosting.net
 0.0.0.0 toot.ale.gd
 0.0.0.0 toot.apheleia.haus
 0.0.0.0 toot.aquilenet.fr
@@ -10112,7 +10155,6 @@
 0.0.0.0 toot.gnous.eu
 0.0.0.0 toot.hoi-polloi.org
 0.0.0.0 toot.host
-0.0.0.0 toot.houbahouba.de
 0.0.0.0 toot.igniterealtime.org
 0.0.0.0 toot.ikata.co
 0.0.0.0 toot.io
@@ -10168,8 +10210,8 @@
 0.0.0.0 toots.tangoit.net
 0.0.0.0 toots.toby.ink
 0.0.0.0 tootzi.ch
-0.0.0.0 topic-master.com
 0.0.0.0 topic-sticker-vending.snapchat.com
+0.0.0.0 toplap.org
 0.0.0.0 toplayerserver.com
 0.0.0.0 topspicy.social
 0.0.0.0 toque.town
@@ -10203,7 +10245,6 @@
 0.0.0.0 transmom.love
 0.0.0.0 transparency.twitter.com
 0.0.0.0 transparent.ruhr
-0.0.0.0 transzh.social
 0.0.0.0 trashbrain.org
 0.0.0.0 travel-friends.chat
 0.0.0.0 travelling-lurtles.world
@@ -10219,6 +10260,7 @@
 0.0.0.0 trilobite.space
 0.0.0.0 tristagram.pictures
 0.0.0.0 trk.pinterest.com
+0.0.0.0 trobada.social
 0.0.0.0 trocglobal.m.facebook.com
 0.0.0.0 troet.burg-halle.de
 0.0.0.0 troet.cafe
@@ -10291,7 +10333,6 @@
 0.0.0.0 tube.erzbistum-hamburg.de
 0.0.0.0 tube.extinctionrebellion.fr
 0.0.0.0 tube.fdn.fr
-0.0.0.0 tube.fede.re
 0.0.0.0 tube.fediverse.at
 0.0.0.0 tube.fediverse.games
 0.0.0.0 tube.felinn.org
@@ -10324,6 +10365,7 @@
 0.0.0.0 tube.linkse.media
 0.0.0.0 tube.logidroflex.com
 0.0.0.0 tube.mgppu.ru
+0.0.0.0 tube.miltank.club
 0.0.0.0 tube.moep.tv
 0.0.0.0 tube.moment.at
 0.0.0.0 tube.move-it-online.net
@@ -10350,7 +10392,7 @@
 0.0.0.0 tube.shela.nu
 0.0.0.0 tube.sp-codes.de
 0.0.0.0 tube.statyvka.org.ua
-0.0.0.0 tube.systerserver.net
+0.0.0.0 tube.swee.codes
 0.0.0.0 tube.taker.fr
 0.0.0.0 tube.taz.de
 0.0.0.0 tube.teckids.org
@@ -10358,8 +10400,8 @@
 0.0.0.0 tube.theplattform.net
 0.0.0.0 tube.tilera.xyz
 0.0.0.0 tube.ullihome.de
-0.0.0.0 tube.undernet.uy
 0.0.0.0 tube.unif.app
+0.0.0.0 tube.villejuif.fr
 0.0.0.0 tube.waag.org
 0.0.0.0 tube.webcontact.de
 0.0.0.0 tube.xrtv.nl
@@ -10407,6 +10449,7 @@
 0.0.0.0 tv.terrapreta.org.br
 0.0.0.0 tv.undersco.re
 0.0.0.0 tv.ursal.nl
+0.0.0.0 tvculturaviva.org.br
 0.0.0.0 tvitero.com
 0.0.0.0 tvn7flix.fr
 0.0.0.0 tvwatch.party
@@ -10508,6 +10551,7 @@
 0.0.0.0 unicreativearts.m.facebook.com
 0.0.0.0 unicuskey.com
 0.0.0.0 unifed.io
+0.0.0.0 uninformation.net
 0.0.0.0 uniniverse.xsns.jp
 0.0.0.0 union.bytedance.com
 0.0.0.0 union.place
@@ -10561,6 +10605,7 @@
 0.0.0.0 usr.cloud
 0.0.0.0 ustglobal.m.facebook.com
 0.0.0.0 usuzakuraya.us
+0.0.0.0 utasansh.in
 0.0.0.0 utaskey.net
 0.0.0.0 utopia.cool
 0.0.0.0 utopia.pm
@@ -10579,6 +10624,7 @@
 0.0.0.0 v.redd.it
 0.0.0.0 v.tumblr.com
 0.0.0.0 v1.pinimg.com
+0.0.0.0 v1.pt
 0.0.0.0 v16-cla.tiktokcdn.com
 0.0.0.0 v16-ies-music.tiktokcdn.com
 0.0.0.0 v16-tiktokcdn-com.akamaized.net
@@ -10590,7 +10636,6 @@
 0.0.0.0 v19-cla.tiktokcdn.com
 0.0.0.0 v19-ies-music.tiktokcdn.com
 0.0.0.0 v19.tiktokcdn.com
-0.0.0.0 v2.nyoki.club
 0.0.0.0 v31.tiktokcdn.com
 0.0.0.0 v39.tiktokcdn-eu.com
 0.0.0.0 v4.tamx.top
@@ -10617,6 +10662,7 @@
 0.0.0.0 varishangout.net
 0.0.0.0 vault76.pikaser.net
 0.0.0.0 ve.linkedin.com
+0.0.0.0 vebinet.com
 0.0.0.0 vedimak.ru
 0.0.0.0 vee.seedy.cc
 0.0.0.0 veedeo.org
@@ -10640,6 +10686,7 @@
 0.0.0.0 vhsky.cz
 0.0.0.0 vi-vn.facebook.com
 0.0.0.0 vi.datememe.com
+0.0.0.0 vid.hspoz.pl
 0.0.0.0 vid.kinuseka.us
 0.0.0.0 vid.northbound.online
 0.0.0.0 vid.pretok.tv
@@ -10657,6 +10704,7 @@
 0.0.0.0 video-waw1-1.cdninstagram.com
 0.0.0.0 video.383.su
 0.0.0.0 video.abraum.de
+0.0.0.0 video.administrieren.net
 0.0.0.0 video.ados.accoord.fr
 0.0.0.0 video.adullact.org
 0.0.0.0 video.anartist.org
@@ -10664,7 +10712,7 @@
 0.0.0.0 video.arghacademy.org
 0.0.0.0 video.asonix.dog
 0.0.0.0 video.audiovisuel-participatif.org
-0.0.0.0 video.barcelo.ynh.fr
+0.0.0.0 video.bilecik.edu.tr
 0.0.0.0 video.blender.org
 0.0.0.0 video.canadiancivil.com
 0.0.0.0 video.cartoon-aa.xyz
@@ -10709,7 +10757,6 @@
 0.0.0.0 video.ffor10-1.fna.fbcdn.net
 0.0.0.0 video.ffor11-1.fna.fbcdn.net
 0.0.0.0 video.fhfa1-1.fna.fbcdn.net
-0.0.0.0 video.fhtagn.org
 0.0.0.0 video.fiev10-1.fna.fbcdn.net
 0.0.0.0 video.firehawk-systems.com
 0.0.0.0 video.fjpa1-1.fna.fbcdn.net
@@ -10743,7 +10790,6 @@
 0.0.0.0 video.fvit1-1.fna.fbcdn.net
 0.0.0.0 video.genky.duckdns.org
 0.0.0.0 video.ggalenko.ru
-0.0.0.0 video.greenmycity.eu
 0.0.0.0 video.gresille.org
 0.0.0.0 video.hacklab.fi
 0.0.0.0 video.hardlimit.com
@@ -10755,9 +10801,10 @@
 0.0.0.0 video.infinito.nexus
 0.0.0.0 video.infojournal.fr
 0.0.0.0 video.ipng.ch
+0.0.0.0 video.k2pk.com
+0.0.0.0 video.kinkyboyspodcast.com
 0.0.0.0 video.lern.link
 0.0.0.0 video.liberta.vip
-0.0.0.0 video.linux.it
 0.0.0.0 video.linuxtrent.it
 0.0.0.0 video.logansimic.com
 0.0.0.0 video.lowtechlab.org
@@ -10770,7 +10817,6 @@
 0.0.0.0 video.mobile-adenum.fr
 0.0.0.0 video.mttv.it
 0.0.0.0 video.mundodesconocido.com
-0.0.0.0 video.mysticalvoid.site
 0.0.0.0 video.na-prostem.si
 0.0.0.0 video.ngi.eu
 0.0.0.0 video.nyc
@@ -10796,6 +10842,7 @@
 0.0.0.0 video.rlp-media.de
 0.0.0.0 video.root66.net
 0.0.0.0 video.rs-einrich.de
+0.0.0.0 video.sadmin.io
 0.0.0.0 video.sebastien-dupire.info
 0.0.0.0 video.software-fuer-engagierte.de
 0.0.0.0 video.staging.blender.org
@@ -10812,7 +10859,6 @@
 0.0.0.0 video.wakkeren.nl
 0.0.0.0 video.windfluechter.org
 0.0.0.0 video.xx.fbcdn.net
-0.0.0.0 video2.jigmedatse.com
 0.0.0.0 videohaven.com
 0.0.0.0 videos-libr.es
 0.0.0.0 videos.adhocmusic.com
@@ -10878,6 +10924,7 @@
 0.0.0.0 violetgarden.pe.kr
 0.0.0.0 virtual-girls-are.definitely-for.me
 0.0.0.0 virtualkemomimi.net
+0.0.0.0 virup.social
 0.0.0.0 vis.social
 0.0.0.0 viste.pt
 0.0.0.0 vitaulium.nl
@@ -10940,6 +10987,7 @@
 0.0.0.0 vox.ominous.net
 0.0.0.0 vozer.cafe
 0.0.0.0 vpn.tfbnw.net
+0.0.0.0 vrc-ins.net
 0.0.0.0 vrccl.life
 0.0.0.0 vrienden.social
 0.0.0.0 vrnd.online
@@ -10954,7 +11002,6 @@
 0.0.0.0 vulgarisation-informatique.fr
 0.0.0.0 vupload.facebook.com
 0.0.0.0 vupload2.vvv.facebook.com
-0.0.0.0 vyrse.social
 0.0.0.0 w.facebook.com
 0.0.0.0 w3-reporting-csp.reddit.com
 0.0.0.0 w3-reporting-nel.reddit.com
@@ -10975,6 +11022,7 @@
 0.0.0.0 ward2.bouvardia.icu
 0.0.0.0 wargamers.social
 0.0.0.0 warpday.net
+0.0.0.0 warroza.pl
 0.0.0.0 waskuisland.com
 0.0.0.0 watch.linuxrenaissance.com
 0.0.0.0 watch.makearmy.io
@@ -11021,6 +11069,7 @@
 0.0.0.0 were.party
 0.0.0.0 were.social
 0.0.0.0 weremember.social
+0.0.0.0 wesense.earth
 0.0.0.0 weserbergland.social
 0.0.0.0 westen.social
 0.0.0.0 westergaard.social
@@ -11031,15 +11080,14 @@
 0.0.0.0 wf.kawa-kun.com
 0.0.0.0 wf.lavatech.top
 0.0.0.0 wf.sofita.noho.st
-0.0.0.0 wf.unixcat.net
 0.0.0.0 wh.reddit.com
+0.0.0.0 whatcom.social
 0.0.0.0 wheeli.social
 0.0.0.0 whereismytribe.net
 0.0.0.0 whinge.town
 0.0.0.0 white.ish.instagram.com
 0.0.0.0 whitesmokebbq.social
 0.0.0.0 whitespashe.uk
-0.0.0.0 whocare.xyz
 0.0.0.0 wholesome.computer
 0.0.0.0 whoneedsabudget.cheap
 0.0.0.0 whyfacebook.com
@@ -11113,6 +11161,7 @@
 0.0.0.0 write.data.coop
 0.0.0.0 write.grin.hu
 0.0.0.0 write.grischa.de
+0.0.0.0 write.kilioa.net
 0.0.0.0 write.medienzentrum.rocks
 0.0.0.0 write.midov.pl
 0.0.0.0 write.n0el.org
@@ -11124,11 +11173,13 @@
 0.0.0.0 write.tildeverse.org
 0.0.0.0 write.trees.st
 0.0.0.0 write.ultimaterez.com
+0.0.0.0 write.underworld.fr
 0.0.0.0 write.zemestan.de
 0.0.0.0 writeas.com
 0.0.0.0 writeas.madjo.xyz
 0.0.0.0 writefreely.ch
 0.0.0.0 writefreely.lokean.org
+0.0.0.0 writefreely.pl
 0.0.0.0 writefreely.shultz.ynh.fr
 0.0.0.0 writefreely.stage.anoxinon.de
 0.0.0.0 writer.oliphant.social
@@ -11263,7 +11314,6 @@
 0.0.0.0 x.mxteam.spb.ru
 0.0.0.0 x.myspacecdn.com
 0.0.0.0 x.xiaoten.com
-0.0.0.0 x.zyi.io
 0.0.0.0 xantronix.social
 0.0.0.0 xarxa.cloud
 0.0.0.0 xcloud.zone
@@ -11295,7 +11345,6 @@
 0.0.0.0 xn--pnibles-bya.xn--transposes-i7a.eu
 0.0.0.0 xn--ratatskr-r4a.de
 0.0.0.0 xn--s8w913fdga.chn.moe
-0.0.0.0 xn--samsprka-f0a.se
 0.0.0.0 xn--y9a6bah4ck.xn--y9a3aq
 0.0.0.0 xn--y9aey5fdz.xn--y9a3aq
 0.0.0.0 xnode.chat
@@ -11393,7 +11442,6 @@
 0.0.0.0 xxx-stg.azyobuzi.net
 0.0.0.0 xxx.azyobuzi.net
 0.0.0.0 xy.fbcdn.net
-0.0.0.0 xyzyx.org
 0.0.0.0 xz.fbcdn.net
 0.0.0.0 yaktube.yakhub.com.tr
 0.0.0.0 yakumo.foundation
@@ -11709,7 +11757,6 @@
 0.0.0.0 zdf.social
 0.0.0.0 zebras.social
 0.0.0.0 zechub.social
-0.0.0.0 zegheteens.nl
 0.0.0.0 zelk.space
 0.0.0.0 zensky-pj.com
 0.0.0.0 zenyasai.g-fukurowl.club
@@ -11730,6 +11777,7 @@
 0.0.0.0 zhihu.com
 0.0.0.0 zhimg.com
 0.0.0.0 zhub.link
+0.0.0.0 zia.io
 0.0.0.0 zijber.nl
 0.0.0.0 zijieapi.com
 0.0.0.0 zirk.us
@@ -11739,6 +11787,7 @@
 0.0.0.0 zocial.ee
 0.0.0.0 zohup.com
 0.0.0.0 zohup.vip
+0.0.0.0 zoinks.one
 0.0.0.0 zombienet.org
 0.0.0.0 zomglol.wtf
 0.0.0.0 zone.liolok.com
@@ -11753,3 +11802,4 @@
 0.0.0.0 zug.network
 0.0.0.0 zw.linkedin.com
 0.0.0.0 zy.gy
+0.0.0.0 zyi.io

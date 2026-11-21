@@ -3,8 +3,8 @@
 ! Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-19 11:38 UTC
-! Entries: 9764
+! Last modified: 2026-11-21 11:00 UTC
+! Entries: 9769
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -149,7 +149,6 @@
 ||23.fyi^
 ||233.be^
 ||23conmuc.live^
-||247superhost.com^
 ||24ml.de^
 ||24sevensocial.com^
 ||260web.com^
@@ -1768,6 +1767,7 @@
 ||cort.li^
 ||cort.my^
 ||cortalo.net^
+||cotv.info^
 ||couic.fr^
 ||couldyouredirectmeplease.com^
 ||coupa.ng^
@@ -2093,6 +2093,7 @@
 ||divsly.com^
 ||diwi.io^
 ||diypriceless.com^
+||djarum88.shop^
 ||djbanshi.net^
 ||djo924.com^
 ||djp.li^
@@ -2847,6 +2848,7 @@
 ||gil.re^
 ||giosous.com^
 ||gir.gg^
+||gir.my^
 ||giraffeweb.link^
 ||giris724.link^
 ||girismario.com^
@@ -3725,6 +3727,7 @@
 ||jmp.im^
 ||jmp.sh^
 ||jmpto.net^
+||jmpz.io^
 ||jmvmul.com^
 ||jmxxud.com^
 ||jnfusa.org^
@@ -5144,6 +5147,7 @@
 ||mr-link.app^
 ||mrfye.org^
 ||mrjj.uk^
+||mrlink.in^
 ||mrsaeed.com^
 ||mrte.ch^
 ||mrturl.com^
@@ -9688,6 +9692,7 @@
 ||zipurl.link^
 ||zipurl.net^
 ||zipurl.vercel.app^
+||zipy.me^
 ||zipzy.in^
 ||ziturl.com^
 ||zixso.com^
