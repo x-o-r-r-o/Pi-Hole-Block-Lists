@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-21 11:00 UTC
-# Entries: 9769
+# Last modified: 2026-11-22 11:23 UTC
+# Entries: 9768
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -605,7 +605,6 @@
 0.0.0.0 akm.works
 0.0.0.0 akoo.ir
 0.0.0.0 akr.gr
-0.0.0.0 akses.digital
 0.0.0.0 akses.gg
 0.0.0.0 akses.me
 0.0.0.0 akslot.io
@@ -655,7 +654,6 @@
 0.0.0.0 alolink.com
 0.0.0.0 alpha.camp
 0.0.0.0 alphab.gr
-0.0.0.0 alpinehr.ca
 0.0.0.0 alsa.me
 0.0.0.0 alstr.in
 0.0.0.0 alter-kpi.app
@@ -1311,6 +1309,7 @@
 0.0.0.0 briefen.me
 0.0.0.0 brightestbeginning.me
 0.0.0.0 brightsci.io
+0.0.0.0 briidge.life
 0.0.0.0 brilink.me
 0.0.0.0 brisktopia.com
 0.0.0.0 briurl.com
@@ -3420,7 +3419,6 @@
 0.0.0.0 idmail.me
 0.0.0.0 idr108.link
 0.0.0.0 idtag.id
-0.0.0.0 idvip.us
 0.0.0.0 idz-do.pl
 0.0.0.0 iea.li
 0.0.0.0 ieg.li
@@ -4850,6 +4848,7 @@
 0.0.0.0 maejo.link
 0.0.0.0 maga.lu
 0.0.0.0 magatxt.us
+0.0.0.0 magaus.xyz
 0.0.0.0 magnet-mind.com
 0.0.0.0 mah.to
 0.0.0.0 maha77.site
@@ -6344,6 +6343,7 @@
 0.0.0.0 redditlink.org
 0.0.0.0 redilify.com
 0.0.0.0 redir.ec
+0.0.0.0 redir.fr
 0.0.0.0 redir.io
 0.0.0.0 redir.is
 0.0.0.0 redir.me
@@ -7933,7 +7933,6 @@
 0.0.0.0 thelinkmaster.com
 0.0.0.0 themestub.com
 0.0.0.0 theorist.media
-0.0.0.0 thesa.us
 0.0.0.0 theseotools.net
 0.0.0.0 theshortener.com
 0.0.0.0 thesne.ws
@@ -8778,7 +8777,6 @@
 0.0.0.0 urls.direct
 0.0.0.0 urls.fr
 0.0.0.0 urls.hungrito.com
-0.0.0.0 urls.ie
 0.0.0.0 urls.imcompanion.co
 0.0.0.0 urls.kr
 0.0.0.0 urls.oenet.gr
@@ -9387,6 +9385,7 @@
 0.0.0.0 xav.cc
 0.0.0.0 xavo.wtf
 0.0.0.0 xb5.com
+0.0.0.0 xbig.info
 0.0.0.0 xbitly.com
 0.0.0.0 xboys.online
 0.0.0.0 xbrch.com
@@ -9443,6 +9442,7 @@
 0.0.0.0 xortly.com
 0.0.0.0 xoxourl.com
 0.0.0.0 xozap.com
+0.0.0.0 xplinks.com
 0.0.0.0 xpol.com.tr
 0.0.0.0 xpr.li
 0.0.0.0 xprt.re
@@ -9666,7 +9666,6 @@
 0.0.0.0 zhort.de
 0.0.0.0 zhort.link
 0.0.0.0 zhx.su
-0.0.0.0 zi.ma
 0.0.0.0 zi.pe
 0.0.0.0 ziadi.co
 0.0.0.0 zig.ht
