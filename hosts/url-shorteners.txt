@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-23 13:23 UTC
-# Entries: 9580
+# Last modified: 2026-11-24 13:42 UTC
+# Entries: 9575
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -249,6 +249,7 @@
 0.0.0.0 4.ly
 0.0.0.0 42jump.com
 0.0.0.0 42l.fr
+0.0.0.0 42url.com
 0.0.0.0 45h.it
 0.0.0.0 46.fi
 0.0.0.0 47.de
@@ -1431,6 +1432,7 @@
 0.0.0.0 caro.sl
 0.0.0.0 cart.mn
 0.0.0.0 cartisbikur.com
+0.0.0.0 casa.netsons.org
 0.0.0.0 casashort.live
 0.0.0.0 cash4share.com
 0.0.0.0 cashurl.win
@@ -4003,7 +4005,6 @@
 0.0.0.0 lccs.ovh
 0.0.0.0 lcp.ovh
 0.0.0.0 lcut.in
-0.0.0.0 ldgr.info
 0.0.0.0 ldjet.io
 0.0.0.0 leakslinks.com
 0.0.0.0 learn.to
@@ -4161,7 +4162,6 @@
 0.0.0.0 link.oarc.uk
 0.0.0.0 link.paior.com
 0.0.0.0 link.payple.kr
-0.0.0.0 link.peds.to
 0.0.0.0 link.phsz.ch
 0.0.0.0 link.pixelida.com
 0.0.0.0 link.plains.io
@@ -5100,7 +5100,6 @@
 0.0.0.0 munbyn.biz
 0.0.0.0 mupf.me
 0.0.0.0 murl.com
-0.0.0.0 murl.gg
 0.0.0.0 murls.xyz
 0.0.0.0 music.yosa.org
 0.0.0.0 mut.lu
@@ -6164,7 +6163,6 @@
 0.0.0.0 rawabty.com
 0.0.0.0 rayburn.link
 0.0.0.0 rayzershort.com
-0.0.0.0 razi-link.ir
 0.0.0.0 rb.gy
 0.0.0.0 rb6.me
 0.0.0.0 rbcz.io
@@ -6387,7 +6385,6 @@
 0.0.0.0 rsurl.site
 0.0.0.0 rt.se
 0.0.0.0 rtc.la
-0.0.0.0 rtedq.com
 0.0.0.0 rtfo.site
 0.0.0.0 rtk.tools
 0.0.0.0 rtube.nl
@@ -7323,6 +7320,7 @@
 0.0.0.0 snip.link
 0.0.0.0 snip.ly
 0.0.0.0 snip.ng
+0.0.0.0 snipi.io
 0.0.0.0 snipify.net
 0.0.0.0 snipitx.com
 0.0.0.0 sniplify.me
@@ -8455,6 +8453,7 @@
 0.0.0.0 url.nfc.al
 0.0.0.0 url.nimsindia.org
 0.0.0.0 url.odds.team
+0.0.0.0 url.optidiscover.com
 0.0.0.0 url.or.at
 0.0.0.0 url.prepo.io
 0.0.0.0 url.procreatebrushes.app
@@ -8493,8 +8492,6 @@
 0.0.0.0 url2s.com
 0.0.0.0 url302x.icu
 0.0.0.0 url302x.top
-0.0.0.0 url38x.com
-0.0.0.0 url39x.com
 0.0.0.0 url4.eu
 0.0.0.0 url4.uk
 0.0.0.0 url5.eu
@@ -8529,7 +8526,6 @@
 0.0.0.0 urlchecker.info
 0.0.0.0 urlco.co
 0.0.0.0 urlcort.com
-0.0.0.0 urlcover.com
 0.0.0.0 urlcrop.com
 0.0.0.0 urlcut.app
 0.0.0.0 urlcut.at
@@ -8625,7 +8621,6 @@
 0.0.0.0 urlshort.allcrom.com.br
 0.0.0.0 urlshort.ca
 0.0.0.0 urlshort.click
-0.0.0.0 urlshort.co
 0.0.0.0 urlshort.dev
 0.0.0.0 urlshort.rest
 0.0.0.0 urlshort.xyz

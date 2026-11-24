@@ -3,8 +3,8 @@
 ! Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-23 13:23 UTC
-! Entries: 9580
+! Last modified: 2026-11-24 13:42 UTC
+! Entries: 9575
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -250,6 +250,7 @@
 ||4.ly^
 ||42jump.com^
 ||42l.fr^
+||42url.com^
 ||45h.it^
 ||46.fi^
 ||47.de^
@@ -1432,6 +1433,7 @@
 ||caro.sl^
 ||cart.mn^
 ||cartisbikur.com^
+||casa.netsons.org^
 ||casashort.live^
 ||cash4share.com^
 ||cashurl.win^
@@ -4004,7 +4006,6 @@
 ||lccs.ovh^
 ||lcp.ovh^
 ||lcut.in^
-||ldgr.info^
 ||ldjet.io^
 ||leakslinks.com^
 ||learn.to^
@@ -4162,7 +4163,6 @@
 ||link.oarc.uk^
 ||link.paior.com^
 ||link.payple.kr^
-||link.peds.to^
 ||link.phsz.ch^
 ||link.pixelida.com^
 ||link.plains.io^
@@ -5101,7 +5101,6 @@
 ||munbyn.biz^
 ||mupf.me^
 ||murl.com^
-||murl.gg^
 ||murls.xyz^
 ||music.yosa.org^
 ||mut.lu^
@@ -6165,7 +6164,6 @@
 ||rawabty.com^
 ||rayburn.link^
 ||rayzershort.com^
-||razi-link.ir^
 ||rb.gy^
 ||rb6.me^
 ||rbcz.io^
@@ -6388,7 +6386,6 @@
 ||rsurl.site^
 ||rt.se^
 ||rtc.la^
-||rtedq.com^
 ||rtfo.site^
 ||rtk.tools^
 ||rtube.nl^
@@ -7324,6 +7321,7 @@
 ||snip.link^
 ||snip.ly^
 ||snip.ng^
+||snipi.io^
 ||snipify.net^
 ||snipitx.com^
 ||sniplify.me^
@@ -8456,6 +8454,7 @@
 ||url.nfc.al^
 ||url.nimsindia.org^
 ||url.odds.team^
+||url.optidiscover.com^
 ||url.or.at^
 ||url.prepo.io^
 ||url.procreatebrushes.app^
@@ -8494,8 +8493,6 @@
 ||url2s.com^
 ||url302x.icu^
 ||url302x.top^
-||url38x.com^
-||url39x.com^
 ||url4.eu^
 ||url4.uk^
 ||url5.eu^
@@ -8530,7 +8527,6 @@
 ||urlchecker.info^
 ||urlco.co^
 ||urlcort.com^
-||urlcover.com^
 ||urlcrop.com^
 ||urlcut.app^
 ||urlcut.at^
@@ -8626,7 +8622,6 @@
 ||urlshort.allcrom.com.br^
 ||urlshort.ca^
 ||urlshort.click^
-||urlshort.co^
 ||urlshort.dev^
 ||urlshort.rest^
 ||urlshort.xyz^
