@@ -3,8 +3,8 @@
 ! Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-24 13:42 UTC
-! Entries: 9575
+! Last modified: 2026-11-25 12:53 UTC
+! Entries: 9580
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -303,6 +303,7 @@
 ||5url.net^
 ||5v-v.com^
 ||5w.fit^
+||5z8.info^
 ||6.gp^
 ||6.ly^
 ||60.dk^
@@ -2693,6 +2694,7 @@
 ||gacor22.me^
 ||gacor66.me^
 ||gacor99-vip.xyz^
+||gacora.biz^
 ||gacorbos.me^
 ||gacortangandewa.com^
 ||gacortexas.co^
@@ -3104,7 +3106,6 @@
 ||gyntekbusiness.com^
 ||h-ref.com^
 ||h1.nu^
-||h2mhridayff.com^
 ||h3x.ir^
 ||h4g3z1-urlshortener.web.app^
 ||h5bio.com^
@@ -4026,6 +4027,7 @@
 ||lessnmore.net^
 ||lesterchan.net^
 ||lets.rok.biz^
+||letsconnect.fun^
 ||letsharu.cc^
 ||letx.be^
 ||letz.kr^
@@ -4749,6 +4751,7 @@
 ||m2g.me^
 ||m42.pw^
 ||m4rk.org^
+||m5.gs^
 ||m5.lt^
 ||m7p.ir^
 ||maac.io^
@@ -6847,6 +6850,7 @@
 ||shortenme.me^
 ||shortenmyurl.online^
 ||shortenn.org^
+||shortenn.site^
 ||shortenpay.com^
 ||shortenpro.com^
 ||shortenr-app.vercel.app^
@@ -8020,6 +8024,7 @@
 ||toofficialwebsite.com^
 ||toolaxy.com^
 ||toolbites.com^
+||toolboxdaily.com^
 ||toolify.link^
 ||toolking.net^
 ||toolkingo.com^

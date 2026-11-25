@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-24 13:42 UTC
-# Entries: 9575
+# Last modified: 2026-11-25 12:53 UTC
+# Entries: 9580
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -302,6 +302,7 @@
 0.0.0.0 5url.net
 0.0.0.0 5v-v.com
 0.0.0.0 5w.fit
+0.0.0.0 5z8.info
 0.0.0.0 6.gp
 0.0.0.0 6.ly
 0.0.0.0 60.dk
@@ -2692,6 +2693,7 @@
 0.0.0.0 gacor22.me
 0.0.0.0 gacor66.me
 0.0.0.0 gacor99-vip.xyz
+0.0.0.0 gacora.biz
 0.0.0.0 gacorbos.me
 0.0.0.0 gacortangandewa.com
 0.0.0.0 gacortexas.co
@@ -3103,7 +3105,6 @@
 0.0.0.0 gyntekbusiness.com
 0.0.0.0 h-ref.com
 0.0.0.0 h1.nu
-0.0.0.0 h2mhridayff.com
 0.0.0.0 h3x.ir
 0.0.0.0 h4g3z1-urlshortener.web.app
 0.0.0.0 h5bio.com
@@ -4025,6 +4026,7 @@
 0.0.0.0 lessnmore.net
 0.0.0.0 lesterchan.net
 0.0.0.0 lets.rok.biz
+0.0.0.0 letsconnect.fun
 0.0.0.0 letsharu.cc
 0.0.0.0 letx.be
 0.0.0.0 letz.kr
@@ -4748,6 +4750,7 @@
 0.0.0.0 m2g.me
 0.0.0.0 m42.pw
 0.0.0.0 m4rk.org
+0.0.0.0 m5.gs
 0.0.0.0 m5.lt
 0.0.0.0 m7p.ir
 0.0.0.0 maac.io
@@ -6846,6 +6849,7 @@
 0.0.0.0 shortenme.me
 0.0.0.0 shortenmyurl.online
 0.0.0.0 shortenn.org
+0.0.0.0 shortenn.site
 0.0.0.0 shortenpay.com
 0.0.0.0 shortenpro.com
 0.0.0.0 shortenr-app.vercel.app
@@ -8019,6 +8023,7 @@
 0.0.0.0 toofficialwebsite.com
 0.0.0.0 toolaxy.com
 0.0.0.0 toolbites.com
+0.0.0.0 toolboxdaily.com
 0.0.0.0 toolify.link
 0.0.0.0 toolking.net
 0.0.0.0 toolkingo.com
