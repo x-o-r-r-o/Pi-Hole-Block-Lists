@@ -3,8 +3,8 @@
 ! Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-25 12:53 UTC
-! Entries: 9580
+! Last modified: 2026-11-26 12:32 UTC
+! Entries: 9582
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -1029,6 +1029,7 @@
 ||bigbigwinjiliwin63.online^
 ||bigcc.cc^
 ||bigfi.sh^
+||bigfk.com^
 ||biggo.tw^
 ||bigolink.com^
 ||bigurl.io^
@@ -1434,7 +1435,6 @@
 ||caro.sl^
 ||cart.mn^
 ||cartisbikur.com^
-||casa.netsons.org^
 ||casashort.live^
 ||cash4share.com^
 ||cashurl.win^
@@ -4482,6 +4482,7 @@
 ||linkverkorten.com^
 ||linkvertise.com^
 ||linkvertise.net^
+||linkvip88.org^
 ||linkvp.com^
 ||linkvs.com^
 ||linkwede.vip^
@@ -8646,6 +8647,7 @@
 ||urlshortening.webalias.com^
 ||urlshortly.com^
 ||urlshortn.com^
+||urlshortner.at^
 ||urlshortner.org^
 ||urlshortx.com^
 ||urlshortx.io^
