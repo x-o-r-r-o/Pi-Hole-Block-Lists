@@ -2,8 +2,8 @@
 # Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-27 12:18 UTC
-# Entries: 3463
+# Last modified: 2026-11-28 11:44 UTC
+# Entries: 3459
 #
 # Built from these sources (see their licenses):
 #   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -65,7 +65,6 @@
 0.0.0.0 ad-format-ttp2.tiktokv.us
 0.0.0.0 ad-format-ttp2.us.tiktokv.com
 0.0.0.0 ad-format.tiktokv.eu
-0.0.0.0 ad-format.tiktokv.us
 0.0.0.0 ad-format.us.tiktokv.com
 0.0.0.0 ad-format16-normal-useastred.tiktokv.eu
 0.0.0.0 ad-growth-in.heytapmobile.com
@@ -105,6 +104,7 @@
 0.0.0.0 ad.tiktokv.eu
 0.0.0.0 ad.tiktokv.us
 0.0.0.0 ad.xiaomi.com
+0.0.0.0 ad.xiaomi.com.mgslb.com
 0.0.0.0 adash-emas.cn-hangzhou.aliyuncs.com
 0.0.0.0 adash.m.taobao.com
 0.0.0.0 adash.man.aliyuncs.com
@@ -193,6 +193,7 @@
 0.0.0.0 advertising.apple.com
 0.0.0.0 advmob.cn
 0.0.0.0 advp.apple.com
+0.0.0.0 adx-ads-fr-heytapmobila-c7870.fr-w01.cngw.heytapmobile.com
 0.0.0.0 adx-ads-fr.heytapmobile.com
 0.0.0.0 adx-ads-ru.heytapmobile.com
 0.0.0.0 adx-ads.realmemobile.com
@@ -217,6 +218,7 @@
 0.0.0.0 adx-op-in.heytapmobile.com
 0.0.0.0 adx-op-ru.heytapmobile.com
 0.0.0.0 adx-op-sg.heytapmobile.com
+0.0.0.0 adx-u-fr.heytapmobile.com
 0.0.0.0 adx-u-in-heytapmobile-a-9ae47.in-s01.cngw.heytapmobile.com
 0.0.0.0 adx-u-in.heytapmobile.com
 0.0.0.0 adx-u-ru.heytapmobile.com
@@ -277,7 +279,6 @@
 0.0.0.0 analytics-exp-sg.tiktok.com.edgekey.net
 0.0.0.0 analytics-exp-ttp2.tiktokw.eu
 0.0.0.0 analytics-exp-ttp2.tiktokw.eu.edgesuite.net
-0.0.0.0 analytics-exp.tiktokw.eu
 0.0.0.0 analytics-exp.us.tiktok.com
 0.0.0.0 analytics-exp.us.tiktok.com.edgesuite.net
 0.0.0.0 analytics-exp16-normal-useastred.tiktokw.eu
@@ -649,6 +650,7 @@
 0.0.0.0 browser-api-id.heytapmobile.com
 0.0.0.0 browser-api-in.heytapmobile.com
 0.0.0.0 browser-api-my.heytapmobile.com
+0.0.0.0 browser-api-nz.heytapmobile.com
 0.0.0.0 browser-api-ph.heytapmobile.com
 0.0.0.0 browser-api-ru.heytapmobile.com
 0.0.0.0 browser-api-th.heytapmobile.com
@@ -1127,6 +1129,7 @@
 0.0.0.0 eu-domaincfg.vivoglobal.com
 0.0.0.0 eu-errup.vivoglobal.com
 0.0.0.0 eu-monitor-stsdk.vivoglobal.com
+0.0.0.0 eu-nrt-stsdk.vivoglobal.com
 0.0.0.0 eu-onrt-stsdk.vivoglobal.com
 0.0.0.0 eu-ort-stsdk.vivoglobal.com
 0.0.0.0 eu-p.vivoglobal.com
@@ -1246,7 +1249,6 @@
 0.0.0.0 federatedml-pa.googleapis.com
 0.0.0.0 feedback.miui.com
 0.0.0.0 feedbackws.fe.apple-dns.cn
-0.0.0.0 feedbackws.fe.apple-dns.net
 0.0.0.0 feedbackws.fe2.apple-dns.net
 0.0.0.0 feedbackws.icloud.com
 0.0.0.0 feedbackws.icloud.com.cn
@@ -1650,9 +1652,9 @@
 0.0.0.0 lng.xiaohongshu.com
 0.0.0.0 loadus.exelator.com
 0.0.0.0 localytics.com
+0.0.0.0 location-i18n.tiktok.com
 0.0.0.0 location-i18n.tiktokv.com
 0.0.0.0 location-ie.tiktokv.eu
-0.0.0.0 location-ru.tiktokv.com
 0.0.0.0 location-sg.tiktokv.com
 0.0.0.0 location-ttp2.tiktokv.eu
 0.0.0.0 location-ttp2.tiktokv.us
@@ -1690,9 +1692,6 @@
 0.0.0.0 log-dr16-normal-useast5.tiktokv.us
 0.0.0.0 log-dr16-normal-useast8.tiktokv.us
 0.0.0.0 log-dr16-normal-useastred.tiktokv.eu
-0.0.0.0 log-dr19-normal-no1a.tiktokv.eu
-0.0.0.0 log-dr19-normal-useast5.tiktokv.us
-0.0.0.0 log-dr19-normal-useast8.tiktokv.us
 0.0.0.0 log-dra.platform.hihonorcloud.com
 0.0.0.0 log-drcn.platform.hihonorcloud.com
 0.0.0.0 log-dre.platform.hihonorcloud.com
@@ -1922,7 +1921,6 @@
 0.0.0.0 logs13.xiti.com
 0.0.0.0 logs1407.xiti.com
 0.0.0.0 logsdk.kwai-pro.com
-0.0.0.0 logserver.nzxcloud.cn
 0.0.0.0 logservice-dra.platform.hicloud.com
 0.0.0.0 logservice-dre.platform.dbankcloud.cn
 0.0.0.0 logservice-dre.platform.hicloud.com
@@ -2501,7 +2499,6 @@
 0.0.0.0 prod-event-relay-sports-api.v.aaplimg.com
 0.0.0.0 prod-event-relay-stocks-api.v.aaplimg.com
 0.0.0.0 prod-event-relay-weather-api.v.aaplimg.com
-0.0.0.0 prod-event-relay-web-api.v.aaplimg.com
 0.0.0.0 prod-iwork-events.v.aaplimg.com
 0.0.0.0 prod-news-notification-events.v.aaplimg.com
 0.0.0.0 prod-ue1-metrics.hingeprod.net
@@ -2592,7 +2589,6 @@
 0.0.0.0 rt.applvn.com
 0.0.0.0 rtag.farmers.com
 0.0.0.0 rtc-logger-i18n.tiktokv.com
-0.0.0.0 rtc-logger-ie.tiktokv.eu
 0.0.0.0 rtc-logger-ttp2.tiktokv.eu
 0.0.0.0 rtc-logger-ttp2.tiktokv.us
 0.0.0.0 rtc-logger-ttp2.us.tiktokv.com
@@ -2604,7 +2600,6 @@
 0.0.0.0 rtc-logger.us.tiktokv.com
 0.0.0.0 rtc-logger16-normal-alisg.tiktokv.com
 0.0.0.0 rtc-logger16-normal-useastred.tiktokv.eu
-0.0.0.0 rtc-logger16-normal.tiktokv.com
 0.0.0.0 rtlog-i18n.tiktokv.com
 0.0.0.0 rtlog-phx.tiktokv.com
 0.0.0.0 rtlog-ru.tiktokv.com
@@ -2632,6 +2627,7 @@
 0.0.0.0 rtlog16-normal-useast8.tiktokv.us
 0.0.0.0 rtlog16-normal-useast8.us.tiktokv.com
 0.0.0.0 rtlog16-normal-useastred.tiktokv.eu
+0.0.0.0 rtlog16-normal-useastred.tiktokv.eu.intern.schreinereistumpf.de
 0.0.0.0 rtlog16-normal-zr-alisg.tiktokv.com
 0.0.0.0 rtlog16-normal-zr-useast1a.tiktokv.com
 0.0.0.0 rtlog16-normal-zr.tiktokv.com
@@ -2720,6 +2716,7 @@
 0.0.0.0 ru-prt-stsdk.vivoglobal.com
 0.0.0.0 ru-register.xmpush.global.xiaomi.com
 0.0.0.0 ru-romsp-unifyconfig.vivoglobal.com
+0.0.0.0 ru-rt-stsdk.vivoglobal.com
 0.0.0.0 ru-st-exappupgrade.vivoglobal.com
 0.0.0.0 ru-st-sl.vivoglobal.com
 0.0.0.0 ru-stsdk.vivoglobal.com
@@ -2763,7 +2760,6 @@
 0.0.0.0 samsung.ecorebates.com
 0.0.0.0 samsung.telemetry.eyeo.com
 0.0.0.0 samsungacr.com
-0.0.0.0 samsungadhub.com
 0.0.0.0 samsungads.adsmeasurement.com
 0.0.0.0 samsungads.com
 0.0.0.0 samsungafrica.demdex.net

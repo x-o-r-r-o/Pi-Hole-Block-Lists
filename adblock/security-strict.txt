@@ -3,8 +3,8 @@
 ! Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-27 12:18 UTC
-! Entries: 3679
+! Last modified: 2026-11-28 11:44 UTC
+! Entries: 3686
 !
 ! Built from these sources (see their licenses):
 !   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -46,7 +46,6 @@
 @@||akami-solutions.cc^
 @@||akko.wtf^
 @@||aloedent.shop^
-@@||am-videos.click^
 @@||amap.ml^
 @@||amazon.science^
 @@||ambr.top^
@@ -226,6 +225,7 @@
 @@||dear.dad^
 @@||debian.club^
 @@||debloat.win^
+@@||deco.site^
 @@||deltarune.wiki^
 @@||der-marmeladenladen.shop^
 @@||derweinladen.shop^
@@ -904,9 +904,9 @@
 @@||stefvanbuuren.name^
 @@||stepone.life^
 @@||stream.vip^
+@@||strem.bar^
 @@||strem.fun^
 @@||stremio.homes^
-@@||strims.top^
 @@||stripe.partners^
 @@||stromae.store^
 @@||suiten.top^
@@ -2263,6 +2263,7 @@
 ||fishdns.com^
 ||fivepals.com^
 ||fixip.org^
+||flashbuilder.net^
 ||flashhub.net^
 ||flashserv.net^
 ||flat4free.com^
@@ -3007,8 +3008,10 @@
 ||lnkz.at^
 ||loadteam.com^
 ||loca.lt^
+||localhost.run^
 ||localto.net^
 ||localtonet.com^
+||loclx.io^
 ||locumm.com^
 ||login.911s5.net^
 ||loginto.me^
@@ -3393,6 +3396,7 @@
 ||onthewifi.com^
 ||ooguy.com^
 ||opent2.com^
+||opik.net^
 ||opior.com^
 ||opisial.com^
 ||oray.com^
@@ -3493,6 +3497,7 @@
 ||pihq.net^
 ||pii.at^
 ||piii.net^
+||pinggy.link^
 ||pirchio.com^
 ||piroge.com^
 ||pishell.com^
@@ -3734,6 +3739,7 @@
 ||serverpit.com^
 ||serverthuis.com^
 ||servesarcasm.com^
+||serveto.me^
 ||serveuser.com^
 ||serveusers.com^
 ||servevent.com^
@@ -4239,6 +4245,7 @@
 ||x.gp^
 ||x10.bz^
 ||x10.mx^
+||x10host.com^
 ||x1dns.com^
 ||x24hr.com^
 ||x64.me^

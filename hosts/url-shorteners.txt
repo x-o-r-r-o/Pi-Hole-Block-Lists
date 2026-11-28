@@ -2,8 +2,8 @@
 # Description: Link shorteners (bit.ly, tinyurl and ~10,000 more) that hide where scam links go. Also breaks normal shortened links.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-27 12:18 UTC
-# Entries: 9726
+# Last modified: 2026-11-28 11:44 UTC
+# Entries: 9715
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi URL Shortener: https://github.com/hagezi/dns-blocklists
@@ -1095,7 +1095,6 @@
 0.0.0.0 biolook.net
 0.0.0.0 biopagina.com
 0.0.0.0 bioprofile.link
-0.0.0.0 bioqr.me
 0.0.0.0 bioqrs.com
 0.0.0.0 bioreling.com
 0.0.0.0 biosite.info
@@ -1457,6 +1456,8 @@
 0.0.0.0 casinurl.io
 0.0.0.0 casio.link
 0.0.0.0 caslinks.com
+0.0.0.0 casnest.com
+0.0.0.0 casqaro.com
 0.0.0.0 casualient.com
 0.0.0.0 catalio.co
 0.0.0.0 catchingtherain.com
@@ -1649,7 +1650,6 @@
 0.0.0.0 clipmy.link
 0.0.0.0 clipperlink.com
 0.0.0.0 clipurl.com
-0.0.0.0 clipurl.us
 0.0.0.0 clipy.cx
 0.0.0.0 cliq.ing
 0.0.0.0 cliq.page
@@ -2053,7 +2053,6 @@
 0.0.0.0 dhu.li
 0.0.0.0 di.sn
 0.0.0.0 dia.so
-0.0.0.0 diato.lol
 0.0.0.0 dibb.me
 0.0.0.0 did.li
 0.0.0.0 diek.li
@@ -2108,7 +2107,6 @@
 0.0.0.0 dmprd.com
 0.0.0.0 dmreg.co
 0.0.0.0 dmvrenew.com
-0.0.0.0 dn303.online
 0.0.0.0 dna360.tw
 0.0.0.0 dndii.com
 0.0.0.0 dnl.biz.id
@@ -2210,7 +2208,6 @@
 0.0.0.0 durl.in
 0.0.0.0 dus.im
 0.0.0.0 dv.gd
-0.0.0.0 dviel.com
 0.0.0.0 dvlr.it
 0.0.0.0 dvo.tips
 0.0.0.0 dvrv.ai
@@ -2577,7 +2574,6 @@
 0.0.0.0 flattools.com
 0.0.0.0 flbox.com
 0.0.0.0 flexjetcareers.com
-0.0.0.0 flextrig.com
 0.0.0.0 flic.kr
 0.0.0.0 flickerlink.com
 0.0.0.0 flickier.net
@@ -3240,7 +3236,6 @@
 0.0.0.0 hive.arf.dev
 0.0.0.0 hivy.net
 0.0.0.0 hjkl.fr
-0.0.0.0 hjl.me
 0.0.0.0 hk6vdj4z.click
 0.0.0.0 hko.nu
 0.0.0.0 hl7.me
@@ -4058,6 +4053,7 @@
 0.0.0.0 lc-s.co
 0.0.0.0 lc.cx
 0.0.0.0 lccs.ovh
+0.0.0.0 lckyrll.com
 0.0.0.0 lcp.ovh
 0.0.0.0 lcut.in
 0.0.0.0 ldjet.io
@@ -5620,7 +5616,6 @@
 0.0.0.0 opent2.com
 0.0.0.0 opetsalman.biz.id
 0.0.0.0 opf.sh
-0.0.0.0 opizo.com
 0.0.0.0 opkale.me
 0.0.0.0 opli.xyz
 0.0.0.0 oplink.club
@@ -5939,6 +5934,7 @@
 0.0.0.0 preferredds.com
 0.0.0.0 prel.ink
 0.0.0.0 premex.link
+0.0.0.0 premierbet.live
 0.0.0.0 preml.ge
 0.0.0.0 prendre-rendezvous.com
 0.0.0.0 prephe.ro
@@ -6113,6 +6109,7 @@
 0.0.0.0 qraus.com
 0.0.0.0 qrb.us
 0.0.0.0 qrbee.net
+0.0.0.0 qrbiolink.com
 0.0.0.0 qrcaard.com
 0.0.0.0 qrcc.io
 0.0.0.0 qrcc.me
@@ -6671,7 +6668,6 @@
 0.0.0.0 scissorcut.vercel.app
 0.0.0.0 sck.io
 0.0.0.0 sclix.com
-0.0.0.0 scm.community
 0.0.0.0 scm.events
 0.0.0.0 scmexpo.com
 0.0.0.0 scnindustrial.com
@@ -7200,7 +7196,6 @@
 0.0.0.0 shrtn.app
 0.0.0.0 shrtn.ee
 0.0.0.0 shrtn.io
-0.0.0.0 shrtna.com
 0.0.0.0 shrtq.link
 0.0.0.0 shrtr.cc
 0.0.0.0 shrtso.com
@@ -7907,7 +7902,6 @@
 0.0.0.0 thetinyurls.com
 0.0.0.0 theuitly.com
 0.0.0.0 theupconsult.com
-0.0.0.0 theurl.to
 0.0.0.0 theurlshortener.com
 0.0.0.0 thewee.link
 0.0.0.0 thewriterstechstop.com
@@ -7953,7 +7947,6 @@
 0.0.0.0 tikybio.com
 0.0.0.0 tilt.ltd
 0.0.0.0 tim.com.vc
-0.0.0.0 timessquarefacts.com
 0.0.0.0 timewatch.info
 0.0.0.0 timnao.link
 0.0.0.0 timxxx.ink
@@ -8445,7 +8438,6 @@
 0.0.0.0 unclic.info
 0.0.0.0 underswo.de
 0.0.0.0 undrarmr.co
-0.0.0.0 unelma.io
 0.0.0.0 unesa.me
 0.0.0.0 unesa.xyz
 0.0.0.0 uni.cf
@@ -8660,7 +8652,6 @@
 0.0.0.0 urlday.cc
 0.0.0.0 urlday.com
 0.0.0.0 urldeclic.com
-0.0.0.0 urldirect21-1.org
 0.0.0.0 urldn.com
 0.0.0.0 urle.me
 0.0.0.0 urlenco.de
@@ -9063,7 +9054,6 @@
 0.0.0.0 vsl.im
 0.0.0.0 vstag.app.br
 0.0.0.0 vt802.us
-0.0.0.0 vtity.com
 0.0.0.0 vtns.io
 0.0.0.0 vtred.co
 0.0.0.0 vttje.top
@@ -9438,7 +9428,6 @@
 0.0.0.0 xxs.pt
 0.0.0.0 xxxdwz.cc
 0.0.0.0 xxxdwz.co
-0.0.0.0 xxxdwz.com
 0.0.0.0 xxxl.ink
 0.0.0.0 xy.ar
 0.0.0.0 xy2.eu

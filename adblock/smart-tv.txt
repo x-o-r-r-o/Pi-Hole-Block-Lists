@@ -3,8 +3,8 @@
 ! Description: Tracking and ads on smart TVs, streaming sticks and game consoles (Samsung, LG webOS, Roku, Amazon Fire, PlayStation, Xbox, Nintendo).
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-21 11:00 UTC
-! Entries: 1485
+! Last modified: 2026-11-28 11:44 UTC
+! Entries: 1483
 !
 ! Built from these sources (see their licenses):
 !   - Perflyst Smart TV: https://github.com/Perflyst/PiHoleBlocklist
@@ -127,8 +127,6 @@
 ||ad.lgappstv.com^
 ||ad.nettvservices.com^
 ||ad.nextlgsdp.com^
-||ad.qa.ap.int.roku.com^
-||ad.usw2.qa.ap.int.roku.com^
 ||ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv^
 ||ad8641f3cff742de893d919add74c2bb.ssm2.internet.sony.tv^
 ||adeng-identity-prod3.bdp.roku.com^
@@ -806,7 +804,6 @@
 ||log.internetat.tv^
 ||logs.dev.sr.roku.com^
 ||logs.prod.ap.int.roku.com^
-||logs.qa.ap.int.roku.com^
 ||logs.roku.com^
 ||logs.sr.roku.com^
 ||logs1409.xiti.com^
@@ -1244,6 +1241,7 @@
 ||sponsored-ads-eu.amazon.pl^
 ||sponsored-ads-eu.amazon.sa^
 ||sponsored-ads-eu.amazon.se^
+||sponsored-ads-eu.jobs.amazon.co.za^
 ||sponsored-ads-euc-1.amazon-adsystem.com^
 ||sponsored-ads-fe.amazon-adsystem.com^
 ||sponsored-ads-na.amazon-adsystem.com^

@@ -2,8 +2,8 @@
 # Description: Extra protection on top of `security`: spam/scam-heavy domain endings (e.g. .zip, .mov), dynamic DNS and abused free hosting used by malware, and apps that resell your internet connection. May block some legitimate sites. AdGuard Home / Pi-hole v6 adblock format recommended.
 # Format: hosts file (0.0.0.0 domain)
 # Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-# Last modified: 2026-11-27 12:18 UTC
-# Entries: 3433
+# Last modified: 2026-11-28 11:44 UTC
+# Entries: 3440
 #
 # Built from these sources (see their licenses):
 #   - HaGeZi Spam TLDs: https://github.com/hagezi/dns-blocklists
@@ -1234,6 +1234,7 @@
 0.0.0.0 fishdns.com
 0.0.0.0 fivepals.com
 0.0.0.0 fixip.org
+0.0.0.0 flashbuilder.net
 0.0.0.0 flashhub.net
 0.0.0.0 flashserv.net
 0.0.0.0 flat4free.com
@@ -2017,8 +2018,10 @@
 0.0.0.0 lnkz.at
 0.0.0.0 loadteam.com
 0.0.0.0 loca.lt
+0.0.0.0 localhost.run
 0.0.0.0 localto.net
 0.0.0.0 localtonet.com
+0.0.0.0 loclx.io
 0.0.0.0 locumm.com
 0.0.0.0 login.911s5.net
 0.0.0.0 loginto.me
@@ -2435,6 +2438,7 @@
 0.0.0.0 onthewifi.com
 0.0.0.0 ooguy.com
 0.0.0.0 opent2.com
+0.0.0.0 opik.net
 0.0.0.0 opior.com
 0.0.0.0 opisial.com
 0.0.0.0 oray.com
@@ -2536,6 +2540,7 @@
 0.0.0.0 pihq.net
 0.0.0.0 pii.at
 0.0.0.0 piii.net
+0.0.0.0 pinggy.link
 0.0.0.0 pirchio.com
 0.0.0.0 piroge.com
 0.0.0.0 pishell.com
@@ -2790,6 +2795,7 @@
 0.0.0.0 serverpit.com
 0.0.0.0 serverthuis.com
 0.0.0.0 servesarcasm.com
+0.0.0.0 serveto.me
 0.0.0.0 serveuser.com
 0.0.0.0 serveusers.com
 0.0.0.0 servevent.com
@@ -3336,6 +3342,7 @@
 0.0.0.0 x.gp
 0.0.0.0 x10.bz
 0.0.0.0 x10.mx
+0.0.0.0 x10host.com
 0.0.0.0 x1dns.com
 0.0.0.0 x24hr.com
 0.0.0.0 x443.pw

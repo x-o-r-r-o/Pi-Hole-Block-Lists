@@ -3,8 +3,8 @@
 ! Description: Phone-maker and app telemetry/tracking (Apple, Samsung, Xiaomi, Huawei, Oppo/Realme, Vivo, TikTok) plus Android trackers.
 ! Format: adblock ||domain^ (AdGuard Home, Pi-hole v6; blocks subdomains too)
 ! Homepage: https://github.com/x-o-r-r-o/Pi-Hole-Block-Lists
-! Last modified: 2026-11-27 12:18 UTC
-! Entries: 3381
+! Last modified: 2026-11-28 11:44 UTC
+! Entries: 3377
 !
 ! Built from these sources (see their licenses):
 !   - Perflyst Android Tracking: https://github.com/Perflyst/PiHoleBlocklist
@@ -65,7 +65,6 @@
 ||ad-format-ttp2.tiktokv.us^
 ||ad-format-ttp2.us.tiktokv.com^
 ||ad-format.tiktokv.eu^
-||ad-format.tiktokv.us^
 ||ad-format.us.tiktokv.com^
 ||ad-format16-normal-useastred.tiktokv.eu^
 ||ad-growth-in.heytapmobile.com^
@@ -105,6 +104,7 @@
 ||ad.tiktokv.eu^
 ||ad.tiktokv.us^
 ||ad.xiaomi.com^
+||ad.xiaomi.com.mgslb.com^
 ||adash-emas.cn-hangzhou.aliyuncs.com^
 ||adash.m.taobao.com^
 ||adash.man.aliyuncs.com^
@@ -191,6 +191,7 @@
 ||advertising.apple.com^
 ||advmob.cn^
 ||advp.apple.com^
+||adx-ads-fr-heytapmobila-c7870.fr-w01.cngw.heytapmobile.com^
 ||adx-ads-fr.heytapmobile.com^
 ||adx-ads-ru.heytapmobile.com^
 ||adx-ads.realmemobile.com^
@@ -214,6 +215,7 @@
 ||adx-op-in.heytapmobile.com^
 ||adx-op-ru.heytapmobile.com^
 ||adx-op-sg.heytapmobile.com^
+||adx-u-fr.heytapmobile.com^
 ||adx-u-in-heytapmobile-a-9ae47.in-s01.cngw.heytapmobile.com^
 ||adx-u-in.heytapmobile.com^
 ||adx-u-ru.heytapmobile.com^
@@ -274,7 +276,6 @@
 ||analytics-exp-sg.tiktok.com.edgekey.net^
 ||analytics-exp-ttp2.tiktokw.eu^
 ||analytics-exp-ttp2.tiktokw.eu.edgesuite.net^
-||analytics-exp.tiktokw.eu^
 ||analytics-exp.us.tiktok.com^
 ||analytics-exp.us.tiktok.com.edgesuite.net^
 ||analytics-exp16-normal-useastred.tiktokw.eu^
@@ -642,6 +643,7 @@
 ||browser-api-id.heytapmobile.com^
 ||browser-api-in.heytapmobile.com^
 ||browser-api-my.heytapmobile.com^
+||browser-api-nz.heytapmobile.com^
 ||browser-api-ph.heytapmobile.com^
 ||browser-api-ru.heytapmobile.com^
 ||browser-api-th.heytapmobile.com^
@@ -1107,6 +1109,7 @@
 ||eu-domaincfg.vivoglobal.com^
 ||eu-errup.vivoglobal.com^
 ||eu-monitor-stsdk.vivoglobal.com^
+||eu-nrt-stsdk.vivoglobal.com^
 ||eu-onrt-stsdk.vivoglobal.com^
 ||eu-ort-stsdk.vivoglobal.com^
 ||eu-p.vivoglobal.com^
@@ -1223,7 +1226,6 @@
 ||federatedml-pa.googleapis.com^
 ||feedback.miui.com^
 ||feedbackws.fe.apple-dns.cn^
-||feedbackws.fe.apple-dns.net^
 ||feedbackws.fe2.apple-dns.net^
 ||feedbackws.icloud.com^
 ||feedbackws.icloud.com.cn^
@@ -1623,9 +1625,9 @@
 ||lng.xiaohongshu.com^
 ||loadus.exelator.com^
 ||localytics.com^
+||location-i18n.tiktok.com^
 ||location-i18n.tiktokv.com^
 ||location-ie.tiktokv.eu^
-||location-ru.tiktokv.com^
 ||location-sg.tiktokv.com^
 ||location-ttp2.tiktokv.eu^
 ||location-ttp2.tiktokv.us^
@@ -1663,9 +1665,6 @@
 ||log-dr16-normal-useast5.tiktokv.us^
 ||log-dr16-normal-useast8.tiktokv.us^
 ||log-dr16-normal-useastred.tiktokv.eu^
-||log-dr19-normal-no1a.tiktokv.eu^
-||log-dr19-normal-useast5.tiktokv.us^
-||log-dr19-normal-useast8.tiktokv.us^
 ||log-dra.platform.hihonorcloud.com^
 ||log-drcn.platform.hihonorcloud.com^
 ||log-dre.platform.hihonorcloud.com^
@@ -1893,7 +1892,6 @@
 ||logs.profi.ru^
 ||logs.supersonic.com^
 ||logsdk.kwai-pro.com^
-||logserver.nzxcloud.cn^
 ||logservice-dra.platform.hicloud.com^
 ||logservice-dre.platform.dbankcloud.cn^
 ||logservice-dre.platform.hicloud.com^
@@ -2469,7 +2467,6 @@
 ||prod-event-relay-sports-api.v.aaplimg.com^
 ||prod-event-relay-stocks-api.v.aaplimg.com^
 ||prod-event-relay-weather-api.v.aaplimg.com^
-||prod-event-relay-web-api.v.aaplimg.com^
 ||prod-iwork-events.v.aaplimg.com^
 ||prod-news-notification-events.v.aaplimg.com^
 ||prod-ue1-metrics.hingeprod.net^
@@ -2555,7 +2552,6 @@
 ||rt.applovin.com^
 ||rtag.farmers.com^
 ||rtc-logger-i18n.tiktokv.com^
-||rtc-logger-ie.tiktokv.eu^
 ||rtc-logger-ttp2.tiktokv.eu^
 ||rtc-logger-ttp2.tiktokv.us^
 ||rtc-logger-ttp2.us.tiktokv.com^
@@ -2567,7 +2563,6 @@
 ||rtc-logger.us.tiktokv.com^
 ||rtc-logger16-normal-alisg.tiktokv.com^
 ||rtc-logger16-normal-useastred.tiktokv.eu^
-||rtc-logger16-normal.tiktokv.com^
 ||rtlog-i18n.tiktokv.com^
 ||rtlog-phx.tiktokv.com^
 ||rtlog-ru.tiktokv.com^
@@ -2595,6 +2590,7 @@
 ||rtlog16-normal-useast8.tiktokv.us^
 ||rtlog16-normal-useast8.us.tiktokv.com^
 ||rtlog16-normal-useastred.tiktokv.eu^
+||rtlog16-normal-useastred.tiktokv.eu.intern.schreinereistumpf.de^
 ||rtlog16-normal-zr-alisg.tiktokv.com^
 ||rtlog16-normal-zr-useast1a.tiktokv.com^
 ||rtlog16-normal-zr.tiktokv.com^
@@ -2683,6 +2679,7 @@
 ||ru-prt-stsdk.vivoglobal.com^
 ||ru-register.xmpush.global.xiaomi.com^
 ||ru-romsp-unifyconfig.vivoglobal.com^
+||ru-rt-stsdk.vivoglobal.com^
 ||ru-st-exappupgrade.vivoglobal.com^
 ||ru-st-sl.vivoglobal.com^
 ||ru-stsdk.vivoglobal.com^
@@ -2717,7 +2714,6 @@
 ||samsung.ecorebates.com^
 ||samsung.telemetry.eyeo.com^
 ||samsungacr.com^
-||samsungadhub.com^
 ||samsungads.adsmeasurement.com^
 ||samsungads.com^
 ||samsungafrica.tt.omtrdc.net^
